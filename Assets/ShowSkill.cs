@@ -16,7 +16,7 @@ public class ShowSkill : MonoBehaviour {
         {
             for (int j = 0; j < player[i].skillImage.Count; j++)
             {
-                player[i].skillImage[j].sprite = csm.playerList[i].GetComponent<PlayerVariableManager>().skillList[i].GetComponent<SpriteRenderer>().sprite;
+                player[i].skillImage[j].sprite = csm.playerList[i].GetComponent<PlayerVariableManager>().skillList[j].GetComponent<SpriteRenderer>().sprite;
             }
         }
     }

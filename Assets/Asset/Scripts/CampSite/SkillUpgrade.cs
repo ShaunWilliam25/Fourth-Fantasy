@@ -27,7 +27,7 @@ public class SkillUpgrade : MonoBehaviour {
             holdTimer += Time.deltaTime;
             if(holdTimer >= timeNeeded)
             {
-
+                
             }
         }
     }

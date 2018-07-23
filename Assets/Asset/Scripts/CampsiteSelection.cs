@@ -1,24 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class CampsiteSelection : MonoBehaviour
 {
-    public Button p1StatusCheck;
-    public Button p1UpgradeSkill;
-    public Button p2StatusCheck;
-    public Button p2UpgradeSkill;
-    public Text p1Ready;
-    public Text p2Ready;
-    public Text p1Back;
-    public Text p2Back;
-    public float timeNeeded = 1;
-    public float p1Hold, p2Hold;
     ShowUI showUI;
     ShowSkill showSkill;
-    public int highlight = 0;
-    public GameObject highlighted;
+    //public List<CampsiteMenu> player = new List<CampsiteMenu>(2);
+    public CampsiteManager csm;
+    public CampsiteMenu player1;
+    public CampsiteMenu player2;
+    public List<Image> upgrade3 = new List<Image>(3);
+    public float timeNeeded = 1;
+    public float p1Hold, p2Hold;
+    public int p1Highlight = 0, p2Highlight = 0;
+    public GameObject upgradeObject;
+    
 
     void Start()
     {
@@ -41,24 +40,24 @@ public class CampsiteSelection : MonoBehaviour
                 if (showUI.player1.state != CAMPSITE_STATE.READY)
                 {
                     p1Hold = 0;
-                    if (p1StatusCheck.GetComponent<Image>().color == Color.red)
+                    if (player1.status.GetComponent<Image>().color == Color.red)
                     {
                         showUI.player1.state = CAMPSITE_STATE.STATUS_CHECK;
                     }
-                    else if (p1UpgradeSkill.GetComponent<Image>().color == Color.red)
+                    else if (player1.upgrade.GetComponent<Image>().color == Color.red)
                     {
                         showUI.player1.state = CAMPSITE_STATE.SKILL_UPGRADE;
                     }
-                    else if (p1Ready.GetComponent<Text>().color == Color.yellow)
+                    else if (player1.ready.GetComponent<Text>().color == Color.yellow)
                     {
-                        p1Ready.GetComponent<Text>().color = Color.green;
+                        player1.ready.GetComponent<Text>().color = Color.green;
                         showUI.player1.state = CAMPSITE_STATE.READY;
                     }
                 }
                 else if (this.GetComponent<ShowUI>().player1.state == CAMPSITE_STATE.READY)
                 {
                     p1Hold = 0;
-                    p1Ready.GetComponent<Text>().color = Color.yellow;
+                    player1.ready.GetComponent<Text>().color = Color.yellow;
                     showUI.player1.state = CAMPSITE_STATE.SELECTION;
                 }
             }
@@ -76,24 +75,24 @@ public class CampsiteSelection : MonoBehaviour
                 if (showUI.player2.state != CAMPSITE_STATE.READY)
                 {
                     p2Hold = 0;
-                    if (p2StatusCheck.GetComponent<Image>().color == Color.blue)
+                    if (player2.status.GetComponent<Image>().color == Color.blue)
                     {
                         showUI.player2.state = CAMPSITE_STATE.STATUS_CHECK;
                     }
-                    else if (p2UpgradeSkill.GetComponent<Image>().color == Color.blue)
+                    else if (player2.upgrade.GetComponent<Image>().color == Color.blue)
                     {
                         showUI.player2.state = CAMPSITE_STATE.SKILL_UPGRADE;
                     }
-                    else if (p2Ready.GetComponent<Text>().color == Color.yellow)
+                    else if (player2.ready.GetComponent<Text>().color == Color.yellow)
                     {
-                        p2Ready.GetComponent<Text>().color = Color.green;
+                        player2.ready.GetComponent<Text>().color = Color.green;
                         showUI.player2.state = CAMPSITE_STATE.READY;
                     }
                 }
                 else if (this.GetComponent<ShowUI>().player2.state == CAMPSITE_STATE.READY)
                 {
                     p2Hold = 0;
-                    p2Ready.GetComponent<Text>().color = Color.yellow;
+                    player2.ready.GetComponent<Text>().color = Color.yellow;
                     showUI.player2.state = CAMPSITE_STATE.SELECTION;
                 }
             }
@@ -110,20 +109,20 @@ public class CampsiteSelection : MonoBehaviour
         {
             if (Input.GetKeyUp("a"))
             {
-                if (p1StatusCheck.GetComponent<Image>().color == Color.red)
+                if (player1.status.GetComponent<Image>().color == Color.red)
                 {
-                    p1StatusCheck.GetComponent<Image>().color = Color.white;
-                    p1UpgradeSkill.GetComponent<Image>().color = Color.red;
+                    player1.status.GetComponent<Image>().color = Color.white;
+                    player1.upgrade.GetComponent<Image>().color = Color.red;
                 }
-                else if (p1UpgradeSkill.GetComponent<Image>().color == Color.red)
+                else if (player1.upgrade.GetComponent<Image>().color == Color.red)
                 {
-                    p1UpgradeSkill.GetComponent<Image>().color = Color.white;
-                    p1Ready.GetComponent<Text>().color = Color.yellow;
+                    player1.upgrade.GetComponent<Image>().color = Color.white;
+                    player1.ready.GetComponent<Text>().color = Color.yellow;
                 }
-                else if (p1Ready.GetComponent<Text>().color == Color.yellow)
+                else if (player1.ready.GetComponent<Text>().color == Color.yellow)
                 {
-                    p1StatusCheck.GetComponent<Image>().color = Color.red;
-                    p1Ready.color = Color.white;
+                    player1.status.GetComponent<Image>().color = Color.red;
+                    player1.ready.color = Color.white;
                 }
             }
         }
@@ -132,20 +131,20 @@ public class CampsiteSelection : MonoBehaviour
         {
             if (Input.GetKeyUp("l"))
             {
-                if (p2StatusCheck.GetComponent<Image>().color == Color.blue)
+                if (player2.status.GetComponent<Image>().color == Color.blue)
                 {
-                    p2StatusCheck.GetComponent<Image>().color = Color.white;
-                    p2UpgradeSkill.GetComponent<Image>().color = Color.blue;
+                    player2.status.GetComponent<Image>().color = Color.white;
+                    player2.upgrade.GetComponent<Image>().color = Color.blue;
                 }
-                else if (p2UpgradeSkill.GetComponent<Image>().color == Color.blue)
+                else if (player2.upgrade.GetComponent<Image>().color == Color.blue)
                 {
-                    p2UpgradeSkill.GetComponent<Image>().color = Color.white;
-                    p2Ready.GetComponent<Text>().color = Color.yellow;
+                    player2.upgrade.GetComponent<Image>().color = Color.white;
+                    player2.ready.GetComponent<Text>().color = Color.yellow;
                 }
-                else if (p2Ready.GetComponent<Text>().color == Color.yellow)
+                else if (player2.ready.GetComponent<Text>().color == Color.yellow)
                 {
-                    p2StatusCheck.GetComponent<Image>().color = Color.blue;
-                    p2Ready.color = Color.white;
+                    player2.status.GetComponent<Image>().color = Color.blue;
+                    player2.ready.color = Color.white;
                 }
             }
         }
@@ -186,7 +185,7 @@ public class CampsiteSelection : MonoBehaviour
 
     void Back()
     {
-        if (showUI.player1.state == CAMPSITE_STATE.STATUS_CHECK || showUI.player1.state == CAMPSITE_STATE.SKILL_UPGRADE /*|| showUI.player1.state == CAMPSITE_STATE.READY*/)
+        if (showUI.player1.state == CAMPSITE_STATE.STATUS_CHECK /*|| showUI.player1.state == CAMPSITE_STATE.READY*/)
         {
             if (Input.GetKey("a"))
             {
@@ -197,11 +196,11 @@ public class CampsiteSelection : MonoBehaviour
                     {
                         showUI.player1.state = CAMPSITE_STATE.SELECTION;
                     }
-                    else if (showUI.player1.state == CAMPSITE_STATE.SKILL_UPGRADE)
+                    /*else if (showUI.player1.state == CAMPSITE_STATE.SKILL_UPGRADE)
                     {
                         showUI.player1.state = CAMPSITE_STATE.SELECTION;
                     }
-                    /*else if (showUI.player1.state == CAMPSITE_STATE.READY)
+                    else if (showUI.player1.state == CAMPSITE_STATE.READY)
                     {
                         showUI.player1.state = CAMPSITE_STATE.SELECTION;
                     }*/
@@ -214,7 +213,7 @@ public class CampsiteSelection : MonoBehaviour
             }
         }
 
-        if (showUI.player2.state == CAMPSITE_STATE.STATUS_CHECK || showUI.player2.state == CAMPSITE_STATE.SKILL_UPGRADE /*|| showUI.player2.state == CAMPSITE_STATE.READY*/)
+        if (showUI.player2.state == CAMPSITE_STATE.STATUS_CHECK /*|| showUI.player2.state == CAMPSITE_STATE.READY*/)
         {
             if (Input.GetKey("l"))
             {
@@ -225,11 +224,11 @@ public class CampsiteSelection : MonoBehaviour
                     {
                         showUI.player2.state = CAMPSITE_STATE.SELECTION;
                     }
-                    else if (showUI.player2.state == CAMPSITE_STATE.SKILL_UPGRADE)
+                    /*else if (showUI.player2.state == CAMPSITE_STATE.SKILL_UPGRADE)
                     {
                         showUI.player2.state = CAMPSITE_STATE.SELECTION;
                     }
-                    /*else if (showUI.player2.state == CAMPSITE_STATE.READY)
+                    else if (showUI.player2.state == CAMPSITE_STATE.READY)
                     {
                         showUI.player2.state = CAMPSITE_STATE.SELECTION;
                     }*/
@@ -247,18 +246,97 @@ public class CampsiteSelection : MonoBehaviour
     {
         if (showUI.player1.state == CAMPSITE_STATE.SKILL_UPGRADE)
         {
-            if (Input.GetKeyUp("a"))
+            if (player1.upgradeState == UPGRADE_STATE.CHOOSE_SKILL)
             {
-                if( highlight < 4)
+                if (Input.GetKeyUp("a"))
                 {
-                    highlight++;
+                    if (p1Highlight < 4)
+                    {
+                        p1Highlight++;
+                    }
+                    else
+                    {
+                        p1Highlight = 0;
+                    }
+                    player1.highlighted.transform.localPosition = showSkill.player[0].skillImage[p1Highlight].transform.localPosition;
+                }
+
+                if (Input.GetKey("a"))
+                {
+                    p1Hold += Time.deltaTime;
+                    if (p1Hold >= timeNeeded)
+                    {
+                        p1Hold = 0;
+                        player1.selectedSkill.GetComponent<Image>().sprite = showSkill.player[0].skillImage[p1Highlight].sprite;
+                        player1.skillIndex = p1Highlight;
+                        player1.upgradeState = UPGRADE_STATE.CHOOSE_UPGRADE;
+                    }
                 }
                 else
                 {
-                    highlight = 0;
+                    p1Hold = 0;
                 }
             }
-            highlighted.transform.localPosition = showSkill.player[0].skillImage[highlight].transform.localPosition;
+            else if (player1.upgradeState == UPGRADE_STATE.CHOOSE_UPGRADE)
+            {
+                if (Input.GetKeyUp("a"))
+                {
+                    if (p1Highlight < 2)
+                    {
+                        p1Highlight++;
+                    }
+                    else
+                    {
+                        p1Highlight = 0;
+                    }
+                    player1.highlighted.transform.localPosition = upgrade3[p1Highlight].transform.localPosition;
+                }
+
+                if (Input.GetKey("a"))
+                {
+                    p1Hold += Time.deltaTime;
+                    if (p1Hold >= timeNeeded)
+                    {
+                        p1Hold = 0;
+                        player1.selectedUpgrade.GetComponent<Image>().sprite = upgrade3[p1Highlight].sprite;
+                        player1.upgradeIndex = p1Highlight;
+                        player1.upgradeState = UPGRADE_STATE.VALIDATE_UPGRADE;
+                    }
+                }
+                else
+                {
+                    p1Hold = 0;
+                }
+            }
+            else if (player1.upgradeState == UPGRADE_STATE.VALIDATE_UPGRADE)
+            {
+                csm.playerList[0].GetComponent<PlayerVariableManager>().skillList[player1.skillIndex].GetComponent<SkillDetail>().skillExecutionList.Add(upgradeObject);
+                player1.upgraded = true;
+            }
         }
     }
+}
+
+[Serializable]
+public struct CampsiteMenu
+{
+    public Image status;
+    public Image upgrade;
+    public Image highlighted;
+    public Image selectedSkill;
+    public Image selectedUpgrade;
+    public int skillIndex;
+    public int upgradeIndex;
+    public Text ready;
+    public Text back;
+    public bool upgraded;
+    public UPGRADE_STATE upgradeState;
+}
+
+public enum UPGRADE_STATE
+{
+    CHOOSE_SKILL = 0,
+    CHOOSE_UPGRADE,
+    VALIDATE_UPGRADE,
+    UPGRADE
 }
