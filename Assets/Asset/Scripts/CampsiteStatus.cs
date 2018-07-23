@@ -2,26 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using System.IO;
+using System;
 
-public class CampsiteStatus : MonoBehaviour {
+public class CampsiteStatus : MonoBehaviour
+{
 
     public Text player1Health;
-    public Text player1Strength;
+    public ArtifactContent[] artifactContent = new ArtifactContent[5];
 
-    void Awake()
+    void Start()
     {
-        //player1Health.text = "Health : " + (PlayerPrefs.GetInt("P1 HP").ToString());
-        //player1Strength.text = "Strenght : " + (PlayerPrefs.GetInt("P1 STR").ToString());
-        player1Health.text = "Health : " + (PlayerPrefs.GetInt("P1 HP").ToString()) + "\n" + "Strenght : " + (PlayerPrefs.GetInt("P1 STR").ToString());
+        PlayerPrefs.SetInt("P1 HP", 400);
+        PlayerPrefs.SetInt("P1 MAX HP", 450);
+        player1Health.text = "Health : " + (PlayerPrefs.GetInt("P1 HP").ToString()) + "/" + (PlayerPrefs.GetInt("P1 MAX HP").ToString());
     }
 
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+}
+
+[Serializable]
+public struct ArtifactContent
+{
+    public Text artifactName;
+    public Text artifactEffect;
+    public Image artifactImage;
 }
