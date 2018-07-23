@@ -18,6 +18,7 @@ public class SceneManager : MonoBehaviour {
     public void Awake()
     {
         //audioManager.PlaySound("BattleSound");
+
         tutorial = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<TutorialAppear>();
     }
     public void Start()
@@ -73,6 +74,7 @@ public class SceneManager : MonoBehaviour {
             if (Input.anyKeyDown)
             {
                 UnityEngine.SceneManagement.SceneManager.LoadScene(nextScene);
+
             }
         }
         if (Input.GetKeyDown("b"))
@@ -80,6 +82,7 @@ public class SceneManager : MonoBehaviour {
             for (int i = 0; i < playerList.Count; i++)
             {
                 playerList[i].GetComponent<PlayerStats>().health = 0;
+                break;
             }
         }
 

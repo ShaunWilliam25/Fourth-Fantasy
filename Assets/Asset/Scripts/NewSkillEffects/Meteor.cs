@@ -27,11 +27,15 @@ public class Meteor : SkillEffect {
 
     public override void Execute(GameObject targetedEnemy)
     {
-        damage = (int)(damage * DamageMultiplier());
+        int totalDamage = (int)(damage * DamageMultiplier());
         for (int i = 0; i < enemyList.Count; i++)
         {
-            enemyList[i].GetComponent<EnemyVariableManager>().statusList.Add(Instantiate(status[0]));
-            enemyList[i].GetComponent<EnemyTakeDamage>().EnemyDamage(damage);
+            if(!enemyList[i].GetComponent<EnemyStats>().immune)
+            {
+                enemyList[i].GetComponent<EnemyVariableManager>().statusList.Add(Instantiate(status[0]));
+            }
+            playerArtifact.ArtifactAttackEffect(enemyList[i]);
+            enemyList[i].GetComponent<EnemyTakeDamage>().EnemyDamage(totalDamage);
         }
         audioManager.PlaySound("TimePriestressAttackSound");
     }

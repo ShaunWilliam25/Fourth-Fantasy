@@ -14,11 +14,10 @@ public class EnemyStatusUpdate : EnemyVariableManager
         {
             for (int i = this.statusList.Count - 1; i > 0; i--)
             {
-                for (int j = this.statusList.Count - 2; j >= 0; j--)
+                for (int j = i-1; j >= 0; j--)
                 {
                     if (this.statusList[i].GetComponent<StatusDetail>().ID == this.statusList[j].GetComponent<StatusDetail>().ID)
                     {
-                        Debug.Log("destroy" + statusList[i] + statusList[i].GetComponent<StatusDetail>().ID);
                         Destroy(this.statusList[i].gameObject);
                         this.statusList.Remove(statusList[i]);
                     }

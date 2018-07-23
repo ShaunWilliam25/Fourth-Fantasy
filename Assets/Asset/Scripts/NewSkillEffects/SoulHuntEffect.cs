@@ -27,11 +27,16 @@ public class SoulHuntEffect : SkillEffect
 
     public override void Execute(GameObject targetedEnemy)
     {
-        damage = (int)(damage * DamageMultiplier());
-        targetedEnemy.GetComponent<EnemyTakeDamage>().EnemyDamage(damage);
-        int rand = Random.Range(0, 3);
-        targetedEnemy.GetComponent<EnemyVariableManager>().statusList.Add(Instantiate(status[rand]));
-        Debug.Log("Applied " + status[rand]);
+        int totalDamage = (int)(damage * DamageMultiplier());
+        targetedEnemy.GetComponent<EnemyTakeDamage>().EnemyDamage(totalDamage);
+        playerArtifact.ArtifactAttackEffect(targetedEnemy);
+        if(!targetedEnemy.GetComponent<EnemyStats>().immune)
+        {
+            int rand = Random.Range(0, 3);
+            targetedEnemy.GetComponent<EnemyVariableManager>().statusList.Add(Instantiate(status[rand]));
+            Debug.Log("Applied " + status[rand]);
+        }
+        
         audioManager.PlaySound("ExiledDemonAttackSound");
     }
 }

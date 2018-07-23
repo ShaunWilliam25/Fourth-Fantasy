@@ -18,10 +18,12 @@ public class Berserk : StatusDetail
         {
             if (userType == UserType.PLAYER)
             {
+                user.GetComponent<PlayerStats>().silence = true;
                 user.GetComponent<PlayerStatusList>().statusIcon.Add(this.icon);
             }
             else if (userType == UserType.ENEMY)
             {
+                user.GetComponent<EnemyStats>().silence = true;
                 user.GetComponent<EnemyStatusList>().statusIcon.Add(this.icon);
             }
         }
@@ -36,10 +38,12 @@ public class Berserk : StatusDetail
     {
         if (userType == UserType.PLAYER)
         {
+            user.GetComponent<PlayerStats>().silence = false;
             user.GetComponent<PlayerStatusList>().statusIcon.Remove(user.GetComponent<PlayerStatusList>().statusIcon.Find(x => x == this.icon));
         }
         else if (userType == UserType.ENEMY)
         {
+            user.GetComponent<EnemyStats>().silence = false;
             user.GetComponent<EnemyStatusList>().statusIcon.Remove(user.GetComponent<EnemyStatusList>().statusIcon.Find(x => x == this.icon));
         }
     }

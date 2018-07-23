@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 212268578526362134}
   - component: {fileID: 114365122279455914}
   m_Layer: 0
-  m_Name: NormalAttackMagical
+  m_Name: NormalAttackTimePriestress
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

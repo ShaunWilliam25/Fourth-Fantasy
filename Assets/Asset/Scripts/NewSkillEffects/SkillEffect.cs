@@ -8,6 +8,7 @@ public class SkillEffect : MonoBehaviour {
     public List<GameObject> playerList;
     public List<GameObject> enemyList;
     public List<GameObject> status;
+    public PlayerArtifactEffect playerArtifact;
     public GameObject user;
     public string effectDescription;
     public SKILL_EFFECT_TYPE effectType;
@@ -42,29 +43,61 @@ public class SkillEffect : MonoBehaviour {
         playerList = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManager>().playerList;
         enemyList = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManager>().enemyList;
         user = transform.parent.parent.parent.gameObject;
+        playerArtifact = user.GetComponent<PlayerArtifactEffect>();
+    }
+
+    protected void AssignEnemyUser()
+    {
+        playerList = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManager>().playerList;
+        enemyList = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManager>().enemyList;
     }
 
     protected float DamageMultiplier()
     {
         float multiplier = 1f;
-        if(user.GetComponent<PlayerVariableManager>().statusList.Count != 0)
+        if(user.GetComponent<PlayerVariableManager>() != null)
         {
-            for (int i = user.GetComponent<PlayerVariableManager>().statusList.Count - 1; i >= 0; i--)
+            if (user.GetComponent<PlayerVariableManager>().statusList.Count != 0)
             {
-                if (user.GetComponent<PlayerVariableManager>().statusList[i].GetComponent<StatusDetail>() is Berserk)
+                for (int i = user.GetComponent<PlayerVariableManager>().statusList.Count - 1; i >= 0; i--)
                 {
-                    multiplier *= 1.5f;
+                    if (user.GetComponent<PlayerVariableManager>().statusList[i].GetComponent<StatusDetail>() is Berserk)
+                    {
+                        multiplier *= 1.5f;
+                    }
+                    if (user.GetComponent<PlayerVariableManager>().statusList[i].GetComponent<StatusDetail>() is Blessed)
+                    {
+                        multiplier *= 2f;
+                    }
+                    if (user.GetComponent<PlayerVariableManager>().statusList[i].GetComponent<StatusDetail>() is Cursed)
+                    {
+                        multiplier *= 0.5f;
+                    }
                 }
-                if (user.GetComponent<PlayerVariableManager>().statusList[i].GetComponent<StatusDetail>() is Blessed)
+            }
+        }
+        else
+        {
+            if (user.GetComponent<EnemyVariableManager>().statusList.Count != 0)
+            {
+                for (int i = user.GetComponent<EnemyVariableManager>().statusList.Count - 1; i >= 0; i--)
                 {
-                    multiplier *= 2f;
-                }
-                if (user.GetComponent<PlayerVariableManager>().statusList[i].GetComponent<StatusDetail>() is Cursed)
-                {
-                    multiplier *= 0.5f;
+                    if (user.GetComponent<EnemyVariableManager>().statusList[i].GetComponent<StatusDetail>() is Berserk)
+                    {
+                        multiplier *= 1.5f;
+                    }
+                    if (user.GetComponent<EnemyVariableManager>().statusList[i].GetComponent<StatusDetail>() is Blessed)
+                    {
+                        multiplier *= 2f;
+                    }
+                    if (user.GetComponent<EnemyVariableManager>().statusList[i].GetComponent<StatusDetail>() is Cursed)
+                    {
+                        multiplier *= 0.5f;
+                    }
                 }
             }
         }
         return multiplier;
     }
+
 }
