@@ -929,7 +929,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 146795435}
-          m_MethodName: Click
+          m_MethodName: WhenClick
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -957,6 +957,7 @@ MonoBehaviour:
   selectedImage: {fileID: 21300000, guid: 51c8b1402f30e1246ba3f565f3d3ad95, type: 3}
   defaultImage: {fileID: 21300000, guid: f2bd2306b0f1bd142b9f626dd22116f5, type: 3}
   chosenImage: {fileID: 21300000, guid: 911de2ad2e0c99b4cb8b346e7c708505, type: 3}
+  timer: 0
 --- !u!114 &146795436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2343,7 +2344,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 435138710}
-          m_MethodName: Click
+          m_MethodName: WhenClick
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -2371,6 +2372,7 @@ MonoBehaviour:
   selectedImage: {fileID: 21300000, guid: 51c8b1402f30e1246ba3f565f3d3ad95, type: 3}
   defaultImage: {fileID: 21300000, guid: f2bd2306b0f1bd142b9f626dd22116f5, type: 3}
   chosenImage: {fileID: 21300000, guid: 911de2ad2e0c99b4cb8b346e7c708505, type: 3}
+  timer: 0
 --- !u!1 &435712572
 GameObject:
   m_ObjectHideFlags: 0
@@ -4073,7 +4075,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: f6a00de6443a4b34599353f9985c518c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5979,6 +5981,7 @@ MonoBehaviour:
   selectedImage: {fileID: 21300000, guid: 51c8b1402f30e1246ba3f565f3d3ad95, type: 3}
   defaultImage: {fileID: 21300000, guid: f2bd2306b0f1bd142b9f626dd22116f5, type: 3}
   chosenImage: {fileID: 21300000, guid: 911de2ad2e0c99b4cb8b346e7c708505, type: 3}
+  timer: 0
 --- !u!114 &1446782097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6041,7 +6044,24 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1446782096}
-          m_MethodName: Click
+          m_MethodName: WhenClick
+          m_Mode: 1
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 0
+      m_TypeName: UnityEngine.EventSystems.EventTrigger+TriggerEvent, UnityEngine.UI,
+        Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  - eventID: 2
+    callback:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1446782096}
+          m_MethodName: WhenClick
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -6682,6 +6702,7 @@ MonoBehaviour:
   selectedImage: {fileID: 21300000, guid: 51c8b1402f30e1246ba3f565f3d3ad95, type: 3}
   defaultImage: {fileID: 21300000, guid: f2bd2306b0f1bd142b9f626dd22116f5, type: 3}
   chosenImage: {fileID: 21300000, guid: 911de2ad2e0c99b4cb8b346e7c708505, type: 3}
+  timer: 0
 --- !u!114 &1526513085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6744,7 +6765,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1526513084}
-          m_MethodName: Click
+          m_MethodName: WhenClick
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -9047,6 +9068,7 @@ MonoBehaviour:
   selectedImage: {fileID: 21300000, guid: 51c8b1402f30e1246ba3f565f3d3ad95, type: 3}
   defaultImage: {fileID: 21300000, guid: f2bd2306b0f1bd142b9f626dd22116f5, type: 3}
   chosenImage: {fileID: 21300000, guid: 911de2ad2e0c99b4cb8b346e7c708505, type: 3}
+  timer: 0
 --- !u!114 &1988490822
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9109,7 +9131,7 @@ MonoBehaviour:
       m_PersistentCalls:
         m_Calls:
         - m_Target: {fileID: 1988490821}
-          m_MethodName: Click
+          m_MethodName: WhenClick
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
