@@ -10,6 +10,7 @@ public class EnemyChooseSkill : EnemyVariableManager {
     {
         tutorial = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<TutorialAppear>();
         //Set user of skill to enemy(Didn't use same code as player)
+        
         for(int i=0;i<GetComponent<EnemyVariableManager>().skillList.Count;i++)
         {
             GetComponent<EnemyVariableManager>().skillList[i].GetComponent<SkillEffect>().user = this.gameObject;
