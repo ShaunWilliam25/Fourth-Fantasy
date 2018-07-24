@@ -2,20 +2,33 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.UI;
 
 public class ShowUI : MonoBehaviour
 {
     public CampsiteUIComponent player1;
     public CampsiteUIComponent player2;
+    public CampsiteSelection css;
+    public Text text;
 
     void Start()
     {
         player1.state = CAMPSITE_STATE.SELECTION;
         player1.state = CAMPSITE_STATE.SELECTION;
+        css = this.GetComponent<CampsiteSelection>();
     }
 
     void Update()
     {
+        if (css.player1.upgraded == true)
+        {
+            text.color = Color.grey;
+        }
+        else
+        {
+            text.color = Color.white;
+        }
+
         if (player1.state == CAMPSITE_STATE.SELECTION)
         {
             player1.select.SetActive(true);
