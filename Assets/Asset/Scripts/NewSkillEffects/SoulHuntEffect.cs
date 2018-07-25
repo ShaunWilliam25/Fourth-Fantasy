@@ -28,12 +28,12 @@ public class SoulHuntEffect : SkillEffect
     public override void Execute(GameObject targetedEnemy)
     {
         int totalDamage = (int)(damage * DamageMultiplier());
-        targetedEnemy.GetComponent<EnemyTakeDamage>().EnemyDamage(totalDamage);
-        playerArtifact.ArtifactAttackEffect(targetedEnemy);
-        if(!targetedEnemy.GetComponent<EnemyStats>().immune)
+        enemyList[enemyList.Count-1].GetComponent<EnemyTakeDamage>().EnemyDamage(totalDamage);
+        playerArtifact.ArtifactAttackEffect(enemyList[enemyList.Count - 1]);
+        if(!enemyList[enemyList.Count - 1].GetComponent<EnemyStats>().immune)
         {
             int rand = Random.Range(0, 3);
-            targetedEnemy.GetComponent<EnemyVariableManager>().statusList.Add(Instantiate(status[rand]));
+            enemyList[enemyList.Count - 1].GetComponent<EnemyVariableManager>().statusList.Add(Instantiate(status[rand]));
             Debug.Log("Applied " + status[rand]);
         }
         
