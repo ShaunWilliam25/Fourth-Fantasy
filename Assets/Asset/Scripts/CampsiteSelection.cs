@@ -260,6 +260,7 @@ public class CampsiteSelection : MonoBehaviour
                         p1Highlight = 0;
                     }
                     player1.highlighted.transform.localPosition = showSkill.player[0].skillImage[p1Highlight].transform.localPosition;
+                    showUI.player1.popUp.transform.localPosition = new Vector3(showSkill.player[0].skillImage[p1Highlight].transform.localPosition.x + 150, showSkill.player[0].skillImage[p1Highlight].transform.localPosition.y + 110, showSkill.player[0].skillImage[p1Highlight].transform.localPosition.z);
                     player1.detail.GetComponent<Text>().text = csm.playerList[0].GetComponent<PlayerVariableManager>().skillList[p1Highlight].GetComponent<SkillDetail>().skillDescription;
                 }
 
@@ -292,6 +293,7 @@ public class CampsiteSelection : MonoBehaviour
                         p1Highlight = 0;
                     }
                     player1.highlighted.transform.localPosition = upgrade3[p1Highlight].transform.localPosition;
+                    showUI.player1.popUp.transform.localPosition = new Vector3(upgrade3[p1Highlight].transform.localPosition.x + 150, upgrade3[p1Highlight].transform.localPosition.y - 110, showSkill.player[0].skillImage[p1Highlight].transform.localPosition.z);
                 }
 
                 if (Input.GetKey("a"))
@@ -312,7 +314,7 @@ public class CampsiteSelection : MonoBehaviour
             }
             else if (player1.upgradeState == UPGRADE_STATE.VALIDATE_UPGRADE)
             {
-                //csm.playerList[0].GetComponent<PlayerVariableManager>().skillList[player1.skillIndex].GetComponent<SkillDetail>().skillExecutionList.Add(Instantiate(upgradeObject));
+                csm.playerList[0].GetComponent<PlayerVariableManager>().skillHolder[player1.skillIndex].GetComponent<SkillDetail>().skillExecutionHolder.Add(Instantiate(upgradeObject));
                 player1.upgraded = true;
                 showUI.player1.state = CAMPSITE_STATE.SELECTION;
             }

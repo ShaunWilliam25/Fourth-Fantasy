@@ -72,7 +72,7 @@ public class SceneManager : MonoBehaviour {
         {
             if (Input.anyKeyDown)
             {
-                UnityEngine.SceneManagement.SceneManager.LoadScene(nextScene);
+                UnityEngine.SceneManagement.SceneManager.LoadScene(7);
             }
         }
         if (Input.GetKeyDown("b"))
