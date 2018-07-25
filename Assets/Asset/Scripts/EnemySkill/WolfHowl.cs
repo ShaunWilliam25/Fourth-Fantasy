@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class WolfHowl : SkillEffect
 {
+    public SceneManager sceneManager;
+    public Enemy_Spawn enemySpawn;
     private void Awake()
     {
         AssignEnemyUser();
@@ -13,6 +15,22 @@ public class WolfHowl : SkillEffect
 
     public override void Execute(GameObject targetedEnemy)
     {
-        //Summon Wolf(Dunno how to do yet)
+        sceneManager = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManager>();
+        enemySpawn = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<Enemy_Spawn>();
+        //Summon Wolf
+        if(enemyList.Count<3)
+        {
+            for(int i =0;i<enemySpawn.enemySpawnPoints.Count;i++)
+            {
+                if(enemySpawn.enemySpawnPoints[i].childCount<=0)
+                {
+                    sceneManager.enemyList.Add(Instantiate(enemySpawn.allEnemyList[enemySpawn.enemyIndexStage[0] - 1], new Vector2(enemySpawn.enemySpawnPoints[i].position.x, enemySpawn.enemySpawnPoints[i].position.y), Quaternion.identity, enemySpawn.enemySpawnPoints[i]));
+                    sceneManager.enemyList[i].GetComponent<EnemyStats>().index = 1;
+                    sceneManager.playerList[0].GetComponent<PlayerVariableManager>().isTargetLockedIn = false;
+                    sceneManager.playerList[1].GetComponent<PlayerVariableManager>().isTargetLockedIn = false;
+                    return;
+                }
+            }
+        }
     }
 }

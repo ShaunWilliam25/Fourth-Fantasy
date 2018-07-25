@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ArcherSkeletonChargeShot : SkillEffect {
+public class LanceSkeletonLanceThrow : SkillEffect {
 
     private void Awake()
     {
         AssignEnemyUser();
         effectType = SKILL_EFFECT_TYPE.OFFENSIVE;
-        damage = 100;
+        damage = 120;
         numOfTarget = 1;
     }
 

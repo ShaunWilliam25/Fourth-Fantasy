@@ -42,7 +42,8 @@ public class SceneManager : MonoBehaviour {
             if(enemyList[i].GetComponent<EnemyStats>().health <= 0)
             {
                 enemyList[i].SetActive(false);
-                enemyList.Remove(enemyList[i]);
+                Destroy(enemyList[i], 1f);
+                enemyList.Remove(enemyList[i]);    
             }
         }
         if(enemyList.Count <=0)

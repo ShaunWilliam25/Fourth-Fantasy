@@ -63,6 +63,7 @@ public class PlayerSkillChooseTarget : PlayerVariableManager
         //! Need to if its AOE
         if(!this.GetComponent<PlayerVariableManager>().isTargetLockedIn)
         {
+            
             for (int i = 0; i < this.GetComponent<PlayerVariableManager>().enemySpawnScript.enemySpawnPoints.Count; i++)
             {
                 if (this.GetComponent<PlayerVariableManager>().enemySpawnScript.enemySpawnPoints[i].transform.childCount != 0)
