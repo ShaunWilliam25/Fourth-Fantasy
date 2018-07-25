@@ -16,7 +16,8 @@ public class CampsiteSelection : MonoBehaviour
     public float timeNeeded = 1;
     public float p1Hold, p2Hold;
     public int p1Highlight = 0, p2Highlight = 0;
-    public GameObject upgradeObject;
+    private GameObject upgradeObject = new GameObject();
+    public SkillUpgrade skillUpgrade;
     
 
     void Start()
@@ -304,6 +305,18 @@ public class CampsiteSelection : MonoBehaviour
                         p1Hold = 0;
                         player1.selectedUpgrade.GetComponent<Image>().sprite = upgrade3[p1Highlight].sprite;
                         player1.upgradeIndex = p1Highlight;
+                        switch (player1.upgradeIndex)
+                        {
+                            case 0:
+                                upgradeObject = skillUpgrade.randomAttack();
+                                break;
+                            case 1:
+                                upgradeObject = skillUpgrade.randomHeal();
+                                break;
+                            case 2:
+                                upgradeObject = skillUpgrade.randomSupport();
+                                break;
+                        }
                         player1.upgradeState = UPGRADE_STATE.VALIDATE_UPGRADE;
                     }
                 }
