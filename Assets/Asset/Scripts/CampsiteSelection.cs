@@ -312,7 +312,7 @@ public class CampsiteSelection : MonoBehaviour
             }
             else if (player1.upgradeState == UPGRADE_STATE.VALIDATE_UPGRADE)
             {
-                //csm.playerList[0].GetComponent<PlayerVariableManager>().skillList[player1.skillIndex].GetComponent<SkillDetail>().skillExecutionList.Add(Instantiate(upgradeObject));
+                csm.playerList[0].GetComponent<PlayerVariableManager>().skillList[player1.skillIndex].GetComponent<SkillDetail>().skillExecutionList.Add(Instantiate(upgradeObject));
                 player1.upgraded = true;
                 showUI.player1.state = CAMPSITE_STATE.SELECTION;
             }
