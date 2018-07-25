@@ -7,6 +7,7 @@ public class WolfHowl : SkillEffect
     public GameObject wolfPrefab;
     private SceneManager sceneManager;
     private Enemy_Spawn enemySpawn;
+    public int spawnCount;
     private void Awake()
     {
         AssignEnemyUser();
@@ -16,6 +17,10 @@ public class WolfHowl : SkillEffect
 
     public override void Execute(GameObject targetedEnemy)
     {
+        if(spawnCount<=0)
+        {
+            return;
+        }
         sceneManager = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManager>();
         enemySpawn = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<Enemy_Spawn>();
         //Summon Wolf
@@ -29,6 +34,7 @@ public class WolfHowl : SkillEffect
                     sceneManager.enemyList[i].GetComponent<EnemyStats>().index = 1;
                     sceneManager.playerList[0].GetComponent<PlayerVariableManager>().isTargetLockedIn = false;
                     sceneManager.playerList[1].GetComponent<PlayerVariableManager>().isTargetLockedIn = false;
+                    spawnCount--;
                     return;
                 }
             }
