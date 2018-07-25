@@ -21,15 +21,15 @@ public class SettingsMenu : MonoBehaviour
 
     public void setMasterVolume(float volume)
     {
-        audioMixer.SetFloat("MasterVolume", volume);
+        audioMixer.SetFloat("MasterVolume", AudioManager.Instance.VolumeTodB(volume));
     }
     public void setMusicVolume(float volume)
     {
-        audioMixer.SetFloat("MusicVolume", volume);
+        audioMixer.SetFloat("MusicVolume", AudioManager.Instance.VolumeTodB(volume));
     }
     public void setEffectVolume(float volume)
     {
-        audioMixer.SetFloat("EffectVolume", volume);
+        audioMixer.SetFloat("EffectVolume", AudioManager.Instance.VolumeTodB(volume));
     }
     public void setQuality(int quality)
     {
@@ -53,15 +53,16 @@ public class SettingsMenu : MonoBehaviour
     public void Awake()
     {
         fullscreen.isOn = Screen.fullScreen;
-        audioMixer.SetFloat("MasterVolume", -30f);
-        audioMixer.SetFloat("MusicVolume", -30f);
-        audioMixer.SetFloat("EffectVolume", -30f);
+        audioMixer.SetFloat("MasterVolume", -5f);
+        audioMixer.SetFloat("MusicVolume", -5f);
+        audioMixer.SetFloat("EffectVolume", -5f);
         audioMixer.GetFloat("MasterVolume", out outMasterVolume);
-        masterSlider.value = outMasterVolume;                
+        masterSlider.value = AudioManager.Instance.dBToVolume(outMasterVolume);
+        Debug.Log(AudioManager.Instance.dBToVolume(outMasterVolume));
         audioMixer.GetFloat("MusicVolume", out outMusicVolume);
-        musicSlider.value = outMusicVolume;
+        musicSlider.value = AudioManager.Instance.dBToVolume(outMusicVolume);
         audioMixer.GetFloat("EffectVolume", out outEffectVolume);
-        effectSlider.value = outEffectVolume;
+        effectSlider.value = AudioManager.Instance.dBToVolume(outEffectVolume);
     }
 
     private void Update()

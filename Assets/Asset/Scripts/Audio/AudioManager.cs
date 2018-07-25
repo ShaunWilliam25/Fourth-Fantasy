@@ -11,18 +11,16 @@ public class AudioManager : MonoBehaviour {
     public static AudioManager instance;
     public List<Sound> soundPlaying;
 
+    public static AudioManager Instance
+    {
+        get{
+            return instance;
+        }
+        
+    }
+
     private void Awake()
     {
-        /*if(instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-            return;
-        }*/
-
         if(instance!=null && instance != this.gameObject)
         {
             Debug.Log("Time to destory");
@@ -74,6 +72,34 @@ public class AudioManager : MonoBehaviour {
             }
         }
     }
+
+    public float VolumeTodB(float volume)
+    {
+        float db;
+
+        if (volume != 0)
+            db = 20.0f * Mathf.Log10(volume);
+        else
+            db = -144.0f;
+
+        return db;
+    }
+
+    public float dBToVolume(float dB)
+    {
+        float volume;
+
+        volume = Mathf.Pow(10.0f, dB / 20.0f);
+
+        return volume;
+    }
+    
+    /*private float DecibelToLinear(float dB)
+    {
+        float linear = Mathf.Pow(10.0f, dB / 20.0f);
+
+        return linear;
+    }*/
 
     //! Play sound from other script by using-> FindObjectofType("AudioManager").Play(soundName);
 }

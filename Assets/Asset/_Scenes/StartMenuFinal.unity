@@ -332,8 +332,8 @@ MonoBehaviour:
   m_FillRect: {fileID: 589455941}
   m_HandleRect: {fileID: 264739126}
   m_Direction: 0
-  m_MinValue: -60
-  m_MaxValue: 0
+  m_MinValue: 0
+  m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -855,9 +855,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventSystem: {fileID: 1510694176}
-  selectedImage: {fileID: 21300000, guid: 53e50f5d77b8aa749a65ff3fd613e499, type: 3}
+  selectedImage: {fileID: 0}
   defaultImage: {fileID: 21300000, guid: dd956573ad562a448a91a9e6462f810a, type: 3}
-  chosenImage: {fileID: 0}
+  chosenImage: {fileID: 21300000, guid: 53e50f5d77b8aa749a65ff3fd613e499, type: 3}
+  timer: 0
 --- !u!114 &268795167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1255,9 +1256,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventSystem: {fileID: 1510694176}
-  selectedImage: {fileID: 21300000, guid: 2f694b5c02df5b24c895fbf4e0394273, type: 3}
+  selectedImage: {fileID: 0}
   defaultImage: {fileID: 21300000, guid: d2ffbd27c273e614b97e57c5dddfdbcc, type: 3}
-  chosenImage: {fileID: 0}
+  chosenImage: {fileID: 21300000, guid: 2f694b5c02df5b24c895fbf4e0394273, type: 3}
+  timer: 0
 --- !u!114 &373896235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1678,9 +1680,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventSystem: {fileID: 1510694176}
-  selectedImage: {fileID: 21300000, guid: 15e62725b12a5ff46b2b139a97d2bd61, type: 3}
+  selectedImage: {fileID: 0}
   defaultImage: {fileID: 21300000, guid: be5fa4cb33a012e449de2866f7f471f1, type: 3}
-  chosenImage: {fileID: 0}
+  chosenImage: {fileID: 21300000, guid: 15e62725b12a5ff46b2b139a97d2bd61, type: 3}
+  timer: 0
 --- !u!114 &536031286
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2803,8 +2806,8 @@ MonoBehaviour:
   m_FillRect: {fileID: 828154601}
   m_HandleRect: {fileID: 762953771}
   m_Direction: 0
-  m_MinValue: -60
-  m_MaxValue: 0
+  m_MinValue: 0
+  m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -3538,9 +3541,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventSystem: {fileID: 1510694176}
-  selectedImage: {fileID: 21300000, guid: 078133642bda24d46841c777255d6059, type: 3}
+  selectedImage: {fileID: 0}
   defaultImage: {fileID: 21300000, guid: 733aafb72b9b2b641add6329709298eb, type: 3}
-  chosenImage: {fileID: 0}
+  chosenImage: {fileID: 21300000, guid: 078133642bda24d46841c777255d6059, type: 3}
+  timer: 0
 --- !u!114 &1404668769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4135,8 +4139,8 @@ MonoBehaviour:
   m_FillRect: {fileID: 354700141}
   m_HandleRect: {fileID: 607298654}
   m_Direction: 0
-  m_MinValue: -60
-  m_MaxValue: 0
+  m_MinValue: 0
+  m_MaxValue: 1
   m_WholeNumbers: 0
   m_Value: 0
   m_OnValueChanged:
@@ -4442,9 +4446,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventSystem: {fileID: 1510694176}
-  selectedImage: {fileID: 21300000, guid: 49b9cd073bee4414985daf63ca69a124, type: 3}
+  selectedImage: {fileID: 0}
   defaultImage: {fileID: 21300000, guid: 656c7c3c84fd72046955ef71d0a70ace, type: 3}
-  chosenImage: {fileID: 0}
+  chosenImage: {fileID: 21300000, guid: 49b9cd073bee4414985daf63ca69a124, type: 3}
+  timer: 0
 --- !u!114 &1936010372
 MonoBehaviour:
   m_ObjectHideFlags: 0
