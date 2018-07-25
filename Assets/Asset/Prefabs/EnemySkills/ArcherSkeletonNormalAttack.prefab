@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4875740496218208}
   - component: {fileID: 114278432885581322}
   m_Layer: 0
-  m_Name: ArcherSkeletonTakeAim
+  m_Name: ArcherSkeletonNormalAttack
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

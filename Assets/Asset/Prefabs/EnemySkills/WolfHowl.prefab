@@ -61,3 +61,4 @@ MonoBehaviour:
   damage: 0
   numOfTarget: 0
   audioManager: {fileID: 0}
+  wolfPrefab: {fileID: 1393198165434804, guid: 6f8df232b4d86694eafe9bd5f248f995, type: 2}

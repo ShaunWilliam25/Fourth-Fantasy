@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class WolfHowl : SkillEffect
 {
-    public SceneManager sceneManager;
-    public Enemy_Spawn enemySpawn;
+    public GameObject wolfPrefab;
+    private SceneManager sceneManager;
+    private Enemy_Spawn enemySpawn;
     private void Awake()
     {
         AssignEnemyUser();
@@ -24,7 +25,7 @@ public class WolfHowl : SkillEffect
             {
                 if(enemySpawn.enemySpawnPoints[i].childCount<=0)
                 {
-                    sceneManager.enemyList.Add(Instantiate(enemySpawn.allEnemyList[enemySpawn.enemyIndexStage[0] - 1], new Vector2(enemySpawn.enemySpawnPoints[i].position.x, enemySpawn.enemySpawnPoints[i].position.y), Quaternion.identity, enemySpawn.enemySpawnPoints[i]));
+                    sceneManager.enemyList.Add(Instantiate(wolfPrefab, new Vector2(enemySpawn.enemySpawnPoints[i].position.x, enemySpawn.enemySpawnPoints[i].position.y), Quaternion.identity, enemySpawn.enemySpawnPoints[i]));
                     sceneManager.enemyList[i].GetComponent<EnemyStats>().index = 1;
                     sceneManager.playerList[0].GetComponent<PlayerVariableManager>().isTargetLockedIn = false;
                     sceneManager.playerList[1].GetComponent<PlayerVariableManager>().isTargetLockedIn = false;
