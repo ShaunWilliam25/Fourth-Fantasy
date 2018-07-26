@@ -482,8 +482,8 @@ MonoBehaviour:
   baseAccuracy: 80
   statusResistance: []
   baseStatusResistance: []
-  health: 300
-  baseHealth: 600
+  health: 1
+  baseHealth: 1
   speed: 10
   baseSpeed: 40
   evasion: 10
