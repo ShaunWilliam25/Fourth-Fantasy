@@ -16,7 +16,8 @@ public class CampsiteSelection : MonoBehaviour
     public float timeNeeded = 1;
     public float p1Hold, p2Hold;
     public int p1Highlight = 0, p2Highlight = 0;
-    public GameObject upgradeObject;
+    private GameObject upgradeObject = new GameObject();
+    public SkillUpgrade skillUpgrade;
     
 
     void Start()
@@ -260,6 +261,7 @@ public class CampsiteSelection : MonoBehaviour
                         p1Highlight = 0;
                     }
                     player1.highlighted.transform.localPosition = showSkill.player[0].skillImage[p1Highlight].transform.localPosition;
+                    showUI.player1.popUp.transform.localPosition = new Vector3(showSkill.player[0].skillImage[p1Highlight].transform.localPosition.x + 150, showSkill.player[0].skillImage[p1Highlight].transform.localPosition.y + 110, showSkill.player[0].skillImage[p1Highlight].transform.localPosition.z);
                     player1.detail.GetComponent<Text>().text = csm.playerList[0].GetComponent<PlayerVariableManager>().skillList[p1Highlight].GetComponent<SkillDetail>().skillDescription;
                 }
 
@@ -292,6 +294,7 @@ public class CampsiteSelection : MonoBehaviour
                         p1Highlight = 0;
                     }
                     player1.highlighted.transform.localPosition = upgrade3[p1Highlight].transform.localPosition;
+                    showUI.player1.popUp.transform.localPosition = new Vector3(upgrade3[p1Highlight].transform.localPosition.x + 150, upgrade3[p1Highlight].transform.localPosition.y - 110, showSkill.player[0].skillImage[p1Highlight].transform.localPosition.z);
                 }
 
                 if (Input.GetKey("a"))
@@ -302,6 +305,18 @@ public class CampsiteSelection : MonoBehaviour
                         p1Hold = 0;
                         player1.selectedUpgrade.GetComponent<Image>().sprite = upgrade3[p1Highlight].sprite;
                         player1.upgradeIndex = p1Highlight;
+                        switch (player1.upgradeIndex)
+                        {
+                            case 0:
+                                upgradeObject = skillUpgrade.randomAttack();
+                                break;
+                            case 1:
+                                upgradeObject = skillUpgrade.randomHeal();
+                                break;
+                            case 2:
+                                upgradeObject = skillUpgrade.randomSupport();
+                                break;
+                        }
                         player1.upgradeState = UPGRADE_STATE.VALIDATE_UPGRADE;
                     }
                 }
@@ -312,7 +327,11 @@ public class CampsiteSelection : MonoBehaviour
             }
             else if (player1.upgradeState == UPGRADE_STATE.VALIDATE_UPGRADE)
             {
+<<<<<<< HEAD
                 csm.playerList[0].GetComponent<PlayerVariableManager>().skillList[player1.skillIndex].GetComponent<SkillDetail>().skillExecutionList.Add(Instantiate(upgradeObject));
+=======
+                csm.playerList[0].GetComponent<PlayerVariableManager>().skillHolder[player1.skillIndex].GetComponent<SkillDetail>().skillExecutionHolder.Add(Instantiate(upgradeObject));
+>>>>>>> Shengwei
                 player1.upgraded = true;
                 showUI.player1.state = CAMPSITE_STATE.SELECTION;
             }

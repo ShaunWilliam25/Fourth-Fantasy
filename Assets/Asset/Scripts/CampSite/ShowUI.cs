@@ -161,7 +161,9 @@ public struct CampsiteUIComponent
     public GameObject checkPg2;
     public GameObject checkPg3;
     public GameObject checkPg4;
+    public GameObject popUp;
     public int page;
+    
     public CAMPSITE_STATE state;
 }
 
