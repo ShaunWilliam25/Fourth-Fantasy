@@ -27,15 +27,19 @@ public class CriesOfTheDemon : SkillEffect
 
     public override void Execute(GameObject targetedEnemy)
     {
-        damage = (int)(damage * DamageMultiplier());
+        int totalDamage = (int)(damage * DamageMultiplier());
         for(int i=0;i<enemyList.Count;i++)
         {
             Debug.Log(enemyList.Count);
-            enemyList[i].GetComponent<EnemyTakeDamage>().EnemyDamage(damage);
-            for(int j=0;j<status.Count;j++)
+            enemyList[i].GetComponent<EnemyTakeDamage>().EnemyDamage(totalDamage);
+            if(enemyList[i].GetComponent<EnemyStats>().immune)
             {
-                enemyList[i].GetComponent<EnemyVariableManager>().statusList.Add(Instantiate(status[j]));
+                for (int j = 0; j < status.Count; j++)
+                {
+                    enemyList[i].GetComponent<EnemyVariableManager>().statusList.Add(Instantiate(status[j]));
+                }
             }
+            playerArtifact.ArtifactAttackEffect(enemyList[i]);
         }
         audioManager.PlaySound("ExiledDemonAttackSound");
 

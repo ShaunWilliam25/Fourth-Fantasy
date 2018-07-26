@@ -3,7 +3,20 @@ guid: 24acf26609459d44ebbd26b9437d3c8b
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - heal1: {fileID: 1685370045834442, guid: b80f89ac555d08b4488d6af8bf59005f, type: 2}
+  - heal2: {fileID: 1626765588393616, guid: 282ca9d3a04833f488c6f1da2c95df44, type: 2}
+  - heal3: {fileID: 1671794406484486, guid: 1a5378771de23334f9e17e7f0046b24d, type: 2}
+  - heal4: {fileID: 1183185226428632, guid: e5a5e40ebf347744fa8dc87144f574a2, type: 2}
+  - damage1: {fileID: 1924306877251198, guid: 618f1d983149e2d4cb7619aebb1361f6, type: 2}
+  - damage2: {fileID: 1346989145233160, guid: 1d4ae319c2464fc4a9d4cc04783f55fe, type: 2}
+  - damage3: {fileID: 1058896445819656, guid: 25f4e56709833c04abb80cdd647a1d9d, type: 2}
+  - damage4: {fileID: 1864324413459256, guid: 54a3b1498262a1a4985b001cc7fc6cdc, type: 2}
+  - support1: {fileID: 1758179376455574, guid: 1fbd05c242e21164e989720a995d0995, type: 2}
+  - support2: {fileID: 1758179376455574, guid: 1fbd05c242e21164e989720a995d0995, type: 2}
+  - support3: {fileID: 1855249148797688, guid: 7ed83f2a579a85945a4fa75e6ce0e57f, type: 2}
+  - support4: {fileID: 1506869758769294, guid: feb7be5aedca0124c801df3b351216c6, type: 2}
+  - support5: {fileID: 1409279950644994, guid: f8e3ac4f7e9825b44b64d1169e3c1da7, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

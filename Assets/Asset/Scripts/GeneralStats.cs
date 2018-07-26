@@ -28,6 +28,8 @@ public class GeneralStats : MonoBehaviour {
     public float baseEvasion;
     public float timeNeeded;
     public float actionTimer;
+    public bool immune = false;
+    public bool silence = false;
     public new string name;
 
     //public List<StatusEffect> statusEffectList;

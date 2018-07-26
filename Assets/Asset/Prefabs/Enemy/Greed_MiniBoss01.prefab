@@ -310,6 +310,7 @@ MonoBehaviour:
   enemyList: []
   UltiUsed: 0
   canUseUlti: 0
+  skillsPrefab: []
   skillList: []
   skillPercentageUpperLimit: 
   skillToUse: {fileID: 0}
@@ -357,6 +358,7 @@ MonoBehaviour:
   enemyList: []
   UltiUsed: 0
   canUseUlti: 0
+  skillsPrefab: []
   skillList: []
   skillPercentageUpperLimit: 
   skillToUse: {fileID: 0}
@@ -445,6 +447,7 @@ MonoBehaviour:
   enemyList: []
   UltiUsed: 0
   canUseUlti: 0
+  skillsPrefab: []
   skillList: []
   skillPercentageUpperLimit: 
   skillToUse: {fileID: 0}
@@ -479,14 +482,21 @@ MonoBehaviour:
   baseAccuracy: 80
   statusResistance: []
   baseStatusResistance: []
+<<<<<<< HEAD
   health: 600
   baseHealth: 600
+=======
+  health: 1
+  baseHealth: 1
+>>>>>>> master
   speed: 10
   baseSpeed: 40
   evasion: 10
   baseEvasion: 10
   timeNeeded: 0
   actionTimer: 0
+  immune: 0
+  silence: 0
   name: 
   index: 0
   position: 0
@@ -530,6 +540,7 @@ MonoBehaviour:
   enemyList: []
   UltiUsed: 0
   canUseUlti: 0
+  skillsPrefab: []
   skillList: []
   skillPercentageUpperLimit: 
   skillToUse: {fileID: 0}
@@ -537,6 +548,7 @@ MonoBehaviour:
   battlelogScript: {fileID: 0}
   audioManager: {fileID: 0}
   tutorial: {fileID: 0}
+  chance: 4b0000000a0000000f000000
 --- !u!114 &114526121730501234
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -579,6 +591,7 @@ MonoBehaviour:
   enemyList: []
   UltiUsed: 0
   canUseUlti: 0
+  skillsPrefab: []
   skillList: []
   skillPercentageUpperLimit: 
   skillToUse: {fileID: 0}
@@ -710,6 +723,10 @@ MonoBehaviour:
   enemyList: []
   UltiUsed: 0
   canUseUlti: 0
+  skillsPrefab:
+  - {fileID: 1413974324339170, guid: 8e4c4a64713db3d48908fe8b6271d71d, type: 2}
+  - {fileID: 1472787431780924, guid: eddb405411fb6f0438105de2b688f5b1, type: 2}
+  - {fileID: 1782817667263134, guid: dc137ed965155e14581e516af51abceb, type: 2}
   skillList: []
   skillPercentageUpperLimit: 
   skillToUse: {fileID: 0}
@@ -756,6 +773,7 @@ MonoBehaviour:
   enemyList: []
   UltiUsed: 0
   canUseUlti: 0
+  skillsPrefab: []
   skillList: []
   skillPercentageUpperLimit: 
   skillToUse: {fileID: 0}

@@ -4,10 +4,18 @@ using UnityEngine;
 
 public class EnemyChooseSkill : EnemyVariableManager {
     public TutorialAppear tutorial;
+    public List<int> chance;
     // Use this for initialization
     void Start()
     {
         tutorial = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<TutorialAppear>();
+        //Set user of skill to enemy(Didn't use same code as player)
+        
+        for(int i=0;i<GetComponent<EnemyVariableManager>().skillList.Count;i++)
+        {
+            GetComponent<EnemyVariableManager>().skillList[i].GetComponent<SkillEffect>().user = this.gameObject;
+        }
+
     }
 
     // Update is called once per frame
@@ -29,8 +37,8 @@ public class EnemyChooseSkill : EnemyVariableManager {
 
                 this.GetComponent<EnemyVariableManager>().Target.transform.GetChild(0).GetComponent<SpriteRenderer>().color = Color.red;
                 Invoke("ResetColor", 0.2f);
-                float tempDmg = this.GetComponent<EnemyVariableManager>().enemyStats.strength - (this.GetComponent<EnemyVariableManager>().Target.GetComponent<PlayerStats>().defense * 0.8f);
-                this.GetComponent<EnemyVariableManager>().Target.GetComponent<PlayerStats>().health -= tempDmg;
+                // Random Skill Choosing
+                RandomSkill();
                 this.GetComponent<EnemyVariableManager>().audioManager.PlaySound("EnemyAttackSound");             
                 this.GetComponent<EnemyVariableManager>().battlelogScript.AddEvent(this.name + " attacks " + this.GetComponent<EnemyVariableManager>().Target.name);
                 // this.GetComponent<EnemyVariableManager>().isSkillUsed = false;
@@ -95,38 +103,60 @@ public class EnemyChooseSkill : EnemyVariableManager {
         this.GetComponent<EnemyVariableManager>().loAggroTarget.transform.GetChild(0).GetComponent<SpriteRenderer>().color = Color.white;
     }
 
-    public void skillRandomizer()
+    public void RandomSkill()
     {
-        randNo = Random.Range(1, 101);
+        skillList = GetComponent<EnemyVariableManager>().skillList;
+        int rand = Random.Range(0, 101);
+        switch(skillList.Count)
+        {
+            //enemy have 2 skills
+            case 2:
+                if(rand<=chance[0])
+                {
+                    skillList[0].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
+                }
+                else if(chance[0]<rand && rand<=(chance[0]+chance[1]))
+                {
+                    skillList[1].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
+                }
+                break;
 
-        /*if (randNo <= 50)
-        {
-            Debug.Log("use skill 1");
-            float tempDmg = this.GetComponent<EnemyStats>().strength - (this.GetComponent<EnemyChooseTarget>().Target.GetComponent<PlayerStats>().defense * 0.8f);
-            this.GetComponent<EnemyChooseTarget>().Target.GetComponent<PlayerStats>().health -= tempDmg;
-        }
-        else if (randNo > 50 && randNo <= 80)
-        {
-            Debug.Log("use skill 2");
-            float tempDmg = (this.GetComponent<EnemyStats>().strength * 1.5f) - (this.GetComponent<EnemyChooseTarget>().Target.GetComponent<PlayerStats>().defense * 0.7f);
-            this.GetComponent<EnemyChooseTarget>().hiAggroTarget.GetComponent<PlayerStats>().health -= tempDmg;
-            this.GetComponent<EnemyChooseTarget>().loAggroTarget.GetComponent<PlayerStats>().health -= tempDmg;
-        }
-        else if (randNo > 80 && randNo <= 90)
-        {
-            Debug.Log("use skill 3");
-            float tempDmg = (this.GetComponent<EnemyStats>().magic * 0.7f) - (this.GetComponent<EnemyChooseTarget>().Target.GetComponent<PlayerStats>().spirit * 0.6f);
-            this.GetComponent<EnemyChooseTarget>().Target.GetComponent<PlayerStats>().health -= tempDmg;
-        }
-        else if (randNo > 90 && randNo <= 100)
-        {
-            Debug.Log("use skill 4");
-            float tempDmg = (this.GetComponent<EnemyStats>().magic * 2.5f) - (this.GetComponent<EnemyChooseTarget>().Target.GetComponent<PlayerStats>().spirit * 0.7f);
-            this.GetComponent<EnemyChooseTarget>().hiAggroTarget.GetComponent<PlayerStats>().health -= tempDmg;
-            this.GetComponent<EnemyChooseTarget>().loAggroTarget.GetComponent<PlayerStats>().health -= tempDmg;
-        }*/
+            // enemy have 3 skills
+            case 3:
+                if (rand <= chance[0])
+                {
+                    skillList[0].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
+                }
+                else if (chance[0] < rand && rand <= (chance[0] + chance[1]))
+                {
+                    skillList[1].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
+                }
+                else if ((chance[0]+chance[1]) < rand && rand <= (chance[0] + chance[1] + chance[2]))
+                {
+                    skillList[2].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
+                }
+                break;
 
-        this.GetComponent<EnemyChooseTarget>().isSkillUsed = true;
+            //enemy have 4 skills
+            case 4:
+                if (rand <= chance[0])
+                {
+                    skillList[0].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
+                }
+                else if (chance[0] < rand && rand <= (chance[0] + chance[1]))
+                {
+                    skillList[1].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
+                }
+                else if ((chance[0] + chance[1]) < rand && rand <= (chance[0] + chance[1] + chance[2]))
+                {
+                    skillList[2].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
+                }
+                else if ((chance[0] + chance[1] + chance[2]) < rand && rand <= (chance[0] + chance[1] + chance[2] + chance[3]))
+                {
+                    skillList[3].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
+                }
+                break;
+        }
     }
 
     void TriggerBurn()
