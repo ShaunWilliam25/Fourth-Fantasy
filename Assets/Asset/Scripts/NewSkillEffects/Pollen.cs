@@ -29,11 +29,14 @@ public class Pollen : SkillEffect
     {
         for (int i = 0; i < enemyList.Count; i++)
         {
-           for(int j=0;j<status.Count;j++)
-            {
-                enemyList[i].GetComponent<EnemyVariableManager>().statusList.Add(Instantiate(status[j]));
-            }
-           
+           if(!enemyList[i].GetComponent<EnemyStats>().immune)
+           {
+                for (int j = 0; j < status.Count; j++)
+                {
+                    enemyList[i].GetComponent<EnemyVariableManager>().statusList.Add(Instantiate(status[j]));
+                }
+           }
+            playerArtifact.ArtifactAttackEffect(enemyList[i]);
         }
         audioManager.PlaySound("TimePriestressAttackSound");
     }

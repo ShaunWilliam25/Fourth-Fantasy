@@ -33,8 +33,30 @@ public class PlayerScrollSkill : PlayerVariableManager {
             this.GetComponent<PlayerVariableManager>().skillHolder[i].transform.position = new Vector2(this.transform.GetChild(1).transform.position.x - this.GetComponent<PlayerVariableManager>().offset + (i*0.62f) , this.transform.GetChild(1).transform.position.y);
         }
 
-        if(Input.GetButtonUp(this.GetComponent<PlayerVariableManager>().playerButton))
+        if (GetComponent<PlayerStats>().silence)
         {
+            if (this.GetComponent<PlayerVariableManager>().skillHolder[2].GetComponent<SkillDetail>().skillName == "Normal Attack")
+            {
+                return;
+            }
+            else
+            {
+                do
+                {
+                    this.GetComponent<PlayerVariableManager>().tempSkill = this.GetComponent<PlayerVariableManager>().skillHolder[4];
+                    for (int i = 0; i < this.GetComponent<PlayerVariableManager>().skillHolder.Count - 1; i++)
+                    {
+                        this.GetComponent<PlayerVariableManager>().skillHolder[this.GetComponent<PlayerVariableManager>().skillHolder.Count - 1 - i] = this.GetComponent<PlayerVariableManager>().skillHolder[this.GetComponent<PlayerVariableManager>().skillHolder.Count - 1 - i - 1];
+                    }
+                    this.GetComponent<PlayerVariableManager>().skillHolder[0] = this.GetComponent<PlayerVariableManager>().tempSkill;
+                } while (this.GetComponent<PlayerVariableManager>().skillHolder[2].GetComponent<SkillDetail>().skillName != "Normal Attack");
+                return;
+            }
+        }
+
+        if (Input.GetButtonUp(this.GetComponent<PlayerVariableManager>().playerButton))
+        {
+            
             this.GetComponent<PlayerVariableManager>().tempSkill = this.GetComponent<PlayerVariableManager>().skillHolder[4];
             for(int i=0;i< this.GetComponent<PlayerVariableManager>().skillHolder.Count - 1;i++)
             {

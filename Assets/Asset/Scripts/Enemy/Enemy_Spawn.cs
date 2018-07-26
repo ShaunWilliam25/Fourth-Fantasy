@@ -37,6 +37,14 @@ public class Enemy_Spawn : MonoBehaviour {
                 sceneManager.enemyList[i].GetComponent<EnemyStats>().index = i;
             }
         }
+
+        for(int j=0;j<sceneManager.enemyList.Count;j++)
+        {
+            for (int i = 0; i < sceneManager.enemyList[j].GetComponent<EnemyVariableManager>().skillsPrefab.Count; i++)
+            {
+                sceneManager.enemyList[j].GetComponent<EnemyVariableManager>().skillList.Add(Instantiate(sceneManager.enemyList[j].GetComponent<EnemyVariableManager>().skillsPrefab[i],sceneManager.enemyList[j].transform));
+            }
+        }
     }
 
     // Use this for initialization
