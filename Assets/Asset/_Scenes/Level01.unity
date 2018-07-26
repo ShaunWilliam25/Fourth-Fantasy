@@ -1108,6 +1108,7 @@ MonoBehaviour:
   selectedImage: {fileID: 21300000, guid: 51c8b1402f30e1246ba3f565f3d3ad95, type: 3}
   defaultImage: {fileID: 21300000, guid: f2bd2306b0f1bd142b9f626dd22116f5, type: 3}
   chosenImage: {fileID: 21300000, guid: 911de2ad2e0c99b4cb8b346e7c708505, type: 3}
+  timer: 0
 --- !u!1 &446698660
 GameObject:
   m_ObjectHideFlags: 0
@@ -2769,6 +2770,7 @@ GameObject:
   - component: {fileID: 1020202954}
   - component: {fileID: 1020202953}
   - component: {fileID: 1020202952}
+  - component: {fileID: 1020202956}
   m_Layer: 0
   m_Name: SceneManager
   m_TagString: SceneManager
@@ -2845,7 +2847,7 @@ MonoBehaviour:
   nextScene: 0
   loseTimer: 0
   tutorial: {fileID: 0}
-  needGreedManager: {fileID: 0}
+  needGreedManager: {fileID: 1306570668}
 --- !u!4 &1020202955
 Transform:
   m_ObjectHideFlags: 0
@@ -2859,6 +2861,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1020202956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1020202951}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fa9cf3d9f93da543a3d5470f3769a2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  normalArtifact:
+  - name: 
+    items: {fileID: 1330632288209666, guid: 016ea0bf0d5e07946866fbf9029fe766, type: 2}
+  - name: 
+    items: {fileID: 1284229566955920, guid: 016ea0bf0d5e07946866fbf9029fe766, type: 2}
+  - name: 
+    items: {fileID: 1786564179284946, guid: 016ea0bf0d5e07946866fbf9029fe766, type: 2}
+  - name: 
+    items: {fileID: 1631527831301122, guid: 016ea0bf0d5e07946866fbf9029fe766, type: 2}
+  rareArtifact: []
+  veryRareArtifact: []
+  normalRarity: 100
+  rareRarity: 0
+  veryRareRarity: 0
+  ownedArtifact: {fileID: 0}
+  ownedArtifactList: []
 --- !u!1 &1104099291
 GameObject:
   m_ObjectHideFlags: 0
@@ -3796,9 +3825,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1306570672}
-  - component: {fileID: 1306570671}
   - component: {fileID: 1306570670}
   - component: {fileID: 1306570669}
+  - component: {fileID: 1306570671}
   m_Layer: 0
   m_Name: needGreedManager
   m_TagString: Untagged
@@ -3842,7 +3871,7 @@ MonoBehaviour:
   playerList: []
   Player1OwnerText: {fileID: 1326638811}
   Player2OwnerText: {fileID: 800690286}
-  scenemanager: {fileID: 0}
+  scenemanager: {fileID: 1020202951}
   artifactAdded: 0
   canvas: {fileID: 619298169}
   miniBoss: 0
@@ -3856,13 +3885,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 1306570668}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 98f4fd5d4bb2b5c4e9696efeb9b4d650, type: 3}
+  m_Script: {fileID: 11500000, guid: d844e948af600b24eb1fee7e6cea238b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   p1Select: {fileID: 290913937}
   p1Need: {fileID: 1792206976}
   p1Greed: {fileID: 2039826627}
-  p2Select: {fileID: 748895680}
+  p2Select: {fileID: 290913937}
   p2Need: {fileID: 1949921926}
   P2Greed: {fileID: 2103192817}
   greed1: 0
@@ -4124,6 +4153,7 @@ MonoBehaviour:
   selectedImage: {fileID: 21300000, guid: 51c8b1402f30e1246ba3f565f3d3ad95, type: 3}
   defaultImage: {fileID: 21300000, guid: f2bd2306b0f1bd142b9f626dd22116f5, type: 3}
   chosenImage: {fileID: 21300000, guid: 911de2ad2e0c99b4cb8b346e7c708505, type: 3}
+  timer: 0
 --- !u!114 &1446782097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4434,6 +4464,7 @@ MonoBehaviour:
   selectedImage: {fileID: 21300000, guid: 51c8b1402f30e1246ba3f565f3d3ad95, type: 3}
   defaultImage: {fileID: 21300000, guid: f2bd2306b0f1bd142b9f626dd22116f5, type: 3}
   chosenImage: {fileID: 21300000, guid: 911de2ad2e0c99b4cb8b346e7c708505, type: 3}
+  timer: 0
 --- !u!114 &1526513085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5839,6 +5870,7 @@ MonoBehaviour:
   selectedImage: {fileID: 21300000, guid: 51c8b1402f30e1246ba3f565f3d3ad95, type: 3}
   defaultImage: {fileID: 21300000, guid: f2bd2306b0f1bd142b9f626dd22116f5, type: 3}
   chosenImage: {fileID: 21300000, guid: 911de2ad2e0c99b4cb8b346e7c708505, type: 3}
+  timer: 0
 --- !u!114 &1988490822
 MonoBehaviour:
   m_ObjectHideFlags: 0
