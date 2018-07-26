@@ -19,12 +19,12 @@ public class NeedGreedRandomizer : MonoBehaviour
 
     public void returnBoolFalse()
     {
-        this.GetComponent<ShowUI>().greed1 = false;
-        this.GetComponent<ShowUI>().need1 = false;
-        this.GetComponent<ShowUI>().greed2 = false;
-        this.GetComponent<ShowUI>().need2 = false;
-        this.GetComponent<ShowUI>().selected1 = false;
-        this.GetComponent<ShowUI>().selected2 = false;
+        this.GetComponent<needGreedShowUI>().greed1 = false;
+        this.GetComponent<needGreedShowUI>().need1 = false;
+        this.GetComponent<needGreedShowUI>().greed2 = false;
+        this.GetComponent<needGreedShowUI>().need2 = false;
+        this.GetComponent<needGreedShowUI>().selected1 = false;
+        this.GetComponent<needGreedShowUI>().selected2 = false;
         Debug.Log("return");
         //canvas.SetActive(false);
     }
@@ -46,11 +46,11 @@ public class NeedGreedRandomizer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (this.GetComponent<ShowUI>().selected1 && this.GetComponent<ShowUI>().selected2 && !artifactAdded)
+        if (this.GetComponent<needGreedShowUI>().selected1 && this.GetComponent<needGreedShowUI>().selected2 && !artifactAdded)
         {
             Debug.Log("selected");
 
-            if (this.GetComponent<ShowUI>().greed1 && this.GetComponent<ShowUI>().greed2)
+            if (this.GetComponent<needGreedShowUI>().greed1 && this.GetComponent<needGreedShowUI>().greed2)
             {
                 Debug.Log("greed");
                 if (randNum <= 50)
@@ -79,7 +79,7 @@ public class NeedGreedRandomizer : MonoBehaviour
                 }
                 returnBoolFalse();
             }
-            if (this.GetComponent<ShowUI>().need1 && this.GetComponent<ShowUI>().need2)
+            if (this.GetComponent<needGreedShowUI>().need1 && this.GetComponent<needGreedShowUI>().need2)
             {
                 Debug.Log("need");
                 if (randNum <= 50)
@@ -108,7 +108,7 @@ public class NeedGreedRandomizer : MonoBehaviour
                 }
                 returnBoolFalse();
             }
-            if (this.GetComponent<ShowUI>().greed1 && this.GetComponent<ShowUI>().need2)
+            if (this.GetComponent<needGreedShowUI>().greed1 && this.GetComponent<needGreedShowUI>().need2)
             {
                 Debug.Log("need2");
                 owner = playerList[1];
@@ -122,7 +122,7 @@ public class NeedGreedRandomizer : MonoBehaviour
                 Player2OwnerText.SetActive(true);
                 artifactAdded = true;
             }
-            if (this.GetComponent<ShowUI>().need1 && this.GetComponent<ShowUI>().greed2)
+            if (this.GetComponent<needGreedShowUI>().need1 && this.GetComponent<needGreedShowUI>().greed2)
             {
                 Debug.Log("need1");
                 owner = playerList[0];
@@ -163,8 +163,8 @@ public class NeedGreedRandomizer : MonoBehaviour
                 Debug.Log("isartiaddedd = " + artifactAdded);
                 if (Input.anyKeyDown)
                 {Debug.Log("C pressed");
-                        this.GetComponent<ShowUI>().p1State = ShowUI.CAMPSITE_STATE.SELECTION;
-                        this.GetComponent<ShowUI>().p2State = ShowUI.CAMPSITE_STATE.SELECTION;
+                        this.GetComponent<needGreedShowUI>().p1State = needGreedShowUI.CAMPSITE_STATE.SELECTION;
+                        this.GetComponent<needGreedShowUI>().p2State = needGreedShowUI.CAMPSITE_STATE.SELECTION;
                         artifactAdded = false;
                         returnBoolFalse();
                         owner = null;

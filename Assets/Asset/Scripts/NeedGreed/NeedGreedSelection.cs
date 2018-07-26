@@ -64,11 +64,11 @@ public class NeedGreedSelection : MonoBehaviour
             {
                 if (p1Need.GetComponent<Image>().color == Color.red)
                 {
-                    this.GetComponent<ShowUI>().p1State = ShowUI.CAMPSITE_STATE.GREED;
+                    this.GetComponent<needGreedShowUI>().p1State = needGreedShowUI.CAMPSITE_STATE.GREED;
                 }
                 else
                 {
-                    this.GetComponent<ShowUI>().p1State = ShowUI.CAMPSITE_STATE.NEED;
+                    this.GetComponent<needGreedShowUI>().p1State = needGreedShowUI.CAMPSITE_STATE.NEED;
                 }
             }
         }
@@ -86,11 +86,11 @@ public class NeedGreedSelection : MonoBehaviour
             {
                 if (p2Need.GetComponent<Image>().color == Color.blue)
                 {
-                    this.GetComponent<ShowUI>().p2State = ShowUI.CAMPSITE_STATE.GREED;
+                    this.GetComponent<needGreedShowUI>().p2State = needGreedShowUI.CAMPSITE_STATE.GREED;
                 }
                 else
                 {
-                    this.GetComponent<ShowUI>().p2State = ShowUI.CAMPSITE_STATE.NEED;
+                    this.GetComponent<needGreedShowUI>().p2State = needGreedShowUI.CAMPSITE_STATE.NEED;
                 }
             }
         }
