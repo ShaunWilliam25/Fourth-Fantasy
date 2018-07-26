@@ -434,7 +434,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1338220795806152}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.2, y: 0, z: 0}
   m_LocalScale: {x: 0.68502617, y: 0.68502617, z: 0.68502617}
   m_Children: []
   m_Father: {fileID: 4214884367740656}
@@ -642,6 +642,10 @@ MonoBehaviour:
   gameState: 0
   artifactsList: []
   isScroll: 0
+  skillBox: {fileID: 1338220795806152}
+  skillSelected: 0
+  boxOffset: 0.6
+  boxStartPosition: -1.2
 --- !u!114 &114115601086827854
 MonoBehaviour:
   m_ObjectHideFlags: 1
