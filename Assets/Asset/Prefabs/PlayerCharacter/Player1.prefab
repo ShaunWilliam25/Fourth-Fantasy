@@ -115,6 +115,7 @@ GameObject:
   - component: {fileID: 114858894647685826}
   - component: {fileID: 114399965372311616}
   - component: {fileID: 114453472935659996}
+  - component: {fileID: 114986209964272514}
   - component: {fileID: 114324892983312968}
   - component: {fileID: 114551724287016876}
   - component: {fileID: 114866081510403812}
@@ -1027,6 +1028,7 @@ MonoBehaviour:
   artifactsList: []
   haste: 0
   slow: 0
+  Test: {fileID: 0}
 --- !u!114 &114561400089826274
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1273,6 +1275,8 @@ MonoBehaviour:
   baseEvasion: 20
   timeNeeded: 0
   actionTimer: 0
+  immune: 0
+  silence: 0
   name: Exiled Demon
   aggro: 10
   knockedOut: 0
@@ -1456,6 +1460,18 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &114986209964272514
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1140889963708872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba820642b78d94f4aa6ab44f379d263e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  artifactStatuses: []
 --- !u!114 &114993220315628792
 MonoBehaviour:
   m_ObjectHideFlags: 1

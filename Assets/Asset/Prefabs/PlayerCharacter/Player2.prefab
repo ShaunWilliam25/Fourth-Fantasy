@@ -81,6 +81,7 @@ GameObject:
   - component: {fileID: 114315215207684882}
   - component: {fileID: 114160659302564784}
   - component: {fileID: 114556843690471612}
+  - component: {fileID: 114372064663379618}
   - component: {fileID: 114022927545195746}
   - component: {fileID: 114949227098878664}
   - component: {fileID: 114538834179643150}
@@ -811,6 +812,8 @@ MonoBehaviour:
   baseEvasion: 10
   timeNeeded: 0
   actionTimer: 0
+  immune: 0
+  silence: 0
   name: Time Priestress
   aggro: 0
   knockedOut: 0
@@ -867,6 +870,18 @@ MonoBehaviour:
   timeRequired: 2
   xOffset: 6.4
   yOffset: -1.47
+--- !u!114 &114372064663379618
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1085382439803722}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba820642b78d94f4aa6ab44f379d263e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  artifactStatuses: []
 --- !u!114 &114486409826142868
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1439,6 +1454,7 @@ MonoBehaviour:
   artifactsList: []
   haste: 0
   slow: 0
+  Test: {fileID: 0}
 --- !u!114 &114956024905355076
 MonoBehaviour:
   m_ObjectHideFlags: 1
