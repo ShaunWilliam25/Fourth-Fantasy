@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class PurpleBook : ArtifactEffect
 {
+    public void Awake()
+    {
+        this.gameObject.SetActive(false);
+    }
     public override void Artifact()
     {
         if (!isEffect)

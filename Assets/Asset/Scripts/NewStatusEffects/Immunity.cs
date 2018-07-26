@@ -34,26 +34,29 @@ public class Immunity : StatusDetail
         {
             if (userType == UserType.PLAYER)
             {
-                for (int i = GetComponent<PlayerVariableManager>().statusList.Count-1; i>= 0 ; i--)
+                for (int i = user.GetComponent<PlayerVariableManager>().statusList.Count-1; i>= 0 ; i--)
                 {
-                    if (GetComponent<PlayerVariableManager>().statusList[i].GetComponent<StatusDetail>().type == "Bad")
+                    if (user.GetComponent<PlayerVariableManager>().statusList[i].GetComponent<StatusDetail>().type == "Bad")
                     {
-                        GetComponent<PlayerVariableManager>().statusList[i].GetComponent<StatusDetail>().RemoveStatus();
-                        GetComponent<PlayerVariableManager>().statusList.Remove(GetComponent<PlayerVariableManager>().statusList[i]);
+                        user.GetComponent<PlayerVariableManager>().statusList[i].GetComponent<StatusDetail>().RemoveStatus();
+                        user.GetComponent<PlayerVariableManager>().statusList.Remove(GetComponent<PlayerVariableManager>().statusList[i]);
                     }
                 }
+                user.GetComponent<PlayerStats>().immune = true;
             }
             else if (userType == UserType.ENEMY)
             {
-                for (int i = GetComponent<EnemyVariableManager>().statusList.Count-1; i >= 0; i--)
+                for (int i = user.GetComponent<EnemyVariableManager>().statusList.Count-1; i >= 0; i--)
                 {
-                    if (GetComponent<EnemyVariableManager>().statusList[i].GetComponent<StatusDetail>().type == "Bad")
+                    if (user.GetComponent<EnemyVariableManager>().statusList[i].GetComponent<StatusDetail>().type == "Bad")
                     {
-                        GetComponent<EnemyVariableManager>().statusList[i].GetComponent<StatusDetail>().RemoveStatus();
-                        GetComponent<EnemyVariableManager>().statusList.Remove(GetComponent<PlayerVariableManager>().statusList[i]);
+                        user.GetComponent<EnemyVariableManager>().statusList[i].GetComponent<StatusDetail>().RemoveStatus();
+                        user.GetComponent<EnemyVariableManager>().statusList.Remove(GetComponent<PlayerVariableManager>().statusList[i]);
                     }
                 }
+                user.GetComponent<EnemyStats>().immune = true;
             }
+           
             effect = true;
         }
         secondDuration -= Time.deltaTime;
@@ -64,11 +67,14 @@ public class Immunity : StatusDetail
         if (userType == UserType.PLAYER)
         {
             user.GetComponent<PlayerStatusList>().statusIcon.Remove(user.GetComponent<PlayerStatusList>().statusIcon.Find(x => x == this.icon));
+            user.GetComponent<PlayerStats>().immune = false;
         }
         else if (userType == UserType.ENEMY)
         {
             user.GetComponent<EnemyStatusList>().statusIcon.Remove(user.GetComponent<EnemyStatusList>().statusIcon.Find(x => x == this.icon));
+            user.GetComponent<EnemyStats>().immune = false;
         }
+
         effect = false;
     }
 }

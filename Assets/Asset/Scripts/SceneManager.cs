@@ -14,10 +14,12 @@ public class SceneManager : MonoBehaviour {
     public int nextScene;
     public float loseTimer;
     public TutorialAppear tutorial;
+    public GameObject needGreedManager;
 
     public void Awake()
     {
         //audioManager.PlaySound("BattleSound");
+
         tutorial = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<TutorialAppear>();
         playerList[0] = GameObject.FindGameObjectWithTag("Player1");
         playerList[1] = GameObject.FindGameObjectWithTag("Player2");
@@ -43,7 +45,10 @@ public class SceneManager : MonoBehaviour {
             if(enemyList[i].GetComponent<EnemyStats>().health <= 0)
             {
                 enemyList[i].SetActive(false);
+                Destroy(enemyList[i], 1f);
                 enemyList.Remove(enemyList[i]);
+
+                this.GetComponent<ArtifactScript>().calArtifact();
             }
         }
         if(enemyList.Count <=0)
@@ -74,7 +79,8 @@ public class SceneManager : MonoBehaviour {
         {
             if (Input.anyKeyDown)
             {
-                UnityEngine.SceneManagement.SceneManager.LoadScene(nextScene);
+                //UnityEngine.SceneManagement.SceneManager.LoadScene(nextScene);
+                needGreedManager.GetComponent<NeedGreedRandomizer>().addArtifactToPlayer();
             }
         }
         if (Input.GetKeyDown("b"))
@@ -82,6 +88,7 @@ public class SceneManager : MonoBehaviour {
             for (int i = 0; i < playerList.Count; i++)
             {
                 playerList[i].GetComponent<PlayerStats>().health = 0;
+                break;
             }
         }
 

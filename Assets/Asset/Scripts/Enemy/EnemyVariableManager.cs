@@ -54,6 +54,7 @@ public class EnemyVariableManager : MonoBehaviour {
     public List<GameObject> enemyList;
     public bool UltiUsed = false;
     public bool canUseUlti = false;
+    public List<GameObject> skillsPrefab;
     public List<GameObject> skillList;
     public List<int> skillPercentageUpperLimit;
     public GameObject skillToUse;

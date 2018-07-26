@@ -27,8 +27,9 @@ public class NormalAttackTimePrietess : SkillEffect
 
     public override void Execute(GameObject targetedEnemy)
     {
-        damage = (int)(damage * DamageMultiplier());
-        targetedEnemy.GetComponent<EnemyTakeDamage>().EnemyDamage(damage);
+        int totalDamage = (int)(damage * DamageMultiplier());
+        enemyList[enemyList.Count-1].GetComponent<EnemyTakeDamage>().EnemyDamage(totalDamage);
+        playerArtifact.ArtifactAttackEffect(enemyList[enemyList.Count - 1]);
         audioManager.PlaySound("TimePriestressAttackSound");
     }
 }
