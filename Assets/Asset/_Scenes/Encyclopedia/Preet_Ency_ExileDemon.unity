@@ -413,6 +413,10 @@ MonoBehaviour:
   EncyclopediaP5: 12
   EncyclopediaP6: 13
   EncyclopediaP7: 14
+  EncyclopediaP8: 15
+  EncyclopediaP9: 16
+  EncyclopediaP10: 17
+  EncyclopediaP11: 18
   StartMenuFinal: 0
 --- !u!1 &438584446
 GameObject:
@@ -2272,6 +2276,10 @@ MonoBehaviour:
   EncyclopediaP5: 12
   EncyclopediaP6: 13
   EncyclopediaP7: 14
+  EncyclopediaP8: 15
+  EncyclopediaP9: 16
+  EncyclopediaP10: 17
+  EncyclopediaP11: 18
   StartMenuFinal: 0
 --- !u!1 &1975687332
 GameObject:
@@ -2340,14 +2348,14 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Exiled Demon \n(Debuff + Heal)\n\n\tA once celebrated adventurer, cast
-    out after attaining inhuman power. Initially they respected her, then it turned
-    to fear and rejection. She has since sought only to return to the people, to restore
-    her glory.\r\n\n\tWandering and honing her skills out in the wastelands, she grew
-    ever stronger, a cursed brand preventing her return to civilization; The only
-    human interactions she had were with other wanderers.\r\n\n\tShe now finds herself
-    free of the brand, with the civilization that cast her out now nonexistent. Yet
-    she seeks only to restore it with her power, now deprived of not only a place
+  m_Text: "Exiled Demon \n(Debuff + Heal)\nHP : 550\r\n\n\tA once celebrated adventurer,
+    cast out after attaining inhuman power. Initially they respected her, then it
+    turned to fear and rejection. She has since sought only to return to the people,
+    to restore her glory.\r\n\n\tWandering and honing her skills out in the wastelands,
+    she grew ever stronger, a cursed brand preventing her return to civilization;
+    The only human interactions she had were with other wanderers.\r\n\n\tShe now
+    finds herself free of the brand, with the civilization that cast her out now nonexistent.
+    Yet she seeks only to restore it with her power, now deprived of not only a place
     of belonging but also a goal.\r\n"
 --- !u!222 &1975687335
 CanvasRenderer:

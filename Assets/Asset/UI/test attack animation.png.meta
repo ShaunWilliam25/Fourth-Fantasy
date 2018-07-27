@@ -1,0 +1,746 @@
+fileFormatVersion: 2
+guid: f3289454f4701ab49aa31c9b1cbd5014
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: test attack animation_0
+    21300002: test attack animation_1
+    21300004: test attack animation_2
+    21300006: test attack animation_3
+    21300008: test attack animation_4
+    21300010: test attack animation_5
+    21300012: test attack animation_6
+    21300014: test attack animation_7
+    21300016: test attack animation_8
+    21300018: test attack animation_9
+    21300020: test attack animation_10
+    21300022: test attack animation_11
+    21300024: test attack animation_12
+    21300026: test attack animation_13
+    21300028: test attack animation_14
+    21300030: test attack animation_15
+    21300032: test attack animation_16
+    21300034: test attack animation_17
+    21300036: test attack animation_18
+    21300038: test attack animation_19
+    21300040: test attack animation_20
+    21300042: test attack animation_21
+    21300044: test attack animation_22
+    21300046: test attack animation_23
+    21300048: test attack animation_24
+    21300050: test attack animation_25
+    21300052: test attack animation_26
+    21300054: test attack animation_27
+    21300056: test attack animation_28
+    21300058: test attack animation_29
+    21300060: test attack animation_30
+  externalObjects: {}
+  serializedVersion: 5
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: test attack animation_0
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 7383
+        width: 488
+        height: 666
+      alignment: 9
+      pivot: {x: 0.53439504, y: 0.09213706}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5cf469dedec51b449b1801d21378bec7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test attack animation_1
+      rect:
+        serializedVersion: 2
+        x: 989
+        y: 7363
+        width: 494
+        height: 666
+      alignment: 9
+      pivot: {x: 0.5488051, y: 0.093519054}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41cf612b7e03f3e46abfe3ee18fabf78
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test attack animation_2
+      rect:
+        serializedVersion: 2
+        x: 1856
+        y: 7383
+        width: 490
+        height: 659
+      alignment: 9
+      pivot: {x: 0.5328025, y: 0.09451243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1bf8093fdbb90e42a258cba2ebdfc03
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test attack animation_3
+      rect:
+        serializedVersion: 2
+        x: 2702
+        y: 7383
+        width: 488
+        height: 659
+      alignment: 9
+      pivot: {x: 0.5370538, y: 0.103658624}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fe16cc34d7151d4b84402cf8125f1e0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test attack animation_4
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 6482
+        width: 492
+        height: 662
+      alignment: 9
+      pivot: {x: 0.52442473, y: 0.09076278}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d40edcd21d972314ea8b89a2604a7818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test attack animation_5
+      rect:
+        serializedVersion: 2
+        x: 1006
+        y: 6480
+        width: 496
+        height: 662
+      alignment: 9
+      pivot: {x: 0.5526591, y: 0.09711855}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7612c4f5c357b846a802d25523e4252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test attack animation_6
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 6483
+        width: 502
+        height: 659
+      alignment: 9
+      pivot: {x: 0.5320184, y: 0.09451243}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3790011bfc2a6af4186f75cdf3a83a85
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test attack animation_7
+      rect:
+        serializedVersion: 2
+        x: 2687
+        y: 6480
+        width: 503
+        height: 662
+      alignment: 9
+      pivot: {x: 0.539943, y: 0.09104896}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8ba27093adc70d4b994291fa49b418c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test attack animation_8
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 5584
+        width: 500
+        height: 657
+      alignment: 9
+      pivot: {x: 0.543007, y: 0.08591669}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8420afa7085723e418bbb8b282f0908d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test attack animation_9
+      rect:
+        serializedVersion: 2
+        x: 1002
+        y: 5582
+        width: 504
+        height: 659
+      alignment: 9
+      pivot: {x: 0.5426658, y: 0.09789187}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ed3ffac7db5a4d40b9c6f405704bf2c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test attack animation_10
+      rect:
+        serializedVersion: 2
+        x: 1850
+        y: 5583
+        width: 504
+        height: 659
+      alignment: 9
+      pivot: {x: 0.5373327, y: 0.09789187}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f13098bcc81447743859bc6f6bbf5a6b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test attack animation_11
+      rect:
+        serializedVersion: 2
+        x: 2698
+        y: 5584
+        width: 504
+        height: 658
+      alignment: 9
+      pivot: {x: 0.5306135, y: 0.09118838}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e08c3a58eedc8c74fa639830c39edf25
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test attack animation_12
+      rect:
+        serializedVersion: 2
+        x: 170
+        y: 4682
+        width: 536
+        height: 668
+      alignment: 9
+      pivot: {x: 0.47994083, y: 0.10462084}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 967e061c8a4783b4f9f28e7997ceaf3f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test attack animation_13
+      rect:
+        serializedVersion: 2
+        x: 1019
+        y: 4682
+        width: 575
+        height: 710
+      alignment: 9
+      pivot: {x: 0.43922937, y: 0.098432}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43bae06ad7fd3ed4287dcb729de160d2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test attack animation_14
+      rect:
+        serializedVersion: 2
+        x: 1818
+        y: 4682
+        width: 664
+        height: 660
+      alignment: 9
+      pivot: {x: 0.44737482, y: 0.09774355}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61a84fa1ef13aec41870c87801cf9b69
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test attack animation_15
+      rect:
+        serializedVersion: 2
+        x: 2590
+        y: 4682
+        width: 780
+        height: 660
+      alignment: 9
+      pivot: {x: 0.4724315, y: 0.10588897}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58cc03b8603bfa34e89c17475a31c94f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test attack animation_16
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 3783
+        width: 748
+        height: 659
+      alignment: 9
+      pivot: {x: 0.5107805, y: 0.09381335}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e976bdd1755c947bf655c8a54b701c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test attack animation_17
+      rect:
+        serializedVersion: 2
+        x: 944
+        y: 3774
+        width: 594
+        height: 668
+      alignment: 9
+      pivot: {x: 0.54072624, y: 0.10864477}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7cc3552faec090d4caf93fbe2a5ba442
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test attack animation_18
+      rect:
+        serializedVersion: 2
+        x: 1760
+        y: 3706
+        width: 624
+        height: 736
+      alignment: 9
+      pivot: {x: 0.5516913, y: 0.18990889}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33471301a46625945956af3ea4245f91
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test attack animation_19
+      rect:
+        serializedVersion: 2
+        x: 2592
+        y: 3706
+        width: 598
+        height: 775
+      alignment: 9
+      pivot: {x: 0.621362, y: 0.1907573}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 535a1e7f447c96740ba2e811e10bf310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test attack animation_20
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 2862
+        width: 572
+        height: 818
+      alignment: 9
+      pivot: {x: 0.6174797, y: 0.108437836}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f2877a2176016945b8df635df617b09
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test attack animation_21
+      rect:
+        serializedVersion: 2
+        x: 866
+        y: 2880
+        width: 624
+        height: 785
+      alignment: 9
+      pivot: {x: 0.6550733, y: 0.089027666}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c15fc289dd6b9c8469bff50b59bf29fe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test attack animation_22
+      rect:
+        serializedVersion: 2
+        x: 1786
+        y: 2862
+        width: 551
+        height: 712
+      alignment: 9
+      pivot: {x: 0.5926875, y: 0.117031485}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c0d7803e9268ef40a8171dc37ae42fb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test attack animation_23
+      rect:
+        serializedVersion: 2
+        x: 2063
+        y: 3571
+        width: 10
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e728443c2815b704b9b87465e333408c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test attack animation_24
+      rect:
+        serializedVersion: 2
+        x: 2638
+        y: 2834
+        width: 540
+        height: 708
+      alignment: 9
+      pivot: {x: 0.594576, y: 0.16325077}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 235fcd665ac846b4f870daacd4e2b48d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test attack animation_25
+      rect:
+        serializedVersion: 2
+        x: 347
+        y: 2651
+        width: 8
+        height: 10
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ce33b222da0c3c4d9b67fab467044dd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test attack animation_26
+      rect:
+        serializedVersion: 2
+        x: 974
+        y: 1982
+        width: 524
+        height: 740
+      alignment: 9
+      pivot: {x: 0.5564263, y: 0.09444151}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea152cb59471b024da60816b6fc9a08f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test attack animation_27
+      rect:
+        serializedVersion: 2
+        x: 1822
+        y: 1983
+        width: 548
+        height: 769
+      alignment: 9
+      pivot: {x: 0.5294301, y: 0.08738457}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b97eaf3b0bd72fe4e85d92882ca61bd4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test attack animation_28
+      rect:
+        serializedVersion: 2
+        x: 2678
+        y: 1984
+        width: 539
+        height: 741
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08705903}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0fb21225bfd177c4e895bc2ece6845d7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test attack animation_29
+      rect:
+        serializedVersion: 2
+        x: 126
+        y: 1982
+        width: 520
+        height: 664
+      alignment: 9
+      pivot: {x: 0.57753664, y: 0.10525108}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dffa26bc823856748bcabeee91b3f734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: test attack animation_30
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 1082
+        width: 511
+        height: 708
+      alignment: 9
+      pivot: {x: 0.5263007, y: 0.08732062}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: faa371048ad6cb743abc5ee2b8f96bab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e73f32284100e8c49810aacfac5fcc32
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

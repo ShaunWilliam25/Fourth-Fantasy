@@ -886,7 +886,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &252679031
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8872,6 +8872,10 @@ MonoBehaviour:
   EncyclopediaP5: 12
   EncyclopediaP6: 13
   EncyclopediaP7: 14
+  EncyclopediaP8: 0
+  EncyclopediaP9: 0
+  EncyclopediaP10: 0
+  EncyclopediaP11: 0
   StartMenuFinal: 0
 --- !u!1 &1411864375
 GameObject:
