@@ -8,10 +8,8 @@ public class CampsiteSelection : MonoBehaviour
 {
     ShowUI showUI;
     ShowSkill showSkill;
-    //public List<CampsiteMenu> player = new List<CampsiteMenu>(2);
-    public CampsiteManager csm;
-    public CampsiteMenu player1;
-    public CampsiteMenu player2;
+    CampsiteManager csm;
+    public CampsiteMenu player1, player2;
     public List<Image> upgrade3 = new List<Image>(3);
     public float timeNeeded = 1;
     public float p1Hold, p2Hold;
@@ -250,6 +248,7 @@ public class CampsiteSelection : MonoBehaviour
         {
             if (player1.upgradeState == UPGRADE_STATE.CHOOSE_SKILL)
             {
+                showUI.player1.popUp.SetActive(true);
                 if (Input.GetKeyUp("a"))
                 {
                     if (p1Highlight < 4)
@@ -327,6 +326,7 @@ public class CampsiteSelection : MonoBehaviour
             }
             else if (player1.upgradeState == UPGRADE_STATE.VALIDATE_UPGRADE)
             {
+                showUI.player1.popUp.SetActive(false);
                 csm.playerList[0].GetComponent<PlayerVariableManager>().skillHolder[player1.skillIndex].GetComponent<SkillDetail>().skillExecutionHolder.Add(Instantiate(upgradeObject));
                 player1.upgraded = true;
                 showUI.player1.state = CAMPSITE_STATE.SELECTION;
