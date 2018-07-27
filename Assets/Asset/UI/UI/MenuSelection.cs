@@ -9,8 +9,8 @@ public class MenuSelection : MonoBehaviour {
     public Sprite selectedImage;
     public Sprite defaultImage;
     public Sprite chosenImage;
-    float timer = 0;
-    float duration = 1;
+    public float timer = 0;
+    float duration = 2;
 	
     // Use this for initialization
 	void Start () {
@@ -22,7 +22,7 @@ public class MenuSelection : MonoBehaviour {
     {
 	    if(eventSystem.currentSelectedGameObject == this.gameObject)
         {
-            this.GetComponent<Image>().sprite = selectedImage;
+            this.GetComponent<Image>().sprite = chosenImage;
         }
         else
         {
@@ -32,7 +32,7 @@ public class MenuSelection : MonoBehaviour {
 
     public void Selection()
     {
-        this.GetComponent<Image>().sprite = selectedImage;
+        this.GetComponent<Image>().sprite = chosenImage;
     }
     public void Deselection()
     {
@@ -44,15 +44,20 @@ public class MenuSelection : MonoBehaviour {
         eventSystem.SetSelectedGameObject(this.gameObject);
     }
 
-    public void Click()
+    public void WhenClick()
     {
-        this.GetComponent<Image>().sprite = chosenImage;
-        timer += Time.deltaTime;
+        this.GetComponent<Image>().sprite = selectedImage;
+        if (this.GetComponent<Image>().sprite == selectedImage)
+        {
+            Debug.Log("CLICK");
+        }
+        
+        /*timer += Time.deltaTime;
         if(timer >= duration)
         {
             this.GetComponent<Image>().sprite = defaultImage;
-        }
-
+            timer = 0f;
+        }*/
     }
 
 }

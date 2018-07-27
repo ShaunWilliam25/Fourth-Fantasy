@@ -19,11 +19,12 @@ public class PauseScript : MonoBehaviour
     private void Start()
     {
         audioMixer.GetFloat("MasterVolume", out outMasterVolume);
-        masterSlider.value = outMasterVolume;
+        masterSlider.value = AudioManager.Instance.dBToVolume(outMasterVolume);
+        Debug.Log(AudioManager.Instance.dBToVolume(outMasterVolume));
         audioMixer.GetFloat("MusicVolume", out outMusicVolume);
-        musicSlider.value = outMusicVolume;
+        musicSlider.value = AudioManager.Instance.dBToVolume(outMusicVolume);
         audioMixer.GetFloat("EffectVolume", out outEffectVolume);
-        effectSlider.value = outEffectVolume;
+        effectSlider.value = AudioManager.Instance.dBToVolume(outEffectVolume);
     }
 
     // Update is called once per frame
@@ -73,15 +74,15 @@ public class PauseScript : MonoBehaviour
 
     public void setMasterVolume(float volume)
     {
-        audioMixer.SetFloat("MasterVolume", volume);
+        audioMixer.SetFloat("MasterVolume", AudioManager.Instance.VolumeTodB(volume));
     }
     public void setMusicVolume(float volume)
     {
-        audioMixer.SetFloat("MusicVolume", volume);
+        audioMixer.SetFloat("MusicVolume", AudioManager.Instance.VolumeTodB(volume));
     }
     public void setEffectVolume(float volume)
     {
-        audioMixer.SetFloat("EffectVolume", volume);
+        audioMixer.SetFloat("EffectVolume", AudioManager.Instance.VolumeTodB(volume));
     }
 
 

@@ -14,7 +14,7 @@ public class CampsiteSelection : MonoBehaviour
     public float timeNeeded = 1;
     public float p1Hold, p2Hold;
     public int p1Highlight = 0, p2Highlight = 0;
-    private GameObject upgradeObject = new GameObject();
+    private GameObject upgradeObject;
     public SkillUpgrade skillUpgrade;
     
 
@@ -23,6 +23,7 @@ public class CampsiteSelection : MonoBehaviour
         showUI = GetComponent<ShowUI>();
         showSkill = GetComponent<ShowSkill>();
         csm = this.GetComponent<CampsiteManager>();
+        upgradeObject = new GameObject();
     }
 
     void Update()

@@ -29,8 +29,29 @@ public class TutorialTask : MonoBehaviour {
     }
     // Use this for initialization
     void Start () {
-        skillExecution = playerSpawnPoint.GetChild(0).gameObject.GetComponent<PlayerSkillExecution>();
-        skillScroll = playerSpawnPoint.GetChild(0).gameObject.GetComponent<PlayerScrollSkill>();
+        //skillExecution = playerSpawnPoint.GetChild(0).gameObject.GetComponent<PlayerSkillExecution>();
+        skillExecution = GameObject.FindGameObjectWithTag("Player1").GetComponent<PlayerSkillExecution>();
+
+        if(gameObject.tag == "Player1Toggle")
+        {
+            skillExecution = GameObject.FindGameObjectWithTag("Player1").GetComponent<PlayerSkillExecution>();
+        }
+        else if(gameObject.tag == "Player2Toggle")
+        {
+            skillExecution = GameObject.FindGameObjectWithTag("Player2").GetComponent<PlayerSkillExecution>();
+        }
+
+        //skillScroll = playerSpawnPoint.GetChild(0).gameObject.GetComponent<PlayerScrollSkill>();
+
+        if (gameObject.tag == "Player1Toggle")
+        {
+            skillScroll = GameObject.FindGameObjectWithTag("Player1").GetComponent<PlayerScrollSkill>();
+        }
+        else if (gameObject.tag == "Player2Toggle")
+        {
+            skillScroll = GameObject.FindGameObjectWithTag("Player2").GetComponent<PlayerScrollSkill>();
+        }
+
         text = GetComponentInChildren<Text>();
         sceneManager = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManager>();
         for(int i=0;i<sceneManager.playerList.Count;i++)
