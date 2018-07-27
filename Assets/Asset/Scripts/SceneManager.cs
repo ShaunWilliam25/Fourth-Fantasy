@@ -14,6 +14,7 @@ public class SceneManager : MonoBehaviour {
     public int nextScene;
     public float loseTimer;
     public TutorialAppear tutorial;
+    public GameObject needGreedManager;
 
     public void Awake()
     {
@@ -45,7 +46,9 @@ public class SceneManager : MonoBehaviour {
             {
                 enemyList[i].SetActive(false);
                 Destroy(enemyList[i], 1f);
-                enemyList.Remove(enemyList[i]);    
+                enemyList.Remove(enemyList[i]);
+
+                this.GetComponent<ArtifactScript>().calArtifact();
             }
         }
         if(enemyList.Count <=0)
@@ -76,8 +79,8 @@ public class SceneManager : MonoBehaviour {
         {
             if (Input.anyKeyDown)
             {
-                UnityEngine.SceneManagement.SceneManager.LoadScene(nextScene);
-
+                //UnityEngine.SceneManagement.SceneManager.LoadScene(nextScene);
+                needGreedManager.GetComponent<NeedGreedRandomizer>().addArtifactToPlayer();
             }
         }
         if (Input.GetKeyDown("b"))
