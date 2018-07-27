@@ -9,7 +9,6 @@ public class NormalAttackTimePrietess : SkillEffect
         AssignUser();
         effectType = SKILL_EFFECT_TYPE.OFFENSIVE;
         numOfTarget = 1;
-        damage = 40;
         effectDescription = "Attack backline enemy";
     }
 

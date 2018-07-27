@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class DemonStrikeEffect : SkillEffect
 {
-    int heal;
+    [SerializeField]int heal;
     private void Awake()
     {
         AssignUser();
         effectType = SKILL_EFFECT_TYPE.OFFENSIVE;
         numOfTarget = 1;
-        damage = 70;
-        heal = 30;
         effectDescription = "Damage enemy and heal self";
     }
 

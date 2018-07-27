@@ -4,14 +4,12 @@ using UnityEngine;
 
 public class ChronosDescendent : SkillEffect
 {
-    [SerializeField]List<GameObject> buff;
     private void Awake()
     {
         AssignUser();
-        effectType = SKILL_EFFECT_TYPE.OFFENSIVE;
-        damage = 20;
+        effectType = SKILL_EFFECT_TYPE.DEBUFF;
         numOfTarget = 0;
-        effectDescription = "Strong buff to allies and strong debuff to enemies";
+        effectDescription = "Buff all allies";
     }
 
     // Use this for initialization
@@ -27,22 +25,13 @@ public class ChronosDescendent : SkillEffect
     }
 
     public override void Execute(GameObject targetedEnemy)
-    {
-        int totalDamage = (int)(damage * DamageMultiplier());
-        for (int i = 0; i < enemyList.Count; i++)
-        {
-            if(!enemyList[i].GetComponent<EnemyStats>().immune)
-            {
-                enemyList[i].GetComponent<EnemyVariableManager>().statusList.Add(Instantiate(status[0]));
-            }
-            enemyList[i].GetComponent<EnemyTakeDamage>().EnemyDamage(totalDamage);
-            playerArtifact.ArtifactAttackEffect(enemyList[i]);
-        }
+    { 
+    
         for(int x= 0;x<playerList.Count;x++)
         {
-            for(int y =0;y<buff.Count;y++)
+            for(int y =0;y<status.Count;y++)
             {
-                playerList[x].GetComponent<PlayerVariableManager>().statusList.Add(Instantiate(buff[y]));
+                playerList[x].GetComponent<PlayerVariableManager>().statusList.Add(Instantiate(status[y]));
             }
         }
         audioManager.PlaySound("TimePriestressAttackSound");
