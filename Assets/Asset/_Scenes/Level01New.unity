@@ -548,6 +548,10 @@ Prefab:
       propertyPath: allySpawnPoint
       value: 
       objectReference: {fileID: 1520312283}
+    - target: {fileID: 1085382439803722, guid: 6957876426f4f7f44a2fef876f8736d8, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6957876426f4f7f44a2fef876f8736d8, type: 2}
   m_IsPrefabParent: 0
@@ -9824,6 +9828,10 @@ Prefab:
     - target: {fileID: 4968061370274270, guid: c98038a5b139f974eb30ac5a15569baa, type: 2}
       propertyPath: m_RootOrder
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 1140889963708872, guid: c98038a5b139f974eb30ac5a15569baa, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c98038a5b139f974eb30ac5a15569baa, type: 2}
