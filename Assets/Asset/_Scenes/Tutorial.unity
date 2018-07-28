@@ -1339,7 +1339,6 @@ MonoBehaviour:
   selectedImage: {fileID: 21300000, guid: 51c8b1402f30e1246ba3f565f3d3ad95, type: 3}
   defaultImage: {fileID: 21300000, guid: f2bd2306b0f1bd142b9f626dd22116f5, type: 3}
   chosenImage: {fileID: 21300000, guid: 911de2ad2e0c99b4cb8b346e7c708505, type: 3}
-  timer: 0
 --- !u!1 &440659106
 GameObject:
   m_ObjectHideFlags: 0
@@ -1422,7 +1421,6 @@ GameObject:
   - component: {fileID: 519420033}
   - component: {fileID: 519420034}
   - component: {fileID: 519420030}
-  - component: {fileID: 519420036}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1449,8 +1447,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skin: {fileID: 11400000, guid: f58b50298d7bb5643b9823c1922e541d, type: 2}
-  ShowGui: 1
-  tutorialAppear: {fileID: 0}
   maxLines: 7
   playerButton: 
   eventLog: {fileID: 0}
@@ -1527,13 +1523,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1913648712}
-  audioMixer: {fileID: 0}
-  masterSlider: {fileID: 0}
-  musicSlider: {fileID: 0}
-  effectSlider: {fileID: 0}
-  outMasterVolume: 0
-  outMusicVolume: 0
-  outEffectVolume: 0
 --- !u!114 &519420035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1546,28 +1535,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   eventSystem: {fileID: 1156052543}
+  exit: {fileID: 0}
   tutorialStage: 0
   task: {fileID: 980556219}
   player1: {fileID: 1826923944}
   player2: {fileID: 1897460732}
   taskCanvas: {fileID: 311529771}
   lectureCanvas: {fileID: 59498584}
-  tint: {fileID: 0}
   sceneManager: {fileID: 0}
   playerAtbList: []
-  isEnemyAttacked: 0
---- !u!114 &519420036
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  profile: {fileID: 11400000, guid: c0528b64359d96b46866178c384453f0, type: 2}
 --- !u!1 &667196125
 GameObject:
   m_ObjectHideFlags: 0
@@ -1911,8 +1887,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterIndex: 0100000002000000
-  characterList: []
   sceneManager: {fileID: 1020202954}
+  playerSpawnPoints:
+  - {fileID: 1520312283}
+  - {fileID: 275265102}
   allCharactersList:
   - {fileID: 1140889963708872, guid: c98038a5b139f974eb30ac5a15569baa, type: 2}
   - {fileID: 1085382439803722, guid: 6957876426f4f7f44a2fef876f8736d8, type: 2}
@@ -1936,12 +1914,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerList: []
   enemyList: []
-  audioManager: {fileID: 0}
-  victory: {fileID: 0}
-  nextScene: 0
-  loseTimer: 0
-  tutorial: {fileID: 0}
-  needGreedManager: {fileID: 0}
 --- !u!4 &1020202955
 Transform:
   m_ObjectHideFlags: 0
@@ -2145,13 +2117,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1913648712}
-  audioMixer: {fileID: 0}
-  masterSlider: {fileID: 0}
-  musicSlider: {fileID: 0}
-  effectSlider: {fileID: 0}
-  outMasterVolume: 0
-  outMusicVolume: 0
-  outEffectVolume: 0
 --- !u!114 &1204321781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2670,7 +2635,6 @@ MonoBehaviour:
   selectedImage: {fileID: 21300000, guid: 51c8b1402f30e1246ba3f565f3d3ad95, type: 3}
   defaultImage: {fileID: 21300000, guid: f2bd2306b0f1bd142b9f626dd22116f5, type: 3}
   chosenImage: {fileID: 21300000, guid: 911de2ad2e0c99b4cb8b346e7c708505, type: 3}
-  timer: 0
 --- !u!114 &1446782097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2982,7 +2946,6 @@ MonoBehaviour:
   selectedImage: {fileID: 21300000, guid: 51c8b1402f30e1246ba3f565f3d3ad95, type: 3}
   defaultImage: {fileID: 21300000, guid: f2bd2306b0f1bd142b9f626dd22116f5, type: 3}
   chosenImage: {fileID: 21300000, guid: 911de2ad2e0c99b4cb8b346e7c708505, type: 3}
-  timer: 0
 --- !u!114 &1526513085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3647,8 +3610,7 @@ MonoBehaviour:
   sceneManager: {fileID: 0}
   playerAtbList: []
   enemyAtbList: []
-  enemyAimIcon: []
-  spiritDoorDead: 0
+  enemyChooseTarget: []
 --- !u!1001 &1836781706
 Prefab:
   m_ObjectHideFlags: 0
@@ -3821,8 +3783,7 @@ MonoBehaviour:
   sceneManager: {fileID: 0}
   playerAtbList: []
   enemyAtbList: []
-  enemyAimIcon: []
-  spiritDoorDead: 0
+  enemyChooseTarget: []
 --- !u!1 &1910663987
 GameObject:
   m_ObjectHideFlags: 0
@@ -4065,13 +4026,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 1913648712}
-  audioMixer: {fileID: 0}
-  masterSlider: {fileID: 0}
-  musicSlider: {fileID: 0}
-  effectSlider: {fileID: 0}
-  outMasterVolume: 0
-  outMusicVolume: 0
-  outEffectVolume: 0
 --- !u!1 &1988490816
 GameObject:
   m_ObjectHideFlags: 0
@@ -4211,7 +4165,6 @@ MonoBehaviour:
   selectedImage: {fileID: 21300000, guid: 51c8b1402f30e1246ba3f565f3d3ad95, type: 3}
   defaultImage: {fileID: 21300000, guid: f2bd2306b0f1bd142b9f626dd22116f5, type: 3}
   chosenImage: {fileID: 21300000, guid: 911de2ad2e0c99b4cb8b346e7c708505, type: 3}
-  timer: 0
 --- !u!114 &1988490822
 MonoBehaviour:
   m_ObjectHideFlags: 0

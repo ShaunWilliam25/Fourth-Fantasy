@@ -256,7 +256,6 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
-  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -282,9 +281,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e98daf29e2fe52c4985122a149b38803, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skin: {fileID: 0}
-  ShowGui: 1
-  tutorialAppear: {fileID: 0}
   maxLines: 4
   playerButton: 
   eventLog: {fileID: 0}
@@ -337,18 +333,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &519420033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  profile: {fileID: 11400000, guid: c0528b64359d96b46866178c384453f0, type: 2}
 --- !u!1 &560446868
 GameObject:
   m_ObjectHideFlags: 0
@@ -721,8 +705,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   characterIndex: 0100000002000000
-  characterList: []
   sceneManager: {fileID: 1020202954}
+  playerSpawnPoints:
+  - {fileID: 1520312283}
+  - {fileID: 275265102}
   allCharactersList:
   - {fileID: 1140889963708872, guid: c98038a5b139f974eb30ac5a15569baa, type: 2}
   - {fileID: 1085382439803722, guid: 6957876426f4f7f44a2fef876f8736d8, type: 2}
@@ -746,12 +732,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerList: []
   enemyList: []
-  audioManager: {fileID: 0}
-  victory: {fileID: 0}
-  nextScene: 0
-  loseTimer: 0
-  tutorial: {fileID: 0}
-  needGreedManager: {fileID: 0}
 --- !u!4 &1020202955
 Transform:
   m_ObjectHideFlags: 0
