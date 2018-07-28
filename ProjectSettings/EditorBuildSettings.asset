@@ -35,4 +35,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Asset/_Scenes/Campsite.unity
     guid: 2d9bcdc8364ad01448bdd505dcd21832
+  - enabled: 1
+    path: Assets/Asset/_Scenes/Encyclopedia/Preet_Ency_ExileDemon.unity
+    guid: f17c8ae98f290f34192d1f23062ba514
+  - enabled: 1
+    path: Assets/Asset/_Scenes/Encyclopedia/Preet_Ency_TimePriestress.unity
+    guid: 64551920e809e2342aa47d38772fdd31
+  - enabled: 1
+    path: Assets/Asset/_Scenes/Encyclopedia/Preet_Ency_OldGuard.unity
+    guid: 9ec2236c0b7c9a841a6205497bf751d6
+  - enabled: 1
+    path: Assets/Asset/_Scenes/Encyclopedia/Preet_Ency_BleedingNoble.unity
+    guid: 8b0d66336b7e92f4287ae08488d96c7c
+  - enabled: 1
+    path: Assets/Asset/_Scenes/Encyclopedia/Preet_Ency_SpiritDoor.unity
+    guid: c10dd2702a4321c489792ebf1ee9f331
+  - enabled: 1
+    path: Assets/Asset/_Scenes/Encyclopedia/Preet_Ency_Mimic.unity
+    guid: aa02a6716302a1d4782aa43d7224a96e
+  - enabled: 1
+    path: Assets/Asset/_Scenes/Encyclopedia/Preet_Ency_ConsumingKnight.unity
+    guid: eb43d86f7aa6e484e99de34fd6e41657
   m_configObjects: {}

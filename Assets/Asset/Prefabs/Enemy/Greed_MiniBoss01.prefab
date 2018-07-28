@@ -466,6 +466,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9518dcbb996bef84da2b1c24a14e5aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
   strength: 80
   baseStrength: 80
   magic: 100
@@ -497,9 +498,14 @@ MonoBehaviour:
   baseEvasion: 10
   timeNeeded: 0
   actionTimer: 0
+=======
+  health: 1000
+  baseHealth: 1000
+>>>>>>> master
   immune: 0
   silence: 0
-  name: 
+  berserk: 0
+  name: Spirit Door
   index: 0
   position: 0
 --- !u!114 &114516335636437424
@@ -551,6 +557,8 @@ MonoBehaviour:
   audioManager: {fileID: 0}
   tutorial: {fileID: 0}
   chance: 4b0000000a0000000f000000
+  isFinalBoss: 0
+  ultimate: {fileID: 0}
 --- !u!114 &114526121730501234
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -19,7 +19,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4875740496218208}
-  - component: {fileID: 114278432885581322}
+  - component: {fileID: 114196863040884086}
   m_Layer: 0
   m_Name: ArcherSkeletonNormalAttack
   m_TagString: Untagged
@@ -40,7 +40,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114278432885581322
+--- !u!114 &114196863040884086
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -48,17 +48,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 1893151292124598}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b436c487617776b469847fa3208b194d, type: 3}
+  m_Script: {fileID: 11500000, guid: 1c546ca0920ba4c4d9ef5893b3146035, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   playerList: []
   enemyList: []
-  status:
-  - {fileID: 1005469050508368, guid: 62ddac13514e8f94e90667a427f66406, type: 2}
+  status: []
   playerArtifact: {fileID: 0}
   user: {fileID: 0}
   effectDescription: 
   effectType: 0
-  damage: 0
+  damage: 60
   numOfTarget: 0
   audioManager: {fileID: 0}

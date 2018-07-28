@@ -4,10 +4,11 @@ using UnityEngine;
 
 public class PlayerStats : GeneralStats {
 
-    public int aggro;
-    public bool knockedOut;
-    public int reviveAction;
-    public bool autoRevive;
+    [HideInInspector] public int aggro;
+    [HideInInspector] public bool knockedOut;
+    [HideInInspector] public int reviveAction;
+    [HideInInspector] public bool autoRevive;
+    [HideInInspector] public bool taunt;
     
     // Use this for initialization
 	void Start () {

@@ -8,7 +8,6 @@ public class WolfNormalAttack : SkillEffect
     {
         AssignEnemyUser();
         effectType = SKILL_EFFECT_TYPE.OFFENSIVE;
-        damage = 65;
         numOfTarget = 1;
     }
 
