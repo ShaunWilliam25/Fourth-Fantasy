@@ -6,9 +6,10 @@ public class AncientBookOfIntelligence : ArtifactEffect {
 
     public override void Artifact()
     {
-        if(isEffect == false)
+        if(!isEffect)
         {
             carrier.GetComponent<PlayerStats>().baseHealth += 100;
+            carrier.GetComponent<PlayerStats>().health = carrier.GetComponent<PlayerStats>().baseHealth;
             isEffect = true;
         }
     }

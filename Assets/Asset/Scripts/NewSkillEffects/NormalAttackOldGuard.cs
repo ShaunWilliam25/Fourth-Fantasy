@@ -20,7 +20,7 @@ public class NormalAttackOldGuard : SkillEffect {
 
     public override void Execute(GameObject targetedEnemy)
     {
-        int totalDamage = (int)(damage * DamageMultiplier());
+        int totalDamage = (int)((damage + DamageAddOn()) * DamageMultiplier());
         targetedEnemy.GetComponent<EnemyTakeDamage>().EnemyDamage(totalDamage);
         playerArtifact.ArtifactAttackEffect(targetedEnemy);
         audioManager.PlaySound("OldGuardAttackSound");

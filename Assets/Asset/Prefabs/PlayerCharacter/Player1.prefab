@@ -564,7 +564,7 @@ MonoBehaviour:
   skillBox: {fileID: 1320640483823348}
   skillSelected: 0
   boxOffset: 0.6
-  boxStartPosition: -1.2
+  boxStartPosition: {x: -1.2, y: 0, z: 0}
 --- !u!114 &114027907485961764
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1255,37 +1255,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2544d6ab25bd05e43915825738dd742f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strength: 80
-  baseStrength: 80
-  magic: 100
-  baseMagic: 100
-  spirit: 70
-  baseSpirit: 70
-  defense: 50
-  baseDefense: 50
-  criticalChance: 5
-  baseCriticalChance: 5
-  criticalDamage: 300
-  baseCriticalDamage: 300
-  accuracy: 85
-  baseAccuracy: 85
-  statusResistance: []
-  baseStatusResistance: []
   health: 400
   baseHealth: 400
-  speed: 35
-  baseSpeed: 35
-  evasion: 20
-  baseEvasion: 20
-  timeNeeded: 0
-  actionTimer: 0
   immune: 0
   silence: 0
+  berserk: 0
   name: Exiled Demon
   aggro: 10
   knockedOut: 0
   reviveAction: 0
   autoRevive: 0
+  taunt: 0
 --- !u!114 &114852719387166810
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1475,7 +1455,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba820642b78d94f4aa6ab44f379d263e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  artifactStatuses: []
+  artifactStatuses:
+  - {fileID: 1223870765579878, guid: a1c96be22440ca645b3f79433122c554, type: 2}
+  - {fileID: 1529008860001040, guid: b94cc5a667762ce47a8fb81d2702abfa, type: 2}
+  - {fileID: 1662090186269998, guid: 7f5e19a1c16a526408eb77a7f1558003, type: 2}
+  - {fileID: 1963101712374048, guid: 47312baad2a2f474f8a85a6f28ee183c, type: 2}
+  - {fileID: 1099124874417978, guid: 8fa50424f4357484a898cba80f677691, type: 2}
+  - {fileID: 1074199998277112, guid: 3000d8965ff25614fb474aab117f004d, type: 2}
 --- !u!114 &114993220315628792
 MonoBehaviour:
   m_ObjectHideFlags: 1
