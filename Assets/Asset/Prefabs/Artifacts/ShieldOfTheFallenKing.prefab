@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4604031080225966}
   - component: {fileID: 212283064862631452}
   - component: {fileID: 114764849796110360}
+  - component: {fileID: 114622756611072158}
   m_Layer: 0
   m_Name: ShieldOfTheFallenKing
   m_TagString: Untagged
@@ -41,6 +42,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114622756611072158
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1585925923376360}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af4a5d2816fed8a48bcee07d82869d4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: ce6b99ac0ece53b418584e92c2904e0c, type: 3}
+  name: Shield of The Fallen King
+  effect: 
 --- !u!114 &114764849796110360
 MonoBehaviour:
   m_ObjectHideFlags: 1

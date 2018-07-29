@@ -3832,8 +3832,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d5dc61de2f7f7542a320511502927a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player1Health: {fileID: 653435527}
-  artifactContent:
+  p1health: {fileID: 653435527}
+  p2health: {fileID: 0}
+  player1:
+  - artifactName: {fileID: 1140407253}
+    artifactEffect: {fileID: 2081512675}
+    artifactImage: {fileID: 1242468879}
+  - artifactName: {fileID: 706202990}
+    artifactEffect: {fileID: 685509239}
+    artifactImage: {fileID: 231237614}
+  - artifactName: {fileID: 706202990}
+    artifactEffect: {fileID: 685509239}
+    artifactImage: {fileID: 1671848435}
+  - artifactName: {fileID: 117634213}
+    artifactEffect: {fileID: 1298376084}
+    artifactImage: {fileID: 147931915}
+  - artifactName: {fileID: 1244664704}
+    artifactEffect: {fileID: 2120876791}
+    artifactImage: {fileID: 4318115}
+  player2:
   - artifactName: {fileID: 0}
     artifactEffect: {fileID: 0}
     artifactImage: {fileID: 0}
@@ -3920,7 +3937,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37ac221ff030b414d88023b6d9cd1e5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  csm: {fileID: 0}
   player1:
     status: {fileID: 2106175489}
     upgrade: {fileID: 1662926509}

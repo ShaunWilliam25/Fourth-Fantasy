@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4976168328517052}
   - component: {fileID: 212520144829461656}
   - component: {fileID: 114631456626774004}
+  - component: {fileID: 114908165684886664}
   m_Layer: 0
   m_Name: Masamune
   m_TagString: Untagged
@@ -54,6 +55,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEffect: 0
   carrier: {fileID: 0}
+--- !u!114 &114908165684886664
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1710504922520230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af4a5d2816fed8a48bcee07d82869d4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: bc9e2b700f8b238489a48f5ef810765f, type: 3}
+  name: Masamune
+  effect: 
 --- !u!212 &212520144829461656
 SpriteRenderer:
   m_ObjectHideFlags: 1

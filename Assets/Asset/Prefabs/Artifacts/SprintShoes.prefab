@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4809977791637454}
   - component: {fileID: 212872455946229210}
   - component: {fileID: 114117404713041206}
+  - component: {fileID: 114318153105386826}
   m_Layer: 0
   m_Name: SprintShoes
   m_TagString: Untagged
@@ -55,6 +56,20 @@ MonoBehaviour:
   isEffect: 0
   carrier: {fileID: 0}
   haste: {fileID: 1088029984293178, guid: 73f2d0328d9184a498d871f9a639c5f0, type: 2}
+--- !u!114 &114318153105386826
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1277556992498528}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af4a5d2816fed8a48bcee07d82869d4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 2c6343cb4dd91a5478a4e25132c51c67, type: 3}
+  name: Sprint Shoes
+  effect: 
 --- !u!212 &212872455946229210
 SpriteRenderer:
   m_ObjectHideFlags: 1
