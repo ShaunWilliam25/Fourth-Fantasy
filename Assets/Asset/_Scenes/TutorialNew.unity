@@ -316,11 +316,6 @@ Prefab:
       propertyPath: allySpawnPoint
       value: 
       objectReference: {fileID: 1520312283}
-    - target: {fileID: 114078750118685472, guid: 6957876426f4f7f44a2fef876f8736d8,
-        type: 2}
-      propertyPath: characterOffset
-      value: 1.84
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6957876426f4f7f44a2fef876f8736d8, type: 2}
   m_IsPrefabParent: 0
@@ -6107,16 +6102,6 @@ Prefab:
     - target: {fileID: 4968061370274270, guid: c98038a5b139f974eb30ac5a15569baa, type: 2}
       propertyPath: m_RootOrder
       value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 223970431562906074, guid: c98038a5b139f974eb30ac5a15569baa,
-        type: 2}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 519420031}
-    - target: {fileID: 114007722756929114, guid: c98038a5b139f974eb30ac5a15569baa,
-        type: 2}
-      propertyPath: characterOffset
-      value: 0.98
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c98038a5b139f974eb30ac5a15569baa, type: 2}
