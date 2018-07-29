@@ -1,0 +1,410 @@
+fileFormatVersion: 2
+guid: 4bde4787fa84abf4482b6358378d7935
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SkeletonArcherIdle_0
+    21300002: SkeletonArcherIdle_1
+    21300004: SkeletonArcherIdle_2
+    21300006: SkeletonArcherIdle_3
+    21300008: SkeletonArcherIdle_4
+    21300010: SkeletonArcherIdle_5
+    21300012: SkeletonArcherIdle_6
+    21300014: SkeletonArcherIdle_7
+    21300016: SkeletonArcherIdle_8
+    21300018: SkeletonArcherIdle_9
+    21300020: SkeletonArcherIdle_10
+    21300022: SkeletonArcherIdle_11
+    21300024: SkeletonArcherIdle_12
+    21300026: SkeletonArcherIdle_13
+    21300028: SkeletonArcherIdle_14
+  externalObjects: {}
+  serializedVersion: 5
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 1000
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SkeletonArcherIdle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 302
+        height: 600
+      alignment: 9
+      pivot: {x: 0.60303515, y: 0.036734894}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c858b2b747aceea48ad4b2ddbe746a0e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherIdle_1
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 0
+        width: 306
+        height: 599
+      alignment: 9
+      pivot: {x: 0.6129045, y: 0.033762354}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84320bb04ef2eb04e9c794149d900ebb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherIdle_2
+      rect:
+        serializedVersion: 2
+        x: 601
+        y: 0
+        width: 313
+        height: 598
+      alignment: 9
+      pivot: {x: 0.62384033, y: 0.029591465}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63430dce606d657458209e17ea19a1ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherIdle_3
+      rect:
+        serializedVersion: 2
+        x: 909
+        y: 0
+        width: 317
+        height: 595
+      alignment: 9
+      pivot: {x: 0.6249361, y: 0.03540555}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7faa9ba437e85c948a2cf437fccba8e9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherIdle_4
+      rect:
+        serializedVersion: 2
+        x: 1222
+        y: 0
+        width: 326
+        height: 592
+      alignment: 9
+      pivot: {x: 0.6421655, y: 0.03273817}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d3243dd6dcad3c42a38dafb365369a0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherIdle_5
+      rect:
+        serializedVersion: 2
+        x: 1544
+        y: 0
+        width: 331
+        height: 589
+      alignment: 9
+      pivot: {x: 0.6502011, y: 0.03433557}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a30162780ce36342bd99c8b8079165e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherIdle_6
+      rect:
+        serializedVersion: 2
+        x: 1872
+        y: 0
+        width: 336
+        height: 587
+      alignment: 9
+      pivot: {x: 0.6504742, y: 0.03158151}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0096ea971671f640bf6641bc8feef36
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherIdle_7
+      rect:
+        serializedVersion: 2
+        x: 2202
+        y: 0
+        width: 343
+        height: 583
+      alignment: 9
+      pivot: {x: 0.65968645, y: 0.03613431}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c15b7cfaece5eb43b30c4aef0b9195b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherIdle_8
+      rect:
+        serializedVersion: 2
+        x: 2540
+        y: 0
+        width: 337
+        height: 587
+      alignment: 9
+      pivot: {x: 0.6500277, y: 0.034452554}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 288ed4e77a1b6b04e8f64f27b7b515d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherIdle_9
+      rect:
+        serializedVersion: 2
+        x: 2873
+        y: 0
+        width: 331
+        height: 589
+      alignment: 9
+      pivot: {x: 0.64510953, y: 0.032904923}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 828c869e76020c24186781a554f42db0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherIdle_10
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 0
+        width: 326
+        height: 592
+      alignment: 9
+      pivot: {x: 0.6473351, y: 0.03416157}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aff80de51f50c5f4ab7624e9f2f0aae9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherIdle_11
+      rect:
+        serializedVersion: 2
+        x: 3522
+        y: 0
+        width: 319
+        height: 595
+      alignment: 9
+      pivot: {x: 0.63207775, y: 0.031156886}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c14f079e2c6f5fe42b53f6471096e528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherIdle_12
+      rect:
+        serializedVersion: 2
+        x: 3839
+        y: 0
+        width: 312
+        height: 598
+      alignment: 9
+      pivot: {x: 0.62693906, y: 0.03100058}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10a166e2b3c99f547ba1cee4d239ffbc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherIdle_13
+      rect:
+        serializedVersion: 2
+        x: 4144
+        y: 0
+        width: 308
+        height: 600
+      alignment: 9
+      pivot: {x: 0.61217153, y: 0.030897245}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc86906848d053a469dc776a8a791eaa
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonArcherIdle_14
+      rect:
+        serializedVersion: 2
+        x: 4441
+        y: 0
+        width: 302
+        height: 600
+      alignment: 9
+      pivot: {x: 0.61998135, y: 0.029492827}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f26d9a28e601014989aa6997ef8f616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 81cae98005637a145ac9fac3278f82d6
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
