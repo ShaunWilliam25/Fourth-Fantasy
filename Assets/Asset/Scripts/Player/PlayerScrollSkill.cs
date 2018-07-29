@@ -10,8 +10,8 @@ public class PlayerScrollSkill : PlayerVariableManager {
     [SerializeField] private GameObject skillBox;
     private Transform boxPos;
     public int skillSelected = 0;
-    [SerializeField] private float boxOffset = 0f;
-    [SerializeField] private float startPosition;
+    public float boxOffset = 0f;
+    public float startPosition;
     [SerializeField] private float characterOffset;
 
     private void Awake()

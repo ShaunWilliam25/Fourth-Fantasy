@@ -664,6 +664,7 @@ MonoBehaviour:
   skillSelected: 0
   boxOffset: 0.6
   startPosition: -1.2
+  characterOffset: 1.84
 --- !u!114 &114115601086827854
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -870,7 +871,7 @@ MonoBehaviour:
   playerButton: 
   timeRequired: 2
   xOffset: 6.4
-  yOffset: -1.47
+  yOffset: -4.3
 --- !u!114 &114372064663379618
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1482,7 +1483,6 @@ MonoBehaviour:
   artifactsList: []
   haste: 0
   slow: 0
-  Test: {fileID: 0}
 --- !u!114 &114956024905355076
 MonoBehaviour:
   m_ObjectHideFlags: 1

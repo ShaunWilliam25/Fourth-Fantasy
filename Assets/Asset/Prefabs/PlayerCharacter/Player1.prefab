@@ -507,7 +507,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1140889963708872}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4, y: 0.7, z: 0}
+  m_LocalPosition: {x: -4.75, y: 0.7, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4468109814501442}
@@ -610,7 +610,8 @@ MonoBehaviour:
   skillBox: {fileID: 1320640483823348}
   skillSelected: 0
   boxOffset: 0.6
-  boxStartPosition: {x: -1.2, y: 0, z: 0}
+  startPosition: 1.2
+  characterOffset: 0.98
 --- !u!114 &114027907485961764
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1105,7 +1106,6 @@ MonoBehaviour:
   artifactsList: []
   haste: 0
   slow: 0
-  Test: {fileID: 0}
 --- !u!114 &114561400089826274
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1328,37 +1328,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2544d6ab25bd05e43915825738dd742f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strength: 80
-  baseStrength: 80
-  magic: 100
-  baseMagic: 100
-  spirit: 70
-  baseSpirit: 70
-  defense: 50
-  baseDefense: 50
-  criticalChance: 5
-  baseCriticalChance: 5
-  criticalDamage: 300
-  baseCriticalDamage: 300
-  accuracy: 85
-  baseAccuracy: 85
-  statusResistance: []
-  baseStatusResistance: []
   health: 400
   baseHealth: 400
-  speed: 35
-  baseSpeed: 35
-  evasion: 20
-  baseEvasion: 20
-  timeNeeded: 0
-  actionTimer: 0
   immune: 0
   silence: 0
+  berserk: 0
   name: Exiled Demon
   aggro: 10
   knockedOut: 0
   reviveAction: 0
   autoRevive: 0
+  taunt: 0
 --- !u!114 &114852719387166810
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1396,8 +1376,8 @@ MonoBehaviour:
   startSelection: 0
   playerButton: 
   timeRequired: 2
-  xOffset: 6.4
-  yOffset: -1.68
+  xOffset: 2.88
+  yOffset: -5.75
 --- !u!114 &114866081510403812
 MonoBehaviour:
   m_ObjectHideFlags: 1
