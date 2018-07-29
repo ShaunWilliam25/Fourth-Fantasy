@@ -9,7 +9,6 @@ public class Meteor : SkillEffect {
         AssignUser();
         effectType = SKILL_EFFECT_TYPE.OFFENSIVE;
         numOfTarget = 0;
-        damage = 50;
         effectDescription = "Attack and burn all enemy";
     }
 

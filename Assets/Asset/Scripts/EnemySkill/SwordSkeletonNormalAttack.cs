@@ -8,7 +8,6 @@ public class SwordSkeletonNormalAttack : SkillEffect {
     {
         AssignEnemyUser();
         effectType = SKILL_EFFECT_TYPE.OFFENSIVE;
-        damage = 70;
         numOfTarget = 1;
     }
 

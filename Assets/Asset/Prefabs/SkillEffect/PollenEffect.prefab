@@ -57,8 +57,10 @@ MonoBehaviour:
   - {fileID: 1662090186269998, guid: 7f5e19a1c16a526408eb77a7f1558003, type: 2}
   - {fileID: 1223870765579878, guid: a1c96be22440ca645b3f79433122c554, type: 2}
   - {fileID: 1099124874417978, guid: 8fa50424f4357484a898cba80f677691, type: 2}
+  playerArtifact: {fileID: 0}
   user: {fileID: 0}
   effectDescription: Poison and debuff all enemies
-  effectType: 0
+  effectType: 2
   damage: 0
   numOfTarget: 0
+  audioManager: {fileID: 0}

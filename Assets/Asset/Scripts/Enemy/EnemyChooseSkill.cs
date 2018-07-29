@@ -5,6 +5,8 @@ using UnityEngine;
 public class EnemyChooseSkill : EnemyVariableManager {
     public TutorialAppear tutorial;
     public List<int> chance;
+    public bool isFinalBoss;
+    [SerializeField] private GameObject ultimate;
     // Use this for initialization
     void Start()
     {
@@ -106,7 +108,18 @@ public class EnemyChooseSkill : EnemyVariableManager {
     public void RandomSkill()
     {
         skillList = GetComponent<EnemyVariableManager>().skillList;
+        if (GetComponent<EnemyStats>().silence || GetComponent<EnemyStats>().berserk)
+        {
+            skillList[0].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
+            return;
+        }
         int rand = Random.Range(0, 101);
+        if(isFinalBoss && (GetComponent<EnemyStats>().health/GetComponent<EnemyStats>().baseHealth)<=0.1)
+        {
+            ultimate.GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
+            isFinalBoss = false;
+            return;
+        }
         switch(skillList.Count)
         {
             //enemy have 2 skills
@@ -154,6 +167,29 @@ public class EnemyChooseSkill : EnemyVariableManager {
                 else if ((chance[0] + chance[1] + chance[2]) < rand && rand <= (chance[0] + chance[1] + chance[2] + chance[3]))
                 {
                     skillList[3].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
+                }
+                break;
+
+            case 5:
+                if (rand <= chance[0])
+                {
+                    skillList[0].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
+                }
+                else if (chance[0] < rand && rand <= (chance[0] + chance[1]))
+                {
+                    skillList[1].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
+                }
+                else if ((chance[0] + chance[1]) < rand && rand <= (chance[0] + chance[1] + chance[2]))
+                {
+                    skillList[2].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
+                }
+                else if ((chance[0] + chance[1] + chance[2]) < rand && rand <= (chance[0] + chance[1] + chance[2] + chance[3]))
+                {
+                    skillList[3].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
+                }
+                else if ((chance[0] + chance[1] + chance[2] + chance[3]) < rand && rand <= (chance[0] + chance[1] + chance[2] + chance[3] + chance[4]))
+                {
+                    skillList[4].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
                 }
                 break;
         }

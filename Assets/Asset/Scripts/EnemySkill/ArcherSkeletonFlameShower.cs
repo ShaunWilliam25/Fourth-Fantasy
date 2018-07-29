@@ -8,7 +8,6 @@ public class ArcherSkeletonFlameShower : SkillEffect {
     {
         AssignEnemyUser();
         effectType = SKILL_EFFECT_TYPE.OFFENSIVE;
-        damage = 50;
         numOfTarget = 0;
     }
 
@@ -18,7 +17,10 @@ public class ArcherSkeletonFlameShower : SkillEffect {
         for(int i=0;i<playerList.Count;i++)
         {
             playerList[i].GetComponent<PlayerTakeDamage>().PlayerDamage(totalDamage);
-            playerList[i].GetComponent<PlayerVariableManager>().statusList.Add(Instantiate(status[0]));
+            if(!playerList[i].GetComponent<PlayerStats>().immune)
+            {
+                playerList[i].GetComponent<PlayerVariableManager>().statusList.Add(Instantiate(status[0]));
+            }
         }
     }
 }

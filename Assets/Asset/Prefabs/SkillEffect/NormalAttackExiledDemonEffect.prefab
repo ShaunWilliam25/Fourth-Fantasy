@@ -54,8 +54,10 @@ MonoBehaviour:
   playerList: []
   enemyList: []
   status: []
+  playerArtifact: {fileID: 0}
   user: {fileID: 0}
   effectDescription: 
   effectType: 0
-  damage: 0
+  damage: 90
   numOfTarget: 0
+  audioManager: {fileID: 0}

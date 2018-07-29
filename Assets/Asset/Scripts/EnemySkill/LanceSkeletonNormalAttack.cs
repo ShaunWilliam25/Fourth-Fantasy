@@ -8,7 +8,6 @@ public class LanceSkeletonNormalAttack : SkillEffect {
     {
         AssignEnemyUser();
         effectType = SKILL_EFFECT_TYPE.OFFENSIVE;
-        damage = 90;
         numOfTarget = 1;
     }
 
