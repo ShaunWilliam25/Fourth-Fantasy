@@ -267,7 +267,7 @@ public class TutorialAppear : MonoBehaviour {
                 }
                 for (int i = 0; i < sceneManager.enemyList.Count; i++)
                 {
-                    if (sceneManager.enemyList[i].GetComponent<EnemyVariableManager>().curCooldown >= 0.5f)
+                    if (sceneManager.enemyList[i].GetComponent<EnemyVariableManager>().curCooldown >= sceneManager.enemyList[i].GetComponent<EnemyVariableManager>().maxCooldown / 2)
                     {
                         if (!isLectureDone)
                         {

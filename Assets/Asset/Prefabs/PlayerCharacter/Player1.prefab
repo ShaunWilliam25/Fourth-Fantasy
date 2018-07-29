@@ -1376,8 +1376,8 @@ MonoBehaviour:
   startSelection: 0
   playerButton: 
   timeRequired: 2
-  xOffset: 2.88
-  yOffset: -5.75
+  xOffset: 2.91
+  yOffset: -5.85
 --- !u!114 &114866081510403812
 MonoBehaviour:
   m_ObjectHideFlags: 1
