@@ -28,8 +28,8 @@ public class EnemyActionTimeBar : EnemyVariableManager {
         this.GetComponent<EnemyVariableManager>().actionBar.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + yOffset, this.transform.position.z);
         if (!ATBFull)
         {
-            this.GetComponent<EnemyVariableManager>().curCooldown += Time.deltaTime / this.GetComponent<EnemyVariableManager>().maxCooldown;
-            this.GetComponent<EnemyVariableManager>().actionBar.fillAmount = this.GetComponent<EnemyVariableManager>().curCooldown;
+            this.GetComponent<EnemyVariableManager>().curCooldown += Time.deltaTime;
+            this.GetComponent<EnemyVariableManager>().actionBar.fillAmount = this.GetComponent<EnemyVariableManager>().curCooldown/this.GetComponent<EnemyVariableManager>().maxCooldown;
 
             ///this.GetComponent<EnemyVariableManager>().anim.GetComponent<Animator>().Play(this.GetComponent<EnemyVariableManager>().attackAnimation);
             ///Invoke("ResetAnimation", 1f);
