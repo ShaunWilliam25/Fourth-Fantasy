@@ -301,6 +301,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 223462869350805974, guid: 6957876426f4f7f44a2fef876f8736d8,
+        type: 2}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 519420031}
     - target: {fileID: 114044135622490806, guid: 6957876426f4f7f44a2fef876f8736d8,
         type: 2}
       propertyPath: battleLogScript
@@ -311,11 +316,11 @@ Prefab:
       propertyPath: allySpawnPoint
       value: 
       objectReference: {fileID: 1520312283}
-    - target: {fileID: 223462869350805974, guid: 6957876426f4f7f44a2fef876f8736d8,
+    - target: {fileID: 114078750118685472, guid: 6957876426f4f7f44a2fef876f8736d8,
         type: 2}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 519420031}
+      propertyPath: characterOffset
+      value: 1.84
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6957876426f4f7f44a2fef876f8736d8, type: 2}
   m_IsPrefabParent: 0
@@ -3093,14 +3098,15 @@ MonoBehaviour:
   sceneManager: {fileID: 1020202954}
   allCharactersList:
   - {fileID: 1140889963708872, guid: c98038a5b139f974eb30ac5a15569baa, type: 2}
-  - {fileID: 1085382439803722, guid: 6957876426f4f7f44a2fef876f8736d8, type: 2}
+  - {fileID: 0}
   allSkillList:
   - {fileID: 1136784145477246, guid: 98ab0bceb1b4da548a94e1d7148e66c4, type: 2}
   - {fileID: 1532596685821658, guid: 0e5db31875af60140ad9871c6b1f4500, type: 2}
   - {fileID: 1314252507990150, guid: a424fd577a25d374f877b3ba0a62572f, type: 2}
   - {fileID: 1867597038940726, guid: ae1f6cb908d96df42a9ad789066242a5, type: 2}
   - {fileID: 1257337590300978, guid: eaef0fde0d6f1fd43840b609fa338767, type: 2}
-  skillOffset: 0
+  skillOffset: 1
+  skillPosOffset: 1.2
 --- !u!114 &1020202954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3116,6 +3122,7 @@ MonoBehaviour:
   - {fileID: 1045055317}
   - {fileID: 1717181971}
   enemyList: []
+  isWin: 0
   audioManager: {fileID: 255882461}
   victory: {fileID: 1663423641430810, guid: 8a7faca0a5059e647871b7ccbda0bcff, type: 2}
   nextScene: 6
@@ -6106,6 +6113,11 @@ Prefab:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 114007722756929114, guid: c98038a5b139f974eb30ac5a15569baa,
+        type: 2}
+      propertyPath: characterOffset
+      value: 0.98
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c98038a5b139f974eb30ac5a15569baa, type: 2}
   m_IsPrefabParent: 0

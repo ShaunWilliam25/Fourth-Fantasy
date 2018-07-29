@@ -1070,8 +1070,7 @@ MonoBehaviour:
   aimIcon: {fileID: 0}
   aimIconPosition: {x: 0, y: 0}
   randNo: 50
-  enemyList:
-  - {fileID: 1989038375169202, guid: 855524a48d90d5a4cb959e1aa9f82cf8, type: 2}
+  enemyList: []
   UltiUsed: 0
   canUseUlti: 0
   skillsPrefab:
