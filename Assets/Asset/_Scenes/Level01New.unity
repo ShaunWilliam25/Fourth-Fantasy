@@ -1518,12 +1518,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &255882461 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114959392602543044, guid: 208804f58ac98e34d8006bf42f916ba3,
-    type: 2}
-  m_PrefabInternal: {fileID: 974813636}
-  m_Script: {fileID: 11500000, guid: 6ea00f85749fb8b4b95b494a738899d4, type: 3}
 --- !u!1 &275265101
 GameObject:
   m_ObjectHideFlags: 0
@@ -3506,11 +3500,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 587722883}
---- !u!1 &598937330 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1085382439803722, guid: 6957876426f4f7f44a2fef876f8736d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1036574813}
 --- !u!1 &609893651
 GameObject:
   m_ObjectHideFlags: 0
@@ -5408,19 +5397,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd07beabd3384a4382d02b1be07de4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyIndexStage: 0600000006000000
+  enemyIndexStage: 01000000
   enemySpawnPoints:
   - {fileID: 2127152360}
   - {fileID: 139971051}
   - {fileID: 1774481182}
-  - {fileID: 0}
-  - {fileID: 0}
   allEnemyList:
-  - {fileID: 1986409563315122, guid: 73ee30cef76bb2043bc7f6e46dfd0278, type: 2}
-  - {fileID: 1410884972470944, guid: 4d0d46ba9f96c8c42aefb26d4ad9fbb6, type: 2}
-  - {fileID: 1200724417324906, guid: 6fd7383a19c9c9644ad05549e9f6900b, type: 2}
-  - {fileID: 1587447713013924, guid: f260aca871766ef42b1c7dd609b5b20f, type: 2}
-  - {fileID: 1624458947231900, guid: f2f1fde665a7d22498f7f6c475ad7fda, type: 2}
   - {fileID: 1393198165434804, guid: 6f8df232b4d86694eafe9bd5f248f995, type: 2}
   sceneManager: {fileID: 1020202954}
   indexInList: 0
@@ -5439,19 +5421,18 @@ MonoBehaviour:
   characterList:
   - {fileID: 11400000, guid: d40af4ca25ed4424f8cd642053571c35, type: 2}
   - {fileID: 11400000, guid: 57774ab18a533f549b5b38d300629e1a, type: 2}
-  - {fileID: 11400000, guid: d40af4ca25ed4424f8cd642053571c35, type: 2}
-  - {fileID: 11400000, guid: d40af4ca25ed4424f8cd642053571c35, type: 2}
   sceneManager: {fileID: 1020202954}
   allCharactersList:
   - {fileID: 1140889963708872, guid: c98038a5b139f974eb30ac5a15569baa, type: 2}
-  - {fileID: 1085382439803722, guid: 6957876426f4f7f44a2fef876f8736d8, type: 2}
+  - {fileID: 1034946948}
   allSkillList:
   - {fileID: 1136784145477246, guid: 98ab0bceb1b4da548a94e1d7148e66c4, type: 2}
   - {fileID: 1532596685821658, guid: 0e5db31875af60140ad9871c6b1f4500, type: 2}
   - {fileID: 1314252507990150, guid: a424fd577a25d374f877b3ba0a62572f, type: 2}
   - {fileID: 1867597038940726, guid: ae1f6cb908d96df42a9ad789066242a5, type: 2}
   - {fileID: 1257337590300978, guid: eaef0fde0d6f1fd43840b609fa338767, type: 2}
-  skillOffset: 0
+  skillOffset: 1
+  skillPosOffset: 1.2
 --- !u!114 &1020202954
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5464,16 +5445,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerList:
-  - {fileID: 1941150173}
-  - {fileID: 598937330}
+  - {fileID: 1277752984}
+  - {fileID: 1034946948}
   enemyList: []
   isWin: 0
-  audioManager: {fileID: 255882461}
+  audioManager: {fileID: 0}
   victory: {fileID: 1663423641430810, guid: 8a7faca0a5059e647871b7ccbda0bcff, type: 2}
-  nextScene: 7
+  nextScene: 6
   loseTimer: 0
   tutorial: {fileID: 0}
-  needGreedManager: {fileID: 1653121042}
+  needGreedManager: {fileID: 0}
 --- !u!4 &1020202955
 Transform:
   m_ObjectHideFlags: 0
@@ -5481,7 +5462,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1020202951}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 1, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -5514,6 +5495,11 @@ MonoBehaviour:
   veryRareRarity: 0
   ownedArtifact: {fileID: 0}
   ownedArtifactList: []
+--- !u!1 &1034946948 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1085382439803722, guid: 6957876426f4f7f44a2fef876f8736d8,
+    type: 2}
+  m_PrefabInternal: {fileID: 1036574813}
 --- !u!1001 &1036574813
 Prefab:
   m_ObjectHideFlags: 0
@@ -7295,6 +7281,11 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1276197372}
+--- !u!1 &1277752984 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1140889963708872, guid: c98038a5b139f974eb30ac5a15569baa,
+    type: 2}
+  m_PrefabInternal: {fileID: 1672680470}
 --- !u!1 &1291799673
 GameObject:
   m_ObjectHideFlags: 0
@@ -11418,11 +11409,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!1 &1941150173 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1140889963708872, guid: c98038a5b139f974eb30ac5a15569baa,
-    type: 2}
-  m_PrefabInternal: {fileID: 1672680470}
 --- !u!1 &1943846984
 GameObject:
   m_ObjectHideFlags: 0

@@ -826,6 +826,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xOffset: 6.4
   yOffset: -2.6
+  scrollSkill: {fileID: 0}
 --- !u!114 &114324892983312968
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1038,6 +1039,7 @@ MonoBehaviour:
   artifactsList: []
   isAttack: 0
   attackAnimationTimer: 0.75
+  scrollSkill: {fileID: 0}
 --- !u!114 &114493992315900368
 MonoBehaviour:
   m_ObjectHideFlags: 1

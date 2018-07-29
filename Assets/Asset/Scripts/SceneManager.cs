@@ -95,6 +95,9 @@ public class SceneManager : MonoBehaviour {
                 needGreedManager.GetComponent<NeedGreedRandomizer>().addArtifactToPlayer();
             }
         }
+
+        //! Test control to check the lose scene
+        
         if (Input.GetKeyDown("b"))
         {
             for (int i = 0; i < playerList.Count; i++)
