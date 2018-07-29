@@ -37,11 +37,6 @@ public class MainMenu : MonoBehaviour
         eventSystem.SetSelectedGameObject(backToMainMenu.gameObject);
     }
 
-    public void Awake()
-    {
-
-    }
-
     private void Start()
     {
         audioManager = FindObjectOfType<AudioManager>();

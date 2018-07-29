@@ -5,14 +5,7 @@ using UnityEngine.UI;
 
 public class EnemyHealthbar : EnemyVariableManager {
     public float yOffset;
-    
-    
 
-    private void Awake()
-    {       
-    }
-
-    // Use this for initialization
     void Start()
     {
         Transform selfPosition;
@@ -20,7 +13,6 @@ public class EnemyHealthbar : EnemyVariableManager {
         this.GetComponent<EnemyVariableManager>().healthBarBackground.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + yOffset, this.transform.position.z);
     }
 
-    // Update is called once per frame
     void Update()
     {
         this.GetComponent<EnemyVariableManager>().healthBarBackground.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + yOffset, this.transform.position.z);

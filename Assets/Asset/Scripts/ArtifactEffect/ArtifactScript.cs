@@ -58,17 +58,7 @@ public class ArtifactScript : MonoBehaviour
             Destroy(gameObject); ///destrols the artifact
         }
     }*/
-
-    private void Update()
-    {
-        
-    }
 }
-
-
-
-
-    
 
 
 /*using System.Collections;

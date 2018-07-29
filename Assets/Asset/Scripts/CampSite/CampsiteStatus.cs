@@ -16,12 +16,6 @@ public class CampsiteStatus : MonoBehaviour
         PlayerPrefs.SetInt("P1 MAX HP", 450);
         player1Health.text = "Health : " + (PlayerPrefs.GetInt("P1 HP").ToString()) + "/" + (PlayerPrefs.GetInt("P1 MAX HP").ToString());
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
 }
 
 [Serializable]

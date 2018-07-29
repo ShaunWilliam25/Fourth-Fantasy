@@ -4,14 +4,6 @@ using UnityEngine;
 
 public class EnemyChooseTarget : EnemyVariableManager {
 
-    private void Awake()
-    {            
-    }
-
-    void Start()
-    {
-    }
-
     void Update()
     {
         /*if (!isTargetChosen && this.GetComponent<EnemyActionTimeBar>().ATBFull)
