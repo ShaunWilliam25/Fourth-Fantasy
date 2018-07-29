@@ -99,6 +99,7 @@ public class PlayerSkillExecution : PlayerVariableManager
             this.GetComponent<actionTimeBar>().selectionBar.fillAmount = 0;
             this.GetComponent<actionTimeBar>().startSelection = 0;
             TriggerBurn();
+            GetComponent<PlayerArtifactEffect>().ArtifactActionEffect();
 
             this.GetComponent<PlayerVariableManager>().battleStateManagerScript.gameState = BattleStateManager.GAMESTATE.CHOOSING_SKILL;
         }

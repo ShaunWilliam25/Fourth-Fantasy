@@ -26,7 +26,7 @@ public class WarCryEffect : SkillEffect {
 
     public override void Execute(GameObject targetedEnemy)
     {
-        int totalDamage = (int)(damage * DamageMultiplier());
+        int totalDamage = (int)((damage+DamageAddOn()) * DamageMultiplier());
         for(int i = 0;i<enemyList.Count;i++)
         {
             enemyList[i].GetComponent<EnemyTakeDamage>().EnemyDamage(totalDamage);

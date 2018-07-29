@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 11b5e5e66333f34408ba6ea928b3d777, type: 3}
+  m_Name: OldGuard
+  m_EditorClassIdentifier: 
+  name: OldGuard
+  sprite: {fileID: 21300000, guid: 5ad4fdcf30db5f94095d13b397557282, type: 3}
+  animator: {fileID: 0}
+  maxHealth: 800
+  health: 800
+  skillList:
+  - {fileID: 1782082349170188, guid: 959f3c68e1ff7094a97b99c24cbca23a, type: 2}
+  - {fileID: 1920669059250116, guid: 572cc93113f37544bb65bef27788c81b, type: 2}
+  - {fileID: 1816165602472638, guid: 42556c2daa279494fab512d05dc79b5d, type: 2}
+  - {fileID: 1058121370257212, guid: f3fdabfdefaf5a2409e85c1251127952, type: 2}
+  - {fileID: 1492279568912172, guid: 5cf21dce0f6fa7947bd37fc804f136ec, type: 2}
+  scale: 0

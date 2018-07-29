@@ -36,6 +36,7 @@ public class PlayerDeadAndRevive : MonoBehaviour {
         {
             playerStats.knockedOut = false;
             playerStats.reviveAction = 0;
+            playerStats.autoRevive = false;
             playerStats.health = playerStats.baseHealth;
             playerVariable.GetComponent<PlayerScrollSkill>().enabled = true;
             playerVariable.GetComponent<PlayerSkillChooseTarget>().enabled = true;

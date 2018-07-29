@@ -5,13 +5,8 @@ using UnityEngine;
 public class PlayerStatusUpdate : PlayerVariableManager {
     public bool haste = false;
     public bool slow = false;
-    public GameObject Test;
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            GetComponent<PlayerVariableManager>().statusList.Add(Instantiate(Test));
-        }
         statusList = GetComponent<PlayerVariableManager>().statusList;
         
         if (statusList.Count > 0)

@@ -5467,6 +5467,7 @@ MonoBehaviour:
   - {fileID: 1941150173}
   - {fileID: 598937330}
   enemyList: []
+  isWin: 0
   audioManager: {fileID: 255882461}
   victory: {fileID: 1663423641430810, guid: 8a7faca0a5059e647871b7ccbda0bcff, type: 2}
   nextScene: 7

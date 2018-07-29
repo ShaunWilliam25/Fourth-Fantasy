@@ -53,7 +53,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillName: Acceleration
-  skillDescription: Cast Haste on Team
+  skillDescription: Casts Haste on Team
   skillCooldown: 0
   maxSkillCooldown: 0
   user: {fileID: 0}

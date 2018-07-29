@@ -8,7 +8,7 @@ public class SceneManager : MonoBehaviour {
     public List<GameObject> playerList;
     public List<GameObject> enemyList;
     private int playerDeathCount = 0;
-    private bool isWin = false;
+    public bool isWin = false;
     public AudioManager audioManager;
     //public SceneManager BrightnessSetting;
     //public SliderJoint2D BrightnessSlider;
@@ -51,8 +51,12 @@ public class SceneManager : MonoBehaviour {
             if(enemyList[i].GetComponent<EnemyStats>().health <= 0)
             {
                 enemyList[i].SetActive(false);
-                Destroy(enemyList[i], 1f);
+                Destroy(enemyList[i]);
                 enemyList.Remove(enemyList[i]);
+                for(int j =0;j<playerList.Count;j++)
+                {
+                    playerList[j].GetComponent<PlayerVariableManager>().isTargetLockedIn = false;
+                }
 
                 this.GetComponent<ArtifactScript>().calArtifact();
             }

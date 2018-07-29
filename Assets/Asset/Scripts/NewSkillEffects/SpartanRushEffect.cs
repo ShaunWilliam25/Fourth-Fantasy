@@ -27,7 +27,7 @@ public class SpartanRushEffect : SkillEffect {
     public override void Execute(GameObject targetedEnemy)
     {
         user.GetComponent<PlayerVariableManager>().statusList.Add(Instantiate(status[0]));
-        int totalDamage = (int)(damage * DamageMultiplier());
+        int totalDamage = (int)((damage + DamageAddOn()) * DamageMultiplier());
         targetedEnemy.GetComponent<EnemyTakeDamage>().EnemyDamage(totalDamage);
         playerArtifact.ArtifactAttackEffect(targetedEnemy);
 
