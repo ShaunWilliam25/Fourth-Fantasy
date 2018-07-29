@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1917932498904720}
+  m_IsPrefabParent: 1
+--- !u!1 &1917932498904720
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4173077503598832}
+  - component: {fileID: 114942695644803260}
+  m_Layer: 0
+  m_Name: SpiritDoorDoorToHell
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4173077503598832
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1917932498904720}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -1.9099194, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114942695644803260
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1917932498904720}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb9dc1092d7d76544bb4881379c22c20, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerList: []
+  enemyList: []
+  status:
+  - {fileID: 1662090186269998, guid: 7f5e19a1c16a526408eb77a7f1558003, type: 2}
+  - {fileID: 1223870765579878, guid: a1c96be22440ca645b3f79433122c554, type: 2}
+  - {fileID: 1099124874417978, guid: 8fa50424f4357484a898cba80f677691, type: 2}
+  playerArtifact: {fileID: 0}
+  user: {fileID: 0}
+  effectDescription: 
+  effectType: 0
+  damage: 40
+  numOfTarget: 0
+  audioManager: {fileID: 0}
+  heal: 200

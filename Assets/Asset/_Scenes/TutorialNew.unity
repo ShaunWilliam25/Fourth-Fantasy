@@ -2490,7 +2490,7 @@ Transform:
   - {fileID: 1704000837}
   - {fileID: 1400330922}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &878034158
 GameObject:
@@ -2671,7 +2671,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4956226298294122, guid: 6f8df232b4d86694eafe9bd5f248f995, type: 2}
       propertyPath: m_RootOrder
-      value: 10
+      value: 14
       objectReference: {fileID: 0}
     - target: {fileID: 1393198165434804, guid: 6f8df232b4d86694eafe9bd5f248f995, type: 2}
       propertyPath: m_IsActive
@@ -3066,17 +3066,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd07beabd3384a4382d02b1be07de4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyIndexStage: 06000000
+  enemyIndexStage: 01000000
   enemySpawnPoints:
   - {fileID: 2127152360}
   - {fileID: 139971051}
   - {fileID: 1774481182}
   allEnemyList:
-  - {fileID: 1986409563315122, guid: 73ee30cef76bb2043bc7f6e46dfd0278, type: 2}
-  - {fileID: 1410884972470944, guid: 4d0d46ba9f96c8c42aefb26d4ad9fbb6, type: 2}
-  - {fileID: 1200724417324906, guid: 6fd7383a19c9c9644ad05549e9f6900b, type: 2}
-  - {fileID: 1587447713013924, guid: f260aca871766ef42b1c7dd609b5b20f, type: 2}
-  - {fileID: 1624458947231900, guid: f2f1fde665a7d22498f7f6c475ad7fda, type: 2}
   - {fileID: 1393198165434804, guid: 6f8df232b4d86694eafe9bd5f248f995, type: 2}
   sceneManager: {fileID: 1020202954}
   indexInList: 0
@@ -3126,6 +3121,7 @@ MonoBehaviour:
   nextScene: 6
   loseTimer: 0
   tutorial: {fileID: 0}
+  needGreedManager: {fileID: 0}
 --- !u!4 &1020202955
 Transform:
   m_ObjectHideFlags: 0
@@ -3818,7 +3814,7 @@ RectTransform:
   - {fileID: 1521249638}
   - {fileID: 1608236061}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -4609,7 +4605,7 @@ RectTransform:
   - {fileID: 527439447}
   - {fileID: 1551518485}
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7014,7 +7010,7 @@ RectTransform:
   - {fileID: 1204321779}
   - {fileID: 1763681291}
   m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}

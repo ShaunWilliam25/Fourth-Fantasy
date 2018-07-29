@@ -9,7 +9,6 @@ public class NormalAttackExiledDemon : SkillEffect
         AssignUser();
         effectType = SKILL_EFFECT_TYPE.OFFENSIVE;
         numOfTarget = 1;
-        damage = 50;
         effectDescription = "Attack frontline enemy";
     }
 
