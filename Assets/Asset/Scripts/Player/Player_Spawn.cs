@@ -7,14 +7,13 @@ public class Player_Spawn : MonoBehaviour {
     public List<int> characterIndex = new List<int>(2);
     [SerializeField] List<PlayerScriptableObject> characterList;
     public SceneManager sceneManager;
-    public List<GameObject> allCharactersList;
-    public List<GameObject> allSkillList;
+    //public List<GameObject> allSkillList;
     public float skillOffset;
     [SerializeField] private float skillPosOffset;
 
     private void Awake()
     {
-        for(int i=0;i<characterIndex.Count;i++)
+        for (int i=0;i<characterIndex.Count;i++)
         {
             switch (characterIndex[i])
             {
@@ -55,13 +54,18 @@ public class Player_Spawn : MonoBehaviour {
                     sceneManager.playerList[i].GetComponent<PlayerVariableManager>().artifactsList[k].GetComponent<ArtifactEffect>().isEffect = false;
                 }
             }
-        }
-
-        
+        }        
     }
 
     void Start()
     {
-
+        //! Filling the empty reference that is scene specific
+        for (int i = 0; i < sceneManager.playerList.Count; i++)
+        {
+            sceneManager.playerList[i].GetComponent<PlayerVariableManager>().enemySpawnScript = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<Enemy_Spawn>();
+            sceneManager.playerList[i].GetComponent<PlayerVariableManager>().playerSpawnScript = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<Player_Spawn>();
+            sceneManager.playerList[i].GetComponent<PlayerVariableManager>().sceneManagerScript = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManager>();
+            sceneManager.playerList[i].GetComponent<PlayerVariableManager>().battleLogScript = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<battleLog>();
+        }
     }
 }

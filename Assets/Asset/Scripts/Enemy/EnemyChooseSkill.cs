@@ -35,8 +35,6 @@ public class EnemyChooseSkill : EnemyVariableManager {
                 this.GetComponent<EnemyVariableManager>().anim.GetComponent<Animator>().Play(this.GetComponent<EnemyVariableManager>().attackAnimation);
                 Invoke("ResetAnimation", 1.1f);
 
-                Debug.Log("attack anim");
-
                 this.GetComponent<EnemyVariableManager>().Target.transform.GetChild(0).GetComponent<SpriteRenderer>().color = Color.red;
                 Invoke("ResetColor", 0.2f);
                 // Random Skill Choosing
@@ -214,6 +212,5 @@ public class EnemyChooseSkill : EnemyVariableManager {
     void ResetAnimation()
     {
         this.GetComponent<EnemyVariableManager>().anim.GetComponent<Animator>().Play(this.GetComponent<EnemyVariableManager>().idleAnimation);
-        Debug.Log("idle anim");
     }
 }

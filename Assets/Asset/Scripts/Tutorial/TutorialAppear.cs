@@ -94,7 +94,6 @@ public class TutorialAppear : MonoBehaviour {
             isOrderLayerAdjusted = false;
             if (!isOrderLayerAdjusted)
             {
-                Debug.Log(isOrderLayerAdjusted);
                 for (int i = 0; i < sceneManager.playerList.Count; i++)
                 {
                     //! Skill Description order
@@ -135,7 +134,6 @@ public class TutorialAppear : MonoBehaviour {
             isOrderLayerAdjusted = false;
             if (!isOrderLayerAdjusted)
             {
-                Debug.Log(isOrderLayerAdjusted);
                 for (int i = 0; i < sceneManager.playerList.Count; i++)
                 {
                     //! Skill Description order
@@ -323,6 +321,10 @@ public class TutorialAppear : MonoBehaviour {
             if (Input.anyKeyDown)
             {
                 Time.timeScale = 1;
+                for (int i = 0; i < sceneManager.playerList.Count; i++)
+                {
+                    sceneManager.playerList[i].transform.GetChild(1).gameObject.SetActive(true);
+                }
                 UnityEngine.SceneManagement.SceneManager.LoadScene(6);
             }
         }

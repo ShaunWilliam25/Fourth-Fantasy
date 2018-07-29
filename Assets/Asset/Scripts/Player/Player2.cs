@@ -19,4 +19,13 @@ public class Player2 : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
     }
+
+    public static Player2 Instance
+    {
+        get
+        {
+            return instance;
+        }
+
+    }
 }

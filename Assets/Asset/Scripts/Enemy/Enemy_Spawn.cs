@@ -12,7 +12,6 @@ public class Enemy_Spawn : MonoBehaviour {
 
     private void Awake()
     {
-        Debug.Log("Hi from enemy spawn awake");
         //! DON'T FORGET TO DO THIS AFTER POC(Getting the enemyIndex from the character selection screen)
 
         //! Instantiating enemies on specific spawn points based on the size of the enemyIndexStage list.
@@ -56,6 +55,5 @@ public class Enemy_Spawn : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Debug.Log("Hi from enemy spawn update");
 	}
 }

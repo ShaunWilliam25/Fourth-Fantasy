@@ -19,6 +19,15 @@ public class Player1 : MonoBehaviour {
         }
     }
 
+    public static Player1 Instance
+    {
+        get
+        {
+            return instance;
+        }
+
+    }
+
     public void CheckScene()
     {
         //! check scene index, if battle scene set active, other inactive

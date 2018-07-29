@@ -56,6 +56,7 @@ public class SceneManager : MonoBehaviour {
                 for(int j =0;j<playerList.Count;j++)
                 {
                     playerList[j].GetComponent<PlayerVariableManager>().isTargetLockedIn = false;
+                    playerList[j].GetComponent<PlayerVariableManager>().targetedEnemy = null;
                 }
 
                 this.GetComponent<ArtifactScript>().calArtifact();
@@ -65,7 +66,6 @@ public class SceneManager : MonoBehaviour {
         }
         if(enemyList.Count <=0)
         {
-            Debug.Log("Win");
             if (tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_06 && tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.THE_END)
             {
                 if (!isWin)

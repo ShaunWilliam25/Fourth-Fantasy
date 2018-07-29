@@ -23,7 +23,6 @@ public class AudioManager : MonoBehaviour {
     {
         if(instance!=null && instance != this.gameObject)
         {
-            Debug.Log("Time to destory");
             Destroy(this.gameObject);
             return;
         }

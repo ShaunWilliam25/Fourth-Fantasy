@@ -131,7 +131,6 @@ public class TutorialTask : MonoBehaviour {
                 {
                     spiritDoorDead++;
                     taskCheck.isOn = true;
-                    Debug.Log("sprit door dead");
                 }                
             }
         }
