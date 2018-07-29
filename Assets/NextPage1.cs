@@ -5,7 +5,7 @@ using UnityEngine;
 public class NextPage1 : MonoBehaviour
 {
 
-  //  public int EncyclopediaP0 = 0;
+    //  public int EncyclopediaP0 = 0;
     public int EncyclopediaP1 = 0;//exile
     public int EncyclopediaP2 = 0;//time
     public int EncyclopediaP3 = 0;//old
