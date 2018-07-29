@@ -9,7 +9,8 @@ public class Player_Spawn : MonoBehaviour {
     public SceneManager sceneManager;
     public List<GameObject> allCharactersList;
     public List<GameObject> allSkillList;
-    public int skillOffset;
+    public float skillOffset;
+    [SerializeField] private float skillPosOffset;
 
     private void Awake()
     {
@@ -35,14 +36,14 @@ public class Player_Spawn : MonoBehaviour {
                     break;
             }
         }
-        skillOffset = 5;
+
         //! For each player
         for(int i=0;i<sceneManager.playerList.Count;i++)
         {
             //! Loop to instantiate skills
             for(int j=0;j<sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillList.Count;j++)
             { 
-                sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillHolder.Add(Instantiate(sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillList[j], new Vector2(sceneManager.playerList[i].transform.GetChild(1).transform.position.x - skillOffset + j, sceneManager.playerList[i].transform.GetChild(1).transform.position.y), Quaternion.identity, sceneManager.playerList[i].transform.GetChild(1)));
+                sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillHolder.Add(Instantiate(sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillList[j], new Vector2((sceneManager.playerList[i].transform.GetChild(1).position.x + (skillOffset * j)*0.6f) - skillPosOffset, sceneManager.playerList[i].transform.GetChild(1).position.y), Quaternion.identity, sceneManager.playerList[i].transform.GetChild(1)));
             }
         }
     }
