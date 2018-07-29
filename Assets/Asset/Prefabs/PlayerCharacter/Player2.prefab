@@ -579,7 +579,7 @@ MonoBehaviour:
   playerButton: 
   tempSkill: {fileID: 0}
   skillListScript: {fileID: 0}
-  offset: 0
+  offset: 1.23
   skillList:
   - {fileID: 1532596685821658, guid: 0e5db31875af60140ad9871c6b1f4500, type: 2}
   - {fileID: 1314252507990150, guid: a424fd577a25d374f877b3ba0a62572f, type: 2}
@@ -663,7 +663,8 @@ MonoBehaviour:
   skillBox: {fileID: 1338220795806152}
   skillSelected: 0
   boxOffset: 0.6
-  boxStartPosition: {x: -1.2, y: 0, z: 0}
+  startPosition: -1.2
+  characterOffset: 1.84
 --- !u!114 &114115601086827854
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -809,37 +810,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2544d6ab25bd05e43915825738dd742f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strength: 80
-  baseStrength: 80
-  magic: 50
-  baseMagic: 50
-  spirit: 40
-  baseSpirit: 40
-  defense: 70
-  baseDefense: 70
-  criticalChance: 10
-  baseCriticalChance: 10
-  criticalDamage: 250
-  baseCriticalDamage: 250
-  accuracy: 85
-  baseAccuracy: 85
-  statusResistance: []
-  baseStatusResistance: []
   health: 550
   baseHealth: 550
-  speed: 60
-  baseSpeed: 60
-  evasion: 10
-  baseEvasion: 10
-  timeNeeded: 0
-  actionTimer: 0
   immune: 0
   silence: 0
+  berserk: 0
   name: Time Priestress
   aggro: 0
   knockedOut: 0
   reviveAction: 0
   autoRevive: 0
+  taunt: 0
 --- !u!114 &114308879870817338
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -889,8 +870,8 @@ MonoBehaviour:
   startSelection: 0
   playerButton: 
   timeRequired: 2
-  xOffset: 6.4
-  yOffset: -1.47
+  xOffset: 7.25
+  yOffset: -4.27
 --- !u!114 &114372064663379618
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1502,7 +1483,6 @@ MonoBehaviour:
   artifactsList: []
   haste: 0
   slow: 0
-  Test: {fileID: 0}
 --- !u!114 &114956024905355076
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -558,7 +558,12 @@ MonoBehaviour:
   enemyList: []
   UltiUsed: 0
   canUseUlti: 0
-  skillsPrefab: []
+  skillsPrefab:
+  - {fileID: 1325939945082076, guid: bf053c29fd6fd71428287c8faaefaf00, type: 2}
+  - {fileID: 1101623221069768, guid: cc0544de17f959a46a0b45352409e6c3, type: 2}
+  - {fileID: 1154948943276494, guid: fc4bc22f0436b144d84d5ac75b9bb08a, type: 2}
+  - {fileID: 1989038375169202, guid: 855524a48d90d5a4cb959e1aa9f82cf8, type: 2}
+  - {fileID: 1917932498904720, guid: 9f17a21073eae444082a9c741bd2030a, type: 2}
   skillList: []
   skillPercentageUpperLimit: 
   skillToUse: {fileID: 0}
@@ -566,7 +571,7 @@ MonoBehaviour:
   battlelogScript: {fileID: 0}
   audioManager: {fileID: 0}
   tutorial: {fileID: 0}
-  chance: 4b0000000a0000000f000000
+  chance: 2d0000001e0000000a0000000a00000005000000
   isFinalBoss: 0
   ultimate: {fileID: 0}
 --- !u!114 &114526121730501234

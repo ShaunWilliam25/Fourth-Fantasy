@@ -26,6 +26,33 @@ public class PlayerArtifactEffect : MonoBehaviour
         }
     }
 
+    public void ArtifactActionEffect()
+    {
+        if(artifacts.Count>0)
+        {
+            for(int i=0;i<artifacts.Count;i++)
+            {
+                if(artifacts[i].GetComponent<ArtifactEffect>() is MagicalPendant && GetComponent<PlayerStats>().name == "OldGuard")
+                {
+                    GetComponent<PlayerTakeDamage>().PlayerHeal((int)(GetComponent<PlayerStats>().baseHealth * 0.02f));
+                }
+                if(artifacts[i].GetComponent<ArtifactEffect>() is TailOfSuccubus)
+                {
+                    for(int j=GetComponent<PlayerVariableManager>().statusList.Count-1;j>=0;j--)
+                    {
+                        if(GetComponent<PlayerVariableManager>().statusList[j].GetComponent<StatusDetail>().type == "Bad")
+                        {
+                            GetComponent<PlayerVariableManager>().statusList[j].GetComponent<StatusDetail>().RemoveStatus();
+                            Destroy(GetComponent<PlayerVariableManager>().statusList[j].gameObject);
+                            GetComponent<PlayerVariableManager>().statusList.Remove(GetComponent<PlayerVariableManager>().statusList[j]);
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
     public void ArtifactAttackEffect(GameObject target)
     {
         if (artifacts.Count > 0)
@@ -47,23 +74,45 @@ public class PlayerArtifactEffect : MonoBehaviour
                     }
                     if (artifacts[i].GetComponent<ArtifactEffect>() is BurningMark)
                     {
-                        target.GetComponent<EnemyVariableManager>().statusList.Add(Instantiate(artifactStatuses[0]));
+                        if(Random.Range(0,101) <=70)
+                        {
+                            target.GetComponent<EnemyVariableManager>().statusList.Add(Instantiate(artifactStatuses[0]));
+                        } 
                     }
                     if (artifacts[i].GetComponent<ArtifactEffect>() is SlowMark)
                     {
-                        target.GetComponent<EnemyVariableManager>().statusList.Add(Instantiate(artifactStatuses[1]));
+                        if (Random.Range(0, 101) <= 70)
+                        {
+                            target.GetComponent<EnemyVariableManager>().statusList.Add(Instantiate(artifactStatuses[1]));
+                        }
                     }
                     if (artifacts[i].GetComponent<ArtifactEffect>() is PoisonMark)
                     {
-                        target.GetComponent<EnemyVariableManager>().statusList.Add(Instantiate(artifactStatuses[2]));
+                        if (Random.Range(0, 101) <= 70)
+                        {
+                            target.GetComponent<EnemyVariableManager>().statusList.Add(Instantiate(artifactStatuses[2]));
+                        }
                     }
                     if (artifacts[i].GetComponent<ArtifactEffect>() is MarkOfTheRage)
                     {
-                        target.GetComponent<EnemyVariableManager>().statusList.Add(Instantiate(artifactStatuses[3]));
+                        if (Random.Range(0, 101) <= 70)
+                        {
+                            target.GetComponent<EnemyVariableManager>().statusList.Add(Instantiate(artifactStatuses[3]));
+                        }
                     }
                     if (artifacts[i].GetComponent<ArtifactEffect>() is ConfusingMark)
                     {
-                        target.GetComponent<EnemyVariableManager>().statusList.Add(Instantiate(artifactStatuses[4]));
+                        if (Random.Range(0, 101) <= 70)
+                        {
+                            target.GetComponent<EnemyVariableManager>().statusList.Add(Instantiate(artifactStatuses[4]));
+                        }
+                    }
+                    if(artifacts[i].GetComponent<ArtifactEffect>() is RingOfTheCursed)
+                    {
+                        if (Random.Range(0, 101) <= 10)
+                        {
+                            target.GetComponent<EnemyVariableManager>().statusList.Add(Instantiate(artifactStatuses[5]));
+                        }
                     }
                 }
             }

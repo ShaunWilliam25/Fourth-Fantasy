@@ -53,7 +53,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillName: Demon Strike
-  skillDescription: Deals 70 damage to front enemy and heals 30 to self
+  skillDescription: Deals moderate amount of damage to front enemy and heals small
+    amount of HP for self
   skillCooldown: 0
   maxSkillCooldown: 0
   user: {fileID: 0}

@@ -9,7 +9,8 @@ public class Player_Spawn : MonoBehaviour {
     public SceneManager sceneManager;
     public List<GameObject> allCharactersList;
     public List<GameObject> allSkillList;
-    public int skillOffset;
+    public float skillOffset;
+    [SerializeField] private float skillPosOffset;
 
     private void Awake()
     {
@@ -18,6 +19,7 @@ public class Player_Spawn : MonoBehaviour {
             switch (characterIndex[i])
             {
                 case 1:
+                    sceneManager.playerList[i].GetComponent<PlayerStats>().name = characterList[0].name;
                     sceneManager.playerList[i].GetComponent<PlayerStats>().baseHealth = characterList[0].maxHealth;
                     sceneManager.playerList[i].GetComponent<PlayerStats>().health = characterList[0].health;
                     sceneManager.playerList[i].transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = characterList[0].sprite;
@@ -26,6 +28,7 @@ public class Player_Spawn : MonoBehaviour {
                     sceneManager.playerList[i].transform.GetChild(0).GetComponent<Transform>().localScale = new Vector3(characterList[0].scale, characterList[0].scale, characterList[0].scale);
                     break;
                 case 2:
+                    sceneManager.playerList[i].GetComponent<PlayerStats>().name = characterList[1].name;
                     sceneManager.playerList[i].GetComponent<PlayerStats>().baseHealth = characterList[1].maxHealth;
                     sceneManager.playerList[i].GetComponent<PlayerStats>().health = characterList[1].health;
                     sceneManager.playerList[i].transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = characterList[1].sprite;
@@ -35,16 +38,26 @@ public class Player_Spawn : MonoBehaviour {
                     break;
             }
         }
-        skillOffset = 5;
+
         //! For each player
         for(int i=0;i<sceneManager.playerList.Count;i++)
         {
             //! Loop to instantiate skills
             for(int j=0;j<sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillList.Count;j++)
             { 
-                sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillHolder.Add(Instantiate(sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillList[j], new Vector2(sceneManager.playerList[i].transform.GetChild(1).transform.position.x - skillOffset + j, sceneManager.playerList[i].transform.GetChild(1).transform.position.y), Quaternion.identity, sceneManager.playerList[i].transform.GetChild(1)));
+                sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillHolder.Add(Instantiate(sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillList[j], new Vector2((sceneManager.playerList[i].transform.GetChild(1).position.x + (skillOffset * j)*0.6f) - skillPosOffset, sceneManager.playerList[i].transform.GetChild(1).position.y), Quaternion.identity, sceneManager.playerList[i].transform.GetChild(1)));
+            }
+            for (int k = 0; k < sceneManager.playerList[i].GetComponent<PlayerVariableManager>().artifactsList.Count;k++)
+            {
+                if(sceneManager.playerList[i].GetComponent<PlayerVariableManager>().artifactsList[k].GetComponent<ArtifactEffect>() is SprintShoes || sceneManager.playerList[i].GetComponent<PlayerVariableManager>().artifactsList[k].GetComponent<ArtifactEffect>() is AlchemistSecretElixir || sceneManager.playerList[i].GetComponent<PlayerVariableManager>().artifactsList[k].GetComponent<ArtifactEffect>() is AncientBookOfIntelligence ||
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().artifactsList[k].GetComponent<ArtifactEffect>() is ChronosLostMemento || sceneManager.playerList[i].GetComponent<PlayerVariableManager>().artifactsList[k].GetComponent<ArtifactEffect>() is ShieldOfTheFallenKing || sceneManager.playerList[i].GetComponent<PlayerVariableManager>().artifactsList[k].GetComponent<ArtifactEffect>() is HeartOfTheDemonLord)
+                {
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().artifactsList[k].GetComponent<ArtifactEffect>().isEffect = false;
+                }
             }
         }
+
+        
     }
 
     void Start()

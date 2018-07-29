@@ -18,6 +18,8 @@ public class SettingsMenu : MonoBehaviour
     public float outMasterVolume;
     public float outMusicVolume;
     public float outEffectVolume;
+    public ParticleSystem pS1;
+    public ParticleSystem pS2;
 
     public void setMasterVolume(float volume)
     {
@@ -52,6 +54,12 @@ public class SettingsMenu : MonoBehaviour
 
     public void Awake()
     {
+
+        ParticleSystem.EmissionModule module1 = pS1.emission;
+        ParticleSystem.EmissionModule module2 = pS2.emission;
+        module1.enabled = true;
+        module2.enabled = true;
+
         fullscreen.isOn = Screen.fullScreen;
         audioMixer.SetFloat("MasterVolume", -5f);
         audioMixer.SetFloat("MusicVolume", -5f);
@@ -63,6 +71,10 @@ public class SettingsMenu : MonoBehaviour
         musicSlider.value = AudioManager.Instance.dBToVolume(outMusicVolume);
         audioMixer.GetFloat("EffectVolume", out outEffectVolume);
         effectSlider.value = AudioManager.Instance.dBToVolume(outEffectVolume);
+        //GetComponent<ParticleSystem>().Play();
+        pS1.Play();
+        pS2.Play();
+
     }
 
     private void Update()

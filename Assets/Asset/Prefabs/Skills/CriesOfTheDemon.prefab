@@ -53,7 +53,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillName: Cries Of The Demon
-  skillDescription: Deals 40 damage to all enemies, inflicts confuse, curse and slow
+  skillDescription: Inflicts confuse, curse & slow
   skillCooldown: 0
   maxSkillCooldown: 0
   user: {fileID: 0}

@@ -1521,18 +1521,7 @@ MonoBehaviour:
   m_Value: 0.5
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1411864381}
-        m_MethodName: setEffectVolume
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!1 &373896229
@@ -3815,6 +3804,7 @@ GameObject:
   - component: {fileID: 1222511402}
   - component: {fileID: 1222511404}
   - component: {fileID: 1222511403}
+  - component: {fileID: 1222511405}
   m_Layer: 0
   m_Name: Particle System (1)
   m_TagString: Untagged
@@ -8422,6 +8412,17 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!114 &1222511405
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1222511401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6e7662edc3b47b4293382c51713e395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1254476985
 GameObject:
   m_ObjectHideFlags: 0
@@ -8896,7 +8897,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1404668763}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 323271e3740502b4d8135b0c7b5b4447, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d63795eb7a8d8746b39425471c58025, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   EncyclopediaP1: 8
@@ -8906,10 +8907,10 @@ MonoBehaviour:
   EncyclopediaP5: 12
   EncyclopediaP6: 13
   EncyclopediaP7: 14
-  EncyclopediaP8: 0
-  EncyclopediaP9: 0
-  EncyclopediaP10: 0
-  EncyclopediaP11: 0
+  EncyclopediaP8: 15
+  EncyclopediaP9: 16
+  EncyclopediaP10: 17
+  EncyclopediaP11: 18
   StartMenuFinal: 0
 --- !u!1 &1411864375
 GameObject:
@@ -9033,6 +9034,8 @@ MonoBehaviour:
   outMasterVolume: 0
   outMusicVolume: 0
   outEffectVolume: 0
+  pS1: {fileID: 1932261355}
+  pS2: {fileID: 1222511404}
 --- !u!114 &1411864382
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9847,6 +9850,7 @@ GameObject:
   - component: {fileID: 1932261356}
   - component: {fileID: 1932261355}
   - component: {fileID: 1932261354}
+  - component: {fileID: 1932261357}
   m_Layer: 0
   m_Name: Particle System
   m_TagString: Untagged
@@ -14454,6 +14458,17 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+--- !u!114 &1932261357
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1932261353}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e6e7662edc3b47b4293382c51713e395, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1934635814
 GameObject:
   m_ObjectHideFlags: 0

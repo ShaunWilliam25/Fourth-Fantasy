@@ -53,8 +53,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   skillName: Soul Hunt
-  skillDescription: Deals 50 damage to back enemy and inflicts berserk or slow or
-    silence to enemy
+  skillDescription: May inflict berserk/slow/silence to enemy
   skillCooldown: 0
   maxSkillCooldown: 0
   user: {fileID: 0}

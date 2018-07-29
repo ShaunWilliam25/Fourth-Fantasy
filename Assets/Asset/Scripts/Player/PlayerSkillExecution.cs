@@ -8,11 +8,13 @@ public class PlayerSkillExecution : PlayerVariableManager
     PlayerStatusUpdate statusUpdateScript;
     public int isAttack = 0;
     public float attackAnimationTimer;
+    [SerializeField] private PlayerScrollSkill scrollSkill;
 
     private void Awake()
     {
 
         actionTimerBarScript = this.GetComponent<actionTimeBar>();
+        scrollSkill = this.GetComponent<PlayerScrollSkill>();
         //statusUpdateScript = GetComponent<PlayerStatusUpdate>();
     }
 
@@ -34,14 +36,14 @@ public class PlayerSkillExecution : PlayerVariableManager
         }
         if (this.GetComponent<PlayerVariableManager>().battleStateManagerScript.gameState == BattleStateManager.GAMESTATE.EXECUTE_SKILL)
         {
-            for (int i = 0; i < this.GetComponent<PlayerVariableManager>().skillHolder[this.GetComponent<PlayerVariableManager>().skillHolder.Count / 2].GetComponent<SkillDetail>().skillExecutionHolder.Count; i++)
+            for (int i = 0; i < this.GetComponent<PlayerVariableManager>().skillHolder[scrollSkill.skillSelected].GetComponent<SkillDetail>().skillExecutionHolder.Count; i++)
             {
                 //! Execute skill
                 //this.GetComponent<PlayerVariableManager>().lockInSkill.GetComponent<SkillDetail>().skillExecutionHolder[i].GetComponent<SkillEffect>().Execute(this.GetComponent<PlayerVariableManager>().targetedEnemy);
-                this.GetComponent<PlayerVariableManager>().skillHolder[this.GetComponent<PlayerVariableManager>().skillHolder.Count / 2].GetComponent<SkillDetail>().skillExecutionHolder[i].GetComponent<SkillEffect>().Execute(this.GetComponent<PlayerVariableManager>().targetedEnemy);
+                this.GetComponent<PlayerVariableManager>().skillHolder[scrollSkill.skillSelected].GetComponent<SkillDetail>().skillExecutionHolder[i].GetComponent<SkillEffect>().Execute(this.GetComponent<PlayerVariableManager>().targetedEnemy);
 
                 //! Update the battle log
-                this.GetComponent<PlayerVariableManager>().battleLogScript.AddEvent(this.GetComponent<PlayerVariableManager>().playerStats.name + " " + this.GetComponent<PlayerVariableManager>().skillHolder[this.GetComponent<PlayerVariableManager>().skillHolder.Count / 2].GetComponent<SkillDetail>().skillDescription);
+                this.GetComponent<PlayerVariableManager>().battleLogScript.AddEvent(this.GetComponent<PlayerVariableManager>().playerStats.name + " " + this.GetComponent<PlayerVariableManager>().skillHolder[scrollSkill.skillSelected].GetComponent<SkillDetail>().skillDescription);
 
                 //! Check for tutorial 2
                 isAttack++;
@@ -99,6 +101,7 @@ public class PlayerSkillExecution : PlayerVariableManager
             this.GetComponent<actionTimeBar>().selectionBar.fillAmount = 0;
             this.GetComponent<actionTimeBar>().startSelection = 0;
             TriggerBurn();
+            GetComponent<PlayerArtifactEffect>().ArtifactActionEffect();
 
             this.GetComponent<PlayerVariableManager>().battleStateManagerScript.gameState = BattleStateManager.GAMESTATE.CHOOSING_SKILL;
         }

@@ -15,8 +15,7 @@ public class actionTimeBar : MonoBehaviour
     public float xOffset;
     public float yOffset;
     Transform playerTransform;
-
-
+    private PlayerScrollSkill scrollSkill;
 
     private void Awake()
     {
@@ -28,6 +27,7 @@ public class actionTimeBar : MonoBehaviour
         {
             playerButton = "P2_Button";
         }
+        scrollSkill = this.gameObject.GetComponent<PlayerScrollSkill>();
     }
 
     // Use this for initialization
@@ -35,7 +35,7 @@ public class actionTimeBar : MonoBehaviour
     {
         startSelection = Random.Range(0, 0.51f);
         playerTransform = this.GetComponent<Transform>();
-        selectionBar.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + yOffset, this.transform.position.z);
+        //selectionBar.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + yOffset, this.transform.position.z);
     }
 
     void Update()
@@ -53,7 +53,10 @@ public class actionTimeBar : MonoBehaviour
         }*/
 
         //! Setting the value of the bar based on the calcSelection
-        setSelection(startSelection);       
+        setSelection(startSelection);
+
+        //! Setting location based on skillSelected from player scroll skill
+        selectionBar.transform.localPosition = Camera.main.WorldToScreenPoint(new Vector2(scrollSkill.startPosition + (scrollSkill.boxOffset * scrollSkill.skillSelected) - xOffset, this.transform.position.y + yOffset));
     }
 
     //! Setting the amount
