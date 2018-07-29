@@ -5438,7 +5438,7 @@ MonoBehaviour:
   characterIndex: 0100000002000000
   characterList:
   - {fileID: 11400000, guid: d40af4ca25ed4424f8cd642053571c35, type: 2}
-  - {fileID: 11400000, guid: d40af4ca25ed4424f8cd642053571c35, type: 2}
+  - {fileID: 11400000, guid: 57774ab18a533f549b5b38d300629e1a, type: 2}
   - {fileID: 11400000, guid: d40af4ca25ed4424f8cd642053571c35, type: 2}
   - {fileID: 11400000, guid: d40af4ca25ed4424f8cd642053571c35, type: 2}
   sceneManager: {fileID: 1020202954}
