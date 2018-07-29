@@ -71,7 +71,9 @@ public class SettingsMenu : MonoBehaviour
         musicSlider.value = AudioManager.Instance.dBToVolume(outMusicVolume);
         audioMixer.GetFloat("EffectVolume", out outEffectVolume);
         effectSlider.value = AudioManager.Instance.dBToVolume(outEffectVolume);
-        GetComponent<ParticleSystem>().Play();
+        //GetComponent<ParticleSystem>().Play();
+        pS1.Play();
+        pS2.Play();
 
     }
 
