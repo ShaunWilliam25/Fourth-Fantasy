@@ -66,6 +66,7 @@ public class Player_Spawn : MonoBehaviour {
             sceneManager.playerList[i].GetComponent<PlayerVariableManager>().playerSpawnScript = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<Player_Spawn>();
             sceneManager.playerList[i].GetComponent<PlayerVariableManager>().sceneManagerScript = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManager>();
             sceneManager.playerList[i].GetComponent<PlayerVariableManager>().battleLogScript = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<battleLog>();
+            sceneManager.playerList[i].GetComponent<PlayerVariableManager>().gameState = BattleStateManager.GAMESTATE.CHOOSING_SKILL;
         }
     }
 }

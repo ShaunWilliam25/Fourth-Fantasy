@@ -31,16 +31,16 @@ public class SceneManager : MonoBehaviour {
 
     public void Start()
     {
-        audioManager = FindObjectOfType<AudioManager>();
-        if (audioManager.soundPlaying.Count > 0)
+        //audioManager = FindObjectOfType<AudioManager>();
+        if (AudioManager.instance.soundPlaying.Count > 0)
         {
-            for (int i = 0; i < audioManager.soundPlaying.Count; i++)
+            for (int i = 0; i < AudioManager.instance.soundPlaying.Count; i++)
             {
-                audioManager.soundPlaying[i].source.Stop();
+                AudioManager.instance.soundPlaying[i].source.Stop();
             }
-            audioManager.soundPlaying.Clear();
+            AudioManager.instance.soundPlaying.Clear();
         }
-        audioManager.PlaySound("BattleSound");
+        AudioManager.instance.PlaySound("BattleSound");
 
     }
 
