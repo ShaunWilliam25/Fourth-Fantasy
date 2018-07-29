@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4875743644465744}
   - component: {fileID: 212155896802088400}
   - component: {fileID: 114582784108985586}
+  - component: {fileID: 114948155322672566}
   m_Layer: 0
   m_Name: BurningMark
   m_TagString: Untagged
@@ -54,6 +55,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEffect: 0
   carrier: {fileID: 0}
+--- !u!114 &114948155322672566
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1343201284987608}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af4a5d2816fed8a48bcee07d82869d4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
+  name: Burning Mark
+  effect: 
 --- !u!212 &212155896802088400
 SpriteRenderer:
   m_ObjectHideFlags: 1

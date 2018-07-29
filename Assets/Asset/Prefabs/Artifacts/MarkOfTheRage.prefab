@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4478383779513006}
   - component: {fileID: 212250996757270492}
   - component: {fileID: 114476932477705624}
+  - component: {fileID: 114921867376393670}
   m_Layer: 0
   m_Name: MarkOfTheRage
   m_TagString: Untagged
@@ -54,6 +55,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEffect: 0
   carrier: {fileID: 0}
+--- !u!114 &114921867376393670
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1457033335634664}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af4a5d2816fed8a48bcee07d82869d4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 0}
+  name: 
+  effect: 
 --- !u!212 &212250996757270492
 SpriteRenderer:
   m_ObjectHideFlags: 1

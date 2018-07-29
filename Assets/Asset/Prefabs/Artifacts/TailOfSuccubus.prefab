@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4438139219621518}
   - component: {fileID: 212105308068475806}
   - component: {fileID: 114165629318108016}
+  - component: {fileID: 114238164508244824}
   m_Layer: 0
   m_Name: TailOfSuccubus
   m_TagString: Untagged
@@ -54,6 +55,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isEffect: 0
   carrier: {fileID: 0}
+--- !u!114 &114238164508244824
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1655191637683538}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af4a5d2816fed8a48bcee07d82869d4c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: 3801401faa922f444be40317d820ed14, type: 3}
+  name: Tail of Succubus
+  effect: 
 --- !u!212 &212105308068475806
 SpriteRenderer:
   m_ObjectHideFlags: 1
