@@ -10,11 +10,14 @@ public class SceneManager : MonoBehaviour {
     private int playerDeathCount = 0;
     private bool isWin = false;
     public AudioManager audioManager;
+    //public SceneManager BrightnessSetting;
+    //public SliderJoint2D BrightnessSlider;
     public GameObject victory;
     public int nextScene;
     public float loseTimer;
     public TutorialAppear tutorial;
     public GameObject needGreedManager;
+    
 
     public void Awake()
     {
@@ -24,6 +27,8 @@ public class SceneManager : MonoBehaviour {
         playerList[0] = GameObject.FindGameObjectWithTag("Player1");
         playerList[1] = GameObject.FindGameObjectWithTag("Player2");
     }
+
+
     public void Start()
     {
         audioManager = FindObjectOfType<AudioManager>();
@@ -36,6 +41,7 @@ public class SceneManager : MonoBehaviour {
             audioManager.soundPlaying.Clear();
         }
         audioManager.PlaySound("BattleSound");
+
     }
 
     private void Update()
@@ -50,6 +56,8 @@ public class SceneManager : MonoBehaviour {
 
                 this.GetComponent<ArtifactScript>().calArtifact();
             }
+
+            
         }
         if(enemyList.Count <=0)
         {
@@ -98,6 +106,7 @@ public class SceneManager : MonoBehaviour {
             if (loseTimer > 1)
             {
                 UnityEngine.SceneManagement.SceneManager.LoadScene(4);
+              
             }
         }
     }

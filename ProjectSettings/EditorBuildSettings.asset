@@ -48,12 +48,24 @@ EditorBuildSettings:
     path: Assets/Asset/_Scenes/Encyclopedia/Preet_Ency_BleedingNoble.unity
     guid: 8b0d66336b7e92f4287ae08488d96c7c
   - enabled: 1
+    path: Assets/Asset/_Scenes/Encyclopedia/Preet_Ency_SkeletonSword.unity
+    guid: 7c55286f063c90d4791b77619ef9ff63
+  - enabled: 1
+    path: Assets/Asset/_Scenes/Encyclopedia/Preet_Ency_SkeletonArcher.unity
+    guid: a233bd0850959054d9837bdeb99e0f95
+  - enabled: 1
+    path: Assets/Asset/_Scenes/Encyclopedia/Preet_Ency_SkeletonLance.unity
+    guid: 01b92f761b6536a44bad1b63f3d686e7
+  - enabled: 1
+    path: Assets/Asset/_Scenes/Encyclopedia/Preet_Ency_Wolf.unity
+    guid: c86b84251c0fe43498be6927711b531d
+  - enabled: 1
     path: Assets/Asset/_Scenes/Encyclopedia/Preet_Ency_SpiritDoor.unity
     guid: c10dd2702a4321c489792ebf1ee9f331
   - enabled: 1
-    path: Assets/Asset/_Scenes/Encyclopedia/Preet_Ency_Mimic.unity
-    guid: aa02a6716302a1d4782aa43d7224a96e
-  - enabled: 1
     path: Assets/Asset/_Scenes/Encyclopedia/Preet_Ency_ConsumingKnight.unity
     guid: eb43d86f7aa6e484e99de34fd6e41657
+  - enabled: 1
+    path: Assets/Asset/_Scenes/Encyclopedia/Preet_Ency_Story.unity
+    guid: aa02a6716302a1d4782aa43d7224a96e
   m_configObjects: {}
