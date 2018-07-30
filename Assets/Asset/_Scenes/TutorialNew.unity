@@ -1881,6 +1881,7 @@ MonoBehaviour:
   outMasterVolume: 0
   outMusicVolume: 0
   outEffectVolume: 0
+  scene: {fileID: 1020202951}
 --- !u!114 &519420035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3656,6 +3657,7 @@ MonoBehaviour:
   outMasterVolume: 0
   outMusicVolume: 0
   outEffectVolume: 0
+  scene: {fileID: 0}
 --- !u!114 &1204321781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6672,6 +6674,7 @@ MonoBehaviour:
   outMasterVolume: 0
   outMusicVolume: 0
   outEffectVolume: 0
+  scene: {fileID: 0}
 --- !u!1001 &1950635683
 Prefab:
   m_ObjectHideFlags: 0

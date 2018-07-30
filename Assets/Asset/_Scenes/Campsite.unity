@@ -5528,7 +5528,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 0be3fd9749b56084bb64f9979703dc08, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7c87c962a694f5043b4de05d213a7041, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7232,7 +7232,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ': Ancient Book of Knowledge'
+  m_Text: ': '
 --- !u!222 &1140407254
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7890,7 +7890,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 0be3fd9749b56084bb64f9979703dc08, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7c87c962a694f5043b4de05d213a7041, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8923,7 +8923,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- reduce ATB charge require time by 0.5sec'
+  m_Text: '-'
 --- !u!222 &1400248051
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12277,7 +12277,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: ': Ancient Book of Knowledge'
+  m_Text: ':'
 --- !u!222 &1961420658
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12875,7 +12875,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- reduce ATB charge require time by 0.5sec'
+  m_Text: 
 --- !u!222 &2081512676
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -15,6 +15,7 @@ public class PauseScript : MonoBehaviour
     public float outMasterVolume;
     public float outMusicVolume;
     public float outEffectVolume;
+    [SerializeField] private GameObject scene;
 
     private void Start()
     {
@@ -64,6 +65,11 @@ public class PauseScript : MonoBehaviour
     }
     public void SkipTut()
     {
+        for(int i=0;i<scene.GetComponent<SceneManager>().playerList.Count;i++)
+        {
+            scene.GetComponent<SceneManager>().playerList[i].transform.GetChild(1).gameObject.SetActive(true);
+        }
+
         UnityEngine.SceneManagement.SceneManager.LoadScene(6);
     }
     public void ClickSound()
