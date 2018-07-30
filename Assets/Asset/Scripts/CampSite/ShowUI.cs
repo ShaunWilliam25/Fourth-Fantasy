@@ -161,8 +161,6 @@ public class ShowUI : MonoBehaviour
                 csm.playerList[i].transform.GetChild(j).gameObject.SetActive(true);
             }
         }
-        //GameObject.FindGameObjectWithTag("MainCamera").GetComponent<battleLog>().ShowGui = true;
-
         UnityEngine.SceneManagement.SceneManager.LoadScene(6);
     }
 }
