@@ -233,6 +233,7 @@ public class NeedGreedRandomizer : MonoBehaviour
     {
         scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Count - 1].SetActive(false);
         owner.GetComponent<PlayerVariableManager>().artifactsList.Add(scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Count - 1]);
+        scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Count - 1].transform.SetParent(owner.transform);
         scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Remove(scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Count - 1]);
         /*
         scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0].SetActive(false);
