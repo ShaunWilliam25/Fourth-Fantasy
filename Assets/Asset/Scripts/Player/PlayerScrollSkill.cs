@@ -91,7 +91,7 @@ public class PlayerScrollSkill : PlayerVariableManager {
                     boxPos.position = new Vector3(startPosition + (boxOffset * skillSelected), -characterOffset, 0);
                     return;
                 }
-        }
+            }
             
             //! Move the box & and also the int for which skill its at
             skillSelected++;

@@ -56,7 +56,6 @@ public class SceneManager : MonoBehaviour {
                 for(int j =0;j<playerList.Count;j++)
                 {
                     playerList[j].GetComponent<PlayerVariableManager>().isTargetLockedIn = false;
-                    playerList[j].GetComponent<PlayerVariableManager>().targetedEnemy = null;
                 }
 
                 this.GetComponent<ArtifactScript>().calArtifact();

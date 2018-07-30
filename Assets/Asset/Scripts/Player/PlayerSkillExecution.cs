@@ -27,11 +27,18 @@ public class PlayerSkillExecution : PlayerVariableManager
     // Update is called once per frame
     void Update()
     {
+        if(this.GetComponent<PlayerVariableManager>().battleStateManagerScript.gameState == BattleStateManager.GAMESTATE.EXECUTE_SKILL)
+        {
+            Debug.Log(this.GetComponent<PlayerVariableManager>().playerStats.name + "state is execute skill");
+        }
+
         if (actionTimerBarScript.selectionBar.fillAmount >= 1)
         {
+            Debug.Log(this.GetComponent<PlayerVariableManager>().playerStats.name + "ATB is ready");
             if (this.GetComponent<PlayerVariableManager>().isTargetLockedIn)
             {
                 this.GetComponent<PlayerVariableManager>().battleStateManagerScript.gameState = BattleStateManager.GAMESTATE.EXECUTE_SKILL;
+                Debug.Log(this.GetComponent<PlayerVariableManager>().playerStats.name + " READY TO ATTACK");
             }
         }
         if (this.GetComponent<PlayerVariableManager>().battleStateManagerScript.gameState == BattleStateManager.GAMESTATE.EXECUTE_SKILL)
@@ -43,6 +50,7 @@ public class PlayerSkillExecution : PlayerVariableManager
                 if(this.GetComponent<PlayerVariableManager>().targetedEnemy.GetComponent<EnemyVariableManager>().enemyStats.health > 0)
                 {
                     this.GetComponent<PlayerVariableManager>().skillHolder[scrollSkill.skillSelected].GetComponent<SkillDetail>().skillExecutionHolder[i].GetComponent<SkillEffect>().Execute(this.GetComponent<PlayerVariableManager>().targetedEnemy);
+                    Debug.Log("ATTACK");
 
                     //! Update the battle log
                     this.GetComponent<PlayerVariableManager>().battleLogScript.AddEvent(this.GetComponent<PlayerVariableManager>().playerStats.name + " " + this.GetComponent<PlayerVariableManager>().skillHolder[scrollSkill.skillSelected].GetComponent<SkillDetail>().skillDescription);
@@ -85,7 +93,7 @@ public class PlayerSkillExecution : PlayerVariableManager
             //this.GetComponent<PlayerLockInSkill>().lockedInTimer = 0;
             //this.GetComponent<actionTimeBar>().fullTimer = 0;
             this.GetComponent<PlayerVariableManager>().isTargetLockedIn = false;
-            this.GetComponent<PlayerVariableManager>().targetedEnemy = null;
+            //this.GetComponent<PlayerVariableManager>().targetedEnemy = null;
             this.GetComponent<actionTimeBar>().selectionBar.fillAmount = 0;
             this.GetComponent<actionTimeBar>().startSelection = 0;
             TriggerBurn();

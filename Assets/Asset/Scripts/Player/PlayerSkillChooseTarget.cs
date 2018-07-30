@@ -75,6 +75,12 @@ public class PlayerSkillChooseTarget : PlayerVariableManager
                 }
             }
             this.GetComponent<PlayerVariableManager>().isTargetLockedIn = true;
-        }        
+        }
+        
+        //! Checking it its empty
+        if(!this.GetComponent<PlayerVariableManager>().isTargetLockedIn && this.GetComponent<PlayerVariableManager>().isTargetLockedIn == true)
+        {
+            this.GetComponent<PlayerVariableManager>().isTargetLockedIn = false;
+        }
     }
 }

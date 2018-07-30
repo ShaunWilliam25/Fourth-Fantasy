@@ -43,7 +43,7 @@ public class EnemyVariableManager : MonoBehaviour {
     public GameObject loAggroTarget;
     public int randNum;
     public GameObject Target;
-    public SceneManager SceneManager;
+    //public SceneManager SceneManager;
     public GameObject aimIcon;
     public Vector2 aimIconPosition;
 

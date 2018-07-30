@@ -347,7 +347,6 @@ MonoBehaviour:
   loAggroTarget: {fileID: 0}
   randNum: 0
   Target: {fileID: 0}
-  SceneManager: {fileID: 0}
   aimIcon: {fileID: 0}
   aimIconPosition: {x: 0, y: 0}
   randNo: 0
@@ -395,7 +394,6 @@ MonoBehaviour:
   loAggroTarget: {fileID: 0}
   randNum: 0
   Target: {fileID: 0}
-  SceneManager: {fileID: 0}
   aimIcon: {fileID: 0}
   aimIconPosition: {x: 0, y: 0}
   randNo: 0
@@ -484,7 +482,6 @@ MonoBehaviour:
   loAggroTarget: {fileID: 0}
   randNum: 0
   Target: {fileID: 0}
-  SceneManager: {fileID: 0}
   aimIcon: {fileID: 0}
   aimIconPosition: {x: 0, y: 0}
   randNo: 0
@@ -551,7 +548,6 @@ MonoBehaviour:
   loAggroTarget: {fileID: 0}
   randNum: 0
   Target: {fileID: 0}
-  SceneManager: {fileID: 0}
   aimIcon: {fileID: 0}
   aimIconPosition: {x: 0, y: 0}
   randNo: 50
@@ -609,7 +605,6 @@ MonoBehaviour:
   loAggroTarget: {fileID: 0}
   randNum: 21
   Target: {fileID: 0}
-  SceneManager: {fileID: 0}
   aimIcon: {fileID: 0}
   aimIconPosition: {x: 0, y: 0}
   randNo: 0
@@ -741,7 +736,6 @@ MonoBehaviour:
   loAggroTarget: {fileID: 0}
   randNum: 0
   Target: {fileID: 0}
-  SceneManager: {fileID: 0}
   aimIcon: {fileID: 1250949278517234}
   aimIconPosition: {x: 0, y: 0}
   randNo: 0
@@ -791,7 +785,6 @@ MonoBehaviour:
   loAggroTarget: {fileID: 0}
   randNum: 0
   Target: {fileID: 0}
-  SceneManager: {fileID: 0}
   aimIcon: {fileID: 0}
   aimIconPosition: {x: 0, y: 0}
   randNo: 0
