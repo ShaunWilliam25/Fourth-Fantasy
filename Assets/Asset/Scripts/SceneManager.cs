@@ -17,7 +17,8 @@ public class SceneManager : MonoBehaviour {
     public float loseTimer;
     public TutorialAppear tutorial;
     public GameObject needGreedManager;
-    
+    public List<BattleSceneScriptableObject> waveDetails;
+
 
     public void Awake()
     {
@@ -26,11 +27,14 @@ public class SceneManager : MonoBehaviour {
         tutorial = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<TutorialAppear>();
         playerList[0] = GameObject.FindGameObjectWithTag("Player1");
         playerList[1] = GameObject.FindGameObjectWithTag("Player2");
+        AudioManager.instance.waveIndex++;
+
+        Instantiate(waveDetails[AudioManager.instance.waveIndex].background, Vector3.zero,Quaternion.identity);
     }
 
 
     public void Start()
-    {
+    {                
         //audioManager = FindObjectOfType<AudioManager>();
         if (AudioManager.instance.soundPlaying.Count > 0)
         {

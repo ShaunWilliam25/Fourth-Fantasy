@@ -6,9 +6,9 @@ using UnityEngine.UI;
 public class EnemyStatusList : EnemyVariableManager
 {
     public List<Sprite> statusIcon;
-    public List<Image> statusesList;
+    public List<Image> statusesList = new List<Image>();
     public Sprite Empty;
-
+    
     void Update()
     {
         for (int i = 0; i < 5; i++)

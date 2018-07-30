@@ -16,7 +16,7 @@ public class Player_Spawn : MonoBehaviour {
         for (int i=0;i<characterIndex.Count;i++)
         {
             switch (characterIndex[i])
-            {
+            {                
                 case 1:
                     sceneManager.playerList[i].GetComponent<PlayerStats>().name = characterList[0].name;
                     sceneManager.playerList[i].GetComponent<PlayerStats>().baseHealth = characterList[0].maxHealth;

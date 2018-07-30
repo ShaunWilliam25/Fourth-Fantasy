@@ -8,11 +8,12 @@ public class Enemy_Spawn : MonoBehaviour {
     public List<Transform> enemySpawnPoints;
     public List<GameObject> allEnemyList;
     public SceneManager sceneManager;
-    public int indexInList;
+    public int indexInList;    
 
     private void Awake()
     {
-        //! DON'T FORGET TO DO THIS AFTER POC(Getting the enemyIndex from the character selection screen)
+        //! Fill the enemy index stage list
+        enemyIndexStage = sceneManager.waveDetails[AudioManager.instance.waveIndex].enemiesToSpawn;
 
         //! Instantiating enemies on specific spawn points based on the size of the enemyIndexStage list.
         indexInList = 0;

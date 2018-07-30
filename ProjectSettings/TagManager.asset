@@ -11,6 +11,7 @@ TagManager:
   - AudioManager
   - Player1Toggle
   - Player2Toggle
+  - Background
   layers:
   - Default
   - TransparentFX
