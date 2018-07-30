@@ -104,9 +104,9 @@ public class SceneManager : MonoBehaviour {
         
         if (Input.GetKeyDown("b"))
         {
-            for (int i = 0; i < playerList.Count; i++)
+            for (int k = 0; k < playerList.Count; k++)
             {
-                playerList[i].GetComponent<PlayerStats>().health = 0;
+                playerList[k].GetComponent<PlayerStats>().health = 0;
                 break;
             }
         }
