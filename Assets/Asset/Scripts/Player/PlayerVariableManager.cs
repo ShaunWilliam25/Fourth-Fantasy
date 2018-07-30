@@ -82,7 +82,7 @@ public class PlayerVariableManager : MonoBehaviour {
     //! Player Artifact Effect
     public List<GameObject> artifactsList;
 
-    private void Awake()
+private void Awake()
     {
         playerStats = this.GetComponent<PlayerStats>();
         battleStateManagerScript = this.GetComponent<BattleStateManager>();
@@ -128,6 +128,9 @@ public class PlayerVariableManager : MonoBehaviour {
     }
     private void Update()
     {
-        
+        /*for (int i = 0; i < artifactsList.Count; i++)
+        {
+            artifactsList[i].GetComponent<SpriteRenderer>().enabled = false;
+        }*/
     }
 }

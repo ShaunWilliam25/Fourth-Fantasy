@@ -4,5 +4,8 @@ using UnityEngine;
 
 public class RingOfTheCursed : ArtifactEffect {
 
-
+    public void Awake()
+    {
+        this.gameObject.SetActive(false);
+    }
 }
