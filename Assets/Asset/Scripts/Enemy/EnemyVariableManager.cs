@@ -85,6 +85,16 @@ public class EnemyVariableManager : MonoBehaviour {
             idleAnimation = "wolfIdleAnimation";
             attackAnimation = "WolfAttackAnim1";
         }
+        else if (this.gameObject.tag == "swordskeleton")
+        {
+            idleAnimation = "SkeletonSwordIdleAnim";
+            attackAnimation = "skeletonSwordAtack";
+        }
+        else if (this.gameObject.tag == "greedboss")
+        {
+            idleAnimation = "GreedBossIdleAnimation";
+            attackAnimation = "GreedBossAttackAnimation";
+        }
     }
     private void Start()
     {

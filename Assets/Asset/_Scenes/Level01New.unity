@@ -312,7 +312,7 @@ GameObject:
   - component: {fileID: 38693885}
   m_Layer: 0
   m_Name: Wolf
-  m_TagString: Untagged
+  m_TagString: wolf
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3835,7 +3835,7 @@ GameObject:
   - component: {fileID: 707567269}
   m_Layer: 0
   m_Name: Knight
-  m_TagString: Untagged
+  m_TagString: greedboss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7716,7 +7716,7 @@ Animator:
   m_GameObject: {fileID: 1477962475}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 32c7af3464d12234aa70ca0b305b0d33, type: 2}
+  m_Controller: {fileID: 9100000, guid: 2a174cfbbb678994fa1a032463106075, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -7761,7 +7761,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8cbad885ce846db41a6b18ead2b7ff31, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3d1402ae13e80cb418280e6914bcd35d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -11935,11 +11935,6 @@ Prefab:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 95666665948932138, guid: aad96ac042450e649aa4674700c73525,
-        type: 2}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: e7f3c1b16b51b31438cf9eaa8237c5e2, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: aad96ac042450e649aa4674700c73525, type: 2}
   m_IsPrefabParent: 0
