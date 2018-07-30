@@ -3068,7 +3068,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &871744364
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -3488,7 +3488,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd07beabd3384a4382d02b1be07de4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyIndexStage: 01000000
+  enemyIndexStage: 0100000001000000
   enemySpawnPoints:
   - {fileID: 2127152360}
   - {fileID: 139971051}
@@ -3537,6 +3537,7 @@ MonoBehaviour:
   loseTimer: 0
   tutorial: {fileID: 0}
   needGreedManager: {fileID: 1653121042}
+  waveDetails: []
 --- !u!4 &1020202955
 Transform:
   m_ObjectHideFlags: 0

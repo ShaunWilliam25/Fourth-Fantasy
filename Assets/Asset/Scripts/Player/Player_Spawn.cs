@@ -16,7 +16,7 @@ public class Player_Spawn : MonoBehaviour {
         for (int i=0;i<characterIndex.Count;i++)
         {
             switch (characterIndex[i])
-            {
+            {                
                 case 1:
                     sceneManager.playerList[i].GetComponent<PlayerStats>().name = characterList[0].name;
                     sceneManager.playerList[i].GetComponent<PlayerStats>().baseHealth = characterList[0].maxHealth;
@@ -69,6 +69,12 @@ public class Player_Spawn : MonoBehaviour {
             sceneManager.playerList[i].GetComponent<PlayerVariableManager>().gameState = BattleStateManager.GAMESTATE.CHOOSING_SKILL;
             sceneManager.playerList[i].GetComponent<PlayerVariableManager>().isTargetLockedIn = false;
             sceneManager.playerList[i].GetComponent<PlayerVariableManager>().statusList.Clear();
+
+            //! Skill effect reference
+            for(int j=0;j<5;j++)
+            {
+                sceneManager.playerList[i].transform.GetChild(1).GetChild(2 + j).GetChild(0).GetComponent<SkillEffect>().enemyList = sceneManager.enemyList;
+            }
         }
     }
 }
