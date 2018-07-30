@@ -362,8 +362,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 289425018}
-        m_MethodName: Encyclopedia_Lance
+      - m_Target: {fileID: 11500000, guid: 4d63795eb7a8d8746b39425471c58025, type: 3}
+        m_MethodName: 
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

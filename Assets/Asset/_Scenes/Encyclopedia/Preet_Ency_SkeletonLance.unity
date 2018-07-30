@@ -419,18 +419,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 323271e3740502b4d8135b0c7b5b4447, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EncyclopediaP1: 8
-  EncyclopediaP2: 9
-  EncyclopediaP3: 10
-  EncyclopediaP4: 11
-  EncyclopediaP5: 12
-  EncyclopediaP6: 13
-  EncyclopediaP7: 14
-  EncyclopediaP8: 15
-  EncyclopediaP9: 16
-  EncyclopediaP10: 17
-  EncyclopediaP11: 18
-  StartMenuFinal: 0
 --- !u!1 &438584446
 GameObject:
   m_ObjectHideFlags: 0
@@ -2486,18 +2474,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 323271e3740502b4d8135b0c7b5b4447, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EncyclopediaP1: 8
-  EncyclopediaP2: 9
-  EncyclopediaP3: 10
-  EncyclopediaP4: 11
-  EncyclopediaP5: 12
-  EncyclopediaP6: 13
-  EncyclopediaP7: 14
-  EncyclopediaP8: 15
-  EncyclopediaP9: 16
-  EncyclopediaP10: 17
-  EncyclopediaP11: 18
-  StartMenuFinal: 0
 --- !u!1 &1975687332
 GameObject:
   m_ObjectHideFlags: 0
@@ -2657,6 +2633,7 @@ GameObject:
   - component: {fileID: 2008989574}
   - component: {fileID: 2008989573}
   - component: {fileID: 2008989572}
+  - component: {fileID: 2008989575}
   - component: {fileID: 2008989571}
   m_Layer: 5
   m_Name: EXIT
@@ -2695,18 +2672,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 323271e3740502b4d8135b0c7b5b4447, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  EncyclopediaP1: 8
-  EncyclopediaP2: 9
-  EncyclopediaP3: 10
-  EncyclopediaP4: 11
-  EncyclopediaP5: 12
-  EncyclopediaP6: 13
-  EncyclopediaP7: 14
-  EncyclopediaP8: 15
-  EncyclopediaP9: 16
-  EncyclopediaP10: 17
-  EncyclopediaP11: 18
-  StartMenuFinal: 0
 --- !u!114 &2008989572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2746,7 +2711,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2008989571}
+      - m_Target: {fileID: 2008989575}
         m_MethodName: Encyclopedia_ExileDemon_Back
         m_Mode: 1
         m_Arguments:
@@ -2792,6 +2757,29 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2008989569}
+--- !u!114 &2008989575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2008989569}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d63795eb7a8d8746b39425471c58025, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  EncyclopediaP1: 8
+  EncyclopediaP2: 9
+  EncyclopediaP3: 10
+  EncyclopediaP4: 11
+  EncyclopediaP5: 12
+  EncyclopediaP6: 13
+  EncyclopediaP7: 14
+  EncyclopediaP8: 15
+  EncyclopediaP9: 16
+  EncyclopediaP10: 17
+  EncyclopediaP11: 18
+  StartMenuFinal: 0
 --- !u!1 &2087124700
 GameObject:
   m_ObjectHideFlags: 0
