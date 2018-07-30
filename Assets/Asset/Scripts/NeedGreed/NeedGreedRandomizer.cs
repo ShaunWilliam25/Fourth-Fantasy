@@ -184,6 +184,15 @@ public class NeedGreedRandomizer : MonoBehaviour
             {
                 canvas.SetActive(false);
                 Instantiate(scenemanager.GetComponent<SceneManager>().victory);
+                if(Input.anyKeyDown)
+                {
+                    for(int i=0;i<scenemanager.GetComponent<SceneManager>().playerList.Count;i++)
+                    {
+                        scenemanager.GetComponent<SceneManager>().playerList[i].gameObject.SetActive(true);
+                    }
+                    
+                    UnityEngine.SceneManagement.SceneManager.LoadScene(7);
+                }                
                 /*if(miniBoss)
                 {
                     UnityEngine.SceneManagement.SceneManager.LoadScene(campsiteInt);

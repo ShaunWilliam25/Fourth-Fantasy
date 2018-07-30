@@ -181,80 +181,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 43541783}
---- !u!1 &84953933
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 84953934}
-  - component: {fileID: 84953936}
-  - component: {fileID: 84953935}
-  m_Layer: 5
-  m_Name: Text (2)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &84953934
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 84953933}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 89459924}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -6, y: 327}
-  m_SizeDelta: {x: 284.3, y: 62.8}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &84953935
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 84953933}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
-    m_FontSize: 14
-    m_FontStyle: 1
-    m_BestFit: 1
-    m_MinSize: 10
-    m_MaxSize: 40
-    m_Alignment: 4
-    m_AlignByGeometry: 0
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: Credits
---- !u!222 &84953936
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 84953933}
 --- !u!1 &89459923
 GameObject:
   m_ObjectHideFlags: 0
@@ -281,7 +207,7 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 84953934}
+  - {fileID: 1009817341}
   - {fileID: 1976806389}
   - {fileID: 898418188}
   - {fileID: 1719516358}
@@ -378,7 +304,7 @@ GameObject:
   - component: {fileID: 237154896}
   - component: {fileID: 237154895}
   m_Layer: 5
-  m_Name: Text (6)
+  m_Name: lect
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -393,14 +319,15 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
+  m_Children:
+  - {fileID: 1198622896}
   m_Father: {fileID: 89459924}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -176, y: 6.600006}
-  m_SizeDelta: {x: 276, y: 323.7}
+  m_AnchoredPosition: {x: -226.84998, y: -13.800011}
+  m_SizeDelta: {x: 344.2, y: 416.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &237154895
 MonoBehaviour:
@@ -434,9 +361,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Special Thanks:\n1)Johann Lim \n(GPS Lecturer)\n2)Keng Boon Lim \n(GPS
-    Lecturer)\n3)Nabilah Zakaria (GPS Lecturer)\n4)Hilmy Abdul Rahim (HCI Lecturer)\n5)Ng
-    Yiing Y'ng \n(HCI Lecturer)"
+  m_Text: "SPECIAL THANKS \n\n\nGPS LECTURERS\n\nJohann Lim \nKeng Boon Lim \nNabilah
+    Zakaria\n\n\nHCI LECTURERS\n\nHilmy Abdul Rahim\nNg Yiing Y'ng "
 --- !u!222 &237154896
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -475,7 +401,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: -153.72, y: 17.8}
+  m_AnchoredPosition: {x: -1108, y: 30}
   m_SizeDelta: {x: 309.54, y: 35.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &586459631
@@ -528,7 +454,7 @@ GameObject:
   - component: {fileID: 898418190}
   - component: {fileID: 898418189}
   m_Layer: 5
-  m_Name: Text (4)
+  m_Name: artist
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -549,8 +475,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 256.40002, y: 6.600006}
-  m_SizeDelta: {x: 311.5, y: 228.7}
+  m_AnchoredPosition: {x: 242.4, y: -45.74997}
+  m_SizeDelta: {x: 348.7, y: 228.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &898418189
 MonoBehaviour:
@@ -584,13 +510,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Artist:
+  m_Text: 'ARTIST
 
-    1)Chan Chung Sheng (Lead Artist)
+    Chan Chung Sheng (Lead)
 
-    2)Koo Jing Ler
+    Koo Jing Ler
 
-    3)David Oh Tiam Kiat'
+    David Oh Tiam Kiat'
 --- !u!222 &898418190
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -693,6 +619,74 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1009817340
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1009817341}
+  - component: {fileID: 1009817343}
+  - component: {fileID: 1009817342}
+  m_Layer: 5
+  m_Name: title
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1009817341
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1009817340}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 89459924}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -23.2, y: 293}
+  m_SizeDelta: {x: 218.9, y: 74.6}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1009817342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1009817340}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 15e62725b12a5ff46b2b139a97d2bd61, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1009817343
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1009817340}
 --- !u!1 &1108068560
 GameObject:
   m_ObjectHideFlags: 0
@@ -774,6 +768,81 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1198622895
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1198622896}
+  - component: {fileID: 1198622898}
+  - component: {fileID: 1198622897}
+  m_Layer: 5
+  m_Name: desc
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1198622896
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1198622895}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 237154894}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 280, y: 0}
+  m_SizeDelta: {x: 276, y: 323.7}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1198622897
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1198622895}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: 09085f8c9a29a8947b0f8f43e0581224, type: 3}
+    m_FontSize: 25
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: "\n\n(GPS Lecturer)\n2)Keng Boon Lim \n(GPS Lecturer)\n3)Nabilah Zakaria
+    (GPS Lecturer)\n4)Hilmy Abdul Rahim (HCI Lecturer)\n5)Ng Yiing Y'ng \n(HCI Lecturer)"
+--- !u!222 &1198622898
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1198622895}
 --- !u!1 &1719516357
 GameObject:
   m_ObjectHideFlags: 0
@@ -785,7 +854,7 @@ GameObject:
   - component: {fileID: 1719516360}
   - component: {fileID: 1719516359}
   m_Layer: 5
-  m_Name: Text (5)
+  m_Name: tech
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -806,8 +875,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 312, y: -205}
-  m_SizeDelta: {x: 422.7, y: 285.5}
+  m_AnchoredPosition: {x: 304.6, y: -257.34998}
+  m_SizeDelta: {x: 473.1, y: 285.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1719516359
 MonoBehaviour:
@@ -841,17 +910,17 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Programmer:
+  m_Text: 'PROGRAMMAR
 
-    1)Shaun William Toolseram (Lead Programmer)
+    Shaun William Toolseram (Lead)
 
-    2)Poh Hao Bing
+    Poh Hao Bing
 
-    3)Ong Shengwei
+    Ong Shengwei
 
-    4)Darshini Preet
+    Darshini Preet
 
-    5)Lim Dong Huang'
+    Lim Dong Huang'
 --- !u!222 &1719516360
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -869,7 +938,7 @@ GameObject:
   - component: {fileID: 1976806391}
   - component: {fileID: 1976806390}
   m_Layer: 5
-  m_Name: Text (3)
+  m_Name: designer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -890,8 +959,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 208.69998, y: 167.35}
-  m_SizeDelta: {x: 216.1, y: 184}
+  m_AnchoredPosition: {x: 189, y: 115}
+  m_SizeDelta: {x: 241.9, y: 184}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1976806390
 MonoBehaviour:
@@ -925,11 +994,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Designer:
+  m_Text: 'DESIGNER
 
-    1)Victor Gan (Lead Designer)
+    Victor Gan (Lead )
 
-    2)Eu Wai Him'
+    Eu Wai Him'
 --- !u!222 &1976806391
 CanvasRenderer:
   m_ObjectHideFlags: 0
