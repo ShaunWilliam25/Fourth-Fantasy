@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class ShowUI : MonoBehaviour
 {
+    CampsiteManager csm;
     public CampsiteUIComponent player1;
     public CampsiteUIComponent player2;
     public CampsiteSelection css;
@@ -13,6 +14,7 @@ public class ShowUI : MonoBehaviour
 
     void Start()
     {
+        csm = this.GetComponent<CampsiteManager>();
         player1.state = CAMPSITE_STATE.SELECTION;
         player1.state = CAMPSITE_STATE.SELECTION;
         css = this.GetComponent<CampsiteSelection>();
@@ -147,7 +149,21 @@ public class ShowUI : MonoBehaviour
 
     void Load()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(3);
+        csm.playerList[0].SetActive(true);
+        csm.playerList[1].SetActive(true);
+
+        //! RE active the skill and canvas 
+        for (int i = 0; i < csm.playerList.Count; i++)
+        {
+            csm.playerList[i].GetComponent<actionTimeBar>().enabled = true;
+            for (int j = 1; j < csm.playerList[i].transform.childCount; j++)
+            {
+                csm.playerList[i].transform.GetChild(j).gameObject.SetActive(true);
+            }
+        }
+        //GameObject.FindGameObjectWithTag("MainCamera").GetComponent<battleLog>().ShowGui = true;
+
+        UnityEngine.SceneManagement.SceneManager.LoadScene(6);
     }
 }
 
