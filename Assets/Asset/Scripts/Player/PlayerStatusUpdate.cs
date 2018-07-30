@@ -24,10 +24,10 @@ public class PlayerStatusUpdate : PlayerVariableManager {
             }
             for (int i = statusList.Count - 1; i >= 0; i--)
             {
-                if(statusList[i].GetComponent<StatusDetail>() is Haste || statusList[i].GetComponent<StatusDetail>() is Slow)
+                /*if(statusList[i].GetComponent<StatusDetail>() is Haste || statusList[i].GetComponent<StatusDetail>() is Slow)
                 {
                     NeutralizeHasteAndSlow();
-                }
+                }*/
                 statusList[i].GetComponent<StatusDetail>().user = gameObject;
                 statusList[i].GetComponent<StatusDetail>().userType = StatusDetail.UserType.PLAYER;
                 statusList[i].GetComponent<StatusDetail>().DoEffect();
