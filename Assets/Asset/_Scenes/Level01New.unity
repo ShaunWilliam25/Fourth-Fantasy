@@ -3494,7 +3494,12 @@ MonoBehaviour:
   - {fileID: 139971051}
   - {fileID: 1774481182}
   allEnemyList:
+  - {fileID: 1466983243244364, guid: 0a5a2572ea56c7e4089c3834344c1761, type: 2}
+  - {fileID: 1954795239426552, guid: aad96ac042450e649aa4674700c73525, type: 2}
+  - {fileID: 1155430529999298, guid: 370904b6f0ebb004c8a99c35ff4ddcf5, type: 2}
+  - {fileID: 1542493039716404, guid: 33e6e206687d5304b99ac500f270cf44, type: 2}
   - {fileID: 1393198165434804, guid: 6f8df232b4d86694eafe9bd5f248f995, type: 2}
+  - {fileID: 1744595683549186, guid: 5e9febb2a7bd6e84d9ef06a2539d1ded, type: 2}
   sceneManager: {fileID: 1020202954}
   indexInList: 0
 --- !u!114 &1020202953
@@ -3537,7 +3542,12 @@ MonoBehaviour:
   loseTimer: 0
   tutorial: {fileID: 0}
   needGreedManager: {fileID: 1653121042}
-  waveDetails: []
+  waveDetails:
+  - {fileID: 11400000, guid: 15548141933c4364888297e08dfad030, type: 2}
+  - {fileID: 11400000, guid: d009179b08e694b45ae378b8e3b8e4d4, type: 2}
+  - {fileID: 11400000, guid: 151949dfff897374f9b207c67386ae74, type: 2}
+  - {fileID: 11400000, guid: 960461e4f8f79cc43b2ce5471351a774, type: 2}
+  - {fileID: 11400000, guid: 4d49c32a98204fe459a18900a5fdf04f, type: 2}
 --- !u!4 &1020202955
 Transform:
   m_ObjectHideFlags: 0

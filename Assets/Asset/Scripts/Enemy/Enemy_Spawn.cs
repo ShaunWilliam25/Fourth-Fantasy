@@ -18,7 +18,7 @@ public class Enemy_Spawn : MonoBehaviour {
         //! Fill the enemy index stage list
         enemyIndexStage = sceneManager.waveDetails[AudioManager.instance.waveIndex].enemiesToSpawn;
         //! Background
-        Instantiate(waveDetails[AudioManager.instance.waveIndex].background, Vector3.zero, Quaternion.identity);
+        Instantiate(sceneManager.waveDetails[AudioManager.instance.waveIndex].background, Vector3.zero, Quaternion.identity);
 
         //! Instantiating enemies on specific spawn points based on the size of the enemyIndexStage list.
         indexInList = 0;
