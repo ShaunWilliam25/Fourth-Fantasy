@@ -66,9 +66,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af4a5d2816fed8a48bcee07d82869d4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
-  name: 
-  effect: 
+  sprite: {fileID: 21300000, guid: f16de5ca5271f4e4aa401aa0e3ff638b, type: 3}
+  name: Mark of The Rage
+  effect: 70% adding berserk effect to attacks
 --- !u!212 &212250996757270492
 SpriteRenderer:
   m_ObjectHideFlags: 1

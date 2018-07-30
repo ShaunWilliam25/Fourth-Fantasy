@@ -55,7 +55,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: e1287989516bf10419379def659ac340, type: 3}
   name: Frozen Flame
-  effect: 
+  effect: Inflicts Burn / Slow each time character attacks
 --- !u!114 &114794144853643732
 MonoBehaviour:
   m_ObjectHideFlags: 1

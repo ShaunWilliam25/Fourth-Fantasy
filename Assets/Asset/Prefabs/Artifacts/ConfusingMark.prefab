@@ -53,9 +53,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af4a5d2816fed8a48bcee07d82869d4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
-  name: 
-  effect: 
+  sprite: {fileID: 21300000, guid: af590c34c9ca36e4cae2d362b9421f1b, type: 3}
+  name: Confusing Mark
+  effect: 70% adding confuse effect to attacks
 --- !u!114 &114357595927340690
 MonoBehaviour:
   m_ObjectHideFlags: 1

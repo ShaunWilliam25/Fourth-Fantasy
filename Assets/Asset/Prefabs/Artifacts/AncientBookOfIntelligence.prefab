@@ -55,7 +55,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 0be3fd9749b56084bb64f9979703dc08, type: 3}
   name: Ancient Book Of Intelligence
-  effect: 
+  effect: Increases character MAX HP by 100
 --- !u!114 &114729899918762318
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -55,7 +55,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 30794e13e29e8694897f567c77c17064, type: 3}
   name: Poison Sigil
-  effect: 
+  effect: 70% adding Poison effect to attacks
 --- !u!114 &114596077370175000
 MonoBehaviour:
   m_ObjectHideFlags: 1

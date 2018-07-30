@@ -68,7 +68,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: d73c4c89977d5c0418afdc946047d413, type: 3}
   name: Chronos Lost Memento
-  effect: 
+  effect: "Fully restores all party members\u2019 HP when her HP falls below 10%.
+    \\n Raises Time Priestess HP by 300 "
 --- !u!212 &212816063448051522
 SpriteRenderer:
   m_ObjectHideFlags: 1

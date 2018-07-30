@@ -69,7 +69,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 2c6343cb4dd91a5478a4e25132c51c67, type: 3}
   name: Sprint Shoes
-  effect: 
+  effect: Cast Haste on start of battle
 --- !u!212 &212872455946229210
 SpriteRenderer:
   m_ObjectHideFlags: 1

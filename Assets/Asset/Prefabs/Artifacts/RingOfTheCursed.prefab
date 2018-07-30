@@ -54,8 +54,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sprite: {fileID: 0}
-  name: 
-  effect: 
+  name: Ring of The Cursed
+  effect: Adds 10% chance of inflicting curse to enemy each time damage is dealt to
+    enemies.
 --- !u!114 &114445438463914694
 MonoBehaviour:
   m_ObjectHideFlags: 1
