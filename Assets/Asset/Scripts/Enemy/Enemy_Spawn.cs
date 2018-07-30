@@ -50,7 +50,10 @@ public class Enemy_Spawn : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-
+        for(int i=0;i<sceneManager.enemyList.Count;i++)
+        {
+            //sceneManager.enemyList[i].GetComponent<EnemyVariableManager>().audioManager = 
+        }
 	}
 	
 	// Update is called once per frame
