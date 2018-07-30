@@ -23,16 +23,6 @@ public class SkillEffect : MonoBehaviour {
     }
     public AudioManager audioManager;
 
-    // Use this for initialization
-    void Start() {
-
-    }
-
-    // Update is called once per frame
-    void Update() {
-
-    }
-
     public virtual void Execute(GameObject targetedEnemy)
     {
 

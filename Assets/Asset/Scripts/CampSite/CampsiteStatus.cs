@@ -14,7 +14,8 @@ public class CampsiteStatus : MonoBehaviour
 
     void Start()
     {
-        p1health.text = csm.playerList[0].GetComponent<PlayerStats>().health.ToString();
+        csm = this.GetComponent<CampsiteManager>();
+        p1health.text = "Health : " + csm.playerList[0].GetComponent<PlayerStats>().health.ToString();
         for(int i=0;i<csm.playerList[0].GetComponent<PlayerVariableManager>().artifactsList.Count;i++)
         {
             //initialize

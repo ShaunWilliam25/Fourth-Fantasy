@@ -14,16 +14,17 @@ public class CampsiteSelection : MonoBehaviour
     public float timeNeeded = 1;
     public float p1Hold, p2Hold;
     public int p1Highlight = 0, p2Highlight = 0;
-    private GameObject upgradeObject;
-    public SkillUpgrade skillUpgrade;
+    public GameObject upgradeObject;
+    SkillUpgrade skillUpgrade;
     
 
     void Start()
     {
+        skillUpgrade = this.GetComponent<SkillUpgrade>();
         showUI = GetComponent<ShowUI>();
         showSkill = GetComponent<ShowSkill>();
         csm = this.GetComponent<CampsiteManager>();
-        upgradeObject = new GameObject();
+        //upgradeObject = new GameObject();
     }
 
     void Update()
@@ -328,7 +329,9 @@ public class CampsiteSelection : MonoBehaviour
             else if (player1.upgradeState == UPGRADE_STATE.VALIDATE_UPGRADE)
             {
                 showUI.player1.popUp.SetActive(false);
-                csm.playerList[0].GetComponent<PlayerVariableManager>().skillHolder[player1.skillIndex].GetComponent<SkillDetail>().skillExecutionHolder.Add(Instantiate(upgradeObject));
+                GameObject upgradeSkillObject = Instantiate(upgradeObject);
+                upgradeSkillObject.transform.parent = csm.playerList[0].transform.GetChild(1);
+                csm.playerList[0].GetComponent<PlayerVariableManager>().skillHolder[player1.skillIndex].GetComponent<SkillDetail>().skillExecutionHolder.Add(upgradeSkillObject);
                 player1.upgraded = true;
                 showUI.player1.state = CAMPSITE_STATE.SELECTION;
             }
