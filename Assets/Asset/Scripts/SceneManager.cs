@@ -26,10 +26,7 @@ public class SceneManager : MonoBehaviour {
 
         tutorial = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<TutorialAppear>();
         playerList[0] = GameObject.FindGameObjectWithTag("Player1");
-        playerList[1] = GameObject.FindGameObjectWithTag("Player2");
-        AudioManager.instance.waveIndex++;
-
-        Instantiate(waveDetails[AudioManager.instance.waveIndex].background, Vector3.zero,Quaternion.identity);
+        playerList[1] = GameObject.FindGameObjectWithTag("Player2");        
     }
 
 

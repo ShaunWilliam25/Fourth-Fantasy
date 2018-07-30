@@ -12,21 +12,26 @@ public class Enemy_Spawn : MonoBehaviour {
 
     private void Awake()
     {
+        //! Increase the wave index
+        AudioManager.instance.waveIndex++;
+
         //! Fill the enemy index stage list
         enemyIndexStage = sceneManager.waveDetails[AudioManager.instance.waveIndex].enemiesToSpawn;
+        //! Background
+        Instantiate(waveDetails[AudioManager.instance.waveIndex].background, Vector3.zero, Quaternion.identity);
 
         //! Instantiating enemies on specific spawn points based on the size of the enemyIndexStage list.
         indexInList = 0;
         if (enemyIndexStage.Count == 1)
         {
-            sceneManager.enemyList.Add(Instantiate(allEnemyList[enemyIndexStage[0] - 1], new Vector2(enemySpawnPoints[1].position.x, enemySpawnPoints[1].position.y), Quaternion.identity, enemySpawnPoints[1]));
+            sceneManager.enemyList.Add(Instantiate(allEnemyList[enemyIndexStage[0]], new Vector2(enemySpawnPoints[1].position.x, enemySpawnPoints[1].position.y), Quaternion.identity, enemySpawnPoints[1]));
             sceneManager.enemyList[0].GetComponent<EnemyStats>().index = 1;
         }
         else if (enemyIndexStage.Count == 2)
         {
             for(int i=0;i<enemyIndexStage.Count;i++)
             {
-                sceneManager.enemyList.Add(Instantiate(allEnemyList[enemyIndexStage[i] - 1], new Vector2(enemySpawnPoints[i*2].position.x, enemySpawnPoints[i * 2].position.y), Quaternion.identity, enemySpawnPoints[i * 2]));
+                sceneManager.enemyList.Add(Instantiate(allEnemyList[enemyIndexStage[i]], new Vector2(enemySpawnPoints[i*2].position.x, enemySpawnPoints[i * 2].position.y), Quaternion.identity, enemySpawnPoints[i * 2]));
                 sceneManager.enemyList[i].GetComponent<EnemyStats>().index = i*2;
             }
         }
@@ -34,7 +39,7 @@ public class Enemy_Spawn : MonoBehaviour {
         {
             for (int i = 0; i < enemyIndexStage.Count; i++)
             {
-                sceneManager.enemyList.Add(Instantiate(allEnemyList[enemyIndexStage[i] - 1], new Vector2(enemySpawnPoints[i].position.x, enemySpawnPoints[i].position.y), Quaternion.identity, enemySpawnPoints[i]));
+                sceneManager.enemyList.Add(Instantiate(allEnemyList[enemyIndexStage[i]], new Vector2(enemySpawnPoints[i].position.x, enemySpawnPoints[i].position.y), Quaternion.identity, enemySpawnPoints[i]));
                 sceneManager.enemyList[i].GetComponent<EnemyStats>().index = i;
             }
         }
