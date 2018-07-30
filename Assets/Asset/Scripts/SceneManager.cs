@@ -43,6 +43,10 @@ public class SceneManager : MonoBehaviour {
         }
         AudioManager.instance.PlaySound("BattleSound");
 
+        if(GameObject.FindGameObjectWithTag("MainCamera").GetComponent<battleLog>().ShowGui == false)
+        {
+            GameObject.FindGameObjectWithTag("MainCamera").GetComponent<battleLog>().ShowGui = true;
+        }        
     }
 
     private void Update()

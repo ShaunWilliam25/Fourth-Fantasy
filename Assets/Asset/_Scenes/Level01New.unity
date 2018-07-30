@@ -4021,7 +4021,18 @@ Prefab:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 224650702571308146, guid: 6957876426f4f7f44a2fef876f8736d8,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -307
+      objectReference: {fileID: 0}
+    - target: {fileID: 224650702571308146, guid: 6957876426f4f7f44a2fef876f8736d8,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 205
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114563542808759894, guid: 6957876426f4f7f44a2fef876f8736d8, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 6957876426f4f7f44a2fef876f8736d8, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1044555234
@@ -6762,7 +6773,18 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 224091118944446460, guid: c98038a5b139f974eb30ac5a15569baa,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: 206
+      objectReference: {fileID: 0}
+    - target: {fileID: 224091118944446460, guid: c98038a5b139f974eb30ac5a15569baa,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: -187
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114937538807825398, guid: c98038a5b139f974eb30ac5a15569baa, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: c98038a5b139f974eb30ac5a15569baa, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1689597787
@@ -9901,6 +9923,52 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Slider+SliderEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
+--- !u!1001 &2121753595
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4197203616007406, guid: aad96ac042450e649aa4674700c73525, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 2.2845545
+      objectReference: {fileID: 0}
+    - target: {fileID: 4197203616007406, guid: aad96ac042450e649aa4674700c73525, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.4890999
+      objectReference: {fileID: 0}
+    - target: {fileID: 4197203616007406, guid: aad96ac042450e649aa4674700c73525, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0.16335288
+      objectReference: {fileID: 0}
+    - target: {fileID: 4197203616007406, guid: aad96ac042450e649aa4674700c73525, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4197203616007406, guid: aad96ac042450e649aa4674700c73525, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4197203616007406, guid: aad96ac042450e649aa4674700c73525, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4197203616007406, guid: aad96ac042450e649aa4674700c73525, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4197203616007406, guid: aad96ac042450e649aa4674700c73525, type: 2}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 1954795239426552, guid: aad96ac042450e649aa4674700c73525, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: aad96ac042450e649aa4674700c73525, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &2127152359
 GameObject:
   m_ObjectHideFlags: 0
