@@ -337,6 +337,97 @@ public class CampsiteSelection : MonoBehaviour
             }
 
         }
+        else if (showUI.player2.state == CAMPSITE_STATE.SKILL_UPGRADE)
+        {
+            if (player2.upgradeState == UPGRADE_STATE.CHOOSE_SKILL)
+            {
+                showUI.player2.popUp.SetActive(true);
+                if (Input.GetKeyUp("l"))
+                {
+                    if (p2Highlight < 4)
+                    {
+                        p2Highlight++;
+                    }
+                    else
+                    {
+                        p2Highlight = 0;
+                    }
+                    player2.highlighted.transform.localPosition = showSkill.player[1].skillImage[p2Highlight].transform.localPosition;
+                    showUI.player2.popUp.transform.localPosition = new Vector3(showSkill.player[1].skillImage[p2Highlight].transform.localPosition.x + 150, showSkill.player[1].skillImage[p2Highlight].transform.localPosition.y + 110, showSkill.player[1].skillImage[p2Highlight].transform.localPosition.z);
+                    player2.detail.GetComponent<Text>().text = csm.playerList[1].GetComponent<PlayerVariableManager>().skillList[p2Highlight].GetComponent<SkillDetail>().skillDescription;
+                }
+
+                if (Input.GetKey("l"))
+                {
+                    p2Hold += Time.deltaTime;
+                    if (p2Hold >= timeNeeded)
+                    {
+                        p2Hold = 0;
+                        player2.selectedSkill.GetComponent<Image>().sprite = showSkill.player[1].skillImage[p2Highlight].sprite;
+                        player2.skillIndex = p2Highlight;
+                        player2.upgradeState = UPGRADE_STATE.CHOOSE_UPGRADE;
+                    }
+                }
+                else
+                {
+                    p2Hold = 0;
+                }
+            }
+            else if (player2.upgradeState == UPGRADE_STATE.CHOOSE_UPGRADE)
+            {
+                if (Input.GetKeyUp("l"))
+                {
+                    if (p2Highlight < 2)
+                    {
+                        p2Highlight++;
+                    }
+                    else
+                    {
+                        p2Highlight = 0;
+                    }
+                    player2.highlighted.transform.localPosition = upgrade3[p2Highlight].transform.localPosition;
+                    showUI.player2.popUp.transform.localPosition = new Vector3(upgrade3[p2Highlight].transform.localPosition.x + 150, upgrade3[p2Highlight].transform.localPosition.y - 110, showSkill.player[1].skillImage[p2Highlight].transform.localPosition.z);
+                }
+
+                if (Input.GetKey("l"))
+                {
+                    p2Hold += Time.deltaTime;
+                    if (p2Hold >= timeNeeded)
+                    {
+                        p2Hold = 0;
+                        player2.selectedUpgrade.GetComponent<Image>().sprite = upgrade3[p2Highlight].sprite;
+                        player2.upgradeIndex = p1Highlight;
+                        switch (player2.upgradeIndex)
+                        {
+                            case 0:
+                                upgradeObject = skillUpgrade.randomAttack();
+                                break;
+                            case 1:
+                                upgradeObject = skillUpgrade.randomHeal();
+                                break;
+                            case 2:
+                                upgradeObject = skillUpgrade.randomSupport();
+                                break;
+                        }
+                        player2.upgradeState = UPGRADE_STATE.VALIDATE_UPGRADE;
+                    }
+                }
+                else
+                {
+                    p2Hold = 0;
+                }
+            }
+            else if (player2.upgradeState == UPGRADE_STATE.VALIDATE_UPGRADE)
+            {
+                showUI.player2.popUp.SetActive(false);
+                GameObject upgradeSkillObject = Instantiate(upgradeObject);
+                upgradeSkillObject.transform.parent = csm.playerList[1].transform.GetChild(1);
+                csm.playerList[1].GetComponent<PlayerVariableManager>().skillHolder[player2.skillIndex].GetComponent<SkillDetail>().skillExecutionHolder.Add(upgradeSkillObject);
+                player2.upgraded = true;
+                showUI.player2.state = CAMPSITE_STATE.SELECTION;
+            }
+
+        }
     }
 }
 
