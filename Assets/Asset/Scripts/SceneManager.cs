@@ -13,6 +13,7 @@ public class SceneManager : MonoBehaviour {
     //public SceneManager BrightnessSetting;
     //public SliderJoint2D BrightnessSlider;
     public GameObject victory;
+    public GameObject VictoryGO;
     public int nextScene;
     public float loseTimer;
     public TutorialAppear tutorial;
@@ -84,7 +85,7 @@ public class SceneManager : MonoBehaviour {
                         }
                     }
                     GameObject.FindGameObjectWithTag("MainCamera").GetComponent<battleLog>().ShowGui = false;
-                    Instantiate(victory);
+                    VictoryGO = Instantiate(victory);
                     isWin = true;
                 }
             }

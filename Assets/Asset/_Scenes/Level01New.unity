@@ -633,8 +633,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9518dcbb996bef84da2b1c24a14e5aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 350
-  baseHealth: 350
+  health: 1
+  baseHealth: 1
   immune: 0
   silence: 0
   berserk: 0
@@ -4122,8 +4122,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9518dcbb996bef84da2b1c24a14e5aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 2400
-  baseHealth: 2400
+  health: 1
+  baseHealth: 1
   immune: 0
   silence: 0
   berserk: 0
@@ -5360,7 +5360,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bcd07beabd3384a4382d02b1be07de4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyIndexStage: 0100000001000000
+  enemyIndexStage: 010000000100000001000000
   enemySpawnPoints:
   - {fileID: 2127152360}
   - {fileID: 139971051}

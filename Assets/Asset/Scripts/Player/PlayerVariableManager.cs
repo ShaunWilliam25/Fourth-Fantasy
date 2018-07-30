@@ -128,9 +128,9 @@ private void Awake()
     }
     private void Update()
     {
-        /*for (int i = 0; i < artifactsList.Count; i++)
+        for (int i = 0; i < artifactsList.Count; i++)
         {
             artifactsList[i].GetComponent<SpriteRenderer>().enabled = false;
-        }*/
+        }
     }
 }

@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class NeedGreedRandomizer : MonoBehaviour
 {
@@ -16,6 +17,9 @@ public class NeedGreedRandomizer : MonoBehaviour
     public bool miniBoss;
     public int campsiteInt;
     public int nextSceneInt;
+    public GameObject descriptionGO;
+    public Text nameText;
+    public Text descText;
 
     public void returnBoolFalse()
     {
@@ -138,9 +142,11 @@ public class NeedGreedRandomizer : MonoBehaviour
             }
             Debug.Log(owner);
             //Debug.Log(artifactAdded);
-
-
         }
+
+        nameText.text = scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0].GetComponent<ArtifactInformation>().name;
+        descText.text = scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0].GetComponent<ArtifactInformation>().effect;
+
     }
 
     public void addArtifactToPlayer()
@@ -152,7 +158,11 @@ public class NeedGreedRandomizer : MonoBehaviour
             playerList[0].SetActive(false);
             playerList[1].SetActive(false);
 
-        scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0].SetActive(true);
+            scenemanager.GetComponent<SceneManager>().VictoryGO.SetActive(false);
+
+            scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0].SetActive(true);
+
+            descriptionGO.SetActive(true);
 
             /*for(int i = 0; i < scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Count; i++)
             {
@@ -175,7 +185,9 @@ public class NeedGreedRandomizer : MonoBehaviour
                     Player1OwnerText.SetActive(false);
                     Player2OwnerText.SetActive(false);
 
-            scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0].SetActive(true);
+                    scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0].SetActive(true);
+
+                    descriptionGO.SetActive(true);
 
                     //if (scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Count > 0)
                     //{
@@ -247,7 +259,9 @@ public class NeedGreedRandomizer : MonoBehaviour
         owner.GetComponent<PlayerVariableManager>().artifactsList.Add(scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0]);
         scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0].transform.SetParent(owner.transform);
         scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Remove(scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0]);
-        
+
+        descriptionGO.SetActive(false);
+
     }
 
 }
