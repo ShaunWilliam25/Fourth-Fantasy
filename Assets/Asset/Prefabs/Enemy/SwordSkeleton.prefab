@@ -518,9 +518,9 @@ MonoBehaviour:
   UltiUsed: 0
   canUseUlti: 0
   skillsPrefab:
-  - {fileID: 1413974324339170, guid: 8e4c4a64713db3d48908fe8b6271d71d, type: 2}
-  - {fileID: 1472787431780924, guid: eddb405411fb6f0438105de2b688f5b1, type: 2}
-  - {fileID: 1782817667263134, guid: dc137ed965155e14581e516af51abceb, type: 2}
+  - {fileID: 1057655640564974, guid: d68b33f41120ecb4dbbc3d251e23f8f0, type: 2}
+  - {fileID: 1347028195952016, guid: 5a49391d8686c5043886dc08ac512d71, type: 2}
+  - {fileID: 1150433595993026, guid: 6e245bae287a323479c735cfc35065d5, type: 2}
   skillList: []
   skillPercentageUpperLimit: 
   skillToUse: {fileID: 0}

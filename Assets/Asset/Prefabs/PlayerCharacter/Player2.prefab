@@ -880,7 +880,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba820642b78d94f4aa6ab44f379d263e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  artifactStatuses: []
+  artifactStatuses:
+  - {fileID: 1223870765579878, guid: a1c96be22440ca645b3f79433122c554, type: 2}
+  - {fileID: 1529008860001040, guid: b94cc5a667762ce47a8fb81d2702abfa, type: 2}
+  - {fileID: 1662090186269998, guid: 7f5e19a1c16a526408eb77a7f1558003, type: 2}
+  - {fileID: 1963101712374048, guid: 47312baad2a2f474f8a85a6f28ee183c, type: 2}
+  - {fileID: 1099124874417978, guid: 8fa50424f4357484a898cba80f677691, type: 2}
+  - {fileID: 1074199998277112, guid: 3000d8965ff25614fb474aab117f004d, type: 2}
 --- !u!114 &114486409826142868
 MonoBehaviour:
   m_ObjectHideFlags: 1

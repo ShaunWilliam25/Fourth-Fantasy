@@ -119,7 +119,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1480160382383054
 GameObject:
   m_ObjectHideFlags: 1
@@ -743,9 +743,11 @@ MonoBehaviour:
   UltiUsed: 0
   canUseUlti: 0
   skillsPrefab:
-  - {fileID: 1413974324339170, guid: 8e4c4a64713db3d48908fe8b6271d71d, type: 2}
-  - {fileID: 1472787431780924, guid: eddb405411fb6f0438105de2b688f5b1, type: 2}
-  - {fileID: 1782817667263134, guid: dc137ed965155e14581e516af51abceb, type: 2}
+  - {fileID: 1325939945082076, guid: bf053c29fd6fd71428287c8faaefaf00, type: 2}
+  - {fileID: 1101623221069768, guid: cc0544de17f959a46a0b45352409e6c3, type: 2}
+  - {fileID: 1154948943276494, guid: fc4bc22f0436b144d84d5ac75b9bb08a, type: 2}
+  - {fileID: 1989038375169202, guid: 855524a48d90d5a4cb959e1aa9f82cf8, type: 2}
+  - {fileID: 1917932498904720, guid: 9f17a21073eae444082a9c741bd2030a, type: 2}
   skillList: []
   skillPercentageUpperLimit: 
   skillToUse: {fileID: 0}

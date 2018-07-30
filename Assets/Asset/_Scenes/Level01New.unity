@@ -3016,6 +3016,7 @@ MonoBehaviour:
   outMasterVolume: 0
   outMusicVolume: 0
   outEffectVolume: 0
+  sceneManager: {fileID: 0}
 --- !u!114 &519420035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3413,6 +3414,7 @@ MonoBehaviour:
   outMasterVolume: 0
   outMusicVolume: 0
   outEffectVolume: 0
+  sceneManager: {fileID: 0}
 --- !u!114 &643225792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5494,6 +5496,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114372064663379618, guid: 6957876426f4f7f44a2fef876f8736d8,
+        type: 2}
+      propertyPath: artifactStatuses.Array.size
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 4749037849647246, guid: 6957876426f4f7f44a2fef876f8736d8, type: 2}
       propertyPath: m_LocalPosition.x
       value: -1.58
@@ -6369,6 +6376,7 @@ MonoBehaviour:
   outMasterVolume: 0
   outMusicVolume: 0
   outEffectVolume: 0
+  sceneManager: {fileID: 0}
 --- !u!114 &1204321781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8388,6 +8396,7 @@ MonoBehaviour:
   outMasterVolume: 0
   outMusicVolume: 0
   outEffectVolume: 0
+  sceneManager: {fileID: 0}
 --- !u!114 &1583710181
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10512,6 +10521,7 @@ MonoBehaviour:
   outMasterVolume: 0
   outMusicVolume: 0
   outEffectVolume: 0
+  sceneManager: {fileID: 0}
 --- !u!1 &1917711351
 GameObject:
   m_ObjectHideFlags: 0
