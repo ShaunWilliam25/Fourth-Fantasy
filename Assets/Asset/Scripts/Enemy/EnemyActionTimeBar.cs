@@ -14,7 +14,7 @@ public class EnemyActionTimeBar : EnemyVariableManager {
         Transform selfPosition;
         selfPosition = this.GetComponent<Transform>();
         //this.GetComponent<EnemyVariableManager>().actionBar.transform.localPosition = Camera.main.WorldToScreenPoint(new Vector3(selfPosition.position.x - 6.35f, selfPosition.position.y - 1.8f, selfPosition.position.z));
-        this.GetComponent<EnemyVariableManager>().actionBar.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + yOffset, this.transform.position.z);
+        //this.GetComponent<EnemyVariableManager>().actionBar.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + yOffset, this.transform.position.z);
     }
 	
 	// Update is called once per frame
@@ -24,7 +24,7 @@ public class EnemyActionTimeBar : EnemyVariableManager {
 
     void UpdateBar()
     {
-        this.GetComponent<EnemyVariableManager>().actionBar.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + yOffset, this.transform.position.z);
+        //this.GetComponent<EnemyVariableManager>().actionBar.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + yOffset, this.transform.position.z);
         if (!ATBFull)
         {
             this.GetComponent<EnemyVariableManager>().curCooldown += Time.deltaTime;
