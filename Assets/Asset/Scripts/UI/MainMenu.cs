@@ -39,7 +39,6 @@ public class MainMenu : MonoBehaviour
 
     private void Start()
     {
-        audioManager = FindObjectOfType<AudioManager>();
         if (audioManager.soundPlaying.Count > 0)
         {
             for (int i = 0; i < audioManager.soundPlaying.Count; i++)
@@ -49,6 +48,21 @@ public class MainMenu : MonoBehaviour
             audioManager.soundPlaying.Clear();
         }                
         AudioManager.instance.PlaySound("MenuTheme");
+        //Player1.instance.gameObject.SetActive(false);
+        //Player2.instance.gameObject.SetActive(false);
+
+    }
+    private void Update()
+    {
+        //! Checking if players is active in scene or not
+        if (Player1.instance.gameObject.activeInHierarchy == true)
+        {
+            Player1.instance.gameObject.SetActive(false);
+        }
+        if (Player2.instance.gameObject.activeInHierarchy == true)
+        {
+            Player2.instance.gameObject.SetActive(false);
+        }               
     }
 
     public void ClickSound()

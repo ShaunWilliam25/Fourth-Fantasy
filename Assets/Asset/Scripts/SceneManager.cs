@@ -25,7 +25,17 @@ public class SceneManager : MonoBehaviour {
     {
         tutorial = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<TutorialAppear>();
         playerList[0] = GameObject.FindGameObjectWithTag("Player1");
-        playerList[1] = GameObject.FindGameObjectWithTag("Player2");        
+        playerList[1] = GameObject.FindGameObjectWithTag("Player2");
+        if (Player1.instance.gameObject.activeInHierarchy == false)
+        {
+            Player1.instance.gameObject.SetActive(true);
+        }
+        if (Player2.instance.gameObject.activeInHierarchy == false)
+        {
+            Player2.instance.gameObject.SetActive(true);
+        }
+        playerList[0] = Player1.instance.gameObject;
+        playerList[1] = Player2.instance.gameObject;
     }
 
 
