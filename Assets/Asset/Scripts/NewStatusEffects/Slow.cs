@@ -49,7 +49,7 @@ public class Slow : StatusDetail
             }
             else if (userType == UserType.ENEMY)
             {
-                //user.GetComponent<EnemyActionTimeBar>().timeRequired += 1f;
+                user.GetComponent<EnemyActionTimeBar>().maxCooldown += 1f;
             }
             effect = true;
         }
@@ -67,7 +67,7 @@ public class Slow : StatusDetail
         else if (userType == UserType.ENEMY)
         {
             user.GetComponent<EnemyStatusList>().statusIcon.Remove(user.GetComponent<EnemyStatusList>().statusIcon.Find(x => x == this.icon));
-            //user.GetComponent<EnemyActionTimeBar>().timeRequired -= 1f;
+            user.GetComponent<EnemyActionTimeBar>().maxCooldown -= 1f;
         }
         effect = false;
     }

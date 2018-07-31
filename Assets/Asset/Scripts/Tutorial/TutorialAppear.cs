@@ -77,6 +77,8 @@ public class TutorialAppear : MonoBehaviour {
                     //! Skill Description order
                     sceneManager.playerList[i].transform.GetChild(2).GetChild(1).GetComponent<Canvas>().sortingOrder = 3;
                     sceneManager.playerList[i].transform.GetChild(2).GetChild(0).GetComponent<Canvas>().sortingOrder = 0;
+                    sceneManager.playerList[i].transform.GetChild(1).GetChild(0).GetComponent<SpriteRenderer>().sortingOrder = 2;
+                    sceneManager.playerList[i].transform.GetChild(1).GetChild(1).GetComponent<SpriteRenderer>().sortingOrder = 3;
                 }
                 isOrderLayerAdjusted = true;
             }

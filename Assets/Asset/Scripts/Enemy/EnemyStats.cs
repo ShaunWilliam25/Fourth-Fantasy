@@ -6,5 +6,13 @@ public class EnemyStats : GeneralStats {
 
     public int index;
     public int position;
-    
+
+
+    void Update()
+    {
+        if (health >= baseHealth)
+        {
+            health = baseHealth;
+        }
+    }
 }

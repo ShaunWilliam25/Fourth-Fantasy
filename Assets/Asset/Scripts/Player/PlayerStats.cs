@@ -10,13 +10,12 @@ public class PlayerStats : GeneralStats {
     [HideInInspector] public bool autoRevive;
     [HideInInspector] public bool taunt;
     
-    // Use this for initialization
-	void Start () {
-		
-	}
-	
 	// Update is called once per frame
-	void Update () {
-		
+	void Update ()
+    {
+		if(health >= baseHealth)
+        {
+            health = baseHealth;
+        }
 	}
 }

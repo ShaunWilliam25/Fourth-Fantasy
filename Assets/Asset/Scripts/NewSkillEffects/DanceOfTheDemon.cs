@@ -28,7 +28,14 @@ public class DanceOfTheDemon : SkillEffect
     {
         for(int i=0;i<playerList.Count;i++)
         {
-            playerList[i].GetComponent<PlayerTakeDamage>().PlayerHeal((int)(playerList[i].GetComponent<PlayerStats>().baseHealth * 0.1f));
+            if((1.0f-(playerList[i].GetComponent<PlayerStats>().health/playerList[i].GetComponent<PlayerStats>().baseHealth)) < 0.1f)
+            {
+                playerList[i].GetComponent<PlayerTakeDamage>().PlayerHeal((int)(playerList[i].GetComponent<PlayerStats>().baseHealth * (1.0f - (playerList[i].GetComponent<PlayerStats>().health / playerList[i].GetComponent<PlayerStats>().baseHealth))));
+            }
+            else
+            {
+                playerList[i].GetComponent<PlayerTakeDamage>().PlayerHeal((int)(playerList[i].GetComponent<PlayerStats>().baseHealth * 0.1f));
+            }
         }
         audioManager.PlaySound("HealSound");
     }

@@ -386,7 +386,6 @@ MonoBehaviour:
   loAggroTarget: {fileID: 0}
   randNum: 0
   Target: {fileID: 0}
-  SceneManager: {fileID: 0}
   aimIcon: {fileID: 0}
   aimIconPosition: {x: 0, y: 0}
   randNo: 0
@@ -434,7 +433,6 @@ MonoBehaviour:
   loAggroTarget: {fileID: 0}
   randNum: 0
   Target: {fileID: 0}
-  SceneManager: {fileID: 0}
   aimIcon: {fileID: 1265241794823068}
   aimIconPosition: {x: 0, y: 0}
   randNo: 0
@@ -442,9 +440,9 @@ MonoBehaviour:
   UltiUsed: 0
   canUseUlti: 0
   skillsPrefab:
-  - {fileID: 1413974324339170, guid: 8e4c4a64713db3d48908fe8b6271d71d, type: 2}
-  - {fileID: 1472787431780924, guid: eddb405411fb6f0438105de2b688f5b1, type: 2}
-  - {fileID: 1782817667263134, guid: dc137ed965155e14581e516af51abceb, type: 2}
+  - {fileID: 1878960844076786, guid: f398002b324157a429116f58df3e5cc6, type: 2}
+  - {fileID: 1826901766076548, guid: 23a65ae843d3998428283601c29142ed, type: 2}
+  - {fileID: 1511657604878842, guid: 3e13e84becf8bc44a887fa3ab991d4e9, type: 2}
   skillList: []
   skillPercentageUpperLimit: 
   skillToUse: {fileID: 0}
@@ -502,7 +500,6 @@ MonoBehaviour:
   loAggroTarget: {fileID: 0}
   randNum: 21
   Target: {fileID: 0}
-  SceneManager: {fileID: 0}
   aimIcon: {fileID: 0}
   aimIconPosition: {x: 0, y: 0}
   randNo: 0
@@ -640,7 +637,6 @@ MonoBehaviour:
   loAggroTarget: {fileID: 0}
   randNum: 0
   Target: {fileID: 0}
-  SceneManager: {fileID: 0}
   aimIcon: {fileID: 0}
   aimIconPosition: {x: 0, y: 0}
   randNo: 50
@@ -765,7 +761,6 @@ MonoBehaviour:
   loAggroTarget: {fileID: 0}
   randNum: 0
   Target: {fileID: 0}
-  SceneManager: {fileID: 0}
   aimIcon: {fileID: 0}
   aimIconPosition: {x: 0, y: 0}
   randNo: 0
@@ -880,7 +875,6 @@ MonoBehaviour:
   loAggroTarget: {fileID: 0}
   randNum: 0
   Target: {fileID: 0}
-  SceneManager: {fileID: 0}
   aimIcon: {fileID: 0}
   aimIconPosition: {x: 0, y: 0}
   randNo: 0
@@ -1030,7 +1024,6 @@ MonoBehaviour:
   loAggroTarget: {fileID: 0}
   randNum: 0
   Target: {fileID: 0}
-  SceneManager: {fileID: 0}
   aimIcon: {fileID: 0}
   aimIconPosition: {x: 0, y: 0}
   randNo: 0
@@ -1371,6 +1364,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224251091941033752}
+  - {fileID: 224847564415784094}
   m_Father: {fileID: 224006903668392902}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1443,8 +1437,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 224847564415784094}
+  m_Children: []
   m_Father: {fileID: 224024340881484162}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1541,8 +1534,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 224251091941033752}
-  m_RootOrder: 0
+  m_Father: {fileID: 224024340881484162}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}

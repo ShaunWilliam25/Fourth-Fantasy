@@ -66,9 +66,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af4a5d2816fed8a48bcee07d82869d4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sprite: {fileID: 0}
+  sprite: {fileID: 21300000, guid: 1cc00afcfe45553438428cc9124b7772, type: 3}
   name: Slow Mark
-  effect: 
+  effect: 70% adding slow effect to attacks
 --- !u!212 &212215698312037836
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -104,8 +104,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: f84905af44cb06f42ab22b0a7fefb189, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 1cc00afcfe45553438428cc9124b7772, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
