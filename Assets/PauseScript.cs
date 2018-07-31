@@ -65,7 +65,6 @@ public class PauseScript : MonoBehaviour
     public void SkipTut()
     {
         //! PLayer loop to set all the sort layers
-        Debug.Log(sceneManager.playerList.Count);
         for(int i=0;i<sceneManager.playerList.Count;i++)
         {
             sceneManager.playerList[i].transform.GetChild(2).GetChild(0).GetComponent<Canvas>().sortingOrder = 0;
@@ -73,12 +72,7 @@ public class PauseScript : MonoBehaviour
             sceneManager.GetComponent<SceneManager>().playerList[i].transform.GetChild(2).GetChild(3).GetComponent<Canvas>().sortingOrder = 0;
             sceneManager.GetComponent<SceneManager>().playerList[i].transform.GetChild(0).GetComponent<SpriteRenderer>().sortingOrder = 0;
 
-            //! ATb
-            if (sceneManager.playerList[i].GetComponent<actionTimeBar>().enabled == false)
-            {
-                sceneManager.playerList[i].GetComponent<actionTimeBar>().enabled = true;
-                Debug.Log("Enabling the ATB");
-            }
+            sceneManager.playerList[i].GetComponent<actionTimeBar>().startSelection = 0;
         }
         Time.timeScale = 1;
         UnityEngine.SceneManagement.SceneManager.LoadScene(6);

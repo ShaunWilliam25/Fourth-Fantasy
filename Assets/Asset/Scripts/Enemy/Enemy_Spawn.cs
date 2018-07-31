@@ -44,6 +44,7 @@ public class Enemy_Spawn : MonoBehaviour {
             }
         }
 
+        //! Instantiating the skill for the enemies
         for(int j=0;j<sceneManager.enemyList.Count;j++)
         {
             for (int i = 0; i < sceneManager.enemyList[j].GetComponent<EnemyVariableManager>().skillsPrefab.Count; i++)
@@ -56,10 +57,7 @@ public class Enemy_Spawn : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        for(int i=0;i<sceneManager.enemyList.Count;i++)
-        {
-            //sceneManager.enemyList[i].GetComponent<EnemyVariableManager>().audioManager = 
-        }
+
 	}
 	
 	// Update is called once per frame

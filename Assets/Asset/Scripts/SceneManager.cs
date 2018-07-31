@@ -44,10 +44,17 @@ public class SceneManager : MonoBehaviour {
         }
         AudioManager.instance.PlaySound("BattleSound");
 
-        if(GameObject.FindGameObjectWithTag("MainCamera").GetComponent<battleLog>().ShowGui == false)
+        if (GameObject.FindGameObjectWithTag("MainCamera").GetComponent<battleLog>().ShowGui == false)
         {
             GameObject.FindGameObjectWithTag("MainCamera").GetComponent<battleLog>().ShowGui = true;
-        }        
+        }
+        for(int i=0;i<playerList.Count;i++)
+        {
+            if(playerList[i].GetComponent<actionTimeBar>().enabled == false)
+            {
+                playerList[i].GetComponent<actionTimeBar>().enabled = true;
+            }
+        }
     }
 
     private void Update()
@@ -79,6 +86,7 @@ public class SceneManager : MonoBehaviour {
                     for (int i = 0; i < playerList.Count; i++)
                     {
                         playerList[i].GetComponent<actionTimeBar>().enabled = false;
+                        Debug.Log("Turning off the ATB");
                         for (int j = 1; j < playerList[i].transform.childCount; j++)
                         {
                             playerList[i].transform.GetChild(j).gameObject.SetActive(false);
