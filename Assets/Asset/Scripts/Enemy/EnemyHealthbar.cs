@@ -5,12 +5,16 @@ using UnityEngine.UI;
 
 public class EnemyHealthbar : EnemyVariableManager {
     public float yOffset;
+    [SerializeField] private Image hpFrame;
+
 
     void Start()
     {
         Transform selfPosition;
         selfPosition = this.GetComponent<Transform>();
         this.GetComponent<EnemyVariableManager>().healthBarBackground.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + yOffset, this.transform.position.z);
+        this.GetComponent<EnemyVariableManager>().healthBar.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + yOffset, this.transform.position.z);
+        hpFrame.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + yOffset, this.transform.position.z);
     }
 
     void Update()
