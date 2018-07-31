@@ -129,6 +129,7 @@ public class PlayerVariableManager : MonoBehaviour {
     private void Update()
     {
 <<<<<<< HEAD
+<<<<<<< HEAD
         for (int i = 0; i < artifactsList.Count; i++)
         {
             artifactsList[i].GetComponent<SpriteRenderer>().enabled = false;
@@ -136,5 +137,11 @@ public class PlayerVariableManager : MonoBehaviour {
 =======
         
 >>>>>>> parent of a49211c... sprite health
+=======
+        /*for (int i = 0; i < artifactsList.Count; i++)
+        {
+            artifactsList[i].GetComponent<SpriteRenderer>().enabled = false;
+        }*/
+>>>>>>> parent of 21a57f7... added desc for needgreed
     }
 }

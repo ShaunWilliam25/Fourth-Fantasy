@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class NeedGreedRandomizer : MonoBehaviour
 {
@@ -17,9 +16,6 @@ public class NeedGreedRandomizer : MonoBehaviour
     public bool miniBoss;
     public int campsiteInt;
     public int nextSceneInt;
-    public GameObject descriptionGO;
-    public Text nameText;
-    public Text descText;
 
     public void returnBoolFalse()
     {
@@ -142,11 +138,9 @@ public class NeedGreedRandomizer : MonoBehaviour
             }
             Debug.Log(owner);
             //Debug.Log(artifactAdded);
+
+
         }
-
-        nameText.text = scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0].GetComponent<ArtifactInformation>().name;
-        descText.text = scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0].GetComponent<ArtifactInformation>().effect;
-
     }
 
     public void addArtifactToPlayer()
@@ -159,11 +153,15 @@ public class NeedGreedRandomizer : MonoBehaviour
             playerList[1].SetActive(false);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
             scenemanager.GetComponent<SceneManager>().VictoryGO.SetActive(false);
 
             scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0].SetActive(true);
 
             descriptionGO.SetActive(true);
+=======
+        scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0].SetActive(true);
+>>>>>>> parent of 21a57f7... added desc for needgreed
 
             /*for(int i = 0; i < scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Count; i++)
 =======
@@ -188,9 +186,7 @@ public class NeedGreedRandomizer : MonoBehaviour
                     Player2OwnerText.SetActive(false);
 <<<<<<< HEAD
 
-                    scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0].SetActive(true);
-
-                    descriptionGO.SetActive(true);
+            scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0].SetActive(true);
 
 =======
 >>>>>>> parent of a49211c... sprite health
@@ -264,12 +260,16 @@ public class NeedGreedRandomizer : MonoBehaviour
         owner.GetComponent<PlayerVariableManager>().artifactsList.Add(scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0]);
         scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Remove(scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0]);
 <<<<<<< HEAD
+<<<<<<< HEAD
 
         descriptionGO.SetActive(false);
 
 =======
         */
 >>>>>>> parent of a49211c... sprite health
+=======
+        
+>>>>>>> parent of 21a57f7... added desc for needgreed
     }
 
 }
