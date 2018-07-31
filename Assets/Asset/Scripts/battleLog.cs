@@ -24,7 +24,7 @@ public class battleLog : MonoBehaviour
             if(ShowGui)
             {
                 GUI.skin = skin;
-                GUI.Label(new Rect(250, 10, 750, 100), guiText, GUI.skin.textArea);
+                GUI.Label(new Rect(250, 10, 700, 95), guiText, GUI.skin.textArea);
             }
             
         }

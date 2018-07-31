@@ -25,7 +25,7 @@ public class EnemyActionTimeBar : EnemyVariableManager {
 
     void UpdateBar()
     {
-        this.GetComponent<EnemyVariableManager>().actionBar.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + yOffset, this.transform.position.z);
+        //this.GetComponent<EnemyVariableManager>().actionBar.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + yOffset, this.transform.position.z);
         if (!ATBFull)
         {
             this.GetComponent<EnemyVariableManager>().curCooldown += Time.deltaTime;

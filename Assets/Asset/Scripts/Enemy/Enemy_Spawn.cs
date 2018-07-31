@@ -43,9 +43,17 @@ public class Enemy_Spawn : MonoBehaviour {
                 sceneManager.enemyList[i].GetComponent<EnemyStats>().index = i;
             }
         }
+       
+        //! Special location for the spirit door
+        //! Checking if its the wave that spawns the spirit door
+        if (AudioManager.instance.waveIndex == 3)
+        {
+            sceneManager.enemyList[0].transform.position = new Vector3(4.4f, 1.1f, 0f);
+        }
+
 
         //! Instantiating the skill for the enemies
-        for(int j=0;j<sceneManager.enemyList.Count;j++)
+        for (int j=0;j<sceneManager.enemyList.Count;j++)
         {
             for (int i = 0; i < sceneManager.enemyList[j].GetComponent<EnemyVariableManager>().skillsPrefab.Count; i++)
             {
@@ -57,8 +65,8 @@ public class Enemy_Spawn : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-
-	}
+        
+    }
 	
 	// Update is called once per frame
 	void Update () {
