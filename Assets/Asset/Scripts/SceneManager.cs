@@ -69,6 +69,7 @@ public class SceneManager : MonoBehaviour {
                 for(int j =0;j<playerList.Count;j++)
                 {
                     playerList[j].GetComponent<PlayerVariableManager>().isTargetLockedIn = false;
+                    
                 }
 
                 this.GetComponent<ArtifactScript>().calArtifact();
@@ -85,6 +86,10 @@ public class SceneManager : MonoBehaviour {
                     Debug.Log("Win");
                     for (int i = 0; i < playerList.Count; i++)
                     {
+                        playerList[i].GetComponent<PlayerVariableManager>().statusList.Clear();
+                        playerList[i].GetComponent<PlayerStatusList>().statusIcon.Clear();
+                        playerList[i].GetComponent<actionTimeBar>().timeRequired = 3f;
+                        playerList[i].GetComponent<PlayerStats>().Reset();
                         playerList[i].GetComponent<actionTimeBar>().enabled = false;
                         Debug.Log("Turning off the ATB");
                         for (int j = 1; j < playerList[i].transform.childCount; j++)
@@ -116,7 +121,7 @@ public class SceneManager : MonoBehaviour {
             for (int k = 0; k < playerList.Count; k++)
             {
                 playerList[k].GetComponent<PlayerStats>().health = 0;
-                break;
+
             }
         }
 
