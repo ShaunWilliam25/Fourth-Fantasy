@@ -158,7 +158,6 @@ public class NeedGreedRandomizer : MonoBehaviour
             playerList[0].SetActive(false);
             playerList[1].SetActive(false);
 
-<<<<<<< HEAD
             scenemanager.GetComponent<SceneManager>().VictoryGO.SetActive(false);
 
             scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0].SetActive(true);
@@ -166,34 +165,30 @@ public class NeedGreedRandomizer : MonoBehaviour
             descriptionGO.SetActive(true);
 
             /*for(int i = 0; i < scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Count; i++)
-=======
-            for(int i = 0; i < scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Count; i++)
->>>>>>> parent of a49211c... sprite health
             {
                 scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[i].SetActive(true);
                 Debug.Log("seting is true and i = " + i);
-            }
+            }*/
 
             if (artifactAdded)
             {
                 Debug.Log("isartiaddedd = " + artifactAdded);
                 if (Input.anyKeyDown)
-                {Debug.Log("C pressed");
-                        this.GetComponent<needGreedShowUI>().p1State = needGreedShowUI.CAMPSITE_STATE.SELECTION;
-                        this.GetComponent<needGreedShowUI>().p2State = needGreedShowUI.CAMPSITE_STATE.SELECTION;
-                        artifactAdded = false;
-                        returnBoolFalse();
-                        owner = null;
+                {
+                    Debug.Log("C pressed");
+
+                    this.GetComponent<needGreedShowUI>().p1State = needGreedShowUI.CAMPSITE_STATE.SELECTION;
+                    this.GetComponent<needGreedShowUI>().p2State = needGreedShowUI.CAMPSITE_STATE.SELECTION;
+                    artifactAdded = false;
+                    returnBoolFalse();
+                    owner = null;
                     Player1OwnerText.SetActive(false);
                     Player2OwnerText.SetActive(false);
-<<<<<<< HEAD
 
                     scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0].SetActive(true);
 
                     descriptionGO.SetActive(true);
 
-=======
->>>>>>> parent of a49211c... sprite health
                     //if (scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Count > 0)
                     //{
 
@@ -254,22 +249,19 @@ public class NeedGreedRandomizer : MonoBehaviour
     }
 
     public void addArtifact()
-    {
+    {/*
         scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Count - 1].SetActive(false);
         owner.GetComponent<PlayerVariableManager>().artifactsList.Add(scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Count - 1]);
         scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Count - 1].transform.SetParent(owner.transform);
         scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Remove(scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Count - 1]);
-        /*
+        */
         scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0].SetActive(false);
         owner.GetComponent<PlayerVariableManager>().artifactsList.Add(scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0]);
+        scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0].transform.SetParent(owner.transform);
         scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Remove(scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0]);
-<<<<<<< HEAD
 
         descriptionGO.SetActive(false);
 
-=======
-        */
->>>>>>> parent of a49211c... sprite health
     }
 
 }
