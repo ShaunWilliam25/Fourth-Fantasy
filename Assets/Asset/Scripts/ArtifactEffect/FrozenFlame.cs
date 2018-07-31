@@ -4,5 +4,8 @@ using UnityEngine;
 
 public class FrozenFlame : ArtifactEffect {
 
-
+    public void Awake()
+    {
+        this.gameObject.SetActive(false);
+    }
 }

@@ -237,11 +237,11 @@ GameObject:
   - component: {fileID: 114962957123194976}
   m_Layer: 0
   m_Name: Knight
-  m_TagString: Untagged
+  m_TagString: greedboss
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1770016076552236
 GameObject:
   m_ObjectHideFlags: 1
@@ -361,7 +361,7 @@ Animator:
   m_GameObject: {fileID: 1408432216528240}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 2a174cfbbb678994fa1a032463106075, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -994,8 +994,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9518dcbb996bef84da2b1c24a14e5aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 2400
-  baseHealth: 2400
+  health: 1
+  baseHealth: 1
   immune: 0
   silence: 0
   berserk: 0
@@ -1233,7 +1233,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300002, guid: 3d1402ae13e80cb418280e6914bcd35d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 3d1402ae13e80cb418280e6914bcd35d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

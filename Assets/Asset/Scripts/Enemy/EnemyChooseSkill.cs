@@ -115,6 +115,7 @@ public class EnemyChooseSkill : EnemyVariableManager {
         int rand = Random.Range(0, 101);
         if(isFinalBoss && (GetComponent<EnemyStats>().health/GetComponent<EnemyStats>().baseHealth)<=0.1)
         {
+            ultimate.GetComponent<SkillEffect>().user = this.gameObject;
             ultimate.GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
             isFinalBoss = false;
             return;
