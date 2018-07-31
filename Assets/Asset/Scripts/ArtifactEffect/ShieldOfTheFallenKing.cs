@@ -6,6 +6,11 @@ public class ShieldOfTheFallenKing : ArtifactEffect {
 
     public int damageCount = 0;
 
+    public void Awake()
+    {
+        this.gameObject.SetActive(false);
+    }
+
     public override void Artifact()
     {
         if(!isEffect && carrier.GetComponent<PlayerStats>().name == "OldGuard")

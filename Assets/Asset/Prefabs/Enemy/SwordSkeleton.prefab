@@ -287,7 +287,7 @@ GameObject:
   - component: {fileID: 114566642814367898}
   m_Layer: 0
   m_Name: SwordSkeleton
-  m_TagString: Untagged
+  m_TagString: swordskeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -345,7 +345,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1568305951681906}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.07, y: -2.23, z: 0}
+  m_LocalPosition: {x: 0.07, y: 0, z: 0}
   m_LocalScale: {x: 0.63852566, y: 0.6385258, z: 0.6385258}
   m_Children: []
   m_Father: {fileID: 4197203616007406}
@@ -360,7 +360,7 @@ Animator:
   m_GameObject: {fileID: 1568305951681906}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 1d0b0db1e083e7a459c8a0699ae25713, type: 2}
+  m_Controller: {fileID: 9100000, guid: e7f3c1b16b51b31438cf9eaa8237c5e2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -577,7 +577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   curCooldown: 0
   maxCooldown: 0
-  actionBar: {fileID: 0}
+  actionBar: {fileID: 114805850773066492}
   ATBFull: 0
   pauseTime: 0
   maxPauseTime: 0
@@ -1138,6 +1138,7 @@ MonoBehaviour:
   battlelogScript: {fileID: 0}
   audioManager: {fileID: 0}
   yOffset: 1.69
+  hpFrame: {fileID: 114805850773066492}
 --- !u!212 &212395941718382526
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -1459,6 +1460,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 224569039582656998}
+  - {fileID: 224342180868274436}
+  - {fileID: 224852886915331920}
   m_Father: {fileID: 224140572889385444}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1513,12 +1516,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 224569039582656998}
-  m_RootOrder: 0
+  m_Father: {fileID: 224246861797038616}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -8.999991, y: 193}
   m_SizeDelta: {x: 200, y: 17.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224398311055072414
@@ -1549,9 +1552,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 224342180868274436}
-  - {fileID: 224852886915331920}
+  m_Children: []
   m_Father: {fileID: 224246861797038616}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1589,12 +1590,12 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 224569039582656998}
-  m_RootOrder: 1
+  m_Father: {fileID: 224246861797038616}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.94, y: 0.93}
+  m_AnchoredPosition: {x: -9.940004, y: 193.93}
   m_SizeDelta: {x: 245.09, y: 65.07}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224856902506872416

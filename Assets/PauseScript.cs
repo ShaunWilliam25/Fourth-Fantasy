@@ -37,7 +37,6 @@ public class PauseScript : MonoBehaviour
             {
                 pauseMenu.gameObject.SetActive(true);
                 Time.timeScale = 0;
-                Debug.Log("Pause Menu");
             }
             else
             {
@@ -72,8 +71,10 @@ public class PauseScript : MonoBehaviour
             sceneManager.GetComponent<SceneManager>().playerList[i].transform.GetChild(2).GetChild(2).GetComponent<Canvas>().sortingOrder = 0;
             sceneManager.GetComponent<SceneManager>().playerList[i].transform.GetChild(2).GetChild(3).GetComponent<Canvas>().sortingOrder = 0;
             sceneManager.GetComponent<SceneManager>().playerList[i].transform.GetChild(0).GetComponent<SpriteRenderer>().sortingOrder = 0;
-        }
 
+            sceneManager.playerList[i].GetComponent<actionTimeBar>().startSelection = 0;
+        }
+        Time.timeScale = 1;
         UnityEngine.SceneManagement.SceneManager.LoadScene(6);
     }
     public void ClickSound()

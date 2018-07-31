@@ -47,17 +47,13 @@ public class MenuSelection : MonoBehaviour {
     public void WhenClick()
     {
         this.GetComponent<Image>().sprite = selectedImage;
-        if (this.GetComponent<Image>().sprite == selectedImage)
-        {
-            Debug.Log("CLICK");
-        }
         
-        /*timer += Time.deltaTime;
+        timer += Time.deltaTime;
         if(timer >= duration)
         {
             this.GetComponent<Image>().sprite = defaultImage;
             timer = 0f;
-        }*/
+        }
     }
 
 }
