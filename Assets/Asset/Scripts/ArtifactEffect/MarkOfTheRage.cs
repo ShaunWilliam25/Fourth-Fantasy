@@ -4,8 +4,5 @@ using UnityEngine;
 
 public class MarkOfTheRage : ArtifactEffect {
 
-    public void Awake()
-    {
-        this.gameObject.SetActive(false);
-    }
+	
 }

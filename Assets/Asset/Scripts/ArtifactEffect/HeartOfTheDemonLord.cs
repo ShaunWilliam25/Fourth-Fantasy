@@ -6,11 +6,6 @@ public class HeartOfTheDemonLord : ArtifactEffect {
 
     private bool revive = false;
 
-    public void Awake()
-    {
-        this.gameObject.SetActive(false);
-    }
-
     public override void Artifact()
     {
         if (carrier.GetComponent<PlayerStats>().name == "ExiledDemon")

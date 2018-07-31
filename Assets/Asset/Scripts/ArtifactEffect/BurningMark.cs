@@ -4,10 +4,5 @@ using UnityEngine;
 
 public class BurningMark : ArtifactEffect {
 
-    public void Awake()
-    {
-        this.gameObject.SetActive(false);
-    }
-
 
 }

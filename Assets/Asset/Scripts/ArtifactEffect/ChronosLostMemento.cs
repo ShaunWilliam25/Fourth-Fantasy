@@ -5,12 +5,6 @@ using UnityEngine;
 public class ChronosLostMemento : ArtifactEffect
 {
     private bool hpHeal = false;
-
-    public void Awake()
-    {
-        this.gameObject.SetActive(false);
-    }
-
     public override void Artifact()
     {
         if(carrier.GetComponent<PlayerStats>().name == "TimePriestess")

@@ -5,10 +5,6 @@ using UnityEngine;
 public class AlchemistSecretElixir : ArtifactEffect {
 
     [SerializeField]List<GameObject> goodStatuses;
-    public void Awake()
-    {
-        this.gameObject.SetActive(false);
-    }
 
     public override void Artifact()
     {

@@ -4,8 +4,5 @@ using UnityEngine;
 
 public class SlowMark : ArtifactEffect {
 
-    public void Awake()
-    {
-        this.gameObject.SetActive(false);
-    }
+	
 }

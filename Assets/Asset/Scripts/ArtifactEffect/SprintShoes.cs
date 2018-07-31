@@ -5,12 +5,6 @@ using UnityEngine;
 public class SprintShoes : ArtifactEffect {
 
     [SerializeField] GameObject haste;
-
-    public void Awake()
-    {
-        this.gameObject.SetActive(false);
-    }
-
     public override void Artifact()
     {
         if(!isEffect)

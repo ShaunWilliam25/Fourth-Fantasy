@@ -4,11 +4,6 @@ using UnityEngine;
 
 public class AncientBookOfIntelligence : ArtifactEffect {
 
-    public void Awake()
-    {
-        this.gameObject.SetActive(false);
-    }
-
     public override void Artifact()
     {
         if(!isEffect)
