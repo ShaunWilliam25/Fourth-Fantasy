@@ -36,7 +36,7 @@ public class WarCryEffect : SkillEffect {
             }
             playerArtifact.ArtifactAttackEffect(enemyList[i]);
         }
-        
-        audioManager.PlaySound("ExiledDemonAttackSound");
+
+        AudioManager.instance.PlaySound("ExiledDemonAttackSound");
     }
 }

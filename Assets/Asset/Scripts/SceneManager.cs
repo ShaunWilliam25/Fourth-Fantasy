@@ -23,8 +23,6 @@ public class SceneManager : MonoBehaviour {
 
     public void Awake()
     {
-        //audioManager.PlaySound("BattleSound");
-
         tutorial = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<TutorialAppear>();
         playerList[0] = GameObject.FindGameObjectWithTag("Player1");
         playerList[1] = GameObject.FindGameObjectWithTag("Player2");        
@@ -99,6 +97,13 @@ public class SceneManager : MonoBehaviour {
                             playerList[i].transform.GetChild(j).gameObject.SetActive(false);
                         }
                     }
+
+                    //!Check if its the knight battle,to move to the win game scene
+                    if(AudioManager.instance.waveIndex == 4)
+                    {
+                        UnityEngine.SceneManagement.SceneManager.LoadScene(3);
+                    }
+
                     GameObject.FindGameObjectWithTag("MainCamera").GetComponent<battleLog>().ShowGui = false;
                     VictoryGO = Instantiate(victory);
                     isWin = true;
@@ -132,7 +137,7 @@ public class SceneManager : MonoBehaviour {
             loseTimer += Time.deltaTime;
             if (loseTimer > 1)
             {
-                AudioManager.waveIndex--;
+                AudioManager.instance.waveIndex--;
                 UnityEngine.SceneManagement.SceneManager.LoadScene(4);
               
             }

@@ -47,13 +47,13 @@ public class MainMenu : MonoBehaviour
                 audioManager.soundPlaying[i].source.Stop();
             }
             audioManager.soundPlaying.Clear();
-        }        
-        FindObjectOfType<AudioManager>().PlaySound("MenuTheme");
+        }                
+        AudioManager.instance.PlaySound("MenuTheme");
     }
 
     public void ClickSound()
     {
-        FindObjectOfType<AudioManager>().PlaySound("MenuClickSound");
+        AudioManager.instance.PlaySound("MenuClickSound");
     }
 
 }

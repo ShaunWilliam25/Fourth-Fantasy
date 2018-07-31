@@ -31,7 +31,7 @@ public class SoulHuntEffect : SkillEffect
             int rand = Random.Range(0, 3);
             targetedEnemy.GetComponent<EnemyVariableManager>().statusList.Add(Instantiate(status[rand]));
         }
-        
-        audioManager.PlaySound("ExiledDemonAttackSound");
+
+        AudioManager.instance.PlaySound("ExiledDemonAttackSound");
     }
 }

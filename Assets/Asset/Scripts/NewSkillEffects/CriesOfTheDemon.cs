@@ -36,7 +36,7 @@ public class CriesOfTheDemon : SkillEffect
                 }
             }
         }
-        audioManager.PlaySound("ExiledDemonAttackSound");
+        AudioManager.instance.PlaySound("ExiledDemonAttackSound");
 
 
     }

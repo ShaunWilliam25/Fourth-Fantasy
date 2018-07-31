@@ -23,6 +23,6 @@ public class NormalAttackOldGuard : SkillEffect {
         int totalDamage = (int)((damage + DamageAddOn()) * DamageMultiplier());
         targetedEnemy.GetComponent<EnemyTakeDamage>().EnemyDamage(totalDamage);
         playerArtifact.ArtifactAttackEffect(targetedEnemy);
-        audioManager.PlaySound("OldGuardAttackSound");
+        AudioManager.instance.PlaySound("OldGuardAttackSound");
     }
 }

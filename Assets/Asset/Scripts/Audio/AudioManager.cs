@@ -10,9 +10,7 @@ public class AudioManager : MonoBehaviour {
     public Sound[] sounds;
     public static AudioManager instance;
     public List<Sound> soundPlaying;
-    public static int waveIndex = -1;
-    public static bool isDefeated = false;
-    public static bool isKnightDefeated = false;
+    public int waveIndex = -1;
 
     public static AudioManager Instance
     {
@@ -50,7 +48,6 @@ public class AudioManager : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        //PlaySound("TestMusic");
 	}
 	
 	// Update is called once per frame

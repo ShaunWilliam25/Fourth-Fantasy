@@ -34,6 +34,6 @@ public class ChronosDescendent : SkillEffect
                 playerList[x].GetComponent<PlayerVariableManager>().statusList.Add(Instantiate(status[y]));
             }
         }
-        audioManager.PlaySound("TimePriestressAttackSound");
+        AudioManager.instance.PlaySound("TimePriestressAttackSound");
     }
 }

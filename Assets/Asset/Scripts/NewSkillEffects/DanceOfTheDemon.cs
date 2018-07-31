@@ -37,6 +37,6 @@ public class DanceOfTheDemon : SkillEffect
                 playerList[i].GetComponent<PlayerTakeDamage>().PlayerHeal((int)(playerList[i].GetComponent<PlayerStats>().baseHealth * 0.1f));
             }
         }
-        audioManager.PlaySound("HealSound");
+        AudioManager.instance.PlaySound("HealSound");
     }
 }
