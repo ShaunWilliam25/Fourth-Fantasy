@@ -3032,11 +3032,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 12
       objectReference: {fileID: 0}
-    - target: {fileID: 114959392602543044, guid: 208804f58ac98e34d8006bf42f916ba3,
-        type: 2}
-      propertyPath: waveIndex
-      value: -1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 208804f58ac98e34d8006bf42f916ba3, type: 2}
   m_IsPrefabParent: 0
