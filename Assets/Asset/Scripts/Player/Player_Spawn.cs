@@ -35,6 +35,16 @@ public class Player_Spawn : MonoBehaviour {
                     sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillList = characterList[1].skillList;
                     sceneManager.playerList[i].transform.GetChild(0).GetComponent<Transform>().localScale = new Vector3(characterList[1].scale, characterList[1].scale, characterList[1].scale);
                     break;
+
+                case 3:
+                    sceneManager.playerList[i].GetComponent<PlayerStats>().name = characterList[2].name;
+                    sceneManager.playerList[i].GetComponent<PlayerStats>().baseHealth = characterList[2].maxHealth;
+                    sceneManager.playerList[i].GetComponent<PlayerStats>().health = characterList[2].health;
+                    sceneManager.playerList[i].transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = characterList[2].sprite;
+                    sceneManager.playerList[i].transform.GetChild(0).GetComponent<Animator>().runtimeAnimatorController = characterList[2].animator;
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillList = characterList[2].skillList;
+                    sceneManager.playerList[i].transform.GetChild(0).GetComponent<Transform>().localScale = new Vector3(characterList[2].scale, characterList[2].scale, characterList[2].scale);
+                    break;
             }
         }
 
