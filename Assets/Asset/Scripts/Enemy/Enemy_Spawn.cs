@@ -13,12 +13,12 @@ public class Enemy_Spawn : MonoBehaviour {
     private void Awake()
     {
         //! Increase the wave index
-        AudioManager.instance.waveIndex++;
+        AudioManager.waveIndex++;
 
         //! Fill the enemy index stage list
-        enemyIndexStage = sceneManager.waveDetails[AudioManager.instance.waveIndex].enemiesToSpawn;
+        enemyIndexStage = sceneManager.waveDetails[AudioManager.waveIndex].enemiesToSpawn;
         //! Background
-        Instantiate(sceneManager.waveDetails[AudioManager.instance.waveIndex].background, Vector3.zero, Quaternion.identity);
+        Instantiate(sceneManager.waveDetails[AudioManager.waveIndex].background, Vector3.zero, Quaternion.identity);
 
         //! Instantiating enemies on specific spawn points based on the size of the enemyIndexStage list.
         indexInList = 0;
@@ -46,7 +46,7 @@ public class Enemy_Spawn : MonoBehaviour {
        
         //! Special location for the spirit door
         //! Checking if its the wave that spawns the spirit door
-        if (AudioManager.instance.waveIndex == 3)
+        if (AudioManager.waveIndex == 3)
         {
             //! Setting the position of the spirit door
             sceneManager.enemyList[0].transform.position = new Vector3(4.4f, 1.1f, 0f);
@@ -54,7 +54,7 @@ public class Enemy_Spawn : MonoBehaviour {
 
         //! Special location for the knight
         //! Checking if its the wave that spawns the knight
-        if (AudioManager.instance.waveIndex == 4)
+        if (AudioManager.waveIndex == 4)
         {
             //! Setting the position of the spirit door
             sceneManager.enemyList[0].transform.position = new Vector3(3.896104f, -3f, 0f);

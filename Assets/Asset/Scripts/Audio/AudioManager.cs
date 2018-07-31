@@ -10,7 +10,9 @@ public class AudioManager : MonoBehaviour {
     public Sound[] sounds;
     public static AudioManager instance;
     public List<Sound> soundPlaying;
-    public int waveIndex = -1;
+    public static int waveIndex = -1;
+    public static bool isDefeated = false;
+    public static bool isKnightDefeated = false;
 
     public static AudioManager Instance
     {
