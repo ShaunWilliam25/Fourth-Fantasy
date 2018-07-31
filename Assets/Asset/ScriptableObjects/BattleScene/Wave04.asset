@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8aaccd694096cc84bb3cab1404faf343, type: 3}
   m_Name: Wave04
   m_EditorClassIdentifier: 
-  background: {fileID: 1591651026738418, guid: 07ffd2211715e3342bbcb3d94accf3d2, type: 2}
+  background: {fileID: 1270644513194676, guid: c8e6524258a621344b6ed165b534c59c, type: 2}
   enemiesToSpawn: 05000000
