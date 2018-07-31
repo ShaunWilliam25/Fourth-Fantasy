@@ -27,7 +27,7 @@ public class ArtifactScript : MonoBehaviour
         if (calArtifactChance <= normalRarity)
         {
             int randNum = Random.Range(0, normalArtifact.Count);
-            ownedArtifact = Instantiate(normalArtifact[randNum].items, transform.position, Quaternion.identity);
+            ownedArtifact = Instantiate(normalArtifact[randNum].items, Vector3.zero, Quaternion.identity);
             ownedArtifactList.Add(ownedArtifact);
 
             //Instantiate(normalArtifact[randNum].items, transform.position. new Vector2(enemySpawnPoints[i].position.x, enemySpawnPoints[i].position.y), Quaternion.identity);
@@ -38,13 +38,13 @@ public class ArtifactScript : MonoBehaviour
         else if (calArtifactChance > normalRarity && calArtifactChance <= normalRarity + rareRarity)
         {
             int randNum = Random.Range(0, rareArtifact.Count);
-			ownedArtifact = Instantiate(rareArtifact[randNum].items, transform.position, Quaternion.identity);
+			ownedArtifact = Instantiate(rareArtifact[randNum].items, Vector3.zero, Quaternion.identity);
             ownedArtifactList.Add(ownedArtifact);
         }
         else if (calArtifactChance > normalRarity + rareRarity && calArtifactChance <= normalRarity + rareRarity + veryRareRarity)
         {
             int randNum = Random.Range(0, veryRareArtifact.Count);
-			ownedArtifact = Instantiate(veryRareArtifact[randNum].items, transform.position, Quaternion.identity);
+			ownedArtifact = Instantiate(veryRareArtifact[randNum].items, Vector3.zero, Quaternion.identity);
             ownedArtifactList.Add(ownedArtifact);
         }
 
