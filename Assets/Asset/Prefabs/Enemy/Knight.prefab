@@ -617,6 +617,7 @@ MonoBehaviour:
   battlelogScript: {fileID: 0}
   audioManager: {fileID: 0}
   yOffset: 1.69
+  hpFrame: {fileID: 0}
 --- !u!114 &114369788556330322
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -994,8 +995,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9518dcbb996bef84da2b1c24a14e5aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
-  baseHealth: 1
+  health: 2400
+  baseHealth: 2400
   immune: 0
   silence: 0
   berserk: 0
