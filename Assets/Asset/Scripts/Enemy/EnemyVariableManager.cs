@@ -11,8 +11,6 @@ public class EnemyVariableManager : MonoBehaviour {
     public float maxCooldown;
     public Image actionBar;
     public bool ATBFull = false;
-    public float pauseTime;
-    public float maxPauseTime;
     public Text skillText;
     public Animator anim;
 

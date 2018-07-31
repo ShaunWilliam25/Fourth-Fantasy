@@ -11,7 +11,7 @@ public class actionTimeBar : MonoBehaviour
     public float maxSelection;
     public float startSelection;
     public string playerButton;
-    public float timeRequired = 2f;
+    public float timeRequired = 3f;
     public float xOffset;
     public float yOffset;
     Transform playerTransform;

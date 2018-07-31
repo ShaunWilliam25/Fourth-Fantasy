@@ -25,10 +25,6 @@ public class EnemyStatusUpdate : EnemyVariableManager
             }
             for (int i = statusList.Count - 1; i >= 0; i--)
             {
-                if (this.statusList[i].GetComponent<StatusDetail>() is Haste || this.statusList[i].GetComponent<StatusDetail>() is Slow)
-                {
-                    NeutralizeHasteAndSlow();
-                }
                 this.statusList[i].GetComponent<StatusDetail>().user = gameObject;
                 this.statusList[i].GetComponent<StatusDetail>().userType = StatusDetail.UserType.ENEMY;
                 this.statusList[i].GetComponent<StatusDetail>().DoEffect();
@@ -44,7 +40,7 @@ public class EnemyStatusUpdate : EnemyVariableManager
         }
     }
     
-    void NeutralizeHasteAndSlow()
+   /* void NeutralizeHasteAndSlow()
     {
         for (int i = this.statusList.Count - 1; i >= 0; i--)
         {
@@ -63,5 +59,5 @@ public class EnemyStatusUpdate : EnemyVariableManager
                 }
             }
         }
-    }
+    }*/
 }

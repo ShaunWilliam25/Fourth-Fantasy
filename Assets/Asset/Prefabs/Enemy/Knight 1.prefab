@@ -385,8 +385,6 @@ MonoBehaviour:
   maxCooldown: 1
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
@@ -475,8 +473,6 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
@@ -571,8 +567,6 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
@@ -699,8 +693,6 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
@@ -859,8 +851,6 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
@@ -1043,8 +1033,6 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
@@ -1091,8 +1079,6 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 114778266124300296}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 95545514921827776}
   idleAnimation: SpiritDoorIdleAnimation
@@ -1116,9 +1102,10 @@ MonoBehaviour:
   UltiUsed: 0
   canUseUlti: 0
   skillsPrefab:
-  - {fileID: 1413974324339170, guid: 8e4c4a64713db3d48908fe8b6271d71d, type: 2}
-  - {fileID: 1472787431780924, guid: eddb405411fb6f0438105de2b688f5b1, type: 2}
-  - {fileID: 1782817667263134, guid: dc137ed965155e14581e516af51abceb, type: 2}
+  - {fileID: 1589038147395568, guid: 9a6147d9ca15c9e4d9475c6523e7f548, type: 2}
+  - {fileID: 1360657764261418, guid: 34c4bd5a20b26e54ea92e5d1acad5f49, type: 2}
+  - {fileID: 1475319124024718, guid: 708caea9ac447b143a89af4fa1c7800c, type: 2}
+  - {fileID: 1705658804126940, guid: 8fdac4f86561dd24aa1c4d753faf278d, type: 2}
   skillList: []
   skillPercentageUpperLimit: 
   skillToUse: {fileID: 0}

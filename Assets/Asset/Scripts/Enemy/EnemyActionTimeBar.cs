@@ -9,7 +9,6 @@ public class EnemyActionTimeBar : EnemyVariableManager {
     void Start ()
     {
         this.GetComponent<EnemyVariableManager>().maxCooldown = 4;
-        this.GetComponent<EnemyVariableManager>().maxPauseTime = 1;
         this.GetComponent<EnemyVariableManager>().actionBar.fillAmount = 0;
         this.GetComponent<EnemyVariableManager>().curCooldown = 0;
         Transform selfPosition;
@@ -38,15 +37,10 @@ public class EnemyActionTimeBar : EnemyVariableManager {
 
             if (this.GetComponent<EnemyVariableManager>().curCooldown >= this.GetComponent<EnemyVariableManager>().maxCooldown)
             {
-                this.GetComponent<EnemyVariableManager>().pauseTime += Time.deltaTime;
                 //this.GetComponent<EnemyVariableManager>().skillText.text = "using skill 1";
-                if (this.GetComponent<EnemyVariableManager>().pauseTime >= this.GetComponent<EnemyVariableManager>().maxPauseTime)
-                {
                     //curCooldown = 0;
-                    this.GetComponent<EnemyVariableManager>().pauseTime = 0;
                     this.GetComponent<EnemyVariableManager>().ATBFull = true;
-                    //this.GetComponent<EnemyVariableManager>().skillText.text = "                   ";
-                }
+                    //this.GetComponent<EnemyVariableManager>().skillText.text = "            
 
                 //this.GetComponent<EnemyVariableManager>().ATBFull = true;
                 //this.GetComponent<EnemyVariableManager>().curCooldown = 0;
