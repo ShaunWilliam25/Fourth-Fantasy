@@ -48,9 +48,17 @@ public class Enemy_Spawn : MonoBehaviour {
         //! Checking if its the wave that spawns the spirit door
         if (AudioManager.instance.waveIndex == 3)
         {
+            //! Setting the position of the spirit door
             sceneManager.enemyList[0].transform.position = new Vector3(4.4f, 1.1f, 0f);
         }
 
+        //! Special location for the knight
+        //! Checking if its the wave that spawns the knight
+        if (AudioManager.instance.waveIndex == 4)
+        {
+            //! Setting the position of the spirit door
+            sceneManager.enemyList[0].transform.position = new Vector3(3.896104f, -3f, 0f);
+        }
 
         //! Instantiating the skill for the enemies
         for (int j=0;j<sceneManager.enemyList.Count;j++)
