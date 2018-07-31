@@ -115,16 +115,19 @@ public class CampsiteSelection : MonoBehaviour
                 {
                     player1.status.GetComponent<Image>().color = Color.white;
                     player1.upgrade.GetComponent<Image>().color = Color.red;
+                    player1.fillFeedback.transform.position = player1.upgrade.transform.position;
                 }
                 else if (player1.upgrade.GetComponent<Image>().color == Color.red)
                 {
                     player1.upgrade.GetComponent<Image>().color = Color.white;
                     player1.ready.GetComponent<Text>().color = Color.yellow;
+                    player1.fillFeedback.transform.position = player1.ready.transform.position;
                 }
                 else if (player1.ready.GetComponent<Text>().color == Color.yellow)
                 {
                     player1.status.GetComponent<Image>().color = Color.red;
                     player1.ready.color = Color.white;
+                    player1.fillFeedback.transform.position = player1.status.transform.position;
                 }
             }
         }
@@ -439,6 +442,7 @@ public struct CampsiteMenu
     public Image highlighted;
     public Image selectedSkill;
     public Image selectedUpgrade;
+    public Image fillFeedback;    
     public Text detail;
     public int skillIndex;
     public int upgradeIndex;

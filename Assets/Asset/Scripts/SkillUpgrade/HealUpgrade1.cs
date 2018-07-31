@@ -27,6 +27,13 @@ public class HealUpgrade1 : SkillEffect
 
     public override void Execute(GameObject targetedEnemy)
     {
-        user.GetComponent<PlayerTakeDamage>().PlayerHeal(damage);
+        if(damage > (user.GetComponent<PlayerStats>().baseHealth - user.GetComponent<PlayerStats>().health))
+        {
+            user.GetComponent<PlayerTakeDamage>().PlayerHeal(Mathf.RoundToInt(user.GetComponent<PlayerStats>().baseHealth - user.GetComponent<PlayerStats>().health));
+        }
+        else
+        {
+            user.GetComponent<PlayerTakeDamage>().PlayerHeal(damage);
+        }
     }
 }
