@@ -29,7 +29,6 @@ public class ArtifactScript : MonoBehaviour
             int randNum = Random.Range(0, normalArtifact.Count);
             ownedArtifact = Instantiate(normalArtifact[randNum].items, Vector3.zero, Quaternion.identity);
             ownedArtifactList.Add(ownedArtifact);
-            //DestroyImmediate(normalArtifact[randNum].items,true)
 
             //Instantiate(normalArtifact[randNum].items, transform.position. new Vector2(enemySpawnPoints[i].position.x, enemySpawnPoints[i].position.y), Quaternion.identity);
 
