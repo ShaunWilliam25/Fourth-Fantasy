@@ -48,6 +48,7 @@ public class PlayerSkillExecution : PlayerVariableManager
                 if(this.GetComponent<PlayerVariableManager>().targetedEnemy.GetComponent<EnemyVariableManager>().enemyStats.health > 0)
                 {
                     this.GetComponent<PlayerVariableManager>().skillHolder[scrollSkill.skillSelected].GetComponent<SkillDetail>().skillExecutionHolder[i].GetComponent<SkillEffect>().Execute(this.GetComponent<PlayerVariableManager>().targetedEnemy);
+                    Debug.Log("Attacked");
 
                     //! Update the battle log
                     this.GetComponent<PlayerVariableManager>().battleLogScript.AddEvent(this.GetComponent<PlayerVariableManager>().playerStats.name + " " + this.GetComponent<PlayerVariableManager>().skillHolder[scrollSkill.skillSelected].GetComponent<SkillDetail>().skillDescription);
