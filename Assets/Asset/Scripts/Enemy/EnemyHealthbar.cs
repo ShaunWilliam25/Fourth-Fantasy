@@ -15,7 +15,7 @@ public class EnemyHealthbar : EnemyVariableManager {
 
     void Update()
     {
-        this.GetComponent<EnemyVariableManager>().healthBarBackground.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + yOffset, this.transform.position.z);
+        //this.GetComponent<EnemyVariableManager>().healthBarBackground.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + yOffset, this.transform.position.z);
         this.GetComponent<EnemyVariableManager>().healthInPercentage = this.GetComponent<EnemyVariableManager>().enemyStats.health / this.GetComponent<EnemyVariableManager>().enemyStats.baseHealth;
 
         this.GetComponent<EnemyVariableManager>().healthBar.fillAmount = this.GetComponent<EnemyVariableManager>().healthInPercentage;

@@ -301,11 +301,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
-    - target: {fileID: 223462869350805974, guid: 6957876426f4f7f44a2fef876f8736d8,
-        type: 2}
-      propertyPath: m_Camera
-      value: 
-      objectReference: {fileID: 519420031}
     - target: {fileID: 114044135622490806, guid: 6957876426f4f7f44a2fef876f8736d8,
         type: 2}
       propertyPath: battleLogScript
@@ -316,6 +311,11 @@ Prefab:
       propertyPath: allySpawnPoint
       value: 
       objectReference: {fileID: 1520312283}
+    - target: {fileID: 223462869350805974, guid: 6957876426f4f7f44a2fef876f8736d8,
+        type: 2}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 519420031}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6957876426f4f7f44a2fef876f8736d8, type: 2}
   m_IsPrefabParent: 0
@@ -1881,7 +1881,7 @@ MonoBehaviour:
   outMasterVolume: 0
   outMusicVolume: 0
   outEffectVolume: 0
-  scene: {fileID: 1020202951}
+  sceneManager: {fileID: 0}
 --- !u!114 &519420035
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2887,6 +2887,7 @@ MonoBehaviour:
   isWin: 0
   audioManager: {fileID: 255882461}
   victory: {fileID: 1663423641430810, guid: 8a7faca0a5059e647871b7ccbda0bcff, type: 2}
+  VictoryGO: {fileID: 0}
   nextScene: 6
   loseTimer: 0
   tutorial: {fileID: 0}
@@ -3657,7 +3658,7 @@ MonoBehaviour:
   outMasterVolume: 0
   outMusicVolume: 0
   outEffectVolume: 0
-  scene: {fileID: 0}
+  sceneManager: {fileID: 0}
 --- !u!114 &1204321781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6674,7 +6675,7 @@ MonoBehaviour:
   outMasterVolume: 0
   outMusicVolume: 0
   outEffectVolume: 0
-  scene: {fileID: 0}
+  sceneManager: {fileID: 0}
 --- !u!1001 &1950635683
 Prefab:
   m_ObjectHideFlags: 0

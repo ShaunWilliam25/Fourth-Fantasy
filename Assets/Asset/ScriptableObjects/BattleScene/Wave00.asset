@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Name: Wave00
   m_EditorClassIdentifier: 
   background: {fileID: 1591651026738418, guid: 07ffd2211715e3342bbcb3d94accf3d2, type: 2}
-  enemiesToSpawn: 05000000
+  enemiesToSpawn: 00000000
