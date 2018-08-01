@@ -15,7 +15,7 @@ public class Confuse : StatusDetail
 
     public override void DoEffect()
     {
-        if (secondDuration == 10)
+        if (secondDuration == 20)
         {
             if (userType == UserType.PLAYER)
             {
