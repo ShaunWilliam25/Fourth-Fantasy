@@ -29,6 +29,6 @@ public class NormalAttackExiledDemon : SkillEffect
         int totalDamage = (int)(damage * DamageMultiplier());
         targetedEnemy.GetComponent<EnemyTakeDamage>().EnemyDamage(totalDamage);
         playerArtifact.ArtifactAttackEffect(targetedEnemy);
-        audioManager.PlaySound("ExiledDemonAttackSound");
+        AudioManager.instance.PlaySound("ExiledDemonAttackSound");
     }
 }

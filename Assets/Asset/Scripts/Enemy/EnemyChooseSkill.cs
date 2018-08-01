@@ -39,7 +39,6 @@ public class EnemyChooseSkill : EnemyVariableManager {
                 Invoke("ResetColor", 0.2f);
                 // Random Skill Choosing
                 RandomSkill();
-                //this.GetComponent<EnemyVariableManager>().audioManager.PlaySound("EnemyAttackSound");
                 AudioManager.instance.PlaySound("EnemyAttackSound");
                 this.GetComponent<EnemyVariableManager>().battlelogScript.AddEvent(this.name + " attacks " + this.GetComponent<EnemyVariableManager>().Target.name);
                 // this.GetComponent<EnemyVariableManager>().isSkillUsed = false;

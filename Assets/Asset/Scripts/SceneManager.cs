@@ -23,11 +23,19 @@ public class SceneManager : MonoBehaviour {
 
     public void Awake()
     {
-        //audioManager.PlaySound("BattleSound");
-
         tutorial = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<TutorialAppear>();
         playerList[0] = GameObject.FindGameObjectWithTag("Player1");
-        playerList[1] = GameObject.FindGameObjectWithTag("Player2");        
+        playerList[1] = GameObject.FindGameObjectWithTag("Player2");
+        if (Player1.instance.gameObject.activeInHierarchy == false)
+        {
+            Player1.instance.gameObject.SetActive(true);
+        }
+        if (Player2.instance.gameObject.activeInHierarchy == false)
+        {
+            Player2.instance.gameObject.SetActive(true);
+        }
+        playerList[0] = Player1.instance.gameObject;
+        playerList[1] = Player2.instance.gameObject;
     }
 
 
@@ -59,6 +67,7 @@ public class SceneManager : MonoBehaviour {
 
     private void Update()
     {
+        //! Spawning artifact when enemy is dead
         for (int i=enemyList.Count-1;i>=0;i--)
         {
             if(enemyList[i].GetComponent<EnemyStats>().health <= 0)
@@ -69,6 +78,7 @@ public class SceneManager : MonoBehaviour {
                 for(int j =0;j<playerList.Count;j++)
                 {
                     playerList[j].GetComponent<PlayerVariableManager>().isTargetLockedIn = false;
+                    
                 }
 
                 this.GetComponent<ArtifactScript>().calArtifact();
@@ -76,6 +86,8 @@ public class SceneManager : MonoBehaviour {
 
             
         }
+
+        //! When all enemy is dead,check for win
         if(enemyList.Count <=0)
         {
             if (tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_06 && tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.THE_END)
@@ -85,13 +97,23 @@ public class SceneManager : MonoBehaviour {
                     Debug.Log("Win");
                     for (int i = 0; i < playerList.Count; i++)
                     {
+                        playerList[i].GetComponent<PlayerVariableManager>().statusList.Clear();
+                        playerList[i].GetComponent<PlayerStatusList>().statusIcon.Clear();
+                        playerList[i].GetComponent<actionTimeBar>().timeRequired = 3f;
+                        playerList[i].GetComponent<PlayerStats>().Reset();
                         playerList[i].GetComponent<actionTimeBar>().enabled = false;
-                        Debug.Log("Turning off the ATB");
                         for (int j = 1; j < playerList[i].transform.childCount; j++)
                         {
                             playerList[i].transform.GetChild(j).gameObject.SetActive(false);
                         }
                     }
+
+                    //!Check if its the knight battle,to move to the win game scene
+                    if(AudioManager.instance.waveIndex == 4)
+                    {
+                        UnityEngine.SceneManagement.SceneManager.LoadScene(3);
+                    }
+
                     GameObject.FindGameObjectWithTag("MainCamera").GetComponent<battleLog>().ShowGui = false;
                     VictoryGO = Instantiate(victory);
                     isWin = true;
@@ -116,7 +138,7 @@ public class SceneManager : MonoBehaviour {
             for (int k = 0; k < playerList.Count; k++)
             {
                 playerList[k].GetComponent<PlayerStats>().health = 0;
-                break;
+
             }
         }
 
@@ -125,6 +147,7 @@ public class SceneManager : MonoBehaviour {
             loseTimer += Time.deltaTime;
             if (loseTimer > 1)
             {
+                AudioManager.instance.waveIndex--;
                 UnityEngine.SceneManagement.SceneManager.LoadScene(4);
               
             }

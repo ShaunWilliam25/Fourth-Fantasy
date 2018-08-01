@@ -79,7 +79,7 @@ public class PauseScript : MonoBehaviour
     }
     public void ClickSound()
     {
-        FindObjectOfType<AudioManager>().PlaySound("MenuClickSound");
+        AudioManager.instance.PlaySound("MenuClickSound");
     }
 
     public void setMasterVolume(float volume)

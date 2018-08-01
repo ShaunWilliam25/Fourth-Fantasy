@@ -18,4 +18,14 @@ public class PlayerStats : GeneralStats {
             health = baseHealth;
         }
 	}
+
+    public void Reset()
+    {
+        knockedOut = true;
+        reviveAction = 0;
+        autoRevive = false;
+        taunt = false;
+        silence = false;
+        berserk = false;
+    }
 }

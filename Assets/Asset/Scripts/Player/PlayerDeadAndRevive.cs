@@ -21,6 +21,9 @@ public class PlayerDeadAndRevive : MonoBehaviour {
         if (playerStats.health <= 0 && playerStats.knockedOut == false)
         {
             playerVariable.statusList.Clear();
+            GetComponent<PlayerStatusList>().statusIcon.Clear();
+            GetComponent<actionTimeBar>().timeRequired = 3f;
+            playerStats.Reset();
             playerStats.knockedOut = true;
             playerStats.reviveAction = 3;
             playerVariable.GetComponent<PlayerScrollSkill>().enabled = false;

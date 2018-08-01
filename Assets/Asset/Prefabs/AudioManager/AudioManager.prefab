@@ -101,3 +101,4 @@ MonoBehaviour:
     mixer: {fileID: 243080169733096190, guid: 7dbed27ad769b334e84040ea33fc0b53, type: 2}
     source: {fileID: 0}
   soundPlaying: []
+  waveIndex: -1

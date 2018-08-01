@@ -34,6 +34,6 @@ public class ArmyOfOneEffect : SkillEffect {
             }
         }
 
-        audioManager.PlaySound("ExiledDemonAttackSound");
+        AudioManager.instance.PlaySound("ExiledDemonAttackSound");
     }
 }
