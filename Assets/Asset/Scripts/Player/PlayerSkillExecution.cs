@@ -27,7 +27,8 @@ public class PlayerSkillExecution : PlayerVariableManager
     // Update is called once per frame
     void Update()
     {
-        if(this.GetComponent<PlayerVariableManager>().battleStateManagerScript.gameState == BattleStateManager.GAMESTATE.EXECUTE_SKILL)
+        Debug.Log("isAttack is " + isAttack);
+        if (this.GetComponent<PlayerVariableManager>().battleStateManagerScript.gameState == BattleStateManager.GAMESTATE.EXECUTE_SKILL)
         {
             Debug.Log(this.GetComponent<PlayerVariableManager>().playerStats.name + "state is execute skill");
         }
@@ -54,7 +55,7 @@ public class PlayerSkillExecution : PlayerVariableManager
                     this.GetComponent<PlayerVariableManager>().battleLogScript.AddEvent(this.GetComponent<PlayerVariableManager>().playerStats.name + " " + this.GetComponent<PlayerVariableManager>().skillHolder[scrollSkill.skillSelected].GetComponent<SkillDetail>().skillDescription);
 
                     //! Check for tutorial 2
-                    isAttack++;
+                    isAttack++;                    
 
                     this.GetComponent<PlayerVariableManager>().oriColor = this.GetComponent<PlayerVariableManager>().targetedEnemy.transform.GetChild(0).GetComponent<SpriteRenderer>().color;
                     this.GetComponent<PlayerVariableManager>().targetedEnemy.transform.GetChild(0).GetComponent<SpriteRenderer>().color = Color.red;

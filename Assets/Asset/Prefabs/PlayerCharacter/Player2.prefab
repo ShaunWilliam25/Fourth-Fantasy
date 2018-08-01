@@ -1001,7 +1001,7 @@ MonoBehaviour:
   skillSelected: 0
   boxOffset: 0.6
   startPosition: -2.7800002
-  characterOffset: 1.84
+  characterOffset: 2.06
 --- !u!114 &114107181260350838
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1431,7 +1431,7 @@ MonoBehaviour:
   attackAnimation: 
   gameState: 0
   artifactsList: []
-  isAttack: 4
+  isAttack: 0
   attackAnimationTimer: 0.2
   scrollSkill: {fileID: 114078750118685472}
 --- !u!114 &114569680231190332

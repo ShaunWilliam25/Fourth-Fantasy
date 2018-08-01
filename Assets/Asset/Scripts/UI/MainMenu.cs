@@ -39,17 +39,15 @@ public class MainMenu : MonoBehaviour
 
     private void Start()
     {
-        if (audioManager.soundPlaying.Count > 0)
+        if (AudioManager.Instance.soundPlaying.Count > 0)
         {
-            for (int i = 0; i < audioManager.soundPlaying.Count; i++)
+            for (int i = 0; i < AudioManager.Instance.soundPlaying.Count; i++)
             {
-                audioManager.soundPlaying[i].source.Stop();
+                AudioManager.Instance.soundPlaying[i].source.Stop();
             }
-            audioManager.soundPlaying.Clear();
+            AudioManager.Instance.soundPlaying.Clear();
         }                
         AudioManager.instance.PlaySound("MenuTheme");
-        //Player1.instance.gameObject.SetActive(false);
-        //Player2.instance.gameObject.SetActive(false);
 
     }
     private void Update()
@@ -62,7 +60,7 @@ public class MainMenu : MonoBehaviour
         if (Player2.instance.gameObject.activeInHierarchy == true)
         {
             Player2.instance.gameObject.SetActive(false);
-        }               
+        }
     }
 
     public void ClickSound()
