@@ -23,3 +23,23 @@ MonoBehaviour:
   - {fileID: 1532596685821658, guid: 0e5db31875af60140ad9871c6b1f4500, type: 2}
   - {fileID: 1867597038940726, guid: ae1f6cb908d96df42a9ad789066242a5, type: 2}
   scale: 0.2877243
+  idleAnimation: TimePriestressIdleAnimation
+  attackAnimation: TimePriestressAttackAnimation
+  skillImages:
+  - {fileID: 21300000, guid: 4bf58fa3a5f38984789fb0030d70f1a8, type: 3}
+  - {fileID: 21300000, guid: 5f754a66e98707b44ac0c80c7b20a5a0, type: 3}
+  - {fileID: 21300000, guid: 1c763df390ffe7e4d97a7214950c4687, type: 3}
+  - {fileID: 21300000, guid: 7454292b17dc83345b2bf4266aedb671, type: 3}
+  - {fileID: 21300000, guid: 0a972d666c549e8438a4381ddd5e891c, type: 3}
+  skillNames:
+  - Pollens of Disease
+  - Chrono's Descent
+  - Normal Attack
+  - Acceleration
+  - Meteor
+  skillDescriptions:
+  - 
+  - 
+  - 
+  - 
+  - 
