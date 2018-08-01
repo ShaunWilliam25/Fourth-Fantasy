@@ -19,10 +19,6 @@ public class PlayerStatusList : PlayerVariableManager {
         
         if (statusIcon != null)
         {
-            /*for (int i = 0; i < statusIcon.Count; i++)
-            {
-                statusesList[i%5].sprite = statusIcon[i];
-            }*/
             if(statusIcon.Count > 5)
             {
                 if(swapTimer%1 < 0.5f)
@@ -38,6 +34,13 @@ public class PlayerStatusList : PlayerVariableManager {
                     {
                         statusesList[i % 5].sprite = statusIcon[i+5];
                     }
+                }
+            }
+            else
+            {
+                for (int i = 0; i < statusIcon.Count; i++)
+                {
+                    statusesList[i % 5].sprite = statusIcon[i];
                 }
             }
         }
