@@ -31,6 +31,6 @@ public class DemonStrikeEffect : SkillEffect
         targetedEnemy.GetComponent<EnemyTakeDamage>().EnemyDamage(totalDamage);
         playerArtifact.ArtifactAttackEffect(targetedEnemy);
         user.GetComponent<PlayerTakeDamage>().PlayerHeal(heal);
-        audioManager.PlaySound("ExiledDemonAttackSound");
+        AudioManager.instance.PlaySound("ExiledDemonAttackSound");
     }
 }

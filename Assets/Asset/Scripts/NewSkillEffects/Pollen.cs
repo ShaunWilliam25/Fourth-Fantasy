@@ -38,6 +38,6 @@ public class Pollen : SkillEffect
            }
             playerArtifact.ArtifactAttackEffect(enemyList[i]);
         }
-        audioManager.PlaySound("TimePriestressAttackSound");
+        AudioManager.instance.PlaySound("TimePriestressAttackSound");
     }
 }

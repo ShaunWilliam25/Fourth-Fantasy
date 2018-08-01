@@ -66,7 +66,6 @@ public class SettingsMenu : MonoBehaviour
         audioMixer.SetFloat("EffectVolume", -5f);
         audioMixer.GetFloat("MasterVolume", out outMasterVolume);
         masterSlider.value = AudioManager.Instance.dBToVolume(outMasterVolume);
-        Debug.Log(AudioManager.Instance.dBToVolume(outMasterVolume));
         audioMixer.GetFloat("MusicVolume", out outMusicVolume);
         musicSlider.value = AudioManager.Instance.dBToVolume(outMusicVolume);
         audioMixer.GetFloat("EffectVolume", out outEffectVolume);

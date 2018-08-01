@@ -96,6 +96,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1128372312715352
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4194256640707974}
+  - component: {fileID: 212552713724229690}
+  - component: {fileID: 114989763364247644}
+  m_Layer: 0
+  m_Name: NormalAttackExiledDemon(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1140889963708872
 GameObject:
   m_ObjectHideFlags: 0
@@ -122,6 +139,54 @@ GameObject:
   m_Layer: 0
   m_Name: Player1
   m_TagString: Player1
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1141050452686040
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4649465379247118}
+  - component: {fileID: 114906328716756568}
+  m_Layer: 0
+  m_Name: DanceOfTheDemonEffect(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1147955276620952
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4017877820274012}
+  - component: {fileID: 114401909278077378}
+  m_Layer: 0
+  m_Name: DemonStrikeEffect(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1150049666336522
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4571013682252174}
+  - component: {fileID: 114477866169438024}
+  m_Layer: 0
+  m_Name: NormalAttackExiledDemonEffect(Clone)
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -188,6 +253,23 @@ GameObject:
   - component: {fileID: 212017559636622466}
   m_Layer: 0
   m_Name: bar_base
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1275711972404396
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4374416889846204}
+  - component: {fileID: 212573299376344642}
+  - component: {fileID: 114088933115666278}
+  m_Layer: 0
+  m_Name: DemonStrike(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -277,6 +359,39 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1558988560058712
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4852757488493612}
+  - component: {fileID: 212994366105872416}
+  - component: {fileID: 114172621654629276}
+  m_Layer: 0
+  m_Name: DanceOfTheDemon(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1565758567087182
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4946149092772562}
+  - component: {fileID: 114525094745970000}
+  m_Layer: 0
+  m_Name: SoulHuntEffect(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1572790106391396
 GameObject:
   m_ObjectHideFlags: 1
@@ -312,6 +427,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1634062912777228
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4640481467594866}
+  - component: {fileID: 114492536731405796}
+  m_Layer: 0
+  m_Name: CriesOfTheDemonEffect(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1667251953917522
 GameObject:
   m_ObjectHideFlags: 1
@@ -324,6 +455,23 @@ GameObject:
   - component: {fileID: 114034871319767428}
   m_Layer: 0
   m_Name: HPBar
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1693003656588060
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4461551306690102}
+  - component: {fileID: 212692640473400392}
+  - component: {fileID: 114766567067205532}
+  m_Layer: 0
+  m_Name: Soul hunt(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -399,6 +547,23 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1965575324071282
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4744712718351398}
+  - component: {fileID: 212641732815144686}
+  - component: {fileID: 114737153284376968}
+  m_Layer: 0
+  m_Name: CriesOfTheDemon(Clone)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1989776698897340
 GameObject:
   m_ObjectHideFlags: 0
@@ -416,6 +581,61 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &4017877820274012
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1147955276620952}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4374416889846204}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4194256640707974
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1128372312715352}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1164934, y: 0.1164934, z: 1}
+  m_Children:
+  - {fileID: 4571013682252174}
+  m_Father: {fileID: 4635680452473964}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4374416889846204
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1275711972404396}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -0.5999999, y: 0, z: 0}
+  m_LocalScale: {x: 0.1164934, y: 0.1164934, z: 1}
+  m_Children:
+  - {fileID: 4017877820274012}
+  m_Father: {fileID: 4635680452473964}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4461551306690102
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1693003656588060}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.5999999, y: 0, z: 0}
+  m_LocalScale: {x: 0.1164934, y: 0.1164934, z: 1}
+  m_Children:
+  - {fileID: 4946149092772562}
+  m_Father: {fileID: 4635680452473964}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4468109814501442
 Transform:
   m_ObjectHideFlags: 1
@@ -424,7 +644,7 @@ Transform:
   m_GameObject: {fileID: 1989776698897340}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.34845275, y: 0.34845275, z: 0.3484527}
+  m_LocalScale: {x: 0.3484527, y: 0.3484527, z: 0.3484527}
   m_Children: []
   m_Father: {fileID: 4968061370274270}
   m_RootOrder: 0
@@ -442,6 +662,19 @@ Transform:
   m_Father: {fileID: 4635680452473964}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4571013682252174
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1150049666336522}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1164934, y: 0.1164934, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4194256640707974}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4635680452473964
 Transform:
   m_ObjectHideFlags: 1
@@ -454,8 +687,53 @@ Transform:
   m_Children:
   - {fileID: 4563729744451202}
   - {fileID: 4797794379106476}
+  - {fileID: 4852757488493612}
+  - {fileID: 4374416889846204}
+  - {fileID: 4194256640707974}
+  - {fileID: 4461551306690102}
+  - {fileID: 4744712718351398}
   m_Father: {fileID: 4968061370274270}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4640481467594866
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1634062912777228}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4744712718351398}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4649465379247118
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1141050452686040}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4852757488493612}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4744712718351398
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1965575324071282}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.2, y: 0, z: 0}
+  m_LocalScale: {x: 0.1164934, y: 0.1164934, z: 1}
+  m_Children:
+  - {fileID: 4640481467594866}
+  m_Father: {fileID: 4635680452473964}
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4797794379106476
 Transform:
@@ -470,6 +748,33 @@ Transform:
   m_Father: {fileID: 4635680452473964}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4852757488493612
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1558988560058712}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.1999998, y: 0, z: 0}
+  m_LocalScale: {x: 0.1164934, y: 0.1164934, z: 1}
+  m_Children:
+  - {fileID: 4649465379247118}
+  m_Father: {fileID: 4635680452473964}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4946149092772562
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1565758567087182}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4461551306690102}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4968061370274270
 Transform:
   m_ObjectHideFlags: 1
@@ -477,7 +782,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1140889963708872}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.75, y: 0.7, z: 0}
+  m_LocalPosition: {x: -4.75, y: 0.492, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4468109814501442}
@@ -580,8 +885,8 @@ MonoBehaviour:
   skillBox: {fileID: 1320640483823348}
   skillSelected: 0
   boxOffset: 0.6
-  startPosition: 1.2
-  characterOffset: 0.98
+  startPosition: -5.95
+  characterOffset: 1.18
 --- !u!114 &114027907485961764
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -606,7 +911,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 1
-  m_FillAmount: 1
+  m_FillAmount: 0
   m_FillClockwise: 1
   m_FillOrigin: 0
 --- !u!114 &114034871319767428
@@ -674,6 +979,31 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114088933115666278
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1275711972404396}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d0dba84c265141a9a8cbba9c679c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillName: Demon Strike
+  skillDescription: Deals moderate amount of damage to front enemy and heals small
+    amount of HP for self
+  skillCooldown: 0
+  maxSkillCooldown: 0
+  user: {fileID: 1140889963708872}
+  skillExecutionList:
+  - {fileID: 1640853412342338, guid: 60db5b31d1cea6c47b21fdcdddba67d4, type: 2}
+  skillExecutionHolder:
+  - {fileID: 1147955276620952}
+  showCooldown: {fileID: 1372910672482984, guid: 343e68853feffe543b1dba27faae6e8a,
+    type: 2}
+  upgradedCount: 0
+  upgradedEffect: []
 --- !u!114 &114117700456964758
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -729,11 +1059,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statusList: []
-  playerStats: {fileID: 0}
-  playerButton: 
+  playerStats: {fileID: 114818395763650454}
+  playerButton: P1_Button
   tempSkill: {fileID: 0}
-  skillListScript: {fileID: 0}
-  offset: 0
+  skillListScript: {fileID: 114993220315628792}
+  offset: 1.23
   skillList: []
   skillHolder: []
   actionTimerBarScript: {fileID: 0}
@@ -748,7 +1078,7 @@ MonoBehaviour:
   enemySpawnScript: {fileID: 0}
   playerSpawnScript: {fileID: 0}
   sceneManagerScript: {fileID: 0}
-  battleStateManagerScript: {fileID: 0}
+  battleStateManagerScript: {fileID: 114171952932211632}
   targetCursor: {fileID: 0}
   cursorIndex: 0
   chooseTargetHoldTimer: 0
@@ -762,6 +1092,30 @@ MonoBehaviour:
   attackAnimation: 
   gameState: 0
   artifactsList: []
+--- !u!114 &114172621654629276
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1558988560058712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d0dba84c265141a9a8cbba9c679c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillName: Dance of the Demon
+  skillDescription: Heals all allies
+  skillCooldown: 0
+  maxSkillCooldown: 0
+  user: {fileID: 1140889963708872}
+  skillExecutionList:
+  - {fileID: 1501809835696522, guid: 02d95354fb53b734c871bc0b1d818272, type: 2}
+  skillExecutionHolder:
+  - {fileID: 1141050452686040}
+  showCooldown: {fileID: 1372910672482984, guid: 343e68853feffe543b1dba27faae6e8a,
+    type: 2}
+  upgradedCount: 0
+  upgradedEffect: []
 --- !u!114 &114187776834599772
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -796,7 +1150,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   xOffset: 6.4
   yOffset: -2.6
-  scrollSkill: {fileID: 0}
+  scrollSkill: {fileID: 114007722756929114}
 --- !u!114 &114324892983312968
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -814,11 +1168,11 @@ MonoBehaviour:
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  playerStats: {fileID: 0}
-  playerButton: 
+  playerStats: {fileID: 114818395763650454}
+  playerButton: P1_Button
   tempSkill: {fileID: 0}
-  skillListScript: {fileID: 0}
-  offset: 0
+  skillListScript: {fileID: 114993220315628792}
+  offset: 1.23
   skillList: []
   skillHolder: []
   actionTimerBarScript: {fileID: 0}
@@ -833,7 +1187,7 @@ MonoBehaviour:
   enemySpawnScript: {fileID: 0}
   playerSpawnScript: {fileID: 0}
   sceneManagerScript: {fileID: 0}
-  battleStateManagerScript: {fileID: 0}
+  battleStateManagerScript: {fileID: 114171952932211632}
   targetCursor: {fileID: 0}
   cursorIndex: 0
   chooseTargetHoldTimer: 0
@@ -847,7 +1201,8 @@ MonoBehaviour:
   attackAnimation: 
   gameState: 0
   artifactsList: []
-  statusIcon: []
+  statusIcon:
+  - {fileID: 21300000, guid: 55228b97239635e478fd64fe0b699ff2, type: 3}
   statusesList:
   - {fileID: 114785146281438808}
   - {fileID: 114004816534700248}
@@ -893,11 +1248,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e1ef5faa241bbca4fb7b2c2d6dbc538b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  statusList: []
+  statusList:
+  - {fileID: 0}
   playerStats: {fileID: 114818395763650454}
-  playerButton: 
+  playerButton: P1_Button
   tempSkill: {fileID: 0}
-  skillListScript: {fileID: 0}
+  skillListScript: {fileID: 114993220315628792}
   offset: 1.23
   skillList:
   - {fileID: 1002823010247588, guid: eb445092e7708054fa661e78135ae502, type: 2}
@@ -905,11 +1261,16 @@ MonoBehaviour:
   - {fileID: 1136784145477246, guid: 98ab0bceb1b4da548a94e1d7148e66c4, type: 2}
   - {fileID: 1085256126315632, guid: 557af299344505545bbe8af3f13c24b5, type: 2}
   - {fileID: 1574790323892144, guid: 1c5e2b8ba50615a4786197f548a83a81, type: 2}
-  skillHolder: []
+  skillHolder:
+  - {fileID: 1558988560058712}
+  - {fileID: 1275711972404396}
+  - {fileID: 1128372312715352}
+  - {fileID: 1693003656588060}
+  - {fileID: 1965575324071282}
   actionTimerBarScript: {fileID: 114858894647685826}
   testSkill: {fileID: 0}
   testEnemy: {fileID: 0}
-  oriColor: {r: 0, g: 0, b: 0, a: 0}
+  oriColor: {r: 1, g: 1, b: 1, a: 1}
   anim: {fileID: 95195988615703510}
   battleLogScript: {fileID: 0}
   allySpawnPoint: {fileID: 0}
@@ -918,7 +1279,7 @@ MonoBehaviour:
   enemySpawnScript: {fileID: 0}
   playerSpawnScript: {fileID: 0}
   sceneManagerScript: {fileID: 0}
-  battleStateManagerScript: {fileID: 0}
+  battleStateManagerScript: {fileID: 114171952932211632}
   targetCursor: {fileID: 0}
   cursorIndex: 0
   chooseTargetHoldTimer: 0
@@ -926,10 +1287,10 @@ MonoBehaviour:
   targetedEnemy: {fileID: 0}
   targetCursorBar: {fileID: 0}
   chooseTargetHoldTimerInPercentage: 0
-  isTargetLockedIn: 0
+  isTargetLockedIn: 1
   isEffectTargetLockedIn: 0
-  idleAnimation: 
-  attackAnimation: 
+  idleAnimation: ExiledDemonIdleAnimation
+  attackAnimation: ExiledDemonAttackAnimation
   gameState: 0
   artifactsList: []
 --- !u!114 &114399965372311616
@@ -945,7 +1306,32 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   healthBar: {fileID: 114034871319767428}
   healthBarBackground: {fileID: 114170869123816614}
-  healthInPercentage: 0
+  healthInPercentage: 1
+--- !u!114 &114401909278077378
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1147955276620952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 624eea1b0fc1b1f42b4524b47508c993, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerList:
+  - {fileID: 1140889963708872}
+  - {fileID: 0}
+  enemyList:
+  - {fileID: 0}
+  status: []
+  playerArtifact: {fileID: 114986209964272514}
+  user: {fileID: 1140889963708872}
+  effectDescription: Damage enemy and heal self
+  effectType: 0
+  damage: 70
+  numOfTarget: 1
+  audioManager: {fileID: 0}
+  heal: 30
 --- !u!114 &114416232309285754
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -959,7 +1345,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerStats: {fileID: 114818395763650454}
   playerVariable: {fileID: 114359058499290624}
-  originalColour: {r: 0, g: 0, b: 0, a: 0}
+  originalColour: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &114453472935659996
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -971,7 +1357,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f76d457f22cfb34458d1e0766df805cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  statusList: []
+  statusList:
+  - {fileID: 0}
   playerStats: {fileID: 0}
   playerButton: 
   tempSkill: {fileID: 0}
@@ -979,7 +1366,7 @@ MonoBehaviour:
   offset: 0
   skillList: []
   skillHolder: []
-  actionTimerBarScript: {fileID: 0}
+  actionTimerBarScript: {fileID: 114858894647685826}
   testSkill: {fileID: 0}
   testEnemy: {fileID: 0}
   oriColor: {r: 0, g: 0, b: 0, a: 0}
@@ -1007,7 +1394,58 @@ MonoBehaviour:
   artifactsList: []
   isAttack: 0
   attackAnimationTimer: 0.75
-  scrollSkill: {fileID: 0}
+  scrollSkill: {fileID: 114007722756929114}
+--- !u!114 &114477866169438024
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1150049666336522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b5e304daa1356742b07d3c60a1ab476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerList:
+  - {fileID: 1140889963708872}
+  - {fileID: 0}
+  enemyList:
+  - {fileID: 0}
+  status: []
+  playerArtifact: {fileID: 114986209964272514}
+  user: {fileID: 1140889963708872}
+  effectDescription: Attack frontline enemy
+  effectType: 0
+  damage: 90
+  numOfTarget: 1
+  audioManager: {fileID: 0}
+--- !u!114 &114492536731405796
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1634062912777228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 986ddfdd7ef555a4daea76bcac7bd5cc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerList:
+  - {fileID: 1140889963708872}
+  - {fileID: 0}
+  enemyList:
+  - {fileID: 0}
+  status:
+  - {fileID: 1099124874417978, guid: 8fa50424f4357484a898cba80f677691, type: 2}
+  - {fileID: 1074199998277112, guid: 3000d8965ff25614fb474aab117f004d, type: 2}
+  - {fileID: 1529008860001040, guid: b94cc5a667762ce47a8fb81d2702abfa, type: 2}
+  playerArtifact: {fileID: 114986209964272514}
+  user: {fileID: 1140889963708872}
+  effectDescription: Debuff all enemies
+  effectType: 2
+  damage: 0
+  numOfTarget: 1
+  audioManager: {fileID: 0}
 --- !u!114 &114493992315900368
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1029,6 +1467,33 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+--- !u!114 &114525094745970000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1565758567087182}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c928b235f51b53b42859f6781b186a67, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerList:
+  - {fileID: 1140889963708872}
+  - {fileID: 0}
+  enemyList:
+  - {fileID: 0}
+  status:
+  - {fileID: 1963101712374048, guid: 47312baad2a2f474f8a85a6f28ee183c, type: 2}
+  - {fileID: 1529008860001040, guid: b94cc5a667762ce47a8fb81d2702abfa, type: 2}
+  - {fileID: 1457984599086304, guid: c3eab302fc32c4c48823f03f96a377e5, type: 2}
+  playerArtifact: {fileID: 114986209964272514}
+  user: {fileID: 1140889963708872}
+  effectDescription: Apply random debuff
+  effectType: 2
+  damage: 0
+  numOfTarget: 1
+  audioManager: {fileID: 0}
 --- !u!114 &114551724287016876
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1040,12 +1505,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 270699b19c2811940a8807e2925d8c50, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  statusList: []
-  playerStats: {fileID: 0}
-  playerButton: 
+  statusList:
+  - {fileID: 0}
+  playerStats: {fileID: 114818395763650454}
+  playerButton: P1_Button
   tempSkill: {fileID: 0}
-  skillListScript: {fileID: 0}
-  offset: 0
+  skillListScript: {fileID: 114993220315628792}
+  offset: 1.23
   skillList: []
   skillHolder: []
   actionTimerBarScript: {fileID: 0}
@@ -1060,7 +1526,7 @@ MonoBehaviour:
   enemySpawnScript: {fileID: 0}
   playerSpawnScript: {fileID: 0}
   sceneManagerScript: {fileID: 0}
-  battleStateManagerScript: {fileID: 0}
+  battleStateManagerScript: {fileID: 114171952932211632}
   targetCursor: {fileID: 0}
   cursorIndex: 0
   chooseTargetHoldTimer: 0
@@ -1210,7 +1676,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah Blah '
+  m_Text: Heals all allies
 --- !u!114 &114719976025849520
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1259,7 +1725,55 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Test Skill Name
+  m_Text: Dance of the Demon
+--- !u!114 &114737153284376968
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1965575324071282}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d0dba84c265141a9a8cbba9c679c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillName: Cries Of The Demon
+  skillDescription: Inflicts confuse, curse & slow
+  skillCooldown: 0
+  maxSkillCooldown: 0
+  user: {fileID: 1140889963708872}
+  skillExecutionList:
+  - {fileID: 1476682772385772, guid: 9eee73d199c0c9d44add22ea75b23b7d, type: 2}
+  skillExecutionHolder:
+  - {fileID: 1634062912777228}
+  showCooldown: {fileID: 1372910672482984, guid: 343e68853feffe543b1dba27faae6e8a,
+    type: 2}
+  upgradedCount: 0
+  upgradedEffect: []
+--- !u!114 &114766567067205532
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1693003656588060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d0dba84c265141a9a8cbba9c679c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillName: Soul Hunt
+  skillDescription: May inflict berserk/slow/silence to enemy
+  skillCooldown: 0
+  maxSkillCooldown: 0
+  user: {fileID: 1140889963708872}
+  skillExecutionList:
+  - {fileID: 1041906143100760, guid: b73a9c956702ab64db4b32cd41ac71a1, type: 2}
+  skillExecutionHolder:
+  - {fileID: 1565758567087182}
+  showCooldown: {fileID: 1372910672482984, guid: 343e68853feffe543b1dba27faae6e8a,
+    type: 2}
+  upgradedCount: 0
+  upgradedEffect: []
 --- !u!114 &114785146281438808
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1279,7 +1793,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: e3fb893fe14be6a46beeb8616e0c80b3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 55228b97239635e478fd64fe0b699ff2, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1303,7 +1817,7 @@ MonoBehaviour:
   immune: 0
   silence: 0
   berserk: 0
-  name: Exiled Demon
+  name: ExiledDemon
   aggro: 10
   knockedOut: 0
   reviveAction: 0
@@ -1343,11 +1857,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectionBar: {fileID: 114027907485961764}
   maxSelection: 100
-  startSelection: 0
-  playerButton: 
+  startSelection: 0.22582045
+  playerButton: P1_Button
   timeRequired: 2
   xOffset: 2.91
-  yOffset: -5.85
+  yOffset: -5.65
 --- !u!114 &114866081510403812
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1360,6 +1874,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PopUpText: {fileID: 1247997310769886, guid: 04b05e889f3a481409a7327058b83454, type: 2}
+--- !u!114 &114906328716756568
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1141050452686040}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 370dfdf06b5a9d045b0bf7269bda3f8c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerList:
+  - {fileID: 1140889963708872}
+  - {fileID: 0}
+  enemyList:
+  - {fileID: 0}
+  status: []
+  playerArtifact: {fileID: 114986209964272514}
+  user: {fileID: 1140889963708872}
+  effectDescription: Heal all allies
+  effectType: 3
+  damage: 0
+  numOfTarget: 1
+  audioManager: {fileID: 0}
 --- !u!114 &114935160983272304
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1492,6 +2030,30 @@ MonoBehaviour:
   - {fileID: 1963101712374048, guid: 47312baad2a2f474f8a85a6f28ee183c, type: 2}
   - {fileID: 1099124874417978, guid: 8fa50424f4357484a898cba80f677691, type: 2}
   - {fileID: 1074199998277112, guid: 3000d8965ff25614fb474aab117f004d, type: 2}
+--- !u!114 &114989763364247644
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1128372312715352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a33d0dba84c265141a9a8cbba9c679c9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skillName: Normal Attack
+  skillDescription: Deals moderate amount of damage to front enemy
+  skillCooldown: 0
+  maxSkillCooldown: 0
+  user: {fileID: 1140889963708872}
+  skillExecutionList:
+  - {fileID: 1054380865858144, guid: c680d18e60053874bb8dbd75f54f2ee3, type: 2}
+  skillExecutionHolder:
+  - {fileID: 1150049666336522}
+  showCooldown: {fileID: 1372910672482984, guid: 343e68853feffe543b1dba27faae6e8a,
+    type: 2}
+  upgradedCount: 0
+  upgradedEffect: []
 --- !u!114 &114993220315628792
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1504,11 +2066,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   statusList: []
-  playerStats: {fileID: 0}
-  playerButton: 
+  playerStats: {fileID: 114818395763650454}
+  playerButton: P1_Button
   tempSkill: {fileID: 0}
-  skillListScript: {fileID: 0}
-  offset: 0
+  skillListScript: {fileID: 114993220315628792}
+  offset: 1.23
   skillList:
   - {fileID: 1532596685821658, guid: 0e5db31875af60140ad9871c6b1f4500, type: 2}
   - {fileID: 1314252507990150, guid: a424fd577a25d374f877b3ba0a62572f, type: 2}
@@ -1528,7 +2090,7 @@ MonoBehaviour:
   enemySpawnScript: {fileID: 0}
   playerSpawnScript: {fileID: 0}
   sceneManagerScript: {fileID: 0}
-  battleStateManagerScript: {fileID: 0}
+  battleStateManagerScript: {fileID: 114171952932211632}
   targetCursor: {fileID: 0}
   cursorIndex: 0
   chooseTargetHoldTimer: 0
@@ -1587,6 +2149,96 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!212 &212552713724229690
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1128372312715352}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 5
+  m_Sprite: {fileID: 21300000, guid: 1c763df390ffe7e4d97a7214950c4687, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 0.6, y: 0.6}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!212 &212573299376344642
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1275711972404396}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 5
+  m_Sprite: {fileID: 21300000, guid: 70249801cd969fb448769df75b9572d8, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 5.12, y: 5.12}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!212 &212606023231139298
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -1632,6 +2284,96 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!212 &212641732815144686
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1965575324071282}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 5
+  m_Sprite: {fileID: 21300000, guid: 374fb2ea41828734a88dbcede24bf6ad, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 5.12, y: 5.12}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!212 &212692640473400392
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1693003656588060}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 5
+  m_Sprite: {fileID: 21300000, guid: 23b3de585a0a5664787f6734abb5cd33, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 5.12, y: 5.12}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!212 &212920504659980876
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -1667,12 +2409,57 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f495e4b394795c84d8699ee71a945b9e, type: 3}
+  m_Sprite: {fileID: 21300006, guid: dc2d8aa94a34ce649b04fda41b955342, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
   m_Size: {x: 5.02, y: 5.25}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!212 &212994366105872416
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1558988560058712}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 5
+  m_Sprite: {fileID: 21300000, guid: 475eb8eb6855be6418a9c4c2c75191a5, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 5.12, y: 5.12}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -1903,7 +2690,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1439191518486804}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 10}
   m_LocalScale: {x: 0.63757366, y: 0.70830464, z: 0.63757366}
   m_Children: []
   m_Father: {fileID: 224585812749616202}
@@ -1911,7 +2698,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -245.04, y: -156}
+  m_AnchoredPosition: {x: -245.99998, y: -155.00005}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224206543571790822
@@ -2004,7 +2791,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.000046253, y: -19}
+  m_AnchoredPosition: {x: -3, y: -41}
   m_SizeDelta: {x: 384.3, y: 116.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224540474907282072
@@ -2022,7 +2809,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 62}
+  m_AnchoredPosition: {x: -2.9999342, y: 40.00005}
   m_SizeDelta: {x: 384.35, y: 27.15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224578379565061064
@@ -2069,7 +2856,7 @@ RectTransform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1950121555884868}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -9000}
   m_LocalScale: {x: 0.49739975, y: 0.4973997, z: 0.4973997}
   m_Children:
   - {fileID: 224540474907282072}
@@ -2079,8 +2866,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -125, y: -242}
-  m_SizeDelta: {x: 500, y: 200}
+  m_AnchoredPosition: {x: -126, y: -237.5}
+  m_SizeDelta: {x: 500, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224796548410051894
 RectTransform:

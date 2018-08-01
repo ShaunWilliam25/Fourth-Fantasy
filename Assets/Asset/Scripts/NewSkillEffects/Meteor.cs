@@ -36,6 +36,6 @@ public class Meteor : SkillEffect {
             playerArtifact.ArtifactAttackEffect(enemyList[i]);
             enemyList[i].GetComponent<EnemyTakeDamage>().EnemyDamage(totalDamage);
         }
-        audioManager.PlaySound("TimePriestressAttackSound");
+        AudioManager.instance.PlaySound("TimePriestressAttackSound");
     }
 }

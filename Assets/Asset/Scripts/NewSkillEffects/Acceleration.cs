@@ -30,6 +30,6 @@ public class Acceleration : SkillEffect
         {
             playerList[i].GetComponent<PlayerVariableManager>().statusList.Add(Instantiate(status[0]));
         }
-        audioManager.PlaySound("TimePriestressAttackSound");
+        AudioManager.instance.PlaySound("TimePriestressAttackSound");
     }
 }

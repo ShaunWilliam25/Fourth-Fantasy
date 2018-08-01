@@ -108,6 +108,10 @@ public class PlayerScrollSkill : PlayerVariableManager {
             boxPos.position = new Vector3(startPosition  + (boxOffset* skillSelected), -characterOffset, 0);
 
             //! The variable for the tutorial
+            if(isScroll < 3)
+            {
+                //isScroll++;
+            }
             isScroll++;
         }            
     }
