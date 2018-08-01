@@ -9,124 +9,119 @@ public class CampsiteSelection : MonoBehaviour
     ShowUI showUI;
     ShowSkill showSkill;
     CampsiteManager csm;
+    SkillUpgrade skillUpgrade;
     public CampsiteMenu player1, player2;
     public List<Image> upgrade3 = new List<Image>(3);
     public float timeNeeded = 1;
     public float p1Hold, p2Hold;
     public int p1Highlight = 0, p2Highlight = 0;
     public GameObject upgradeObject;
-    SkillUpgrade skillUpgrade;
-    
+    public ButtonStatus buttonStatus;
 
     void Start()
     {
-        skillUpgrade = this.GetComponent<SkillUpgrade>();
+        skillUpgrade = GetComponent<SkillUpgrade>();
         showUI = GetComponent<ShowUI>();
         showSkill = GetComponent<ShowSkill>();
-        csm = this.GetComponent<CampsiteManager>();
-        //upgradeObject = new GameObject();
+        csm = GetComponent<CampsiteManager>();
     }
 
     void Update()
     {
-        Select();
+        MenuSelect();
         ChangePage();
-        Back();
+        BackAndUnready();
         Upgrade();
 
-        if (Input.GetKey("a"))
+        if (showUI.player1.state == CAMPSITE_STATE.SELECTION)
         {
-            p1Hold += Time.deltaTime;
-            if (p1Hold > timeNeeded)
+            if (Input.GetKey("a"))
             {
-                if (showUI.player1.state != CAMPSITE_STATE.READY)
+                p1Hold += Time.deltaTime;
+                player1.fillFeedback.fillAmount = p1Hold;
+                if (p1Hold > timeNeeded)
                 {
                     p1Hold = 0;
-                    if (player1.status.GetComponent<Image>().color == Color.red)
+                    if (player1.status.GetComponent<Image>().sprite == buttonStatus.chosen)
                     {
                         showUI.player1.state = CAMPSITE_STATE.STATUS_CHECK;
                     }
-                    else if (player1.upgrade.GetComponent<Image>().color == Color.red)
+                    else if (player1.upgrade.GetComponent<Image>().sprite == buttonStatus.chosen)
                     {
                         showUI.player1.state = CAMPSITE_STATE.SKILL_UPGRADE;
                     }
-                    else if (player1.ready.GetComponent<Text>().color == Color.yellow)
+                    else if (player1.ready.GetComponent<Image>().sprite == buttonStatus.chosen)
                     {
-                        player1.ready.GetComponent<Text>().color = Color.green;
+                        player1.readyText.GetComponent<Text>().color = Color.green;
+                        player1.ready.GetComponent<Image>().sprite = buttonStatus.select;
                         showUI.player1.state = CAMPSITE_STATE.READY;
+                        player1.fillFeedback.fillAmount = p1Hold;
                     }
                 }
-                else if (this.GetComponent<ShowUI>().player1.state == CAMPSITE_STATE.READY)
-                {
-                    p1Hold = 0;
-                    player1.ready.GetComponent<Text>().color = Color.yellow;
-                    showUI.player1.state = CAMPSITE_STATE.SELECTION;
-                }
+            }
+            else
+            {
+                p1Hold = 0;
+                player1.fillFeedback.fillAmount = p1Hold;
             }
         }
-        else
-        {
-            p1Hold = 0;
-        }
 
-        if (Input.GetKey("l"))
+        if (showUI.player2.state == CAMPSITE_STATE.SELECTION)
         {
-            p2Hold += Time.deltaTime;
-            if (p2Hold > timeNeeded)
+            if (Input.GetKey("l"))
             {
-                if (showUI.player2.state != CAMPSITE_STATE.READY)
+                p2Hold += Time.deltaTime;
+                player2.fillFeedback.fillAmount = p2Hold;
+                if (p2Hold > timeNeeded)
                 {
                     p2Hold = 0;
-                    if (player2.status.GetComponent<Image>().color == Color.blue)
+                    if (player2.status.GetComponent<Image>().sprite == buttonStatus.chosen)
                     {
                         showUI.player2.state = CAMPSITE_STATE.STATUS_CHECK;
                     }
-                    else if (player2.upgrade.GetComponent<Image>().color == Color.blue)
+                    else if (player2.upgrade.GetComponent<Image>().sprite == buttonStatus.chosen)
                     {
                         showUI.player2.state = CAMPSITE_STATE.SKILL_UPGRADE;
                     }
-                    else if (player2.ready.GetComponent<Text>().color == Color.yellow)
+                    else if (player2.ready.GetComponent<Image>().sprite == buttonStatus.chosen)
                     {
-                        player2.ready.GetComponent<Text>().color = Color.green;
+                        player2.readyText.GetComponent<Text>().color = Color.green;
+                        player2.ready.GetComponent<Image>().sprite = buttonStatus.select;
                         showUI.player2.state = CAMPSITE_STATE.READY;
+                        player1.fillFeedback.fillAmount = p1Hold;
                     }
                 }
-                else if (this.GetComponent<ShowUI>().player2.state == CAMPSITE_STATE.READY)
-                {
-                    p2Hold = 0;
-                    player2.ready.GetComponent<Text>().color = Color.yellow;
-                    showUI.player2.state = CAMPSITE_STATE.SELECTION;
-                }
             }
-        }
-        else
-        {
-            p2Hold = 0;
+            else
+            {
+                p2Hold = 0;
+                player2.fillFeedback.fillAmount = p2Hold;
+            }
         }
     }
 
-    private void Select()
+    private void MenuSelect()
     {
         if (showUI.player1.state == CAMPSITE_STATE.SELECTION)
         {
             if (Input.GetKeyUp("a"))
             {
-                if (player1.status.GetComponent<Image>().color == Color.red)
+                if (player1.status.GetComponent<Image>().sprite == buttonStatus.chosen)
                 {
-                    player1.status.GetComponent<Image>().color = Color.white;
-                    player1.upgrade.GetComponent<Image>().color = Color.red;
+                    player1.status.GetComponent<Image>().sprite = buttonStatus.normal;
+                    player1.upgrade.GetComponent<Image>().sprite = buttonStatus.chosen;
                     player1.fillFeedback.transform.position = player1.upgrade.transform.position;
                 }
-                else if (player1.upgrade.GetComponent<Image>().color == Color.red)
+                else if (player1.upgrade.GetComponent<Image>().sprite == buttonStatus.chosen)
                 {
-                    player1.upgrade.GetComponent<Image>().color = Color.white;
-                    player1.ready.GetComponent<Text>().color = Color.yellow;
+                    player1.upgrade.GetComponent<Image>().sprite = buttonStatus.normal;
+                    player1.ready.GetComponent<Image>().sprite = buttonStatus.chosen;
                     player1.fillFeedback.transform.position = player1.ready.transform.position;
                 }
-                else if (player1.ready.GetComponent<Text>().color == Color.yellow)
+                else if (player1.ready.GetComponent<Image>().sprite == buttonStatus.chosen)
                 {
-                    player1.status.GetComponent<Image>().color = Color.red;
-                    player1.ready.color = Color.white;
+                    player1.ready.GetComponent<Image>().sprite = buttonStatus.normal;
+                    player1.status.GetComponent<Image>().sprite = buttonStatus.chosen;
                     player1.fillFeedback.transform.position = player1.status.transform.position;
                 }
             }
@@ -136,26 +131,29 @@ public class CampsiteSelection : MonoBehaviour
         {
             if (Input.GetKeyUp("l"))
             {
-                if (player2.status.GetComponent<Image>().color == Color.blue)
+                if (player2.status.GetComponent<Image>().sprite == buttonStatus.chosen)
                 {
-                    player2.status.GetComponent<Image>().color = Color.white;
-                    player2.upgrade.GetComponent<Image>().color = Color.blue;
+                    player2.status.GetComponent<Image>().sprite = buttonStatus.normal;
+                    player2.upgrade.GetComponent<Image>().sprite = buttonStatus.chosen;
+                    player2.fillFeedback.transform.position = player2.upgrade.transform.position;
                 }
-                else if (player2.upgrade.GetComponent<Image>().color == Color.blue)
+                else if (player2.upgrade.GetComponent<Image>().sprite == buttonStatus.chosen)
                 {
-                    player2.upgrade.GetComponent<Image>().color = Color.white;
-                    player2.ready.GetComponent<Text>().color = Color.yellow;
+                    player2.upgrade.GetComponent<Image>().sprite = buttonStatus.normal;
+                    player2.ready.GetComponent<Image>().sprite = buttonStatus.chosen;
+                    player2.fillFeedback.transform.position = player2.ready.transform.position;
                 }
-                else if (player2.ready.GetComponent<Text>().color == Color.yellow)
+                else if (player2.ready.GetComponent<Image>().sprite == buttonStatus.chosen)
                 {
-                    player2.status.GetComponent<Image>().color = Color.blue;
-                    player2.ready.color = Color.white;
+                    player2.ready.GetComponent<Image>().sprite = buttonStatus.normal;
+                    player2.status.GetComponent<Image>().sprite = buttonStatus.chosen;
+                    player2.fillFeedback.transform.position = player2.status.transform.position;
                 }
             }
         }
     }
 
-    public void ChangePage()
+    private void ChangePage()
     {
         if (showUI.player1.state == CAMPSITE_STATE.STATUS_CHECK)
         {
@@ -188,61 +186,63 @@ public class CampsiteSelection : MonoBehaviour
         }
     }
 
-    void Back()
+    private void BackAndUnready()
     {
-        if (showUI.player1.state == CAMPSITE_STATE.STATUS_CHECK /*|| showUI.player1.state == CAMPSITE_STATE.READY*/)
+        if (showUI.player1.state == CAMPSITE_STATE.STATUS_CHECK || showUI.player1.state == CAMPSITE_STATE.READY)
         {
             if (Input.GetKey("a"))
             {
                 p1Hold += Time.deltaTime;
+                player1.fillFeedback.fillAmount = p1Hold;
                 if (p1Hold > timeNeeded)
                 {
                     if (showUI.player1.state == CAMPSITE_STATE.STATUS_CHECK)
                     {
                         showUI.player1.state = CAMPSITE_STATE.SELECTION;
                     }
-                    /*else if (showUI.player1.state == CAMPSITE_STATE.SKILL_UPGRADE)
+                    else if (this.GetComponent<ShowUI>().player1.state == CAMPSITE_STATE.READY)
                     {
+                        player1.readyText.GetComponent<Text>().color = Color.white;
+                        player1.ready.GetComponent<Image>().sprite = buttonStatus.chosen;
                         showUI.player1.state = CAMPSITE_STATE.SELECTION;
                     }
-                    else if (showUI.player1.state == CAMPSITE_STATE.READY)
-                    {
-                        showUI.player1.state = CAMPSITE_STATE.SELECTION;
-                    }*/
                     p1Hold = 0;
+                    player1.fillFeedback.fillAmount = p1Hold;
                 }
             }
             else
             {
                 p1Hold = 0;
+                player1.fillFeedback.fillAmount = p1Hold;
             }
         }
 
-        if (showUI.player2.state == CAMPSITE_STATE.STATUS_CHECK /*|| showUI.player2.state == CAMPSITE_STATE.READY*/)
+        if (showUI.player2.state == CAMPSITE_STATE.STATUS_CHECK || showUI.player2.state == CAMPSITE_STATE.READY)
         {
             if (Input.GetKey("l"))
             {
                 p2Hold += Time.deltaTime;
+                player2.fillFeedback.fillAmount = p2Hold;
                 if (p2Hold > timeNeeded)
                 {
                     if (showUI.player2.state == CAMPSITE_STATE.STATUS_CHECK)
                     {
                         showUI.player2.state = CAMPSITE_STATE.SELECTION;
                     }
-                    /*else if (showUI.player2.state == CAMPSITE_STATE.SKILL_UPGRADE)
+                    else if (this.GetComponent<ShowUI>().player2.state == CAMPSITE_STATE.READY)
                     {
+                        player2.ready.GetComponent<Image>().sprite = buttonStatus.chosen;
+                        player2.readyText.GetComponent<Text>().color = Color.white;
                         showUI.player2.state = CAMPSITE_STATE.SELECTION;
                     }
-                    else if (showUI.player2.state == CAMPSITE_STATE.READY)
-                    {
-                        showUI.player2.state = CAMPSITE_STATE.SELECTION;
-                    }*/
                     p2Hold = 0;
+                    player2.fillFeedback.fillAmount = p2Hold;
                 }
             }
             else
             {
                 p2Hold = 0;
+                player2.fillFeedback.fillAmount = p2Hold;
             }
         }
     }
@@ -439,6 +439,7 @@ public struct CampsiteMenu
 {
     public Image status;
     public Image upgrade;
+    public Image ready;
     public Image highlighted;
     public Image selectedSkill;
     public Image selectedUpgrade;
@@ -446,7 +447,7 @@ public struct CampsiteMenu
     public Text detail;
     public int skillIndex;
     public int upgradeIndex;
-    public Text ready;
+    public Text readyText;
     public Text back;
     public bool upgraded;
     public UPGRADE_STATE upgradeState;
@@ -458,4 +459,12 @@ public enum UPGRADE_STATE
     CHOOSE_UPGRADE,
     VALIDATE_UPGRADE,
     UPGRADE
+}
+
+[Serializable]
+public struct ButtonStatus
+{
+    public Sprite normal;
+    public Sprite chosen;
+    public Sprite select;
 }

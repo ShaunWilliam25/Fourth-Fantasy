@@ -10,19 +10,7 @@ public class HealUpgrade1 : SkillEffect
         effectType = SKILL_EFFECT_TYPE.HEAL;
         numOfTarget = 1;
         damage = 100;
-        effectDescription = "Heal Self";
-    }
-
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
+        effectDescription = "Heals 100 HP to self";
     }
 
     public override void Execute(GameObject targetedEnemy)

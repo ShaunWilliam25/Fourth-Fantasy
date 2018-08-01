@@ -7,32 +7,31 @@ using UnityEngine.UI;
 public class ShowUI : MonoBehaviour
 {
     CampsiteManager csm;
+    CampsiteSelection css;
+
     public CampsiteUIComponent player1;
     public CampsiteUIComponent player2;
-    public CampsiteSelection css;
     public Text text;
+    public Text instruction;
 
     void Start()
     {
-        csm = this.GetComponent<CampsiteManager>();
+        css = GetComponent<CampsiteSelection>();
+        csm = GetComponent<CampsiteManager>();
         player1.state = CAMPSITE_STATE.SELECTION;
-        player1.state = CAMPSITE_STATE.SELECTION;
-        css = this.GetComponent<CampsiteSelection>();
+        player2.state = CAMPSITE_STATE.SELECTION;
     }
 
     void Update()
     {
-        if (css.player1.upgraded == true)
-        {
-            text.color = Color.grey;
-        }
-        else
-        {
-            text.color = Color.white;
-        }
+        if (css.player1.upgraded == true)   text.color = Color.grey;
+        else text.color = Color.white;
+        if (css.player2.upgraded == true) text.color = Color.grey;
+        else text.color = Color.white;
 
         if (player1.state == CAMPSITE_STATE.SELECTION)
         {
+            instruction.text = "Hold \"A\" and \"L\" to Select";
             player1.select.SetActive(true);
             player1.checkPg1.SetActive(false);
             player1.checkPg2.SetActive(false);
@@ -43,6 +42,7 @@ public class ShowUI : MonoBehaviour
         }
         else if(player1.state == CAMPSITE_STATE.STATUS_CHECK)
         {
+            instruction.text = "Press \"A\" and \"L\" to Swap Pages, Hold to Back";
             player1.select.SetActive(false);
             player1.checkPg1.SetActive(false);
             player1.back.SetActive(true);
@@ -77,6 +77,7 @@ public class ShowUI : MonoBehaviour
         }
         else if (player1.state == CAMPSITE_STATE.SKILL_UPGRADE)
         {
+            instruction.text = "Press \"A\" and \"L\" to Scroll, Hold to Confirm";
             player1.select.SetActive(false);
             player1.checkPg1.SetActive(false);
             player1.checkPg2.SetActive(false);
