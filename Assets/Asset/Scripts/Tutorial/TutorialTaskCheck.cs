@@ -29,6 +29,7 @@ public class TutorialTaskCheck : MonoBehaviour {
                     toggleList[i].isOn = false;
                 }
                 tutorial.tutorialStage = TutorialAppear.TUTORIAL_STAGE.STAGE_02;
+                Debug.Log("toggle is " + toggleList[0].isOn);
             }
             
         }
@@ -39,6 +40,7 @@ public class TutorialTaskCheck : MonoBehaviour {
                 for (int i = 0; i < toggleList.Count; i++)
                 {
                     toggleList[i].isOn = false;
+                    
                 }
                 tutorial.tutorialStage = TutorialAppear.TUTORIAL_STAGE.STAGE_03;
             }
