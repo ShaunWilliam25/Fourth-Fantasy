@@ -13,6 +13,10 @@ public class Player_Spawn : MonoBehaviour {
 
     private void Awake()
     {
+        sceneManager = this.gameObject.GetComponent<SceneManager>();
+        this.gameObject.GetComponent<SceneManager>().playerList[0] = Player1.instance.gameObject;
+        this.gameObject.GetComponent<SceneManager>().playerList[1] = Player2.instance.gameObject;
+        Debug.Log("player 1 is " + this.GetComponent<SceneManager>().playerList[0].activeInHierarchy);
         for (int i=0;i<characterIndex.Count;i++)
         {
             switch (characterIndex[i])
