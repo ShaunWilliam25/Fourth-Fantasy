@@ -24,8 +24,8 @@ public class SceneManager : MonoBehaviour {
     public void Awake()
     {
         tutorial = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<TutorialAppear>();
-        playerList[0] = GameObject.FindGameObjectWithTag("Player1");
-        playerList[1] = GameObject.FindGameObjectWithTag("Player2");
+        //playerList[0] = GameObject.FindGameObjectWithTag("Player1");
+        //playerList[1] = GameObject.FindGameObjectWithTag("Player2");
         if (Player1.instance.gameObject.activeInHierarchy == false)
         {
             Player1.instance.gameObject.SetActive(true);
