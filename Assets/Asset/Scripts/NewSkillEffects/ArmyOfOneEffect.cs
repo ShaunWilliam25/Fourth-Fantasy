@@ -10,6 +10,7 @@ public class ArmyOfOneEffect : SkillEffect {
         effectType = SKILL_EFFECT_TYPE.SUPPORTIVE;
         numOfTarget = 0;
         effectDescription = "Buff All Allies";
+        upgradedTimes = 0;
     }
 
     // Use this for initialization

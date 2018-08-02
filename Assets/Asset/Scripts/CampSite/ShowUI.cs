@@ -11,7 +11,6 @@ public class ShowUI : MonoBehaviour
 
     public CampsiteUIComponent player1;
     public CampsiteUIComponent player2;
-    public Text text;
     public Text instruction;
 
     void Start()
@@ -24,10 +23,10 @@ public class ShowUI : MonoBehaviour
 
     void Update()
     {
-        if (css.player1.upgraded == true)   text.color = Color.grey;
-        else text.color = Color.white;
-        if (css.player2.upgraded == true) text.color = Color.grey;
-        else text.color = Color.white;
+        if (css.player1.upgraded == true)   player1.upgradeText.color = Color.grey;
+        else player1.upgradeText.color = Color.white;
+        if (css.player2.upgraded == true) player2.upgradeText.color = Color.grey;
+        else player2.upgradeText.color = Color.white;
 
         if (player1.state == CAMPSITE_STATE.SELECTION)
         {
@@ -177,6 +176,8 @@ public struct CampsiteUIComponent
     public GameObject checkPg3;
     public GameObject checkPg4;
     public GameObject popUp;
+    public Text upgradeText;
+    public Text popUpText;
     public int page;
     
     public CAMPSITE_STATE state;

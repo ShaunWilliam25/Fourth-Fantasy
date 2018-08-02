@@ -17,6 +17,7 @@ public class CampsiteSelection : MonoBehaviour
     public int p1Highlight = 0, p2Highlight = 0;
     public GameObject upgradeObject;
     public ButtonStatus buttonStatus;
+    private int maxUpgrade = 3;
 
     void Start()
     {
@@ -253,7 +254,7 @@ public class CampsiteSelection : MonoBehaviour
         {
             if (player1.upgradeState == UPGRADE_STATE.CHOOSE_SKILL)
             {
-                showUI.player1.popUp.SetActive(true);
+                showUI.player1.popUp.SetActive(false);
                 if (Input.GetKeyUp("a"))
                 {
                     if (p1Highlight < 4)
@@ -265,8 +266,15 @@ public class CampsiteSelection : MonoBehaviour
                         p1Highlight = 0;
                     }
                     player1.highlighted.transform.localPosition = showSkill.player[0].skillImage[p1Highlight].transform.localPosition;
-                    showUI.player1.popUp.transform.localPosition = new Vector3(showSkill.player[0].skillImage[p1Highlight].transform.localPosition.x + 150, showSkill.player[0].skillImage[p1Highlight].transform.localPosition.y + 110, showSkill.player[0].skillImage[p1Highlight].transform.localPosition.z);
                     player1.detail.GetComponent<Text>().text = csm.playerList[0].GetComponent<PlayerVariableManager>().skillList[p1Highlight].GetComponent<SkillDetail>().skillDescription;
+                    //if upgraded, show the effect
+                    if (csm.playerList[0].GetComponent<PlayerVariableManager>().skillList[p1Highlight].GetComponent<SkillDetail>().upgradedCount > 0)
+                    {
+                        for(int i = 1; i < csm.playerList[0].GetComponent<PlayerVariableManager>().skillList[p1Highlight].GetComponent<SkillDetail>().upgradedCount + 1;i++)
+                        {
+                            player1.detail.GetComponent<Text>().text = player1.detail.GetComponent<Text>().text + "\r\n" + csm.playerList[0].GetComponent<PlayerVariableManager>().skillList[p1Highlight].GetComponent<SkillDetail>().upgradedEffect[i];
+                        }
+                    }
                 }
 
                 if (Input.GetKey("a"))
@@ -275,9 +283,16 @@ public class CampsiteSelection : MonoBehaviour
                     if (p1Hold >= timeNeeded)
                     {
                         p1Hold = 0;
-                        player1.selectedSkill.GetComponent<Image>().sprite = showSkill.player[0].skillImage[p1Highlight].sprite;
-                        player1.skillIndex = p1Highlight;
-                        player1.upgradeState = UPGRADE_STATE.CHOOSE_UPGRADE;
+                        if(csm.playerList[0].GetComponent<PlayerVariableManager>().skillHolder[p1Highlight].GetComponent<SkillDetail>().upgradedCount < 3)
+                        {
+                            player1.selectedSkill.GetComponent<Image>().sprite = showSkill.player[0].skillImage[p1Highlight].sprite;
+                            player1.skillIndex = p1Highlight;
+                            player1.upgradeState = UPGRADE_STATE.CHOOSE_UPGRADE;
+                        }
+                        else
+                        {
+                            //Tell player cannot upgrade this skill anymore
+                        }
                     }
                 }
                 else
@@ -287,6 +302,7 @@ public class CampsiteSelection : MonoBehaviour
             }
             else if (player1.upgradeState == UPGRADE_STATE.CHOOSE_UPGRADE)
             {
+                showUI.player1.popUp.SetActive(true);
                 if (Input.GetKeyUp("a"))
                 {
                     if (p1Highlight < 2)
@@ -299,6 +315,18 @@ public class CampsiteSelection : MonoBehaviour
                     }
                     player1.highlighted.transform.localPosition = upgrade3[p1Highlight].transform.localPosition;
                     showUI.player1.popUp.transform.localPosition = new Vector3(upgrade3[p1Highlight].transform.localPosition.x + 150, upgrade3[p1Highlight].transform.localPosition.y - 110, showSkill.player[0].skillImage[p1Highlight].transform.localPosition.z);
+                    switch(p1Highlight)
+                    {
+                        case 0:
+                            showUI.player1.popUpText.text = "1. Heals 100 HP to self (50%)\r\n2. Heals 50 HP to all allies (40%)\r\n3.Heals 50 HP for each bad status effect on character (10%)";
+                            break;
+                        case 1:
+                            showUI.player1.popUpText.text = "1. Deals 150 damage to single enemy (30%)\r\n2. Deals 100 damage to all enemies(30 %)\r\n3. Deals 90 damage to all enemies and causes poison(20 %)\r\n4. Deals 130 damage to single enemy and causes slow(20 %)";
+                            break;
+                        case 2:
+                            showUI.player1.popUpText.text = "1. Dispels one bad status effect on self (30%)\r\n2. 30 % Counterattack when getting hit from enemy, apply silence on hit(20 %)\r\n3. Dispels one good status effect on enemy(20 %)\r\n4. 20 % chance adding bless to self(20 %)\r\n5. Inflicts curse to enemy(10 %)";
+                            break;
+                    }
                 }
 
                 if (Input.GetKey("a"))

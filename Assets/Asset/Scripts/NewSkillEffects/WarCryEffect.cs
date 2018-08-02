@@ -10,6 +10,7 @@ public class WarCryEffect : SkillEffect {
         effectType = SKILL_EFFECT_TYPE.OFFENSIVE;
         numOfTarget = 0;
         effectDescription = "Attack frontline enemy";
+        upgradedTimes = 0;
     }
 
     // Use this for initialization

@@ -10,6 +10,7 @@ public class SoulHuntEffect : SkillEffect
         effectType = SKILL_EFFECT_TYPE.DEBUFF;
         numOfTarget = 1;
         effectDescription = "Apply random debuff";
+        upgradedTimes = 0;
     }
 
     // Use this for initialization

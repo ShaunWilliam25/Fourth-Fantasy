@@ -10,6 +10,7 @@ public class Acceleration : SkillEffect
         effectType = SKILL_EFFECT_TYPE.SUPPORTIVE;
         numOfTarget = 0;
         effectDescription = "Boost Team Action Speed";
+        upgradedTimes = 0;
     }
 
     // Use this for initialization

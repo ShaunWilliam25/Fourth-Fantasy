@@ -11,6 +11,7 @@ public class DemonStrikeEffect : SkillEffect
         effectType = SKILL_EFFECT_TYPE.OFFENSIVE;
         numOfTarget = 1;
         effectDescription = "Damage enemy and heal self";
+        upgradedTimes = 0;
     }
 
     // Use this for initialization

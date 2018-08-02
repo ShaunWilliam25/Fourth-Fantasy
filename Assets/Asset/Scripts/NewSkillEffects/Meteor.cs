@@ -10,6 +10,7 @@ public class Meteor : SkillEffect {
         effectType = SKILL_EFFECT_TYPE.OFFENSIVE;
         numOfTarget = 0;
         effectDescription = "Attack and burn all enemy";
+        upgradedTimes = 0;
     }
 
     // Use this for initialization
