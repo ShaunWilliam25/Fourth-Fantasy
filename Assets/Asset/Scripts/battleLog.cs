@@ -19,16 +19,12 @@ public class battleLog : MonoBehaviour
 
     void OnGUI()
     {
-        if(tutorialAppear.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_01 && tutorialAppear.tutorialStage 
-            != TutorialAppear.TUTORIAL_STAGE.STAGE_02 && tutorialAppear.tutorialStage 
-            != TutorialAppear.TUTORIAL_STAGE.STAGE_04 && tutorialAppear.tutorialStage 
-            != TutorialAppear.TUTORIAL_STAGE.THE_END)
+        if(tutorialAppear.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_01 && tutorialAppear.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_02 && tutorialAppear.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_04 && tutorialAppear.tutorialStage != TutorialAppear.TUTORIAL_STAGE.THE_END)
         {
             if(ShowGui)
             {
                 GUI.skin = skin;
-                //GUI.Label(new Rect(250, 10, 700, 95), guiText, GUI.skin.textArea);
-                GUI.Label(new Rect(250, 20, 700, 95), guiText, GUI.skin.textArea);
+                GUI.Label(new Rect(250, 10, 700, 95), guiText, GUI.skin.textArea);
             }
             
         }

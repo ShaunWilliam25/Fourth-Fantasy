@@ -17,7 +17,8 @@ public class SceneManager : MonoBehaviour {
     public int nextScene;
     public float loseTimer;
     public TutorialAppear tutorial;
-    public GameObject needGreedManager;
+    public GameObject ArtifactSpawner;
+    public GameObject NeedGreedManager;
     public List<BattleSceneScriptableObject> waveDetails;
 
 
@@ -36,6 +37,7 @@ public class SceneManager : MonoBehaviour {
         }
         playerList[0] = Player1.instance.gameObject;
         playerList[1] = Player2.instance.gameObject;
+        ArtifactSpawner = artifactSpawnerSingleton.instance.gameObject;
     }
 
 
@@ -72,6 +74,7 @@ public class SceneManager : MonoBehaviour {
         {
             if(enemyList[i].GetComponent<EnemyStats>().health <= 0)
             {
+                Debug.Log("enemydied");
                 enemyList[i].SetActive(false);
                 Destroy(enemyList[i]);
                 enemyList.Remove(enemyList[i]);
@@ -80,8 +83,8 @@ public class SceneManager : MonoBehaviour {
                     playerList[j].GetComponent<PlayerVariableManager>().isTargetLockedIn = false;
                     
                 }
-
-                this.GetComponent<ArtifactScript>().calArtifact();
+                if (tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_06 && tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.THE_END)
+                    ArtifactSpawner.GetComponent<ArtifactScript>().calArtifact();
             }
 
             
@@ -127,7 +130,7 @@ public class SceneManager : MonoBehaviour {
             if (Input.anyKeyDown)
             {
                 //UnityEngine.SceneManagement.SceneManager.LoadScene(nextScene);
-                needGreedManager.GetComponent<NeedGreedRandomizer>().addArtifactToPlayer();
+                NeedGreedManager.GetComponent<NeedGreedRandomizer>().addArtifactToPlayer();
             }
         }
 
