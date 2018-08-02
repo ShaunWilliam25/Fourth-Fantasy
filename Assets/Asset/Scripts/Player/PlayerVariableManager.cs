@@ -74,6 +74,7 @@ public class PlayerVariableManager : MonoBehaviour {
     [Header("Player Animation Controller")]
     public string idleAnimation;
     public string attackAnimation;
+    public string injuredAnimation;
 
     //! Battle State Manager
     [Header("Battle State Manager")]
