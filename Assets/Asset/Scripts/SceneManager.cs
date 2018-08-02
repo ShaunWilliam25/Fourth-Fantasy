@@ -74,6 +74,7 @@ public class SceneManager : MonoBehaviour {
         {
             if(enemyList[i].GetComponent<EnemyStats>().health <= 0)
             {
+                Debug.Log("enemydied");
                 enemyList[i].SetActive(false);
                 Destroy(enemyList[i]);
                 enemyList.Remove(enemyList[i]);
@@ -82,8 +83,8 @@ public class SceneManager : MonoBehaviour {
                     playerList[j].GetComponent<PlayerVariableManager>().isTargetLockedIn = false;
                     
                 }
-
-                ArtifactSpawner.GetComponent<ArtifactScript>().calArtifact();
+                if (tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_06 && tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.THE_END)
+                    ArtifactSpawner.GetComponent<ArtifactScript>().calArtifact();
             }
 
             
