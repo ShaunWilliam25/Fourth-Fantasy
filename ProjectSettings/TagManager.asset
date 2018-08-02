@@ -11,6 +11,11 @@ TagManager:
   - AudioManager
   - Player1Toggle
   - Player2Toggle
+  - Background
+  - spiritdoor
+  - wolf
+  - swordskeleton
+  - greedboss
   layers:
   - Default
   - TransparentFX

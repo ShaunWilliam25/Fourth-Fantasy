@@ -11,6 +11,7 @@ public class SkillDescription : MonoBehaviour {
     Transform playerTransform;
     [SerializeField] float xOffset;
     [SerializeField] float yOffset;
+    [SerializeField] private PlayerScrollSkill scrollSkill;
     // Use this for initialization
     void Start ()
     {
@@ -18,6 +19,7 @@ public class SkillDescription : MonoBehaviour {
         skillName = transform.GetChild(0).GetComponent<Text>();
         holder = transform.parent.parent.parent.gameObject;
         playerTransform = holder.GetComponent<Transform>();
+        scrollSkill = holder.GetComponent<PlayerScrollSkill>();
 
         //this.gameObject.transform.localPosition = Camera.main.WorldToScreenPoint(new Vector3(playerTransform.position.x - xOffset, playerTransform.position.y - yOffset, playerTransform.position.z));
         this.gameObject.transform.position = new Vector3(this.transform.parent.parent.parent.position.x, this.transform.parent.parent.parent.position.y + yOffset, this.transform.parent.parent.parent.position.z);
@@ -26,7 +28,7 @@ public class SkillDescription : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        skillName.text = holder.GetComponent<PlayerVariableManager>().skillHolder[holder.GetComponent<PlayerVariableManager>().skillHolder.Count / 2].GetComponent<SkillDetail>().skillName;
-        skillDescription.text = holder.GetComponent<PlayerVariableManager>().skillHolder[holder.GetComponent<PlayerVariableManager>().skillHolder.Count / 2].GetComponent<SkillDetail>().skillDescription;
+        skillName.text = holder.GetComponent<PlayerVariableManager>().skillHolder[scrollSkill.skillSelected].GetComponent<SkillDetail>().skillName;
+        skillDescription.text = holder.GetComponent<PlayerVariableManager>().skillHolder[scrollSkill.skillSelected].GetComponent<SkillDetail>().skillDescription;
 	}
 }

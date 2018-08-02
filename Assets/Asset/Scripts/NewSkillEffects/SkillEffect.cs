@@ -23,16 +23,6 @@ public class SkillEffect : MonoBehaviour {
     }
     public AudioManager audioManager;
 
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
     public virtual void Execute(GameObject targetedEnemy)
     {
 
@@ -50,6 +40,22 @@ public class SkillEffect : MonoBehaviour {
     {
         playerList = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManager>().playerList;
         enemyList = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManager>().enemyList;
+    }
+
+    protected float DamageAddOn()
+    {
+        List<GameObject> artifacts = user.GetComponent<PlayerVariableManager>().artifactsList;
+        if (artifacts.Count > 0 && user.GetComponent<PlayerStats>().name == "OldGuard")
+        {
+            for (int i = 0; i < artifacts.Count; i++)
+            {
+                if (artifacts[i].GetComponent<ArtifactEffect>() is Masamune)
+                {
+                    return 100f;
+                }
+            }   
+        }
+        return 0;
     }
 
     protected float DamageMultiplier()

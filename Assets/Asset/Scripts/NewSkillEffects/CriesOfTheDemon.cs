@@ -7,10 +7,9 @@ public class CriesOfTheDemon : SkillEffect
     private void Awake()
     {
         AssignUser();
-        effectType = SKILL_EFFECT_TYPE.OFFENSIVE;
+        effectType = SKILL_EFFECT_TYPE.DEBUFF;
         numOfTarget = 1;
-        damage = 40;
-        effectDescription = "Deal damage and debuff all enemies";
+        effectDescription = "Debuff all enemies";
     }
 
     // Use this for initialization
@@ -27,11 +26,8 @@ public class CriesOfTheDemon : SkillEffect
 
     public override void Execute(GameObject targetedEnemy)
     {
-        int totalDamage = (int)(damage * DamageMultiplier());
         for(int i=0;i<enemyList.Count;i++)
         {
-            Debug.Log(enemyList.Count);
-            enemyList[i].GetComponent<EnemyTakeDamage>().EnemyDamage(totalDamage);
             if(enemyList[i].GetComponent<EnemyStats>().immune)
             {
                 for (int j = 0; j < status.Count; j++)
@@ -39,9 +35,8 @@ public class CriesOfTheDemon : SkillEffect
                     enemyList[i].GetComponent<EnemyVariableManager>().statusList.Add(Instantiate(status[j]));
                 }
             }
-            playerArtifact.ArtifactAttackEffect(enemyList[i]);
         }
-        audioManager.PlaySound("ExiledDemonAttackSound");
+        AudioManager.instance.PlaySound("ExiledDemonAttackSound");
 
 
     }

@@ -14,7 +14,7 @@ public class Berserk : StatusDetail
 
     public override void DoEffect()
     {
-        if (secondDuration == 10)
+        if (secondDuration == 6)
         {
             if (userType == UserType.PLAYER)
             {

@@ -10,6 +10,7 @@ public class AudioManager : MonoBehaviour {
     public Sound[] sounds;
     public static AudioManager instance;
     public List<Sound> soundPlaying;
+    public int waveIndex = -1;
 
     public static AudioManager Instance
     {
@@ -23,7 +24,6 @@ public class AudioManager : MonoBehaviour {
     {
         if(instance!=null && instance != this.gameObject)
         {
-            Debug.Log("Time to destory");
             Destroy(this.gameObject);
             return;
         }
@@ -48,7 +48,6 @@ public class AudioManager : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        //PlaySound("TestMusic");
 	}
 	
 	// Update is called once per frame

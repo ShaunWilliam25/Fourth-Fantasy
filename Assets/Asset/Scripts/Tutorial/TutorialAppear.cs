@@ -77,6 +77,8 @@ public class TutorialAppear : MonoBehaviour {
                     //! Skill Description order
                     sceneManager.playerList[i].transform.GetChild(2).GetChild(1).GetComponent<Canvas>().sortingOrder = 3;
                     sceneManager.playerList[i].transform.GetChild(2).GetChild(0).GetComponent<Canvas>().sortingOrder = 0;
+                    sceneManager.playerList[i].transform.GetChild(1).GetChild(0).GetComponent<SpriteRenderer>().sortingOrder = 2;
+                    sceneManager.playerList[i].transform.GetChild(1).GetChild(1).GetComponent<SpriteRenderer>().sortingOrder = 3;
                 }
                 isOrderLayerAdjusted = true;
             }
@@ -94,7 +96,6 @@ public class TutorialAppear : MonoBehaviour {
             isOrderLayerAdjusted = false;
             if (!isOrderLayerAdjusted)
             {
-                Debug.Log(isOrderLayerAdjusted);
                 for (int i = 0; i < sceneManager.playerList.Count; i++)
                 {
                     //! Skill Description order
@@ -135,7 +136,6 @@ public class TutorialAppear : MonoBehaviour {
             isOrderLayerAdjusted = false;
             if (!isOrderLayerAdjusted)
             {
-                Debug.Log(isOrderLayerAdjusted);
                 for (int i = 0; i < sceneManager.playerList.Count; i++)
                 {
                     //! Skill Description order
@@ -267,7 +267,7 @@ public class TutorialAppear : MonoBehaviour {
                 }
                 for (int i = 0; i < sceneManager.enemyList.Count; i++)
                 {
-                    if (sceneManager.enemyList[i].GetComponent<EnemyVariableManager>().curCooldown >= 0.5f)
+                    if (sceneManager.enemyList[i].GetComponent<EnemyVariableManager>().curCooldown >= sceneManager.enemyList[i].GetComponent<EnemyVariableManager>().maxCooldown / 2)
                     {
                         if (!isLectureDone)
                         {
@@ -323,6 +323,10 @@ public class TutorialAppear : MonoBehaviour {
             if (Input.anyKeyDown)
             {
                 Time.timeScale = 1;
+                for (int i = 0; i < sceneManager.playerList.Count; i++)
+                {
+                    sceneManager.playerList[i].transform.GetChild(1).gameObject.SetActive(true);
+                }
                 UnityEngine.SceneManagement.SceneManager.LoadScene(6);
             }
         }

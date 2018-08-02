@@ -8,14 +8,13 @@ public class EnemyActionTimeBar : EnemyVariableManager {
     // Use this for initialization
     void Start ()
     {
-        this.GetComponent<EnemyVariableManager>().maxCooldown = 1;
-        this.GetComponent<EnemyVariableManager>().maxPauseTime = 1;
+        this.GetComponent<EnemyVariableManager>().maxCooldown = 4;
         this.GetComponent<EnemyVariableManager>().actionBar.fillAmount = 0;
         this.GetComponent<EnemyVariableManager>().curCooldown = 0;
         Transform selfPosition;
         selfPosition = this.GetComponent<Transform>();
         //this.GetComponent<EnemyVariableManager>().actionBar.transform.localPosition = Camera.main.WorldToScreenPoint(new Vector3(selfPosition.position.x - 6.35f, selfPosition.position.y - 1.8f, selfPosition.position.z));
-        this.GetComponent<EnemyVariableManager>().actionBar.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + yOffset, this.transform.position.z);
+        //this.GetComponent<EnemyVariableManager>().actionBar.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + yOffset, this.transform.position.z);
     }
 	
 	// Update is called once per frame
@@ -25,11 +24,11 @@ public class EnemyActionTimeBar : EnemyVariableManager {
 
     void UpdateBar()
     {
-        this.GetComponent<EnemyVariableManager>().actionBar.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + yOffset, this.transform.position.z);
+        //this.GetComponent<EnemyVariableManager>().actionBar.transform.position = new Vector3(this.transform.position.x, this.transform.position.y + yOffset, this.transform.position.z);
         if (!ATBFull)
         {
-            this.GetComponent<EnemyVariableManager>().curCooldown += Time.deltaTime * this.GetComponent<EnemyVariableManager>().enemyStats.speed/100;
-            this.GetComponent<EnemyVariableManager>().actionBar.fillAmount = this.GetComponent<EnemyVariableManager>().curCooldown;
+            this.GetComponent<EnemyVariableManager>().curCooldown += Time.deltaTime;
+            this.GetComponent<EnemyVariableManager>().actionBar.fillAmount = this.GetComponent<EnemyVariableManager>().curCooldown/this.GetComponent<EnemyVariableManager>().maxCooldown;
 
             ///this.GetComponent<EnemyVariableManager>().anim.GetComponent<Animator>().Play(this.GetComponent<EnemyVariableManager>().attackAnimation);
             ///Invoke("ResetAnimation", 1f);
@@ -38,15 +37,10 @@ public class EnemyActionTimeBar : EnemyVariableManager {
 
             if (this.GetComponent<EnemyVariableManager>().curCooldown >= this.GetComponent<EnemyVariableManager>().maxCooldown)
             {
-                this.GetComponent<EnemyVariableManager>().pauseTime += Time.deltaTime;
                 //this.GetComponent<EnemyVariableManager>().skillText.text = "using skill 1";
-                if (this.GetComponent<EnemyVariableManager>().pauseTime >= this.GetComponent<EnemyVariableManager>().maxPauseTime)
-                {
                     //curCooldown = 0;
-                    this.GetComponent<EnemyVariableManager>().pauseTime = 0;
                     this.GetComponent<EnemyVariableManager>().ATBFull = true;
-                    //this.GetComponent<EnemyVariableManager>().skillText.text = "                   ";
-                }
+                    //this.GetComponent<EnemyVariableManager>().skillText.text = "            
 
                 //this.GetComponent<EnemyVariableManager>().ATBFull = true;
                 //this.GetComponent<EnemyVariableManager>().curCooldown = 0;

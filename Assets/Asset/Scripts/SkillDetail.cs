@@ -14,6 +14,8 @@ public class SkillDetail : MonoBehaviour {
     public List<GameObject> skillExecutionHolder;
     GameObject cooldownObject;
     public GameObject showCooldown;
+    public int upgradedCount;
+    public List<string> upgradedEffect;
 
     private void Awake()
     {

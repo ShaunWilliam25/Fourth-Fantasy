@@ -82,14 +82,14 @@ public class PlayerVariableManager : MonoBehaviour {
     //! Player Artifact Effect
     public List<GameObject> artifactsList;
 
-    private void Awake()
+private void Awake()
     {
         playerStats = this.GetComponent<PlayerStats>();
-        enemySpawnScript = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<Enemy_Spawn>();
-        playerSpawnScript = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<Player_Spawn>();
-        sceneManagerScript = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManager>();
         battleStateManagerScript = this.GetComponent<BattleStateManager>();
-        battleLogScript = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<battleLog>();
+        /*enemySpawnScript = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<Enemy_Spawn>();
+        playerSpawnScript = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<Player_Spawn>();
+        sceneManagerScript = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManager>();        
+        battleLogScript = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<battleLog>();*/
         if (this.gameObject.tag == "Player1")
         {
             playerButton = "P1_Button";
@@ -128,6 +128,9 @@ public class PlayerVariableManager : MonoBehaviour {
     }
     private void Update()
     {
-        
+        for (int i = 0; i < artifactsList.Count; i++)
+        {
+            artifactsList[i].GetComponent<SpriteRenderer>().enabled = false;
+        }
     }
 }

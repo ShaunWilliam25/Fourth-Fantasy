@@ -4,14 +4,6 @@ using UnityEngine;
 
 public class EnemyChooseTarget : EnemyVariableManager {
 
-    private void Awake()
-    {            
-    }
-
-    void Start()
-    {
-    }
-
     void Update()
     {
         /*if (!isTargetChosen && this.GetComponent<EnemyActionTimeBar>().ATBFull)
@@ -108,6 +100,15 @@ public class EnemyChooseTarget : EnemyVariableManager {
         if(this.GetComponent<EnemyVariableManager>().Target.GetComponent<PlayerVariableManager>().playerStats.health <= 0)
         {
             this.GetComponent<EnemyVariableManager>().Target = this.GetComponent<EnemyVariableManager>().loAggroTarget;
+        }
+        //Check player who taunt
+        for(int i=0;i< this.GetComponent<EnemyVariableManager>().playerList.Count;i++)
+        {
+            if(this.GetComponent<EnemyVariableManager>().playerList[i].GetComponent<PlayerStats>().taunt)
+            {
+                this.GetComponent<EnemyVariableManager>().Target = playerList[i];
+                break;
+            }
         }
         this.GetComponent<EnemyVariableManager>().isTargetChosen = true;
         if (this.GetComponent<EnemyVariableManager>().isSkillUsed)

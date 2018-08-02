@@ -4,18 +4,28 @@ using UnityEngine;
 
 public class PlayerStats : GeneralStats {
 
-    public int aggro;
-    public bool knockedOut;
-    public int reviveAction;
-    public bool autoRevive;
+    [HideInInspector] public int aggro;
+    [HideInInspector] public bool knockedOut;
+    [HideInInspector] public int reviveAction;
+    [HideInInspector] public bool autoRevive;
+    [HideInInspector] public bool taunt;
     
-    // Use this for initialization
-	void Start () {
-		
-	}
-	
 	// Update is called once per frame
-	void Update () {
-		
+	void Update ()
+    {
+		if(health >= baseHealth)
+        {
+            health = baseHealth;
+        }
 	}
+
+    public void Reset()
+    {
+        knockedOut = true;
+        reviveAction = 0;
+        autoRevive = false;
+        taunt = false;
+        silence = false;
+        berserk = false;
+    }
 }

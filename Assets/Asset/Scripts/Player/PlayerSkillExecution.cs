@@ -8,11 +8,13 @@ public class PlayerSkillExecution : PlayerVariableManager
     PlayerStatusUpdate statusUpdateScript;
     public int isAttack = 0;
     public float attackAnimationTimer;
+    [SerializeField] private PlayerScrollSkill scrollSkill;
 
     private void Awake()
     {
 
         actionTimerBarScript = this.GetComponent<actionTimeBar>();
+        scrollSkill = this.GetComponent<PlayerScrollSkill>();
         //statusUpdateScript = GetComponent<PlayerStatusUpdate>();
     }
 
@@ -25,6 +27,12 @@ public class PlayerSkillExecution : PlayerVariableManager
     // Update is called once per frame
     void Update()
     {
+        Debug.Log("isAttack is " + isAttack);
+        if (this.GetComponent<PlayerVariableManager>().battleStateManagerScript.gameState == BattleStateManager.GAMESTATE.EXECUTE_SKILL)
+        {
+            Debug.Log(this.GetComponent<PlayerVariableManager>().playerStats.name + "state is execute skill");
+        }
+
         if (actionTimerBarScript.selectionBar.fillAmount >= 1)
         {
             if (this.GetComponent<PlayerVariableManager>().isTargetLockedIn)
@@ -34,71 +42,61 @@ public class PlayerSkillExecution : PlayerVariableManager
         }
         if (this.GetComponent<PlayerVariableManager>().battleStateManagerScript.gameState == BattleStateManager.GAMESTATE.EXECUTE_SKILL)
         {
-            for (int i = 0; i < this.GetComponent<PlayerVariableManager>().skillHolder[this.GetComponent<PlayerVariableManager>().skillHolder.Count / 2].GetComponent<SkillDetail>().skillExecutionHolder.Count; i++)
+            for (int i = 0; i < this.GetComponent<PlayerVariableManager>().skillHolder[scrollSkill.skillSelected].GetComponent<SkillDetail>().skillExecutionHolder.Count; i++)
             {
                 //! Execute skill
                 //this.GetComponent<PlayerVariableManager>().lockInSkill.GetComponent<SkillDetail>().skillExecutionHolder[i].GetComponent<SkillEffect>().Execute(this.GetComponent<PlayerVariableManager>().targetedEnemy);
-                this.GetComponent<PlayerVariableManager>().skillHolder[this.GetComponent<PlayerVariableManager>().skillHolder.Count / 2].GetComponent<SkillDetail>().skillExecutionHolder[i].GetComponent<SkillEffect>().Execute(this.GetComponent<PlayerVariableManager>().targetedEnemy);
+                if(this.GetComponent<PlayerVariableManager>().targetedEnemy.GetComponent<EnemyVariableManager>().enemyStats.health > 0)
+                {
+                    this.GetComponent<PlayerVariableManager>().skillHolder[scrollSkill.skillSelected].GetComponent<SkillDetail>().skillExecutionHolder[i].GetComponent<SkillEffect>().Execute(this.GetComponent<PlayerVariableManager>().targetedEnemy);
+                    Debug.Log("Attacked");
 
-                //! Update the battle log
-                this.GetComponent<PlayerVariableManager>().battleLogScript.AddEvent(this.GetComponent<PlayerVariableManager>().playerStats.name + " " + this.GetComponent<PlayerVariableManager>().skillHolder[this.GetComponent<PlayerVariableManager>().skillHolder.Count / 2].GetComponent<SkillDetail>().skillDescription);
+                    //! Update the battle log
+                    this.GetComponent<PlayerVariableManager>().battleLogScript.AddEvent(this.GetComponent<PlayerVariableManager>().playerStats.name + " " + this.GetComponent<PlayerVariableManager>().skillHolder[scrollSkill.skillSelected].GetComponent<SkillDetail>().skillDescription);
+
+                    //! Check for tutorial 2
+                    isAttack++;                    
+
+                    this.GetComponent<PlayerVariableManager>().oriColor = this.GetComponent<PlayerVariableManager>().targetedEnemy.transform.GetChild(0).GetComponent<SpriteRenderer>().color;
+                    this.GetComponent<PlayerVariableManager>().targetedEnemy.transform.GetChild(0).GetComponent<SpriteRenderer>().color = Color.red;
+                    this.GetComponent<PlayerVariableManager>().anim.GetComponent<Animator>().Play(this.GetComponent<PlayerVariableManager>().attackAnimation);
+                    Invoke("ResetColor", 0.2f);
+                    Invoke("ResetAnimation", attackAnimationTimer);
+                }
+                
+
+                /*//! Update the battle log
+                this.GetComponent<PlayerVariableManager>().battleLogScript.AddEvent(this.GetComponent<PlayerVariableManager>().playerStats.name + " " + this.GetComponent<PlayerVariableManager>().skillHolder[scrollSkill.skillSelected].GetComponent<SkillDetail>().skillDescription);
 
                 //! Check for tutorial 2
                 isAttack++;
                 /*if (this.GetComponent<PlayerVariableManager>().skillHolder[this.GetComponent<PlayerVariableManager>().skillHolder.Count / 2].GetComponent<SkillDetail>().skillName == "Normal Attack")
                 {
                     isAttack++;
-                }*/
+                }
 
                 this.GetComponent<PlayerVariableManager>().oriColor = this.GetComponent<PlayerVariableManager>().targetedEnemy.transform.GetChild(0).GetComponent<SpriteRenderer>().color;
                 this.GetComponent<PlayerVariableManager>().targetedEnemy.transform.GetChild(0).GetComponent<SpriteRenderer>().color = Color.red;                
                 this.GetComponent<PlayerVariableManager>().anim.GetComponent<Animator>().Play(this.GetComponent<PlayerVariableManager>().attackAnimation);
                 Invoke("ResetColor", 0.2f);
                 //Invoke("ResetMovement", 0.2f);
-                Invoke("ResetAnimation", attackAnimationTimer);
+                Invoke("ResetAnimation", attackAnimationTimer);*/
             }
-
-            //! Reducing skill cooldown
-            /*for (int i = 0; i < GetComponent<PlayerVariableManager>().skillHolder.Count; i++)
-            {
-                if (GetComponent<PlayerVariableManager>().skillHolder[i].GetComponent<SkillDetail>().skillCooldown > 0)
-                {
-                    GetComponent<PlayerVariableManager>().skillHolder[i].GetComponent<SkillDetail>().skillCooldown--;
-                }
-            }*/
 
             //! Reducing action required to revive ally
             if(this.GetComponent<PlayerVariableManager>().allySpawnPoint.GetComponent<PlayerStats>().reviveAction > 0)
             {
                 this.GetComponent<PlayerVariableManager>().allySpawnPoint.GetComponent<PlayerStats>().reviveAction--;
             }
-
-            //! Set the cooldown for the skill used
-            //GetComponent<PlayerVariableManager>().skillHolder[this.GetComponent<PlayerVariableManager>().skillHolder.Count / 2].GetComponent<SkillDetail>().skillCooldown = GetComponent<PlayerVariableManager>().skillHolder[this.GetComponent<PlayerVariableManager>().skillHolder.Count / 2].GetComponent<SkillDetail>().maxSkillCooldown;
-
-            //this.GetComponent<PlayerVariableManager>().holdTimer = 0f;
-            //this.GetComponent<PlayerVariableManager>().isSkillLockedIn = false;
-
-
-            //! Perfect Timing
-            /*if (this.GetComponent<PlayerLockInSkill>().isPerfectTiming == true)
-            {
-                actionTimerBarScript.startSelection = 20;
-                this.GetComponent<PlayerLockInSkill>().isPerfectTiming = false;
-            }
-            else
-            {
-                actionTimerBarScript.startSelection = 0;
-            }*/
             //this.GetComponent<actionTimeBar>().isBarFull = false;
             //this.GetComponent<PlayerLockInSkill>().lockedInTimer = 0;
             //this.GetComponent<actionTimeBar>().fullTimer = 0;
             this.GetComponent<PlayerVariableManager>().isTargetLockedIn = false;
-            this.GetComponent<PlayerVariableManager>().targetedEnemy = null;
-            this.GetComponent<PlayerVariableManager>().targetedEnemy = null;
+            //this.GetComponent<PlayerVariableManager>().targetedEnemy = null;
             this.GetComponent<actionTimeBar>().selectionBar.fillAmount = 0;
             this.GetComponent<actionTimeBar>().startSelection = 0;
             TriggerBurn();
+            GetComponent<PlayerArtifactEffect>().ArtifactActionEffect();
 
             this.GetComponent<PlayerVariableManager>().battleStateManagerScript.gameState = BattleStateManager.GAMESTATE.CHOOSING_SKILL;
         }

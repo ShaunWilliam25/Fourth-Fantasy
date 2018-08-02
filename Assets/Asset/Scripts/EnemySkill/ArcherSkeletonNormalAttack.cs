@@ -8,7 +8,6 @@ public class ArcherSkeletonNormalAttack : SkillEffect {
     {
         AssignEnemyUser();
         effectType = SKILL_EFFECT_TYPE.OFFENSIVE;
-        damage = 60;
         numOfTarget = 1;
     }
 

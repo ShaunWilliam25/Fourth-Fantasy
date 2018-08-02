@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SkillUpgrade : MonoBehaviour
 {
-    private int progressIndex;
+    private int progressIndex = 1;
     public GameObject heal1;
     public GameObject heal2;
     public GameObject heal3;
@@ -22,7 +22,8 @@ public class SkillUpgrade : MonoBehaviour
     public GameObject randomHeal()
     {
         int rand = Random.Range(1, 101);
-        GameObject upgrade = new GameObject();
+        //Debug.Log(rand);
+        GameObject upgrade = null;
         if(progressIndex == 1)
         {
             if (rand > 0 && rand <= 50)
@@ -63,7 +64,8 @@ public class SkillUpgrade : MonoBehaviour
     public GameObject randomAttack()
     {
         int rand = Random.Range(1, 101);
-        GameObject upgrade = new GameObject();
+        //Debug.Log(rand);
+        GameObject upgrade = null;
         if(rand > 0 && rand <= 30)
         {
             upgrade = damage1;
@@ -86,7 +88,8 @@ public class SkillUpgrade : MonoBehaviour
     public GameObject randomSupport()
     {
         int rand = Random.Range(1, 101);
-        GameObject upgrade = new GameObject();
+        //Debug.Log(rand);
+        GameObject upgrade = null;
         if (rand > 0 && rand <= 30)
         {
             upgrade = support1;

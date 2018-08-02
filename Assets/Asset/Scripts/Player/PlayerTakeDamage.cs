@@ -6,8 +6,26 @@ public class PlayerTakeDamage : MonoBehaviour {
 
     [SerializeField]private GameObject PopUpText;
     List<GameObject> statuses;
+    List<GameObject> artifacts;
     public void PlayerDamage(int damage)
     {
+        artifacts = GetComponent<PlayerVariableManager>().artifactsList;
+        for (int i=0;i<artifacts.Count;i++)
+        {
+            if(artifacts[i].GetComponent<ArtifactEffect>() is ShieldOfTheFallenKing)
+            {
+                if(artifacts[i].GetComponent<ShieldOfTheFallenKing>().damageCount>=10)
+                {
+                    damage = 0;
+                    artifacts[i].GetComponent<ShieldOfTheFallenKing>().damageCount = 0;
+                }
+                else
+                {
+                    artifacts[i].GetComponent<ShieldOfTheFallenKing>().damageCount++;
+                }
+                break;
+            }
+        }
         float multiplier = 1;
         statuses = GetComponent<PlayerVariableManager>().statusList;
         if(statuses.Count>0)

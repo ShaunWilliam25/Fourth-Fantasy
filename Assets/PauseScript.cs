@@ -15,12 +15,12 @@ public class PauseScript : MonoBehaviour
     public float outMasterVolume;
     public float outMusicVolume;
     public float outEffectVolume;
+    [SerializeField] private SceneManager sceneManager;
 
     private void Start()
     {
         audioMixer.GetFloat("MasterVolume", out outMasterVolume);
         masterSlider.value = AudioManager.Instance.dBToVolume(outMasterVolume);
-        Debug.Log(AudioManager.Instance.dBToVolume(outMasterVolume));
         audioMixer.GetFloat("MusicVolume", out outMusicVolume);
         musicSlider.value = AudioManager.Instance.dBToVolume(outMusicVolume);
         audioMixer.GetFloat("EffectVolume", out outEffectVolume);
@@ -37,7 +37,6 @@ public class PauseScript : MonoBehaviour
             {
                 pauseMenu.gameObject.SetActive(true);
                 Time.timeScale = 0;
-                Debug.Log("Pause Menu");
             }
             else
             {
@@ -65,11 +64,22 @@ public class PauseScript : MonoBehaviour
     }
     public void SkipTut()
     {
+        //! PLayer loop to set all the sort layers
+        for(int i=0;i<sceneManager.playerList.Count;i++)
+        {
+            sceneManager.playerList[i].transform.GetChild(2).GetChild(0).GetComponent<Canvas>().sortingOrder = 0;
+            sceneManager.GetComponent<SceneManager>().playerList[i].transform.GetChild(2).GetChild(2).GetComponent<Canvas>().sortingOrder = 0;
+            sceneManager.GetComponent<SceneManager>().playerList[i].transform.GetChild(2).GetChild(3).GetComponent<Canvas>().sortingOrder = 0;
+            sceneManager.GetComponent<SceneManager>().playerList[i].transform.GetChild(0).GetComponent<SpriteRenderer>().sortingOrder = 0;
+
+            sceneManager.playerList[i].GetComponent<actionTimeBar>().startSelection = 0;
+        }
+        Time.timeScale = 1;
         UnityEngine.SceneManagement.SceneManager.LoadScene(6);
     }
     public void ClickSound()
     {
-        FindObjectOfType<AudioManager>().PlaySound("MenuClickSound");
+        AudioManager.instance.PlaySound("MenuClickSound");
     }
 
     public void setMasterVolume(float volume)

@@ -39,14 +39,6 @@ public class BrightnessSetting : MonoBehaviour
         Scene currentScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene();
         string SceneName = currentScene.name;
 
-        if(SceneName == "StartMenuFinal")
-        {
-            slider.interactable = true;
-        }
-        else
-        {
-            slider.interactable = false;
-        }
         PlayerPrefs.SetFloat("BrightnessCorrection", slider.value);
     }
 

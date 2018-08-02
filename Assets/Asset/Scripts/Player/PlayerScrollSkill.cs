@@ -10,8 +10,9 @@ public class PlayerScrollSkill : PlayerVariableManager {
     [SerializeField] private GameObject skillBox;
     private Transform boxPos;
     public int skillSelected = 0;
-    [SerializeField] private float boxOffset = 0f;
-    [SerializeField] private Vector3 boxStartPosition = new Vector3(-1.2f,0f,0f);
+    public float boxOffset = 0f;
+    public float startPosition;
+    [SerializeField] private float characterOffset;
 
     private void Awake()
     {
@@ -21,6 +22,7 @@ public class PlayerScrollSkill : PlayerVariableManager {
     void Start()
     {
         boxPos = skillBox.transform;
+        startPosition = this.GetComponent<Transform>().position.x - 1.2f;
     }
 
     // Update is called once per frame
@@ -75,21 +77,42 @@ public class PlayerScrollSkill : PlayerVariableManager {
 
         if (Input.GetButtonUp(this.GetComponent<PlayerVariableManager>().playerButton))
         {
+            //! Silence check
+            if (GetComponent<PlayerStats>().silence)
+            {
+                //if (this.GetComponent<PlayerVariableManager>().skillHolder[skillSelected].GetComponent<SkillDetail>().skillName == "Normal Attack")
+                if (skillSelected == 2)
+                {
+                    return;
+                }
+                else
+                {
+                    skillSelected = 2;
+                    boxPos.position = new Vector3(startPosition + (boxOffset * skillSelected), -characterOffset, 0);
+                    return;
+                }
+            }
+            
             //! Move the box & and also the int for which skill its at
             skillSelected++;
-
-            //! Move the box
-            skillBox.transform.Translate(new Vector3(boxOffset, 0, 0));
 
             //! Check if the box is over the skill list
             if (skillSelected > 4)
             {
                 skillSelected = 0;
-
-                //! Set the box location to the first one
-                boxPos.position = boxStartPosition;
-                Debug.Log("REset position");
+                boxPos.position = new Vector3(startPosition,-0.98f,0);
             }
+
+            //! Move the box
+            //skillBox.transform.Translate(new Vector3(boxOffset, 0, 0));
+            boxPos.position = new Vector3(startPosition  + (boxOffset* skillSelected), -characterOffset, 0);
+
+            //! The variable for the tutorial
+            if(isScroll < 3)
+            {
+                //isScroll++;
+            }
+            isScroll++;
         }            
     }
 }

@@ -5,6 +5,8 @@ using UnityEngine;
 public class EnemyChooseSkill : EnemyVariableManager {
     public TutorialAppear tutorial;
     public List<int> chance;
+    public bool isFinalBoss;
+    [SerializeField] private GameObject ultimate;
     // Use this for initialization
     void Start()
     {
@@ -33,13 +35,11 @@ public class EnemyChooseSkill : EnemyVariableManager {
                 this.GetComponent<EnemyVariableManager>().anim.GetComponent<Animator>().Play(this.GetComponent<EnemyVariableManager>().attackAnimation);
                 Invoke("ResetAnimation", 1.1f);
 
-                Debug.Log("attack anim");
-
                 this.GetComponent<EnemyVariableManager>().Target.transform.GetChild(0).GetComponent<SpriteRenderer>().color = Color.red;
                 Invoke("ResetColor", 0.2f);
                 // Random Skill Choosing
                 RandomSkill();
-                this.GetComponent<EnemyVariableManager>().audioManager.PlaySound("EnemyAttackSound");             
+                AudioManager.instance.PlaySound("EnemyAttackSound");
                 this.GetComponent<EnemyVariableManager>().battlelogScript.AddEvent(this.name + " attacks " + this.GetComponent<EnemyVariableManager>().Target.name);
                 // this.GetComponent<EnemyVariableManager>().isSkillUsed = false;
                 //! Attack check for tutorial 6
@@ -106,7 +106,19 @@ public class EnemyChooseSkill : EnemyVariableManager {
     public void RandomSkill()
     {
         skillList = GetComponent<EnemyVariableManager>().skillList;
+        if (GetComponent<EnemyStats>().silence || GetComponent<EnemyStats>().berserk)
+        {
+            skillList[0].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
+            return;
+        }
         int rand = Random.Range(0, 101);
+        if(isFinalBoss && (GetComponent<EnemyStats>().health/GetComponent<EnemyStats>().baseHealth)<=0.1)
+        {
+            ultimate.GetComponent<SkillEffect>().user = this.gameObject;
+            ultimate.GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
+            isFinalBoss = false;
+            return;
+        }
         switch(skillList.Count)
         {
             //enemy have 2 skills
@@ -156,6 +168,29 @@ public class EnemyChooseSkill : EnemyVariableManager {
                     skillList[3].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
                 }
                 break;
+
+            case 5:
+                if (rand <= chance[0])
+                {
+                    skillList[0].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
+                }
+                else if (chance[0] < rand && rand <= (chance[0] + chance[1]))
+                {
+                    skillList[1].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
+                }
+                else if ((chance[0] + chance[1]) < rand && rand <= (chance[0] + chance[1] + chance[2]))
+                {
+                    skillList[2].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
+                }
+                else if ((chance[0] + chance[1] + chance[2]) < rand && rand <= (chance[0] + chance[1] + chance[2] + chance[3]))
+                {
+                    skillList[3].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
+                }
+                else if ((chance[0] + chance[1] + chance[2] + chance[3]) < rand && rand <= (chance[0] + chance[1] + chance[2] + chance[3] + chance[4]))
+                {
+                    skillList[4].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
+                }
+                break;
         }
     }
 
@@ -178,6 +213,5 @@ public class EnemyChooseSkill : EnemyVariableManager {
     void ResetAnimation()
     {
         this.GetComponent<EnemyVariableManager>().anim.GetComponent<Animator>().Play(this.GetComponent<EnemyVariableManager>().idleAnimation);
-        Debug.Log("idle anim");
     }
 }

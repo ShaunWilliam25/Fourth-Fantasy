@@ -9,7 +9,6 @@ public class NormalAttackTimePrietess : SkillEffect
         AssignUser();
         effectType = SKILL_EFFECT_TYPE.OFFENSIVE;
         numOfTarget = 1;
-        damage = 40;
         effectDescription = "Attack backline enemy";
     }
 
@@ -30,6 +29,6 @@ public class NormalAttackTimePrietess : SkillEffect
         int totalDamage = (int)(damage * DamageMultiplier());
         enemyList[enemyList.Count-1].GetComponent<EnemyTakeDamage>().EnemyDamage(totalDamage);
         playerArtifact.ArtifactAttackEffect(enemyList[enemyList.Count - 1]);
-        audioManager.PlaySound("TimePriestressAttackSound");
+        AudioManager.instance.PlaySound("TimePriestressAttackSound");
     }
 }
