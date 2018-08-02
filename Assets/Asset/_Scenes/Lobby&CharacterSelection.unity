@@ -851,7 +851,12 @@ MonoBehaviour:
   isCharacterSelected: 0
   statusText: {fileID: 1486553692}
   lobbyState: 0
-  listOfCharacters: []
+  listOfCharacters:
+  - {fileID: 11400000, guid: d40af4ca25ed4424f8cd642053571c35, type: 2}
+  - {fileID: 11400000, guid: 57774ab18a533f549b5b38d300629e1a, type: 2}
+  - {fileID: 11400000, guid: 7b2d8218447f42b4bae2280a860052de, type: 2}
+  characterIndex: 1
+  isSelectingCharacter: 0
 --- !u!1 &281823143
 GameObject:
   m_ObjectHideFlags: 0
@@ -1238,7 +1243,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 09085f8c9a29a8947b0f8f43e0581224, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -1448,7 +1453,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: 09085f8c9a29a8947b0f8f43e0581224, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -2918,7 +2923,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &978372629
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3870,7 +3875,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -5104,8 +5109,10 @@ MonoBehaviour:
   lobbyState: 0
   listOfCharacters:
   - {fileID: 11400000, guid: d40af4ca25ed4424f8cd642053571c35, type: 2}
-  - {fileID: 11400000, guid: 7b2d8218447f42b4bae2280a860052de, type: 2}
   - {fileID: 11400000, guid: 57774ab18a533f549b5b38d300629e1a, type: 2}
+  - {fileID: 11400000, guid: 7b2d8218447f42b4bae2280a860052de, type: 2}
+  characterIndex: 1
+  isSelectingCharacter: 0
 --- !u!1 &1939608135
 GameObject:
   m_ObjectHideFlags: 0
@@ -5921,7 +5928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:

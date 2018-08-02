@@ -33,13 +33,13 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 374fb2ea41828734a88dbcede24bf6ad, type: 3}
   skillNames:
   - Dance of the Demon
-  - Demon Strike
+  - Demon's Strike
   - Normal Attack
   - Soul Hunt
   - Cries of the Demon
   skillDescriptions:
-  - 
-  - 
-  - 
-  - 
-  - 
+  - Dance of the Demon
+  - 'Demon''s Strike '
+  - Normal Attack
+  - Soul Hunt
+  - Cries of the Demon

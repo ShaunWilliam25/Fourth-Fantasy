@@ -17,6 +17,8 @@ public class LobbyMenu : MonoBehaviour {
     [SerializeField] Text statusText;
     [SerializeField] LOBBY_STATE lobbyState = LOBBY_STATE.LOBBY;
     [SerializeField] List<PlayerScriptableObject> listOfCharacters;
+    [SerializeField] int characterIndex = 1;
+    [SerializeField] bool isSelectingCharacter = false;
 
     public enum LOBBY_STATE
     {
@@ -110,15 +112,14 @@ public class LobbyMenu : MonoBehaviour {
             {
                 if (choice == 1)
                 {
-                    Debug.Log("Player 1 selected character selection");
                     //! Deactivate the lobby canvas and activate the character selection canvas
-                    lobbyCanvas.enabled = false;
-                    characterSelectionCanvas.enabled = true;
+                    lobbyCanvas.gameObject.SetActive(false);
+                    characterSelectionCanvas.gameObject.SetActive(true);
+                    lobbyState = LOBBY_STATE.CHARACTER_SELECTION;
 
                 }
                 else if (choice == 2)
                 {
-                    Debug.Log("PLayer 1 selected start game");
                     //! Check if character is selected
                     if (isCharacterSelected)
                     {
@@ -136,7 +137,33 @@ public class LobbyMenu : MonoBehaviour {
         
         if(lobbyState == LOBBY_STATE.CHARACTER_SELECTION)
         {
+            //! Displaying all the information of characters
+            Transform characterCanvasTransform = characterSelectionCanvas.transform;
 
+            //! Display name of the character
+            characterCanvasTransform.GetChild(0).GetComponent<Text>().text = listOfCharacters[characterIndex].name;
+
+            //! Display sprite of the character
+            characterCanvasTransform.GetChild(1).GetComponent<Image>().sprite = listOfCharacters[characterIndex].sprite;
+
+            //! Display Health of character
+            characterCanvasTransform.GetChild(2).GetComponent<Text>().text = listOfCharacters[characterIndex].health + " / " + listOfCharacters[characterIndex].maxHealth;
+
+            //! Display Skill details of character
+            for(int i=0;i<5;i++)
+            {
+                //!Display skill spirte
+                characterCanvasTransform.GetChild(6 + i).GetChild(0).GetComponent<Image>().sprite = listOfCharacters[characterIndex].skillImages[i];
+
+                //! Display skill name
+                characterCanvasTransform.GetChild(6 + i).GetChild(1).GetComponent<Text>().text = listOfCharacters[characterIndex].skillNames[i];
+
+                //! Display skill description
+                characterCanvasTransform.GetChild(6 + i).GetChild(2).GetComponent<Text>().text = listOfCharacters[characterIndex].skillDescriptions[i];
+            }
+
+            //! Selection of characters(yes / no buttons)
+            
         }
     }
 }
