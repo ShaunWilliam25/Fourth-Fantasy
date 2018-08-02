@@ -17,7 +17,8 @@ public class SceneManager : MonoBehaviour {
     public int nextScene;
     public float loseTimer;
     public TutorialAppear tutorial;
-    public GameObject needGreedManager;
+    public GameObject ArtifactSpawner;
+    public GameObject NeedGreedManager;
     public List<BattleSceneScriptableObject> waveDetails;
 
 
@@ -36,6 +37,7 @@ public class SceneManager : MonoBehaviour {
         }
         playerList[0] = Player1.instance.gameObject;
         playerList[1] = Player2.instance.gameObject;
+        ArtifactSpawner = artifactSpawnerSingleton.instance.gameObject;
     }
 
 
@@ -81,7 +83,7 @@ public class SceneManager : MonoBehaviour {
                     
                 }
 
-                this.GetComponent<ArtifactScript>().calArtifact();
+                ArtifactSpawner.GetComponent<ArtifactScript>().calArtifact();
             }
 
             
@@ -127,7 +129,7 @@ public class SceneManager : MonoBehaviour {
             if (Input.anyKeyDown)
             {
                 //UnityEngine.SceneManagement.SceneManager.LoadScene(nextScene);
-                needGreedManager.GetComponent<NeedGreedRandomizer>().addArtifactToPlayer();
+                NeedGreedManager.GetComponent<NeedGreedRandomizer>().addArtifactToPlayer();
             }
         }
 
