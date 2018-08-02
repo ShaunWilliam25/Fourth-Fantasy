@@ -428,9 +428,9 @@ MonoBehaviour:
     items: {fileID: 1398447172020162, guid: edbc084db3a00684fa0415c09ce5ea21, type: 2}
   - name: 
     items: {fileID: 1585925923376360, guid: 8b3dbcf073face24bb875d02982ac435, type: 2}
-  normalRarity: 100
-  rareRarity: 0
-  veryRareRarity: 0
+  normalRarity: 20
+  rareRarity: 10
+  veryRareRarity: 5
   createdArtifact: {fileID: 0}
   createdArtifactList: []
 --- !u!4 &140129686
