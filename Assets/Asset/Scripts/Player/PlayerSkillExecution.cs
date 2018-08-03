@@ -8,6 +8,7 @@ public class PlayerSkillExecution : PlayerVariableManager
     PlayerStatusUpdate statusUpdateScript;
     public int isAttack = 0;
     public float attackAnimationTimer;
+    public float spellAnimationTimer;
     [SerializeField] private PlayerScrollSkill scrollSkill;
 
     private void Awake()
@@ -50,7 +51,17 @@ public class PlayerSkillExecution : PlayerVariableManager
                 {
                     this.GetComponent<PlayerVariableManager>().skillHolder[scrollSkill.skillSelected].GetComponent<SkillDetail>().skillExecutionHolder[i].GetComponent<SkillEffect>().Execute(this.GetComponent<PlayerVariableManager>().targetedEnemy);
                     Debug.Log("Attacked");
-
+                    if(this.GetComponent<PlayerVariableManager>().skillHolder[scrollSkill.skillSelected].GetComponent<SkillDetail>().skillExecutionHolder[i].GetComponent<SkillEffect>().effectType == SkillEffect.SKILL_EFFECT_TYPE.OFFENSIVE)
+                    {
+                        this.GetComponent<PlayerVariableManager>().anim.GetComponent<Animator>().Play(this.GetComponent<PlayerVariableManager>().attackAnimation);
+                        Invoke("ResetAnimation", attackAnimationTimer);
+                    }
+                    else
+                    {
+                        this.GetComponent<PlayerVariableManager>().anim.GetComponent<Animator>().Play(this.GetComponent<PlayerVariableManager>().spellAnimation);
+                        Invoke("ResetAnimation", spellAnimationTimer);
+                    }
+                    
                     //! Update the battle log
                     this.GetComponent<PlayerVariableManager>().battleLogScript.AddEvent(this.GetComponent<PlayerVariableManager>().playerStats.name + " " + this.GetComponent<PlayerVariableManager>().skillHolder[scrollSkill.skillSelected].GetComponent<SkillDetail>().skillDescription);
 
@@ -59,9 +70,8 @@ public class PlayerSkillExecution : PlayerVariableManager
 
                     this.GetComponent<PlayerVariableManager>().oriColor = this.GetComponent<PlayerVariableManager>().targetedEnemy.transform.GetChild(0).GetComponent<SpriteRenderer>().color;
                     this.GetComponent<PlayerVariableManager>().targetedEnemy.transform.GetChild(0).GetComponent<SpriteRenderer>().color = Color.red;
-                    this.GetComponent<PlayerVariableManager>().anim.GetComponent<Animator>().Play(this.GetComponent<PlayerVariableManager>().attackAnimation);
                     Invoke("ResetColor", 0.2f);
-                    Invoke("ResetAnimation", attackAnimationTimer);
+                    
                 }
                 
 

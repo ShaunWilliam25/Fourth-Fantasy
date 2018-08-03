@@ -130,11 +130,11 @@ public class SceneManager : MonoBehaviour {
         
         if (Input.GetKeyDown("b"))
         {
-            for (int k = 0; k < playerList.Count; k++)
-            {
-                playerList[k].GetComponent<PlayerStats>().health = 0;
+            //for (int k = 0; k < playerList.Count; k++)
+            //{
+                playerList[1].GetComponent<PlayerStats>().health = 0;
 
-            }
+            //}
         }
 
         if (playerList[0].GetComponent<PlayerVariableManager>().playerStats.health <= 0 && playerList[1].GetComponent<PlayerVariableManager>().playerStats.health <= 0)

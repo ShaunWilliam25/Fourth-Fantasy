@@ -17,37 +17,78 @@ public class Player_Spawn : MonoBehaviour {
         this.gameObject.GetComponent<SceneManager>().playerList[0] = Player1.instance.gameObject;
         this.gameObject.GetComponent<SceneManager>().playerList[1] = Player2.instance.gameObject;
         Debug.Log("player 1 is " + this.GetComponent<SceneManager>().playerList[0].activeInHierarchy);
-        for (int i=0;i<characterIndex.Count;i++)
+
+        //! Changing the character index based on the one from character selection
+        characterIndex[0] = AudioManager.instance.player1CharacterIndex;
+        characterIndex[1] = AudioManager.instance.player2CharacterIndex;
+
+        for (int i=0;i<this.gameObject.GetComponent<SceneManager>().playerList.Count;i++)
         {
             switch (characterIndex[i])
             {                
-                case 1:
+                case 0:
                     sceneManager.playerList[i].GetComponent<PlayerStats>().name = characterList[0].name;
                     sceneManager.playerList[i].GetComponent<PlayerStats>().baseHealth = characterList[0].maxHealth;
                     sceneManager.playerList[i].GetComponent<PlayerStats>().health = characterList[0].maxHealth;
                     sceneManager.playerList[i].transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = characterList[0].sprite;
                     sceneManager.playerList[i].transform.GetChild(0).GetComponent<Animator>().runtimeAnimatorController = characterList[0].animator;
                     sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillList = characterList[0].skillList;
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().idleAnimation = characterList[0].idleAnimation;
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().attackAnimation = characterList[0].attackAnimation;
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().injuredAnimation = characterList[0].injuredAnimation;
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().spellAnimation = characterList[0].spellAnimation;
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().deathAnimation = characterList[0].deathAnimation;
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().reviveAnimation = characterList[0].reviveAnimation;
+                    sceneManager.playerList[i].GetComponent<PlayerSkillExecution>().attackAnimationTimer = characterList[0].attackAnimationTimer;
+                    sceneManager.playerList[i].GetComponent<PlayerSkillExecution>().spellAnimationTimer = characterList[0].spellAnimationTimer;
+                    sceneManager.playerList[i].GetComponent<PlayerTakeDamage>().injuredAnimationTimer = characterList[0].injuredAnimationTimer;
+                    sceneManager.playerList[i].GetComponent<PlayerDeadAndRevive>().reviveAnimationTimer = characterList[0].reviveAnimationTimer;
                     sceneManager.playerList[i].transform.GetChild(0).GetComponent<Transform>().localScale = new Vector3(characterList[0].scale, characterList[0].scale, characterList[0].scale);
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().idleAnimation = characterList[0].idleAnimation;
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().attackAnimation = characterList[0].attackAnimation;
                     break;
-                case 2:
+                case 1:
                     sceneManager.playerList[i].GetComponent<PlayerStats>().name = characterList[1].name;
                     sceneManager.playerList[i].GetComponent<PlayerStats>().baseHealth = characterList[1].maxHealth;
                     sceneManager.playerList[i].GetComponent<PlayerStats>().health = characterList[1].maxHealth;
                     sceneManager.playerList[i].transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = characterList[1].sprite;
                     sceneManager.playerList[i].transform.GetChild(0).GetComponent<Animator>().runtimeAnimatorController = characterList[1].animator;
                     sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillList = characterList[1].skillList;
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().idleAnimation = characterList[1].idleAnimation;
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().attackAnimation = characterList[1].attackAnimation;
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().injuredAnimation = characterList[1].injuredAnimation;
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().spellAnimation = characterList[1].spellAnimation;
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().deathAnimation = characterList[1].deathAnimation;
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().reviveAnimation = characterList[1].reviveAnimation;
+                    sceneManager.playerList[i].GetComponent<PlayerSkillExecution>().attackAnimationTimer = characterList[1].attackAnimationTimer;
+                    sceneManager.playerList[i].GetComponent<PlayerSkillExecution>().spellAnimationTimer = characterList[1].spellAnimationTimer;
+                    sceneManager.playerList[i].GetComponent<PlayerTakeDamage>().injuredAnimationTimer = characterList[1].injuredAnimationTimer;
+                    sceneManager.playerList[i].GetComponent<PlayerDeadAndRevive>().reviveAnimationTimer = characterList[1].reviveAnimationTimer;
                     sceneManager.playerList[i].transform.GetChild(0).GetComponent<Transform>().localScale = new Vector3(characterList[1].scale, characterList[1].scale, characterList[1].scale);
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().idleAnimation = characterList[1].idleAnimation;
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().attackAnimation = characterList[1].attackAnimation;
                     break;
 
-                case 3:
+                case 2:
                     sceneManager.playerList[i].GetComponent<PlayerStats>().name = characterList[2].name;
                     sceneManager.playerList[i].GetComponent<PlayerStats>().baseHealth = characterList[2].maxHealth;
                     sceneManager.playerList[i].GetComponent<PlayerStats>().health = characterList[2].maxHealth;
                     sceneManager.playerList[i].transform.GetChild(0).GetComponent<SpriteRenderer>().sprite = characterList[2].sprite;
                     sceneManager.playerList[i].transform.GetChild(0).GetComponent<Animator>().runtimeAnimatorController = characterList[2].animator;
                     sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillList = characterList[2].skillList;
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().idleAnimation = characterList[2].idleAnimation;
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().attackAnimation = characterList[2].attackAnimation;
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().injuredAnimation = characterList[2].injuredAnimation;
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().spellAnimation = characterList[2].spellAnimation;
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().deathAnimation = characterList[2].deathAnimation;
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().reviveAnimation = characterList[2].reviveAnimation;
+                    sceneManager.playerList[i].GetComponent<PlayerSkillExecution>().attackAnimationTimer = characterList[2].attackAnimationTimer;
+                    sceneManager.playerList[i].GetComponent<PlayerSkillExecution>().spellAnimationTimer = characterList[2].spellAnimationTimer;
+                    sceneManager.playerList[i].GetComponent<PlayerTakeDamage>().injuredAnimationTimer = characterList[2].injuredAnimationTimer;
+                    sceneManager.playerList[i].GetComponent<PlayerDeadAndRevive>().reviveAnimationTimer = characterList[2].reviveAnimationTimer;
                     sceneManager.playerList[i].transform.GetChild(0).GetComponent<Transform>().localScale = new Vector3(characterList[2].scale, characterList[2].scale, characterList[2].scale);
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().idleAnimation = characterList[2].idleAnimation;
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().attackAnimation = characterList[2].attackAnimation;
                     break;
             }
         }
@@ -77,6 +118,7 @@ public class Player_Spawn : MonoBehaviour {
             sceneManager.playerList[i].GetComponent<PlayerVariableManager>().gameState = BattleStateManager.GAMESTATE.CHOOSING_SKILL;
             sceneManager.playerList[i].GetComponent<PlayerVariableManager>().isTargetLockedIn = false;
             sceneManager.playerList[i].GetComponent<PlayerVariableManager>().statusList.Clear();
+            sceneManager.playerList[i].GetComponent<PlayerVariableManager>().anim.GetComponent<Animator>().Play(sceneManager.playerList[i].GetComponent<PlayerVariableManager>().idleAnimation);
 
             sceneManager.playerList[i].GetComponent<PlayerStats>().health = sceneManager.playerList[i].GetComponent<PlayerStats>().baseHealth;
             sceneManager.playerList[i].GetComponent<PlayerStats>().Reset();
