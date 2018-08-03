@@ -23,3 +23,23 @@ MonoBehaviour:
   - {fileID: 1085256126315632, guid: 557af299344505545bbe8af3f13c24b5, type: 2}
   - {fileID: 1574790323892144, guid: 1c5e2b8ba50615a4786197f548a83a81, type: 2}
   scale: 0.3484527
+  idleAnimation: ExiledDemonIdleAnimation
+  attackAnimation: ExiledDemonAttackAnimation
+  skillImages:
+  - {fileID: 21300000, guid: 475eb8eb6855be6418a9c4c2c75191a5, type: 3}
+  - {fileID: 21300000, guid: 70249801cd969fb448769df75b9572d8, type: 3}
+  - {fileID: 21300000, guid: 1c763df390ffe7e4d97a7214950c4687, type: 3}
+  - {fileID: 21300000, guid: 23b3de585a0a5664787f6734abb5cd33, type: 3}
+  - {fileID: 21300000, guid: 374fb2ea41828734a88dbcede24bf6ad, type: 3}
+  skillNames:
+  - Dance of the Demon
+  - Demon's Strike
+  - Normal Attack
+  - Soul Hunt
+  - Cries of the Demon
+  skillDescriptions:
+  - Dance of the Demon
+  - 'Demon''s Strike '
+  - Normal Attack
+  - Soul Hunt
+  - Cries of the Demon
