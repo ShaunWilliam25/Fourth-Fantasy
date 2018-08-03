@@ -38,8 +38,9 @@ MonoBehaviour:
   - Soul Hunt
   - Cries of the Demon
   skillDescriptions:
-  - Dance of the Demon
-  - 'Demon''s Strike '
-  - Normal Attack
-  - Soul Hunt
-  - Cries of the Demon
+  - Heals all allies
+  - "Deals moderate amount of damage to front enemy and heals small amount of HP for
+    self\r\n"
+  - Deals moderate amount of damage to front enemy
+  - May inflict berserk/slow/silence to enemy
+  - Inflicts confuse, curse & slow

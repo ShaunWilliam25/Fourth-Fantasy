@@ -46,8 +46,8 @@ MonoBehaviour:
   - Acceleration
   - Meteor
   skillDescriptions:
-  - Polles of Disease
-  - Chrono's Descent
-  - Normal attack
-  - Acceleration
-  - Meteor
+  - Inflicts poison, burn & confuse to all enemies
+  - "All allies gains bless & regen\r\n"
+  - Deals moderate amount of damage to back enemy
+  - Casts Haste on Team
+  - Deals small amount of damage to all enemies and causes burn
