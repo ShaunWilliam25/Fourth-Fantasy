@@ -75,17 +75,17 @@ public class SceneManager : MonoBehaviour {
                     playerList[j].GetComponent<PlayerVariableManager>().isTargetLockedIn = false;
 
                 }
-<<<<<<< HEAD
+
                 enemyList[i].GetComponent<EnemyActionTimeBar>().enabled = false;
                 enemyList[i].GetComponent<EnemyVariableManager>().anim.Play(enemyList[i].GetComponent<EnemyVariableManager>().deathAnimation);
                 Destroy(enemyList[i],1.3f);
 
                 enemyList.Remove(enemyList[i]);
                 this.GetComponent<ArtifactScript>().calArtifact();
-=======
+
                 if (tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_06 && tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.THE_END)
                     ArtifactSpawner.GetComponent<ArtifactScript>().calArtifact();
->>>>>>> df5b387f2e104ab59171129e87e845d423db4c1c
+
             }
 
             
