@@ -1,17 +1,22 @@
 fileFormatVersion: 2
-guid: 28e0741d2794b21459815dfae5c73723
+guid: d786f856b72607b4186a4fd300eb2f09
 TextureImporter:
   fileIDToRecycleName:
-    21300000: OldGuard_Resting 2_0
-    21300002: OldGuard_Resting 2_1
-    21300004: OldGuard_Resting 2_2
-    21300006: OldGuard_Resting 2_3
-    21300008: OldGuard_Resting 2_4
-    21300010: OldGuard_Resting 2_5
-    21300012: OldGuard_Resting 2_6
-    21300014: OldGuard_Resting 2_7
-    21300016: OldGuard_Resting 2_8
-    21300018: OldGuard_Resting 2_9
+    21300000: cast spell_0
+    21300002: cast spell_1
+    21300004: cast spell_2
+    21300006: cast spell_3
+    21300008: cast spell_4
+    21300010: cast spell_5
+    21300012: cast spell_6
+    21300014: cast spell_7
+    21300016: cast spell_8
+    21300018: cast spell_9
+    21300020: cast spell_10
+    21300022: cast spell_11
+    21300024: cast spell_12
+    21300026: cast spell_13
+    21300028: cast spell_14
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -92,201 +97,301 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: OldGuard_Resting 2_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 611
-        width: 968
-        height: 611
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 80b65d9780bf8e845b0f08e9d6f5c8c0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OldGuard_Resting 2_1
-      rect:
-        serializedVersion: 2
-        x: 968
-        y: 611
-        width: 968
-        height: 611
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 57c3cfab32040d5458e14562db2df335
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OldGuard_Resting 2_2
-      rect:
-        serializedVersion: 2
-        x: 1936
-        y: 611
-        width: 968
-        height: 611
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae23c266bfdd3e84197f40cf11d42567
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OldGuard_Resting 2_3
-      rect:
-        serializedVersion: 2
-        x: 2904
-        y: 611
-        width: 968
-        height: 611
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d00a663ed19e08848b4bad3f48b33a4d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OldGuard_Resting 2_4
-      rect:
-        serializedVersion: 2
-        x: 3872
-        y: 611
-        width: 968
-        height: 611
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 698a6195a4b8c1d4baf01c79bdb21583
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OldGuard_Resting 2_5
+      name: cast spell_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 968
-        height: 611
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 355
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26027e4c19565b241a9ba71bd35014c6
+      spriteID: cbca26534e83cd843b25ee00ba23f2bf
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OldGuard_Resting 2_6
+      name: cast spell_1
       rect:
         serializedVersion: 2
-        x: 968
+        x: 355
         y: 0
-        width: 968
-        height: 611
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 355
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 023743dc55700834d834ffccc77c2f6c
+      spriteID: 5d9f62082f556c54cb262c03a249cf1c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OldGuard_Resting 2_7
+      name: cast spell_2
       rect:
         serializedVersion: 2
-        x: 1936
+        x: 710
         y: 0
-        width: 968
-        height: 611
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 355
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e53d67acef41244e87eae9ee5f455cd
+      spriteID: 8b91040907d7fbc408f74c5ee323c6b2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OldGuard_Resting 2_8
+      name: cast spell_3
       rect:
         serializedVersion: 2
-        x: 2904
+        x: 1065
         y: 0
-        width: 968
-        height: 611
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 355
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d65559d607f9fd438c8d7ca411c54fa
+      spriteID: d9051fbdc67e28d48a3ffe8b1982a2c3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OldGuard_Resting 2_9
+      name: cast spell_4
       rect:
         serializedVersion: 2
-        x: 3872
+        x: 1420
         y: 0
-        width: 968
-        height: 611
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 355
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c937431626755640b9c57e417106867
+      spriteID: 2b8921e517c243742b59eb492f1d7084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cast spell_5
+      rect:
+        serializedVersion: 2
+        x: 1775
+        y: 0
+        width: 355
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cbce1f4a24880c48b4fecec9139e44e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cast spell_6
+      rect:
+        serializedVersion: 2
+        x: 2130
+        y: 0
+        width: 355
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c00f0a71751b254f92fc92b22374390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cast spell_7
+      rect:
+        serializedVersion: 2
+        x: 2485
+        y: 0
+        width: 355
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 961c05baec5eaf848b0f312467960250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cast spell_8
+      rect:
+        serializedVersion: 2
+        x: 2840
+        y: 0
+        width: 355
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3dabb8556a8a876418cb7cfce1989e04
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cast spell_9
+      rect:
+        serializedVersion: 2
+        x: 3195
+        y: 0
+        width: 355
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e6ece2e78c32b148848879694f0fe09
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cast spell_10
+      rect:
+        serializedVersion: 2
+        x: 3550
+        y: 0
+        width: 355
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2570e13ac5992624a83aade337cb603f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cast spell_11
+      rect:
+        serializedVersion: 2
+        x: 3905
+        y: 0
+        width: 355
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c3088f2db2958b4b820d0b34747ad62
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cast spell_12
+      rect:
+        serializedVersion: 2
+        x: 4260
+        y: 0
+        width: 355
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 954dda1d93ffa5e48a16ed3667f0ba53
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cast spell_13
+      rect:
+        serializedVersion: 2
+        x: 4615
+        y: 0
+        width: 355
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29b371c39f748d2448e68f0cb9e350fd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cast spell_14
+      rect:
+        serializedVersion: 2
+        x: 4970
+        y: 0
+        width: 355
+        height: 390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aecf5b9f17296d840bacd490d6f6e732
       vertices: []
       indices: 
       edges: []
@@ -294,7 +399,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 74c8d25cf1fe1e343aa2445a74c900d1
+    spriteID: 1777851da7477c34c886a08185296c15
     vertices: []
     indices: 
     edges: []

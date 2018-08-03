@@ -1,17 +1,22 @@
 fileFormatVersion: 2
-guid: 28e0741d2794b21459815dfae5c73723
+guid: 89115a456a5f790409c5e4cde2a1f927
 TextureImporter:
   fileIDToRecycleName:
-    21300000: OldGuard_Resting 2_0
-    21300002: OldGuard_Resting 2_1
-    21300004: OldGuard_Resting 2_2
-    21300006: OldGuard_Resting 2_3
-    21300008: OldGuard_Resting 2_4
-    21300010: OldGuard_Resting 2_5
-    21300012: OldGuard_Resting 2_6
-    21300014: OldGuard_Resting 2_7
-    21300016: OldGuard_Resting 2_8
-    21300018: OldGuard_Resting 2_9
+    21300000: attack 1_0
+    21300002: attack 1_1
+    21300004: attack 1_2
+    21300006: attack 1_3
+    21300008: attack 1_4
+    21300010: attack 1_5
+    21300012: attack 1_6
+    21300014: attack 1_7
+    21300016: attack 1_8
+    21300018: attack 1_9
+    21300020: attack 1_10
+    21300022: attack 1_11
+    21300024: attack 1_12
+    21300026: attack 1_13
+    21300028: attack 1_14
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -92,201 +97,301 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: OldGuard_Resting 2_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 611
-        width: 968
-        height: 611
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 80b65d9780bf8e845b0f08e9d6f5c8c0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OldGuard_Resting 2_1
-      rect:
-        serializedVersion: 2
-        x: 968
-        y: 611
-        width: 968
-        height: 611
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 57c3cfab32040d5458e14562db2df335
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OldGuard_Resting 2_2
-      rect:
-        serializedVersion: 2
-        x: 1936
-        y: 611
-        width: 968
-        height: 611
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ae23c266bfdd3e84197f40cf11d42567
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OldGuard_Resting 2_3
-      rect:
-        serializedVersion: 2
-        x: 2904
-        y: 611
-        width: 968
-        height: 611
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d00a663ed19e08848b4bad3f48b33a4d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OldGuard_Resting 2_4
-      rect:
-        serializedVersion: 2
-        x: 3872
-        y: 611
-        width: 968
-        height: 611
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 698a6195a4b8c1d4baf01c79bdb21583
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: OldGuard_Resting 2_5
+      name: attack 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 968
-        height: 611
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 389
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 26027e4c19565b241a9ba71bd35014c6
+      spriteID: 717da65ad59096045b686294b1558668
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OldGuard_Resting 2_6
+      name: attack 1_1
       rect:
         serializedVersion: 2
-        x: 968
+        x: 389
         y: 0
-        width: 968
-        height: 611
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 389
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 023743dc55700834d834ffccc77c2f6c
+      spriteID: 7c78a5fd430b0f445aaea81d49019dbc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OldGuard_Resting 2_7
+      name: attack 1_2
       rect:
         serializedVersion: 2
-        x: 1936
+        x: 778
         y: 0
-        width: 968
-        height: 611
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 389
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1e53d67acef41244e87eae9ee5f455cd
+      spriteID: f6d18abc8c1886745a9db69a8de239ae
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OldGuard_Resting 2_8
+      name: attack 1_3
       rect:
         serializedVersion: 2
-        x: 2904
+        x: 1167
         y: 0
-        width: 968
-        height: 611
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 389
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8d65559d607f9fd438c8d7ca411c54fa
+      spriteID: 9c72b51139a52be4c89e9ebdb0853e6d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: OldGuard_Resting 2_9
+      name: attack 1_4
       rect:
         serializedVersion: 2
-        x: 3872
+        x: 1556
         y: 0
-        width: 968
-        height: 611
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+        width: 389
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3c937431626755640b9c57e417106867
+      spriteID: d3cafe23c43f1dc4e89509202300e6b6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack 1_5
+      rect:
+        serializedVersion: 2
+        x: 1945
+        y: 0
+        width: 389
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bb734691b467d64a94ac01f08538fb2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack 1_6
+      rect:
+        serializedVersion: 2
+        x: 2334
+        y: 0
+        width: 389
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbf46d4e969cfba499d4db9270f2a422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack 1_7
+      rect:
+        serializedVersion: 2
+        x: 2723
+        y: 0
+        width: 389
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 674ae560fe3a4b44c92d10565273c010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack 1_8
+      rect:
+        serializedVersion: 2
+        x: 3112
+        y: 0
+        width: 389
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81187c896d675b74083bd49297dc7e8c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack 1_9
+      rect:
+        serializedVersion: 2
+        x: 3501
+        y: 0
+        width: 389
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 453b360fe9d20ef45a32e7006392a291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack 1_10
+      rect:
+        serializedVersion: 2
+        x: 3890
+        y: 0
+        width: 389
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c54aa8fcd26e7409b859eec53edbd7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack 1_11
+      rect:
+        serializedVersion: 2
+        x: 4279
+        y: 0
+        width: 389
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07035fb15a1e6584ea64e6aa07e47546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack 1_12
+      rect:
+        serializedVersion: 2
+        x: 4668
+        y: 0
+        width: 389
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2100eb67d8bae5446b67dab762045f18
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack 1_13
+      rect:
+        serializedVersion: 2
+        x: 5057
+        y: 0
+        width: 389
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e064c321e0e11334b858f4737084d882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: attack 1_14
+      rect:
+        serializedVersion: 2
+        x: 5446
+        y: 0
+        width: 389
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98af1aa6be6725f41a2a0496fcd02b4f
       vertices: []
       indices: 
       edges: []
@@ -294,7 +399,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 74c8d25cf1fe1e343aa2445a74c900d1
+    spriteID: c29b20b82bba83f4b82d18a9be686482
     vertices: []
     indices: 
     edges: []
