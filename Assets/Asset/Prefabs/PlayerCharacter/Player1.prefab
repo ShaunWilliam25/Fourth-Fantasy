@@ -604,6 +604,9 @@ MonoBehaviour:
   idleAnimation: 
   attackAnimation: 
   injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
+  reviveAnimation: 
   gameState: 0
   artifactsList: []
   isScroll: 0
@@ -697,6 +700,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerStats: {fileID: 114758063009137674}
   playerVariable: {fileID: 114734666588869282}
+  reviveAnimationTimer: 0
   originalColour: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &114316244842626880
 MonoBehaviour:
@@ -860,6 +864,9 @@ MonoBehaviour:
   idleAnimation: 
   attackAnimation: 
   injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
+  reviveAnimation: 
   gameState: 0
   artifactsList: []
 --- !u!114 &114417434733461660
@@ -971,10 +978,14 @@ MonoBehaviour:
   idleAnimation: 
   attackAnimation: 
   injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
+  reviveAnimation: 
   gameState: 0
   artifactsList: []
   isAttack: 0
   attackAnimationTimer: 0.75
+  spellAnimationTimer: 0
   scrollSkill: {fileID: 114103795288757708}
 --- !u!114 &114477224346073488
 MonoBehaviour:
@@ -1047,6 +1058,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PopUpText: {fileID: 1247997310769886, guid: 04b05e889f3a481409a7327058b83454, type: 2}
+  injuredAnimationTimer: 0
 --- !u!114 &114561958266114902
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1091,6 +1103,9 @@ MonoBehaviour:
   idleAnimation: 
   attackAnimation: 
   injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
+  reviveAnimation: 
   gameState: 0
   artifactsList: []
 --- !u!114 &114584744115054410
@@ -1181,6 +1196,9 @@ MonoBehaviour:
   idleAnimation: 
   attackAnimation: 
   injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
+  reviveAnimation: 
   gameState: 0
   artifactsList: []
   haste: 0
@@ -1234,7 +1252,10 @@ MonoBehaviour:
   isEffectTargetLockedIn: 0
   idleAnimation: ExiledDemonIdleAnimation
   attackAnimation: ExiledDemonAttackAnimation
-  injuredAnimation: 
+  injuredAnimation: ExiledDemonInjuredAnimation
+  spellAnimation: 
+  deathAnimation: 
+  reviveAnimation: 
   gameState: 0
   artifactsList: []
 --- !u!114 &114741459107052458
@@ -1389,6 +1410,9 @@ MonoBehaviour:
   idleAnimation: 
   attackAnimation: 
   injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
+  reviveAnimation: 
   gameState: 0
   artifactsList: []
 --- !u!114 &114861583914442698
@@ -1516,6 +1540,9 @@ MonoBehaviour:
   idleAnimation: 
   attackAnimation: 
   injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
+  reviveAnimation: 
   gameState: 0
   artifactsList: []
   statusIcon:

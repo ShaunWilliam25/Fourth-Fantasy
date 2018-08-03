@@ -67,15 +67,17 @@ public class SceneManager : MonoBehaviour {
         {
             if(enemyList[i].GetComponent<EnemyStats>().health <= 0)
             {
-                enemyList[i].SetActive(false);
-                Destroy(enemyList[i]);
-                enemyList.Remove(enemyList[i]);
-                for(int j =0;j<playerList.Count;j++)
+                
+                for (int j = 0; j < playerList.Count; j++)
                 {
                     playerList[j].GetComponent<PlayerVariableManager>().isTargetLockedIn = false;
-                    
-                }
 
+                }
+                enemyList[i].GetComponent<EnemyActionTimeBar>().enabled = false;
+                enemyList[i].GetComponent<EnemyVariableManager>().anim.Play(enemyList[i].GetComponent<EnemyVariableManager>().deathAnimation);
+                Destroy(enemyList[i],1.3f);
+
+                enemyList.Remove(enemyList[i]);
                 this.GetComponent<ArtifactScript>().calArtifact();
             }
 
@@ -132,7 +134,7 @@ public class SceneManager : MonoBehaviour {
         {
             //for (int k = 0; k < playerList.Count; k++)
             //{
-                playerList[1].GetComponent<PlayerStats>().health = 0;
+                enemyList[0].GetComponent<EnemyStats>().health = 0;
 
             //}
         }

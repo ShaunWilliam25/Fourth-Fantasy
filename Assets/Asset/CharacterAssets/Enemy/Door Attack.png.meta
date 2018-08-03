@@ -1,29 +1,26 @@
 fileFormatVersion: 2
-guid: 8cbad885ce846db41a6b18ead2b7ff31
+guid: 62d9c33d6b5c1a547a58ca5663dfa2b1
 TextureImporter:
   fileIDToRecycleName:
-    21300000: idle_0
-    21300002: idle_1
-    21300004: idle_2
-    21300006: idle_3
-    21300008: idle_4
-    21300010: idle_5
-    21300012: idle_6
-    21300014: idle_7
-    21300016: idle_8
-    21300018: idle_9
-    21300020: idle_10
-    21300022: idle_11
-    21300024: idle_12
-    21300026: idle_13
-    21300028: idle_14
-    21300030: idle_15
-    21300032: idle_16
-    21300034: idle_17
-    21300036: idle_18
-    21300038: idle_19
+    21300000: Door Attack_0
+    21300002: Door Attack_1
+    21300004: Door Attack_2
+    21300006: Door Attack_3
+    21300008: Door Attack_4
+    21300010: Door Attack_5
+    21300012: Door Attack_6
+    21300014: Door Attack_7
+    21300016: Door Attack_8
+    21300018: Door Attack_9
+    21300020: Door Attack_10
+    21300022: Door Attack_11
+    21300024: Door Attack_12
+    21300026: Door Attack_13
+    21300028: Door Attack_14
+    21300030: Door Attack_15
+    21300032: Door Attack_16
   externalObjects: {}
-  serializedVersion: 5
+  serializedVersion: 7
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -41,6 +38,8 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -51,7 +50,7 @@ TextureImporter:
     serializedVersion: 2
     filterMode: -1
     aniso: -1
-    mipBias: -1
+    mipBias: -100
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -59,11 +58,11 @@ TextureImporter:
   lightmap: 0
   compressionQuality: 50
   spriteMode: 2
-  spriteExtrude: 0
+  spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 83
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -78,7 +77,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -89,7 +88,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -102,401 +101,341 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: idle_0
+      name: Door Attack_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 446.15
-        height: 591
+        width: 422
+        height: 476
       alignment: 9
-      pivot: {x: 0.58112395, y: 0.51815426}
+      pivot: {x: 0.543574, y: 0.4082518}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27362b97566610a4da7767e6e5f88020
+      spriteID: c3c4f35de23baec439f6dce3de9eefa8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_1
+      name: Door Attack_1
       rect:
         serializedVersion: 2
-        x: 446
+        x: 422
         y: 0
-        width: 446.15
-        height: 591
+        width: 422
+        height: 476
       alignment: 9
-      pivot: {x: 0.58736193, y: 0.5187292}
+      pivot: {x: 0.543574, y: 0.4082518}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 19b788ea639204f4f9f5ba5e614f490d
+      spriteID: 2463dbbc8a1911843afbf4a5712e43cf
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_2
+      name: Door Attack_2
       rect:
         serializedVersion: 2
-        x: 892
+        x: 844
         y: 0
-        width: 446.15
-        height: 591
+        width: 422
+        height: 476
       alignment: 9
-      pivot: {x: 0.5936366, y: 0.5181911}
+      pivot: {x: 0.543574, y: 0.4082518}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35c1c101ae276fc4cad48e6dd7a48e6b
+      spriteID: 86ba72d41d27eb64ea06c8bbcf9780ab
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_3
+      name: Door Attack_3
       rect:
         serializedVersion: 2
-        x: 1338
+        x: 1266
         y: 0
-        width: 446.15
-        height: 591
+        width: 422
+        height: 476
       alignment: 9
-      pivot: {x: 0.59931886, y: 0.5182051}
+      pivot: {x: 0.543574, y: 0.4082518}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 64a6e371c006cc84795711b2ca2a8e04
+      spriteID: 8b0f4d334cf1e704089a0872a27c6ecd
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_4
+      name: Door Attack_4
       rect:
         serializedVersion: 2
-        x: 1784
+        x: 1688
         y: 0
-        width: 446.15
-        height: 591
+        width: 422
+        height: 476
       alignment: 9
-      pivot: {x: 0.60562474, y: 0.51768106}
+      pivot: {x: 0.543574, y: 0.4082518}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0148874a5de15a84a925abf83a6a62af
+      spriteID: 035543fdc29cd99479449fa45de92c8f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_5
+      name: Door Attack_5
       rect:
         serializedVersion: 2
-        x: 2231
+        x: 2110
         y: 0
-        width: 446
-        height: 591
+        width: 422
+        height: 476
       alignment: 9
-      pivot: {x: 0.59998435, y: 0.53242886}
+      pivot: {x: 0.543574, y: 0.4082518}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f4f00ff544f322e49bfaf835a29786fa
+      spriteID: c960458df1e912341bdc22b8e92ff06d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_6
+      name: Door Attack_6
       rect:
         serializedVersion: 2
-        x: 2676
+        x: 2532
         y: 0
-        width: 446.15
-        height: 591
+        width: 422
+        height: 476
       alignment: 9
-      pivot: {x: 0.6091061, y: 0.5187292}
+      pivot: {x: 0.543574, y: 0.4082518}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74631561bf1b50749b7ff328fecbd632
+      spriteID: b7b4c691a74943a4b9083ea1fa155a37
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_7
+      name: Door Attack_7
       rect:
         serializedVersion: 2
-        x: 3122
+        x: 2954
         y: 0
-        width: 446.15
-        height: 591
+        width: 422
+        height: 476
       alignment: 9
-      pivot: {x: 0.6141832, y: 0.51822364}
+      pivot: {x: 0.543574, y: 0.4082518}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2a17c3175dbf15144bba384c38401881
+      spriteID: 7b339e281b8f0c442927398e07b7d882
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_8
+      name: Door Attack_8
       rect:
         serializedVersion: 2
-        x: 3568
+        x: 3376
         y: 0
-        width: 446
-        height: 591
+        width: 422
+        height: 476
       alignment: 9
-      pivot: {x: 0.6211266, y: 0.51863754}
+      pivot: {x: 0.543574, y: 0.4082518}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36710b9a4af040047824cd8a2f96a17b
+      spriteID: 4aecbae47d686504a965a379227c7e3f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_9
+      name: Door Attack_9
       rect:
         serializedVersion: 2
-        x: 4014
+        x: 3798
         y: 0
-        width: 446.15
-        height: 591
+        width: 422
+        height: 476
       alignment: 9
-      pivot: {x: 0.61800766, y: 0.518082}
+      pivot: {x: 0.543574, y: 0.4082518}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d0a1dec74f58a64dad955ee0f13f788
+      spriteID: 59d3cb7ddf3c7854a8e373db99658154
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_10
+      name: Door Attack_10
       rect:
         serializedVersion: 2
-        x: 4460
+        x: 4220
         y: 0
-        width: 446.15
-        height: 591
+        width: 422
+        height: 476
       alignment: 9
-      pivot: {x: 0.6235039, y: 0.5185653}
+      pivot: {x: 0.543574, y: 0.4082518}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9124078ba16bd8d4bb03c8556c3b1d6d
+      spriteID: c2f890c891c4c1b4eaa354661a1d7bba
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_11
+      name: Door Attack_11
       rect:
         serializedVersion: 2
-        x: 4906
+        x: 4642
         y: 0
-        width: 446.15
-        height: 591
+        width: 422
+        height: 476
       alignment: 9
-      pivot: {x: 0.62020856, y: 0.51805806}
+      pivot: {x: 0.543574, y: 0.4082518}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 249d5ef3787f9324a8d461b3875aee31
+      spriteID: fcf5e525c870a3b4087d129e7a15ac58
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_12
+      name: Door Attack_12
       rect:
         serializedVersion: 2
-        x: 5352
+        x: 5064
         y: 0
-        width: 446.15
-        height: 591
+        width: 422
+        height: 476
       alignment: 9
-      pivot: {x: 0.62636477, y: 0.51744485}
+      pivot: {x: 0.543574, y: 0.4082518}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b44d83fb4805ee746bb712ed80f9ad5e
+      spriteID: bba54a21822594d4bb70d23dc1de8c28
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_13
+      name: Door Attack_13
       rect:
         serializedVersion: 2
-        x: 5798
+        x: 5486
         y: 0
-        width: 446.15
-        height: 591
+        width: 422
+        height: 476
       alignment: 9
-      pivot: {x: 0.62286365, y: 0.5190631}
+      pivot: {x: 0.543574, y: 0.4082518}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4dfcb837aa197d44095b9fc342415c50
+      spriteID: 13b3961d1d61f5644839bfc5102f5700
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_14
+      name: Door Attack_14
       rect:
         serializedVersion: 2
-        x: 6244
+        x: 5908
         y: 0
-        width: 446.15
-        height: 591
+        width: 422
+        height: 476
       alignment: 9
-      pivot: {x: 0.6084576, y: 0.5185894}
+      pivot: {x: 0.543574, y: 0.4082518}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 606a4cb34f2280646bd107ee8fcb830a
+      spriteID: 0b6725f49b8ba2f44b89ba4df0cd789f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_15
+      name: Door Attack_15
       rect:
         serializedVersion: 2
-        x: 6690
+        x: 6330
         y: 0
-        width: 446.15
-        height: 591
+        width: 422
+        height: 476
       alignment: 9
-      pivot: {x: 0.6158823, y: 0.51855576}
+      pivot: {x: 0.543574, y: 0.4082518}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 89bd1f0aa7d4ff04aa4119fccf4d1fd8
+      spriteID: 01b16036a4b5f8646b2a9111b65f8caf
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: idle_16
+      name: Door Attack_16
       rect:
         serializedVersion: 2
-        x: 7136
+        x: 6752
         y: 0
-        width: 446.15
-        height: 591
+        width: 422
+        height: 476
       alignment: 9
-      pivot: {x: 0.62089914, y: 0.5176373}
+      pivot: {x: 0.543574, y: 0.4082518}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8dd8a39a453e30442bf60eef0e070e65
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle_17
-      rect:
-        serializedVersion: 2
-        x: 7582
-        y: 0
-        width: 446.15
-        height: 591
-      alignment: 9
-      pivot: {x: 0.6180635, y: 0.51763743}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bdad506d2fe6109458d843cbf437fe10
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle_18
-      rect:
-        serializedVersion: 2
-        x: 8028
-        y: 0
-        width: 446.15
-        height: 591
-      alignment: 9
-      pivot: {x: 0.62367576, y: 0.5181833}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8c9c373eac96d37469127d18acf21417
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: idle_19
-      rect:
-        serializedVersion: 2
-        x: 8474
-        y: 0
-        width: 446.15
-        height: 591
-      alignment: 9
-      pivot: {x: 0.6207842, y: 0.51816875}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d41ffeb5aa856aa45a744e9966ce209c
+      spriteID: 8d796f2ee687ecd44bd4d3cda32652f1
       vertices: []
       indices: 
       edges: []
@@ -504,12 +443,14 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: efed64fe82a93a14baa1f68128a8f7b8
+    spriteID: 0b7075cc04251414da0600ef05523fc3
     vertices: []
     indices: 
     edges: []
     weights: []
   spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -6,6 +6,7 @@ public class EnemyTakeDamage : MonoBehaviour {
 
     [SerializeField] private GameObject PopUpText;
     List<GameObject> statuses;
+    [SerializeField] private float injuredAnimationTimer;
 
     public void EnemyDamage(int damage)
     {
@@ -26,6 +27,8 @@ public class EnemyTakeDamage : MonoBehaviour {
             }
         }
         GetComponent<EnemyStats>().health -= (int)(damage * multiplier);
+        GetComponent<EnemyVariableManager>().anim.Play(GetComponent<EnemyVariableManager>().injuredAnimation);
+        Invoke("ResetAnimation", injuredAnimationTimer);
         PopUpDamage(gameObject, (int)(damage * multiplier), Color.red);
     }
 
@@ -41,5 +44,10 @@ public class EnemyTakeDamage : MonoBehaviour {
         newPopUp.SetActive(true);
         newPopUp.GetComponent<PopUpDamageController>().SetText(damage.ToString(), colour);
         Destroy(newPopUp.gameObject, 0.5f);
+    }
+
+    void ResetAnimation()
+    {
+        this.GetComponent<EnemyVariableManager>().anim.Play(this.GetComponent<EnemyVariableManager>().idleAnimation);
     }
 }
