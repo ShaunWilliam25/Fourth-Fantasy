@@ -17,6 +17,7 @@ public class SceneManager : MonoBehaviour {
     public float loseTimer;
     public TutorialAppear tutorial;
     public GameObject needGreedManager;
+    public GameObject ArtifactSpawner;
     public List<BattleSceneScriptableObject> waveDetails;
 
 
@@ -31,6 +32,7 @@ public class SceneManager : MonoBehaviour {
         {
             Player2.instance.gameObject.SetActive(true);
         }
+        ArtifactSpawner = artifactSpawnerSingleton.instance.gameObject;
     }
 
 
@@ -75,8 +77,8 @@ public class SceneManager : MonoBehaviour {
                     playerList[j].GetComponent<PlayerVariableManager>().isTargetLockedIn = false;
                     
                 }
-
-                this.GetComponent<ArtifactScript>().calArtifact();
+                if (tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_06 && tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.THE_END)
+                    ArtifactSpawner.GetComponent<ArtifactScript>().calArtifact();
             }
 
             

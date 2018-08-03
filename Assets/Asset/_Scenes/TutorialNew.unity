@@ -595,7 +595,7 @@ Transform:
   m_LocalScale: {x: 0.77, y: 0.77, z: 0.77}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &144051290
 GameObject:
@@ -1230,12 +1230,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 223688909}
---- !u!114 &255882461 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114959392602543044, guid: 208804f58ac98e34d8006bf42f916ba3,
-    type: 2}
-  m_PrefabInternal: {fileID: 974813636}
-  m_Script: {fileID: 11500000, guid: 6ea00f85749fb8b4b95b494a738899d4, type: 3}
 --- !u!1 &269477145
 GameObject:
   m_ObjectHideFlags: 0
@@ -1396,7 +1390,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &295503240
 GameObject:
@@ -2793,7 +2787,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &519420033
 MonoBehaviour:
@@ -3117,7 +3111,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 544592108}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cdb0324c0ec45e42ad9e253e2578faa, type: 3}
+  m_Script: {fileID: 11500000, guid: 1147969f5f1c4084995b388f725f3498, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &544592110
@@ -5299,18 +5293,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerList:
-  - {fileID: 1045055317}
-  - {fileID: 1717181971}
+  - {fileID: 0}
+  - {fileID: 0}
   enemyList: []
   isWin: 0
-  audioManager: {fileID: 255882461}
   victory: {fileID: 1663423641430810, guid: 8a7faca0a5059e647871b7ccbda0bcff, type: 2}
   VictoryGO: {fileID: 0}
   nextScene: 6
   loseTimer: 0
   tutorial: {fileID: 0}
+  needGreedManager: {fileID: 1643960540}
   ArtifactSpawner: {fileID: 0}
-  NeedGreedManager: {fileID: 1643960540}
   waveDetails:
   - {fileID: 11400000, guid: 15548141933c4364888297e08dfad030, type: 2}
   - {fileID: 11400000, guid: d009179b08e694b45ae378b8e3b8e4d4, type: 2}
@@ -5328,13 +5321,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1045055317 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1140889963708872, guid: c98038a5b139f974eb30ac5a15569baa,
-    type: 2}
-  m_PrefabInternal: {fileID: 1606555605}
 --- !u!1 &1056809817
 GameObject:
   m_ObjectHideFlags: 0
@@ -5766,7 +5754,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1167306804
 GameObject:
@@ -8475,7 +8463,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1521249636
 GameObject:
@@ -9591,11 +9579,6 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1685023816}
---- !u!1 &1717181971 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1085382439803722, guid: 6957876426f4f7f44a2fef876f8736d8,
-    type: 2}
-  m_PrefabInternal: {fileID: 1301153699}
 --- !u!1 &1728822298
 GameObject:
   m_ObjectHideFlags: 0
@@ -10028,7 +10011,7 @@ Transform:
   m_LocalScale: {x: 0.77, y: 0.77, z: 0.77}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1782661321
 GameObject:
@@ -11138,5 +11121,5 @@ Transform:
   m_LocalScale: {x: 0.77, y: 0.77, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
