@@ -7,7 +7,7 @@ public class PlayerTakeDamage : MonoBehaviour {
     [SerializeField]private GameObject PopUpText;
     List<GameObject> statuses;
     List<GameObject> artifacts;
-    [SerializeField] private float damageAnimationTimer;
+    public float injuredAnimationTimer;
     public void PlayerDamage(int damage)
     {
         if(GetComponent<PlayerStats>().knockedOut)
@@ -49,7 +49,7 @@ public class PlayerTakeDamage : MonoBehaviour {
         }
         GetComponent<PlayerStats>().health -= (int)(damage * multiplier);
         this.GetComponent<PlayerVariableManager>().anim.GetComponent<Animator>().Play(this.GetComponent<PlayerVariableManager>().injuredAnimation);
-        Invoke("ResetAnimation",damageAnimationTimer);
+        Invoke("ResetAnimation",injuredAnimationTimer);
         PopUpDamage(gameObject, (int)(damage * multiplier), Color.red);
     }
 

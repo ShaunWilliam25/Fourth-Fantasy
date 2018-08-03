@@ -6,7 +6,7 @@ public class PlayerDeadAndRevive : MonoBehaviour {
 
     public PlayerStats playerStats;
     public PlayerVariableManager playerVariable;
-    [SerializeField] private int reviveAnimationTimer;
+    public float reviveAnimationTimer;
     public Color originalColour;
 	// Use this for initialization
 	void Start ()

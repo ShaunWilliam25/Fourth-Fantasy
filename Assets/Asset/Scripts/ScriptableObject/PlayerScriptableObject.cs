@@ -14,6 +14,14 @@ public class PlayerScriptableObject : ScriptableObject {
     public float scale;
     public string idleAnimation;
     public string attackAnimation;
+    public string injuredAnimation;
+    public string spellAnimation;
+    public string deathAnimation;
+    public string reviveAnimation;
+    public float attackAnimationTimer;
+    public float injuredAnimationTimer;
+    public float spellAnimationTimer;
+    public float reviveAnimationTimer;
     public List<Sprite> skillImages;
     public List<string> skillNames;
     [TextArea]
