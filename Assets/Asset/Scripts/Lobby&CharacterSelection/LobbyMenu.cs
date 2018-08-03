@@ -17,8 +17,10 @@ public class LobbyMenu : MonoBehaviour {
     [SerializeField] Text statusText;
     [SerializeField] LOBBY_STATE lobbyState = LOBBY_STATE.LOBBY;
     [SerializeField] List<PlayerScriptableObject> listOfCharacters;
-    [SerializeField] int characterIndex = 1;
+    public int characterIndex = 1;
     [SerializeField] bool isSelectingCharacter = false;
+    [SerializeField] Image[] characterSelectionPointer = new Image[4];
+    public bool isReady = false;
 
     public enum LOBBY_STATE
     {
@@ -115,6 +117,7 @@ public class LobbyMenu : MonoBehaviour {
                     //! Deactivate the lobby canvas and activate the character selection canvas
                     lobbyCanvas.gameObject.SetActive(false);
                     characterSelectionCanvas.gameObject.SetActive(true);
+                    holdTimer = 0f;
                     lobbyState = LOBBY_STATE.CHARACTER_SELECTION;
 
                 }
@@ -126,17 +129,52 @@ public class LobbyMenu : MonoBehaviour {
                         //! Ready to start game
                         statusText.color = Color.green;
                         statusText.text = playerName + " is ready";
+                        isReady = true;
                     }
 
                     //! When character is not selected / image is null
-                    //! TO BE DONE LATER
+                    if(lobbyCanvas.transform.GetChild(1).GetComponent<Image>().sprite == null)
+                    {
+                        statusText.color = Color.red;
+                        statusText.text = "You must first selec a character to play as";
+                    }
                 }
                 holdTimer = 0;
-            }            
+            }
         }
         
         if(lobbyState == LOBBY_STATE.CHARACTER_SELECTION)
         {
+            //! Make sure that the isCharacter selected is false
+            if(isCharacterSelected)
+            {
+                isCharacterSelected = false;
+            }
+
+            //! Reset the status text
+            if(statusText.text != null)
+            {
+                statusText.text = null;
+            }
+
+            //! Empty the picture
+            if(lobbyCanvas.transform.GetChild(1).GetComponent<Image>().sprite != null)
+            {
+                lobbyCanvas.transform.GetChild(1).GetComponent<Image>().sprite = null;
+            }
+
+            //! Reset the color alpha
+            if (lobbyCanvas.transform.GetChild(1).GetComponent<Image>().color.a > 0)
+            {
+                lobbyCanvas.transform.GetChild(1).GetComponent<Image>().color = new Vector4(255, 255, 255, 0);
+            }
+
+            //! Reset the isReady bool
+            if(isReady)
+            {
+                isReady = false;
+            }
+            
             //! Displaying all the information of characters
             Transform characterCanvasTransform = characterSelectionCanvas.transform;
 
@@ -147,7 +185,7 @@ public class LobbyMenu : MonoBehaviour {
             characterCanvasTransform.GetChild(1).GetComponent<Image>().sprite = listOfCharacters[characterIndex].sprite;
 
             //! Display Health of character
-            characterCanvasTransform.GetChild(2).GetComponent<Text>().text = listOfCharacters[characterIndex].health + " / " + listOfCharacters[characterIndex].maxHealth;
+            characterCanvasTransform.GetChild(2).GetComponent<Text>().text = "HP: " + listOfCharacters[characterIndex].health + " / " + listOfCharacters[characterIndex].maxHealth;
 
             //! Display Skill details of character
             for(int i=0;i<5;i++)
@@ -163,7 +201,139 @@ public class LobbyMenu : MonoBehaviour {
             }
 
             //! Selection of characters(yes / no buttons)
-            
+
+            //! Pointer active based on boolean
+            if(isSelectingCharacter)
+            {
+                //! Check if already active
+                if(characterSelectionPointer[0].gameObject.activeInHierarchy == false)
+                {
+                    characterSelectionPointer[0].gameObject.SetActive(true);
+                }
+                if (characterSelectionPointer[1].gameObject.activeInHierarchy == false)
+                {
+                    characterSelectionPointer[1].gameObject.SetActive(true);
+                }
+
+                //! Off deactivate the other 2
+                //! Check if already active
+                if (characterSelectionPointer[2].gameObject.activeInHierarchy == true)
+                {
+                    characterSelectionPointer[2].gameObject.SetActive(false);
+                }
+                if (characterSelectionPointer[3].gameObject.activeInHierarchy == true)
+                {
+                    characterSelectionPointer[3].gameObject.SetActive(false);
+                }
+            }
+            else
+            {
+                //! Check if already active
+                if (characterSelectionPointer[2].gameObject.activeInHierarchy == false)
+                {
+                    characterSelectionPointer[2].gameObject.SetActive(true);
+                }
+                if (characterSelectionPointer[3].gameObject.activeInHierarchy == false)
+                {
+                    characterSelectionPointer[3].gameObject.SetActive(true);
+                }
+
+                //! Off deactivate the other 2
+                //! Check if already active
+                if (characterSelectionPointer[0].gameObject.activeInHierarchy == true)
+                {
+                    characterSelectionPointer[0].gameObject.SetActive(false);
+                }
+                if (characterSelectionPointer[1].gameObject.activeInHierarchy == true)
+                {
+                    characterSelectionPointer[1].gameObject.SetActive(false);
+                }
+            }
+            //! Scrolling of the pointer
+            if(Input.GetButtonUp(playerButton))
+            {
+                if(isSelectingCharacter == true)
+                {
+                    isSelectingCharacter = false;
+                }
+                else
+                {
+                    isSelectingCharacter = true;
+                }
+            }
+
+            //! Converting the hold timer into percentage so that can reflect with the image fill amount
+            timerInPercentage = holdTimer / requiredTimer;
+
+            //! Reflecting the timerInPercentage with the image fill amount based on current selection
+            switch (isSelectingCharacter)
+            {
+                case true:
+                    //! Set the other as 0             
+                    characterSelectionPointer[3].fillAmount = 0;
+                    characterSelectionPointer[1].fillAmount = timerInPercentage;
+                    break;
+
+                case false:
+                    characterSelectionPointer[1].fillAmount = 0;
+                    characterSelectionPointer[3].fillAmount = timerInPercentage;
+                    break;
+            }
+
+            //! Control for selecting options for player 
+            if (Input.GetButton(playerButton))
+            {
+                holdTimer += Time.deltaTime;
+            }
+            //! When let go / chose another seleection
+            if (Input.GetButtonUp(playerButton))
+            {
+                holdTimer = 0;
+            }
+
+            //! When the pointer charges finish
+            if(timerInPercentage >= 1)
+            {
+                //! Check if yes
+                if(isSelectingCharacter)
+                {
+                    //! Reset hold timer
+                    holdTimer = 0f;
+
+                    //! Close the character selection canvas
+                    characterSelectionCanvas.gameObject.SetActive(false);                    
+
+                    //! Open the lobby canvas
+                    lobbyCanvas.gameObject.SetActive(true);
+
+                    //! Change the image for the lobby canvas Image
+                    lobbyCanvas.transform.GetChild(1).GetComponent<Image>().sprite = listOfCharacters[characterIndex].sprite;
+                    lobbyCanvas.transform.GetChild(1).GetComponent<Image>().color = new Vector4(255, 255, 255, 255);
+
+                    //! Change the lobby state
+                    lobbyState = LOBBY_STATE.LOBBY;
+
+                    //! Change the isCharacter selected bool
+                    isCharacterSelected = true;
+                }
+
+                //! Check if no
+                else
+                {
+                    //! Rest hold timer
+                    holdTimer = 0;
+
+                    //! Change the character index
+                    characterIndex++;
+
+                    //! If the index is over the count of the list
+                    if(characterIndex >= listOfCharacters.Count)
+                    {
+                        characterIndex = 0;
+                    }
+                }
+            }
+
         }
     }
 }

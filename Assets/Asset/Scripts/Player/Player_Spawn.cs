@@ -17,11 +17,16 @@ public class Player_Spawn : MonoBehaviour {
         this.gameObject.GetComponent<SceneManager>().playerList[0] = Player1.instance.gameObject;
         this.gameObject.GetComponent<SceneManager>().playerList[1] = Player2.instance.gameObject;
         Debug.Log("player 1 is " + this.GetComponent<SceneManager>().playerList[0].activeInHierarchy);
-        for (int i=0;i<characterIndex.Count;i++)
+
+        //! Changing the character index based on the one from character selection
+        characterIndex[0] = AudioManager.instance.player1CharacterIndex;
+        characterIndex[1] = AudioManager.instance.player2CharacterIndex;
+
+        for (int i=0;i<this.gameObject.GetComponent<SceneManager>().playerList.Count;i++)
         {
             switch (characterIndex[i])
             {                
-                case 1:
+                case 0:
                     sceneManager.playerList[i].GetComponent<PlayerStats>().name = characterList[0].name;
                     sceneManager.playerList[i].GetComponent<PlayerStats>().baseHealth = characterList[0].maxHealth;
                     sceneManager.playerList[i].GetComponent<PlayerStats>().health = characterList[0].maxHealth;
@@ -29,8 +34,10 @@ public class Player_Spawn : MonoBehaviour {
                     sceneManager.playerList[i].transform.GetChild(0).GetComponent<Animator>().runtimeAnimatorController = characterList[0].animator;
                     sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillList = characterList[0].skillList;
                     sceneManager.playerList[i].transform.GetChild(0).GetComponent<Transform>().localScale = new Vector3(characterList[0].scale, characterList[0].scale, characterList[0].scale);
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().idleAnimation = characterList[0].idleAnimation;
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().attackAnimation = characterList[0].attackAnimation;
                     break;
-                case 2:
+                case 1:
                     sceneManager.playerList[i].GetComponent<PlayerStats>().name = characterList[1].name;
                     sceneManager.playerList[i].GetComponent<PlayerStats>().baseHealth = characterList[1].maxHealth;
                     sceneManager.playerList[i].GetComponent<PlayerStats>().health = characterList[1].maxHealth;
@@ -38,9 +45,11 @@ public class Player_Spawn : MonoBehaviour {
                     sceneManager.playerList[i].transform.GetChild(0).GetComponent<Animator>().runtimeAnimatorController = characterList[1].animator;
                     sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillList = characterList[1].skillList;
                     sceneManager.playerList[i].transform.GetChild(0).GetComponent<Transform>().localScale = new Vector3(characterList[1].scale, characterList[1].scale, characterList[1].scale);
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().idleAnimation = characterList[1].idleAnimation;
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().attackAnimation = characterList[1].attackAnimation;
                     break;
 
-                case 3:
+                case 2:
                     sceneManager.playerList[i].GetComponent<PlayerStats>().name = characterList[2].name;
                     sceneManager.playerList[i].GetComponent<PlayerStats>().baseHealth = characterList[2].maxHealth;
                     sceneManager.playerList[i].GetComponent<PlayerStats>().health = characterList[2].maxHealth;
@@ -48,6 +57,8 @@ public class Player_Spawn : MonoBehaviour {
                     sceneManager.playerList[i].transform.GetChild(0).GetComponent<Animator>().runtimeAnimatorController = characterList[2].animator;
                     sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillList = characterList[2].skillList;
                     sceneManager.playerList[i].transform.GetChild(0).GetComponent<Transform>().localScale = new Vector3(characterList[2].scale, characterList[2].scale, characterList[2].scale);
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().idleAnimation = characterList[2].idleAnimation;
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().attackAnimation = characterList[2].attackAnimation;
                     break;
             }
         }
