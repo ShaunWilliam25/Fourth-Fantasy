@@ -1,17 +1,13 @@
 fileFormatVersion: 2
-guid: 6ea7ad69ee34f0a4c86798c5ed75f813
+guid: 9fe15ffe1e526084dba5a4402b78aebe
 TextureImporter:
   fileIDToRecycleName:
-    21300000: attacked_0
-    21300002: attacked_1
-    21300004: attacked_2
-    21300006: attacked_3
-    21300008: attacked_4
-    21300010: attacked_5
-    21300012: attacked_6
-    21300014: attacked_7
-    21300016: attacked_8
-    21300018: attacked_9
+    21300000: Wolf_Injured_0
+    21300002: Wolf_Injured_1
+    21300004: Wolf_Injured_2
+    21300006: Wolf_Injured_3
+    21300008: Wolf_Injured_4
+    21300010: Wolf_Injured_5
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -68,7 +64,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -79,7 +75,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Standalone
-    maxTextureSize: 8192
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -92,13 +88,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: attacked_0
+      name: Wolf_Injured_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 254
-        height: 319
+        width: 1012
+        height: 509
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -106,19 +102,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cc507144a241de41aab584192fcb2c1
+      spriteID: 1f21ab3110cf14e4da2357b01a511330
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attacked_1
+      name: Wolf_Injured_1
       rect:
         serializedVersion: 2
-        x: 254
+        x: 1012
         y: 0
-        width: 254
-        height: 319
+        width: 1012
+        height: 509
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -126,19 +122,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc5228ed0b3cb1b45afb1cd0b8cb233e
+      spriteID: 3de65d2786e1ca140afe5251f5ef73fb
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attacked_2
+      name: Wolf_Injured_2
       rect:
         serializedVersion: 2
-        x: 508
+        x: 2024
         y: 0
-        width: 254
-        height: 319
+        width: 1012
+        height: 509
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,19 +142,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 891adb670dea2384a9863db66e18f3f1
+      spriteID: a23139d2018dc6b46901148033f8a4cc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attacked_3
+      name: Wolf_Injured_3
       rect:
         serializedVersion: 2
-        x: 762
+        x: 3036
         y: 0
-        width: 254
-        height: 319
+        width: 1012
+        height: 509
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,19 +162,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd95e9a47f0e86d4795258769f23734a
+      spriteID: 255a205ee89527b419e180e52acc101f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attacked_4
+      name: Wolf_Injured_4
       rect:
         serializedVersion: 2
-        x: 1016
+        x: 4048
         y: 0
-        width: 254
-        height: 319
+        width: 1012
+        height: 509
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -186,19 +182,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eaacfcb8a088641468f292a3199d0c2c
+      spriteID: b59ab677bfec6ce4db04540f19df8549
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attacked_5
+      name: Wolf_Injured_5
       rect:
         serializedVersion: 2
-        x: 1270
+        x: 5060
         y: 0
-        width: 254
-        height: 319
+        width: 1012
+        height: 509
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,87 +202,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d4cd5c0275e63e4dbbdc9c302d8b958
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attacked_6
-      rect:
-        serializedVersion: 2
-        x: 1524
-        y: 0
-        width: 254
-        height: 319
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bccc86b75335514419a895734929bbc0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attacked_7
-      rect:
-        serializedVersion: 2
-        x: 1778
-        y: 0
-        width: 254
-        height: 319
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: de1d836ea0be2444e95ec0a857adb07f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attacked_8
-      rect:
-        serializedVersion: 2
-        x: 2032
-        y: 0
-        width: 254
-        height: 319
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e0a3011b8d997947be3a3c2bf26f2f3
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attacked_9
-      rect:
-        serializedVersion: 2
-        x: 2286
-        y: 0
-        width: 254
-        height: 319
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 709fa780c2d38264ea00777e5f8f6698
+      spriteID: c9cd01233993e224c83d1f2ced0bfbc3
       vertices: []
       indices: 
       edges: []
@@ -294,7 +210,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7ddc784bd89d36c46b6d33d4165ded41
+    spriteID: 5271541e6bb40544cba990f48eb5ad31
     vertices: []
     indices: 
     edges: []

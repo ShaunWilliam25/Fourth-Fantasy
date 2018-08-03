@@ -37,6 +37,8 @@ TextureImporter:
     21300064: greed_attack_32
     21300066: greed_attack_33
     21300068: greed_attack_34
+    21300070: greed_attack_35
+    21300072: greed_attack_36
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -120,18 +122,18 @@ TextureImporter:
       name: greed_attack_0
       rect:
         serializedVersion: 2
-        x: 510
-        y: 4439
-        width: 397
-        height: 672
+        x: 512
+        y: 4443
+        width: 388
+        height: 661
       alignment: 9
-      pivot: {x: 0.49037766, y: 0.13049753}
+      pivot: {x: 0.7710269, y: 0.09719752}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cd8281299054b8e41b27db9c1174d516
+      spriteID: 74b6ffa4d18976642b02f0b3988a1be6
       vertices: []
       indices: 
       edges: []
@@ -140,18 +142,18 @@ TextureImporter:
       name: greed_attack_1
       rect:
         serializedVersion: 2
-        x: 1452
-        y: 4439
-        width: 394
-        height: 670
+        x: 1458
+        y: 4443
+        width: 386
+        height: 661
       alignment: 9
-      pivot: {x: 0.5096956, y: 0.1236933}
+      pivot: {x: 0.78402376, y: 0.09719752}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 73dfe749e47308945927485f5cae05ec
+      spriteID: 87d9b2d7a24a9b34f8f349087fa85b8b
       vertices: []
       indices: 
       edges: []
@@ -160,18 +162,18 @@ TextureImporter:
       name: greed_attack_2
       rect:
         serializedVersion: 2
-        x: 2400
-        y: 4436
-        width: 391
-        height: 675
+        x: 2403
+        y: 4443
+        width: 385
+        height: 661
       alignment: 9
-      pivot: {x: 0.4511494, y: 0.11516204}
+      pivot: {x: 0.7847612, y: 0.107352436}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55e4731943899d644b97daffb4b9360b
+      spriteID: 749c4e4097596594f8b557cc25c463b3
       vertices: []
       indices: 
       edges: []
@@ -180,18 +182,18 @@ TextureImporter:
       name: greed_attack_3
       rect:
         serializedVersion: 2
-        x: 3344
-        y: 4437
-        width: 392
-        height: 673
+        x: 3348
+        y: 4443
+        width: 384
+        height: 661
       alignment: 9
-      pivot: {x: 0.48050985, y: 0.12537074}
+      pivot: {x: 0.78550273, y: 0.10396771}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4a974a9f291c4984b97b7899ea079829
+      spriteID: 8cc70f6f18c3f3148952fc40aca5d2f4
       vertices: []
       indices: 
       edges: []
@@ -200,18 +202,18 @@ TextureImporter:
       name: greed_attack_4
       rect:
         serializedVersion: 2
-        x: 4291
-        y: 4436
-        width: 391
-        height: 673
+        x: 4292
+        y: 4443
+        width: 388
+        height: 661
       alignment: 9
-      pivot: {x: 0.5097694, y: 0.12537074}
+      pivot: {x: 0.78256005, y: 0.10058298}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de99f58cce64136419811042835f676c
+      spriteID: d9b5e85f282be0240bd1e1574c10759a
       vertices: []
       indices: 
       edges: []
@@ -220,18 +222,18 @@ TextureImporter:
       name: greed_attack_5
       rect:
         serializedVersion: 2
-        x: 5137
-        y: 4469
-        width: 490
-        height: 642
+        x: 5139
+        y: 4475
+        width: 485
+        height: 630
       alignment: 9
-      pivot: {x: 0.5857561, y: 0.07752948}
+      pivot: {x: 0.82292503, y: 0.06317119}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbb36d8e78ea87348b5e136e50f11534
+      spriteID: 3570252cb9d8cf6429f2ff002be444aa
       vertices: []
       indices: 
       edges: []
@@ -240,18 +242,18 @@ TextureImporter:
       name: greed_attack_6
       rect:
         serializedVersion: 2
-        x: 5985
-        y: 4482
-        width: 587
-        height: 629
+        x: 5989
+        y: 4484
+        width: 579
+        height: 622
       alignment: 9
-      pivot: {x: 0.6496794, y: 0.05665149}
+      pivot: {x: 0.85937667, y: 0.039567266}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c2d10acedf5709646b61ee10c6891ed1
+      spriteID: cfeb98b101c6bcc4cab3b101ebb9e0c1
       vertices: []
       indices: 
       edges: []
@@ -260,18 +262,18 @@ TextureImporter:
       name: greed_attack_7
       rect:
         serializedVersion: 2
-        x: 6854
-        y: 4482
-        width: 664
-        height: 629
+        x: 6856
+        y: 4484
+        width: 657
+        height: 624
       alignment: 9
-      pivot: {x: 0.48274028, y: 0.074870825}
+      pivot: {x: 0.8711993, y: 0.048213862}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a72b7c5d6e624ca44b6645bda81083c6
+      spriteID: e2cb17199b48eab4d8cd05dc0ff4f4ed
       vertices: []
       indices: 
       edges: []
@@ -280,18 +282,18 @@ TextureImporter:
       name: greed_attack_8
       rect:
         serializedVersion: 2
-        x: 178
-        y: 3391
-        width: 722
-        height: 641
+        x: 183
+        y: 3399
+        width: 714
+        height: 625
       alignment: 9
-      pivot: {x: 0.7062736, y: 0.048636544}
+      pivot: {x: 0.8904966, y: 0.03628711}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 658b5b7a8ac419a4295c8d560d6e6498
+      spriteID: 17d760e5957fede47a9435ef85b15398
       vertices: []
       indices: 
       edges: []
@@ -300,18 +302,18 @@ TextureImporter:
       name: greed_attack_9
       rect:
         serializedVersion: 2
-        x: 1084
-        y: 3391
-        width: 762
-        height: 638
+        x: 1088
+        y: 3399
+        width: 756
+        height: 625
       alignment: 9
-      pivot: {x: 0.757169, y: 0.06006051}
+      pivot: {x: 0.8906148, y: 0.041917577}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ed57d5e7568874f47bf15b7adc06a12a
+      spriteID: 0172a3529026f7240992ad8219899a7a
       vertices: []
       indices: 
       edges: []
@@ -320,18 +322,18 @@ TextureImporter:
       name: greed_attack_10
       rect:
         serializedVersion: 2
-        x: 2015
-        y: 3390
-        width: 776
-        height: 643
+        x: 2026
+        y: 3399
+        width: 762
+        height: 626
       alignment: 9
-      pivot: {x: 0.74139184, y: 0.08568653}
+      pivot: {x: 0.8875835, y: 0.04608369}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bd62d98352b4db347985b008ef6b5fde
+      spriteID: 6fbe40d26b6990948b4a225223930a2d
       vertices: []
       indices: 
       edges: []
@@ -340,18 +342,18 @@ TextureImporter:
       name: greed_attack_11
       rect:
         serializedVersion: 2
-        x: 2990
-        y: 3391
-        width: 746
-        height: 692
+        x: 2992
+        y: 3401
+        width: 738
+        height: 682
       alignment: 9
-      pivot: {x: 0.7330493, y: 0.07420852}
+      pivot: {x: 0.88806087, y: 0.030864459}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ad1485615648f9d45872f2352b26e6b8
+      spriteID: 458e9b11fd4adf845bee0b462a02addd
       vertices: []
       indices: 
       edges: []
@@ -360,18 +362,18 @@ TextureImporter:
       name: greed_attack_12
       rect:
         serializedVersion: 2
-        x: 3983
-        y: 3390
-        width: 699
-        height: 783
+        x: 3985
+        y: 3399
+        width: 693
+        height: 774
       alignment: 9
-      pivot: {x: 0.7006969, y: 0.0619478}
+      pivot: {x: 0.8809735, y: 0.034594472}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e972bb2b6bbc6f4ab30d917139f55cc
+      spriteID: edc6ab3b28776e342a3d18ab7b540604
       vertices: []
       indices: 
       edges: []
@@ -381,17 +383,17 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 4990
-        y: 3391
-        width: 637
-        height: 863
+        y: 3399
+        width: 634
+        height: 853
       alignment: 9
-      pivot: {x: 0.48800606, y: 0.052921653}
+      pivot: {x: 0.86702037, y: 0.030483805}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b102a5ce9fb60e43b39682ab7a09e73
+      spriteID: d2b1d8dc1c5607842a1217564b12626e
       vertices: []
       indices: 
       edges: []
@@ -400,18 +402,18 @@ TextureImporter:
       name: greed_attack_14
       rect:
         serializedVersion: 2
-        x: 6010
-        y: 3391
-        width: 558
-        height: 927
+        x: 6012
+        y: 3399
+        width: 551
+        height: 917
       alignment: 9
-      pivot: {x: 0.50684553, y: 0.050820757}
+      pivot: {x: 0.86139727, y: 0.031533543}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 736fe578b52d6284b94e3cf4773e60b5
+      spriteID: f7cd8b1ea1f3d554d8480c12483f5c23
       vertices: []
       indices: 
       edges: []
@@ -420,18 +422,18 @@ TextureImporter:
       name: greed_attack_15
       rect:
         serializedVersion: 2
-        x: 7042
-        y: 3391
-        width: 464
-        height: 985
+        x: 7044
+        y: 3399
+        width: 460
+        height: 969
       alignment: 9
-      pivot: {x: 0.5576309, y: 0.046243705}
+      pivot: {x: 0.8404753, y: 0.026656175}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b486c387cbd09c45bcfda360c846369
+      spriteID: 6ffa296b117e0e940907e6e68c980a23
       vertices: []
       indices: 
       edges: []
@@ -440,18 +442,18 @@ TextureImporter:
       name: greed_attack_16
       rect:
         serializedVersion: 2
-        x: 516
-        y: 2307
-        width: 374
-        height: 1003
+        x: 520
+        y: 2314
+        width: 366
+        height: 998
       alignment: 9
-      pivot: {x: 0.53466326, y: 0.053630125}
+      pivot: {x: 0.7970346, y: 0.027958995}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1d6971f94e83e8c45be5b9cc2132e116
+      spriteID: 999c8f9ff06f9a349bd0b2e85a6be3fd
       vertices: []
       indices: 
       edges: []
@@ -460,18 +462,18 @@ TextureImporter:
       name: greed_attack_17
       rect:
         serializedVersion: 2
-        x: 1451
-        y: 2311
-        width: 378
-        height: 1018
-      alignment: 9
-      pivot: {x: 0.5632883, y: 0.04550345}
+        x: 882
+        y: 2561
+        width: 4
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b4d248063878364a89a7dc81f1a9d3b
+      spriteID: 75f1e06e95a550a4c98e0c6894f6339f
       vertices: []
       indices: 
       edges: []
@@ -480,18 +482,18 @@ TextureImporter:
       name: greed_attack_18
       rect:
         serializedVersion: 2
-        x: 2385
-        y: 2311
-        width: 386
-        height: 995
+        x: 1454
+        y: 2312
+        width: 373
+        height: 1006
       alignment: 9
-      pivot: {x: 0.51638967, y: 0.05488821}
+      pivot: {x: 0.823398, y: 0.027364379}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 01ef5dbd26155b14ebd089cc8298a47c
+      spriteID: c067f21a9f6eb58468d85a3ebe02a11e
       vertices: []
       indices: 
       edges: []
@@ -500,18 +502,18 @@ TextureImporter:
       name: greed_attack_19
       rect:
         serializedVersion: 2
-        x: 3318
-        y: 2311
-        width: 402
-        height: 980
+        x: 2387
+        y: 2312
+        width: 381
+        height: 989
       alignment: 9
-      pivot: {x: 0.5607564, y: 0.050756834}
+      pivot: {x: 0.8347309, y: 0.024916908}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d50ef105b21aceb468729e38cd1e6826
+      spriteID: 5ee43a2bb252bc64a8d19d9d0c1c4573
       vertices: []
       indices: 
       edges: []
@@ -520,18 +522,18 @@ TextureImporter:
       name: greed_attack_20
       rect:
         serializedVersion: 2
-        x: 4112
-        y: 2313
-        width: 558
-        height: 891
+        x: 3320
+        y: 2315
+        width: 396
+        height: 973
       alignment: 9
-      pivot: {x: 0.56846, y: 0.066971526}
+      pivot: {x: 0.872902, y: 0.02860209}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d9430ea5668a8c41a13b697f85c415f
+      spriteID: 86c451b3feb13704a8d4446016cda697
       vertices: []
       indices: 
       edges: []
@@ -540,18 +542,18 @@ TextureImporter:
       name: greed_attack_21
       rect:
         serializedVersion: 2
-        x: 4891
-        y: 2314
-        width: 736
-        height: 738
-      alignment: 9
-      pivot: {x: 0.5103806, y: 0.08072255}
+        x: 3712
+        y: 2550
+        width: 5
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ffd4d4837b51bb7488b0b4ace44b7701
+      spriteID: 65f5ae64d34ab9744b8602b47d1eea8e
       vertices: []
       indices: 
       edges: []
@@ -560,18 +562,18 @@ TextureImporter:
       name: greed_attack_22
       rect:
         serializedVersion: 2
-        x: 5725
-        y: 2312
-        width: 855
-        height: 557
+        x: 4111
+        y: 2316
+        width: 555
+        height: 881
       alignment: 9
-      pivot: {x: 0.5134035, y: 0.09535905}
+      pivot: {x: 0.92732525, y: 0.040326986}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 08ffa87ba78e4944986a951a2eaf784b
+      spriteID: 55c62eb1946364844a5af7c6df9b3351
       vertices: []
       indices: 
       edges: []
@@ -580,18 +582,18 @@ TextureImporter:
       name: greed_attack_23
       rect:
         serializedVersion: 2
-        x: 6615
-        y: 2314
-        width: 922
-        height: 539
+        x: 4896
+        y: 2316
+        width: 726
+        height: 735
       alignment: 9
-      pivot: {x: 0.5, y: 0.09602065}
+      pivot: {x: 0.95303017, y: 0.05556109}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b3ad3aaffb658b4f83e395db0cea35f
+      spriteID: ba94b33151e21154290ff9e30c1b981d
       vertices: []
       indices: 
       edges: []
@@ -600,18 +602,18 @@ TextureImporter:
       name: greed_attack_24
       rect:
         serializedVersion: 2
-        x: 22
-        y: 1219
-        width: 917
-        height: 529
+        x: 5728
+        y: 2315
+        width: 848
+        height: 550
       alignment: 9
-      pivot: {x: 0.67600024, y: 0.09655347}
+      pivot: {x: 0.98283815, y: 0.08912953}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e7fc7afd6e185af4fa08ce50911ba9a7
+      spriteID: 2c257b9f62cf5f646b0e8d36a267d4e8
       vertices: []
       indices: 
       edges: []
@@ -620,18 +622,18 @@ TextureImporter:
       name: greed_attack_25
       rect:
         serializedVersion: 2
-        x: 967
-        y: 1225
-        width: 918
-        height: 526
+        x: 6620
+        y: 2315
+        width: 913
+        height: 535
       alignment: 9
-      pivot: {x: 0.68467706, y: 0.11794545}
+      pivot: {x: 0.9876726, y: 0.10688431}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c56dcf4c538d8341a17912db6f4b23a
+      spriteID: 3f3aa2848bf7c454684ad8434e560ceb
       vertices: []
       indices: 
       edges: []
@@ -640,18 +642,18 @@ TextureImporter:
       name: greed_attack_26
       rect:
         serializedVersion: 2
-        x: 1905
-        y: 1219
-        width: 925
-        height: 529
+        x: 26
+        y: 1226
+        width: 910
+        height: 522
       alignment: 9
-      pivot: {x: 0.67502004, y: 0.096911825}
+      pivot: {x: 0.9843633, y: 0.122811384}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a6652f123a4dd094eb171ecf10ed60e0
+      spriteID: 5e2b205ca0d067c4f87de7b8224f244b
       vertices: []
       indices: 
       edges: []
@@ -660,18 +662,18 @@ TextureImporter:
       name: greed_attack_27
       rect:
         serializedVersion: 2
-        x: 2857
-        y: 1225
-        width: 918
-        height: 527
+        x: 970
+        y: 1226
+        width: 911
+        height: 522
       alignment: 9
-      pivot: {x: 0.66966975, y: 0.102630556}
+      pivot: {x: 0.98628765, y: 0.13566993}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 93099e7738a053549b0b0776fcfb11d0
+      spriteID: 2c8704d3987bd1c4f908a2b93ac2215f
       vertices: []
       indices: 
       edges: []
@@ -680,18 +682,18 @@ TextureImporter:
       name: greed_attack_28
       rect:
         serializedVersion: 2
-        x: 3858
-        y: 1219
-        width: 847
-        height: 546
+        x: 1915
+        y: 1224
+        width: 913
+        height: 522
       alignment: 9
-      pivot: {x: 0.4954896, y: 0.06621756}
+      pivot: {x: 0.98277164, y: 0.12709787}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3696e36b7982d0741abd1ea2285bacbe
+      spriteID: ffeca84136bd7554ea74a895fb491939
       vertices: []
       indices: 
       edges: []
@@ -700,18 +702,18 @@ TextureImporter:
       name: greed_attack_29
       rect:
         serializedVersion: 2
-        x: 4866
-        y: 1203
-        width: 780
-        height: 579
+        x: 2860
+        y: 1226
+        width: 912
+        height: 522
       alignment: 9
-      pivot: {x: 0.4608198, y: 0.084342994}
+      pivot: {x: 0.98084784, y: 0.13138367}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a541fa7f19c5f243bdeb29d7541deb7
+      spriteID: 2133f7c5da01f2841bc4f707241e68ac
       vertices: []
       indices: 
       edges: []
@@ -720,18 +722,18 @@ TextureImporter:
       name: greed_attack_30
       rect:
         serializedVersion: 2
-        x: 5874
-        y: 1186
-        width: 714
-        height: 611
+        x: 3859
+        y: 1228
+        width: 842
+        height: 533
       alignment: 9
-      pivot: {x: 0.44649696, y: 0.11861658}
+      pivot: {x: 0.98627883, y: 0.11380434}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1fe8fd00f5eba83428847426a281bd42
+      spriteID: 5adcf17665b182f4db19f35c7a70eace
       vertices: []
       indices: 
       edges: []
@@ -740,18 +742,18 @@ TextureImporter:
       name: greed_attack_31
       rect:
         serializedVersion: 2
-        x: 6891
-        y: 1171
-        width: 640
-        height: 642
+        x: 4866
+        y: 1207
+        width: 775
+        height: 569
       alignment: 9
-      pivot: {x: 0.5238754, y: 0.12513196}
+      pivot: {x: 0.9705784, y: 0.13037431}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 97a9b72d0ae81fb429507c46b5c0c775
+      spriteID: 2f3b2125f40c76a4ca1302125273dac6
       vertices: []
       indices: 
       edges: []
@@ -760,18 +762,18 @@ TextureImporter:
       name: greed_attack_32
       rect:
         serializedVersion: 2
-        x: 360
-        y: 84
-        width: 552
-        height: 652
+        x: 5877
+        y: 1191
+        width: 704
+        height: 601
       alignment: 9
-      pivot: {x: 0.47629404, y: 0.13241912}
+      pivot: {x: 0.95129675, y: 0.13516352}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f446c6270a451b147bb7ff4e9764daee
+      spriteID: 45fe7a12d09fbd54294720ebcfc950e0
       vertices: []
       indices: 
       edges: []
@@ -780,18 +782,18 @@ TextureImporter:
       name: greed_attack_33
       rect:
         serializedVersion: 2
-        x: 1375
-        y: 78
-        width: 475
-        height: 674
+        x: 6895
+        y: 1179
+        width: 630
+        height: 626
       alignment: 9
-      pivot: {x: 0.5717249, y: 0.1353125}
+      pivot: {x: 0.92617345, y: 0.13901137}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d66ebbfa448061749944358c4141c524
+      spriteID: 0fbbc892d2ae8cc42b7392ff8a7f1bd2
       vertices: []
       indices: 
       edges: []
@@ -800,18 +802,58 @@ TextureImporter:
       name: greed_attack_34
       rect:
         serializedVersion: 2
-        x: 2404
-        y: 97
-        width: 391
-        height: 674
+        x: 358
+        y: 84
+        width: 547
+        height: 648
       alignment: 9
-      pivot: {x: 0.4316094, y: 0.09191983}
+      pivot: {x: 0.89676267, y: 0.14781436}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ad22ee7cca510b4eb776b3098ebbe33
+      spriteID: 3ff9725a027a3ae4f9c9c4986b2cb06e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_attack_35
+      rect:
+        serializedVersion: 2
+        x: 1381
+        y: 90
+        width: 465
+        height: 660
+      alignment: 9
+      pivot: {x: 0.84643817, y: 0.123707786}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25ea0a469156e9742808fc6419afadba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: greed_attack_36
+      rect:
+        serializedVersion: 2
+        x: 2403
+        y: 99
+        width: 385
+        height: 661
+      alignment: 9
+      pivot: {x: 0.7847612, y: 0.10396769}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1551e9873d6929f49a693c38dc350bda
       vertices: []
       indices: 
       edges: []

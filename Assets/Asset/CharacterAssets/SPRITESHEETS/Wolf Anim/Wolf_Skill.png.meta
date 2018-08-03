@@ -1,17 +1,23 @@
 fileFormatVersion: 2
-guid: 6ea7ad69ee34f0a4c86798c5ed75f813
+guid: d45b3e4b4dc945e40aafdb56af3498d8
 TextureImporter:
   fileIDToRecycleName:
-    21300000: attacked_0
-    21300002: attacked_1
-    21300004: attacked_2
-    21300006: attacked_3
-    21300008: attacked_4
-    21300010: attacked_5
-    21300012: attacked_6
-    21300014: attacked_7
-    21300016: attacked_8
-    21300018: attacked_9
+    21300000: Wolf_Skill_0
+    21300002: Wolf_Skill_1
+    21300004: Wolf_Skill_2
+    21300006: Wolf_Skill_3
+    21300008: Wolf_Skill_4
+    21300010: Wolf_Skill_5
+    21300012: Wolf_Skill_6
+    21300014: Wolf_Skill_7
+    21300016: Wolf_Skill_8
+    21300018: Wolf_Skill_9
+    21300020: Wolf_Skill_10
+    21300022: Wolf_Skill_11
+    21300024: Wolf_Skill_12
+    21300026: Wolf_Skill_13
+    21300028: Wolf_Skill_14
+    21300030: Wolf_Skill_15
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -92,13 +98,253 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: attacked_0
+      name: Wolf_Skill_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1968
+        width: 1060
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07057898cb1084f45b1de2680bda30d6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf_Skill_1
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1968
+        width: 1060
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 908005504809ce04a8e078543a451f1b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf_Skill_2
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 1968
+        width: 1060
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c19456daf2f8fbe48b9685d412917475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf_Skill_3
+      rect:
+        serializedVersion: 2
+        x: 3180
+        y: 1968
+        width: 1060
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97043a5b8c644fc429c4722f90cd598d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf_Skill_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1312
+        width: 1060
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3778dfb52dd0d8a41beb7dc8ba9c409e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf_Skill_5
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 1312
+        width: 1060
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92961f360dd3dc94db8c9b0984dfd0f3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf_Skill_6
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 1312
+        width: 1060
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d2599348a3c46141bd2a275864ebddf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf_Skill_7
+      rect:
+        serializedVersion: 2
+        x: 3180
+        y: 1312
+        width: 1060
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38dddeb2782d37f4dbaf2ce5bb8f396b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf_Skill_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 656
+        width: 1060
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8c172bfe2ee2384a956c9ed018386b9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf_Skill_9
+      rect:
+        serializedVersion: 2
+        x: 1060
+        y: 656
+        width: 1060
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41d7fb0b9ec044b4886377fe26bedf59
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf_Skill_10
+      rect:
+        serializedVersion: 2
+        x: 2120
+        y: 656
+        width: 1060
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c8412dca7658f04693a8fe2b8851028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf_Skill_11
+      rect:
+        serializedVersion: 2
+        x: 3180
+        y: 656
+        width: 1060
+        height: 656
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dfc6fb47c0ddbd42a53e01db9a5eb2a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf_Skill_12
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 254
-        height: 319
+        width: 1060
+        height: 656
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -106,19 +352,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cc507144a241de41aab584192fcb2c1
+      spriteID: ed343c3cddb0ac24e96bd11bf63ba9af
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attacked_1
+      name: Wolf_Skill_13
       rect:
         serializedVersion: 2
-        x: 254
+        x: 1060
         y: 0
-        width: 254
-        height: 319
+        width: 1060
+        height: 656
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -126,19 +372,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc5228ed0b3cb1b45afb1cd0b8cb233e
+      spriteID: 5914a43200f06f24799ee307ca19ffe9
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attacked_2
+      name: Wolf_Skill_14
       rect:
         serializedVersion: 2
-        x: 508
+        x: 2120
         y: 0
-        width: 254
-        height: 319
+        width: 1060
+        height: 656
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,19 +392,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 891adb670dea2384a9863db66e18f3f1
+      spriteID: 85f101b1897728246bca1f2d4f2b50e2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attacked_3
+      name: Wolf_Skill_15
       rect:
         serializedVersion: 2
-        x: 762
+        x: 3180
         y: 0
-        width: 254
-        height: 319
+        width: 1060
+        height: 656
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -166,127 +412,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd95e9a47f0e86d4795258769f23734a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attacked_4
-      rect:
-        serializedVersion: 2
-        x: 1016
-        y: 0
-        width: 254
-        height: 319
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: eaacfcb8a088641468f292a3199d0c2c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attacked_5
-      rect:
-        serializedVersion: 2
-        x: 1270
-        y: 0
-        width: 254
-        height: 319
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9d4cd5c0275e63e4dbbdc9c302d8b958
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attacked_6
-      rect:
-        serializedVersion: 2
-        x: 1524
-        y: 0
-        width: 254
-        height: 319
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: bccc86b75335514419a895734929bbc0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attacked_7
-      rect:
-        serializedVersion: 2
-        x: 1778
-        y: 0
-        width: 254
-        height: 319
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: de1d836ea0be2444e95ec0a857adb07f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attacked_8
-      rect:
-        serializedVersion: 2
-        x: 2032
-        y: 0
-        width: 254
-        height: 319
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5e0a3011b8d997947be3a3c2bf26f2f3
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attacked_9
-      rect:
-        serializedVersion: 2
-        x: 2286
-        y: 0
-        width: 254
-        height: 319
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 709fa780c2d38264ea00777e5f8f6698
+      spriteID: 86fbe99982183ca4d9bba5611cc03bf5
       vertices: []
       indices: 
       edges: []
@@ -294,7 +420,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 7ddc784bd89d36c46b6d33d4165ded41
+    spriteID: 4fa430e74cb8a864fbc57a0b1ebf79b5
     vertices: []
     indices: 
     edges: []
