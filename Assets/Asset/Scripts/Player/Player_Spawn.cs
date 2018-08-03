@@ -77,6 +77,7 @@ public class Player_Spawn : MonoBehaviour {
             sceneManager.playerList[i].GetComponent<PlayerVariableManager>().gameState = BattleStateManager.GAMESTATE.CHOOSING_SKILL;
             sceneManager.playerList[i].GetComponent<PlayerVariableManager>().isTargetLockedIn = false;
             sceneManager.playerList[i].GetComponent<PlayerVariableManager>().statusList.Clear();
+            sceneManager.playerList[i].GetComponent<PlayerVariableManager>().anim.GetComponent<Animator>().Play(sceneManager.playerList[i].GetComponent<PlayerVariableManager>().idleAnimation);
 
             sceneManager.playerList[i].GetComponent<PlayerStats>().health = sceneManager.playerList[i].GetComponent<PlayerStats>().baseHealth;
             sceneManager.playerList[i].GetComponent<PlayerStats>().Reset();

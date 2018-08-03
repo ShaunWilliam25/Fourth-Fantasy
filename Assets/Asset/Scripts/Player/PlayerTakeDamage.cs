@@ -10,6 +10,10 @@ public class PlayerTakeDamage : MonoBehaviour {
     [SerializeField] private float damageAnimationTimer;
     public void PlayerDamage(int damage)
     {
+        if(GetComponent<PlayerStats>().knockedOut)
+        {
+            return;
+        }
         artifacts = GetComponent<PlayerVariableManager>().artifactsList;
         for (int i=0;i<artifacts.Count;i++)
         {
@@ -51,6 +55,10 @@ public class PlayerTakeDamage : MonoBehaviour {
 
     public void PlayerHeal(int heal)
     {
+        if (GetComponent<PlayerStats>().knockedOut)
+        {
+            return;
+        }
         GetComponent<PlayerStats>().health += heal;
         PopUpDamage(gameObject, heal, Color.green);
     }
