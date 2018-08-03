@@ -419,6 +419,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d63795eb7a8d8746b39425471c58025, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EncyclopediaP1: 8
+  EncyclopediaP2: 9
+  EncyclopediaP3: 10
+  EncyclopediaP4: 11
+  EncyclopediaP5: 12
+  EncyclopediaP6: 13
+  EncyclopediaP7: 14
+  EncyclopediaP8: 15
+  EncyclopediaP9: 16
+  EncyclopediaP10: 17
+  EncyclopediaP11: 18
+  StartMenuFinal: 0
 --- !u!1 &438584446
 GameObject:
   m_ObjectHideFlags: 0
@@ -673,8 +685,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 457460079}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.32, y: -3.1, z: -1.625}
-  m_LocalScale: {x: 10.156555, y: 10.156555, z: 10.156555}
+  m_LocalPosition: {x: -0.87, y: -2.98, z: -1.625}
+  m_LocalScale: {x: 11.049187, y: 10.199202, z: 10.199202}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
@@ -2474,6 +2486,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d63795eb7a8d8746b39425471c58025, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EncyclopediaP1: 8
+  EncyclopediaP2: 9
+  EncyclopediaP3: 10
+  EncyclopediaP4: 11
+  EncyclopediaP5: 12
+  EncyclopediaP6: 13
+  EncyclopediaP7: 14
+  EncyclopediaP8: 15
+  EncyclopediaP9: 16
+  EncyclopediaP10: 17
+  EncyclopediaP11: 18
+  StartMenuFinal: 0
 --- !u!1 &1975687332
 GameObject:
   m_ObjectHideFlags: 0
@@ -2672,6 +2696,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d63795eb7a8d8746b39425471c58025, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EncyclopediaP1: 0
+  EncyclopediaP2: 0
+  EncyclopediaP3: 0
+  EncyclopediaP4: 0
+  EncyclopediaP5: 0
+  EncyclopediaP6: 0
+  EncyclopediaP7: 0
+  EncyclopediaP8: 0
+  EncyclopediaP9: 0
+  EncyclopediaP10: 0
+  EncyclopediaP11: 0
+  StartMenuFinal: 0
 --- !u!114 &2008989572
 MonoBehaviour:
   m_ObjectHideFlags: 0

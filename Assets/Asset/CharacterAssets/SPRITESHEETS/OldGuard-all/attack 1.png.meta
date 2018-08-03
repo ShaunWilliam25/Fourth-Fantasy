@@ -1,22 +1,22 @@
 fileFormatVersion: 2
-guid: d786f856b72607b4186a4fd300eb2f09
+guid: 89115a456a5f790409c5e4cde2a1f927
 TextureImporter:
   fileIDToRecycleName:
-    21300000: cast spell_0
-    21300002: cast spell_1
-    21300004: cast spell_2
-    21300006: cast spell_3
-    21300008: cast spell_4
-    21300010: cast spell_5
-    21300012: cast spell_6
-    21300014: cast spell_7
-    21300016: cast spell_8
-    21300018: cast spell_9
-    21300020: cast spell_10
-    21300022: cast spell_11
-    21300024: cast spell_12
-    21300026: cast spell_13
-    21300028: cast spell_14
+    21300000: attack 1_0
+    21300002: attack 1_1
+    21300004: attack 1_2
+    21300006: attack 1_3
+    21300008: attack 1_4
+    21300010: attack 1_5
+    21300012: attack 1_6
+    21300014: attack 1_7
+    21300016: attack 1_8
+    21300018: attack 1_9
+    21300020: attack 1_10
+    21300022: attack 1_11
+    21300024: attack 1_12
+    21300026: attack 1_13
+    21300028: attack 1_14
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -73,7 +73,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -84,7 +84,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: cast spell_0
+      name: attack 1_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 355
-        height: 390
+        width: 389
+        height: 316
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,19 +111,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cbca26534e83cd843b25ee00ba23f2bf
+      spriteID: 717da65ad59096045b686294b1558668
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cast spell_1
+      name: attack 1_1
       rect:
         serializedVersion: 2
-        x: 355
+        x: 389
         y: 0
-        width: 355
-        height: 390
+        width: 389
+        height: 316
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,19 +131,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5d9f62082f556c54cb262c03a249cf1c
+      spriteID: 7c78a5fd430b0f445aaea81d49019dbc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cast spell_2
+      name: attack 1_2
       rect:
         serializedVersion: 2
-        x: 710
+        x: 778
         y: 0
-        width: 355
-        height: 390
+        width: 389
+        height: 316
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -151,19 +151,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8b91040907d7fbc408f74c5ee323c6b2
+      spriteID: f6d18abc8c1886745a9db69a8de239ae
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cast spell_3
+      name: attack 1_3
       rect:
         serializedVersion: 2
-        x: 1065
+        x: 1167
         y: 0
-        width: 355
-        height: 390
+        width: 389
+        height: 316
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -171,19 +171,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d9051fbdc67e28d48a3ffe8b1982a2c3
+      spriteID: 9c72b51139a52be4c89e9ebdb0853e6d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cast spell_4
+      name: attack 1_4
       rect:
         serializedVersion: 2
-        x: 1420
+        x: 1556
         y: 0
-        width: 355
-        height: 390
+        width: 389
+        height: 316
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -191,19 +191,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b8921e517c243742b59eb492f1d7084
+      spriteID: d3cafe23c43f1dc4e89509202300e6b6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cast spell_5
+      name: attack 1_5
       rect:
         serializedVersion: 2
-        x: 1775
+        x: 1945
         y: 0
-        width: 355
-        height: 390
+        width: 389
+        height: 316
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -211,19 +211,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3cbce1f4a24880c48b4fecec9139e44e
+      spriteID: 4bb734691b467d64a94ac01f08538fb2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cast spell_6
+      name: attack 1_6
       rect:
         serializedVersion: 2
-        x: 2130
+        x: 2334
         y: 0
-        width: 355
-        height: 390
+        width: 389
+        height: 316
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -231,19 +231,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c00f0a71751b254f92fc92b22374390
+      spriteID: bbf46d4e969cfba499d4db9270f2a422
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cast spell_7
+      name: attack 1_7
       rect:
         serializedVersion: 2
-        x: 2485
+        x: 2723
         y: 0
-        width: 355
-        height: 390
+        width: 389
+        height: 316
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -251,19 +251,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 961c05baec5eaf848b0f312467960250
+      spriteID: 674ae560fe3a4b44c92d10565273c010
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cast spell_8
+      name: attack 1_8
       rect:
         serializedVersion: 2
-        x: 2840
+        x: 3112
         y: 0
-        width: 355
-        height: 390
+        width: 389
+        height: 316
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,19 +271,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3dabb8556a8a876418cb7cfce1989e04
+      spriteID: 81187c896d675b74083bd49297dc7e8c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cast spell_9
+      name: attack 1_9
       rect:
         serializedVersion: 2
-        x: 3195
+        x: 3501
         y: 0
-        width: 355
-        height: 390
+        width: 389
+        height: 316
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -291,19 +291,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e6ece2e78c32b148848879694f0fe09
+      spriteID: 453b360fe9d20ef45a32e7006392a291
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cast spell_10
+      name: attack 1_10
       rect:
         serializedVersion: 2
-        x: 3550
+        x: 3890
         y: 0
-        width: 355
-        height: 390
+        width: 389
+        height: 316
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -311,19 +311,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2570e13ac5992624a83aade337cb603f
+      spriteID: 28c54aa8fcd26e7409b859eec53edbd7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cast spell_11
+      name: attack 1_11
       rect:
         serializedVersion: 2
-        x: 3905
+        x: 4279
         y: 0
-        width: 355
-        height: 390
+        width: 389
+        height: 316
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -331,19 +331,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c3088f2db2958b4b820d0b34747ad62
+      spriteID: 07035fb15a1e6584ea64e6aa07e47546
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cast spell_12
+      name: attack 1_12
       rect:
         serializedVersion: 2
-        x: 4260
+        x: 4668
         y: 0
-        width: 355
-        height: 390
+        width: 389
+        height: 316
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -351,19 +351,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 954dda1d93ffa5e48a16ed3667f0ba53
+      spriteID: 2100eb67d8bae5446b67dab762045f18
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cast spell_13
+      name: attack 1_13
       rect:
         serializedVersion: 2
-        x: 4615
+        x: 5057
         y: 0
-        width: 355
-        height: 390
+        width: 389
+        height: 316
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -371,19 +371,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 29b371c39f748d2448e68f0cb9e350fd
+      spriteID: e064c321e0e11334b858f4737084d882
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: cast spell_14
+      name: attack 1_14
       rect:
         serializedVersion: 2
-        x: 4970
+        x: 5446
         y: 0
-        width: 355
-        height: 390
+        width: 389
+        height: 316
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -391,7 +391,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aecf5b9f17296d840bacd490d6f6e732
+      spriteID: 98af1aa6be6725f41a2a0496fcd02b4f
       vertices: []
       indices: 
       edges: []
@@ -399,7 +399,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 1777851da7477c34c886a08185296c15
+    spriteID: c29b20b82bba83f4b82d18a9be686482
     vertices: []
     indices: 
     edges: []

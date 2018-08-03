@@ -362,8 +362,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 289425013}
-        m_MethodName: 
+      - m_Target: {fileID: 289425018}
+        m_MethodName: Encyclopedia_TimePriestess
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1308,8 +1308,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1062057400}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -6.91, y: -0.41, z: 0}
-  m_LocalScale: {x: 0.62518424, y: 0.62518424, z: 0.62518424}
+  m_LocalPosition: {x: -6.86, y: -0.01, z: 0}
+  m_LocalScale: {x: 0.8603523, y: 0.8603523, z: 0.8603523}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5

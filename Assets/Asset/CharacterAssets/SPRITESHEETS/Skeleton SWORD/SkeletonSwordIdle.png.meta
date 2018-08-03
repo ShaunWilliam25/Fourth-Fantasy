@@ -72,7 +72,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 2
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -83,7 +83,7 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   - serializedVersion: 2
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -104,7 +104,7 @@ TextureImporter:
         width: 545
         height: 583
       alignment: 9
-      pivot: {x: 0.6719445, y: 0.5794145}
+      pivot: {x: 0.5782158, y: 0.035112854}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -121,10 +121,10 @@ TextureImporter:
         serializedVersion: 2
         x: 542
         y: 0
-        width: 561
+        width: 549
         height: 583
       alignment: 9
-      pivot: {x: 0.6752586, y: 0.57947314}
+      pivot: {x: 0.5993749, y: 0.03201682}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -141,10 +141,10 @@ TextureImporter:
         serializedVersion: 2
         x: 1098
         y: 0
-        width: 566
+        width: 556
         height: 583
       alignment: 9
-      pivot: {x: 0.6742463, y: 0.57918775}
+      pivot: {x: 0.59894526, y: 0.034886133}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -159,12 +159,12 @@ TextureImporter:
       name: SkeletonSwordIdle_3
       rect:
         serializedVersion: 2
-        x: 1650
+        x: 1663
         y: 0
-        width: 572
+        width: 558
         height: 583
       alignment: 9
-      pivot: {x: 0.6851738, y: 0.57889575}
+      pivot: {x: 0.58775103, y: 0.031938985}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -179,12 +179,12 @@ TextureImporter:
       name: SkeletonSwordIdle_4
       rect:
         serializedVersion: 2
-        x: 2213
+        x: 2222
         y: 0
-        width: 582
+        width: 567
         height: 583
       alignment: 9
-      pivot: {x: 0.69350284, y: 0.5732518}
+      pivot: {x: 0.59509444, y: 0.03426036}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -201,10 +201,10 @@ TextureImporter:
         serializedVersion: 2
         x: 2788
         y: 0
-        width: 586
+        width: 578
         height: 583
       alignment: 9
-      pivot: {x: 0.70025694, y: 0.5665289}
+      pivot: {x: 0.60996467, y: 0.03550293}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -224,7 +224,7 @@ TextureImporter:
         width: 583
         height: 583
       alignment: 9
-      pivot: {x: 0.70471, y: 0.55963266}
+      pivot: {x: 0.60116005, y: 0.033916883}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -244,7 +244,7 @@ TextureImporter:
         width: 582
         height: 583
       alignment: 9
-      pivot: {x: 0.7046276, y: 0.5664386}
+      pivot: {x: 0.6062188, y: 0.03541258}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -264,7 +264,7 @@ TextureImporter:
         width: 579
         height: 583
       alignment: 9
-      pivot: {x: 0.70272356, y: 0.56562257}
+      pivot: {x: 0.6038049, y: 0.031941414}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -284,7 +284,7 @@ TextureImporter:
         width: 569
         height: 583
       alignment: 9
-      pivot: {x: 0.692406, y: 0.5724803}
+      pivot: {x: 0.59446996, y: 0.033488892}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -299,12 +299,12 @@ TextureImporter:
       name: SkeletonSwordIdle_10
       rect:
         serializedVersion: 2
-        x: 5671
+        x: 5676
         y: 0
-        width: 567
+        width: 562
         height: 583
       alignment: 9
-      pivot: {x: 0.6884533, y: 0.5728268}
+      pivot: {x: 0.59290177, y: 0.03649058}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -319,12 +319,12 @@ TextureImporter:
       name: SkeletonSwordIdle_11
       rect:
         serializedVersion: 2
-        x: 6233
+        x: 6239
         y: 0
-        width: 562
+        width: 556
         height: 583
       alignment: 9
-      pivot: {x: 0.68270844, y: 0.5792151}
+      pivot: {x: 0.5918151, y: 0.032258317}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -344,7 +344,7 @@ TextureImporter:
         width: 555
         height: 583
       alignment: 9
-      pivot: {x: 0.6761684, y: 0.57877654}
+      pivot: {x: 0.5813397, y: 0.03447492}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -364,7 +364,7 @@ TextureImporter:
         width: 546
         height: 583
       alignment: 9
-      pivot: {x: 0.66808677, y: 0.58542424}
+      pivot: {x: 0.57736486, y: 0.033157244}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
