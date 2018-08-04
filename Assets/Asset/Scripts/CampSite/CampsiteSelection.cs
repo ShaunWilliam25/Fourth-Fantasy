@@ -376,7 +376,7 @@ public class CampsiteSelection : MonoBehaviour
                 upgradeSkillObject.transform.parent = csm.playerList[0].transform.GetChild(1);
                 csm.playerList[0].GetComponent<PlayerVariableManager>().skillHolder[player1.skillIndex].GetComponent<SkillDetail>().skillExecutionHolder.Add(upgradeSkillObject);
                 csm.playerList[0].GetComponent<PlayerVariableManager>().skillHolder[player1.skillIndex].GetComponent<SkillDetail>().upgradedCount++;
-                csm.playerList[0].GetComponent<PlayerVariableManager>().skillHolder[player1.skillIndex].GetComponent<SkillDetail>().upgradedEffect.Add(upgradeObject.GetComponent<UpgradeDescription>().upgradeDescription);
+                csm.playerList[0].GetComponent<PlayerVariableManager>().skillHolder[player1.skillIndex].GetComponent<SkillDetail>().upgradedEffect.Add(upgradeSkillObject.GetComponent<UpgradeDescription>().upgradeDescription);
                 player1.upgradeLeft--;
                 player1.upgradeState = UPGRADE_STATE.UPGRADE;
             }
@@ -504,7 +504,7 @@ public class CampsiteSelection : MonoBehaviour
                 upgradeSkillObject.transform.parent = csm.playerList[1].transform.GetChild(1);
                 csm.playerList[1].GetComponent<PlayerVariableManager>().skillHolder[player2.skillIndex].GetComponent<SkillDetail>().skillExecutionHolder.Add(upgradeSkillObject);
                 csm.playerList[1].GetComponent<PlayerVariableManager>().skillHolder[player2.skillIndex].GetComponent<SkillDetail>().upgradedCount++;
-                csm.playerList[1].GetComponent<PlayerVariableManager>().skillHolder[player2.skillIndex].GetComponent<SkillDetail>().upgradedEffect.Add(upgradeObject.GetComponent<UpgradeDescription>().upgradeDescription);
+                csm.playerList[1].GetComponent<PlayerVariableManager>().skillHolder[player2.skillIndex].GetComponent<SkillDetail>().upgradedEffect.Add(upgradeSkillObject.GetComponent<UpgradeDescription>().upgradeDescription);
                 player2.upgradeLeft--;
                 player2.upgradeState = UPGRADE_STATE.UPGRADE;
             }
