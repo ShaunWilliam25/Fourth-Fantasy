@@ -9,7 +9,6 @@ public class SceneManager : MonoBehaviour {
     public List<GameObject> enemyList;
     private int playerDeathCount = 0;
     public bool isWin = false;
-    public AudioManager audioManager;
     //public SceneManager BrightnessSetting;
     //public SliderJoint2D BrightnessSlider;
     public GameObject victory;
@@ -24,8 +23,6 @@ public class SceneManager : MonoBehaviour {
     public void Awake()
     {
         tutorial = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<TutorialAppear>();
-        playerList[0] = GameObject.FindGameObjectWithTag("Player1");
-        playerList[1] = GameObject.FindGameObjectWithTag("Player2");
         if (Player1.instance.gameObject.activeInHierarchy == false)
         {
             Player1.instance.gameObject.SetActive(true);
@@ -34,8 +31,6 @@ public class SceneManager : MonoBehaviour {
         {
             Player2.instance.gameObject.SetActive(true);
         }
-        playerList[0] = Player1.instance.gameObject;
-        playerList[1] = Player2.instance.gameObject;
     }
 
 
@@ -135,11 +130,11 @@ public class SceneManager : MonoBehaviour {
         
         if (Input.GetKeyDown("b"))
         {
-            for (int k = 0; k < playerList.Count; k++)
-            {
-                playerList[k].GetComponent<PlayerStats>().health = 0;
+            //for (int k = 0; k < playerList.Count; k++)
+            //{
+                playerList[1].GetComponent<PlayerStats>().health = 0;
 
-            }
+            //}
         }
 
         if (playerList[0].GetComponent<PlayerVariableManager>().playerStats.health <= 0 && playerList[1].GetComponent<PlayerVariableManager>().playerStats.health <= 0)

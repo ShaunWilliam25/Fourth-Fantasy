@@ -619,10 +619,14 @@ MonoBehaviour:
   idleAnimation: 
   attackAnimation: 
   injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
+  reviveAnimation: 
   gameState: 0
   artifactsList: []
   isAttack: 0
-  attackAnimationTimer: 0.2
+  attackAnimationTimer: 0.6
+  spellAnimationTimer: 0.9
   scrollSkill: {fileID: 114770210834766906}
 --- !u!114 &114312305652584356
 MonoBehaviour:
@@ -684,6 +688,9 @@ MonoBehaviour:
   idleAnimation: 
   attackAnimation: 
   injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
+  reviveAnimation: 
   gameState: 0
   artifactsList: []
 --- !u!114 &114344894158144394
@@ -735,6 +742,9 @@ MonoBehaviour:
   idleAnimation: 
   attackAnimation: 
   injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
+  reviveAnimation: 
   gameState: 0
   artifactsList: []
   statusIcon:
@@ -916,6 +926,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerStats: {fileID: 114354841431699314}
   playerVariable: {fileID: 114978728759129096}
+  reviveAnimationTimer: 1
   originalColour: {r: 1, g: 1, b: 1, a: 1}
 --- !u!114 &114432034797188774
 MonoBehaviour:
@@ -996,6 +1007,9 @@ MonoBehaviour:
   idleAnimation: 
   attackAnimation: 
   injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
+  reviveAnimation: 
   gameState: 0
   artifactsList: []
   haste: 0
@@ -1204,6 +1218,9 @@ MonoBehaviour:
   idleAnimation: 
   attackAnimation: 
   injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
+  reviveAnimation: 
   gameState: 0
   artifactsList: []
 --- !u!114 &114717022300325972
@@ -1271,6 +1288,9 @@ MonoBehaviour:
   idleAnimation: 
   attackAnimation: 
   injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
+  reviveAnimation: 
   gameState: 0
   artifactsList: []
 --- !u!114 &114770210834766906
@@ -1318,6 +1338,9 @@ MonoBehaviour:
   idleAnimation: 
   attackAnimation: 
   injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
+  reviveAnimation: 
   gameState: 0
   artifactsList: []
   isScroll: 0
@@ -1429,6 +1452,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PopUpText: {fileID: 1247997310769886, guid: 04b05e889f3a481409a7327058b83454, type: 2}
+  damageAnimationTimer: 1
 --- !u!114 &114937439396631480
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1525,7 +1549,10 @@ MonoBehaviour:
   isEffectTargetLockedIn: 0
   idleAnimation: TimePriestressIdleAnimation
   attackAnimation: TimePriestressAttackAnimation
-  injuredAnimation: 
+  injuredAnimation: TimePriestressInjuredAnimation
+  spellAnimation: TimePriestressSpellAnimation
+  deathAnimation: TimePriestressDeathAnimation
+  reviveAnimation: TimePriestressReviveAnimation
   gameState: 0
   artifactsList: []
 --- !u!114 &114989238349543346

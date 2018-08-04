@@ -21,11 +21,12 @@ public class PlayerStats : GeneralStats {
 
     public void Reset()
     {
-        knockedOut = true;
+        knockedOut = false;
         reviveAction = 0;
         autoRevive = false;
         taunt = false;
         silence = false;
         berserk = false;
+        GetComponent<actionTimeBar>().timeRequired = 3f;
     }
 }

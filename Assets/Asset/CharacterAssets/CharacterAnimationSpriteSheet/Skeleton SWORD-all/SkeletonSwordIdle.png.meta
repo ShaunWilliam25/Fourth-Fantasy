@@ -1,0 +1,389 @@
+fileFormatVersion: 2
+guid: 1b465913f71feb94081b54db942a8a1e
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SkeletonSwordIdle_0
+    21300002: SkeletonSwordIdle_1
+    21300004: SkeletonSwordIdle_2
+    21300006: SkeletonSwordIdle_3
+    21300008: SkeletonSwordIdle_4
+    21300010: SkeletonSwordIdle_5
+    21300012: SkeletonSwordIdle_6
+    21300014: SkeletonSwordIdle_7
+    21300016: SkeletonSwordIdle_8
+    21300018: SkeletonSwordIdle_9
+    21300020: SkeletonSwordIdle_10
+    21300022: SkeletonSwordIdle_11
+    21300024: SkeletonSwordIdle_12
+    21300026: SkeletonSwordIdle_13
+  externalObjects: {}
+  serializedVersion: 5
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SkeletonSwordIdle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 545
+        height: 583
+      alignment: 9
+      pivot: {x: 0.5782158, y: 0.035112854}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ddae9d8562c527469a793e6eb3035b6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonSwordIdle_1
+      rect:
+        serializedVersion: 2
+        x: 542
+        y: 0
+        width: 549
+        height: 583
+      alignment: 9
+      pivot: {x: 0.5993749, y: 0.03201682}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 557141ba0c1f6f14da78a5d7771abbce
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonSwordIdle_2
+      rect:
+        serializedVersion: 2
+        x: 1098
+        y: 0
+        width: 556
+        height: 583
+      alignment: 9
+      pivot: {x: 0.59894526, y: 0.034886133}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e4d961496b706f498dcd436c1659270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonSwordIdle_3
+      rect:
+        serializedVersion: 2
+        x: 1663
+        y: 0
+        width: 558
+        height: 583
+      alignment: 9
+      pivot: {x: 0.58775103, y: 0.031938985}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbc229d67e2c9544c841dd5d78eb68b9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonSwordIdle_4
+      rect:
+        serializedVersion: 2
+        x: 2222
+        y: 0
+        width: 567
+        height: 583
+      alignment: 9
+      pivot: {x: 0.59509444, y: 0.03426036}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a4e535daeabf974ea063102a60c1ec0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonSwordIdle_5
+      rect:
+        serializedVersion: 2
+        x: 2788
+        y: 0
+        width: 578
+        height: 583
+      alignment: 9
+      pivot: {x: 0.60996467, y: 0.03550293}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49f57a4edc3016845b9a016223bfe014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonSwordIdle_6
+      rect:
+        serializedVersion: 2
+        x: 3369
+        y: 0
+        width: 583
+        height: 583
+      alignment: 9
+      pivot: {x: 0.60116005, y: 0.033916883}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f2fdc75aeefbdb438f8e162050e0970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonSwordIdle_7
+      rect:
+        serializedVersion: 2
+        x: 3948
+        y: 0
+        width: 582
+        height: 583
+      alignment: 9
+      pivot: {x: 0.6062188, y: 0.03541258}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 686693fccc0cf92469bb2a93e8600683
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonSwordIdle_8
+      rect:
+        serializedVersion: 2
+        x: 4526
+        y: 0
+        width: 579
+        height: 583
+      alignment: 9
+      pivot: {x: 0.6038049, y: 0.031941414}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f502e5edb854674ab062495a25a03cb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonSwordIdle_9
+      rect:
+        serializedVersion: 2
+        x: 5105
+        y: 0
+        width: 569
+        height: 583
+      alignment: 9
+      pivot: {x: 0.59446996, y: 0.033488892}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9f5979fdff4a5542bec1972bc701dff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonSwordIdle_10
+      rect:
+        serializedVersion: 2
+        x: 5676
+        y: 0
+        width: 562
+        height: 583
+      alignment: 9
+      pivot: {x: 0.59290177, y: 0.03649058}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 780fcebdda10f964a98768eccc8992f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonSwordIdle_11
+      rect:
+        serializedVersion: 2
+        x: 6239
+        y: 0
+        width: 556
+        height: 583
+      alignment: 9
+      pivot: {x: 0.5918151, y: 0.032258317}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eecf58105ca3f3d4f936b520192f0144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonSwordIdle_12
+      rect:
+        serializedVersion: 2
+        x: 6792
+        y: 0
+        width: 555
+        height: 583
+      alignment: 9
+      pivot: {x: 0.5813397, y: 0.03447492}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a950824904e81b543b05aa88e91f626d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonSwordIdle_13
+      rect:
+        serializedVersion: 2
+        x: 7346
+        y: 0
+        width: 546
+        height: 583
+      alignment: 9
+      pivot: {x: 0.57736486, y: 0.033157244}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3d186badd454b3498e52ebfd7f1cf6c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 47b1bdb2ee425c34198e497a9bcc3180
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
