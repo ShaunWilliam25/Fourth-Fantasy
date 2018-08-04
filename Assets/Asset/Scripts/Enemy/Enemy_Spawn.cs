@@ -49,14 +49,14 @@ public class Enemy_Spawn : MonoBehaviour {
         if (AudioManager.instance.waveIndex == 3)
         {
             //! Setting the position of the spirit door
-            sceneManager.enemyList[0].transform.position = new Vector3(4.4f, 1.1f, 0f);
+            sceneManager.enemyList[0].transform.position = new Vector3(4.2f, 1.0f, 0f);
         }
 
         //! Special location for the knight
         //! Checking if its the wave that spawns the knight
         if (AudioManager.instance.waveIndex == 4)
         {
-            //! Setting the position of the spirit door
+            //! Setting the position of the knight
             sceneManager.enemyList[0].transform.position = new Vector3(3.896104f, -3f, 0f);
         }
 

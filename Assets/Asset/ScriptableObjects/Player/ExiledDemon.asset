@@ -3,7 +3,7 @@
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
@@ -25,6 +25,14 @@ MonoBehaviour:
   scale: 0.3484527
   idleAnimation: ExiledDemonIdleAnimation
   attackAnimation: ExiledDemonAttackAnimation
+  injuredAnimation: ExiledDemonInjuredAnimation
+  spellAnimation: ExiledDemonSpellAnimation
+  deathAnimation: ExiledDemonDeathAnimation
+  reviveAnimation: ExiledDemonReviveAnimation
+  attackAnimationTimer: 0.75
+  injuredAnimationTimer: 0.52
+  spellAnimationTimer: 0.6
+  reviveAnimationTimer: 1
   skillImages:
   - {fileID: 21300000, guid: 475eb8eb6855be6418a9c4c2c75191a5, type: 3}
   - {fileID: 21300000, guid: 70249801cd969fb448769df75b9572d8, type: 3}

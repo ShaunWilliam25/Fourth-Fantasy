@@ -16,7 +16,6 @@ public class Player_Spawn : MonoBehaviour {
         sceneManager = this.gameObject.GetComponent<SceneManager>();
         this.gameObject.GetComponent<SceneManager>().playerList[0] = Player1.instance.gameObject;
         this.gameObject.GetComponent<SceneManager>().playerList[1] = Player2.instance.gameObject;
-        Debug.Log("player 1 is " + this.GetComponent<SceneManager>().playerList[0].activeInHierarchy);
 
         //! Changing the character index based on the one from character selection
         characterIndex[0] = AudioManager.instance.player1CharacterIndex;
@@ -106,7 +105,6 @@ public class Player_Spawn : MonoBehaviour {
 
     void Start()
     {
-
        
         //! Filling the empty reference that is scene specific
         for (int i = 0; i < sceneManager.playerList.Count; i++)
@@ -118,6 +116,8 @@ public class Player_Spawn : MonoBehaviour {
             sceneManager.playerList[i].GetComponent<PlayerVariableManager>().gameState = BattleStateManager.GAMESTATE.CHOOSING_SKILL;
             sceneManager.playerList[i].GetComponent<PlayerVariableManager>().isTargetLockedIn = false;
             sceneManager.playerList[i].GetComponent<PlayerVariableManager>().statusList.Clear();
+            sceneManager.playerList[i].GetComponent<PlayerStatusList>().statusIcon.Clear();
+            sceneManager.playerList[i].GetComponent<actionTimeBar>().timeRequired = 3f;
             sceneManager.playerList[i].GetComponent<PlayerVariableManager>().anim.GetComponent<Animator>().Play(sceneManager.playerList[i].GetComponent<PlayerVariableManager>().idleAnimation);
 
             sceneManager.playerList[i].GetComponent<PlayerStats>().health = sceneManager.playerList[i].GetComponent<PlayerStats>().baseHealth;

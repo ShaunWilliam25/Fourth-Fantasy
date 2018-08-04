@@ -1,0 +1,456 @@
+fileFormatVersion: 2
+guid: 62d9c33d6b5c1a547a58ca5663dfa2b1
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Door Attack_0
+    21300002: Door Attack_1
+    21300004: Door Attack_2
+    21300006: Door Attack_3
+    21300008: Door Attack_4
+    21300010: Door Attack_5
+    21300012: Door Attack_6
+    21300014: Door Attack_7
+    21300016: Door Attack_8
+    21300018: Door Attack_9
+    21300020: Door Attack_10
+    21300022: Door Attack_11
+    21300024: Door Attack_12
+    21300026: Door Attack_13
+    21300028: Door Attack_14
+    21300030: Door Attack_15
+    21300032: Door Attack_16
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 83
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Door Attack_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 422
+        height: 476
+      alignment: 9
+      pivot: {x: 0.543574, y: 0.4082518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3c4f35de23baec439f6dce3de9eefa8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Attack_1
+      rect:
+        serializedVersion: 2
+        x: 422
+        y: 0
+        width: 422
+        height: 476
+      alignment: 9
+      pivot: {x: 0.543574, y: 0.4082518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2463dbbc8a1911843afbf4a5712e43cf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Attack_2
+      rect:
+        serializedVersion: 2
+        x: 844
+        y: 0
+        width: 422
+        height: 476
+      alignment: 9
+      pivot: {x: 0.543574, y: 0.4082518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86ba72d41d27eb64ea06c8bbcf9780ab
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Attack_3
+      rect:
+        serializedVersion: 2
+        x: 1266
+        y: 0
+        width: 422
+        height: 476
+      alignment: 9
+      pivot: {x: 0.543574, y: 0.4082518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b0f4d334cf1e704089a0872a27c6ecd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Attack_4
+      rect:
+        serializedVersion: 2
+        x: 1688
+        y: 0
+        width: 422
+        height: 476
+      alignment: 9
+      pivot: {x: 0.543574, y: 0.4082518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 035543fdc29cd99479449fa45de92c8f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Attack_5
+      rect:
+        serializedVersion: 2
+        x: 2110
+        y: 0
+        width: 422
+        height: 476
+      alignment: 9
+      pivot: {x: 0.543574, y: 0.4082518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c960458df1e912341bdc22b8e92ff06d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Attack_6
+      rect:
+        serializedVersion: 2
+        x: 2532
+        y: 0
+        width: 422
+        height: 476
+      alignment: 9
+      pivot: {x: 0.543574, y: 0.4082518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b4c691a74943a4b9083ea1fa155a37
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Attack_7
+      rect:
+        serializedVersion: 2
+        x: 2954
+        y: 0
+        width: 422
+        height: 476
+      alignment: 9
+      pivot: {x: 0.543574, y: 0.4082518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b339e281b8f0c442927398e07b7d882
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Attack_8
+      rect:
+        serializedVersion: 2
+        x: 3376
+        y: 0
+        width: 422
+        height: 476
+      alignment: 9
+      pivot: {x: 0.543574, y: 0.4082518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aecbae47d686504a965a379227c7e3f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Attack_9
+      rect:
+        serializedVersion: 2
+        x: 3798
+        y: 0
+        width: 422
+        height: 476
+      alignment: 9
+      pivot: {x: 0.543574, y: 0.4082518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59d3cb7ddf3c7854a8e373db99658154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Attack_10
+      rect:
+        serializedVersion: 2
+        x: 4220
+        y: 0
+        width: 422
+        height: 476
+      alignment: 9
+      pivot: {x: 0.543574, y: 0.4082518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2f890c891c4c1b4eaa354661a1d7bba
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Attack_11
+      rect:
+        serializedVersion: 2
+        x: 4642
+        y: 0
+        width: 422
+        height: 476
+      alignment: 9
+      pivot: {x: 0.543574, y: 0.4082518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf5e525c870a3b4087d129e7a15ac58
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Attack_12
+      rect:
+        serializedVersion: 2
+        x: 5064
+        y: 0
+        width: 422
+        height: 476
+      alignment: 9
+      pivot: {x: 0.543574, y: 0.4082518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bba54a21822594d4bb70d23dc1de8c28
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Attack_13
+      rect:
+        serializedVersion: 2
+        x: 5486
+        y: 0
+        width: 422
+        height: 476
+      alignment: 9
+      pivot: {x: 0.543574, y: 0.4082518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13b3961d1d61f5644839bfc5102f5700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Attack_14
+      rect:
+        serializedVersion: 2
+        x: 5908
+        y: 0
+        width: 422
+        height: 476
+      alignment: 9
+      pivot: {x: 0.543574, y: 0.4082518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b6725f49b8ba2f44b89ba4df0cd789f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Attack_15
+      rect:
+        serializedVersion: 2
+        x: 6330
+        y: 0
+        width: 422
+        height: 476
+      alignment: 9
+      pivot: {x: 0.543574, y: 0.4082518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 01b16036a4b5f8646b2a9111b65f8caf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Attack_16
+      rect:
+        serializedVersion: 2
+        x: 6752
+        y: 0
+        width: 422
+        height: 476
+      alignment: 9
+      pivot: {x: 0.543574, y: 0.4082518}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d796f2ee687ecd44bd4d3cda32652f1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 0b7075cc04251414da0600ef05523fc3
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
