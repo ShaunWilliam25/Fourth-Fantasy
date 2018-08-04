@@ -14,6 +14,7 @@ public class SkillEffect : MonoBehaviour {
     public SKILL_EFFECT_TYPE effectType;
     public int damage;
     public int numOfTarget;
+    public int upgradedTimes;
     public enum SKILL_EFFECT_TYPE
     {
         OFFENSIVE = 0,

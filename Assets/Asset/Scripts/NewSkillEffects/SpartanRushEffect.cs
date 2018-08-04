@@ -10,6 +10,7 @@ public class SpartanRushEffect : SkillEffect {
         effectType = SKILL_EFFECT_TYPE.OFFENSIVE;
         numOfTarget = 1;
         effectDescription = "Attacks and haste self";
+        upgradedTimes = 0;
     }
 
     // Use this for initialization

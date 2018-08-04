@@ -16,11 +16,6 @@ public class NeedGreedSelection : MonoBehaviour
     public Image imageFill1;
     public Image imageFill2;
 
-    void OnEnable()
-    {
-        //campsiteES = EventSystem.current;
-    }
-
     // Update is called once per frame
     void Update()
     {

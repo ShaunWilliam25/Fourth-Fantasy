@@ -7,7 +7,7 @@ using UnityEngine.UI;
 public class ShowSkill : MonoBehaviour {
 
     public List<UpgradeElement> player;
-    public CampsiteManager csm;
+    CampsiteManager csm;
 
     private void Start()
     {
