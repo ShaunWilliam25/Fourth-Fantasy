@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4834112303008182}
   - component: {fileID: 114150178788614508}
-  - component: {fileID: 114812643586630326}
+  - component: {fileID: 114412171571640942}
   m_Layer: 0
   m_Name: HealUpgrade3
   m_TagString: Untagged
@@ -63,7 +63,7 @@ MonoBehaviour:
   numOfTarget: 0
   upgradedTimes: 0
   audioManager: {fileID: 0}
---- !u!114 &114812643586630326
+--- !u!114 &114412171571640942
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -71,7 +71,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1671794406484486}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bbf7811bff1ae1479ad35a7a550b04b, type: 3}
+  m_Script: {fileID: 11500000, guid: 458c889751b6e2a4c8585802c761de2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  upgradeDescription: 
+  upgradeDescription: Heals 50 HP for each bad status effect on character

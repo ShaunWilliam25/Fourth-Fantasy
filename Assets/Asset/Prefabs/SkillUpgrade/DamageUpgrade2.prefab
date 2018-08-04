@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4685257426374878}
   - component: {fileID: 114372055395815576}
-  - component: {fileID: 114996197413787492}
+  - component: {fileID: 114084332441797298}
   m_Layer: 0
   m_Name: DamageUpgrade2
   m_TagString: Untagged
@@ -41,6 +41,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114084332441797298
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1346989145233160}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 458c889751b6e2a4c8585802c761de2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeDescription: Deals 100 damage to all enemies
 --- !u!114 &114372055395815576
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -63,15 +75,3 @@ MonoBehaviour:
   numOfTarget: 0
   upgradedTimes: 0
   audioManager: {fileID: 0}
---- !u!114 &114996197413787492
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1346989145233160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bbf7811bff1ae1479ad35a7a550b04b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  upgradeDescription: Deals 100 damage to all enemies

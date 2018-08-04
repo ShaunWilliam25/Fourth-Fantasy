@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4599532980939304}
   - component: {fileID: 114052728288130328}
-  - component: {fileID: 114992423066856296}
+  - component: {fileID: 114700054646513656}
   m_Layer: 0
   m_Name: DamageUpgrade4
   m_TagString: Untagged
@@ -64,7 +64,7 @@ MonoBehaviour:
   numOfTarget: 0
   upgradedTimes: 0
   audioManager: {fileID: 0}
---- !u!114 &114992423066856296
+--- !u!114 &114700054646513656
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -72,7 +72,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1864324413459256}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bbf7811bff1ae1479ad35a7a550b04b, type: 3}
+  m_Script: {fileID: 11500000, guid: 458c889751b6e2a4c8585802c761de2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   upgradeDescription: Deals 130 damage to single enemy and causes slow

@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4308562172189228}
   - component: {fileID: 114945854999782512}
-  - component: {fileID: 114399903728236832}
+  - component: {fileID: 114378065145516810}
   m_Layer: 0
   m_Name: DamageUpgrade3
   m_TagString: Untagged
@@ -41,7 +41,7 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114399903728236832
+--- !u!114 &114378065145516810
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -49,7 +49,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1058896445819656}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3bbf7811bff1ae1479ad35a7a550b04b, type: 3}
+  m_Script: {fileID: 11500000, guid: 458c889751b6e2a4c8585802c761de2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   upgradeDescription: Deals 90 damage to all enemies and causes poison

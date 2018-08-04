@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4716267434777980}
   - component: {fileID: 114123802111571734}
+  - component: {fileID: 114015047328542270}
   m_Layer: 0
   m_Name: SupportUpgrade3
   m_TagString: Untagged
@@ -40,6 +41,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114015047328542270
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1506869758769294}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 458c889751b6e2a4c8585802c761de2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeDescription: 20% chance adding bless to self
 --- !u!114 &114123802111571734
 MonoBehaviour:
   m_ObjectHideFlags: 1

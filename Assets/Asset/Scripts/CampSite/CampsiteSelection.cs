@@ -53,7 +53,7 @@ public class CampsiteSelection : MonoBehaviour
                     {
                         showUI.player1.state = CAMPSITE_STATE.STATUS_CHECK;
                     }
-                    else if (player1.upgrade.GetComponent<Image>().sprite == buttonStatus.chosen)
+                    else if (player1.upgrade.GetComponent<Image>().sprite == buttonStatus.chosen && player1.upgradeLeft > 0)
                     {
                         showUI.player1.state = CAMPSITE_STATE.SKILL_UPGRADE;
                     }
@@ -86,7 +86,7 @@ public class CampsiteSelection : MonoBehaviour
                     {
                         showUI.player2.state = CAMPSITE_STATE.STATUS_CHECK;
                     }
-                    else if (player2.upgrade.GetComponent<Image>().sprite == buttonStatus.chosen)
+                    else if (player2.upgrade.GetComponent<Image>().sprite == buttonStatus.chosen && player2.upgradeLeft > 0)
                     {
                         showUI.player2.state = CAMPSITE_STATE.SKILL_UPGRADE;
                     }
@@ -382,7 +382,7 @@ public class CampsiteSelection : MonoBehaviour
             }
             else if(player1.upgradeState == UPGRADE_STATE.UPGRADE)
             {
-                player1.detail.text = csm.playerList[0].GetComponent<PlayerVariableManager>().skillHolder[player1.skillIndex].GetComponent<SkillDetail>().skillName + " upgraded with " + upgradeObject.GetComponent<UpgradeDescription>().upgradeDescription;
+                player1.detail.text = csm.playerList[0].GetComponent<PlayerVariableManager>().skillHolder[player1.skillIndex].GetComponent<SkillDetail>().skillName + " upgraded with " + upgradeObject.GetComponent<UpgradeDescription>().upgradeDescription + "\r\n \r\nPress any key to continue";
                 if(Input.anyKeyDown)
                 {
                     showUI.player1.state = CAMPSITE_STATE.SELECTION;
@@ -510,7 +510,7 @@ public class CampsiteSelection : MonoBehaviour
             }
             else if (player2.upgradeState == UPGRADE_STATE.UPGRADE)
             {
-                player2.detail.text = csm.playerList[1].GetComponent<PlayerVariableManager>().skillHolder[player2.skillIndex].GetComponent<SkillDetail>().skillName + " upgraded with " + upgradeObject.GetComponent<UpgradeDescription>().upgradeDescription;
+                player2.detail.text = csm.playerList[1].GetComponent<PlayerVariableManager>().skillHolder[player2.skillIndex].GetComponent<SkillDetail>().skillName + " upgraded with " + upgradeObject.GetComponent<UpgradeDescription>().upgradeDescription + "\r\n \r\nPress any key to continue";
                 if (Input.anyKeyDown)
                 {
                     showUI.player2.state = CAMPSITE_STATE.SELECTION;

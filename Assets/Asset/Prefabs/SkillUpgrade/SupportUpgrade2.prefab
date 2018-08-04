@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4500057419685460}
   - component: {fileID: 114052931444758938}
+  - component: {fileID: 114448568622622368}
   m_Layer: 0
   m_Name: SupportUpgrade2
   m_TagString: Untagged
@@ -62,3 +63,15 @@ MonoBehaviour:
   numOfTarget: 0
   upgradedTimes: 0
   audioManager: {fileID: 0}
+--- !u!114 &114448568622622368
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1855249148797688}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 458c889751b6e2a4c8585802c761de2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeDescription: Dispels one good status effect on enemy
