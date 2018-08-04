@@ -16,7 +16,7 @@ public class Player2 : MonoBehaviour
         else
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(gameObject);            
         }
     }
 
