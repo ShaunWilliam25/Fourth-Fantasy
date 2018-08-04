@@ -66,6 +66,23 @@ public class TutorialAppear : MonoBehaviour {
     // Update is called once per frame
     void Update ()
     {
+        //! Skip tutorial
+        if(Input.GetKeyDown(KeyCode.G))
+        {
+            //! PLayer loop to set all the sort layers
+            for (int i = 0; i < sceneManager.playerList.Count; i++)
+            {
+                sceneManager.playerList[i].transform.GetChild(2).GetChild(0).GetComponent<Canvas>().sortingOrder = 0;
+                sceneManager.GetComponent<SceneManager>().playerList[i].transform.GetChild(2).GetChild(2).GetComponent<Canvas>().sortingOrder = 0;
+                sceneManager.GetComponent<SceneManager>().playerList[i].transform.GetChild(2).GetChild(3).GetComponent<Canvas>().sortingOrder = 0;
+                sceneManager.GetComponent<SceneManager>().playerList[i].transform.GetChild(0).GetComponent<SpriteRenderer>().sortingOrder = 0;
+
+                sceneManager.playerList[i].GetComponent<actionTimeBar>().startSelection = 0;
+            }
+            Time.timeScale = 1;
+            UnityEngine.SceneManagement.SceneManager.LoadScene(6);
+        }
+
         if (tutorialStage == TUTORIAL_STAGE.STAGE_01)
         {
             //! The black tint that covers up things that are not necessary
