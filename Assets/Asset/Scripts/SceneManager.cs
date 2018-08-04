@@ -135,7 +135,7 @@ public class SceneManager : MonoBehaviour {
         {
             //for (int k = 0; k < playerList.Count; k++)
             //{
-                enemyList[0].GetComponent<EnemyStats>().health = 0;
+                playerList[0].GetComponent<PlayerStats>().health = 0;
 
             //}
         }
