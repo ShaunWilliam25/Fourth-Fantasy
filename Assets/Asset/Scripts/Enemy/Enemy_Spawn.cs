@@ -13,6 +13,7 @@ public class Enemy_Spawn : MonoBehaviour {
     private void Awake()
     {
         //! Increase the wave index
+
         AudioManager.instance.waveIndex++;
 
         //! Fill the enemy index stage list
@@ -73,7 +74,6 @@ public class Enemy_Spawn : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        
     }
 	
 	// Update is called once per frame
