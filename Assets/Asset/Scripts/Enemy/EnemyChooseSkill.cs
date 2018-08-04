@@ -6,6 +6,8 @@ public class EnemyChooseSkill : EnemyVariableManager {
     public TutorialAppear tutorial;
     public List<int> chance;
     public bool isFinalBoss;
+    [SerializeField] private float attackAnimationTimer;
+    [SerializeField] private float spellAnimationTimer;
     [SerializeField] private GameObject ultimate;
     // Use this for initialization
     void Start()
@@ -32,7 +34,6 @@ public class EnemyChooseSkill : EnemyVariableManager {
         {
             if (this.GetComponent<EnemyVariableManager>().isTargetChosen)
             {
-                this.GetComponent<EnemyVariableManager>().anim.GetComponent<Animator>().Play(this.GetComponent<EnemyVariableManager>().attackAnimation);
                 Invoke("ResetAnimation", 1.1f);
 
                 this.GetComponent<EnemyVariableManager>().Target.transform.GetChild(0).GetComponent<SpriteRenderer>().color = Color.red;
@@ -125,10 +126,12 @@ public class EnemyChooseSkill : EnemyVariableManager {
             case 2:
                 if(rand<=chance[0])
                 {
+                    RunAnimation(skillList[0].GetComponent<SkillEffect>());
                     skillList[0].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
                 }
                 else if(chance[0]<rand && rand<=(chance[0]+chance[1]))
                 {
+                    RunAnimation(skillList[1].GetComponent<SkillEffect>());
                     skillList[1].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
                 }
                 break;
@@ -137,14 +140,17 @@ public class EnemyChooseSkill : EnemyVariableManager {
             case 3:
                 if (rand <= chance[0])
                 {
+                    RunAnimation(skillList[0].GetComponent<SkillEffect>());
                     skillList[0].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
                 }
                 else if (chance[0] < rand && rand <= (chance[0] + chance[1]))
                 {
+                    RunAnimation(skillList[1].GetComponent<SkillEffect>());
                     skillList[1].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
                 }
                 else if ((chance[0]+chance[1]) < rand && rand <= (chance[0] + chance[1] + chance[2]))
                 {
+                    RunAnimation(skillList[2].GetComponent<SkillEffect>());
                     skillList[2].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
                 }
                 break;
@@ -153,41 +159,51 @@ public class EnemyChooseSkill : EnemyVariableManager {
             case 4:
                 if (rand <= chance[0])
                 {
+                    RunAnimation(skillList[0].GetComponent<SkillEffect>());
                     skillList[0].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
                 }
                 else if (chance[0] < rand && rand <= (chance[0] + chance[1]))
                 {
+                    RunAnimation(skillList[1].GetComponent<SkillEffect>());
                     skillList[1].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
                 }
                 else if ((chance[0] + chance[1]) < rand && rand <= (chance[0] + chance[1] + chance[2]))
                 {
+                    RunAnimation(skillList[2].GetComponent<SkillEffect>());
                     skillList[2].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
                 }
                 else if ((chance[0] + chance[1] + chance[2]) < rand && rand <= (chance[0] + chance[1] + chance[2] + chance[3]))
                 {
+                    RunAnimation(skillList[3].GetComponent<SkillEffect>());
                     skillList[3].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
                 }
                 break;
 
+            //enemy have 5 skills
             case 5:
                 if (rand <= chance[0])
                 {
+                    RunAnimation(skillList[0].GetComponent<SkillEffect>());
                     skillList[0].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
                 }
                 else if (chance[0] < rand && rand <= (chance[0] + chance[1]))
                 {
+                    RunAnimation(skillList[1].GetComponent<SkillEffect>());
                     skillList[1].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
                 }
                 else if ((chance[0] + chance[1]) < rand && rand <= (chance[0] + chance[1] + chance[2]))
                 {
+                    RunAnimation(skillList[2].GetComponent<SkillEffect>());
                     skillList[2].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
                 }
                 else if ((chance[0] + chance[1] + chance[2]) < rand && rand <= (chance[0] + chance[1] + chance[2] + chance[3]))
                 {
+                    RunAnimation(skillList[3].GetComponent<SkillEffect>());
                     skillList[3].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
                 }
                 else if ((chance[0] + chance[1] + chance[2] + chance[3]) < rand && rand <= (chance[0] + chance[1] + chance[2] + chance[3] + chance[4]))
                 {
+                    RunAnimation(skillList[4].GetComponent<SkillEffect>());
                     skillList[4].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
                 }
                 break;
@@ -207,6 +223,21 @@ public class EnemyChooseSkill : EnemyVariableManager {
                     break;
                 }
             }
+        }
+    }
+
+
+    void RunAnimation(SkillEffect skill)
+    {
+        if(skill.effectType == SkillEffect.SKILL_EFFECT_TYPE.OFFENSIVE)
+        {
+            GetComponent<EnemyVariableManager>().anim.Play(GetComponent<EnemyVariableManager>().attackAnimation);
+            Invoke("ResetAnimation", attackAnimationTimer);
+        }
+        else
+        {
+            GetComponent<EnemyVariableManager>().anim.Play(GetComponent<EnemyVariableManager>().spellAnimation);
+            Invoke("ResetAnimation", spellAnimationTimer);
         }
     }
 

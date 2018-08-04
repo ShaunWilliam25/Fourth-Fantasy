@@ -18,6 +18,9 @@ public class EnemyVariableManager : MonoBehaviour {
     //[Header("Enemy Animation Controller")]
     public string idleAnimation;
     public string attackAnimation;
+    public string injuredAnimation;
+    public string spellAnimation;
+    public string deathAnimation;
 
     //! Enemy Status List
     [Header("Enemy Status Effect List")]
@@ -72,11 +75,15 @@ public class EnemyVariableManager : MonoBehaviour {
         enemyStats = this.GetComponent<EnemyStats>();
         playerList = GameObject.FindWithTag("SceneManager").GetComponent<SceneManager>().playerList;
         battlelogScript = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<battleLog>();
+        anim = this.transform.GetChild(0).GetComponent<Animator>();
 
         if (this.gameObject.tag == "spiritdoor")
         {
             idleAnimation = "SpiritDoorIdleAnimation";
             attackAnimation = "SpiritDoorAttackAnimation";
+            injuredAnimation = "SpiritDoorInjuredAnimation";
+            spellAnimation = "SpiritDoorSpellAnimation";
+            deathAnimation = "SpiritDoorDeathAnimation";
         }
         else if (this.gameObject.tag == "wolf")
         {

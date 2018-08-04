@@ -1,0 +1,519 @@
+fileFormatVersion: 2
+guid: 6b0b98e7259e0ba4c90b4ab0a41f0840
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Door Idle_0
+    21300002: Door Idle_1
+    21300004: Door Idle_2
+    21300006: Door Idle_3
+    21300008: Door Idle_4
+    21300010: Door Idle_5
+    21300012: Door Idle_6
+    21300014: Door Idle_7
+    21300016: Door Idle_8
+    21300018: Door Idle_9
+    21300020: Door Idle_10
+    21300022: Door Idle_11
+    21300024: Door Idle_12
+    21300026: Door Idle_13
+    21300028: Door Idle_14
+    21300030: Door Idle_15
+    21300032: Door Idle_16
+    21300034: Door Idle_17
+    21300036: Door Idle_18
+    21300038: Door Idle_19
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Door Idle_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 357
+        height: 491
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 189c4e95b2af597488001baeffb5f6e8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Idle_1
+      rect:
+        serializedVersion: 2
+        x: 357
+        y: 0
+        width: 357
+        height: 491
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3da06053f31c89d43a04386fb6d0a67d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Idle_2
+      rect:
+        serializedVersion: 2
+        x: 714
+        y: 0
+        width: 357
+        height: 491
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41e5fc2cf2f1b80478ec0c9127b95850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Idle_3
+      rect:
+        serializedVersion: 2
+        x: 1071
+        y: 0
+        width: 357
+        height: 491
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2015430c8a087249bf8c8223576b54b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Idle_4
+      rect:
+        serializedVersion: 2
+        x: 1428
+        y: 0
+        width: 357
+        height: 491
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3982c54b9f5bbd9408ec0cf9fc16bedf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Idle_5
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 0
+        width: 357
+        height: 491
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c52e876e42ecae441b0239f6bcbaf930
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Idle_6
+      rect:
+        serializedVersion: 2
+        x: 2142
+        y: 0
+        width: 357
+        height: 491
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a67797d5cc35d3543b7896cdd45dd092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Idle_7
+      rect:
+        serializedVersion: 2
+        x: 2499
+        y: 0
+        width: 357
+        height: 491
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9361b192c69406418110bbc529214cc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Idle_8
+      rect:
+        serializedVersion: 2
+        x: 2856
+        y: 0
+        width: 357
+        height: 491
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc26cbd96555be44498f58390e7afee4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Idle_9
+      rect:
+        serializedVersion: 2
+        x: 3213
+        y: 0
+        width: 357
+        height: 491
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a14550f8205204245bcb3b4b9a2ca5b0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Idle_10
+      rect:
+        serializedVersion: 2
+        x: 3570
+        y: 0
+        width: 357
+        height: 491
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f70cb53060324e43b8e623e554e4f23
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Idle_11
+      rect:
+        serializedVersion: 2
+        x: 3927
+        y: 0
+        width: 357
+        height: 491
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fed3789d07c3e1e4daa24180ea784f3f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Idle_12
+      rect:
+        serializedVersion: 2
+        x: 4284
+        y: 0
+        width: 357
+        height: 491
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9699297e9eb87d541a409dd8f3f47b1a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Idle_13
+      rect:
+        serializedVersion: 2
+        x: 4641
+        y: 0
+        width: 357
+        height: 491
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a836c5c523e37df4a8308c08f18ff0b7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Idle_14
+      rect:
+        serializedVersion: 2
+        x: 4998
+        y: 0
+        width: 357
+        height: 491
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a17ed7c99ad1a994490e8a5162069657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Idle_15
+      rect:
+        serializedVersion: 2
+        x: 5355
+        y: 0
+        width: 357
+        height: 491
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b61ec7e96639f594a8e66dd2d62a3490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Idle_16
+      rect:
+        serializedVersion: 2
+        x: 5712
+        y: 0
+        width: 357
+        height: 491
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2d1774e14d9bec42a396bfa7e22e466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Idle_17
+      rect:
+        serializedVersion: 2
+        x: 6069
+        y: 0
+        width: 357
+        height: 491
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23b8415945541824fa73078ababc36ff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Idle_18
+      rect:
+        serializedVersion: 2
+        x: 6426
+        y: 0
+        width: 357
+        height: 491
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f2a531a61900574f9ddd43770176480
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Idle_19
+      rect:
+        serializedVersion: 2
+        x: 6783
+        y: 0
+        width: 357
+        height: 491
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 910521674d8deb04dbd0644ceb39fc7b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 30de9675d07985f489ed19091dc51ba5
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,519 @@
+fileFormatVersion: 2
+guid: e09ed3256f156bb4981a9bc79c13035d
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Door Death_0
+    21300002: Door Death_1
+    21300004: Door Death_2
+    21300006: Door Death_3
+    21300008: Door Death_4
+    21300010: Door Death_5
+    21300012: Door Death_6
+    21300014: Door Death_7
+    21300016: Door Death_8
+    21300018: Door Death_9
+    21300020: Door Death_10
+    21300022: Door Death_11
+    21300024: Door Death_12
+    21300026: Door Death_13
+    21300028: Door Death_14
+    21300030: Door Death_15
+    21300032: Door Death_16
+    21300034: Door Death_17
+    21300036: Door Death_18
+    21300038: Door Death_19
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Door Death_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 367
+        height: 485
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81ab0eb102e330847bf646eaf413a96b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Death_1
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 0
+        width: 367
+        height: 485
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f242a921b1a0694888ee099e2d780b2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Death_2
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 0
+        width: 367
+        height: 485
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62d072be9e23554498fd0fd4eb111db1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Death_3
+      rect:
+        serializedVersion: 2
+        x: 1101
+        y: 0
+        width: 367
+        height: 485
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd236934f1d59f74782f97ce44c40a63
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Death_4
+      rect:
+        serializedVersion: 2
+        x: 1468
+        y: 0
+        width: 367
+        height: 485
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c65e5950b74b4645b8c157ac0817180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Death_5
+      rect:
+        serializedVersion: 2
+        x: 1835
+        y: 0
+        width: 367
+        height: 485
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c265c8b5d0728747967c85e39cc8fc5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Death_6
+      rect:
+        serializedVersion: 2
+        x: 2202
+        y: 0
+        width: 367
+        height: 485
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 516722209942aea4b87f4e8397edd581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Death_7
+      rect:
+        serializedVersion: 2
+        x: 2569
+        y: 0
+        width: 367
+        height: 485
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57e4734365e2238418eca14094436da1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Death_8
+      rect:
+        serializedVersion: 2
+        x: 2936
+        y: 0
+        width: 367
+        height: 485
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a84de96ed090da40b9d86637602ac6c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Death_9
+      rect:
+        serializedVersion: 2
+        x: 3303
+        y: 0
+        width: 367
+        height: 485
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df2b66b54a246a54cac86fce7bb9ea83
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Death_10
+      rect:
+        serializedVersion: 2
+        x: 3670
+        y: 0
+        width: 367
+        height: 485
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c782341ee0fd2d5498afed67cfb0d474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Death_11
+      rect:
+        serializedVersion: 2
+        x: 4037
+        y: 0
+        width: 367
+        height: 485
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcc907a7a3baa8b459e3e57da13b92d9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Death_12
+      rect:
+        serializedVersion: 2
+        x: 4404
+        y: 0
+        width: 367
+        height: 485
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b44c892c29d7aa4c97acdf6a7c659ee
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Death_13
+      rect:
+        serializedVersion: 2
+        x: 4771
+        y: 0
+        width: 367
+        height: 485
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0051905beb9993041b6c32484126267f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Death_14
+      rect:
+        serializedVersion: 2
+        x: 5138
+        y: 0
+        width: 367
+        height: 485
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1539446f05744b64caa8404f5ed0e65f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Death_15
+      rect:
+        serializedVersion: 2
+        x: 5505
+        y: 0
+        width: 367
+        height: 485
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2807c8a4819351140b7af8b06b57d5d2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Death_16
+      rect:
+        serializedVersion: 2
+        x: 5872
+        y: 0
+        width: 367
+        height: 485
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2e36482b92856f4eab081c37d5acb11
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Death_17
+      rect:
+        serializedVersion: 2
+        x: 6239
+        y: 0
+        width: 367
+        height: 485
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93d7be8b3078aed4384a90ced4e2be34
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Death_18
+      rect:
+        serializedVersion: 2
+        x: 6606
+        y: 0
+        width: 367
+        height: 485
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26108c9f96185ec4584739597dda287e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Death_19
+      rect:
+        serializedVersion: 2
+        x: 6973
+        y: 0
+        width: 367
+        height: 485
+      alignment: 9
+      pivot: {x: 0.5293129, y: 0.4516654}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e04a7d47dcc8b4a43ba6ef3d752eb12c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: b301fcb323c6a7747836cc1624fad6cc
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -14,5 +14,9 @@ public class EnemyStats : GeneralStats {
         {
             health = baseHealth;
         }
+        if(health<=0)
+        {
+            this.GetComponent<EnemyVariableManager>().anim.Play(this.GetComponent<EnemyVariableManager>().deathAnimation);
+        }
     }
 }
