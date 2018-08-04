@@ -28,7 +28,6 @@ public class PlayerSkillExecution : PlayerVariableManager
     // Update is called once per frame
     void Update()
     {
-        Debug.Log("isAttack is " + isAttack);
         if (this.GetComponent<PlayerVariableManager>().battleStateManagerScript.gameState == BattleStateManager.GAMESTATE.EXECUTE_SKILL)
         {
             Debug.Log(this.GetComponent<PlayerVariableManager>().playerStats.name + "state is execute skill");

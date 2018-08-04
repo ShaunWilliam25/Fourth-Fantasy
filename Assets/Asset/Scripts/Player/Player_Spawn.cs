@@ -16,7 +16,6 @@ public class Player_Spawn : MonoBehaviour {
         sceneManager = this.gameObject.GetComponent<SceneManager>();
         this.gameObject.GetComponent<SceneManager>().playerList[0] = Player1.instance.gameObject;
         this.gameObject.GetComponent<SceneManager>().playerList[1] = Player2.instance.gameObject;
-        Debug.Log("player 1 is " + this.GetComponent<SceneManager>().playerList[0].activeInHierarchy);
 
         //! Changing the character index based on the one from character selection
         characterIndex[0] = AudioManager.instance.player1CharacterIndex;
