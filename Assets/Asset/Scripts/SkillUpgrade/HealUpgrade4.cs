@@ -14,18 +14,6 @@ public class HealUpgrade4 : SkillEffect
         effectDescription = "Gain instant revive one time";
     }
 
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public override void Execute(GameObject targetedEnemy)
     {
         if(!effect)

@@ -11,6 +11,7 @@ public class AegisShieldEffect : SkillEffect {
         effectType = SKILL_EFFECT_TYPE.SUPPORTIVE;
         numOfTarget = 0;
         effectDescription = "Taunts enemy and buff allies";
+        upgradedTimes = 0;
     }
 
     // Use this for initialization

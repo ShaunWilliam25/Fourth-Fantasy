@@ -17,7 +17,6 @@ public class SkillUpgrade : MonoBehaviour
     public GameObject support2;
     public GameObject support3;
     public GameObject support4;
-    public GameObject support5;
 
     public GameObject randomHeal()
     {
@@ -90,25 +89,21 @@ public class SkillUpgrade : MonoBehaviour
         int rand = Random.Range(1, 101);
         //Debug.Log(rand);
         GameObject upgrade = null;
-        if (rand > 0 && rand <= 30)
+        if (rand > 0 && rand <= 35)
         {
             upgrade = support1;
         }
-        else if (rand > 30 && rand <= 50)
+        else if (rand > 35 && rand <= 70)
         {
             upgrade = support2;
         }
-        else if (rand > 50 && rand <= 70)
+        else if (rand > 70 && rand <= 85)
         {
             upgrade = support3;
         }
-        else if (rand > 70 && rand <= 90)
+        else if (rand > 85 && rand <= 100)
         {
             upgrade = support4;
-        }
-        else if(rand > 90 && rand <= 100)
-        {
-            upgrade = support5;
         }
         return upgrade;
     }

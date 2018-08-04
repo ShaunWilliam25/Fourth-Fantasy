@@ -7,9 +7,9 @@ public class SupportUpgrade4 : SkillEffect
     private void Awake()
     {
         AssignUser();
-        effectType = SKILL_EFFECT_TYPE.SUPPORTIVE;
+        effectType = SKILL_EFFECT_TYPE.DEBUFF;
         numOfTarget = 1;
-        effectDescription = "Chance to apply bless";
+        effectDescription = "Curse Enemy";
     }
 
     // Use this for initialization
@@ -26,9 +26,6 @@ public class SupportUpgrade4 : SkillEffect
 
     public override void Execute(GameObject targetedEnemy)
     {
-        if(Random.Range(0,101)<=20)
-        {
-            user.GetComponent<PlayerVariableManager>().statusList.Add(Instantiate(status[0]));
-        }
+        targetedEnemy.GetComponent<EnemyVariableManager>().statusList.Add(Instantiate(status[0]));
     }
 }

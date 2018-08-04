@@ -7,9 +7,9 @@ public class SupportUpgrade3 : SkillEffect
     private void Awake()
     {
         AssignUser();
-        effectType = SKILL_EFFECT_TYPE.DEBUFF;
+        effectType = SKILL_EFFECT_TYPE.SUPPORTIVE;
         numOfTarget = 1;
-        effectDescription = "Remove random buff from enemy";
+        effectDescription = "Chance to apply bless";
     }
 
     // Use this for initialization
@@ -26,13 +26,9 @@ public class SupportUpgrade3 : SkillEffect
 
     public override void Execute(GameObject targetedEnemy)
     {
-        for (int i = 0; i < targetedEnemy.GetComponent<EnemyVariableManager>().statusList.Count; i++)
+        if(Random.Range(0,101)<=20)
         {
-            if (targetedEnemy.GetComponent<EnemyVariableManager>().statusList[i].GetComponent<StatusDetail>().type == "Good")
-            {
-                targetedEnemy.GetComponent<EnemyVariableManager>().statusList[i].GetComponent<StatusDetail>().secondDuration = 0;
-                break;
-            }
+            user.GetComponent<PlayerVariableManager>().statusList.Add(Instantiate(status[0]));
         }
     }
 }
