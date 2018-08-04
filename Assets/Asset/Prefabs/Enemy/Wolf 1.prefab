@@ -385,12 +385,13 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
   attackAnimation: SpiritDoorAttackAnimation
+  injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
   statusList: []
   enemyStats: {fileID: 0}
   healthBar: {fileID: 0}
@@ -433,12 +434,13 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
   attackAnimation: SpiritDoorAttackAnimation
+  injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
   statusList: []
   enemyStats: {fileID: 0}
   healthBar: {fileID: 0}
@@ -471,6 +473,8 @@ MonoBehaviour:
   tutorial: {fileID: 0}
   chance: 4b0000000a0000000f000000
   isFinalBoss: 0
+  attackAnimationTimer: 0.5
+  spellAnimationTimer: 1.4
   ultimate: {fileID: 0}
 --- !u!114 &114094660980565302
 MonoBehaviour:
@@ -541,12 +545,13 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
   attackAnimation: SpiritDoorAttackAnimation
+  injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
   statusList: []
   enemyStats: {fileID: 0}
   healthBar: {fileID: 0}
@@ -589,12 +594,13 @@ MonoBehaviour:
   maxCooldown: 1
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
   attackAnimation: SpiritDoorAttackAnimation
+  injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
   statusList: []
   enemyStats: {fileID: 0}
   healthBar: {fileID: 0}
@@ -827,12 +833,13 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
   attackAnimation: SpiritDoorAttackAnimation
+  injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
   statusList: []
   enemyStats: {fileID: 0}
   healthBar: {fileID: 0}
@@ -897,12 +904,13 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
   attackAnimation: SpiritDoorAttackAnimation
+  injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
   statusList: []
   enemyStats: {fileID: 0}
   healthBar: {fileID: 0}
@@ -1020,12 +1028,13 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 114285649367166916}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 95745032372516500}
   idleAnimation: SpiritDoorIdleAnimation
   attackAnimation: SpiritDoorAttackAnimation
+  injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
   statusList: []
   enemyStats: {fileID: 114321970638701266}
   healthBar: {fileID: 114385400842407806}
@@ -1066,6 +1075,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PopUpText: {fileID: 1247997310769886, guid: 04b05e889f3a481409a7327058b83454, type: 2}
+  injuredAnimationTimer: 1.1
 --- !u!114 &114855411442739230
 MonoBehaviour:
   m_ObjectHideFlags: 1
