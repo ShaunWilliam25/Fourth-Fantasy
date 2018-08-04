@@ -77,11 +77,9 @@ public class SceneManager : MonoBehaviour {
                 }
 
                 enemyList[i].GetComponent<EnemyActionTimeBar>().enabled = false;
-                enemyList[i].GetComponent<EnemyVariableManager>().anim.Play(enemyList[i].GetComponent<EnemyVariableManager>().deathAnimation);
                 Destroy(enemyList[i],1.3f);
 
                 enemyList.Remove(enemyList[i]);
-                this.GetComponent<ArtifactScript>().calArtifact();
 
                 if (tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_06 && tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.THE_END)
                     ArtifactSpawner.GetComponent<ArtifactScript>().calArtifact();
@@ -101,10 +99,6 @@ public class SceneManager : MonoBehaviour {
                     Debug.Log("Win");
                     for (int i = 0; i < playerList.Count; i++)
                     {
-                        playerList[i].GetComponent<PlayerVariableManager>().statusList.Clear();
-                        playerList[i].GetComponent<PlayerStatusList>().statusIcon.Clear();
-                        playerList[i].GetComponent<actionTimeBar>().timeRequired = 3f;
-                        playerList[i].GetComponent<PlayerStats>().Reset();
                         playerList[i].GetComponent<actionTimeBar>().enabled = false;
                         for (int j = 1; j < playerList[i].transform.childCount; j++)
                         {
@@ -146,12 +140,14 @@ public class SceneManager : MonoBehaviour {
             //}
         }
 
-        if (playerList[0].GetComponent<PlayerVariableManager>().playerStats.health <= 0 && playerList[1].GetComponent<PlayerVariableManager>().playerStats.health <= 0)
+        if (playerList[0].GetComponent<PlayerVariableManager>().playerStats.knockedOut && playerList[1].GetComponent<PlayerVariableManager>().playerStats.knockedOut)
         {
             loseTimer += Time.deltaTime;
             if (loseTimer > 1)
             {
                 AudioManager.instance.waveIndex--;
+                playerList[0].SetActive(false);
+                playerList[1].SetActive(false);
                 UnityEngine.SceneManagement.SceneManager.LoadScene(4);
               
             }

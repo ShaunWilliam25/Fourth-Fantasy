@@ -10,6 +10,10 @@ public class EnemyTakeDamage : MonoBehaviour {
 
     public void EnemyDamage(int damage)
     {
+        if(GetComponent<EnemyStats>().health<=0)
+        {
+            return;
+        }
         float multiplier = 1;
         statuses = GetComponent<EnemyVariableManager>().statusList;
         if (statuses.Count > 0)
@@ -27,13 +31,20 @@ public class EnemyTakeDamage : MonoBehaviour {
             }
         }
         GetComponent<EnemyStats>().health -= (int)(damage * multiplier);
-        GetComponent<EnemyVariableManager>().anim.Play(GetComponent<EnemyVariableManager>().injuredAnimation);
-        Invoke("ResetAnimation", injuredAnimationTimer);
+        if(GetComponent<EnemyStats>().health>0)
+        {
+            GetComponent<EnemyVariableManager>().anim.Play(GetComponent<EnemyVariableManager>().injuredAnimation);
+            Invoke("ResetAnimation", injuredAnimationTimer);
+        }
         PopUpDamage(gameObject, (int)(damage * multiplier), Color.red);
     }
 
     public void EnemyHeal(int heal)
     {
+        if (GetComponent<EnemyStats>().health <= 0)
+        {
+            return;
+        }
         GetComponent<EnemyStats>().health += heal;
         PopUpDamage(gameObject, heal, Color.green);
     }
