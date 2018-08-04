@@ -10,6 +10,7 @@ public class CriesOfTheDemon : SkillEffect
         effectType = SKILL_EFFECT_TYPE.DEBUFF;
         numOfTarget = 1;
         effectDescription = "Debuff all enemies";
+        upgradedTimes = 0;
     }
 
     // Use this for initialization

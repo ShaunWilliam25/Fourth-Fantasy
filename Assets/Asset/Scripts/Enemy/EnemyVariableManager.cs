@@ -87,8 +87,11 @@ public class EnemyVariableManager : MonoBehaviour {
         }
         else if (this.gameObject.tag == "wolf")
         {
-            idleAnimation = "wolfIdleAnimation";
-            attackAnimation = "WolfAttackAnim1";
+            idleAnimation = "WolfIdleAnimation";
+            attackAnimation = "WolfAttackAnimation";
+            injuredAnimation = "WolfInjuredAnimation";
+            spellAnimation = "WolfSpellAnimation";
+            deathAnimation = "WolfDeathAnimation";
         }
         else if (this.gameObject.tag == "swordskeleton")
         {

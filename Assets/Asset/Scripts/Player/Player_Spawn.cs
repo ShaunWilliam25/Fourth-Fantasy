@@ -58,8 +58,6 @@ public class Player_Spawn : MonoBehaviour {
                         sceneManager.playerList[i].GetComponent<PlayerTakeDamage>().injuredAnimationTimer = characterList[0].injuredAnimationTimer;
                         sceneManager.playerList[i].GetComponent<PlayerDeadAndRevive>().reviveAnimationTimer = characterList[0].reviveAnimationTimer;
                         sceneManager.playerList[i].transform.GetChild(0).GetComponent<Transform>().localScale = new Vector3(characterList[0].scale, characterList[0].scale, characterList[0].scale);
-                        sceneManager.playerList[i].GetComponent<PlayerVariableManager>().idleAnimation = characterList[0].idleAnimation;
-                        sceneManager.playerList[i].GetComponent<PlayerVariableManager>().attackAnimation = characterList[0].attackAnimation;
                         break;
                     case 1:
                         sceneManager.playerList[i].GetComponent<PlayerStats>().name = characterList[1].name;
@@ -79,8 +77,6 @@ public class Player_Spawn : MonoBehaviour {
                         sceneManager.playerList[i].GetComponent<PlayerTakeDamage>().injuredAnimationTimer = characterList[1].injuredAnimationTimer;
                         sceneManager.playerList[i].GetComponent<PlayerDeadAndRevive>().reviveAnimationTimer = characterList[1].reviveAnimationTimer;
                         sceneManager.playerList[i].transform.GetChild(0).GetComponent<Transform>().localScale = new Vector3(characterList[1].scale, characterList[1].scale, characterList[1].scale);
-                        sceneManager.playerList[i].GetComponent<PlayerVariableManager>().idleAnimation = characterList[1].idleAnimation;
-                        sceneManager.playerList[i].GetComponent<PlayerVariableManager>().attackAnimation = characterList[1].attackAnimation;
                         break;
 
                     case 2:
@@ -101,8 +97,6 @@ public class Player_Spawn : MonoBehaviour {
                         sceneManager.playerList[i].GetComponent<PlayerTakeDamage>().injuredAnimationTimer = characterList[2].injuredAnimationTimer;
                         sceneManager.playerList[i].GetComponent<PlayerDeadAndRevive>().reviveAnimationTimer = characterList[2].reviveAnimationTimer;
                         sceneManager.playerList[i].transform.GetChild(0).GetComponent<Transform>().localScale = new Vector3(characterList[2].scale, characterList[2].scale, characterList[2].scale);
-                        sceneManager.playerList[i].GetComponent<PlayerVariableManager>().idleAnimation = characterList[2].idleAnimation;
-                        sceneManager.playerList[i].GetComponent<PlayerVariableManager>().attackAnimation = characterList[2].attackAnimation;
                         break;
                 }
             }

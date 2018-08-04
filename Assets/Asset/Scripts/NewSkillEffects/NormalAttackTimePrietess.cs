@@ -10,6 +10,7 @@ public class NormalAttackTimePrietess : SkillEffect
         effectType = SKILL_EFFECT_TYPE.OFFENSIVE;
         numOfTarget = 1;
         effectDescription = "Attack backline enemy";
+        upgradedTimes = 0;
     }
 
     // Use this for initialization

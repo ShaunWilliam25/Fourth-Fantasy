@@ -10,6 +10,7 @@ public class ChronosDescendent : SkillEffect
         effectType = SKILL_EFFECT_TYPE.DEBUFF;
         numOfTarget = 0;
         effectDescription = "Buff all allies";
+        upgradedTimes = 0;
     }
 
     // Use this for initialization
