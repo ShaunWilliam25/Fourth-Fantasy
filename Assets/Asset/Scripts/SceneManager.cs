@@ -24,6 +24,12 @@ public class SceneManager : MonoBehaviour {
     public void Awake()
     {
         tutorial = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<TutorialAppear>();
+        ArtifactSpawner = artifactSpawnerSingleton.instance.gameObject;
+    }
+
+
+    public void Start()
+    {
         if (Player1.instance.gameObject.activeInHierarchy == false)
         {
             Player1.instance.gameObject.SetActive(true);
@@ -32,12 +38,10 @@ public class SceneManager : MonoBehaviour {
         {
             Player2.instance.gameObject.SetActive(true);
         }
-        ArtifactSpawner = artifactSpawnerSingleton.instance.gameObject;
-    }
+        //! Filling in the reference for player list
+        playerList[0] = Player1.instance.gameObject;
+        playerList[1] = Player2.instance.gameObject;
 
-
-    public void Start()
-    {                
         //audioManager = FindObjectOfType<AudioManager>();
         if (AudioManager.instance.soundPlaying.Count > 0)
         {

@@ -14,6 +14,6 @@ public class TestingSkillName : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
     {
-        this.gameObject.GetComponent<Text>().text = player1.transform.GetChild(1).GetChild(2).GetComponent<SkillDetail>().skillName;
+        this.gameObject.GetComponent<Text>().text = player1.GetComponent<PlayerStats>().name;
 	}
 }
