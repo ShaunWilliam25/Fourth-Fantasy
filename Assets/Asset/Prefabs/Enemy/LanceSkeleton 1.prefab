@@ -476,8 +476,6 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
@@ -588,8 +586,6 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
@@ -811,8 +807,6 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
@@ -871,8 +865,6 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
@@ -919,8 +911,6 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
@@ -958,6 +948,7 @@ MonoBehaviour:
   - {fileID: 114094269634267514}
   - {fileID: 114873857089314388}
   Empty: {fileID: 21300000, guid: e3fb893fe14be6a46beeb8616e0c80b3, type: 3}
+  swapTimer: 0
 --- !u!114 &114787308519348082
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1000,8 +991,6 @@ MonoBehaviour:
   maxCooldown: 1
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
@@ -1117,8 +1106,6 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 114569866962821628}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 95039048161446994}
   idleAnimation: SpiritDoorIdleAnimation
@@ -1191,7 +1178,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4.81, y: 6.55}
+  m_Size: {x: 4.4615, y: 5.9100003}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

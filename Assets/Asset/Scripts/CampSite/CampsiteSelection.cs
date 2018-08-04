@@ -534,7 +534,6 @@ public struct CampsiteMenu
     public int skillIndex;
     public int upgradeIndex;
     public Text readyText;
-    public Text back;
     public int upgradeLeft;
     public UPGRADE_STATE upgradeState;
 }
