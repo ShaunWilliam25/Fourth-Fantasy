@@ -25,6 +25,12 @@ public class CampsiteSelection : MonoBehaviour
         showUI = GetComponent<ShowUI>();
         showSkill = GetComponent<ShowSkill>();
         csm = GetComponent<CampsiteManager>();
+        player1.upgradeLeft = 1;
+        player2.upgradeLeft = 1;
+        for(int i = 0; i<csm.playerList.Count; i++)
+        {
+            //if (csm.playerList[i].GetComponent<PlayerVariableManager>().artifactsList.Exists(x => x.)
+        }
     }
 
     void Update()
@@ -160,6 +166,7 @@ public class CampsiteSelection : MonoBehaviour
         {
             if (Input.GetKeyUp("a"))
             {
+                showUI.player1.backFill.fillAmount = 0;
                 if (showUI.player1.page < 4)
                 {
                     showUI.player1.page++;
@@ -175,6 +182,7 @@ public class CampsiteSelection : MonoBehaviour
         {
             if (Input.GetKeyUp("l"))
             {
+                showUI.player2.backFill.fillAmount = 0;
                 if (showUI.player2.page < 4)
                 {
                     showUI.player2.page++;
@@ -195,6 +203,7 @@ public class CampsiteSelection : MonoBehaviour
             {
                 p1Hold += Time.deltaTime;
                 player1.fillFeedback.fillAmount = p1Hold;
+                showUI.player1.backFill.fillAmount = p1Hold;
                 if (p1Hold > timeNeeded)
                 {
                     if (showUI.player1.state == CAMPSITE_STATE.STATUS_CHECK)
@@ -209,6 +218,7 @@ public class CampsiteSelection : MonoBehaviour
                     }
                     p1Hold = 0;
                     player1.fillFeedback.fillAmount = p1Hold;
+                    showUI.player1.backFill.fillAmount = p1Hold;
                 }
             }
             else
@@ -224,6 +234,7 @@ public class CampsiteSelection : MonoBehaviour
             {
                 p2Hold += Time.deltaTime;
                 player2.fillFeedback.fillAmount = p2Hold;
+                showUI.player2.backFill.fillAmount = p2Hold;
                 if (p2Hold > timeNeeded)
                 {
                     if (showUI.player2.state == CAMPSITE_STATE.STATUS_CHECK)
@@ -238,6 +249,7 @@ public class CampsiteSelection : MonoBehaviour
                     }
                     p2Hold = 0;
                     player2.fillFeedback.fillAmount = p2Hold;
+                    showUI.player2.backFill.fillAmount = p2Hold;
                 }
             }
             else
@@ -266,7 +278,7 @@ public class CampsiteSelection : MonoBehaviour
                         p1Highlight = 0;
                     }
                     player1.highlighted.transform.localPosition = showSkill.player[0].skillImage[p1Highlight].transform.localPosition;
-                    player1.detail.GetComponent<Text>().text = csm.playerList[0].GetComponent<PlayerVariableManager>().skillList[p1Highlight].GetComponent<SkillDetail>().skillDescription;
+                    player1.detail.text = csm.playerList[0].GetComponent<PlayerVariableManager>().skillList[p1Highlight].GetComponent<SkillDetail>().skillDescription;
                     //if upgraded, show the effect
                     if (csm.playerList[0].GetComponent<PlayerVariableManager>().skillList[p1Highlight].GetComponent<SkillDetail>().upgradedCount > 0)
                     {
@@ -291,7 +303,7 @@ public class CampsiteSelection : MonoBehaviour
                         }
                         else
                         {
-                            //Tell player cannot upgrade this skill anymore
+                            player1.detail.text = "This skill already max upgraded!";
                         }
                     }
                 }
@@ -324,7 +336,7 @@ public class CampsiteSelection : MonoBehaviour
                             showUI.player1.popUpText.text = "1. Deals 150 damage to single enemy (30%)\r\n2. Deals 100 damage to all enemies(30 %)\r\n3. Deals 90 damage to all enemies and causes poison(20 %)\r\n4. Deals 130 damage to single enemy and causes slow(20 %)";
                             break;
                         case 2:
-                            showUI.player1.popUpText.text = "1. Dispels one bad status effect on self (30%)\r\n2. 30 % Counterattack when getting hit from enemy, apply silence on hit(20 %)\r\n3. Dispels one good status effect on enemy(20 %)\r\n4. 20 % chance adding bless to self(20 %)\r\n5. Inflicts curse to enemy(10 %)";
+                            showUI.player1.popUpText.text = "1. Dispels one bad status effect on self (35%)\r\n2. Dispels one good status effect on enemy(35%)\r\n3. 20 % chance adding bless to self(20%)\r\n4. Inflicts curse to enemy(10%)";
                             break;
                     }
                 }
@@ -363,16 +375,26 @@ public class CampsiteSelection : MonoBehaviour
                 GameObject upgradeSkillObject = Instantiate(upgradeObject);
                 upgradeSkillObject.transform.parent = csm.playerList[0].transform.GetChild(1);
                 csm.playerList[0].GetComponent<PlayerVariableManager>().skillHolder[player1.skillIndex].GetComponent<SkillDetail>().skillExecutionHolder.Add(upgradeSkillObject);
-                player1.upgraded = true;
-                showUI.player1.state = CAMPSITE_STATE.SELECTION;
+                csm.playerList[0].GetComponent<PlayerVariableManager>().skillHolder[player1.skillIndex].GetComponent<SkillDetail>().upgradedCount++;
+                csm.playerList[0].GetComponent<PlayerVariableManager>().skillHolder[player1.skillIndex].GetComponent<SkillDetail>().upgradedEffect.Add(upgradeObject.GetComponent<UpgradeDescription>().upgradeDescription);
+                player1.upgradeLeft--;
+                player1.upgradeState = UPGRADE_STATE.UPGRADE;
             }
-
+            else if(player1.upgradeState == UPGRADE_STATE.UPGRADE)
+            {
+                player1.detail.text = csm.playerList[0].GetComponent<PlayerVariableManager>().skillHolder[player1.skillIndex].GetComponent<SkillDetail>().skillName + " upgraded with " + upgradeObject.GetComponent<UpgradeDescription>().upgradeDescription;
+                if(Input.anyKeyDown)
+                {
+                    showUI.player1.state = CAMPSITE_STATE.SELECTION;
+                }
+            }
         }
-        else if (showUI.player2.state == CAMPSITE_STATE.SKILL_UPGRADE)
+
+        if (showUI.player2.state == CAMPSITE_STATE.SKILL_UPGRADE)
         {
             if (player2.upgradeState == UPGRADE_STATE.CHOOSE_SKILL)
             {
-                showUI.player2.popUp.SetActive(true);
+                showUI.player2.popUp.SetActive(false);
                 if (Input.GetKeyUp("l"))
                 {
                     if (p2Highlight < 4)
@@ -384,8 +406,15 @@ public class CampsiteSelection : MonoBehaviour
                         p2Highlight = 0;
                     }
                     player2.highlighted.transform.localPosition = showSkill.player[1].skillImage[p2Highlight].transform.localPosition;
-                    showUI.player2.popUp.transform.localPosition = new Vector3(showSkill.player[1].skillImage[p2Highlight].transform.localPosition.x + 150, showSkill.player[1].skillImage[p2Highlight].transform.localPosition.y + 110, showSkill.player[1].skillImage[p2Highlight].transform.localPosition.z);
-                    player2.detail.GetComponent<Text>().text = csm.playerList[1].GetComponent<PlayerVariableManager>().skillList[p2Highlight].GetComponent<SkillDetail>().skillDescription;
+                    player2.detail.text = csm.playerList[1].GetComponent<PlayerVariableManager>().skillList[p2Highlight].GetComponent<SkillDetail>().skillDescription;
+                    //if upgraded, show the effect
+                    if (csm.playerList[1].GetComponent<PlayerVariableManager>().skillList[p2Highlight].GetComponent<SkillDetail>().upgradedCount > 0)
+                    {
+                        for (int i = 1; i < csm.playerList[1].GetComponent<PlayerVariableManager>().skillList[p2Highlight].GetComponent<SkillDetail>().upgradedCount + 1; i++)
+                        {
+                            player2.detail.GetComponent<Text>().text = player2.detail.GetComponent<Text>().text + "\r\n" + csm.playerList[1].GetComponent<PlayerVariableManager>().skillList[p2Highlight].GetComponent<SkillDetail>().upgradedEffect[i];
+                        }
+                    }
                 }
 
                 if (Input.GetKey("l"))
@@ -394,9 +423,16 @@ public class CampsiteSelection : MonoBehaviour
                     if (p2Hold >= timeNeeded)
                     {
                         p2Hold = 0;
-                        player2.selectedSkill.GetComponent<Image>().sprite = showSkill.player[1].skillImage[p2Highlight].sprite;
-                        player2.skillIndex = p2Highlight;
-                        player2.upgradeState = UPGRADE_STATE.CHOOSE_UPGRADE;
+                        if (csm.playerList[1].GetComponent<PlayerVariableManager>().skillHolder[p2Highlight].GetComponent<SkillDetail>().upgradedCount < 3)
+                        {
+                            player2.selectedSkill.GetComponent<Image>().sprite = showSkill.player[1].skillImage[p2Highlight].sprite;
+                            player2.skillIndex = p2Highlight;
+                            player2.upgradeState = UPGRADE_STATE.CHOOSE_UPGRADE;
+                        }
+                        else
+                        {
+                            player2.detail.text = "This skill already max upgraded!";
+                        }
                     }
                 }
                 else
@@ -406,6 +442,7 @@ public class CampsiteSelection : MonoBehaviour
             }
             else if (player2.upgradeState == UPGRADE_STATE.CHOOSE_UPGRADE)
             {
+                showUI.player2.popUp.SetActive(true);
                 if (Input.GetKeyUp("l"))
                 {
                     if (p2Highlight < 2)
@@ -418,6 +455,18 @@ public class CampsiteSelection : MonoBehaviour
                     }
                     player2.highlighted.transform.localPosition = upgrade3[p2Highlight].transform.localPosition;
                     showUI.player2.popUp.transform.localPosition = new Vector3(upgrade3[p2Highlight].transform.localPosition.x + 150, upgrade3[p2Highlight].transform.localPosition.y - 110, showSkill.player[1].skillImage[p2Highlight].transform.localPosition.z);
+                    switch (p2Highlight)
+                    {
+                        case 0:
+                            showUI.player2.popUpText.text = "1. Heals 100 HP to self (50%)\r\n2. Heals 50 HP to all allies (40%)\r\n3.Heals 50 HP for each bad status effect on character (10%)";
+                            break;
+                        case 1:
+                            showUI.player2.popUpText.text = "1. Deals 150 damage to single enemy (30%)\r\n2. Deals 100 damage to all enemies(30 %)\r\n3. Deals 90 damage to all enemies and causes poison(20 %)\r\n4. Deals 130 damage to single enemy and causes slow(20 %)";
+                            break;
+                        case 2:
+                            showUI.player2.popUpText.text = "1. Dispels one bad status effect on self (35%)\r\n2. Dispels one good status effect on enemy(35%)\r\n3. 20 % chance adding bless to self(20%)\r\n4. Inflicts curse to enemy(10%)";
+                            break;
+                    }
                 }
 
                 if (Input.GetKey("l"))
@@ -427,7 +476,7 @@ public class CampsiteSelection : MonoBehaviour
                     {
                         p2Hold = 0;
                         player2.selectedUpgrade.GetComponent<Image>().sprite = upgrade3[p2Highlight].sprite;
-                        player2.upgradeIndex = p1Highlight;
+                        player2.upgradeIndex = p2Highlight;
                         switch (player2.upgradeIndex)
                         {
                             case 0:
@@ -454,10 +503,19 @@ public class CampsiteSelection : MonoBehaviour
                 GameObject upgradeSkillObject = Instantiate(upgradeObject);
                 upgradeSkillObject.transform.parent = csm.playerList[1].transform.GetChild(1);
                 csm.playerList[1].GetComponent<PlayerVariableManager>().skillHolder[player2.skillIndex].GetComponent<SkillDetail>().skillExecutionHolder.Add(upgradeSkillObject);
-                player2.upgraded = true;
-                showUI.player2.state = CAMPSITE_STATE.SELECTION;
+                csm.playerList[1].GetComponent<PlayerVariableManager>().skillHolder[player2.skillIndex].GetComponent<SkillDetail>().upgradedCount++;
+                csm.playerList[1].GetComponent<PlayerVariableManager>().skillHolder[player2.skillIndex].GetComponent<SkillDetail>().upgradedEffect.Add(upgradeObject.GetComponent<UpgradeDescription>().upgradeDescription);
+                player2.upgradeLeft--;
+                player2.upgradeState = UPGRADE_STATE.UPGRADE;
             }
-
+            else if (player2.upgradeState == UPGRADE_STATE.UPGRADE)
+            {
+                player2.detail.text = csm.playerList[1].GetComponent<PlayerVariableManager>().skillHolder[player2.skillIndex].GetComponent<SkillDetail>().skillName + " upgraded with " + upgradeObject.GetComponent<UpgradeDescription>().upgradeDescription;
+                if (Input.anyKeyDown)
+                {
+                    showUI.player2.state = CAMPSITE_STATE.SELECTION;
+                }
+            }
         }
     }
 }
@@ -477,7 +535,7 @@ public struct CampsiteMenu
     public int upgradeIndex;
     public Text readyText;
     public Text back;
-    public bool upgraded;
+    public int upgradeLeft;
     public UPGRADE_STATE upgradeState;
 }
 
