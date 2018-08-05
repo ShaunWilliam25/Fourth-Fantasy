@@ -9,8 +9,7 @@ public class Player_Spawn : MonoBehaviour {
     public SceneManager sceneManager;
     //public List<GameObject> allSkillList;
     public float skillOffset;
-    [SerializeField] private float skillPosOffset;
-    [SerializeField] bool isCharacterStatsModified = false;
+    [SerializeField] private float skillPosOffset;    
 
     private void Awake()
     {
@@ -32,8 +31,10 @@ public class Player_Spawn : MonoBehaviour {
 
     private void Update()
     {
-        if(!isCharacterStatsModified)
+        if(!AudioManager.instance.isCharacterStatsModified)
         {
+
+            Debug.Log("CHANGINGIN STATS");
             //! Setting the values for players
             characterIndex[0] = AudioManager.instance.player1CharacterIndex;
             characterIndex[1] = AudioManager.instance.player2CharacterIndex;
@@ -131,7 +132,6 @@ public class Player_Spawn : MonoBehaviour {
                 sceneManager.playerList[i].GetComponent<actionTimeBar>().timeRequired = 3f;
                 sceneManager.playerList[i].GetComponent<PlayerVariableManager>().anim.GetComponent<Animator>().Play(sceneManager.playerList[i].GetComponent<PlayerVariableManager>().idleAnimation);
 
-                sceneManager.playerList[i].GetComponent<PlayerStats>().health = sceneManager.playerList[i].GetComponent<PlayerStats>().baseHealth;
                 sceneManager.playerList[i].GetComponent<PlayerStats>().Reset();
 
                 // Detect Start of Battle to give effect
@@ -155,7 +155,7 @@ public class Player_Spawn : MonoBehaviour {
                 }
             }
 
-            isCharacterStatsModified = true;
+            AudioManager.instance.isCharacterStatsModified = true;
         }
     }
 }
