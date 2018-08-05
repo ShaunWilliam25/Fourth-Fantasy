@@ -6,7 +6,6 @@ public class HealUpgrade1 : SkillEffect
 {
     private void Awake()
     {
-        AssignUser();
         effectType = SKILL_EFFECT_TYPE.HEAL;
         numOfTarget = 1;
         damage = 100;

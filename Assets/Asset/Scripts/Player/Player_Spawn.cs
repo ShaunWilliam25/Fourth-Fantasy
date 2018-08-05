@@ -102,15 +102,19 @@ public class Player_Spawn : MonoBehaviour {
             }
 
             //! For each player
-            for (int i = 0; i < sceneManager.playerList.Count; i++)
-            {
-                //! Loop to instantiate skills
-                for (int j = 0; j < sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillList.Count; j++)
+            
+                for (int i = 0; i < sceneManager.playerList.Count; i++)
                 {
-                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillHolder.Add(Instantiate(sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillList[j], new Vector2((sceneManager.playerList[i].transform.GetChild(1).position.x + (skillOffset * j) * 0.6f) - skillPosOffset, sceneManager.playerList[i].transform.GetChild(1).position.y), Quaternion.identity, sceneManager.playerList[i].transform.GetChild(1)));
+                    if (sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillHolder.Count < 5)
+                     {
+                    //! Loop to instantiate skills
+                        for (int j = 0; j < sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillList.Count; j++)
+                        {
+                         sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillHolder.Add(Instantiate(sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillList[j], new Vector2((sceneManager.playerList[i].transform.GetChild(1).position.x + (skillOffset * j) * 0.6f) - skillPosOffset, sceneManager.playerList[i].transform.GetChild(1).position.y), Quaternion.identity, sceneManager.playerList[i].transform.GetChild(1)));
+                        }
+                    }
                 }
-            }
-
+            
             //! Filling the empty reference that is scene specific
             for (int i = 0; i < sceneManager.playerList.Count; i++)
             {
@@ -141,7 +145,11 @@ public class Player_Spawn : MonoBehaviour {
                 //! Skill effect reference
                 for (int j = 0; j < 5; j++)
                 {
-                    sceneManager.playerList[i].transform.GetChild(1).GetChild(2 + j).GetChild(0).GetComponent<SkillEffect>().enemyList = sceneManager.enemyList;
+                    for(int k=0;k< sceneManager.playerList[i].transform.GetChild(1).GetChild(2 + j).GetComponent<SkillDetail>().skillExecutionHolder.Count;k++)
+                    {
+                        sceneManager.playerList[i].transform.GetChild(1).GetChild(2 + j).GetComponent<SkillDetail>().skillExecutionHolder[k].GetComponent<SkillEffect>().playerList = sceneManager.playerList;
+                        sceneManager.playerList[i].transform.GetChild(1).GetChild(2 + j).GetComponent<SkillDetail>().skillExecutionHolder[k].GetComponent<SkillEffect>().enemyList = sceneManager.enemyList;
+                    }
                 }
             }
 
