@@ -17,8 +17,7 @@ public class Player_Spawn : MonoBehaviour {
         sceneManager = this.gameObject.GetComponent<SceneManager>();
 
         //! Changing the character index based on the one from character selection
-        characterIndex[0] = AudioManager.instance.player1CharacterIndex;
-        characterIndex[1] = AudioManager.instance.player2CharacterIndex;
+        
 
               
     }
@@ -36,6 +35,9 @@ public class Player_Spawn : MonoBehaviour {
         if(!isCharacterStatsModified)
         {
             //! Setting the values for players
+            characterIndex[0] = AudioManager.instance.player1CharacterIndex;
+            characterIndex[1] = AudioManager.instance.player2CharacterIndex;
+
             for (int i = 0; i < this.gameObject.GetComponent<SceneManager>().playerList.Count; i++)
             {
                 switch (characterIndex[i])

@@ -76,7 +76,7 @@ public class TutorialAppear : MonoBehaviour {
             //! PLayer loop to set all the sort layers
             for (int i = 0; i < sceneManager.playerList.Count; i++)
             {
-                sceneManager.playerList[i].transform.GetChild(2).GetChild(0).GetComponent<Canvas>().sortingOrder = 0;
+                sceneManager.playerList[i].transform.GetChild(2).GetChild(0).GetComponent<Canvas>().sortingOrder = 2;
                 sceneManager.GetComponent<SceneManager>().playerList[i].transform.GetChild(2).GetChild(2).GetComponent<Canvas>().sortingOrder = 0;
                 sceneManager.GetComponent<SceneManager>().playerList[i].transform.GetChild(2).GetChild(3).GetComponent<Canvas>().sortingOrder = 0;
                 sceneManager.GetComponent<SceneManager>().playerList[i].transform.GetChild(0).GetComponent<SpriteRenderer>().sortingOrder = 0;
@@ -338,7 +338,7 @@ public class TutorialAppear : MonoBehaviour {
             for (int i = 0; i < sceneManager.playerList.Count; i++)
             {
                 sceneManager.playerList[i].transform.GetChild(1).gameObject.SetActive(false);
-                sceneManager.playerList[i].transform.GetChild(2).GetChild(0).GetComponent<Canvas>().sortingOrder = 0;
+                sceneManager.playerList[i].transform.GetChild(2).GetChild(0).GetComponent<Canvas>().sortingOrder = 5;
                 sceneManager.playerList[i].transform.GetChild(2).GetChild(2).GetComponent<Canvas>().sortingOrder = 0;
                 sceneManager.playerList[i].transform.GetChild(2).GetChild(3).GetComponent<Canvas>().sortingOrder = 0;
                 sceneManager.playerList[i].transform.GetChild(0).GetComponent<SpriteRenderer>().sortingOrder = 0;
