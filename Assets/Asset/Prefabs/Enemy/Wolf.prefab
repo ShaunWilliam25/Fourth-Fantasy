@@ -428,8 +428,6 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
@@ -509,8 +507,6 @@ MonoBehaviour:
   maxCooldown: 1
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
@@ -577,8 +573,6 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
@@ -609,6 +603,7 @@ MonoBehaviour:
   battlelogScript: {fileID: 0}
   audioManager: {fileID: 0}
   yOffset: 1.69
+  hpFrame: {fileID: 0}
 --- !u!114 &114278411875958762
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -663,8 +658,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9518dcbb996bef84da2b1c24a14e5aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
-  baseHealth: 350
+  health: 500
+  baseHealth: 500
   immune: 0
   silence: 0
   berserk: 0
@@ -753,8 +748,6 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
@@ -844,8 +837,6 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
@@ -1054,8 +1045,6 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 114517332542838868}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 95300710953544328}
   idleAnimation: SpiritDoorIdleAnimation
@@ -1119,8 +1108,6 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
