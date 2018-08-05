@@ -2035,6 +2035,7 @@ MonoBehaviour:
   sceneManager: {fileID: 1020202954}
   playerAtbList: []
   isEnemyAttacked: 0
+  isPlayerATBListFilled: 0
 --- !u!114 &519420034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3227,7 +3228,7 @@ Prefab:
     - target: {fileID: 114959392602543044, guid: 208804f58ac98e34d8006bf42f916ba3,
         type: 2}
       propertyPath: waveIndex
-      value: -1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 208804f58ac98e34d8006bf42f916ba3, type: 2}
@@ -3586,6 +3587,7 @@ MonoBehaviour:
   - {fileID: 1675071835550834, guid: a1c9a277cc081e94ab6fc70963078ac8, type: 2}
   sceneManager: {fileID: 1020202954}
   indexInList: 0
+  isEnemySpawn: 0
 --- !u!114 &1020202953
 MonoBehaviour:
   m_ObjectHideFlags: 0
