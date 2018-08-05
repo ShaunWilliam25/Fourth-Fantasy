@@ -48,6 +48,7 @@ public class MainMenu : MonoBehaviour
             AudioManager.Instance.soundPlaying.Clear();
         }                
         AudioManager.instance.PlaySound("MenuTheme");
+        AudioManager.instance.waveIndex = -1;
 
     }
     private void Update()

@@ -6,7 +6,6 @@ public class SupportUpgrade2 : SkillEffect
 {
     private void Awake()
     {
-        AssignUser();
         effectType = SKILL_EFFECT_TYPE.DEBUFF;
         numOfTarget = 1;
         effectDescription = "Remove random buff from enemy";

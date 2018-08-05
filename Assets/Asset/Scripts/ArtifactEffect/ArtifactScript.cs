@@ -47,7 +47,7 @@ public class ArtifactScript : MonoBehaviour
         {
             int randNum = Random.Range(0, veryRareArtifact.Count);
             createdArtifact = Instantiate(veryRareArtifact[randNum].items, transform.position, Quaternion.identity);
-            rareArtifact.Remove(rareArtifact[randNum]);
+            veryRareArtifact.Remove(veryRareArtifact[randNum]);
             createdArtifactList.Add(createdArtifact);
         }
 
