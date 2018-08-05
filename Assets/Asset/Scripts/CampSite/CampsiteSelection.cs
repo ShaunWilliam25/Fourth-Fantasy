@@ -42,7 +42,7 @@ public class CampsiteSelection : MonoBehaviour
 
         if (showUI.player1.state == CAMPSITE_STATE.SELECTION)
         {
-            if (Input.GetKey("a"))
+            if (Input.GetKey("a") && player1.upgradeLeft > 0)
             {
                 p1Hold += Time.deltaTime;
                 player1.fillFeedback.fillAmount = p1Hold;
@@ -53,7 +53,7 @@ public class CampsiteSelection : MonoBehaviour
                     {
                         showUI.player1.state = CAMPSITE_STATE.STATUS_CHECK;
                     }
-                    else if (player1.upgrade.GetComponent<Image>().sprite == buttonStatus.chosen && player1.upgradeLeft > 0)
+                    else if (player1.upgrade.GetComponent<Image>().sprite == buttonStatus.chosen)
                     {
                         showUI.player1.state = CAMPSITE_STATE.SKILL_UPGRADE;
                     }
@@ -66,16 +66,42 @@ public class CampsiteSelection : MonoBehaviour
                     }
                 }
             }
+            else if(Input.GetKey("a") && player1.upgradeLeft <= 0)
+            {
+                if (player1.status.GetComponent<Image>().sprite == buttonStatus.chosen)
+                {
+                    p1Hold += Time.deltaTime;
+                    player1.fillFeedback.fillAmount = p1Hold;
+                    if(p1Hold > timeNeeded)
+                    {
+                        p1Hold = 0;
+                        showUI.player1.state = CAMPSITE_STATE.STATUS_CHECK;
+                    }
+                }
+                else if (player1.ready.GetComponent<Image>().sprite == buttonStatus.chosen)
+                {
+                    p1Hold += Time.deltaTime;
+                    player1.fillFeedback.fillAmount = p1Hold;
+                    if (p1Hold > timeNeeded)
+                    {
+                        p1Hold = 0; 
+                        player1.readyText.GetComponent<Text>().color = Color.green;
+                        player1.ready.GetComponent<Image>().sprite = buttonStatus.select;
+                        showUI.player1.state = CAMPSITE_STATE.READY;
+                        player1.fillFeedback.fillAmount = p1Hold;
+                    }
+                }
+            }
             else
             {
                 p1Hold = 0;
                 player1.fillFeedback.fillAmount = p1Hold;
-            }
+            }         
         }
 
         if (showUI.player2.state == CAMPSITE_STATE.SELECTION)
         {
-            if (Input.GetKey("l"))
+            if (Input.GetKey("l") && player2.upgradeLeft > 0)
             {
                 p2Hold += Time.deltaTime;
                 player2.fillFeedback.fillAmount = p2Hold;
@@ -95,7 +121,33 @@ public class CampsiteSelection : MonoBehaviour
                         player2.readyText.GetComponent<Text>().color = Color.green;
                         player2.ready.GetComponent<Image>().sprite = buttonStatus.select;
                         showUI.player2.state = CAMPSITE_STATE.READY;
-                        player1.fillFeedback.fillAmount = p1Hold;
+                        player2.fillFeedback.fillAmount = p2Hold;
+                    }
+                }
+            }
+            else if (Input.GetKey("l") && player2.upgradeLeft <= 0)
+            {
+                if (player2.status.GetComponent<Image>().sprite == buttonStatus.chosen)
+                {
+                    p2Hold += Time.deltaTime;
+                    player2.fillFeedback.fillAmount = p2Hold;
+                    if (p2Hold > timeNeeded)
+                    {
+                        p2Hold = 0;
+                        showUI.player2.state = CAMPSITE_STATE.STATUS_CHECK;
+                    }
+                }
+                else if (player2.ready.GetComponent<Image>().sprite == buttonStatus.chosen)
+                {
+                    p2Hold += Time.deltaTime;
+                    player2.fillFeedback.fillAmount = p2Hold;
+                    if (p2Hold > timeNeeded)
+                    {
+                        p2Hold = 0;
+                        player2.readyText.GetComponent<Text>().color = Color.green;
+                        player2.ready.GetComponent<Image>().sprite = buttonStatus.select;
+                        showUI.player2.state = CAMPSITE_STATE.READY;
+                        player2.fillFeedback.fillAmount = p2Hold;
                     }
                 }
             }
