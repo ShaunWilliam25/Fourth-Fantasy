@@ -280,11 +280,11 @@ public class CampsiteSelection : MonoBehaviour
                     player1.highlighted.transform.localPosition = showSkill.player[0].skillImage[p1Highlight].transform.localPosition;
                     player1.detail.text = csm.playerList[0].GetComponent<PlayerVariableManager>().skillList[p1Highlight].GetComponent<SkillDetail>().skillDescription;
                     //if upgraded, show the effect
-                    if (csm.playerList[0].GetComponent<PlayerVariableManager>().skillList[p1Highlight].GetComponent<SkillDetail>().upgradedCount > 0)
+                    if (csm.playerList[0].GetComponent<PlayerVariableManager>().skillHolder[p1Highlight].GetComponent<SkillDetail>().upgradedCount > 0)
                     {
-                        for(int i = 1; i < csm.playerList[0].GetComponent<PlayerVariableManager>().skillList[p1Highlight].GetComponent<SkillDetail>().upgradedCount + 1;i++)
+                        for(int i = 0; i < csm.playerList[0].GetComponent<PlayerVariableManager>().skillHolder[p1Highlight].GetComponent<SkillDetail>().upgradedCount;i++)
                         {
-                            player1.detail.GetComponent<Text>().text = player1.detail.GetComponent<Text>().text + "\r\n" + csm.playerList[0].GetComponent<PlayerVariableManager>().skillList[p1Highlight].GetComponent<SkillDetail>().upgradedEffect[i];
+                            player1.detail.GetComponent<Text>().text = player1.detail.GetComponent<Text>().text + "\r\n" + csm.playerList[0].GetComponent<PlayerVariableManager>().skillHolder[p1Highlight].GetComponent<SkillDetail>().upgradedEffect[i];
                         }
                     }
                 }
@@ -330,10 +330,10 @@ public class CampsiteSelection : MonoBehaviour
                     switch(p1Highlight)
                     {
                         case 0:
-                            showUI.player1.popUpText.text = "1. Heals 100 HP to self (50%)\r\n2. Heals 50 HP to all allies (40%)\r\n3.Heals 50 HP for each bad status effect on character (10%)";
+                            showUI.player1.popUpText.text = "1. Deals 150 damage to single enemy (30%)\r\n2. Deals 100 damage to all enemies(30 %)\r\n3. Deals 90 damage to all enemies and causes poison(20 %)\r\n4. Deals 130 damage to single enemy and causes slow(20 %)";                            
                             break;
                         case 1:
-                            showUI.player1.popUpText.text = "1. Deals 150 damage to single enemy (30%)\r\n2. Deals 100 damage to all enemies(30 %)\r\n3. Deals 90 damage to all enemies and causes poison(20 %)\r\n4. Deals 130 damage to single enemy and causes slow(20 %)";
+                            showUI.player1.popUpText.text = "1. Heals 100 HP to self (50%)\r\n2. Heals 50 HP to all allies (40%)\r\n3.Heals 50 HP for each bad status effect on character (10%)";
                             break;
                         case 2:
                             showUI.player1.popUpText.text = "1. Dispels one bad status effect on self (35%)\r\n2. Dispels one good status effect on enemy(35%)\r\n3. 20 % chance adding bless to self(20%)\r\n4. Inflicts curse to enemy(10%)";
@@ -373,7 +373,9 @@ public class CampsiteSelection : MonoBehaviour
             {
                 showUI.player1.popUp.SetActive(false);
                 GameObject upgradeSkillObject = Instantiate(upgradeObject);
-                upgradeSkillObject.transform.parent = csm.playerList[0].transform.GetChild(1);
+                upgradeSkillObject.transform.parent = csm.playerList[0].transform.GetChild(1).GetChild(2+player1.skillIndex);
+                upgradeSkillObject.GetComponent<SkillEffect>().user = csm.playerList[0];
+                upgradeSkillObject.GetComponent<SkillEffect>().playerArtifact = csm.playerList[0].GetComponent<PlayerArtifactEffect>();
                 csm.playerList[0].GetComponent<PlayerVariableManager>().skillHolder[player1.skillIndex].GetComponent<SkillDetail>().skillExecutionHolder.Add(upgradeSkillObject);
                 csm.playerList[0].GetComponent<PlayerVariableManager>().skillHolder[player1.skillIndex].GetComponent<SkillDetail>().upgradedCount++;
                 csm.playerList[0].GetComponent<PlayerVariableManager>().skillHolder[player1.skillIndex].GetComponent<SkillDetail>().upgradedEffect.Add(upgradeSkillObject.GetComponent<UpgradeDescription>().upgradeDescription);
@@ -408,11 +410,11 @@ public class CampsiteSelection : MonoBehaviour
                     player2.highlighted.transform.localPosition = showSkill.player[1].skillImage[p2Highlight].transform.localPosition;
                     player2.detail.text = csm.playerList[1].GetComponent<PlayerVariableManager>().skillList[p2Highlight].GetComponent<SkillDetail>().skillDescription;
                     //if upgraded, show the effect
-                    if (csm.playerList[1].GetComponent<PlayerVariableManager>().skillList[p2Highlight].GetComponent<SkillDetail>().upgradedCount > 0)
+                    if (csm.playerList[1].GetComponent<PlayerVariableManager>().skillHolder[p2Highlight].GetComponent<SkillDetail>().upgradedCount > 0)
                     {
-                        for (int i = 1; i < csm.playerList[1].GetComponent<PlayerVariableManager>().skillList[p2Highlight].GetComponent<SkillDetail>().upgradedCount + 1; i++)
+                        for (int i = 0; i < csm.playerList[1].GetComponent<PlayerVariableManager>().skillHolder[p2Highlight].GetComponent<SkillDetail>().upgradedCount; i++)
                         {
-                            player2.detail.GetComponent<Text>().text = player2.detail.GetComponent<Text>().text + "\r\n" + csm.playerList[1].GetComponent<PlayerVariableManager>().skillList[p2Highlight].GetComponent<SkillDetail>().upgradedEffect[i];
+                            player2.detail.GetComponent<Text>().text = player2.detail.GetComponent<Text>().text + "\r\n" + csm.playerList[1].GetComponent<PlayerVariableManager>().skillHolder[p2Highlight].GetComponent<SkillDetail>().upgradedEffect[i];
                         }
                     }
                 }
@@ -501,7 +503,9 @@ public class CampsiteSelection : MonoBehaviour
             {
                 showUI.player2.popUp.SetActive(false);
                 GameObject upgradeSkillObject = Instantiate(upgradeObject);
-                upgradeSkillObject.transform.parent = csm.playerList[1].transform.GetChild(1);
+                upgradeSkillObject.transform.parent = csm.playerList[1].transform.GetChild(1).GetChild(2+player1.skillIndex);
+                upgradeSkillObject.GetComponent<SkillEffect>().user = csm.playerList[1];
+                upgradeSkillObject.GetComponent<SkillEffect>().playerArtifact = csm.playerList[1].GetComponent<PlayerArtifactEffect>();
                 csm.playerList[1].GetComponent<PlayerVariableManager>().skillHolder[player2.skillIndex].GetComponent<SkillDetail>().skillExecutionHolder.Add(upgradeSkillObject);
                 csm.playerList[1].GetComponent<PlayerVariableManager>().skillHolder[player2.skillIndex].GetComponent<SkillDetail>().upgradedCount++;
                 csm.playerList[1].GetComponent<PlayerVariableManager>().skillHolder[player2.skillIndex].GetComponent<SkillDetail>().upgradedEffect.Add(upgradeSkillObject.GetComponent<UpgradeDescription>().upgradeDescription);

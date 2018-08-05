@@ -9,16 +9,14 @@ public class Player_Spawn : MonoBehaviour {
     public SceneManager sceneManager;
     //public List<GameObject> allSkillList;
     public float skillOffset;
-    [SerializeField] private float skillPosOffset;
-    [SerializeField] bool isCharacterStatsModified = false;
+    [SerializeField] private float skillPosOffset;    
 
     private void Awake()
     {
         sceneManager = this.gameObject.GetComponent<SceneManager>();
 
         //! Changing the character index based on the one from character selection
-        characterIndex[0] = AudioManager.instance.player1CharacterIndex;
-        characterIndex[1] = AudioManager.instance.player2CharacterIndex;
+        
 
               
     }
@@ -33,9 +31,14 @@ public class Player_Spawn : MonoBehaviour {
 
     private void Update()
     {
-        if(!isCharacterStatsModified)
+        if(!AudioManager.instance.isCharacterStatsModified)
         {
+
+            Debug.Log("CHANGINGIN STATS");
             //! Setting the values for players
+            characterIndex[0] = AudioManager.instance.player1CharacterIndex;
+            characterIndex[1] = AudioManager.instance.player2CharacterIndex;
+
             for (int i = 0; i < this.gameObject.GetComponent<SceneManager>().playerList.Count; i++)
             {
                 switch (characterIndex[i])
@@ -102,15 +105,19 @@ public class Player_Spawn : MonoBehaviour {
             }
 
             //! For each player
-            for (int i = 0; i < sceneManager.playerList.Count; i++)
-            {
-                //! Loop to instantiate skills
-                for (int j = 0; j < sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillList.Count; j++)
+            
+                for (int i = 0; i < sceneManager.playerList.Count; i++)
                 {
-                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillHolder.Add(Instantiate(sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillList[j], new Vector2((sceneManager.playerList[i].transform.GetChild(1).position.x + (skillOffset * j) * 0.6f) - skillPosOffset, sceneManager.playerList[i].transform.GetChild(1).position.y), Quaternion.identity, sceneManager.playerList[i].transform.GetChild(1)));
+                    if (sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillHolder.Count < 5)
+                     {
+                    //! Loop to instantiate skills
+                        for (int j = 0; j < sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillList.Count; j++)
+                        {
+                         sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillHolder.Add(Instantiate(sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillList[j], new Vector2((sceneManager.playerList[i].transform.GetChild(1).position.x + (skillOffset * j) * 0.6f) - skillPosOffset, sceneManager.playerList[i].transform.GetChild(1).position.y), Quaternion.identity, sceneManager.playerList[i].transform.GetChild(1)));
+                        }
+                    }
                 }
-            }
-
+            
             //! Filling the empty reference that is scene specific
             for (int i = 0; i < sceneManager.playerList.Count; i++)
             {
@@ -125,7 +132,6 @@ public class Player_Spawn : MonoBehaviour {
                 sceneManager.playerList[i].GetComponent<actionTimeBar>().timeRequired = 3f;
                 sceneManager.playerList[i].GetComponent<PlayerVariableManager>().anim.GetComponent<Animator>().Play(sceneManager.playerList[i].GetComponent<PlayerVariableManager>().idleAnimation);
 
-                sceneManager.playerList[i].GetComponent<PlayerStats>().health = sceneManager.playerList[i].GetComponent<PlayerStats>().baseHealth;
                 sceneManager.playerList[i].GetComponent<PlayerStats>().Reset();
 
                 // Detect Start of Battle to give effect
@@ -141,11 +147,15 @@ public class Player_Spawn : MonoBehaviour {
                 //! Skill effect reference
                 for (int j = 0; j < 5; j++)
                 {
-                    sceneManager.playerList[i].transform.GetChild(1).GetChild(2 + j).GetChild(0).GetComponent<SkillEffect>().enemyList = sceneManager.enemyList;
+                    for(int k=0;k< sceneManager.playerList[i].transform.GetChild(1).GetChild(2 + j).GetComponent<SkillDetail>().skillExecutionHolder.Count;k++)
+                    {
+                        sceneManager.playerList[i].transform.GetChild(1).GetChild(2 + j).GetComponent<SkillDetail>().skillExecutionHolder[k].GetComponent<SkillEffect>().playerList = sceneManager.playerList;
+                        sceneManager.playerList[i].transform.GetChild(1).GetChild(2 + j).GetComponent<SkillDetail>().skillExecutionHolder[k].GetComponent<SkillEffect>().enemyList = sceneManager.enemyList;
+                    }
                 }
             }
 
-            isCharacterStatsModified = true;
+            AudioManager.instance.isCharacterStatsModified = true;
         }
     }
 }
