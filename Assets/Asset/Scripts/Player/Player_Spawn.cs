@@ -9,7 +9,8 @@ public class Player_Spawn : MonoBehaviour {
     public SceneManager sceneManager;
     //public List<GameObject> allSkillList;
     public float skillOffset;
-    [SerializeField] private float skillPosOffset;    
+    [SerializeField] private float skillPosOffset;
+    private bool resetScene = false;
 
     private void Awake()
     {
@@ -23,10 +24,7 @@ public class Player_Spawn : MonoBehaviour {
 
     void Start()
     {
-        
-
-
-        
+       
     }
 
     private void Update()
@@ -118,6 +116,13 @@ public class Player_Spawn : MonoBehaviour {
                     }
                 }
             
+            
+
+            AudioManager.instance.isCharacterStatsModified = true;
+        }
+
+        if(!resetScene)
+        {
             //! Filling the empty reference that is scene specific
             for (int i = 0; i < sceneManager.playerList.Count; i++)
             {
@@ -147,15 +152,14 @@ public class Player_Spawn : MonoBehaviour {
                 //! Skill effect reference
                 for (int j = 0; j < 5; j++)
                 {
-                    for(int k=0;k< sceneManager.playerList[i].transform.GetChild(1).GetChild(2 + j).GetComponent<SkillDetail>().skillExecutionHolder.Count;k++)
+                    for (int k = 0; k < sceneManager.playerList[i].transform.GetChild(1).GetChild(2 + j).GetComponent<SkillDetail>().skillExecutionHolder.Count; k++)
                     {
                         sceneManager.playerList[i].transform.GetChild(1).GetChild(2 + j).GetComponent<SkillDetail>().skillExecutionHolder[k].GetComponent<SkillEffect>().playerList = sceneManager.playerList;
                         sceneManager.playerList[i].transform.GetChild(1).GetChild(2 + j).GetComponent<SkillDetail>().skillExecutionHolder[k].GetComponent<SkillEffect>().enemyList = sceneManager.enemyList;
                     }
                 }
             }
-
-            AudioManager.instance.isCharacterStatsModified = true;
+            resetScene = true;
         }
     }
 }
