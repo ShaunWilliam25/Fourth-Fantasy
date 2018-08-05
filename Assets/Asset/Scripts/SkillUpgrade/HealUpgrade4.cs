@@ -7,7 +7,6 @@ public class HealUpgrade4 : SkillEffect
     bool effect;
     private void Awake()
     {
-        AssignUser();
         effectType = SKILL_EFFECT_TYPE.HEAL;
         numOfTarget = 1;
         effect = false;

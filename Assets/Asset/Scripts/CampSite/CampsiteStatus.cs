@@ -46,7 +46,7 @@ public class CampsiteStatus : MonoBehaviour
             player2.skill[i].skillName.text = csm.playerList[1].GetComponent<PlayerVariableManager>().skillHolder[i].GetComponent<SkillDetail>().skillName;
             player2.skill[i].skillEffect.text = csm.playerList[1].GetComponent<PlayerVariableManager>().skillHolder[i].GetComponent<SkillDetail>().skillDescription;
             player2.skill[i].skillImage.sprite = csm.playerList[1].GetComponent<PlayerVariableManager>().skillHolder[i].GetComponent<SpriteRenderer>().sprite;
-            for (int j = 0; j < csm.playerList[1].GetComponent<PlayerVariableManager>().skillHolder[i].GetComponent<SkillDetail>().upgradedCount + 1; j++)
+            for (int j = 0; j < csm.playerList[1].GetComponent<PlayerVariableManager>().skillHolder[i].GetComponent<SkillDetail>().upgradedCount; j++)
             {
                 player2.skill[i].AddOnEffect[j].text = csm.playerList[1].GetComponent<PlayerVariableManager>().skillHolder[i].GetComponent<SkillDetail>().upgradedEffect[j];
             }

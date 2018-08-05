@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4549034419737958}
   - component: {fileID: 114508496901817956}
+  - component: {fileID: 114066078062952762}
   m_Layer: 0
   m_Name: SupportUpgrade1
   m_TagString: Untagged
@@ -40,6 +41,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114066078062952762
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1758179376455574}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 458c889751b6e2a4c8585802c761de2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeDescription: Dispels one bad status effect on self
 --- !u!114 &114508496901817956
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -54,8 +67,11 @@ MonoBehaviour:
   playerList: []
   enemyList: []
   status: []
+  playerArtifact: {fileID: 0}
   user: {fileID: 0}
   effectDescription: 
   effectType: 0
   damage: 0
   numOfTarget: 0
+  upgradedTimes: 0
+  audioManager: {fileID: 0}

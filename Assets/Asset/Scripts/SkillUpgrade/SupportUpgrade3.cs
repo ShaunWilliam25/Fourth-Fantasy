@@ -6,7 +6,6 @@ public class SupportUpgrade3 : SkillEffect
 {
     private void Awake()
     {
-        AssignUser();
         effectType = SKILL_EFFECT_TYPE.SUPPORTIVE;
         numOfTarget = 1;
         effectDescription = "Chance to apply bless";

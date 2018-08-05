@@ -21,6 +21,7 @@ public class NeedGreedRandomizer : MonoBehaviour
     public Text nameText;
     public Text descText;
     public GameObject ArtifactSpawner;
+    public NeedGreedSelection needGreedSelection;
 
     public void returnBoolFalse()
     {
@@ -47,6 +48,8 @@ public class NeedGreedRandomizer : MonoBehaviour
     {
         playerList = GameObject.FindWithTag("SceneManager").GetComponent<SceneManager>().playerList;
         ArtifactSpawner = artifactSpawnerSingleton.instance.gameObject;
+        needGreedSelection.GetComponent<NeedGreedSelection>();
+        needGreedSelection.enabled = false;
     }
 
     // Update is called once per frame
@@ -157,6 +160,7 @@ public class NeedGreedRandomizer : MonoBehaviour
         if (ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList.Count > 0)
         {
             canvas.SetActive(true);
+            needGreedSelection.enabled = true;
             playerList[0].SetActive(false);
             playerList[1].SetActive(false);
 
@@ -204,6 +208,7 @@ public class NeedGreedRandomizer : MonoBehaviour
             if (Input.anyKeyDown)
             {
                 canvas.SetActive(false);
+                needGreedSelection.enabled = false;
                 Instantiate(scenemanager.GetComponent<SceneManager>().victory);
                 if(Input.anyKeyDown)
                 {

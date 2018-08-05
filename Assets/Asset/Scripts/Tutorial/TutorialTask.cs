@@ -123,7 +123,7 @@ public class TutorialTask : MonoBehaviour {
 
         if(tutorialScript.tutorialStage == TutorialAppear.TUTORIAL_STAGE.STAGE_06)
         {
-            text.text = "Kill the Spirit door" + spiritDoorDead + "/1";
+            text.text = "Kill the wolf" + spiritDoorDead + "/1";
 
             if(sceneManager.enemyList.Count <= 0)
             {
