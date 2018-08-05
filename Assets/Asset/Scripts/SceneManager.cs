@@ -80,6 +80,7 @@ public class SceneManager : MonoBehaviour {
 
                 }
 
+                enemyList[i].transform.GetChild(2).gameObject.SetActive(false);
                 enemyList[i].GetComponent<EnemyActionTimeBar>().enabled = false;
                 Destroy(enemyList[i],3);
 

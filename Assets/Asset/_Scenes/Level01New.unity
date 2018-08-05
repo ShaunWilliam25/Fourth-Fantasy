@@ -3228,7 +3228,7 @@ Prefab:
     - target: {fileID: 114959392602543044, guid: 208804f58ac98e34d8006bf42f916ba3,
         type: 2}
       propertyPath: waveIndex
-      value: 2
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 208804f58ac98e34d8006bf42f916ba3, type: 2}
@@ -3606,7 +3606,6 @@ MonoBehaviour:
   sceneManager: {fileID: 1020202954}
   skillOffset: 1
   skillPosOffset: 1.2
-  isCharacterStatsModified: 0
 --- !u!114 &1020202954
 MonoBehaviour:
   m_ObjectHideFlags: 0
