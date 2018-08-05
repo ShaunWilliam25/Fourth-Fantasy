@@ -6,7 +6,6 @@ public class SupportUpgrade1 : SkillEffect
 {
     private void Awake()
     {
-        AssignUser();
         effectType = SKILL_EFFECT_TYPE.SUPPORTIVE;
         numOfTarget = 1;
         effectDescription = "Remove random debuff from self";

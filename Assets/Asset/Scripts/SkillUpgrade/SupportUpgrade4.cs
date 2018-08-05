@@ -6,7 +6,6 @@ public class SupportUpgrade4 : SkillEffect
 {
     private void Awake()
     {
-        AssignUser();
         effectType = SKILL_EFFECT_TYPE.DEBUFF;
         numOfTarget = 1;
         effectDescription = "Curse Enemy";
