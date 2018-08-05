@@ -61,7 +61,8 @@ MonoBehaviour:
   user: {fileID: 0}
   effectDescription: 
   effectType: 0
-  damage: 40
+  damage: 100
   numOfTarget: 0
+  upgradedTimes: 0
   audioManager: {fileID: 0}
   heal: 200
