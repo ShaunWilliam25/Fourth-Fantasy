@@ -13,7 +13,7 @@ public class KnightRevengeOfTheFallenKnight : SkillEffect {
 
     public override void Execute(GameObject targetedEnemy)
     {
-        user.GetComponent<EnemyTakeDamage>().EnemyHeal((int)(user.GetComponent<EnemyStats>().baseHealth * 0.4f));
+        user.GetComponent<EnemyTakeDamage>().EnemyHeal((int)(user.GetComponent<EnemyStats>().baseHealth * 0.5f));
         for(int i =0;i<status.Count;i++)
         {
             user.GetComponent<EnemyVariableManager>().statusList.Add(Instantiate(status[i]));

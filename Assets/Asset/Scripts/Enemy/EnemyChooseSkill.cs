@@ -28,8 +28,13 @@ public class EnemyChooseSkill : EnemyVariableManager {
         /* if (this.GetComponent<EnemyStats>().health <= this.GetComponent<EnemyStats>().baseHealth * 0.5f)
          {
              canUseUlti = true;
-         }*/        
-
+         }*/
+        if (isFinalBoss && (GetComponent<EnemyStats>().health / GetComponent<EnemyStats>().baseHealth) <= 0.1)
+        {
+            ultimate.GetComponent<SkillEffect>().user = this.gameObject;
+            ultimate.GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
+            isFinalBoss = false;
+        }
         if (this.GetComponent<EnemyVariableManager>().ATBFull)
         {
             if (this.GetComponent<EnemyVariableManager>().isTargetChosen)
@@ -113,13 +118,6 @@ public class EnemyChooseSkill : EnemyVariableManager {
             return;
         }
         int rand = Random.Range(0, 101);
-        if(isFinalBoss && (GetComponent<EnemyStats>().health/GetComponent<EnemyStats>().baseHealth)<=0.1)
-        {
-            ultimate.GetComponent<SkillEffect>().user = this.gameObject;
-            ultimate.GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
-            isFinalBoss = false;
-            return;
-        }
         switch(skillList.Count)
         {
             //enemy have 2 skills

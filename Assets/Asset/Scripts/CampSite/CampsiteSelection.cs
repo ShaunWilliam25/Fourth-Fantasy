@@ -15,7 +15,8 @@ public class CampsiteSelection : MonoBehaviour
     public float timeNeeded = 1;
     public float p1Hold, p2Hold;
     public int p1Highlight = 0, p2Highlight = 0;
-    public GameObject upgradeObject;
+    public GameObject upgradeObject1;
+    public GameObject upgradeObject2;
     public ButtonStatus buttonStatus;
     private int maxUpgrade = 3;
 
@@ -404,13 +405,13 @@ public class CampsiteSelection : MonoBehaviour
                         switch (player1.upgradeIndex)
                         {
                             case 0:
-                                upgradeObject = skillUpgrade.randomAttack();
+                                upgradeObject1 = skillUpgrade.randomAttack();
                                 break;
                             case 1:
-                                upgradeObject = skillUpgrade.randomHeal();
+                                upgradeObject1 = skillUpgrade.randomHeal();
                                 break;
                             case 2:
-                                upgradeObject = skillUpgrade.randomSupport();
+                                upgradeObject1 = skillUpgrade.randomSupport();
                                 break;
                         }
                         player1.upgradeState = UPGRADE_STATE.VALIDATE_UPGRADE;
@@ -424,7 +425,7 @@ public class CampsiteSelection : MonoBehaviour
             else if (player1.upgradeState == UPGRADE_STATE.VALIDATE_UPGRADE)
             {
                 showUI.player1.popUp.SetActive(false);
-                GameObject upgradeSkillObject = Instantiate(upgradeObject);
+                GameObject upgradeSkillObject = Instantiate(upgradeObject1);
                 upgradeSkillObject.transform.parent = csm.playerList[0].transform.GetChild(1).GetChild(2+player1.skillIndex);
                 upgradeSkillObject.GetComponent<SkillEffect>().user = csm.playerList[0];
                 upgradeSkillObject.GetComponent<SkillEffect>().playerArtifact = csm.playerList[0].GetComponent<PlayerArtifactEffect>();
@@ -436,7 +437,7 @@ public class CampsiteSelection : MonoBehaviour
             }
             else if(player1.upgradeState == UPGRADE_STATE.UPGRADE)
             {
-                player1.detail.text = csm.playerList[0].GetComponent<PlayerVariableManager>().skillHolder[player1.skillIndex].GetComponent<SkillDetail>().skillName + " upgraded with " + upgradeObject.GetComponent<UpgradeDescription>().upgradeDescription + "\r\n \r\nPress any key to continue";
+                player1.detail.text = csm.playerList[0].GetComponent<PlayerVariableManager>().skillHolder[player1.skillIndex].GetComponent<SkillDetail>().skillName + " upgraded with " + upgradeObject1.GetComponent<UpgradeDescription>().upgradeDescription + "\r\n \r\nPress any key to continue";
                 if(Input.anyKeyDown)
                 {
                     showUI.player1.state = CAMPSITE_STATE.SELECTION;
@@ -534,13 +535,13 @@ public class CampsiteSelection : MonoBehaviour
                         switch (player2.upgradeIndex)
                         {
                             case 0:
-                                upgradeObject = skillUpgrade.randomAttack();
+                                upgradeObject2 = skillUpgrade.randomAttack();
                                 break;
                             case 1:
-                                upgradeObject = skillUpgrade.randomHeal();
+                                upgradeObject2 = skillUpgrade.randomHeal();
                                 break;
                             case 2:
-                                upgradeObject = skillUpgrade.randomSupport();
+                                upgradeObject2 = skillUpgrade.randomSupport();
                                 break;
                         }
                         player2.upgradeState = UPGRADE_STATE.VALIDATE_UPGRADE;
@@ -554,8 +555,8 @@ public class CampsiteSelection : MonoBehaviour
             else if (player2.upgradeState == UPGRADE_STATE.VALIDATE_UPGRADE)
             {
                 showUI.player2.popUp.SetActive(false);
-                GameObject upgradeSkillObject = Instantiate(upgradeObject);
-                upgradeSkillObject.transform.parent = csm.playerList[1].transform.GetChild(1).GetChild(2+player1.skillIndex);
+                GameObject upgradeSkillObject = Instantiate(upgradeObject2);
+                upgradeSkillObject.transform.parent = csm.playerList[1].transform.GetChild(1).GetChild(2 + player2.skillIndex);
                 upgradeSkillObject.GetComponent<SkillEffect>().user = csm.playerList[1];
                 upgradeSkillObject.GetComponent<SkillEffect>().playerArtifact = csm.playerList[1].GetComponent<PlayerArtifactEffect>();
                 csm.playerList[1].GetComponent<PlayerVariableManager>().skillHolder[player2.skillIndex].GetComponent<SkillDetail>().skillExecutionHolder.Add(upgradeSkillObject);
@@ -566,7 +567,7 @@ public class CampsiteSelection : MonoBehaviour
             }
             else if (player2.upgradeState == UPGRADE_STATE.UPGRADE)
             {
-                player2.detail.text = csm.playerList[1].GetComponent<PlayerVariableManager>().skillHolder[player2.skillIndex].GetComponent<SkillDetail>().skillName + " upgraded with " + upgradeObject.GetComponent<UpgradeDescription>().upgradeDescription + "\r\n \r\nPress any key to continue";
+                player2.detail.text = csm.playerList[1].GetComponent<PlayerVariableManager>().skillHolder[player2.skillIndex].GetComponent<SkillDetail>().skillName + " upgraded with " + upgradeObject2.GetComponent<UpgradeDescription>().upgradeDescription + "\r\n \r\nPress any key to continue";
                 if (Input.anyKeyDown)
                 {
                     showUI.player2.state = CAMPSITE_STATE.SELECTION;
