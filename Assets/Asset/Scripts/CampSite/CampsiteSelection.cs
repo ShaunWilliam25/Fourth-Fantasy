@@ -280,11 +280,11 @@ public class CampsiteSelection : MonoBehaviour
                     player1.highlighted.transform.localPosition = showSkill.player[0].skillImage[p1Highlight].transform.localPosition;
                     player1.detail.text = csm.playerList[0].GetComponent<PlayerVariableManager>().skillList[p1Highlight].GetComponent<SkillDetail>().skillDescription;
                     //if upgraded, show the effect
-                    if (csm.playerList[0].GetComponent<PlayerVariableManager>().skillList[p1Highlight].GetComponent<SkillDetail>().upgradedCount > 0)
+                    if (csm.playerList[0].GetComponent<PlayerVariableManager>().skillHolder[p1Highlight].GetComponent<SkillDetail>().upgradedCount > 0)
                     {
-                        for(int i = 1; i < csm.playerList[0].GetComponent<PlayerVariableManager>().skillList[p1Highlight].GetComponent<SkillDetail>().upgradedCount + 1;i++)
+                        for(int i = 0; i < csm.playerList[0].GetComponent<PlayerVariableManager>().skillHolder[p1Highlight].GetComponent<SkillDetail>().upgradedCount;i++)
                         {
-                            player1.detail.GetComponent<Text>().text = player1.detail.GetComponent<Text>().text + "\r\n" + csm.playerList[0].GetComponent<PlayerVariableManager>().skillList[p1Highlight].GetComponent<SkillDetail>().upgradedEffect[i];
+                            player1.detail.GetComponent<Text>().text = player1.detail.GetComponent<Text>().text + "\r\n" + csm.playerList[0].GetComponent<PlayerVariableManager>().skillHolder[p1Highlight].GetComponent<SkillDetail>().upgradedEffect[i];
                         }
                     }
                 }
@@ -410,11 +410,11 @@ public class CampsiteSelection : MonoBehaviour
                     player2.highlighted.transform.localPosition = showSkill.player[1].skillImage[p2Highlight].transform.localPosition;
                     player2.detail.text = csm.playerList[1].GetComponent<PlayerVariableManager>().skillList[p2Highlight].GetComponent<SkillDetail>().skillDescription;
                     //if upgraded, show the effect
-                    if (csm.playerList[1].GetComponent<PlayerVariableManager>().skillList[p2Highlight].GetComponent<SkillDetail>().upgradedCount > 0)
+                    if (csm.playerList[1].GetComponent<PlayerVariableManager>().skillHolder[p2Highlight].GetComponent<SkillDetail>().upgradedCount > 0)
                     {
-                        for (int i = 1; i < csm.playerList[1].GetComponent<PlayerVariableManager>().skillList[p2Highlight].GetComponent<SkillDetail>().upgradedCount + 1; i++)
+                        for (int i = 0; i < csm.playerList[1].GetComponent<PlayerVariableManager>().skillHolder[p2Highlight].GetComponent<SkillDetail>().upgradedCount; i++)
                         {
-                            player2.detail.GetComponent<Text>().text = player2.detail.GetComponent<Text>().text + "\r\n" + csm.playerList[1].GetComponent<PlayerVariableManager>().skillList[p2Highlight].GetComponent<SkillDetail>().upgradedEffect[i];
+                            player2.detail.GetComponent<Text>().text = player2.detail.GetComponent<Text>().text + "\r\n" + csm.playerList[1].GetComponent<PlayerVariableManager>().skillHolder[p2Highlight].GetComponent<SkillDetail>().upgradedEffect[i];
                         }
                     }
                 }
