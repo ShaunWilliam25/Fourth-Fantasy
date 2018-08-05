@@ -21,6 +21,7 @@ public class TutorialAppear : MonoBehaviour {
     bool isOrderLayerAdjusted = false;
     bool isLecture6ShowedBefore = false;
     public bool isEnemyAttacked = false;
+    [SerializeField] bool isPlayerATBListFilled = false;
 
     public enum TUTORIAL_STAGE
     {
@@ -39,6 +40,7 @@ public class TutorialAppear : MonoBehaviour {
     private void Awake()
     {
         sceneManager = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManager>();
+        isPlayerATBListFilled = false;
     }
 
     // Use this for initialization
@@ -46,16 +48,11 @@ public class TutorialAppear : MonoBehaviour {
     {
         //eventSystem.SetSelectedGameObject(exit);
         tutorialStage = TUTORIAL_STAGE.STAGE_01;
-        for (int i = 0; i < sceneManager.playerList.Count; i++)
-        {
-            playerAtbList.Add(sceneManager.playerList[i].GetComponent<actionTimeBar>());
-        }
     }
 
     private void OnEnable()
     {
-        //Time.timeScale = 0;
-        //eventSystem.SetSelectedGameObject(exit);
+
     }
 
     private void OnDisable()
@@ -66,6 +63,13 @@ public class TutorialAppear : MonoBehaviour {
     // Update is called once per frame
     void Update ()
     {
+        if(!isPlayerATBListFilled)
+        {
+            playerAtbList[0] = Player1.instance.gameObject.GetComponent<actionTimeBar>();
+            playerAtbList[1] = Player2.instance.gameObject.GetComponent<actionTimeBar>();
+            isPlayerATBListFilled = true;
+        }
+        
         //! Skip tutorial
         if(Input.GetKeyDown(KeyCode.G))
         {
@@ -280,6 +284,7 @@ public class TutorialAppear : MonoBehaviour {
                     if (playerAtbList[i].enabled != false)
                     {
                         playerAtbList[i].enabled = false;
+                        playerAtbList[i].gameObject.GetComponent<PlayerScrollSkill>().enabled = false;
                     }
                 }
                 for (int i = 0; i < sceneManager.enemyList.Count; i++)
@@ -307,7 +312,7 @@ public class TutorialAppear : MonoBehaviour {
             if (isEnemyAttacked)
             {
                 taskCanvas.enabled = true;
-                task.text = "Kill the Spirit Door";
+                task.text = "Kill the wolf";
                 for (int i = 0; i < sceneManager.playerList.Count; i++)
                 {
                     sceneManager.playerList[i].transform.GetChild(1).gameObject.SetActive(true);
@@ -318,6 +323,7 @@ public class TutorialAppear : MonoBehaviour {
                     if (playerAtbList[i].enabled != true)
                     {
                         playerAtbList[i].enabled = true;
+                        playerAtbList[i].gameObject.GetComponent<PlayerScrollSkill>().enabled = true;
                     }
                 }
                 tint.SetActive(false);

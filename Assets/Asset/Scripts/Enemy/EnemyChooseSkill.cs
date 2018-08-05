@@ -41,7 +41,7 @@ public class EnemyChooseSkill : EnemyVariableManager {
                 // Random Skill Choosing
                 RandomSkill();
                 AudioManager.instance.PlaySound("EnemyAttackSound");
-                this.GetComponent<EnemyVariableManager>().battlelogScript.AddEvent(this.name + " attacks " + this.GetComponent<EnemyVariableManager>().Target.name);
+                this.GetComponent<EnemyVariableManager>().battlelogScript.AddEvent(this.GetComponent<EnemyStats>().name + " attacks " + this.GetComponent<EnemyVariableManager>().Target.name);
                 // this.GetComponent<EnemyVariableManager>().isSkillUsed = false;
                 //! Attack check for tutorial 6
                 if (!tutorial.isEnemyAttacked)

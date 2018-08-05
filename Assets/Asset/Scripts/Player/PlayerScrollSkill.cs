@@ -113,6 +113,12 @@ public class PlayerScrollSkill : PlayerVariableManager {
                 //isScroll++;
             }
             isScroll++;
+
+            //! Check if the isScroll is more than than than requirement
+            if(isScroll > 3)
+            {
+                isScroll = 3;
+            }
         }            
     }
 }
