@@ -17,8 +17,8 @@ public class ArtifactScript : MonoBehaviour
     public int normalRarity;
     public int rareRarity;
     public int veryRareRarity;
-	public GameObject ownedArtifact;
-    public List<GameObject> ownedArtifactList;
+	public GameObject createdArtifact;
+    public List<GameObject> createdArtifactList;
 
     public void calArtifact()
     {
@@ -27,8 +27,9 @@ public class ArtifactScript : MonoBehaviour
         if (calArtifactChance <= normalRarity)
         {
             int randNum = Random.Range(0, normalArtifact.Count);
-            ownedArtifact = Instantiate(normalArtifact[randNum].items, transform.position, Quaternion.identity);
-            ownedArtifactList.Add(ownedArtifact);
+            createdArtifact = Instantiate(normalArtifact[randNum].items, transform.position, Quaternion.identity);
+            normalArtifact.Remove(normalArtifact[randNum]);
+            createdArtifactList.Add(createdArtifact);
 
             //Instantiate(normalArtifact[randNum].items, transform.position. new Vector2(enemySpawnPoints[i].position.x, enemySpawnPoints[i].position.y), Quaternion.identity);
 
@@ -38,14 +39,16 @@ public class ArtifactScript : MonoBehaviour
         else if (calArtifactChance > normalRarity && calArtifactChance <= normalRarity + rareRarity)
         {
             int randNum = Random.Range(0, rareArtifact.Count);
-			ownedArtifact = Instantiate(rareArtifact[randNum].items, transform.position, Quaternion.identity);
-            ownedArtifactList.Add(ownedArtifact);
+            createdArtifact = Instantiate(rareArtifact[randNum].items, transform.position, Quaternion.identity);
+            rareArtifact.Remove(rareArtifact[randNum]);
+            createdArtifactList.Add(createdArtifact);
         }
         else if (calArtifactChance > normalRarity + rareRarity && calArtifactChance <= normalRarity + rareRarity + veryRareRarity)
         {
             int randNum = Random.Range(0, veryRareArtifact.Count);
-			ownedArtifact = Instantiate(veryRareArtifact[randNum].items, transform.position, Quaternion.identity);
-            ownedArtifactList.Add(ownedArtifact);
+            createdArtifact = Instantiate(veryRareArtifact[randNum].items, transform.position, Quaternion.identity);
+            veryRareArtifact.Remove(veryRareArtifact[randNum]);
+            createdArtifactList.Add(createdArtifact);
         }
 
         //ownedArtifact.SetActive(false);

@@ -20,6 +20,8 @@ public class NeedGreedRandomizer : MonoBehaviour
     public GameObject descriptionGO;
     public Text nameText;
     public Text descText;
+    public GameObject ArtifactSpawner;
+    public NeedGreedSelection needGreedSelection;
 
     public void returnBoolFalse()
     {
@@ -45,6 +47,9 @@ public class NeedGreedRandomizer : MonoBehaviour
     private void Awake()
     {
         playerList = GameObject.FindWithTag("SceneManager").GetComponent<SceneManager>().playerList;
+        ArtifactSpawner = artifactSpawnerSingleton.instance.gameObject;
+        needGreedSelection.GetComponent<NeedGreedSelection>();
+        needGreedSelection.enabled = false;
     }
 
     // Update is called once per frame
@@ -144,23 +149,24 @@ public class NeedGreedRandomizer : MonoBehaviour
             //Debug.Log(artifactAdded);
         }
 
-        nameText.text = scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0].GetComponent<ArtifactInformation>().name;
-        descText.text = scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0].GetComponent<ArtifactInformation>().effect;
+        nameText.text = ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList[0].GetComponent<ArtifactInformation>().name;
+        descText.text = ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList[0].GetComponent<ArtifactInformation>().effect;
 
     }
 
     public void addArtifactToPlayer()
     {
         Debug.Log("addtoarti");
-        if (scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Count > 0)
+        if (ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList.Count > 0)
         {
             canvas.SetActive(true);
+            needGreedSelection.enabled = true;
             playerList[0].SetActive(false);
             playerList[1].SetActive(false);
 
             scenemanager.GetComponent<SceneManager>().VictoryGO.SetActive(false);
 
-            scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0].SetActive(true);
+            ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList[0].SetActive(true);
 
             descriptionGO.SetActive(true);
 
@@ -185,7 +191,7 @@ public class NeedGreedRandomizer : MonoBehaviour
                     Player1OwnerText.SetActive(false);
                     Player2OwnerText.SetActive(false);
 
-                    scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0].SetActive(true);
+                    ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList[0].SetActive(true);
 
                     descriptionGO.SetActive(true);
 
@@ -202,6 +208,7 @@ public class NeedGreedRandomizer : MonoBehaviour
             if (Input.anyKeyDown)
             {
                 canvas.SetActive(false);
+                needGreedSelection.enabled = false;
                 Instantiate(scenemanager.GetComponent<SceneManager>().victory);
                 if(Input.anyKeyDown)
                 {
@@ -255,10 +262,10 @@ public class NeedGreedRandomizer : MonoBehaviour
         scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Count - 1].transform.SetParent(owner.transform);
         scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Remove(scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Count - 1]);
         */
-        scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0].SetActive(false);
-        owner.GetComponent<PlayerVariableManager>().artifactsList.Add(scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0]);
-        scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0].transform.SetParent(owner.transform);
-        scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Remove(scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0]);
+        ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList[0].SetActive(false);
+        owner.GetComponent<PlayerVariableManager>().artifactsList.Add(ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList[0]);
+        ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList[0].transform.SetParent(owner.transform);
+        ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList.Remove(ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList[0]);
 
         descriptionGO.SetActive(false);
 

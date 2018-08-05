@@ -74,6 +74,10 @@ public class PlayerVariableManager : MonoBehaviour {
     [Header("Player Animation Controller")]
     public string idleAnimation;
     public string attackAnimation;
+    public string injuredAnimation;
+    public string spellAnimation;
+    public string deathAnimation;
+    public string reviveAnimation;
 
     //! Battle State Manager
     [Header("Battle State Manager")]

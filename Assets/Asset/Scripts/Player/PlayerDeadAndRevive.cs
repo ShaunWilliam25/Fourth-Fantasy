@@ -6,6 +6,7 @@ public class PlayerDeadAndRevive : MonoBehaviour {
 
     public PlayerStats playerStats;
     public PlayerVariableManager playerVariable;
+    public float reviveAnimationTimer;
     public Color originalColour;
 	// Use this for initialization
 	void Start ()
@@ -26,14 +27,11 @@ public class PlayerDeadAndRevive : MonoBehaviour {
             playerStats.Reset();
             playerStats.knockedOut = true;
             playerStats.reviveAction = 3;
+            GetComponent<PlayerVariableManager>().anim.GetComponent<Animator>().Play(GetComponent<PlayerVariableManager>().deathAnimation);
             playerVariable.GetComponent<PlayerScrollSkill>().enabled = false;
             playerVariable.GetComponent<PlayerSkillChooseTarget>().enabled = false;
             playerVariable.GetComponent<PlayerSkillExecution>().enabled = false;
-            GetComponentInChildren<SpriteRenderer>().color = Color.black;
-        }
-        if(playerStats.knockedOut)
-        {
-            GetComponentInChildren<SpriteRenderer>().color = Color.black;
+            playerVariable.GetComponent<PlayerTakeDamage>().enabled = false;
         }
         if(playerStats.knockedOut == true && playerStats.reviveAction <=0 || playerStats.autoRevive)
         {
@@ -41,10 +39,17 @@ public class PlayerDeadAndRevive : MonoBehaviour {
             playerStats.reviveAction = 0;
             playerStats.autoRevive = false;
             playerStats.health = playerStats.baseHealth;
+            playerVariable.GetComponent<actionTimeBar>().startSelection = 0;
             playerVariable.GetComponent<PlayerScrollSkill>().enabled = true;
             playerVariable.GetComponent<PlayerSkillChooseTarget>().enabled = true;
             playerVariable.GetComponent<PlayerSkillExecution>().enabled = true;
-            GetComponentInChildren<SpriteRenderer>().color = originalColour;
+            GetComponent<PlayerVariableManager>().anim.GetComponent<Animator>().Play(GetComponent<PlayerVariableManager>().reviveAnimation);
+            Invoke("ResetAnimation", reviveAnimationTimer);
         }
 	}
+
+    void ResetAnimation()
+    {
+        this.GetComponent<PlayerVariableManager>().anim.GetComponent<Animator>().Play(this.GetComponent<PlayerVariableManager>().idleAnimation);
+    }
 }

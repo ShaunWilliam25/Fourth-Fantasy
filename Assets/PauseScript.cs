@@ -21,8 +21,8 @@ public class PauseScript : MonoBehaviour
     {
         audioMixer.GetFloat("MasterVolume", out outMasterVolume);
         masterSlider.value = AudioManager.Instance.dBToVolume(outMasterVolume);
-        audioMixer.GetFloat("MusicVolume", out outMusicVolume);
-        musicSlider.value = AudioManager.Instance.dBToVolume(outMusicVolume);
+        //audioMixer.GetFloat("MusicVolume", out outMusicVolume);
+        //musicSlider.value = AudioManager.Instance.dBToVolume(outMusicVolume);
         audioMixer.GetFloat("EffectVolume", out outEffectVolume);
         effectSlider.value = AudioManager.Instance.dBToVolume(outEffectVolume);
     }
@@ -67,7 +67,8 @@ public class PauseScript : MonoBehaviour
         //! PLayer loop to set all the sort layers
         for(int i=0;i<sceneManager.playerList.Count;i++)
         {
-            sceneManager.playerList[i].transform.GetChild(2).GetChild(0).GetComponent<Canvas>().sortingOrder = 0;
+            sceneManager.playerList[i].transform.GetChild(2).GetChild(0).GetComponent<Canvas>().sortingOrder = 2;
+            sceneManager.GetComponent<SceneManager>().playerList[i].transform.GetChild(2).GetChild(0).GetComponent<Canvas>().sortingOrder = 2;
             sceneManager.GetComponent<SceneManager>().playerList[i].transform.GetChild(2).GetChild(2).GetComponent<Canvas>().sortingOrder = 0;
             sceneManager.GetComponent<SceneManager>().playerList[i].transform.GetChild(2).GetChild(3).GetComponent<Canvas>().sortingOrder = 0;
             sceneManager.GetComponent<SceneManager>().playerList[i].transform.GetChild(0).GetComponent<SpriteRenderer>().sortingOrder = 0;

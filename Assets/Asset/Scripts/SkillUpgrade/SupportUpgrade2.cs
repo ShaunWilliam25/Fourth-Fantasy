@@ -6,10 +6,9 @@ public class SupportUpgrade2 : SkillEffect
 {
     private void Awake()
     {
-        AssignUser();
-        effectType = SKILL_EFFECT_TYPE.SUPPORTIVE;
+        effectType = SKILL_EFFECT_TYPE.DEBUFF;
         numOfTarget = 1;
-        effectDescription = "Counterattack and debuff enemy with silence";
+        effectDescription = "Remove random buff from enemy";
     }
 
     // Use this for initialization
@@ -26,6 +25,13 @@ public class SupportUpgrade2 : SkillEffect
 
     public override void Execute(GameObject targetedEnemy)
     {
-        
+        for (int i = 0; i < targetedEnemy.GetComponent<EnemyVariableManager>().statusList.Count; i++)
+        {
+            if (targetedEnemy.GetComponent<EnemyVariableManager>().statusList[i].GetComponent<StatusDetail>().type == "Good")
+            {
+                targetedEnemy.GetComponent<EnemyVariableManager>().statusList[i].GetComponent<StatusDetail>().secondDuration = 0;
+                break;
+            }
+        }
     }
 }

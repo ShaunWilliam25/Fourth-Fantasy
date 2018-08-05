@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4834112303008182}
   - component: {fileID: 114150178788614508}
+  - component: {fileID: 114412171571640942}
   m_Layer: 0
   m_Name: HealUpgrade3
   m_TagString: Untagged
@@ -54,8 +55,23 @@ MonoBehaviour:
   playerList: []
   enemyList: []
   status: []
+  playerArtifact: {fileID: 0}
   user: {fileID: 0}
   effectDescription: 
   effectType: 0
   damage: 0
   numOfTarget: 0
+  upgradedTimes: 0
+  audioManager: {fileID: 0}
+--- !u!114 &114412171571640942
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1671794406484486}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 458c889751b6e2a4c8585802c761de2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeDescription: Heals 50 HP for each bad status effect on character

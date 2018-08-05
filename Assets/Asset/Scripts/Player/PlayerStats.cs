@@ -21,11 +21,16 @@ public class PlayerStats : GeneralStats {
 
     public void Reset()
     {
-        knockedOut = true;
+        knockedOut = false;
         reviveAction = 0;
         autoRevive = false;
         taunt = false;
         silence = false;
         berserk = false;
+        GetComponent<PlayerScrollSkill>().enabled = true;
+        GetComponent<PlayerSkillChooseTarget>().enabled = true;
+        GetComponent<PlayerSkillExecution>().enabled = true;
+        GetComponent<actionTimeBar>().timeRequired = 3f;
+        GetComponent<actionTimeBar>().startSelection = Random.Range(0,0.5f);
     }
 }

@@ -60,6 +60,7 @@ MonoBehaviour:
   effectType: 0
   damage: 0
   numOfTarget: 0
+  upgradedTimes: 0
   audioManager: {fileID: 0}
-  wolfPrefab: {fileID: 1466983243244364, guid: 0a5a2572ea56c7e4089c3834344c1761, type: 2}
+  wolfPrefab: {fileID: 1379162349418790, guid: f892d34eef973654e8b507ab5f6b8898, type: 2}
   spawnCount: 2

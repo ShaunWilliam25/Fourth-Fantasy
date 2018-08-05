@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4547539065019824}
   - component: {fileID: 114969584157681356}
+  - component: {fileID: 114415805392885212}
   m_Layer: 0
   m_Name: HealUpgrade2
   m_TagString: Untagged
@@ -40,6 +41,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114415805392885212
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1626765588393616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 458c889751b6e2a4c8585802c761de2c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  upgradeDescription: Heals 50 HP to all allies
 --- !u!114 &114969584157681356
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -54,8 +67,11 @@ MonoBehaviour:
   playerList: []
   enemyList: []
   status: []
+  playerArtifact: {fileID: 0}
   user: {fileID: 0}
   effectDescription: 
   effectType: 0
   damage: 0
   numOfTarget: 0
+  upgradedTimes: 0
+  audioManager: {fileID: 0}

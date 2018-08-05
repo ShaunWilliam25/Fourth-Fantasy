@@ -55,6 +55,7 @@ MonoBehaviour:
   effect: 0
   secondDuration: 0
   user: {fileID: 0}
+  ID: 0
   type: 
   icon: {fileID: 21300000, guid: 70d6f34c5adfef040b6289f300440c71, type: 3}
   userType: 0

@@ -6,7 +6,6 @@ public class DamageUpgrade3 : SkillEffect
 {
     private void Awake()
     {
-        AssignUser();
         effectType = SKILL_EFFECT_TYPE.OFFENSIVE;
         numOfTarget = 0;
         damage = 90;

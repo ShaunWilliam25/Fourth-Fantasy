@@ -267,7 +267,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 224704426754960350}
-  - component: {fileID: 114187062831407942}
   - component: {fileID: 222669318995926232}
   m_Layer: 0
   m_Name: Status
@@ -389,6 +388,9 @@ MonoBehaviour:
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
   attackAnimation: SpiritDoorAttackAnimation
+  injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
   statusList: []
   enemyStats: {fileID: 0}
   healthBar: {fileID: 0}
@@ -435,6 +437,9 @@ MonoBehaviour:
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
   attackAnimation: SpiritDoorAttackAnimation
+  injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
   statusList: []
   enemyStats: {fileID: 0}
   healthBar: {fileID: 0}
@@ -467,6 +472,8 @@ MonoBehaviour:
   tutorial: {fileID: 0}
   chance: 4b0000000a0000000f000000
   isFinalBoss: 0
+  attackAnimationTimer: 0.5
+  spellAnimationTimer: 1.4
   ultimate: {fileID: 0}
 --- !u!114 &114094660980565302
 MonoBehaviour:
@@ -541,6 +548,9 @@ MonoBehaviour:
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
   attackAnimation: SpiritDoorAttackAnimation
+  injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
   statusList: []
   enemyStats: {fileID: 0}
   healthBar: {fileID: 0}
@@ -587,6 +597,9 @@ MonoBehaviour:
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
   attackAnimation: SpiritDoorAttackAnimation
+  injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
   statusList: []
   enemyStats: {fileID: 0}
   healthBar: {fileID: 0}
@@ -613,17 +626,6 @@ MonoBehaviour:
   battlelogScript: {fileID: 0}
   audioManager: {fileID: 0}
   yOffset: 1.69
---- !u!114 &114187062831407942
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1715371296479380}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114248519487340008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -823,6 +825,9 @@ MonoBehaviour:
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
   attackAnimation: SpiritDoorAttackAnimation
+  injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
   statusList: []
   enemyStats: {fileID: 0}
   healthBar: {fileID: 0}
@@ -856,6 +861,7 @@ MonoBehaviour:
   - {fileID: 114447731845559960}
   - {fileID: 114703427752739922}
   Empty: {fileID: 21300000, guid: e3fb893fe14be6a46beeb8616e0c80b3, type: 3}
+  swapTimer: 0
 --- !u!114 &114520087517319716
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -891,6 +897,9 @@ MonoBehaviour:
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
   attackAnimation: SpiritDoorAttackAnimation
+  injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
   statusList: []
   enemyStats: {fileID: 0}
   healthBar: {fileID: 0}
@@ -1012,6 +1021,9 @@ MonoBehaviour:
   anim: {fileID: 95745032372516500}
   idleAnimation: SpiritDoorIdleAnimation
   attackAnimation: SpiritDoorAttackAnimation
+  injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
   statusList: []
   enemyStats: {fileID: 114321970638701266}
   healthBar: {fileID: 114385400842407806}
@@ -1052,6 +1064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PopUpText: {fileID: 1247997310769886, guid: 04b05e889f3a481409a7327058b83454, type: 2}
+  injuredAnimationTimer: 1.1
 --- !u!114 &114855411442739230
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1217,7 +1230,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300008, guid: c20ab1cc7fc300349a95b35de7f358ac, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 623dc1321f4602847994def8d1634a05, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1494,7 +1507,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.03, y: 0}
+  m_AnchoredPosition: {x: -126.21, y: 57.25}
   m_SizeDelta: {x: 200.66, y: 17.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224596996375355754
@@ -1512,7 +1525,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.09999275, y: 0}
+  m_AnchoredPosition: {x: -126.21, y: 57.25}
   m_SizeDelta: {x: 248.3, y: 60}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224617586421840932
@@ -1553,7 +1566,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.4035519, y: 0.521626}
   m_AnchorMax: {x: 0.4035519, y: 0.521626}
-  m_AnchoredPosition: {x: 2.5156403, y: 2.949874}
+  m_AnchoredPosition: {x: -135, y: 87}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224804554649043418
@@ -1571,7 +1584,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -126.21, y: 57.25}
   m_SizeDelta: {x: 195, y: 22}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224882766937241016
@@ -1608,7 +1621,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.51751137, y: 0}
+  m_AnchoredPosition: {x: -126.21, y: 57.25}
   m_SizeDelta: {x: 199.57, y: 17.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224955848679810704

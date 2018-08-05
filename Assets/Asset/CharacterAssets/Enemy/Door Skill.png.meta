@@ -1,0 +1,519 @@
+fileFormatVersion: 2
+guid: a8eaef11cddb74f4c9955439cb48a8e3
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Door Skill_0
+    21300002: Door Skill_1
+    21300004: Door Skill_2
+    21300006: Door Skill_3
+    21300008: Door Skill_4
+    21300010: Door Skill_5
+    21300012: Door Skill_6
+    21300014: Door Skill_7
+    21300016: Door Skill_8
+    21300018: Door Skill_9
+    21300020: Door Skill_10
+    21300022: Door Skill_11
+    21300024: Door Skill_12
+    21300026: Door Skill_13
+    21300028: Door Skill_14
+    21300030: Door Skill_15
+    21300032: Door Skill_16
+    21300034: Door Skill_17
+    21300036: Door Skill_18
+    21300038: Door Skill_19
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 90
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Door Skill_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 414
+        height: 482
+      alignment: 9
+      pivot: {x: 0.459402, y: 0.4181457}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a30ae2fa35b25247bd62ec19f77ab08
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Skill_1
+      rect:
+        serializedVersion: 2
+        x: 414
+        y: 0
+        width: 414
+        height: 482
+      alignment: 9
+      pivot: {x: 0.459402, y: 0.4181457}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a884cf0c221e3242a1471ed1ea9a76f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Skill_2
+      rect:
+        serializedVersion: 2
+        x: 828
+        y: 0
+        width: 414
+        height: 482
+      alignment: 9
+      pivot: {x: 0.459402, y: 0.4181457}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f633f0cb9fc8d6546a9a230dd90956bc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Skill_3
+      rect:
+        serializedVersion: 2
+        x: 1242
+        y: 0
+        width: 414
+        height: 482
+      alignment: 9
+      pivot: {x: 0.459402, y: 0.4181457}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3549be0954ec3ba45bfaaa1a67abb5f3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Skill_4
+      rect:
+        serializedVersion: 2
+        x: 1656
+        y: 0
+        width: 414
+        height: 482
+      alignment: 9
+      pivot: {x: 0.459402, y: 0.4181457}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 518a8f19dd7985945aabb03110d01a9e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Skill_5
+      rect:
+        serializedVersion: 2
+        x: 2070
+        y: 0
+        width: 414
+        height: 482
+      alignment: 9
+      pivot: {x: 0.459402, y: 0.4181457}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78dbd6fd61e9bd643a27116b164a9d41
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Skill_6
+      rect:
+        serializedVersion: 2
+        x: 2484
+        y: 0
+        width: 414
+        height: 482
+      alignment: 9
+      pivot: {x: 0.459402, y: 0.4181457}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 093f359e7f5618144808a22e0d4559fc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Skill_7
+      rect:
+        serializedVersion: 2
+        x: 2898
+        y: 0
+        width: 414
+        height: 482
+      alignment: 9
+      pivot: {x: 0.459402, y: 0.4181457}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf903f5602bd5d74794b3487ae28fe50
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Skill_8
+      rect:
+        serializedVersion: 2
+        x: 3312
+        y: 0
+        width: 414
+        height: 482
+      alignment: 9
+      pivot: {x: 0.459402, y: 0.4181457}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebb31f15221f3ec48bda13d893bcd05a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Skill_9
+      rect:
+        serializedVersion: 2
+        x: 3726
+        y: 0
+        width: 414
+        height: 482
+      alignment: 9
+      pivot: {x: 0.459402, y: 0.4181457}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 049804920f1e0ab4e9974610d4d31ca0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Skill_10
+      rect:
+        serializedVersion: 2
+        x: 4140
+        y: 0
+        width: 414
+        height: 482
+      alignment: 9
+      pivot: {x: 0.459402, y: 0.4181457}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f02f11d6d6f1b96428616252c8030008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Skill_11
+      rect:
+        serializedVersion: 2
+        x: 4554
+        y: 0
+        width: 414
+        height: 482
+      alignment: 9
+      pivot: {x: 0.459402, y: 0.4181457}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ba4ea0cf786f149baf3593f173ef03
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Skill_12
+      rect:
+        serializedVersion: 2
+        x: 4968
+        y: 0
+        width: 414
+        height: 482
+      alignment: 9
+      pivot: {x: 0.459402, y: 0.4181457}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d01f4c0565266f74585c9bca6f631597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Skill_13
+      rect:
+        serializedVersion: 2
+        x: 5382
+        y: 0
+        width: 414
+        height: 482
+      alignment: 9
+      pivot: {x: 0.459402, y: 0.4181457}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64c20c4483dbda24f839958ab40777c4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Skill_14
+      rect:
+        serializedVersion: 2
+        x: 5796
+        y: 0
+        width: 414
+        height: 482
+      alignment: 9
+      pivot: {x: 0.459402, y: 0.4181457}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff19328f3b59d264086eec405dda97cd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Skill_15
+      rect:
+        serializedVersion: 2
+        x: 6210
+        y: 0
+        width: 414
+        height: 482
+      alignment: 9
+      pivot: {x: 0.459402, y: 0.4181457}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 661efcc9997589843ae0177ee856a7a7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Skill_16
+      rect:
+        serializedVersion: 2
+        x: 6624
+        y: 0
+        width: 414
+        height: 482
+      alignment: 9
+      pivot: {x: 0.459402, y: 0.4181457}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 307ee203273a4e1428c2ebee57615a65
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Skill_17
+      rect:
+        serializedVersion: 2
+        x: 7038
+        y: 0
+        width: 414
+        height: 482
+      alignment: 9
+      pivot: {x: 0.459402, y: 0.4181457}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa3abbe2d6c9849458fff2d387f6ceff
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Skill_18
+      rect:
+        serializedVersion: 2
+        x: 7452
+        y: 0
+        width: 414
+        height: 482
+      alignment: 9
+      pivot: {x: 0.459402, y: 0.4181457}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd3cd2c2e731e4b43a203465603b3156
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door Skill_19
+      rect:
+        serializedVersion: 2
+        x: 7866
+        y: 0
+        width: 414
+        height: 482
+      alignment: 9
+      pivot: {x: 0.459402, y: 0.4181457}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abecebba7bb9f104a901051d9601037b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 69c5e5bbbaa83064a8151e606d7483a3
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

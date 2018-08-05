@@ -11,6 +11,8 @@ public class AudioManager : MonoBehaviour {
     public static AudioManager instance;
     public List<Sound> soundPlaying;
     public int waveIndex = -1;
+    public int player1CharacterIndex;
+    public int player2CharacterIndex;
 
     public static AudioManager Instance
     {
@@ -30,10 +32,8 @@ public class AudioManager : MonoBehaviour {
         else
         {
             instance = this;
-            DontDestroyOnLoad(gameObject);
+            DontDestroyOnLoad(this.gameObject);
         }
-
-        //DontDestroyOnLoad(gameObject);
 
         foreach (Sound s in sounds)
         {

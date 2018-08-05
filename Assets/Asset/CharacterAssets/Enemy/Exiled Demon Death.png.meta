@@ -1,0 +1,498 @@
+fileFormatVersion: 2
+guid: e9dfcd6e426770341bd6dcc19e08b76c
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Exiled Demon Death_0
+    21300002: Exiled Demon Death_1
+    21300004: Exiled Demon Death_2
+    21300006: Exiled Demon Death_3
+    21300008: Exiled Demon Death_4
+    21300010: Exiled Demon Death_5
+    21300012: Exiled Demon Death_6
+    21300014: Exiled Demon Death_7
+    21300016: Exiled Demon Death_8
+    21300018: Exiled Demon Death_9
+    21300020: Exiled Demon Death_10
+    21300022: Exiled Demon Death_11
+    21300024: Exiled Demon Death_12
+    21300026: Exiled Demon Death_13
+    21300028: Exiled Demon Death_14
+    21300030: Exiled Demon Death_15
+    21300032: Exiled Demon Death_16
+    21300034: Exiled Demon Death_17
+    21300036: Exiled Demon Death_18
+  externalObjects: {}
+  serializedVersion: 7
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 140
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Exiled Demon Death_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1260
+        height: 944
+      alignment: 9
+      pivot: {x: 0.7885517, y: 0.5047549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4117e98547249954c9015c6d1c09d593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exiled Demon Death_1
+      rect:
+        serializedVersion: 2
+        x: 1260
+        y: 0
+        width: 1260
+        height: 944
+      alignment: 9
+      pivot: {x: 0.7885517, y: 0.5047549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e20df23b802d20d45ab8fac6c441085b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exiled Demon Death_2
+      rect:
+        serializedVersion: 2
+        x: 2520
+        y: 0
+        width: 1260
+        height: 944
+      alignment: 9
+      pivot: {x: 0.7885517, y: 0.5047549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24b18243abf487c40a1f68cb90667ce5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exiled Demon Death_3
+      rect:
+        serializedVersion: 2
+        x: 3780
+        y: 0
+        width: 1260
+        height: 944
+      alignment: 9
+      pivot: {x: 0.7885517, y: 0.5047549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c13e5ba5a2d71054fa285771841bb80d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exiled Demon Death_4
+      rect:
+        serializedVersion: 2
+        x: 5040
+        y: 0
+        width: 1260
+        height: 944
+      alignment: 9
+      pivot: {x: 0.7885517, y: 0.5047549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e469adf27aa227d48abad79487f0706c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exiled Demon Death_5
+      rect:
+        serializedVersion: 2
+        x: 6300
+        y: 0
+        width: 1260
+        height: 944
+      alignment: 9
+      pivot: {x: 0.7885517, y: 0.5047549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 095a61142a633de418c87e29f5109ac2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exiled Demon Death_6
+      rect:
+        serializedVersion: 2
+        x: 7560
+        y: 0
+        width: 1260
+        height: 944
+      alignment: 9
+      pivot: {x: 0.7885517, y: 0.5047549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1f0bd6708e97794f86cda1a16a4e9dc
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exiled Demon Death_7
+      rect:
+        serializedVersion: 2
+        x: 8820
+        y: 0
+        width: 1260
+        height: 944
+      alignment: 9
+      pivot: {x: 0.7885517, y: 0.5047549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9074d20e226b0444a3e38fed4ab520f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exiled Demon Death_8
+      rect:
+        serializedVersion: 2
+        x: 10080
+        y: 0
+        width: 1260
+        height: 944
+      alignment: 9
+      pivot: {x: 0.7885517, y: 0.5047549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b012810acc7e9db41a7f9ec577b8f940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exiled Demon Death_9
+      rect:
+        serializedVersion: 2
+        x: 11340
+        y: 0
+        width: 1260
+        height: 944
+      alignment: 9
+      pivot: {x: 0.7885517, y: 0.5047549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8291aa3f21f291941b4973126b53e492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exiled Demon Death_10
+      rect:
+        serializedVersion: 2
+        x: 12600
+        y: 0
+        width: 1260
+        height: 944
+      alignment: 9
+      pivot: {x: 0.7885517, y: 0.5047549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2baa869e65121046a0907a093d8e31f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exiled Demon Death_11
+      rect:
+        serializedVersion: 2
+        x: 13856
+        y: 0
+        width: 1260
+        height: 944
+      alignment: 9
+      pivot: {x: 0.7885517, y: 0.5047549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 222552d07231a4d4f9ef0b2d358fd8f1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exiled Demon Death_12
+      rect:
+        serializedVersion: 2
+        x: 15120
+        y: 0
+        width: 1260
+        height: 944
+      alignment: 9
+      pivot: {x: 0.7885517, y: 0.5047549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae102ed198695314fa2fd9db7423154f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exiled Demon Death_13
+      rect:
+        serializedVersion: 2
+        x: 16380
+        y: 0
+        width: 1260
+        height: 944
+      alignment: 9
+      pivot: {x: 0.7885517, y: 0.5047549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32ff13e4b4943f54ca8f3158541ea7e6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exiled Demon Death_14
+      rect:
+        serializedVersion: 2
+        x: 17640
+        y: 0
+        width: 1260
+        height: 944
+      alignment: 9
+      pivot: {x: 0.7885517, y: 0.5047549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 262b111d9d285004db67f6dd8767639d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exiled Demon Death_15
+      rect:
+        serializedVersion: 2
+        x: 18900
+        y: 0
+        width: 1260
+        height: 944
+      alignment: 9
+      pivot: {x: 0.7885517, y: 0.5047549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c1641415b3d5e64d95956c84922bd7e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exiled Demon Death_16
+      rect:
+        serializedVersion: 2
+        x: 20160
+        y: 0
+        width: 1260
+        height: 944
+      alignment: 9
+      pivot: {x: 0.7885517, y: 0.5047549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06689eb98075eca41858fa725f00deb0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exiled Demon Death_17
+      rect:
+        serializedVersion: 2
+        x: 21420
+        y: 0
+        width: 1260
+        height: 944
+      alignment: 9
+      pivot: {x: 0.7885517, y: 0.5047549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdf389185fb5db14db15378a2b27a519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Exiled Demon Death_18
+      rect:
+        serializedVersion: 2
+        x: 22680
+        y: 0
+        width: 1260
+        height: 944
+      alignment: 9
+      pivot: {x: 0.7885517, y: 0.5047549}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 82a764fda14d59e47a9ab081768a03be
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: df2761d3cf67c4041ae9afacfe09ebec
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

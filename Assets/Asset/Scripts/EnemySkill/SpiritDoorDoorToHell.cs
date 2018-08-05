@@ -8,7 +8,7 @@ public class SpiritDoorDoorToHell : SkillEffect {
     private void Awake()
     {
         AssignEnemyUser();
-        effectType = SKILL_EFFECT_TYPE.OFFENSIVE;
+        effectType = SKILL_EFFECT_TYPE.SUPPORTIVE;
         numOfTarget = 0;
     }
 

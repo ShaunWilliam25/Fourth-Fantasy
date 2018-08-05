@@ -10,6 +10,7 @@ public class DanceOfTheDemon : SkillEffect
         effectType = SKILL_EFFECT_TYPE.HEAL;
         numOfTarget = 1;
         effectDescription = "Heal all allies";
+        upgradedTimes = 0;
     }
 
     // Use this for initialization

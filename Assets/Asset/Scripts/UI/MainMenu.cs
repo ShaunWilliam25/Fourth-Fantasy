@@ -14,7 +14,7 @@ public class MainMenu : MonoBehaviour
 
     public void StartGame()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene(1); ///get the next level after pressting start
+        UnityEngine.SceneManagement.SceneManager.LoadScene(19); ///get the next level after pressting start
 	}
 
     public void QuitGame()
@@ -48,6 +48,7 @@ public class MainMenu : MonoBehaviour
             AudioManager.Instance.soundPlaying.Clear();
         }                
         AudioManager.instance.PlaySound("MenuTheme");
+        AudioManager.instance.waveIndex = -1;
 
     }
     private void Update()
