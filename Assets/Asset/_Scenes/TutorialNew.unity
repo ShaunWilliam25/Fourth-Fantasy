@@ -2814,7 +2814,8 @@ MonoBehaviour:
   - {fileID: 0}
   isEnemyAttacked: 0
   isPlayerATBListFilled: 0
-  campsiteTutorial: {fileID: 0}
+  campsiteTutorial: {fileID: 1978719395}
+  needGreedTutorial: {fileID: 1284362380}
 --- !u!114 &519420034
 MonoBehaviour:
   m_ObjectHideFlags: 0
