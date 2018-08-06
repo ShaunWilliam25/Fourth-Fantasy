@@ -362,7 +362,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "SPECIAL THANKS \n\n\nGPS LECTURERS\n\nJohann Lim \nKeng Boon Lim \nNabilah
-    Zakaria\n\n\nHCI LECTURERS\n\nHilmy Abdul Rahim\nNg Yiing Y'ng "
+    Zakaria\n\n\nHCI LECTURERS\n\nHilmi Abdul Rahim\nNg Yiing Y'ng "
 --- !u!222 &237154896
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -910,7 +910,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'PROGRAMMAR
+  m_Text: 'PROGRAMMER
 
     Shaun William Toolseram (Lead)
 
