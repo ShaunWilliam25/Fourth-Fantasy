@@ -34,22 +34,26 @@ public class TutorialTask : MonoBehaviour {
 
         if(gameObject.tag == "Player1Toggle")
         {
-            skillExecution = GameObject.FindGameObjectWithTag("Player1").GetComponent<PlayerSkillExecution>();
+            //skillExecution = GameObject.FindGameObjectWithTag("Player1").GetComponent<PlayerSkillExecution>();
+            skillExecution = Player1.instance.GetComponent<PlayerSkillExecution>();
         }
         else if(gameObject.tag == "Player2Toggle")
         {
-            skillExecution = GameObject.FindGameObjectWithTag("Player2").GetComponent<PlayerSkillExecution>();
+            //skillExecution = GameObject.FindGameObjectWithTag("Player2").GetComponent<PlayerSkillExecution>();
+            skillExecution = Player2.instance.GetComponent<PlayerSkillExecution>();
         }
 
         //skillScroll = playerSpawnPoint.GetChild(0).gameObject.GetComponent<PlayerScrollSkill>();
 
         if (gameObject.tag == "Player1Toggle")
         {
-            skillScroll = GameObject.FindGameObjectWithTag("Player1").GetComponent<PlayerScrollSkill>();
+            //skillScroll = GameObject.FindGameObjectWithTag("Player1").GetComponent<PlayerScrollSkill>();
+            skillScroll = Player1.instance.GetComponent<PlayerScrollSkill>();
         }
         else if (gameObject.tag == "Player2Toggle")
         {
-            skillScroll = GameObject.FindGameObjectWithTag("Player2").GetComponent<PlayerScrollSkill>();
+            //skillScroll = GameObject.FindGameObjectWithTag("Player2").GetComponent<PlayerScrollSkill>();
+            skillScroll = Player2.instance.GetComponent<PlayerScrollSkill>();
         }
 
         text = GetComponentInChildren<Text>();
@@ -57,10 +61,6 @@ public class TutorialTask : MonoBehaviour {
         for(int i=0;i<sceneManager.playerList.Count;i++)
         {
             playerAtbList.Add(sceneManager.playerList[i].GetComponent<actionTimeBar>());
-        }
-        for (int i = 0; i < sceneManager.enemyList.Count; i++)
-        {
-            enemyAtbList.Add(sceneManager.enemyList[i].GetComponent<EnemyActionTimeBar>());
         }
         for (int i = 0; i < sceneManager.enemyList.Count; i++)
         {
@@ -81,11 +81,11 @@ public class TutorialTask : MonoBehaviour {
                     playerAtbList[i].enabled = false;
                 }                
             }
-            for (int i = 0; i < enemyAtbList.Count; i++)
+            for (int i = 0; i < sceneManager.enemyList.Count; i++)
             {
-                if(enemyAtbList[i].enabled != false)
+                if(sceneManager.enemyList[i].GetComponent<EnemyActionTimeBar>().enabled ==true)
                 {
-                    enemyAtbList[i].enabled = false;
+                    sceneManager.enemyList[i].GetComponent<EnemyActionTimeBar>().enabled = false;
                 }
             }
 

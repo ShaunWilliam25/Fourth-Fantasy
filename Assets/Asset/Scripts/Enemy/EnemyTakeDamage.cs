@@ -6,6 +6,7 @@ public class EnemyTakeDamage : MonoBehaviour {
 
     [SerializeField] private GameObject PopUpText;
     List<GameObject> statuses;
+    [SerializeField]private float offset;
     [SerializeField] private float injuredAnimationTimer;
 
     public void EnemyDamage(int damage)
@@ -51,7 +52,7 @@ public class EnemyTakeDamage : MonoBehaviour {
 
     public void PopUpDamage(GameObject target, int damage, Color colour)
     {
-        GameObject newPopUp = Instantiate(PopUpText, new Vector3(target.transform.position.x, target.transform.position.y + 2f, target.transform.position.z), Quaternion.identity);
+        GameObject newPopUp = Instantiate(PopUpText, new Vector3(target.transform.position.x, target.transform.position.y + 2f + offset, target.transform.position.z), Quaternion.identity);
         newPopUp.SetActive(true);
         newPopUp.GetComponent<PopUpDamageController>().SetText(damage.ToString(), colour);
         Destroy(newPopUp.gameObject, 0.5f);

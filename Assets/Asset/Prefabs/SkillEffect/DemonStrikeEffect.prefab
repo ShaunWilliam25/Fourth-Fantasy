@@ -60,5 +60,6 @@ MonoBehaviour:
   effectType: 0
   damage: 70
   numOfTarget: 0
+  upgradedTimes: 0
   audioManager: {fileID: 0}
   heal: 30
