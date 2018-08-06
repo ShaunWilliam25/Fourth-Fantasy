@@ -51,7 +51,6 @@ public class MainMenu : MonoBehaviour
         }                
         AudioManager.instance.PlaySound("MenuTheme");
         AudioManager.instance.waveIndex = -1;
-        AudioManager.instance.isCharacterStatsModified = false;
 
         keyboardInstruction.Play("StartMenuInstructionClip");
         mouseInstruction.Play("StartMenuInstructionClip02");

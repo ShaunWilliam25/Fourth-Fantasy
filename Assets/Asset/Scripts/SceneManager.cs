@@ -64,6 +64,16 @@ public class SceneManager : MonoBehaviour {
                 playerList[i].GetComponent<actionTimeBar>().enabled = true;
             }
         }
+
+        //! Making sure the skill is on when start scene
+        for(int i=0;i<playerList.Count;i++)
+        {
+            if(playerList[i].transform.GetChild(1).gameObject.activeInHierarchy == false)
+            {
+                playerList[i].transform.GetChild(1).gameObject.SetActive(true);
+                playerList[i].transform.GetChild(2).gameObject.SetActive(true);
+            }
+        }
     }
 
     private void Update()

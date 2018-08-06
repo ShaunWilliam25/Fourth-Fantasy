@@ -654,8 +654,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9518dcbb996bef84da2b1c24a14e5aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 4000
-  baseHealth: 4000
+  health: 10
+  baseHealth: 10
   immune: 0
   silence: 0
   berserk: 0
@@ -982,6 +982,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PopUpText: {fileID: 1247997310769886, guid: 04b05e889f3a481409a7327058b83454, type: 2}
+  offset: 0
   injuredAnimationTimer: 0
 --- !u!114 &114778266124300296
 MonoBehaviour:
