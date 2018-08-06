@@ -1276,8 +1276,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1098844155}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.54, y: -3.21, z: -0.1872925}
-  m_LocalScale: {x: 1.1310475, y: 1.1310475, z: 1.1310475}
+  m_LocalPosition: {x: -1.192, y: -3.36, z: -0.1872925}
+  m_LocalScale: {x: 1.1468638, y: 1.1468638, z: 1.1468638}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -2780,7 +2780,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1921966941}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.31, y: -1.46, z: -0.0010036796}
+  m_LocalPosition: {x: 1.34, y: -3.1, z: -0.0010036796}
   m_LocalScale: {x: 2.000564, y: 2.000564, z: 2.000564}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2943,8 +2943,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2073580851}
   - component: {fileID: 2073580850}
-  - component: {fileID: 2073580849}
   - component: {fileID: 2073580848}
+  - component: {fileID: 2073580849}
   m_Layer: 0
   m_Name: Skeleton Archer Idle Anim
   m_TagString: Untagged
@@ -3006,7 +3006,7 @@ Animator:
   m_GameObject: {fileID: 2073580847}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 80dd19dbc8f1c2041b6002c5b4176ff2, type: 2}
+  m_Controller: {fileID: 9100000, guid: ac31071707060144c80b960ee8982670, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -3036,8 +3036,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2073580847}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.66, y: -0.12, z: -0.0008305153}
-  m_LocalScale: {x: 2.0031047, y: 2.0031047, z: 2.0031047}
+  m_LocalPosition: {x: -0.436, y: -0.397, z: -0.0008305153}
+  m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
