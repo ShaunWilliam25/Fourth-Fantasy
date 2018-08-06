@@ -93,10 +93,26 @@ public class EnemyVariableManager : MonoBehaviour {
             spellAnimation = "WolfSkillAnimation";
             deathAnimation = "WolfDeathAnimation";
         }
+        else if (this.gameObject.tag == "archerskeleton")
+        {
+            idleAnimation = "SkeletonArcherIdleAnimation";
+            attackAnimation = "SkeletonArcherAttackAnimation";
+            injuredAnimation = "SkeletonArcherInjuredAnimation";
+            deathAnimation = "SkeletonArcherDeathAnimation";
+        }
+        else if (this.gameObject.tag == "lanceskeleton")
+        {
+            idleAnimation = "SkeletonLanceIdleAnimation";
+            attackAnimation = "SkeletonLanceAttackAnimation";
+            injuredAnimation = "SkeletonLanceInjuredAnimation";
+            deathAnimation = "SkeletonLanceDeathAnimation";
+        }
         else if (this.gameObject.tag == "swordskeleton")
         {
-            idleAnimation = "SkeletonSwordIdleAnim";
-            attackAnimation = "skeletonSwordAtack";
+            idleAnimation = "SkeletonSwordIdleAnimation";
+            attackAnimation = "SkeletonSwordAtackAnimation";
+            injuredAnimation = "SkeletonSwordInjuredAnimation";
+            deathAnimation = "SkeletonSwordDeathAnimation";
         }
         else if (this.gameObject.tag == "greedboss")
         {

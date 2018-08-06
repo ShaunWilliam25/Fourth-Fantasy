@@ -64,7 +64,7 @@ GameObject:
   - component: {fileID: 114579704081020974}
   m_Layer: 0
   m_Name: LanceSkeleton
-  m_TagString: Untagged
+  m_TagString: lanceskeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -368,12 +368,13 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
   attackAnimation: SpiritDoorAttackAnimation
+  injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
   statusList: []
   enemyStats: {fileID: 0}
   healthBar: {fileID: 0}
@@ -400,6 +401,7 @@ MonoBehaviour:
   battlelogScript: {fileID: 0}
   audioManager: {fileID: 0}
   yOffset: 1.69
+  hpFrame: {fileID: 0}
 --- !u!114 &114040519599517216
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -415,12 +417,13 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 114822550939757284}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 95988683732644268}
   idleAnimation: SpiritDoorIdleAnimation
   attackAnimation: SpiritDoorAttackAnimation
+  injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
   statusList: []
   enemyStats: {fileID: 114837217352937342}
   healthBar: {fileID: 114874448367829854}
@@ -480,12 +483,13 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
   attackAnimation: SpiritDoorAttackAnimation
+  injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
   statusList: []
   enemyStats: {fileID: 0}
   healthBar: {fileID: 0}
@@ -619,12 +623,13 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
   attackAnimation: SpiritDoorAttackAnimation
+  injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
   statusList: []
   enemyStats: {fileID: 0}
   healthBar: {fileID: 0}
@@ -657,6 +662,8 @@ MonoBehaviour:
   tutorial: {fileID: 0}
   chance: 50000000050000000f000000
   isFinalBoss: 0
+  attackAnimationTimer: 0
+  spellAnimationTimer: 0
   ultimate: {fileID: 0}
 --- !u!114 &114497652193213718
 MonoBehaviour:
@@ -743,12 +750,13 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
   attackAnimation: SpiritDoorAttackAnimation
+  injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
   statusList: []
   enemyStats: {fileID: 0}
   healthBar: {fileID: 0}
@@ -842,6 +850,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PopUpText: {fileID: 1247997310769886, guid: 04b05e889f3a481409a7327058b83454, type: 2}
+  offset: 0
+  injuredAnimationTimer: 1.083
 --- !u!114 &114750455524905970
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -857,12 +867,13 @@ MonoBehaviour:
   maxCooldown: 1
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
   attackAnimation: SpiritDoorAttackAnimation
+  injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
   statusList: []
   enemyStats: {fileID: 0}
   healthBar: {fileID: 0}
@@ -1006,12 +1017,13 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
   attackAnimation: SpiritDoorAttackAnimation
+  injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
   statusList: []
   enemyStats: {fileID: 0}
   healthBar: {fileID: 0}
@@ -1045,6 +1057,7 @@ MonoBehaviour:
   - {fileID: 114309966175241332}
   - {fileID: 114497652193213718}
   Empty: {fileID: 21300000, guid: e3fb893fe14be6a46beeb8616e0c80b3, type: 3}
+  swapTimer: 0
 --- !u!114 &114909573248871122
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1151,7 +1164,7 @@ SpriteRenderer:
   m_Size: {x: 4.81, y: 6.55}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!212 &212311197874958872
 SpriteRenderer:

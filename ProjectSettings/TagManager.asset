@@ -16,6 +16,8 @@ TagManager:
   - wolf
   - swordskeleton
   - greedboss
+  - archerskeleton
+  - lanceskeleton
   layers:
   - Default
   - TransparentFX

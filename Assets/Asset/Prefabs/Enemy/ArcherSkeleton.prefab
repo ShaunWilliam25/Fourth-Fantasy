@@ -169,7 +169,7 @@ GameObject:
   - component: {fileID: 114107067495334180}
   m_Layer: 0
   m_Name: ArcherSkeleton
-  m_TagString: Untagged
+  m_TagString: archerskeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -428,12 +428,13 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
   attackAnimation: SpiritDoorAttackAnimation
+  injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
   statusList: []
   enemyStats: {fileID: 0}
   healthBar: {fileID: 0}
@@ -503,12 +504,13 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
   attackAnimation: SpiritDoorAttackAnimation
+  injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
   statusList: []
   enemyStats: {fileID: 0}
   healthBar: {fileID: 0}
@@ -618,12 +620,13 @@ MonoBehaviour:
   maxCooldown: 1
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
   attackAnimation: SpiritDoorAttackAnimation
+  injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
   statusList: []
   enemyStats: {fileID: 0}
   healthBar: {fileID: 0}
@@ -694,6 +697,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PopUpText: {fileID: 1247997310769886, guid: 04b05e889f3a481409a7327058b83454, type: 2}
+  offset: 0
+  injuredAnimationTimer: 0.733
 --- !u!114 &114549014272708476
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -763,12 +768,13 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
   attackAnimation: SpiritDoorAttackAnimation
+  injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
   statusList: []
   enemyStats: {fileID: 0}
   healthBar: {fileID: 0}
@@ -802,6 +808,7 @@ MonoBehaviour:
   - {fileID: 114567092747144018}
   - {fileID: 114304630053104132}
   Empty: {fileID: 21300000, guid: e3fb893fe14be6a46beeb8616e0c80b3, type: 3}
+  swapTimer: 0
 --- !u!114 &114597717774517434
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -865,12 +872,13 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 114157868258665990}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 95744907672199772}
   idleAnimation: SpiritDoorIdleAnimation
   attackAnimation: SpiritDoorAttackAnimation
+  injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
   statusList: []
   enemyStats: {fileID: 114288776012807092}
   healthBar: {fileID: 114604541758890222}
@@ -970,12 +978,13 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
   attackAnimation: SpiritDoorAttackAnimation
+  injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
   statusList: []
   enemyStats: {fileID: 0}
   healthBar: {fileID: 0}
@@ -1002,6 +1011,7 @@ MonoBehaviour:
   battlelogScript: {fileID: 0}
   audioManager: {fileID: 0}
   yOffset: 1.69
+  hpFrame: {fileID: 0}
 --- !u!114 &114822413607636874
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1086,12 +1096,13 @@ MonoBehaviour:
   maxCooldown: 0
   actionBar: {fileID: 0}
   ATBFull: 0
-  pauseTime: 0
-  maxPauseTime: 0
   skillText: {fileID: 0}
   anim: {fileID: 0}
   idleAnimation: SpiritDoorIdleAnimation
   attackAnimation: SpiritDoorAttackAnimation
+  injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
   statusList: []
   enemyStats: {fileID: 0}
   healthBar: {fileID: 0}
@@ -1123,6 +1134,8 @@ MonoBehaviour:
   tutorial: {fileID: 0}
   chance: 500000000a0000000a000000
   isFinalBoss: 0
+  attackAnimationTimer: 0
+  spellAnimationTimer: 0
   ultimate: {fileID: 0}
 --- !u!114 &114954575949024318
 MonoBehaviour:
