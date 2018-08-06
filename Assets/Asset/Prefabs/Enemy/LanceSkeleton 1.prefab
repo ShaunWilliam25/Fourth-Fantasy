@@ -288,7 +288,7 @@ GameObject:
   - component: {fileID: 114171905593412286}
   m_Layer: 0
   m_Name: LanceSkeleton 1
-  m_TagString: LanceSkeleton
+  m_TagString: lanceskeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -866,7 +866,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PopUpText: {fileID: 1247997310769886, guid: 04b05e889f3a481409a7327058b83454, type: 2}
   offset: 0
-  injuredAnimationTimer: 1.1
+  injuredAnimationTimer: 1.083
 --- !u!114 &114765895175550032
 MonoBehaviour:
   m_ObjectHideFlags: 1
