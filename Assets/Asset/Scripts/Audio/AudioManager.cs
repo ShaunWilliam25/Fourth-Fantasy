@@ -13,7 +13,6 @@ public class AudioManager : MonoBehaviour {
     public int waveIndex = -1;
     public int player1CharacterIndex;
     public int player2CharacterIndex;
-    public bool isCharacterStatsModified = false;
 
     public static AudioManager Instance
     {

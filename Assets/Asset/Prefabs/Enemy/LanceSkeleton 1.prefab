@@ -288,7 +288,7 @@ GameObject:
   - component: {fileID: 114171905593412286}
   m_Layer: 0
   m_Name: LanceSkeleton 1
-  m_TagString: Untagged
+  m_TagString: LanceSkeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -317,7 +317,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1892361750674906}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.2845545, y: 1.4890999, z: 0.16335288}
+  m_LocalPosition: {x: 3.8969538, y: -0.35926285, z: 0.16335288}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4713923714198612}
@@ -346,7 +346,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1869048628933038}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.89, y: -0.01, z: 0}
+  m_LocalPosition: {x: -5.476954, y: -0.2087371, z: -0.16335288}
   m_LocalScale: {x: 1.0292099, y: 1.0292099, z: 1.0292099}
   m_Children: []
   m_Father: {fileID: 4286317571790854}
@@ -361,7 +361,7 @@ Animator:
   m_GameObject: {fileID: 1225990098706770}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 32c7af3464d12234aa70ca0b305b0d33, type: 2}
+  m_Controller: {fileID: 9100000, guid: 531927b8ac7d24848b88e797de3f9270, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -477,18 +477,20 @@ MonoBehaviour:
   actionBar: {fileID: 0}
   ATBFull: 0
   skillText: {fileID: 0}
-  anim: {fileID: 0}
+  anim: {fileID: 95039048161446994}
   idleAnimation: SpiritDoorIdleAnimation
   attackAnimation: SpiritDoorAttackAnimation
   injuredAnimation: 
   spellAnimation: 
   deathAnimation: 
   statusList: []
-  enemyStats: {fileID: 0}
+  enemyStats: {fileID: 114405414098199452}
   healthBar: {fileID: 0}
   healthBarBackground: {fileID: 0}
   healthInPercentage: 0
-  playerList: []
+  playerList:
+  - {fileID: 0}
+  - {fileID: 0}
   isTargetChosen: 0
   isSkillUsed: 0
   hiAggroTarget: {fileID: 0}
@@ -590,18 +592,20 @@ MonoBehaviour:
   actionBar: {fileID: 0}
   ATBFull: 0
   skillText: {fileID: 0}
-  anim: {fileID: 0}
+  anim: {fileID: 95039048161446994}
   idleAnimation: SpiritDoorIdleAnimation
   attackAnimation: SpiritDoorAttackAnimation
   injuredAnimation: 
   spellAnimation: 
   deathAnimation: 
   statusList: []
-  enemyStats: {fileID: 0}
+  enemyStats: {fileID: 114405414098199452}
   healthBar: {fileID: 0}
   healthBarBackground: {fileID: 0}
   healthInPercentage: 0
-  playerList: []
+  playerList:
+  - {fileID: 0}
+  - {fileID: 0}
   isTargetChosen: 0
   isSkillUsed: 0
   hiAggroTarget: {fileID: 0}
@@ -770,7 +774,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 1
+  m_FillAmount: 0.7345589
   m_FillClockwise: 1
   m_FillOrigin: 0
 --- !u!114 &114595738498835364
@@ -816,14 +820,14 @@ MonoBehaviour:
   actionBar: {fileID: 0}
   ATBFull: 0
   skillText: {fileID: 0}
-  anim: {fileID: 0}
+  anim: {fileID: 95039048161446994}
   idleAnimation: SpiritDoorIdleAnimation
   attackAnimation: SpiritDoorAttackAnimation
   injuredAnimation: 
   spellAnimation: 
   deathAnimation: 
   statusList: []
-  enemyStats: {fileID: 0}
+  enemyStats: {fileID: 114405414098199452}
   healthBar: {fileID: 0}
   healthBarBackground: {fileID: 0}
   healthInPercentage: 0
@@ -861,7 +865,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PopUpText: {fileID: 1247997310769886, guid: 04b05e889f3a481409a7327058b83454, type: 2}
-  injuredAnimationTimer: 0
+  offset: 0
+  injuredAnimationTimer: 1.1
 --- !u!114 &114765895175550032
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -878,18 +883,20 @@ MonoBehaviour:
   actionBar: {fileID: 0}
   ATBFull: 0
   skillText: {fileID: 0}
-  anim: {fileID: 0}
+  anim: {fileID: 95039048161446994}
   idleAnimation: SpiritDoorIdleAnimation
   attackAnimation: SpiritDoorAttackAnimation
   injuredAnimation: 
   spellAnimation: 
   deathAnimation: 
   statusList: []
-  enemyStats: {fileID: 0}
+  enemyStats: {fileID: 114405414098199452}
   healthBar: {fileID: 0}
   healthBarBackground: {fileID: 0}
   healthInPercentage: 1
-  playerList: []
+  playerList:
+  - {fileID: 0}
+  - {fileID: 0}
   isTargetChosen: 0
   isSkillUsed: 0
   hiAggroTarget: {fileID: 0}
@@ -927,18 +934,20 @@ MonoBehaviour:
   actionBar: {fileID: 0}
   ATBFull: 0
   skillText: {fileID: 0}
-  anim: {fileID: 0}
+  anim: {fileID: 95039048161446994}
   idleAnimation: SpiritDoorIdleAnimation
   attackAnimation: SpiritDoorAttackAnimation
   injuredAnimation: 
   spellAnimation: 
   deathAnimation: 
   statusList: []
-  enemyStats: {fileID: 0}
+  enemyStats: {fileID: 114405414098199452}
   healthBar: {fileID: 0}
   healthBarBackground: {fileID: 0}
   healthInPercentage: 0
-  playerList: []
+  playerList:
+  - {fileID: 0}
+  - {fileID: 0}
   isTargetChosen: 0
   isSkillUsed: 0
   hiAggroTarget: {fileID: 0}
@@ -966,7 +975,7 @@ MonoBehaviour:
   - {fileID: 114094269634267514}
   - {fileID: 114873857089314388}
   Empty: {fileID: 21300000, guid: e3fb893fe14be6a46beeb8616e0c80b3, type: 3}
-  swapTimer: 0
+  swapTimer: 135.2253
 --- !u!114 &114787308519348082
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1010,18 +1019,20 @@ MonoBehaviour:
   actionBar: {fileID: 0}
   ATBFull: 0
   skillText: {fileID: 0}
-  anim: {fileID: 0}
+  anim: {fileID: 95039048161446994}
   idleAnimation: SpiritDoorIdleAnimation
   attackAnimation: SpiritDoorAttackAnimation
   injuredAnimation: 
   spellAnimation: 
   deathAnimation: 
   statusList: []
-  enemyStats: {fileID: 0}
+  enemyStats: {fileID: 114405414098199452}
   healthBar: {fileID: 0}
   healthBarBackground: {fileID: 0}
   healthInPercentage: 0
-  playerList: []
+  playerList:
+  - {fileID: 0}
+  - {fileID: 0}
   isTargetChosen: 0
   isSkillUsed: 0
   hiAggroTarget: {fileID: 0}
@@ -1123,8 +1134,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9d9326829b1ce2499390e78e310f894, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  curCooldown: 0
-  maxCooldown: 0
+  curCooldown: 2.9382355
+  maxCooldown: 4
   actionBar: {fileID: 114569866962821628}
   ATBFull: 0
   skillText: {fileID: 0}
@@ -1138,16 +1149,18 @@ MonoBehaviour:
   enemyStats: {fileID: 114405414098199452}
   healthBar: {fileID: 114444388490248238}
   healthBarBackground: {fileID: 114595738498835364}
-  healthInPercentage: 0
-  playerList: []
-  isTargetChosen: 0
+  healthInPercentage: 1
+  playerList:
+  - {fileID: 0}
+  - {fileID: 0}
+  isTargetChosen: 1
   isSkillUsed: 0
   hiAggroTarget: {fileID: 0}
   loAggroTarget: {fileID: 0}
-  randNum: 0
+  randNum: 63
   Target: {fileID: 0}
   aimIcon: {fileID: 1869048628933038}
-  aimIconPosition: {x: 0, y: 0}
+  aimIconPosition: {x: -1.58, y: -0.56799996}
   randNo: 0
   enemyList: []
   UltiUsed: 0
@@ -1197,15 +1210,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 8cbad885ce846db41a6b18ead2b7ff31, type: 3}
+  m_Sprite: {fileID: 21300014, guid: 6f0c6c786d671034b8409af5156f0c36, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4.4615, y: 5.9100003}
+  m_Size: {x: 0.331, y: 0.589}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
 --- !u!212 &212275367376468928
 SpriteRenderer:

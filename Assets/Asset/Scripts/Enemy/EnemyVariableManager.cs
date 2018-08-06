@@ -97,6 +97,15 @@ public class EnemyVariableManager : MonoBehaviour {
         {
             idleAnimation = "SkeletonSwordIdleAnim";
             attackAnimation = "skeletonSwordAtack";
+            injuredAnimation = "SkeletonSword Injured Animation";
+            deathAnimation = "SkeletonSword Death Animation";
+        }
+        else if (this.gameObject.tag == "LanceSkeleton")
+        {
+            idleAnimation = "Skeleton Lance Idle Anim";
+            attackAnimation = "SkeletonLanceAttackAnim";
+            injuredAnimation = "SkeletonLanceInjuredAnim";
+            deathAnimation = "SkeletonLanceDeathAnim";
         }
         else if (this.gameObject.tag == "greedboss")
         {

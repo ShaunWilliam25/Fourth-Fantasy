@@ -1933,9 +1933,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1458056547}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 323271e3740502b4d8135b0c7b5b4447, type: 3}
+  m_Script: {fileID: 11500000, guid: 4d63795eb7a8d8746b39425471c58025, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  EncyclopediaP1: 8
+  EncyclopediaP2: 9
+  EncyclopediaP3: 10
+  EncyclopediaP4: 11
+  EncyclopediaP5: 12
+  EncyclopediaP6: 13
+  EncyclopediaP7: 14
+  EncyclopediaP8: 15
+  EncyclopediaP9: 16
+  EncyclopediaP10: 17
+  EncyclopediaP11: 18
+  StartMenuFinal: 0
 --- !u!114 &1458056550
 MonoBehaviour:
   m_ObjectHideFlags: 0

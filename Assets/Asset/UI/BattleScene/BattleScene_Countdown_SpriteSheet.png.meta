@@ -1,0 +1,788 @@
+fileFormatVersion: 2
+guid: 820a3c7833d588e42a2c47c3933bdcdf
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: BattleScene_Countdown_SpriteSheet_0
+    21300002: BattleScene_Countdown_SpriteSheet_1
+    21300004: BattleScene_Countdown_SpriteSheet_2
+    21300006: BattleScene_Countdown_SpriteSheet_3
+    21300008: BattleScene_Countdown_SpriteSheet_4
+    21300010: BattleScene_Countdown_SpriteSheet_5
+    21300012: BattleScene_Countdown_SpriteSheet_6
+    21300014: BattleScene_Countdown_SpriteSheet_7
+    21300016: BattleScene_Countdown_SpriteSheet_8
+    21300018: BattleScene_Countdown_SpriteSheet_9
+    21300020: BattleScene_Countdown_SpriteSheet_10
+    21300022: BattleScene_Countdown_SpriteSheet_11
+    21300024: BattleScene_Countdown_SpriteSheet_12
+    21300026: BattleScene_Countdown_SpriteSheet_13
+    21300028: BattleScene_Countdown_SpriteSheet_14
+    21300030: BattleScene_Countdown_SpriteSheet_15
+    21300032: BattleScene_Countdown_SpriteSheet_16
+    21300034: BattleScene_Countdown_SpriteSheet_17
+    21300036: BattleScene_Countdown_SpriteSheet_18
+    21300038: BattleScene_Countdown_SpriteSheet_19
+    21300040: BattleScene_Countdown_SpriteSheet_20
+    21300042: BattleScene_Countdown_SpriteSheet_21
+    21300044: BattleScene_Countdown_SpriteSheet_22
+    21300046: BattleScene_Countdown_SpriteSheet_23
+    21300048: BattleScene_Countdown_SpriteSheet_24
+    21300050: BattleScene_Countdown_SpriteSheet_25
+    21300052: BattleScene_Countdown_SpriteSheet_26
+    21300054: BattleScene_Countdown_SpriteSheet_27
+    21300056: BattleScene_Countdown_SpriteSheet_28
+    21300058: BattleScene_Countdown_SpriteSheet_29
+    21300060: BattleScene_Countdown_SpriteSheet_30
+    21300062: BattleScene_Countdown_SpriteSheet_31
+    21300064: BattleScene_Countdown_SpriteSheet_32
+  externalObjects: {}
+  serializedVersion: 5
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - serializedVersion: 2
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  - serializedVersion: 2
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: BattleScene_Countdown_SpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 349
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4191b8968a668e4439cdec628ed8f2a9
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleScene_Countdown_SpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 0
+        width: 349
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d42a1193fe847bf4988ecdd6b420d2bd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleScene_Countdown_SpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 698
+        y: 0
+        width: 349
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abd4ee821232cc14588c14f2ef4b48d3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleScene_Countdown_SpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 0
+        width: 349
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6590f12bc8526ed44a1ba90691cc01f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleScene_Countdown_SpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 1396
+        y: 0
+        width: 349
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 598b45ab143ed5e42b28761ce30ba96b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleScene_Countdown_SpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 1745
+        y: 0
+        width: 349
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea5ac1c4c4df2184e83da3a0891278bd
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleScene_Countdown_SpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 2094
+        y: 0
+        width: 349
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d24faec67eb86144a9fb38b5be214ec
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleScene_Countdown_SpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 2443
+        y: 0
+        width: 349
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90093386e20ec4547b0894efa81bd6b1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleScene_Countdown_SpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 2792
+        y: 0
+        width: 349
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 450a0b7120ef7154d8e18ab3d187d4e6
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleScene_Countdown_SpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 3141
+        y: 0
+        width: 349
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e86aabedf6867594ead9de4a7e239f8f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleScene_Countdown_SpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 3490
+        y: 0
+        width: 349
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a5b7a47506a05143b56799496ca1237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleScene_Countdown_SpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 3839
+        y: 0
+        width: 349
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c7f6651da585b4983a711c00fd2cc7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleScene_Countdown_SpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 4188
+        y: 0
+        width: 349
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7d31dc3ce8c8ad4eac4fc3f426d7da3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleScene_Countdown_SpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 4537
+        y: 0
+        width: 349
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95f2234ddeec7a34e8955be508431d45
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleScene_Countdown_SpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 4886
+        y: 0
+        width: 349
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 495eb175bde22544a852eb2f516dfd7d
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleScene_Countdown_SpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 5235
+        y: 0
+        width: 349
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8f33b5777f7cc142834ba27dd5d4513
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleScene_Countdown_SpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 5584
+        y: 0
+        width: 349
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c140b10dd9be00348a869162a80f9edf
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleScene_Countdown_SpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 5933
+        y: 0
+        width: 349
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c02b736f79d629b44a7aa1e236b3b34e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleScene_Countdown_SpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 6282
+        y: 0
+        width: 349
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ddea967872cc6541aa131453ce1382f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleScene_Countdown_SpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 6631
+        y: 0
+        width: 349
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 308e6085e00fca849954accd4e42232f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleScene_Countdown_SpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 6980
+        y: 0
+        width: 349
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cfb6abf3de433441a4530ca3dce5472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleScene_Countdown_SpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 7329
+        y: 0
+        width: 349
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ca27b5994116b241ac43a68b4613ab8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleScene_Countdown_SpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 7678
+        y: 0
+        width: 349
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6836cd1f1d0725240b5d726c271b417c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleScene_Countdown_SpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 8027
+        y: 0
+        width: 349
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec2d831cede0e0e41b016f2a7311d463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleScene_Countdown_SpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 8376
+        y: 0
+        width: 349
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8a53c4a34ea4db41af1e420ede07dfe
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleScene_Countdown_SpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 8725
+        y: 0
+        width: 349
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ab1ef118b6b3fa45adaff2872a0b087
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleScene_Countdown_SpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 9074
+        y: 0
+        width: 349
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f098b25f23b548742b21b9e7e922159f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleScene_Countdown_SpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 9423
+        y: 0
+        width: 349
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c14dc288dfc5fb1488202901fbf794fb
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleScene_Countdown_SpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 9772
+        y: 0
+        width: 349
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5b6e01015cb96449840933ca490000a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleScene_Countdown_SpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 10121
+        y: 0
+        width: 349
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3060939971ca2547b385d2d18c2be11
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleScene_Countdown_SpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 10470
+        y: 0
+        width: 349
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b036420ed9cd7c24bab35458cd3b36ad
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleScene_Countdown_SpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 10819
+        y: 0
+        width: 349
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcc29d3f92b302f488fd1c695d7e2764
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BattleScene_Countdown_SpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 11168
+        y: 0
+        width: 349
+        height: 349
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 967057cbc7e45b64cabd8c6faa0b4437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 7058dcaa9db4678449cf6586c082ac16
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -22,6 +22,8 @@ public class TutorialAppear : MonoBehaviour {
     bool isLecture6ShowedBefore = false;
     public bool isEnemyAttacked = false;
     [SerializeField] bool isPlayerATBListFilled = false;
+    [SerializeField] Image campsiteTutorial;
+    [SerializeField] Image needGreedTutorial;
 
     public enum TUTORIAL_STAGE
     {
@@ -47,7 +49,7 @@ public class TutorialAppear : MonoBehaviour {
     void Start ()
     {
         //eventSystem.SetSelectedGameObject(exit);
-        tutorialStage = TUTORIAL_STAGE.STAGE_01;
+        tutorialStage = TUTORIAL_STAGE.STAGE_08;
     }
 
     private void OnEnable()
@@ -329,7 +331,33 @@ public class TutorialAppear : MonoBehaviour {
                 tint.SetActive(false);
             }
         }
-        if(tutorialStage == TUTORIAL_STAGE.THE_END)
+
+        if(tutorialStage == TUTORIAL_STAGE.STAGE_07)
+        {
+            //! Activate the campsite picture
+            campsiteTutorial.gameObject.SetActive(true);
+            Debug.Log("STAGE 7");
+
+            if(Input.anyKeyDown)
+            {
+                campsiteTutorial.gameObject.SetActive(false);
+                tutorialStage = TUTORIAL_STAGE.STAGE_08;
+            }
+        }
+        if (tutorialStage == TUTORIAL_STAGE.STAGE_08)
+        {
+            //! Activate the campsite picture
+            needGreedTutorial.gameObject.SetActive(true);
+            Debug.Log("STAGE 8");
+
+            if (Input.anyKeyDown)
+            {
+                needGreedTutorial.gameObject.SetActive(false);
+                tutorialStage = TUTORIAL_STAGE.THE_END;
+            }
+        }
+
+        if (tutorialStage == TUTORIAL_STAGE.THE_END)
         {
             Time.timeScale = 0;
             lectureCanvas.transform.GetChild(6).gameObject.SetActive(true);

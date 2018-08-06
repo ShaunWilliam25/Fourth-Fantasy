@@ -16,6 +16,7 @@ public class PlayerScrollSkill : PlayerVariableManager {
 
     private void Awake()
     {
+
     }
 
     // Use this for initialization
@@ -23,6 +24,7 @@ public class PlayerScrollSkill : PlayerVariableManager {
     {
         boxPos = skillBox.transform;
         startPosition = this.GetComponent<Transform>().position.x - 1.2f;
+        isScroll = 0;
     }
 
     // Update is called once per frame
