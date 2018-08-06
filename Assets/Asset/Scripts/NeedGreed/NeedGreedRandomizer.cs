@@ -148,10 +148,11 @@ public class NeedGreedRandomizer : MonoBehaviour
             Debug.Log(owner);
             //Debug.Log(artifactAdded);
         }
-
-        nameText.text = ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList[0].GetComponent<ArtifactInformation>().name;
-        descText.text = ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList[0].GetComponent<ArtifactInformation>().effect;
-
+        if (ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList.Count > 0)
+        {
+            nameText.text = ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList[0].GetComponent<ArtifactInformation>().name;
+            descText.text = ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList[0].GetComponent<ArtifactInformation>().effect;
+        }
     }
 
     public void addArtifactToPlayer()
