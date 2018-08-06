@@ -23,6 +23,7 @@ public class TutorialAppear : MonoBehaviour {
     public bool isEnemyAttacked = false;
     [SerializeField] bool isPlayerATBListFilled = false;
     [SerializeField] Image campsiteTutorial;
+    [SerializeField] Image needGreedTutorial;
 
     public enum TUTORIAL_STAGE
     {
@@ -340,11 +341,23 @@ public class TutorialAppear : MonoBehaviour {
             if(Input.anyKeyDown)
             {
                 campsiteTutorial.gameObject.SetActive(false);
+                tutorialStage = TUTORIAL_STAGE.STAGE_08;
+            }
+        }
+        if (tutorialStage == TUTORIAL_STAGE.STAGE_08)
+        {
+            //! Activate the campsite picture
+            needGreedTutorial.gameObject.SetActive(true);
+            Debug.Log("STAGE 8");
+
+            if (Input.anyKeyDown)
+            {
+                needGreedTutorial.gameObject.SetActive(false);
                 tutorialStage = TUTORIAL_STAGE.THE_END;
             }
         }
 
-        if(tutorialStage == TUTORIAL_STAGE.THE_END)
+        if (tutorialStage == TUTORIAL_STAGE.THE_END)
         {
             Time.timeScale = 0;
             lectureCanvas.transform.GetChild(6).gameObject.SetActive(true);
