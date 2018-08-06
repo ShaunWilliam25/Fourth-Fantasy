@@ -49,7 +49,7 @@ public class TutorialAppear : MonoBehaviour {
     void Start ()
     {
         //eventSystem.SetSelectedGameObject(exit);
-        tutorialStage = TUTORIAL_STAGE.STAGE_01;
+        tutorialStage = TUTORIAL_STAGE.STAGE_08;
     }
 
     private void OnEnable()
