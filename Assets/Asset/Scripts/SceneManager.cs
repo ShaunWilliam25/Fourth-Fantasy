@@ -96,7 +96,7 @@ public class SceneManager : MonoBehaviour {
 
                 enemyList.Remove(enemyList[i]);
 
-                if (tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_06 && tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.THE_END)
+                if (tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_06 && tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.THE_END && tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_07)
                     ArtifactSpawner.GetComponent<ArtifactScript>().calArtifact();
 
             }
@@ -107,7 +107,7 @@ public class SceneManager : MonoBehaviour {
         //! When all enemy is dead,check for win
         if(enemyList.Count <=0)
         {
-            if (tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_06 && tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.THE_END)
+            if (tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_06 && tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.THE_END && tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_07)
             {
                 if (!isWin)
                 {

@@ -22,6 +22,7 @@ public class TutorialAppear : MonoBehaviour {
     bool isLecture6ShowedBefore = false;
     public bool isEnemyAttacked = false;
     [SerializeField] bool isPlayerATBListFilled = false;
+    [SerializeField] Image campsiteTutorial;
 
     public enum TUTORIAL_STAGE
     {
@@ -329,6 +330,20 @@ public class TutorialAppear : MonoBehaviour {
                 tint.SetActive(false);
             }
         }
+
+        if(tutorialStage == TUTORIAL_STAGE.STAGE_07)
+        {
+            //! Activate the campsite picture
+            campsiteTutorial.gameObject.SetActive(true);
+            Debug.Log("STAGE 7");
+
+            if(Input.anyKeyDown)
+            {
+                campsiteTutorial.gameObject.SetActive(false);
+                tutorialStage = TUTORIAL_STAGE.THE_END;
+            }
+        }
+
         if(tutorialStage == TUTORIAL_STAGE.THE_END)
         {
             Time.timeScale = 0;
