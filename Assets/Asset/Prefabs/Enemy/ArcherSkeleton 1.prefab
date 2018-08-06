@@ -168,7 +168,7 @@ GameObject:
   - component: {fileID: 114457733474580636}
   m_Layer: 0
   m_Name: ArcherSkeleton 1
-  m_TagString: Untagged
+  m_TagString: archerskeleton
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -688,7 +688,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PopUpText: {fileID: 1247997310769886, guid: 04b05e889f3a481409a7327058b83454, type: 2}
-  injuredAnimationTimer: 0
+  offset: 0
+  injuredAnimationTimer: 0.733
 --- !u!114 &114362528024219936
 MonoBehaviour:
   m_ObjectHideFlags: 1
