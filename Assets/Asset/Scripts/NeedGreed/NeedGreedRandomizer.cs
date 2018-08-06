@@ -48,7 +48,7 @@ public class NeedGreedRandomizer : MonoBehaviour
     {
         playerList = GameObject.FindWithTag("SceneManager").GetComponent<SceneManager>().playerList;
         ArtifactSpawner = artifactSpawnerSingleton.instance.gameObject;
-        needGreedSelection.GetComponent<NeedGreedSelection>();
+        needGreedSelection = GetComponent<NeedGreedSelection>();
         needGreedSelection.enabled = false;
     }
 
