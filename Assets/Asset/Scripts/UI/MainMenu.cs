@@ -11,6 +11,8 @@ public class MainMenu : MonoBehaviour
     public EventSystem eventSystem;
     public Button backToMainMenu;
     public AudioManager audioManager;
+    [SerializeField] Animator keyboardInstruction;
+    [SerializeField] Animator mouseInstruction;
 
     public void StartGame()
     {
@@ -49,7 +51,9 @@ public class MainMenu : MonoBehaviour
         }                
         AudioManager.instance.PlaySound("MenuTheme");
         AudioManager.instance.waveIndex = -1;
-        AudioManager.instance.isCharacterStatsModified = false;
+
+        keyboardInstruction.Play("StartMenuInstructionClip");
+        mouseInstruction.Play("StartMenuInstructionClip02");
 
     }
     private void Update()

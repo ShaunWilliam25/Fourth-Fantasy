@@ -25,6 +25,15 @@ public class Enemy_Spawn : MonoBehaviour {
 
         //! Fill the enemy index stage list
         enemyIndexStage = sceneManager.waveDetails[AudioManager.instance.waveIndex].enemiesToSpawn;
+
+        //! Random skeletons for skeleton wave(wave 2)
+        if(AudioManager.instance.waveIndex == 2)
+        {
+            for(int i=0;i<3;i++)
+            {
+                enemyIndexStage[i] = Random.Range(1,4);
+            }
+        }
     }
 	
 	// Update is called once per frame

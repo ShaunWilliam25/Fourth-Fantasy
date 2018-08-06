@@ -64,6 +64,16 @@ public class SceneManager : MonoBehaviour {
                 playerList[i].GetComponent<actionTimeBar>().enabled = true;
             }
         }
+
+        //! Making sure the skill is on when start scene
+        for(int i=0;i<playerList.Count;i++)
+        {
+            if(playerList[i].transform.GetChild(1).gameObject.activeInHierarchy == false)
+            {
+                playerList[i].transform.GetChild(1).gameObject.SetActive(true);
+                playerList[i].transform.GetChild(2).gameObject.SetActive(true);
+            }
+        }
     }
 
     private void Update()
@@ -86,7 +96,7 @@ public class SceneManager : MonoBehaviour {
 
                 enemyList.Remove(enemyList[i]);
 
-                if (tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_06 && tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.THE_END)
+                if (tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_06 && tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.THE_END && tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_07)
                     ArtifactSpawner.GetComponent<ArtifactScript>().calArtifact();
 
             }
@@ -97,7 +107,7 @@ public class SceneManager : MonoBehaviour {
         //! When all enemy is dead,check for win
         if(enemyList.Count <=0)
         {
-            if (tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_06 && tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.THE_END)
+            if (tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_06 && tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.THE_END && tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_07)
             {
                 if (!isWin)
                 {

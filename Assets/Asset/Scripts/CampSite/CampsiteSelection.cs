@@ -379,8 +379,17 @@ public class CampsiteSelection : MonoBehaviour
                         p1Highlight = 0;
                     }
                     player1.highlighted.transform.localPosition = upgrade3[p1Highlight].transform.localPosition;
-                    showUI.player1.popUp.transform.localPosition = new Vector3(upgrade3[p1Highlight].transform.localPosition.x + 150, upgrade3[p1Highlight].transform.localPosition.y - 110, showSkill.player[0].skillImage[p1Highlight].transform.localPosition.z);
-                    switch(p1Highlight)
+
+                    if(p1Highlight != 2)
+                    {
+                        showUI.player1.popUp.transform.localPosition = new Vector3(upgrade3[p1Highlight].transform.localPosition.x + 150, upgrade3[p1Highlight].transform.localPosition.y - 110, showSkill.player[0].skillImage[p1Highlight].transform.localPosition.z);
+                    }
+                    else
+                    {
+                        showUI.player1.popUp.transform.localPosition = new Vector3(upgrade3[p1Highlight].transform.localPosition.x - 150, upgrade3[p1Highlight].transform.localPosition.y - 110, showSkill.player[0].skillImage[p1Highlight].transform.localPosition.z);
+                    }
+
+                    switch (p1Highlight)
                     {
                         case 0:
                             showUI.player1.popUpText.text = "1. Deals 150 damage to single enemy (30%)\r\n2. Deals 100 damage to all enemies(30 %)\r\n3. Deals 90 damage to all enemies and causes poison(20 %)\r\n4. Deals 130 damage to single enemy and causes slow(20 %)";                            
@@ -509,7 +518,16 @@ public class CampsiteSelection : MonoBehaviour
                         p2Highlight = 0;
                     }
                     player2.highlighted.transform.localPosition = upgrade3[p2Highlight].transform.localPosition;
-                    showUI.player2.popUp.transform.localPosition = new Vector3(upgrade3[p2Highlight].transform.localPosition.x + 150, upgrade3[p2Highlight].transform.localPosition.y - 110, showSkill.player[1].skillImage[p2Highlight].transform.localPosition.z);
+
+                    if(p2Highlight != 0)
+                    {
+                        showUI.player2.popUp.transform.localPosition = new Vector3(upgrade3[p2Highlight].transform.localPosition.x - 150, upgrade3[p2Highlight].transform.localPosition.y - 110, showSkill.player[1].skillImage[p2Highlight].transform.localPosition.z);
+                    }
+                    else
+                    {
+                        showUI.player2.popUp.transform.localPosition = new Vector3(upgrade3[p2Highlight].transform.localPosition.x + 150, upgrade3[p2Highlight].transform.localPosition.y - 110, showSkill.player[1].skillImage[p2Highlight].transform.localPosition.z);
+                    }
+
                     switch (p2Highlight)
                     {
                         case 0:

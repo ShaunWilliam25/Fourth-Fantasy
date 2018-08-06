@@ -11,28 +11,27 @@ public class Player_Spawn : MonoBehaviour {
     public float skillOffset;
     [SerializeField] private float skillPosOffset;
     private bool resetScene = false;
+    [SerializeField] bool isCharacterStatsModified = false;
 
     private void Awake()
     {
         sceneManager = this.gameObject.GetComponent<SceneManager>();
 
-        //! Changing the character index based on the one from character selection
         
 
-              
+
+
     }
 
     void Start()
     {
-       
     }
 
     private void Update()
     {
-        if(!AudioManager.instance.isCharacterStatsModified)
+        if(!isCharacterStatsModified)
         {
 
-            Debug.Log("CHANGINGIN STATS");
             //! Setting the values for players
             characterIndex[0] = AudioManager.instance.player1CharacterIndex;
             characterIndex[1] = AudioManager.instance.player2CharacterIndex;
@@ -58,6 +57,8 @@ public class Player_Spawn : MonoBehaviour {
                         sceneManager.playerList[i].GetComponent<PlayerSkillExecution>().spellAnimationTimer = characterList[0].spellAnimationTimer;
                         sceneManager.playerList[i].GetComponent<PlayerTakeDamage>().injuredAnimationTimer = characterList[0].injuredAnimationTimer;
                         sceneManager.playerList[i].GetComponent<PlayerDeadAndRevive>().reviveAnimationTimer = characterList[0].reviveAnimationTimer;
+                        sceneManager.playerList[i].GetComponent<PlayerScrollSkill>().isScroll = 0;
+                        sceneManager.playerList[i].GetComponent<PlayerSkillExecution>().isAttack = 0;
                         sceneManager.playerList[i].transform.GetChild(0).GetComponent<Transform>().localScale = new Vector3(characterList[0].scale, characterList[0].scale, characterList[0].scale);
                         break;
                     case 1:
@@ -77,6 +78,8 @@ public class Player_Spawn : MonoBehaviour {
                         sceneManager.playerList[i].GetComponent<PlayerSkillExecution>().spellAnimationTimer = characterList[1].spellAnimationTimer;
                         sceneManager.playerList[i].GetComponent<PlayerTakeDamage>().injuredAnimationTimer = characterList[1].injuredAnimationTimer;
                         sceneManager.playerList[i].GetComponent<PlayerDeadAndRevive>().reviveAnimationTimer = characterList[1].reviveAnimationTimer;
+                        sceneManager.playerList[i].GetComponent<PlayerScrollSkill>().isScroll = 0;
+                        sceneManager.playerList[i].GetComponent<PlayerSkillExecution>().isAttack = 0;
                         sceneManager.playerList[i].transform.GetChild(0).GetComponent<Transform>().localScale = new Vector3(characterList[1].scale, characterList[1].scale, characterList[1].scale);
                         break;
 
@@ -97,6 +100,8 @@ public class Player_Spawn : MonoBehaviour {
                         sceneManager.playerList[i].GetComponent<PlayerSkillExecution>().spellAnimationTimer = characterList[2].spellAnimationTimer;
                         sceneManager.playerList[i].GetComponent<PlayerTakeDamage>().injuredAnimationTimer = characterList[2].injuredAnimationTimer;
                         sceneManager.playerList[i].GetComponent<PlayerDeadAndRevive>().reviveAnimationTimer = characterList[2].reviveAnimationTimer;
+                        sceneManager.playerList[i].GetComponent<PlayerScrollSkill>().isScroll = 0;
+                        sceneManager.playerList[i].GetComponent<PlayerSkillExecution>().isAttack = 0;
                         sceneManager.playerList[i].transform.GetChild(0).GetComponent<Transform>().localScale = new Vector3(characterList[2].scale, characterList[2].scale, characterList[2].scale);
                         break;
                 }
@@ -106,6 +111,7 @@ public class Player_Spawn : MonoBehaviour {
             
                 for (int i = 0; i < sceneManager.playerList.Count; i++)
                 {
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillHolder.Clear();
                     if (sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillHolder.Count < 5)
                      {
                     //! Loop to instantiate skills
@@ -115,51 +121,50 @@ public class Player_Spawn : MonoBehaviour {
                         }
                     }
                 }
-            
-            
-
-            AudioManager.instance.isCharacterStatsModified = true;
-        }
-
-        if(!resetScene)
-        {
-            //! Filling the empty reference that is scene specific
-            for (int i = 0; i < sceneManager.playerList.Count; i++)
+            //! Changing the character index based on the one from character selection
+            if (!resetScene)
             {
-                sceneManager.playerList[i].GetComponent<PlayerVariableManager>().enemySpawnScript = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<Enemy_Spawn>();
-                sceneManager.playerList[i].GetComponent<PlayerVariableManager>().playerSpawnScript = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<Player_Spawn>();
-                sceneManager.playerList[i].GetComponent<PlayerVariableManager>().sceneManagerScript = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManager>();
-                sceneManager.playerList[i].GetComponent<PlayerVariableManager>().battleLogScript = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<battleLog>();
-                sceneManager.playerList[i].GetComponent<PlayerVariableManager>().gameState = BattleStateManager.GAMESTATE.CHOOSING_SKILL;
-                sceneManager.playerList[i].GetComponent<PlayerVariableManager>().isTargetLockedIn = false;
-                sceneManager.playerList[i].GetComponent<PlayerVariableManager>().statusList.Clear();
-                sceneManager.playerList[i].GetComponent<PlayerStatusList>().statusIcon.Clear();
-                sceneManager.playerList[i].GetComponent<actionTimeBar>().timeRequired = 3f;
-                sceneManager.playerList[i].GetComponent<PlayerVariableManager>().anim.GetComponent<Animator>().Play(sceneManager.playerList[i].GetComponent<PlayerVariableManager>().idleAnimation);
-
-                sceneManager.playerList[i].GetComponent<PlayerStats>().Reset();
-
-                // Detect Start of Battle to give effect
-
-                for (int k = 0; k < sceneManager.playerList[i].GetComponent<PlayerVariableManager>().artifactsList.Count; k++)
+                //! Filling the empty reference that is scene specific
+                for (int i = 0; i < sceneManager.playerList.Count; i++)
                 {
-                    if (sceneManager.playerList[i].GetComponent<PlayerVariableManager>().artifactsList[k].GetComponent<ArtifactEffect>() is SprintShoes || sceneManager.playerList[i].GetComponent<PlayerVariableManager>().artifactsList[k].GetComponent<ArtifactEffect>() is AlchemistSecretElixir)
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().enemySpawnScript = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<Enemy_Spawn>();
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().playerSpawnScript = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<Player_Spawn>();
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().sceneManagerScript = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManager>();
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().battleLogScript = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<battleLog>();
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().gameState = BattleStateManager.GAMESTATE.CHOOSING_SKILL;
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().isTargetLockedIn = false;
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().statusList.Clear();
+                    sceneManager.playerList[i].GetComponent<PlayerStatusList>().statusIcon.Clear();
+                    sceneManager.playerList[i].GetComponent<actionTimeBar>().timeRequired = 3f;
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().anim.GetComponent<Animator>().Play(sceneManager.playerList[i].GetComponent<PlayerVariableManager>().idleAnimation);
+
+                    sceneManager.playerList[i].GetComponent<PlayerStats>().health = characterList[i].maxHealth;
+                    sceneManager.playerList[i].GetComponent<PlayerStats>().Reset();
+
+                    // Detect Start of Battle to give effect
+
+                    for (int k = 0; k < sceneManager.playerList[i].GetComponent<PlayerVariableManager>().artifactsList.Count; k++)
                     {
-                        sceneManager.playerList[i].GetComponent<PlayerVariableManager>().artifactsList[k].GetComponent<ArtifactEffect>().isEffect = false;
+                        if (sceneManager.playerList[i].GetComponent<PlayerVariableManager>().artifactsList[k].GetComponent<ArtifactEffect>() is SprintShoes || sceneManager.playerList[i].GetComponent<PlayerVariableManager>().artifactsList[k].GetComponent<ArtifactEffect>() is AlchemistSecretElixir)
+                        {
+                            sceneManager.playerList[i].GetComponent<PlayerVariableManager>().artifactsList[k].GetComponent<ArtifactEffect>().isEffect = false;
+                        }
+                    }
+
+                    //! Skill effect reference
+                    for (int j = 0; j < 5; j++)
+                    {
+                        for (int k = 0; k < sceneManager.playerList[i].transform.GetChild(1).GetChild(2 + j).GetComponent<SkillDetail>().skillExecutionHolder.Count; k++)
+                        {
+                            sceneManager.playerList[i].transform.GetChild(1).GetChild(2 + j).GetComponent<SkillDetail>().skillExecutionHolder[k].GetComponent<SkillEffect>().playerList = sceneManager.playerList;
+                            sceneManager.playerList[i].transform.GetChild(1).GetChild(2 + j).GetComponent<SkillDetail>().skillExecutionHolder[k].GetComponent<SkillEffect>().enemyList = sceneManager.enemyList;
+                        }
                     }
                 }
-
-                //! Skill effect reference
-                for (int j = 0; j < 5; j++)
-                {
-                    for (int k = 0; k < sceneManager.playerList[i].transform.GetChild(1).GetChild(2 + j).GetComponent<SkillDetail>().skillExecutionHolder.Count; k++)
-                    {
-                        sceneManager.playerList[i].transform.GetChild(1).GetChild(2 + j).GetComponent<SkillDetail>().skillExecutionHolder[k].GetComponent<SkillEffect>().playerList = sceneManager.playerList;
-                        sceneManager.playerList[i].transform.GetChild(1).GetChild(2 + j).GetComponent<SkillDetail>().skillExecutionHolder[k].GetComponent<SkillEffect>().enemyList = sceneManager.enemyList;
-                    }
-                }
+                resetScene = true;
             }
-            resetScene = true;
+            isCharacterStatsModified = true;
         }
+        
     }
 }

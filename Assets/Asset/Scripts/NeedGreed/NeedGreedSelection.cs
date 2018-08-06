@@ -16,6 +16,12 @@ public class NeedGreedSelection : MonoBehaviour
     public Image imageFill1;
     public Image imageFill2;
 
+    private void Start()
+    {
+        p1Need.GetComponent<Image>().color = Color.red;
+        p2Need.GetComponent<Image>().color = Color.blue;
+    }
+
     // Update is called once per frame
     void Update()
     {
