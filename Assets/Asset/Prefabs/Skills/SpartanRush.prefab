@@ -62,6 +62,8 @@ MonoBehaviour:
   skillExecutionHolder: []
   showCooldown: {fileID: 1372910672482984, guid: 343e68853feffe543b1dba27faae6e8a,
     type: 2}
+  upgradedCount: 0
+  upgradedEffect: []
 --- !u!212 &212101519411513156
 SpriteRenderer:
   m_ObjectHideFlags: 1

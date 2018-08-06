@@ -2035,6 +2035,8 @@ MonoBehaviour:
   sceneManager: {fileID: 1020202954}
   playerAtbList: []
   isEnemyAttacked: 0
+  isPlayerATBListFilled: 0
+  campsiteTutorial: {fileID: 0}
 --- !u!114 &519420034
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3488,6 +3490,7 @@ MonoBehaviour:
   - {fileID: 1675071835550834, guid: a1c9a277cc081e94ab6fc70963078ac8, type: 2}
   sceneManager: {fileID: 1020202954}
   indexInList: 0
+  isEnemySpawn: 0
 --- !u!114 &1020202953
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3503,6 +3506,7 @@ MonoBehaviour:
   characterList:
   - {fileID: 11400000, guid: d40af4ca25ed4424f8cd642053571c35, type: 2}
   - {fileID: 11400000, guid: 57774ab18a533f549b5b38d300629e1a, type: 2}
+  - {fileID: 11400000, guid: 7b2d8218447f42b4bae2280a860052de, type: 2}
   sceneManager: {fileID: 1020202954}
   skillOffset: 1
   skillPosOffset: 1.2
@@ -6235,6 +6239,7 @@ MonoBehaviour:
   nameText: {fileID: 1466937214}
   descText: {fileID: 999911413}
   ArtifactSpawner: {fileID: 0}
+  needGreedSelection: {fileID: 0}
 --- !u!4 &1653121046
 Transform:
   m_ObjectHideFlags: 0
