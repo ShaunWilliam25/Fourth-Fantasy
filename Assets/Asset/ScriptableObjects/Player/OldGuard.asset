@@ -22,7 +22,7 @@ MonoBehaviour:
   - {fileID: 1816165602472638, guid: 42556c2daa279494fab512d05dc79b5d, type: 2}
   - {fileID: 1058121370257212, guid: f3fdabfdefaf5a2409e85c1251127952, type: 2}
   - {fileID: 1492279568912172, guid: 5cf21dce0f6fa7947bd37fc804f136ec, type: 2}
-  scale: 0
+  scale: 0.3484527
   idleAnimation: old guard idle anim
   attackAnimation: 
   injuredAnimation: 
