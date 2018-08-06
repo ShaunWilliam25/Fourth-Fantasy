@@ -28,10 +28,10 @@ public class CampsiteSelection : MonoBehaviour
         csm = GetComponent<CampsiteManager>();
         player1.upgradeLeft = 1;
         player2.upgradeLeft = 1;
-        for(int i = 0; i<csm.playerList.Count; i++)
+        /*for(int i = 0; i<csm.playerList.Count; i++)
         {
             //if (csm.playerList[i].GetComponent<PlayerVariableManager>().artifactsList.Exists(x => x.)
-        }
+        }*/
     }
 
     void Update()
@@ -531,10 +531,10 @@ public class CampsiteSelection : MonoBehaviour
                     switch (p2Highlight)
                     {
                         case 0:
-                            showUI.player2.popUpText.text = "1. Heals 100 HP to self (50%)\r\n2. Heals 50 HP to all allies (40%)\r\n3.Heals 50 HP for each bad status effect on character (10%)";
+                            showUI.player2.popUpText.text = "1. Deals 150 damage to single enemy (30%)\r\n2. Deals 100 damage to all enemies(30 %)\r\n3. Deals 90 damage to all enemies and causes poison(20 %)\r\n4. Deals 130 damage to single enemy and causes slow(20 %)";
                             break;
                         case 1:
-                            showUI.player2.popUpText.text = "1. Deals 150 damage to single enemy (30%)\r\n2. Deals 100 damage to all enemies(30 %)\r\n3. Deals 90 damage to all enemies and causes poison(20 %)\r\n4. Deals 130 damage to single enemy and causes slow(20 %)";
+                            showUI.player2.popUpText.text = "1. Heals 100 HP to self (50%)\r\n2. Heals 50 HP to all allies (40%)\r\n3.Heals 50 HP for each bad status effect on character (10%)";
                             break;
                         case 2:
                             showUI.player2.popUpText.text = "1. Dispels one bad status effect on self (35%)\r\n2. Dispels one good status effect on enemy(35%)\r\n3. 20 % chance adding bless to self(20%)\r\n4. Inflicts curse to enemy(10%)";
