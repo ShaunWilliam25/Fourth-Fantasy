@@ -12,18 +12,6 @@ public class DamageUpgrade4 : SkillEffect
         effectDescription = "Damage and slow single enemy";
     }
 
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public override void Execute(GameObject targetedEnemy)
     {
         damage = (int)(damage * DamageMultiplier());
