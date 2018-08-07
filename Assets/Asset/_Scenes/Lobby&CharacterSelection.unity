@@ -2477,7 +2477,6 @@ MonoBehaviour:
   listOfCharacters:
   - {fileID: 11400000, guid: d40af4ca25ed4424f8cd642053571c35, type: 2}
   - {fileID: 11400000, guid: 57774ab18a533f549b5b38d300629e1a, type: 2}
-  - {fileID: 11400000, guid: 7b2d8218447f42b4bae2280a860052de, type: 2}
   characterIndex: 1
   isSelectingCharacter: 0
   characterSelectionPointer:
@@ -2544,7 +2543,6 @@ MonoBehaviour:
   listOfCharacters:
   - {fileID: 11400000, guid: d40af4ca25ed4424f8cd642053571c35, type: 2}
   - {fileID: 11400000, guid: 57774ab18a533f549b5b38d300629e1a, type: 2}
-  - {fileID: 11400000, guid: 7b2d8218447f42b4bae2280a860052de, type: 2}
   characterIndex: 0
   isSelectingCharacter: 0
   characterSelectionPointer:

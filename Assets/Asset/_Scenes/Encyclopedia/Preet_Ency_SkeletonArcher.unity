@@ -1227,7 +1227,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: fdef86ca4c7815f49b742baeedc12941, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1235,7 +1235,7 @@ SpriteRenderer:
   m_Size: {x: 6.12, y: 5.8599997}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
 --- !u!111 &1098844157
 Animation:
@@ -1276,8 +1276,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1098844155}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.07, y: -3.21, z: -0.1872925}
-  m_LocalScale: {x: 1.1310475, y: 1.1310475, z: 1.1310475}
+  m_LocalPosition: {x: -1.192, y: -3.36, z: -0.1872925}
+  m_LocalScale: {x: 1.1468638, y: 1.1468638, z: 1.1468638}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
@@ -2780,7 +2780,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1921966941}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.31, y: -1.46, z: -0.0010036796}
+  m_LocalPosition: {x: 1.34, y: -3.1, z: -0.0010036796}
   m_LocalScale: {x: 2.000564, y: 2.000564, z: 2.000564}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2943,8 +2943,8 @@ GameObject:
   m_Component:
   - component: {fileID: 2073580851}
   - component: {fileID: 2073580850}
-  - component: {fileID: 2073580849}
   - component: {fileID: 2073580848}
+  - component: {fileID: 2073580849}
   m_Layer: 0
   m_Name: Skeleton Archer Idle Anim
   m_TagString: Untagged
@@ -2987,7 +2987,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300004, guid: 9e8961ce2e873e74ea9668755b5846de, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2995,7 +2995,7 @@ SpriteRenderer:
   m_Size: {x: 2.57, y: 3.17}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
 --- !u!95 &2073580849
 Animator:
@@ -3023,7 +3023,7 @@ Animation:
   m_GameObject: {fileID: 2073580847}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 0}
+  m_Animation: {fileID: 7400000, guid: 2e7119366b6553f459ec2e7d50d8b615, type: 2}
   m_Animations: []
   m_WrapMode: 0
   m_PlayAutomatically: 1
@@ -3036,8 +3036,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2073580847}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.94, y: -0.36, z: -0.0008305153}
-  m_LocalScale: {x: 2.0031047, y: 2.0031047, z: 2.0031047}
+  m_LocalPosition: {x: -0.964, y: -3.401, z: -0.0008305153}
+  m_LocalScale: {x: 1.2717785, y: 1.2717785, z: 1.2717785}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5

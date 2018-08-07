@@ -3,20 +3,7 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags:
-  - SceneManager
-  - BattleLog
-  - Player1
-  - Player2
-  - AudioManager
-  - Player1Toggle
-  - Player2Toggle
-  - Background
-  - spiritdoor
-  - wolf
-  - swordskeleton
-  - greedboss
-  - LanceSkeleton
+  tags: []
   layers:
   - Default
   - TransparentFX
@@ -26,7 +13,7 @@ TagManager:
   - UI
   - 
   - 
-  - Tint
+  - 
   - 
   - 
   - 
