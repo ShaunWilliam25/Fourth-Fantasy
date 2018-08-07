@@ -473,7 +473,7 @@ MonoBehaviour:
   chance: 4b0000000a0000000f000000
   isFinalBoss: 0
   attackAnimationTimer: 0.5
-  spellAnimationTimer: 1.4
+  spellAnimationTimer: 0
   ultimate: {fileID: 0}
 --- !u!114 &114094660980565302
 MonoBehaviour:
@@ -1064,6 +1064,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PopUpText: {fileID: 1247997310769886, guid: 04b05e889f3a481409a7327058b83454, type: 2}
+  offset: 0
   injuredAnimationTimer: 1.1
 --- !u!114 &114855411442739230
 MonoBehaviour:
