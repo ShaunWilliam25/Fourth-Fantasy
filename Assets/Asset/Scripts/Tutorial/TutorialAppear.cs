@@ -24,6 +24,9 @@ public class TutorialAppear : MonoBehaviour {
     [SerializeField] bool isPlayerATBListFilled = false;
     [SerializeField] Image campsiteTutorial;
     [SerializeField] Image needGreedTutorial;
+    [SerializeField] bool isCanPress = false;
+    [SerializeField] float cannotPressTimer = 0f;
+    [SerializeField] float cannotPressTime;
 
     public enum TUTORIAL_STAGE
     {
@@ -49,7 +52,7 @@ public class TutorialAppear : MonoBehaviour {
     void Start ()
     {
         //eventSystem.SetSelectedGameObject(exit);
-        tutorialStage = TUTORIAL_STAGE.STAGE_08;
+        tutorialStage = TUTORIAL_STAGE.STAGE_01;
     }
 
     private void OnEnable()
@@ -334,32 +337,68 @@ public class TutorialAppear : MonoBehaviour {
 
         if(tutorialStage == TUTORIAL_STAGE.STAGE_07)
         {
+            //! Control for the isCanPress bool based on the cannotPressTimer
+            cannotPressTimer += Time.deltaTime;
+            if(cannotPressTimer >= cannotPressTime)
+            {
+                isCanPress = true;
+            }
+            
+            
             //! Activate the campsite picture
             campsiteTutorial.gameObject.SetActive(true);
             Debug.Log("STAGE 7");
 
-            if(Input.anyKeyDown)
+
+            //! Cannot press while the isCanPress bool is false
+            if(isCanPress)
             {
-                campsiteTutorial.gameObject.SetActive(false);
-                tutorialStage = TUTORIAL_STAGE.STAGE_08;
-            }
+                if (Input.anyKeyDown)
+                {
+                    campsiteTutorial.gameObject.SetActive(false);
+                    cannotPressTimer = 0f;
+                    isCanPress = false;
+                    tutorialStage = TUTORIAL_STAGE.STAGE_08;
+                }
+            }            
         }
         if (tutorialStage == TUTORIAL_STAGE.STAGE_08)
         {
+            //! Control of the isCanPress bool based on cannotPressTimer
+            cannotPressTimer += Time.deltaTime;
+            if(cannotPressTimer >= cannotPressTime)
+            {
+                isCanPress = true;
+            }
+            
             //! Activate the campsite picture
             needGreedTutorial.gameObject.SetActive(true);
             Debug.Log("STAGE 8");
 
-            if (Input.anyKeyDown)
+            //! Cannot press while the isCanPress bool is false
+            if(isCanPress)
             {
-                needGreedTutorial.gameObject.SetActive(false);
-                tutorialStage = TUTORIAL_STAGE.THE_END;
+                if (Input.anyKeyDown)
+                {
+                    needGreedTutorial.gameObject.SetActive(false);
+                    isCanPress = false;
+                    cannotPressTimer = 0f;
+                    tutorialStage = TUTORIAL_STAGE.THE_END;
+                }
             }
+            
         }
 
         if (tutorialStage == TUTORIAL_STAGE.THE_END)
         {
-            Time.timeScale = 0;
+            //! Control of the isCanPress bool based on cannotPressTimer;
+            cannotPressTimer += Time.deltaTime;
+            if(cannotPressTimer >= cannotPressTime)
+            {
+                isCanPress = true;
+            }
+
+            //Time.timeScale = 0;
             lectureCanvas.transform.GetChild(6).gameObject.SetActive(true);
             tint.SetActive(true);
             taskCanvas.enabled = false;
@@ -371,15 +410,23 @@ public class TutorialAppear : MonoBehaviour {
                 sceneManager.playerList[i].transform.GetChild(2).GetChild(3).GetComponent<Canvas>().sortingOrder = 0;
                 sceneManager.playerList[i].transform.GetChild(0).GetComponent<SpriteRenderer>().sortingOrder = 0;
             }
-            if (Input.anyKeyDown)
+
+            //! Can press only when the isCanPress bool is true
+            if(isCanPress)
             {
-                Time.timeScale = 1;
-                for (int i = 0; i < sceneManager.playerList.Count; i++)
+                if (Input.anyKeyDown)
                 {
-                    sceneManager.playerList[i].transform.GetChild(1).gameObject.SetActive(true);
+                    Time.timeScale = 1;
+                    for (int i = 0; i < sceneManager.playerList.Count; i++)
+                    {
+                        sceneManager.playerList[i].transform.GetChild(1).gameObject.SetActive(true);
+                    }
+                    isCanPress = false;
+                    cannotPressTimer = 0f;
+                    UnityEngine.SceneManagement.SceneManager.LoadScene(6);
                 }
-                UnityEngine.SceneManagement.SceneManager.LoadScene(6);
             }
+            
         }
     }
 }

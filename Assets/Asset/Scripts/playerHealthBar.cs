@@ -13,18 +13,14 @@ public class playerHealthBar : MonoBehaviour
     
     void Start()
     {
-        maxHealth = this.GetComponent<PlayerStats>().baseHealth;
-        //reset health
-        currentHealth = this.GetComponent<PlayerStats>().health;
-        healthInPercentage = currentHealth / maxHealth;
-        //healthBar.value=calHealth()
+
     }
 
     // Update is called once per frame
     void Update()
     {        
         currentHealth = this.GetComponent<PlayerStats>().health;
-
+        maxHealth = this.GetComponent<PlayerStats>().baseHealth;
         healthInPercentage = currentHealth / maxHealth;
 
         healthBar.fillAmount = healthInPercentage;
