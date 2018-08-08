@@ -118,6 +118,7 @@ public class EnemyVariableManager : MonoBehaviour {
         {
             idleAnimation = "GreedBossIdleAnimation";
             attackAnimation = "GreedBossAttackAnimation";
+            deathAnimation = "GreedBossDeathAnimation";
         }
     }
     private void Start()

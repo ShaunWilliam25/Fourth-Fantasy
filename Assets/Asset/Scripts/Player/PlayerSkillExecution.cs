@@ -49,7 +49,6 @@ public class PlayerSkillExecution : PlayerVariableManager
                 if(this.GetComponent<PlayerVariableManager>().targetedEnemy.GetComponent<EnemyVariableManager>().enemyStats.health > 0)
                 {
                     this.GetComponent<PlayerVariableManager>().skillHolder[scrollSkill.skillSelected].GetComponent<SkillDetail>().skillExecutionHolder[i].GetComponent<SkillEffect>().Execute(this.GetComponent<PlayerVariableManager>().targetedEnemy);
-                    Debug.Log("Attacked");
                     if(this.GetComponent<PlayerVariableManager>().skillHolder[scrollSkill.skillSelected].GetComponent<SkillDetail>().skillExecutionHolder[0].GetComponent<SkillEffect>().effectType == SkillEffect.SKILL_EFFECT_TYPE.OFFENSIVE)
                     {
                         this.GetComponent<PlayerVariableManager>().anim.GetComponent<Animator>().Play(this.GetComponent<PlayerVariableManager>().attackAnimation);

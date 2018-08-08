@@ -97,7 +97,10 @@ public class SceneManager : MonoBehaviour {
                 enemyList.Remove(enemyList[i]);
 
                 if (tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_06 && tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.THE_END && tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_07 && tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_08)
+                {
                     ArtifactSpawner.GetComponent<ArtifactScript>().calArtifact();
+                }
+                    //ArtifactSpawner.GetComponent<ArtifactScript>().calArtifact();
 
             }
 
@@ -139,7 +142,6 @@ public class SceneManager : MonoBehaviour {
         {
             if (Input.anyKeyDown)
             {
-                //UnityEngine.SceneManagement.SceneManager.LoadScene(nextScene);
                 needGreedManager.GetComponent<NeedGreedRandomizer>().addArtifactToPlayer();
             }
         }
