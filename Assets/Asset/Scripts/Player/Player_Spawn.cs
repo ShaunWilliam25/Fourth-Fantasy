@@ -107,20 +107,24 @@ public class Player_Spawn : MonoBehaviour {
                 }
             }
 
-            //! For each player
-            
+            if (AudioManager.instance.isResetSkill)
+            {
+                //! For each player
                 for (int i = 0; i < sceneManager.playerList.Count; i++)
                 {
                     sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillHolder.Clear();
                     if (sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillHolder.Count < 5)
-                     {
-                    //! Loop to instantiate skills
+                    {
+                        //! Loop to instantiate skills
                         for (int j = 0; j < sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillList.Count; j++)
                         {
-                         sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillHolder.Add(Instantiate(sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillList[j], new Vector2((sceneManager.playerList[i].transform.GetChild(1).position.x + (skillOffset * j) * 0.6f) - skillPosOffset, sceneManager.playerList[i].transform.GetChild(1).position.y), Quaternion.identity, sceneManager.playerList[i].transform.GetChild(1)));
+                            sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillHolder.Add(Instantiate(sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillList[j], new Vector2((sceneManager.playerList[i].transform.GetChild(1).position.x + (skillOffset * j) * 0.6f) - skillPosOffset, sceneManager.playerList[i].transform.GetChild(1).position.y), Quaternion.identity, sceneManager.playerList[i].transform.GetChild(1)));
                         }
                     }
                 }
+                AudioManager.instance.isResetSkill = false;
+            }
+
             //! Changing the character index based on the one from character selection
             if (!resetScene)
             {
@@ -164,7 +168,6 @@ public class Player_Spawn : MonoBehaviour {
                 resetScene = true;
             }
             isCharacterStatsModified = true;
-        }
-        
+        }       
     }
 }
