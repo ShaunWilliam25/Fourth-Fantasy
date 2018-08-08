@@ -17,6 +17,21 @@ TextureImporter:
     21300024: SkeletonArcherIdle_12
     21300026: SkeletonArcherIdle_13
     21300028: SkeletonArcherIdle_14
+    21300030: SkeletonLanceIdleAnim_0
+    21300032: SkeletonLanceIdleAnim_1
+    21300034: SkeletonLanceIdleAnim_2
+    21300036: SkeletonLanceIdleAnim_3
+    21300038: SkeletonLanceIdleAnim_4
+    21300040: SkeletonLanceIdleAnim_5
+    21300042: SkeletonLanceIdleAnim_6
+    21300044: SkeletonLanceIdleAnim_7
+    21300046: SkeletonLanceIdleAnim_8
+    21300048: SkeletonLanceIdleAnim_9
+    21300050: SkeletonLanceIdleAnim_10
+    21300052: SkeletonLanceIdleAnim_11
+    21300054: SkeletonLanceIdleAnim_12
+    21300056: SkeletonLanceIdleAnim_13
+    21300058: SkeletonLanceIdleAnim_14
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -97,301 +112,301 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SkeletonArcherIdle_0
+      name: SkeletonLanceIdleAnim_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 302
+        width: 300
         height: 600
       alignment: 9
-      pivot: {x: 0.44293824, y: 0.033721082}
+      pivot: {x: 0.41684905, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c858b2b747aceea48ad4b2ddbe746a0e
+      spriteID: 16c8fab1996191e45a1855017905f7d3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SkeletonArcherIdle_1
+      name: SkeletonLanceIdleAnim_1
       rect:
         serializedVersion: 2
-        x: 298
+        x: 299
         y: 0
-        width: 306
-        height: 599
+        width: 303
+        height: 600
       alignment: 9
-      pivot: {x: 0.45589113, y: 0.029178893}
+      pivot: {x: 0.42146236, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84320bb04ef2eb04e9c794149d900ebb
+      spriteID: ce645d3b001629a4a9253d34e5e0a2a7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SkeletonArcherIdle_2
+      name: SkeletonLanceIdleAnim_2
       rect:
         serializedVersion: 2
-        x: 601
+        x: 603
         y: 0
-        width: 300
-        height: 598
+        width: 307
+        height: 600
       alignment: 9
-      pivot: {x: 0.47741413, y: 0.029591411}
+      pivot: {x: 0.43488485, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 63430dce606d657458209e17ea19a1ab
+      spriteID: ab8bfe97b36a77e4587f57541af379f2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SkeletonArcherIdle_3
+      name: SkeletonLanceIdleAnim_3
       rect:
         serializedVersion: 2
-        x: 909
+        x: 910
         y: 0
-        width: 317
-        height: 595
+        width: 316
+        height: 600
       alignment: 9
-      pivot: {x: 0.46904072, y: 0.03079124}
+      pivot: {x: 0.43969843, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7faa9ba437e85c948a2cf437fccba8e9
+      spriteID: b23fd49d18fc2cd498a4373553394c36
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SkeletonArcherIdle_4
+      name: SkeletonLanceIdleAnim_4
       rect:
         serializedVersion: 2
-        x: 1222
+        x: 1226
         y: 0
-        width: 326
-        height: 592
+        width: 321
+        height: 600
       alignment: 9
-      pivot: {x: 0.4779416, y: 0.030419301}
+      pivot: {x: 0.45337713, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0d3243dd6dcad3c42a38dafb365369a0
+      spriteID: 9fa795fc212955c488e4347f3eeed42e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SkeletonArcherIdle_5
+      name: SkeletonLanceIdleAnim_5
       rect:
         serializedVersion: 2
-        x: 1544
+        x: 1546
         y: 0
-        width: 331
-        height: 589
+        width: 327
+        height: 600
       alignment: 9
-      pivot: {x: 0.4967524, y: 0.032004923}
+      pivot: {x: 0.46596628, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a30162780ce36342bd99c8b8079165e
+      spriteID: 6ef4b1e27aa77ac43a7ceb18eee235a7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SkeletonArcherIdle_6
+      name: SkeletonLanceIdleAnim_6
       rect:
         serializedVersion: 2
         x: 1872
         y: 0
-        width: 326
-        height: 587
-      alignment: 9
-      pivot: {x: 0.51572645, y: 0.031581495}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b0096ea971671f640bf6641bc8feef36
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SkeletonArcherIdle_7
-      rect:
-        serializedVersion: 2
-        x: 2202
-        y: 0
-        width: 343
-        height: 583
-      alignment: 9
-      pivot: {x: 0.50760394, y: 0.03142502}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5c15b7cfaece5eb43b30c4aef0b9195b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SkeletonArcherIdle_8
-      rect:
-        serializedVersion: 2
-        x: 2540
-        y: 0
-        width: 337
-        height: 587
-      alignment: 9
-      pivot: {x: 0.49523744, y: 0.029775396}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 288ed4e77a1b6b04e8f64f27b7b515d3
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SkeletonArcherIdle_9
-      rect:
-        serializedVersion: 2
-        x: 2873
-        y: 0
-        width: 331
-        height: 589
-      alignment: 9
-      pivot: {x: 0.49580756, y: 0.03290487}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 828c869e76020c24186781a554f42db0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SkeletonArcherIdle_10
-      rect:
-        serializedVersion: 2
-        x: 3200
-        y: 0
-        width: 326
-        height: 592
-      alignment: 9
-      pivot: {x: 0.4788998, y: 0.029523915}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: aff80de51f50c5f4ab7624e9f2f0aae9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SkeletonArcherIdle_11
-      rect:
-        serializedVersion: 2
-        x: 3522
-        y: 0
-        width: 319
-        height: 595
-      alignment: 9
-      pivot: {x: 0.46425062, y: 0.03115687}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c14f079e2c6f5fe42b53f6471096e528
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SkeletonArcherIdle_12
-      rect:
-        serializedVersion: 2
-        x: 3839
-        y: 0
-        width: 312
-        height: 598
-      alignment: 9
-      pivot: {x: 0.45534575, y: 0.03329612}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 10a166e2b3c99f547ba1cee4d239ffbc
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: SkeletonArcherIdle_13
-      rect:
-        serializedVersion: 2
-        x: 4154
-        y: 0
-        width: 298
+        width: 333
         height: 600
       alignment: 9
-      pivot: {x: 0.42791134, y: 0.03089723}
+      pivot: {x: 0.47819304, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cc86906848d053a469dc776a8a791eaa
+      spriteID: 611740b72d91e1f4fa4c5f570c0bc0d7
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SkeletonArcherIdle_14
+      name: SkeletonLanceIdleAnim_7
       rect:
         serializedVersion: 2
-        x: 4449
+        x: 2204
         y: 0
-        width: 294
+        width: 342
         height: 600
       alignment: 9
-      pivot: {x: 0.42854318, y: 0.029492773}
+      pivot: {x: 0.477639, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f26d9a28e601014989aa6997ef8f616
+      spriteID: ae4e0a4c0fa477f40ae31620b87d9fc5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonLanceIdleAnim_8
+      rect:
+        serializedVersion: 2
+        x: 2543
+        y: 0
+        width: 332
+        height: 600
+      alignment: 9
+      pivot: {x: 0.47404537, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d39c4e411bf92b34d8d9a557b63d8367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonLanceIdleAnim_9
+      rect:
+        serializedVersion: 2
+        x: 2875
+        y: 0
+        width: 329
+        height: 600
+      alignment: 9
+      pivot: {x: 0.4625389, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ef502b7d23324e4ea8fa08e66405c6e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonLanceIdleAnim_10
+      rect:
+        serializedVersion: 2
+        x: 3204
+        y: 0
+        width: 320
+        height: 600
+      alignment: 9
+      pivot: {x: 0.45449066, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7363bb39cbfc7742bcad5439e80482e
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonLanceIdleAnim_11
+      rect:
+        serializedVersion: 2
+        x: 3525
+        y: 0
+        width: 316
+        height: 600
+      alignment: 9
+      pivot: {x: 0.4348848, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7efd7eff30e88dd44aa7fec7d2f06766
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonLanceIdleAnim_12
+      rect:
+        serializedVersion: 2
+        x: 3838
+        y: 0
+        width: 310
+        height: 600
+      alignment: 9
+      pivot: {x: 0.4383285, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7714088f7bd302540810994fd8010712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonLanceIdleAnim_13
+      rect:
+        serializedVersion: 2
+        x: 4148
+        y: 0
+        width: 299
+        height: 600
+      alignment: 9
+      pivot: {x: 0.42181948, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b914d20c6d0beb46966a28006c8c79a
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SkeletonLanceIdleAnim_14
+      rect:
+        serializedVersion: 2
+        x: 4446
+        y: 0
+        width: 297
+        height: 600
+      alignment: 9
+      pivot: {x: 0.41242504, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbb5fb7fd30c3b443bece69067dfa553
       vertices: []
       indices: 
       edges: []

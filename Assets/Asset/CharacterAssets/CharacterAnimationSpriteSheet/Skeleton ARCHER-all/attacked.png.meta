@@ -100,13 +100,13 @@ TextureImporter:
         width: 254
         height: 319
       alignment: 9
-      pivot: {x: 0.47688013, y: 0.030572763}
+      pivot: {x: 0.4547485, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9cc507144a241de41aab584192fcb2c1
+      spriteID: 7a5eb2016e5f73b4fa1b9463241ed977
       vertices: []
       indices: 
       edges: []
@@ -120,13 +120,13 @@ TextureImporter:
         width: 254
         height: 319
       alignment: 9
-      pivot: {x: 0.4807333, y: 0.036709066}
+      pivot: {x: 0.4547485, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc5228ed0b3cb1b45afb1cd0b8cb233e
+      spriteID: 5f03cd07bc92ac0478524f896f65134f
       vertices: []
       indices: 
       edges: []
@@ -140,13 +140,13 @@ TextureImporter:
         width: 254
         height: 319
       alignment: 9
-      pivot: {x: 0.47302678, y: 0.033640914}
+      pivot: {x: 0.4547485, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 891adb670dea2384a9863db66e18f3f1
+      spriteID: 3b400b28141762e4ca202c14fa14bb21
       vertices: []
       indices: 
       edges: []
@@ -160,13 +160,13 @@ TextureImporter:
         width: 254
         height: 319
       alignment: 9
-      pivot: {x: 0.47687992, y: 0.033640914}
+      pivot: {x: 0.4547485, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd95e9a47f0e86d4795258769f23734a
+      spriteID: f76ba7e16fb27234fa7b87ac5224e68f
       vertices: []
       indices: 
       edges: []
@@ -180,13 +180,13 @@ TextureImporter:
         width: 254
         height: 319
       alignment: 9
-      pivot: {x: 0.47302678, y: 0.033640914}
+      pivot: {x: 0.4547485, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eaacfcb8a088641468f292a3199d0c2c
+      spriteID: d4c9cc2652bccaa4ca9acd472d442027
       vertices: []
       indices: 
       edges: []
@@ -200,13 +200,13 @@ TextureImporter:
         width: 254
         height: 319
       alignment: 9
-      pivot: {x: 0.47688016, y: 0.036709066}
+      pivot: {x: 0.4547485, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d4cd5c0275e63e4dbbdc9c302d8b958
+      spriteID: 5346d900b53581740aff46189abad318
       vertices: []
       indices: 
       edges: []
@@ -220,13 +220,13 @@ TextureImporter:
         width: 254
         height: 319
       alignment: 9
-      pivot: {x: 0.48073307, y: 0.033640914}
+      pivot: {x: 0.4547485, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bccc86b75335514419a895734929bbc0
+      spriteID: f4a14fef2a2bcf44197b18746e0f5659
       vertices: []
       indices: 
       edges: []
@@ -240,13 +240,13 @@ TextureImporter:
         width: 254
         height: 319
       alignment: 9
-      pivot: {x: 0.4768797, y: 0.033640914}
+      pivot: {x: 0.4547485, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: de1d836ea0be2444e95ec0a857adb07f
+      spriteID: 5589cb5cee2b89b4a94fb9d37aa0be6f
       vertices: []
       indices: 
       edges: []
@@ -260,13 +260,13 @@ TextureImporter:
         width: 254
         height: 319
       alignment: 9
-      pivot: {x: 0.4768797, y: 0.036709066}
+      pivot: {x: 0.4547485, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e0a3011b8d997947be3a3c2bf26f2f3
+      spriteID: 69b57f497dce494428af14413a2a15f1
       vertices: []
       indices: 
       edges: []
@@ -280,13 +280,13 @@ TextureImporter:
         width: 254
         height: 319
       alignment: 9
-      pivot: {x: 0.4730263, y: 0.033640914}
+      pivot: {x: 0.4547485, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 709fa780c2d38264ea00777e5f8f6698
+      spriteID: fec05d2b770e20d448fc6e7ad2f9a1df
       vertices: []
       indices: 
       edges: []
