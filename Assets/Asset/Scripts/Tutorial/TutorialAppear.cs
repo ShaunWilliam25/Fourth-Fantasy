@@ -303,10 +303,6 @@ public class TutorialAppear : MonoBehaviour {
                             isLecture6ShowedBefore = true;
                         }
                     }
-                    else
-                    {
-                        continue;
-                    }
                 }
             }            
             if(!isLectureDone)
