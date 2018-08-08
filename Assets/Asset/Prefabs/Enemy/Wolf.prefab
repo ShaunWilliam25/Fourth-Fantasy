@@ -723,6 +723,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PopUpText: {fileID: 1247997310769886, guid: 04b05e889f3a481409a7327058b83454, type: 2}
+  offset: 0
   injuredAnimationTimer: 1.1
 --- !u!114 &114478833288443544
 MonoBehaviour:
@@ -892,6 +893,7 @@ MonoBehaviour:
   - {fileID: 114804101230297090}
   - {fileID: 114698830168961242}
   Empty: {fileID: 21300000, guid: e3fb893fe14be6a46beeb8616e0c80b3, type: 3}
+  swapTimer: 0
 --- !u!114 &114638304837278322
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1198,7 +1200,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300008, guid: c20ab1cc7fc300349a95b35de7f358ac, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 623dc1321f4602847994def8d1634a05, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

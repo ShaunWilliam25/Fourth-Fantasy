@@ -19,9 +19,9 @@ public class TutorialAppear : MonoBehaviour {
     [SerializeField] List<actionTimeBar> playerAtbList;
     bool isLectureDone = false;
     bool isOrderLayerAdjusted = false;
-    [SerializeField]bool isLecture6ShowedBefore = false;
+    bool isLecture6ShowedBefore = false;
     public bool isEnemyAttacked = false;
-    [SerializeField] bool isATBListFilled = false;
+    [SerializeField] bool isPlayerATBListFilled = false;
     [SerializeField] Image campsiteTutorial;
     [SerializeField] Image needGreedTutorial;
     [SerializeField] bool isCanPress = false;
@@ -45,7 +45,7 @@ public class TutorialAppear : MonoBehaviour {
     private void Awake()
     {
         sceneManager = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManager>();
-        isATBListFilled = false;
+        isPlayerATBListFilled = false;
     }
 
     // Use this for initialization
@@ -68,11 +68,11 @@ public class TutorialAppear : MonoBehaviour {
     // Update is called once per frame
     void Update ()
     {
-        if(!isATBListFilled)
+        if(!isPlayerATBListFilled)
         {
             playerAtbList[0] = Player1.instance.gameObject.GetComponent<actionTimeBar>();
-            playerAtbList[1] = Player2.instance.gameObject.GetComponent<actionTimeBar>();            
-            isATBListFilled = true;
+            playerAtbList[1] = Player2.instance.gameObject.GetComponent<actionTimeBar>();
+            isPlayerATBListFilled = true;
         }
         
         //! Skip tutorial
@@ -302,10 +302,6 @@ public class TutorialAppear : MonoBehaviour {
                             lectureCanvas.transform.GetChild(5).gameObject.SetActive(true);
                             isLecture6ShowedBefore = true;
                         }
-                    }
-                    else
-                    {
-                        continue;
                     }
                 }
             }            
