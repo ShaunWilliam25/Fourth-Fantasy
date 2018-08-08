@@ -29,7 +29,7 @@ public class CriesOfTheDemon : SkillEffect
     {
         for(int i=0;i<enemyList.Count;i++)
         {
-            if(enemyList[i].GetComponent<EnemyStats>().immune)
+            if(!enemyList[i].GetComponent<EnemyStats>().immune)
             {
                 for (int j = 0; j < status.Count; j++)
                 {

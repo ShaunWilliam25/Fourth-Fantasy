@@ -542,8 +542,13 @@ MonoBehaviour:
   battlelogScript: {fileID: 0}
   audioManager: {fileID: 0}
   statusIcon: []
-  statusesList: []
-  Empty: {fileID: 0}
+  statusesList:
+  - {fileID: 114429453323146064}
+  - {fileID: 114771215633708804}
+  - {fileID: 114339422660317188}
+  - {fileID: 114624107308944326}
+  - {fileID: 114329903183330490}
+  Empty: {fileID: 21300000, guid: e3fb893fe14be6a46beeb8616e0c80b3, type: 3}
   swapTimer: 0
 --- !u!114 &114329903183330490
 MonoBehaviour:
@@ -638,6 +643,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PopUpText: {fileID: 1247997310769886, guid: 04b05e889f3a481409a7327058b83454, type: 2}
+  offset: 0
   injuredAnimationTimer: 0.5
 --- !u!114 &114429453323146064
 MonoBehaviour:
