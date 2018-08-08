@@ -1,17 +1,21 @@
 fileFormatVersion: 2
-guid: dd253510999d66a4fa9c34e04801db0e
+guid: bc8e4e31a3c30b2469b84dc619cbe125
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Wolf_Attack_0
-    21300002: Wolf_Attack_1
-    21300004: Wolf_Attack_2
-    21300006: Wolf_Attack_3
-    21300008: Wolf_Attack_4
-    21300010: Wolf_Attack_5
-    21300012: Wolf_Attack_6
-    21300014: Wolf_Attack_7
-    21300016: Wolf_Attack_8
-    21300018: Wolf_Attack_9
+    21300000: sword attack_0
+    21300002: sword attack_1
+    21300004: sword attack_2
+    21300006: sword attack_3
+    21300008: sword attack_4
+    21300010: sword attack_5
+    21300012: sword attack_6
+    21300014: sword attack_7
+    21300016: sword attack_8
+    21300018: sword attack_9
+    21300020: sword attack_10
+    21300022: sword attack_11
+    21300024: sword attack_12
+    21300026: sword attack_13
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -53,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 130
+  spritePixelsToUnits: 55
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -92,201 +96,281 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Wolf_Attack_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 706
-        width: 1060
-        height: 706
-      alignment: 9
-      pivot: {x: 0.5490181, y: 0.3466633}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 10138dddf6ea87c4f8ae4734df36bc7a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wolf_Attack_1
-      rect:
-        serializedVersion: 2
-        x: 1060
-        y: 706
-        width: 1060
-        height: 706
-      alignment: 9
-      pivot: {x: 0.5490181, y: 0.3466633}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5d74535eb51a01441a3e0488b35a1d2d
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wolf_Attack_2
-      rect:
-        serializedVersion: 2
-        x: 2120
-        y: 706
-        width: 1060
-        height: 706
-      alignment: 9
-      pivot: {x: 0.5490181, y: 0.3466633}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 36e401e442c0116439c367a299cb912c
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wolf_Attack_3
-      rect:
-        serializedVersion: 2
-        x: 3180
-        y: 706
-        width: 1060
-        height: 706
-      alignment: 9
-      pivot: {x: 0.5490181, y: 0.3466633}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 6a55e1f8e412b4b4f83a47df367a30aa
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wolf_Attack_4
-      rect:
-        serializedVersion: 2
-        x: 4240
-        y: 706
-        width: 1060
-        height: 706
-      alignment: 9
-      pivot: {x: 0.5490181, y: 0.3466633}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9aebca9e89cb99443b47d81a33b0273f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Wolf_Attack_5
+      name: sword attack_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 1060
-        height: 706
+        width: 421
+        height: 494
       alignment: 9
-      pivot: {x: 0.5490181, y: 0.3466633}
+      pivot: {x: 0.6497244, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 459b225e6d3d364419a38a08fc7cd14b
+      spriteID: 2206b3b6a449c7143854450437f0856f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wolf_Attack_6
+      name: sword attack_1
       rect:
         serializedVersion: 2
-        x: 1060
+        x: 421
         y: 0
-        width: 1060
-        height: 706
+        width: 421
+        height: 494
       alignment: 9
-      pivot: {x: 0.5490181, y: 0.3466633}
+      pivot: {x: 0.6497244, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5b8fa513636a8b04d8828ecc9d66181f
+      spriteID: 1c0dcc4862e79da488b1e2af967c1a38
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wolf_Attack_7
+      name: sword attack_2
       rect:
         serializedVersion: 2
-        x: 2120
+        x: 842
         y: 0
-        width: 1060
-        height: 706
+        width: 421
+        height: 494
       alignment: 9
-      pivot: {x: 0.5490181, y: 0.3466633}
+      pivot: {x: 0.6497244, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2dc5e72829d7bb4699ee0ed8d667e77
+      spriteID: a1cd3198f4e796a4fa781521ad52286f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wolf_Attack_8
+      name: sword attack_3
       rect:
         serializedVersion: 2
-        x: 3180
+        x: 1263
         y: 0
-        width: 1060
-        height: 706
+        width: 421
+        height: 494
       alignment: 9
-      pivot: {x: 0.5490181, y: 0.3466633}
+      pivot: {x: 0.6497244, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e2a4a19b1652314bab98791dddff55d
+      spriteID: 26a0a154b43e61d4d987321dacb060ca
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Wolf_Attack_9
+      name: sword attack_4
       rect:
         serializedVersion: 2
-        x: 4240
+        x: 1684
         y: 0
-        width: 1060
-        height: 706
+        width: 421
+        height: 494
       alignment: 9
-      pivot: {x: 0.5490181, y: 0.3466633}
+      pivot: {x: 0.6497244, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ea61492f8bbaffc4295045ce81b8df85
+      spriteID: 31587b5cbb5048c4595726aafcb7f647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sword attack_5
+      rect:
+        serializedVersion: 2
+        x: 2105
+        y: 0
+        width: 421
+        height: 494
+      alignment: 9
+      pivot: {x: 0.6497244, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42219363ecb18fc4abf1e79beba7a3e3
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sword attack_6
+      rect:
+        serializedVersion: 2
+        x: 2526
+        y: 0
+        width: 421
+        height: 494
+      alignment: 9
+      pivot: {x: 0.6497244, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 949d9fdd1a65d7a4ea69ce4a88e6f37c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sword attack_7
+      rect:
+        serializedVersion: 2
+        x: 2947
+        y: 0
+        width: 421
+        height: 494
+      alignment: 9
+      pivot: {x: 0.6497244, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99205768cc17cf240ada21d2efabc3f4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sword attack_8
+      rect:
+        serializedVersion: 2
+        x: 3368
+        y: 0
+        width: 421
+        height: 494
+      alignment: 9
+      pivot: {x: 0.6497244, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20cd93a3d4b5a9e4c9c52d83ae2c1378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sword attack_9
+      rect:
+        serializedVersion: 2
+        x: 3789
+        y: 0
+        width: 421
+        height: 494
+      alignment: 9
+      pivot: {x: 0.6497244, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2636b4602c475345a92f9d76e28e6d0
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sword attack_10
+      rect:
+        serializedVersion: 2
+        x: 4210
+        y: 0
+        width: 421
+        height: 494
+      alignment: 9
+      pivot: {x: 0.6497244, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60788a9e712f98341a68325bcd9cff29
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sword attack_11
+      rect:
+        serializedVersion: 2
+        x: 4631
+        y: 0
+        width: 421
+        height: 494
+      alignment: 9
+      pivot: {x: 0.6497244, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da7ec190beaaab44f8fb4fce380aba5b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sword attack_12
+      rect:
+        serializedVersion: 2
+        x: 5052
+        y: 0
+        width: 421
+        height: 494
+      alignment: 9
+      pivot: {x: 0.6497244, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b65d8073b95b49c4a8f7d68648bf4f4c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: sword attack_13
+      rect:
+        serializedVersion: 2
+        x: 5473
+        y: 0
+        width: 421
+        height: 494
+      alignment: 9
+      pivot: {x: 0.6497244, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 732dea89e63f1924881503021e52f5b7
       vertices: []
       indices: 
       edges: []
@@ -294,7 +378,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: f13a8c60c3fbb5c499176a8a53c83c6d
+    spriteID: c8008de787315b342829088510e906b3
     vertices: []
     indices: 
     edges: []

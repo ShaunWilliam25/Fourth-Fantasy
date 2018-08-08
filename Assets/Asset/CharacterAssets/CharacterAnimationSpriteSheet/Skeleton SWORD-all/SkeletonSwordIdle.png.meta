@@ -101,16 +101,16 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 545
+        width: 546
         height: 583
       alignment: 9
-      pivot: {x: 0.5782158, y: 0.035112854}
+      pivot: {x: 0.557539, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9ddae9d8562c527469a793e6eb3035b6
+      spriteID: 795fb566e9c577f49afea75fa2c3e558
       vertices: []
       indices: 
       edges: []
@@ -119,18 +119,18 @@ TextureImporter:
       name: SkeletonSwordIdle_1
       rect:
         serializedVersion: 2
-        x: 542
+        x: 547
         y: 0
-        width: 549
+        width: 552
         height: 583
       alignment: 9
-      pivot: {x: 0.5993749, y: 0.03201682}
+      pivot: {x: 0.56249195, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 557141ba0c1f6f14da78a5d7771abbce
+      spriteID: 05103df856525264490136d0209c84a2
       vertices: []
       indices: 
       edges: []
@@ -141,16 +141,16 @@ TextureImporter:
         serializedVersion: 2
         x: 1098
         y: 0
-        width: 556
+        width: 557
         height: 583
       alignment: 9
-      pivot: {x: 0.59894526, y: 0.034886133}
+      pivot: {x: 0.5719998, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e4d961496b706f498dcd436c1659270
+      spriteID: 764f9cbe3b800f94686c22841677a26b
       vertices: []
       indices: 
       edges: []
@@ -159,18 +159,18 @@ TextureImporter:
       name: SkeletonSwordIdle_3
       rect:
         serializedVersion: 2
-        x: 1663
+        x: 1655
         y: 0
-        width: 558
+        width: 564
         height: 583
       alignment: 9
-      pivot: {x: 0.58775103, y: 0.031938985}
+      pivot: {x: 0.57197666, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbc229d67e2c9544c841dd5d78eb68b9
+      spriteID: b45a958af9ccbda449dbb047adfc31e1
       vertices: []
       indices: 
       edges: []
@@ -179,18 +179,18 @@ TextureImporter:
       name: SkeletonSwordIdle_4
       rect:
         serializedVersion: 2
-        x: 2222
+        x: 2219
         y: 0
-        width: 567
+        width: 573
         height: 583
       alignment: 9
-      pivot: {x: 0.59509444, y: 0.03426036}
+      pivot: {x: 0.57857835, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6a4e535daeabf974ea063102a60c1ec0
+      spriteID: efa30edab58878a4c9a710b2da99a2b8
       vertices: []
       indices: 
       edges: []
@@ -199,18 +199,18 @@ TextureImporter:
       name: SkeletonSwordIdle_5
       rect:
         serializedVersion: 2
-        x: 2788
+        x: 2792
         y: 0
-        width: 578
+        width: 575
         height: 583
       alignment: 9
-      pivot: {x: 0.60996467, y: 0.03550293}
+      pivot: {x: 0.5870355, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 49f57a4edc3016845b9a016223bfe014
+      spriteID: 783ec555cd33315438747b74cc47e5de
       vertices: []
       indices: 
       edges: []
@@ -219,18 +219,18 @@ TextureImporter:
       name: SkeletonSwordIdle_6
       rect:
         serializedVersion: 2
-        x: 3369
+        x: 3368
         y: 0
-        width: 583
+        width: 584
         height: 583
       alignment: 9
-      pivot: {x: 0.60116005, y: 0.033916883}
+      pivot: {x: 0.58474606, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f2fdc75aeefbdb438f8e162050e0970
+      spriteID: 0d663ee91879ca040b90a9dd8b798b9c
       vertices: []
       indices: 
       edges: []
@@ -239,18 +239,18 @@ TextureImporter:
       name: SkeletonSwordIdle_7
       rect:
         serializedVersion: 2
-        x: 3948
+        x: 3952
         y: 0
-        width: 582
+        width: 578
         height: 583
       alignment: 9
-      pivot: {x: 0.6062188, y: 0.03541258}
+      pivot: {x: 0.5838433, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 686693fccc0cf92469bb2a93e8600683
+      spriteID: 3941a7e657bc719439b98d68843fedcf
       vertices: []
       indices: 
       edges: []
@@ -259,18 +259,18 @@ TextureImporter:
       name: SkeletonSwordIdle_8
       rect:
         serializedVersion: 2
-        x: 4526
+        x: 4532
         y: 0
-        width: 579
+        width: 572
         height: 583
       alignment: 9
-      pivot: {x: 0.6038049, y: 0.031941414}
+      pivot: {x: 0.58126724, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3f502e5edb854674ab062495a25a03cb
+      spriteID: 912cca427ceb5b9409dff2a9faf848d5
       vertices: []
       indices: 
       edges: []
@@ -284,13 +284,13 @@ TextureImporter:
         width: 569
         height: 583
       alignment: 9
-      pivot: {x: 0.59446996, y: 0.033488892}
+      pivot: {x: 0.5773432, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f9f5979fdff4a5542bec1972bc701dff
+      spriteID: bbb8871ab4ca7ef4583e1da210c8a6ff
       vertices: []
       indices: 
       edges: []
@@ -299,18 +299,18 @@ TextureImporter:
       name: SkeletonSwordIdle_10
       rect:
         serializedVersion: 2
-        x: 5676
+        x: 5674
         y: 0
-        width: 562
+        width: 564
         height: 583
       alignment: 9
-      pivot: {x: 0.59290177, y: 0.03649058}
+      pivot: {x: 0.5719767, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 780fcebdda10f964a98768eccc8992f5
+      spriteID: b8f608f2d245fdc4f8a2cbbce0e9a974
       vertices: []
       indices: 
       edges: []
@@ -319,18 +319,18 @@ TextureImporter:
       name: SkeletonSwordIdle_11
       rect:
         serializedVersion: 2
-        x: 6239
+        x: 6236
         y: 0
-        width: 556
+        width: 560
         height: 583
       alignment: 9
-      pivot: {x: 0.5918151, y: 0.032258317}
+      pivot: {x: 0.5672773, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: eecf58105ca3f3d4f936b520192f0144
+      spriteID: ef2b6d9ce10f7164faebc2809aab7259
       vertices: []
       indices: 
       edges: []
@@ -339,18 +339,18 @@ TextureImporter:
       name: SkeletonSwordIdle_12
       rect:
         serializedVersion: 2
-        x: 6792
+        x: 6791
         y: 0
-        width: 555
+        width: 557
         height: 583
       alignment: 9
-      pivot: {x: 0.5813397, y: 0.03447492}
+      pivot: {x: 0.5628892, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a950824904e81b543b05aa88e91f626d
+      spriteID: d657103f2eddbdd4ba43dde05faf9d0f
       vertices: []
       indices: 
       edges: []
@@ -364,13 +364,13 @@ TextureImporter:
         width: 546
         height: 583
       alignment: 9
-      pivot: {x: 0.57736486, y: 0.033157244}
+      pivot: {x: 0.5578184, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b3d186badd454b3498e52ebfd7f1cf6c
+      spriteID: 4bd4a99a56bd19d4d98a138e6209e940
       vertices: []
       indices: 
       edges: []
