@@ -2812,8 +2812,9 @@ MonoBehaviour:
   playerAtbList:
   - {fileID: 0}
   - {fileID: 0}
+  isLecture6ShowedBefore: 0
   isEnemyAttacked: 0
-  isPlayerATBListFilled: 0
+  isATBListFilled: 0
   campsiteTutorial: {fileID: 1978719395}
   needGreedTutorial: {fileID: 1284362380}
   isCanPress: 0

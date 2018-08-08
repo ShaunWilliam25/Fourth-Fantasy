@@ -1415,8 +1415,9 @@ MonoBehaviour:
   tint: {fileID: 0}
   sceneManager: {fileID: 1020202954}
   playerAtbList: []
+  isLecture6ShowedBefore: 0
   isEnemyAttacked: 0
-  isPlayerATBListFilled: 0
+  isATBListFilled: 0
   campsiteTutorial: {fileID: 0}
   needGreedTutorial: {fileID: 0}
   isCanPress: 0
@@ -2059,7 +2060,7 @@ Prefab:
     - target: {fileID: 114959392602543044, guid: 208804f58ac98e34d8006bf42f916ba3,
         type: 2}
       propertyPath: waveIndex
-      value: 1
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 208804f58ac98e34d8006bf42f916ba3, type: 2}

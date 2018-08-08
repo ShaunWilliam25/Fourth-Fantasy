@@ -42,13 +42,13 @@ public class Regen : StatusDetail
             if (userType == UserType.PLAYER)
             {
                 float reg = user.GetComponent<PlayerStats>().baseHealth * 0.05f;
-                user.GetComponent<PlayerStats>().baseHealth += (int)reg;
+                user.GetComponent<PlayerStats>().health += (int)reg;
                 tick = 0;
             }
             else if (userType == UserType.ENEMY)
             {
                 float reg = user.GetComponent<EnemyStats>().baseHealth * 0.05f;
-                user.GetComponent<EnemyStats>().baseHealth += (int)reg;
+                user.GetComponent<EnemyStats>().health += (int)reg;
                 tick = 0;
             }
             tick = 0;

@@ -30,8 +30,13 @@ public class WolfHowl : SkillEffect
             {
                 if(enemySpawn.enemySpawnPoints[i].childCount<=0)
                 {
-                    sceneManager.enemyList.Insert(i,Instantiate(wolfPrefab, new Vector2(enemySpawn.enemySpawnPoints[i].position.x, enemySpawn.enemySpawnPoints[i].position.y), Quaternion.identity, enemySpawn.enemySpawnPoints[i]));
+                    GameObject wolfClone = Instantiate(wolfPrefab, new Vector2(enemySpawn.enemySpawnPoints[i].position.x, enemySpawn.enemySpawnPoints[i].position.y), Quaternion.identity, enemySpawn.enemySpawnPoints[i]);
+                    sceneManager.enemyList.Insert(i,wolfClone);
                     sceneManager.enemyList[i].GetComponent<EnemyStats>().index = 1;
+                    for(int j=0;j<wolfClone.GetComponent<EnemyVariableManager>().skillsPrefab.Count;j++)
+                    {
+                        wolfClone.GetComponent<EnemyVariableManager>().skillList.Add(Instantiate(wolfClone.GetComponent<EnemyVariableManager>().skillsPrefab[j],wolfClone.transform));
+                    }
                     sceneManager.playerList[0].GetComponent<PlayerVariableManager>().isTargetLockedIn = false;
                     sceneManager.playerList[1].GetComponent<PlayerVariableManager>().isTargetLockedIn = false;
                     spawnCount--;

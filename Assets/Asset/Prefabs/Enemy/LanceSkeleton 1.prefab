@@ -1153,7 +1153,7 @@ MonoBehaviour:
   playerList:
   - {fileID: 0}
   - {fileID: 0}
-  isTargetChosen: 1
+  isTargetChosen: 0
   isSkillUsed: 0
   hiAggroTarget: {fileID: 0}
   loAggroTarget: {fileID: 0}

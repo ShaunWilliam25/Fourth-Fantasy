@@ -32,12 +32,13 @@ public class EnemyTakeDamage : MonoBehaviour {
             }
         }
         GetComponent<EnemyStats>().health -= (int)(damage * multiplier);
-        if(GetComponent<EnemyStats>().health>0)
-        {
-            GetComponent<EnemyVariableManager>().anim.Play(GetComponent<EnemyVariableManager>().injuredAnimation);
-            Invoke("ResetAnimation", injuredAnimationTimer);
-        }
         PopUpDamage(gameObject, (int)(damage * multiplier), Color.red);
+        if (GetComponent<EnemyStats>().health <= 0)
+        {
+            return;
+        }
+        GetComponent<EnemyVariableManager>().anim.Play(GetComponent<EnemyVariableManager>().injuredAnimation);
+        Invoke("ResetAnimation", injuredAnimationTimer);
     }
 
     public void EnemyHeal(int heal)

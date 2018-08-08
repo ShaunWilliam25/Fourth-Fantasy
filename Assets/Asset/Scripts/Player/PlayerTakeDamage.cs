@@ -48,12 +48,13 @@ public class PlayerTakeDamage : MonoBehaviour {
             }
         }
         GetComponent<PlayerStats>().health -= (int)(damage * multiplier);
-        if(GetComponent<PlayerStats>().health>0)
-        {
-            this.GetComponent<PlayerVariableManager>().anim.GetComponent<Animator>().Play(this.GetComponent<PlayerVariableManager>().injuredAnimation);
-            Invoke("ResetAnimation", injuredAnimationTimer);
-        }
         PopUpDamage(gameObject, (int)(damage * multiplier), Color.red);
+        if (GetComponent<PlayerStats>().health <= 0)
+        {
+            return;
+        }
+        this.GetComponent<PlayerVariableManager>().anim.GetComponent<Animator>().Play(this.GetComponent<PlayerVariableManager>().injuredAnimation);
+        Invoke("ResetAnimation", injuredAnimationTimer);
     }
 
     public void PlayerHeal(int heal)

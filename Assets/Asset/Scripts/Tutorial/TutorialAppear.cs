@@ -346,7 +346,7 @@ public class TutorialAppear : MonoBehaviour {
             
             
             //! Activate the campsite picture
-            campsiteTutorial.gameObject.SetActive(true);
+            needGreedTutorial.gameObject.SetActive(true);
             Debug.Log("STAGE 7");
 
 
@@ -355,7 +355,7 @@ public class TutorialAppear : MonoBehaviour {
             {
                 if (Input.anyKeyDown)
                 {
-                    campsiteTutorial.gameObject.SetActive(false);
+                    needGreedTutorial.gameObject.SetActive(false);
                     cannotPressTimer = 0f;
                     isCanPress = false;
                     tutorialStage = TUTORIAL_STAGE.STAGE_08;
@@ -372,7 +372,7 @@ public class TutorialAppear : MonoBehaviour {
             }
             
             //! Activate the campsite picture
-            needGreedTutorial.gameObject.SetActive(true);
+            campsiteTutorial.gameObject.SetActive(true);
             Debug.Log("STAGE 8");
 
             //! Cannot press while the isCanPress bool is false
@@ -380,7 +380,7 @@ public class TutorialAppear : MonoBehaviour {
             {
                 if (Input.anyKeyDown)
                 {
-                    needGreedTutorial.gameObject.SetActive(false);
+                    campsiteTutorial.gameObject.SetActive(false);
                     isCanPress = false;
                     cannotPressTimer = 0f;
                     tutorialStage = TUTORIAL_STAGE.THE_END;
