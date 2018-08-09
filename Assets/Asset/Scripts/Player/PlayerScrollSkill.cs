@@ -73,7 +73,7 @@ public class PlayerScrollSkill : PlayerVariableManager {
         if (Input.GetButtonUp(this.GetComponent<PlayerVariableManager>().playerButton))
         {
             //! Silence check
-            if (GetComponent<PlayerStats>().silence)
+            if (GetComponent<PlayerStats>().silence || GetComponent<PlayerStats>().berserk)
             {
                 //if (this.GetComponent<PlayerVariableManager>().skillHolder[skillSelected].GetComponent<SkillDetail>().skillName == "Normal Attack")
                 if (skillSelected == 2)
