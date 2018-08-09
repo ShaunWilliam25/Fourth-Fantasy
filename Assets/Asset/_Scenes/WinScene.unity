@@ -9777,7 +9777,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press Enter to go to Main Menu
+  m_Text: Press any key to go to Main Menu
 --- !u!222 &580996058
 CanvasRenderer:
   m_ObjectHideFlags: 0

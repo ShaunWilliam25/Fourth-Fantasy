@@ -691,8 +691,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9518dcbb996bef84da2b1c24a14e5aea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 50
-  baseHealth: 50
+  health: 500
+  baseHealth: 500
   immune: 0
   silence: 0
   berserk: 0
