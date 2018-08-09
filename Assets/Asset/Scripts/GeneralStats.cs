@@ -10,11 +10,4 @@ public class GeneralStats : MonoBehaviour {
     [HideInInspector] public bool silence = false;
     [HideInInspector] public bool berserk = false;
     public new string name;
-
-    //public List<StatusEffect> statusEffectList;
-
-    private void Start()
-    {
-        health = baseHealth;       
-    }
 }
