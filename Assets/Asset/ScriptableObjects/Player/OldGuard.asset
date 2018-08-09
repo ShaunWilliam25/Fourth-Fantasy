@@ -13,26 +13,26 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: OldGuard
   sprite: {fileID: 21300000, guid: 5ad4fdcf30db5f94095d13b397557282, type: 3}
-  animator: {fileID: 0}
+  animator: {fileID: 9100000, guid: 7e8c7dcdeeede8a4590b804dec890d7c, type: 2}
   maxHealth: 600
   health: 600
   skillList:
-  - {fileID: 1782082349170188, guid: 959f3c68e1ff7094a97b99c24cbca23a, type: 2}
   - {fileID: 1920669059250116, guid: 572cc93113f37544bb65bef27788c81b, type: 2}
   - {fileID: 1816165602472638, guid: 42556c2daa279494fab512d05dc79b5d, type: 2}
+  - {fileID: 1782082349170188, guid: 959f3c68e1ff7094a97b99c24cbca23a, type: 2}
   - {fileID: 1058121370257212, guid: f3fdabfdefaf5a2409e85c1251127952, type: 2}
   - {fileID: 1492279568912172, guid: 5cf21dce0f6fa7947bd37fc804f136ec, type: 2}
-  scale: 0.3484527
+  scale: 0.6470452
   idleAnimation: old guard idle anim
-  attackAnimation: 
-  injuredAnimation: 
+  attackAnimation: old guard attack anim
+  injuredAnimation: old guard injured anim
   spellAnimation: old guard cast spell anim
   deathAnimation: old guard death anim
-  reviveAnimation: 
-  attackAnimationTimer: 0
-  injuredAnimationTimer: 0
-  spellAnimationTimer: 0
-  reviveAnimationTimer: 0
+  reviveAnimation: old guard revive anim
+  attackAnimationTimer: 0.6
+  injuredAnimationTimer: 0.5
+  spellAnimationTimer: 0.85
+  reviveAnimationTimer: 1.8
   skillImages:
   - {fileID: 21300000, guid: c8586094d7873dc4294c13d343db7858, type: 3}
   - {fileID: 21300000, guid: 7df14104fd6fdc94399245acef776e9c, type: 3}
