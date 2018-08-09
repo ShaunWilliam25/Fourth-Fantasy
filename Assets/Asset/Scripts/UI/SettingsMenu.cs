@@ -15,11 +15,14 @@ public class SettingsMenu : MonoBehaviour
     public Slider masterSlider;
     public Slider musicSlider;
     public Slider effectSlider;
+    public Slider brightnessSlider;
     public float outMasterVolume;
     public float outMusicVolume;
     public float outEffectVolume;
     public ParticleSystem pS1;
     public ParticleSystem pS2;
+
+    [SerializeField] Image brightness;
 
     public void setMasterVolume(float volume)
     {
@@ -32,10 +35,6 @@ public class SettingsMenu : MonoBehaviour
     public void setEffectVolume(float volume)
     {
         audioMixer.SetFloat("EffectVolume", AudioManager.Instance.VolumeTodB(volume));
-    }
-    public void setQuality(int quality)
-    {
-        QualitySettings.SetQualityLevel(quality);
     }
 
     public void setFullscreen(bool isFullscreen)
@@ -50,6 +49,11 @@ public class SettingsMenu : MonoBehaviour
     public void BackToMainMenu()
     {
         eventSystem.SetSelectedGameObject(newGame.gameObject);
+    }
+
+    public void Brightness(float alpha)
+    {
+        NewBrightness.Instance.brightnessValue = alpha * -1f;
     }
 
     public void Awake()
@@ -70,7 +74,6 @@ public class SettingsMenu : MonoBehaviour
     private void Start()
     {
         fullscreen.isOn = Screen.fullScreen;
-        Debug.Log(Screen.fullScreen);
         if (AudioManager.instance.isNewGameVolume)
         {
             audioMixer.SetFloat("MasterVolume", -5f);
@@ -101,6 +104,7 @@ public class SettingsMenu : MonoBehaviour
         musicSlider.value = AudioManager.Instance.dBToVolume(outMusicVolume);
         audioMixer.GetFloat("EffectVolume", out outEffectVolume);
         effectSlider.value = AudioManager.Instance.dBToVolume(outEffectVolume); audioMixer.GetFloat("MasterVolume", out outMasterVolume);
+        brightnessSlider.value = NewBrightness.instance.brightnessValue * -1f;
     }
 
 }

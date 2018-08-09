@@ -12,6 +12,7 @@ public class PauseScript : MonoBehaviour
     public Slider masterSlider;
     public Slider musicSlider;
     public Slider effectSlider;
+    public Slider brightnessSlider;
     public float outMasterVolume;
     public float outMusicVolume;
     public float outEffectVolume;
@@ -25,6 +26,7 @@ public class PauseScript : MonoBehaviour
         //musicSlider.value = AudioManager.Instance.dBToVolume(outMusicVolume);
         audioMixer.GetFloat("EffectVolume", out outEffectVolume);
         effectSlider.value = AudioManager.Instance.dBToVolume(outEffectVolume);
+        brightnessSlider.value = NewBrightness.instance.brightnessValue * -1f;
     }
 
     // Update is called once per frame
@@ -95,6 +97,11 @@ public class PauseScript : MonoBehaviour
     public void setEffectVolume(float volume)
     {
         audioMixer.SetFloat("EffectVolume", AudioManager.Instance.VolumeTodB(volume));
+    }
+
+    public void Brightness(float alpha)
+    {
+        NewBrightness.Instance.brightnessValue = alpha * -1f;
     }
 
 

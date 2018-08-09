@@ -97,6 +97,15 @@ public class Player_Spawn : MonoBehaviour {
                 }
             }
 
+            //! Make sure the color is white 
+            for(int i=0;i<sceneManager.playerList.Count;i++)
+            {
+                if(sceneManager.playerList[i].transform.GetChild(0).GetComponent<SpriteRenderer>().color != Color.white)
+                {
+                    (sceneManager.playerList[i].transform.GetChild(0).GetComponent<SpriteRenderer>().color = Color.white;
+                }
+            }
+
             if (AudioManager.instance.isResetSkill)
             {
                 //! For each player
