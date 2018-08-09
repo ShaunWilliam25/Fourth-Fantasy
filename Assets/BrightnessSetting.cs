@@ -36,7 +36,6 @@ public class BrightnessSetting : MonoBehaviour
 
             //! Set the isNewGame bool to prevent reset when return to main menu
             AudioManager.instance.isNewGameBrightness = false;
-
         }
     }
 
