@@ -178,6 +178,7 @@ public class LobbyMenu : MonoBehaviour {
                 else if(choice == 3)
                 {
                     holdTimer = 0;
+                    
                 }
                 holdTimer = 0;
             }
