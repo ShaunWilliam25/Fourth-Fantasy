@@ -32,6 +32,9 @@ public class BrightnessSetting : MonoBehaviour
         slider.onValueChanged.AddListener(delegate { sliderChanged(); });
         slider.value = PlayerPrefs.GetFloat("BrightnessCorrection");
 
+        //! Set the isNewGame bool to prevent reset when return to main menu
+        AudioManager.instance.isNewGame = false;
+
     }
 
     void Update()

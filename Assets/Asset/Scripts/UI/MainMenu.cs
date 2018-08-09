@@ -56,6 +56,7 @@ public class MainMenu : MonoBehaviour
         mouseInstruction.Play("StartMenuInstructionClip02");
         AudioManager.instance.isResetSkill = true;
         AudioManager.instance.isTutorial = true;
+        AudioManager.instance.isNewGame = true;
 
     }
     private void Update()
