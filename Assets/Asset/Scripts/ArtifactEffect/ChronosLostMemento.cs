@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ChronosLostMemento : ArtifactEffect
 {
-    private bool hpHeal = false;
+    [SerializeField]private bool hpHeal = false;
 
     public void Awake()
     {
@@ -20,6 +20,7 @@ public class ChronosLostMemento : ArtifactEffect
                 carrier.GetComponent<PlayerStats>().baseHealth += 300;
                 carrier.GetComponent<PlayerStats>().health = carrier.GetComponent<PlayerStats>().baseHealth;
                 isEffect = true;
+                hpHeal = false;
             }
             if (!hpHeal && (carrier.GetComponent<PlayerStats>().health / carrier.GetComponent<PlayerStats>().baseHealth) <= 0.1f)
             {
@@ -30,10 +31,6 @@ public class ChronosLostMemento : ArtifactEffect
                     playerList[i].GetComponent<PlayerTakeDamage>().PlayerHeal((int)(playerList[i].GetComponent<PlayerStats>().baseHealth - playerList[i].GetComponent<PlayerStats>().health));
                 }
                 hpHeal = true;
-            }
-            if (GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManager>().isWin)
-            {
-                hpHeal = false;
             }
         }
 

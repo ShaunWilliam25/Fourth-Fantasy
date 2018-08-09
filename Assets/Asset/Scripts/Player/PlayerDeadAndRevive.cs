@@ -32,7 +32,7 @@ public class PlayerDeadAndRevive : MonoBehaviour {
             playerVariable.GetComponent<PlayerSkillExecution>().enabled = false;
             playerVariable.GetComponent<PlayerTakeDamage>().enabled = false;
         }
-        if(playerStats.knockedOut == true && playerStats.reviveAction <=0 || playerStats.autoRevive)
+        if(playerStats.knockedOut == true && (playerStats.reviveAction <=0 || playerStats.autoRevive))
         {
             playerStats.knockedOut = false;
             playerStats.reviveAction = 0;
