@@ -6,7 +6,6 @@ using UnityEngine.EventSystems;
 
 public class NeedGreedSelection : MonoBehaviour
 {
-    //EventSystem campsiteES;
     public Button p1Need;
     public Button p1Greed;
     public Button p2Need;
@@ -15,11 +14,25 @@ public class NeedGreedSelection : MonoBehaviour
     public float p1Hold, p2Hold;
     public Image imageFill1;
     public Image imageFill2;
+    public Color p1NeedImageColor;
+    public Color p1GreedImageColor;
+    public Color p2NeedImageColor;
+    public Color p2GreedImageColor;
+    public needGreedShowUI NeedGreedShowUI;
+
+    private void Awake()
+    {
+        p1NeedImageColor = p1Need.GetComponent<Image>().color;
+        p1GreedImageColor = p1Greed.GetComponent<Image>().color;
+        p2NeedImageColor = p2Need.GetComponent<Image>().color;
+        p2GreedImageColor = p2Greed.GetComponent<Image>().color;
+        NeedGreedShowUI = GetComponent<needGreedShowUI>();
+    }
 
     private void Start()
     {
-        p1Need.GetComponent<Image>().color = Color.red;
-        p2Need.GetComponent<Image>().color = Color.blue;
+        p1NeedImageColor = Color.red;
+        p2NeedImageColor = Color.blue;
     }
 
     // Update is called once per frame
@@ -27,32 +40,32 @@ public class NeedGreedSelection : MonoBehaviour
     {
         if (Input.GetKeyUp("a"))
         {
-            if (p1Need.GetComponent<Image>().color == Color.red)
+            if (p1NeedImageColor == Color.red)
             {
-                p1Need.GetComponent<Image>().color = Color.white;
-                p1Greed.GetComponent<Image>().color = Color.red;
+                p1NeedImageColor = Color.white;
+                p1GreedImageColor = Color.red;
                 imageFill1.transform.position = p1Greed.transform.position;
             }
             else
             {
-                p1Need.GetComponent<Image>().color = Color.red;
-                p1Greed.GetComponent<Image>().color = Color.white;
+                p1NeedImageColor = Color.red;
+                p1GreedImageColor = Color.white;
                 imageFill1.transform.position = p1Need.transform.position;
             }
         }
 
         if (Input.GetKeyUp("l"))
         {
-            if (p2Need.GetComponent<Image>().color == Color.blue)
+            if (p2NeedImageColor == Color.blue)
             {
-                p2Need.GetComponent<Image>().color = Color.white;
-                p2Greed.GetComponent<Image>().color = Color.blue;
+                p2NeedImageColor = Color.white;
+                p2GreedImageColor = Color.blue;
                 imageFill2.transform.position = p2Greed.transform.position;
             }
             else
             {
-                p2Need.GetComponent<Image>().color = Color.blue;
-                p2Greed.GetComponent<Image>().color = Color.white;
+                p2NeedImageColor = Color.blue;
+                p2GreedImageColor = Color.white;
                 imageFill2.transform.position = p2Need.transform.position;
             }
         }
@@ -63,13 +76,13 @@ public class NeedGreedSelection : MonoBehaviour
             imageFill1.fillAmount = p1Hold;
             if (p1Hold > timeNeeded)
             {
-                if (p1Need.GetComponent<Image>().color == Color.red)
+                if (p1NeedImageColor == Color.red)
                 {
-                    this.GetComponent<needGreedShowUI>().p1State = needGreedShowUI.CAMPSITE_STATE.GREED;
+                    NeedGreedShowUI.p1State = needGreedShowUI.CAMPSITE_STATE.GREED;
                 }
                 else
                 {
-                    this.GetComponent<needGreedShowUI>().p1State = needGreedShowUI.CAMPSITE_STATE.NEED;
+                    NeedGreedShowUI.p1State = needGreedShowUI.CAMPSITE_STATE.NEED;
                 }
             }
         }
@@ -85,13 +98,13 @@ public class NeedGreedSelection : MonoBehaviour
             imageFill2.fillAmount = p2Hold;
             if (p2Hold > timeNeeded)
             {
-                if (p2Need.GetComponent<Image>().color == Color.blue)
+                if (p2NeedImageColor == Color.blue)
                 {
-                    this.GetComponent<needGreedShowUI>().p2State = needGreedShowUI.CAMPSITE_STATE.GREED;
+                    NeedGreedShowUI.p2State = needGreedShowUI.CAMPSITE_STATE.GREED;
                 }
                 else
                 {
-                    this.GetComponent<needGreedShowUI>().p2State = needGreedShowUI.CAMPSITE_STATE.NEED;
+                    NeedGreedShowUI.p2State = needGreedShowUI.CAMPSITE_STATE.NEED;
                 }
             }
         }
@@ -102,96 +115,3 @@ public class NeedGreedSelection : MonoBehaviour
         }
     }
 }
-/*
-public class NeedGreedSelection : MonoBehaviour
-{
-    //EventSystem campsiteES;
-    public Text p1Need;
-    public Text p1Greed;
-    public Text p2Need;
-    public Text p2Greed;
-    public float timeNeeded = 1;
-    public float p1Hold, p2Hold;
-    public Image imageFill1;
-    public Image imageFill2;
-
-    void OnEnable()
-    {
-        //campsiteES = EventSystem.current;
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyUp("a"))
-        {
-            if (p1Need.GetComponent<Text>().color == Color.red)
-            {
-                p1Need.GetComponent<Text>().color = Color.white;
-                p1Greed.GetComponent<Text>().color = Color.red;
-            }
-            else
-            {
-                p1Need.GetComponent<Text>().color = Color.red;
-                p1Greed.GetComponent<Text>().color = Color.white;
-            }
-        }
-
-        if (Input.GetKeyUp("l"))
-        {
-            if (p2Need.GetComponent<Text>().color == Color.blue)
-            {
-                p2Need.GetComponent<Text>().color = Color.white;
-                p2Greed.GetComponent<Text>().color = Color.blue;
-            }
-            else
-            {
-                p2Need.GetComponent<Text>().color = Color.blue;
-                p2Greed.GetComponent<Text>().color = Color.white;
-            }
-        }
-
-        if (Input.GetKey("a"))
-        {
-            p1Hold += Time.deltaTime;
-            imageFill1.fillAmount = p1Hold;
-            if (p1Hold > timeNeeded)
-            {
-                if (p1Need.GetComponent<Text>().color == Color.red)
-                {
-                    this.GetComponent<ShowUI>().p1State = ShowUI.CAMPSITE_STATE.GREED;
-                }
-                else
-                {
-                    this.GetComponent<ShowUI>().p1State = ShowUI.CAMPSITE_STATE.NEED;
-                }
-            }
-        }
-        else
-        {
-            p1Hold = 0;
-        }
-
-        if (Input.GetKey("l"))
-        {
-            p2Hold += Time.deltaTime;
-            imageFill2.fillAmount = p2Hold;
-            if (p2Hold > timeNeeded)
-            {
-                if (p2Need.GetComponent<Text>().color == Color.blue)
-                {
-                    this.GetComponent<ShowUI>().p2State = ShowUI.CAMPSITE_STATE.GREED;
-                }
-                else
-                {
-                    this.GetComponent<ShowUI>().p2State = ShowUI.CAMPSITE_STATE.NEED;
-                }
-            }
-        }
-        else
-        {
-            p2Hold = 0;
-        }
-    }
-}
-*/

@@ -20,24 +20,29 @@ public class NeedGreedRandomizer : MonoBehaviour
     public GameObject descriptionGO;
     public Text nameText;
     public Text descText;
+
     public GameObject ArtifactSpawner;
     public NeedGreedSelection needGreedSelection;
+    public needGreedShowUI NeedGreedShowUI;
+
+    public GameObject SpawnedArtifact;
+    public int SpawnedArtifactCount;
 
     [SerializeField] TutorialAppear tutorial;
 
-    public void returnBoolFalse()
+    private void Awake()
     {
-        this.GetComponent<needGreedShowUI>().greed1 = false;
-        this.GetComponent<needGreedShowUI>().need1 = false;
-        this.GetComponent<needGreedShowUI>().greed2 = false;
-        this.GetComponent<needGreedShowUI>().need2 = false;
-        this.GetComponent<needGreedShowUI>().selected1 = false;
-        this.GetComponent<needGreedShowUI>().selected2 = false;
-        Debug.Log("return");
-        //canvas.SetActive(false);
+        playerList = GameObject.FindWithTag("SceneManager").GetComponent<SceneManager>().playerList;
+        ArtifactSpawner = artifactSpawnerSingleton.instance.gameObject;
+
+        NeedGreedShowUI = GetComponent<needGreedShowUI>();
+        needGreedSelection = GetComponent<NeedGreedSelection>();
+        SpawnedArtifact = ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList[0];
+        SpawnedArtifactCount = ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList.Count;
+
+        needGreedSelection.enabled = false;
     }
 
-    // Use this for initialization
     void Start()
     {
         randNum = Random.Range(1, 101);
@@ -46,32 +51,19 @@ public class NeedGreedRandomizer : MonoBehaviour
         artifactAdded = false;
     }
 
-    private void Awake()
-    {
-        playerList = GameObject.FindWithTag("SceneManager").GetComponent<SceneManager>().playerList;
-        ArtifactSpawner = artifactSpawnerSingleton.instance.gameObject;
-        needGreedSelection = GetComponent<NeedGreedSelection>();
-        needGreedSelection.enabled = false;
-    }
-
-    // Update is called once per frame
     void Update()
     {
-        if (this.GetComponent<needGreedShowUI>().selected1 && this.GetComponent<needGreedShowUI>().selected2 && !artifactAdded)
+        if (NeedGreedShowUI.selected1 && NeedGreedShowUI.selected2 && !artifactAdded)
         {
-            Debug.Log("selected");
 
-            if (this.GetComponent<needGreedShowUI>().greed1 && this.GetComponent<needGreedShowUI>().greed2)
+            if (NeedGreedShowUI.greed1 && NeedGreedShowUI.greed2)
             {
-                Debug.Log("greed");
                 if (randNum <= 50)
                 {
                     owner = playerList[0];
 
                     addArtifact();
-                    //scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0].SetActive(false);
-                    //owner.GetComponent<PlayerVariableManager>().artifactsList.Add(scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0]);
-                    //scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Remove(scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0]);
+                    
 
                     Player1OwnerText.SetActive(true);
                     artifactAdded = true;
@@ -81,26 +73,21 @@ public class NeedGreedRandomizer : MonoBehaviour
                     owner = playerList[1];
 
                     addArtifact();
-                    //scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0].SetActive(false);
-                    //owner.GetComponent<PlayerVariableManager>().artifactsList.Add(scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0]);
-                    //scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Remove(scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0]);
+                    
 
                     Player2OwnerText.SetActive(true);
                     artifactAdded = true;
                 }
                 returnBoolFalse();
             }
-            if (this.GetComponent<needGreedShowUI>().need1 && this.GetComponent<needGreedShowUI>().need2)
+            if (NeedGreedShowUI.need1 && NeedGreedShowUI.need2)
             {
-                Debug.Log("need");
                 if (randNum <= 50)
                 {
                     owner = playerList[0];
 
                     addArtifact();
-                    //scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0].SetActive(false);
-                    //owner.GetComponent<PlayerVariableManager>().artifactsList.Add(scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0]);
-                    //scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Remove(scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0]);
+                    
 
                     Player1OwnerText.SetActive(true);
                     artifactAdded = true;
@@ -110,57 +97,46 @@ public class NeedGreedRandomizer : MonoBehaviour
                     owner = playerList[1];
 
                     addArtifact();
-                    //scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0].SetActive(false);
-                    //owner.GetComponent<PlayerVariableManager>().artifactsList.Add(scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0]);
-                    //scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Remove(scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0]);
+                    
 
                     Player2OwnerText.SetActive(true);
                     artifactAdded = true;
                 }
                 returnBoolFalse();
             }
-            if (this.GetComponent<needGreedShowUI>().greed1 && this.GetComponent<needGreedShowUI>().need2)
+            if (NeedGreedShowUI.greed1 && NeedGreedShowUI.need2)
             {
-                Debug.Log("need2");
                 owner = playerList[1];
                 returnBoolFalse();
 
                 addArtifact();
-                //scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0].SetActive(false);
-                //owner.GetComponent<PlayerVariableManager>().artifactsList.Add(scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0]);
-                //scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Remove(scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0]);
+                
 
                 Player2OwnerText.SetActive(true);
                 artifactAdded = true;
             }
-            if (this.GetComponent<needGreedShowUI>().need1 && this.GetComponent<needGreedShowUI>().greed2)
+            if (NeedGreedShowUI.need1 && NeedGreedShowUI.greed2)
             {
-                Debug.Log("need1");
                 owner = playerList[0];
                 returnBoolFalse();
 
                 addArtifact();
-                //scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0].SetActive(false);
-                //owner.GetComponent<PlayerVariableManager>().artifactsList.Add(scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0]);
-                //scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Remove(scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[0]);
+                
 
                 Player1OwnerText.SetActive(true);
                 artifactAdded = true;
             }
-            Debug.Log(owner);
-            //Debug.Log(artifactAdded);
         }
-        if (ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList.Count > 0)
+        if (SpawnedArtifactCount > 0)
         {
-            nameText.text = ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList[0].GetComponent<ArtifactInformation>().name;
-            descText.text = ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList[0].GetComponent<ArtifactInformation>().effect;
+            nameText.text = SpawnedArtifact.GetComponent<ArtifactInformation>().name;
+            descText.text = SpawnedArtifact.GetComponent<ArtifactInformation>().effect;
         }
     }
 
     public void addArtifactToPlayer()
     {
-        Debug.Log("addtoarti");
-        if (ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList.Count > 0)
+        if (SpawnedArtifactCount > 0)
         {
             canvas.SetActive(true);
             needGreedSelection.enabled = true;
@@ -169,40 +145,25 @@ public class NeedGreedRandomizer : MonoBehaviour
 
             scenemanager.GetComponent<SceneManager>().VictoryGO.SetActive(false);
 
-            ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList[0].SetActive(true);
+            SpawnedArtifact.SetActive(true);
 
             descriptionGO.SetActive(true);
 
-            /*for(int i = 0; i < scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Count; i++)
-            {
-                scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[i].SetActive(true);
-                Debug.Log("seting is true and i = " + i);
-            }*/
-
             if (artifactAdded)
             {
-                Debug.Log("isartiaddedd = " + artifactAdded);
                 if (Input.anyKeyDown)
                 {
-                    Debug.Log("C pressed");
-
-                    this.GetComponent<needGreedShowUI>().p1State = needGreedShowUI.CAMPSITE_STATE.SELECTION;
-                    this.GetComponent<needGreedShowUI>().p2State = needGreedShowUI.CAMPSITE_STATE.SELECTION;
+                    NeedGreedShowUI.p1State = needGreedShowUI.CAMPSITE_STATE.SELECTION;
+                    NeedGreedShowUI.p2State = needGreedShowUI.CAMPSITE_STATE.SELECTION;
                     artifactAdded = false;
                     returnBoolFalse();
                     owner = null;
                     Player1OwnerText.SetActive(false);
                     Player2OwnerText.SetActive(false);
 
-                    ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList[0].SetActive(true);
+                    SpawnedArtifact.SetActive(true);
 
                     descriptionGO.SetActive(true);
-
-                    //if (scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Count > 0)
-                    //{
-
-                    //}
-
                 }
             }
         }
@@ -230,73 +191,30 @@ public class NeedGreedRandomizer : MonoBehaviour
                     {
                         UnityEngine.SceneManagement.SceneManager.LoadScene(7);
                     }
-                    
                 }                
-                /*if(miniBoss)
-                {
-                    UnityEngine.SceneManagement.SceneManager.LoadScene(campsiteInt);
-                    miniBoss = false;
-                }
-                else
-                {
-                    UnityEngine.SceneManagement.SceneManager.LoadScene(nextSceneInt);
-                }*/
             }
         }
-        /*/
-        
-        /*       for (int i = scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Count - 1; i >= 0; i--)
-               {
-                   Debug.Log("inside for loop");
-                   canvas.SetActive(true);
-                   if (artifactAdded)
-                   {
-                       owner.GetComponent<PlayerVariableManager>().artifactsList.Add(scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[i]);
-                       //scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Remove(scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[i]);
-                       artifactAdded = false;
-                       canvas.SetActive(false);
-                       //this.GetComponent<ShowUI>().p1State = ShowUI.CAMPSITE_STATE.SELECTION;
-                       //this.GetComponent<ShowUI>().p2State = ShowUI.CAMPSITE_STATE.SELECTION;
-
-                   }
-                   Debug.Log(scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Count);
-               }
-       */
-        /*Debug.Log("addartifacttoplayer");
-            owner.GetComponent<PlayerVariableManager>().artifactsList.Add(scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[i]);
-        scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Remove(scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[i]);
-        artifactAdded = false;*/
     }
 
     public void addArtifact()
-    {/*
-        scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Count - 1].SetActive(false);
-        owner.GetComponent<PlayerVariableManager>().artifactsList.Add(scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Count - 1]);
-        scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Count - 1].transform.SetParent(owner.transform);
-        scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Remove(scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Count - 1]);
-        */
-        ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList[0].SetActive(false);
-        owner.GetComponent<PlayerVariableManager>().artifactsList.Add(ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList[0]);
-        ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList[0].transform.SetParent(owner.transform);
-        ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList.Remove(ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList[0]);
+    {
+        SpawnedArtifact.SetActive(false);
+        owner.GetComponent<PlayerVariableManager>().artifactsList.Add(SpawnedArtifact);
+        SpawnedArtifact.transform.SetParent(owner.transform);
+        ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList.Remove(SpawnedArtifact);
 
         descriptionGO.SetActive(false);
 
     }
 
-}
-/*
-Debug.Log("Number of artifact is " + this.GetComponent<ArtifactScript>().ownedArtifactList.Count);
-            do
-            {
-    Debug.Log("dowhileloop");
-    canvas.SetActive(true);
-    if (eventSys.GetComponent<NeedGreedRandomizer>().artifactAdded)
+    public void returnBoolFalse()
     {
-        Debug.Log("ifadded");
-        eventSys.GetComponent<NeedGreedRandomizer>().addArtifactToPlayer();
+        NeedGreedShowUI.greed1 = false;
+        NeedGreedShowUI.need1 = false;
+        NeedGreedShowUI.greed2 = false;
+        NeedGreedShowUI.need2 = false;
+        NeedGreedShowUI.selected1 = false;
+        NeedGreedShowUI.selected2 = false;
     }
-    canvas.SetActive(false);
 
-} while(this.GetComponent<ArtifactScript>().ownedArtifactList.Count > 0);
-*/
+}
