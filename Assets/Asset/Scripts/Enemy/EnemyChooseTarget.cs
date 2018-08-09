@@ -121,7 +121,7 @@ public class EnemyChooseTarget : EnemyVariableManager {
             Debug.Log("Turning off");
 
         }
-        //this.GetComponent<EnemyVariableManager>().aimIcon.SetActive(true);
+        this.GetComponent<EnemyVariableManager>().aimIcon.SetActive(true);
         this.GetComponent<EnemyVariableManager>().aimIconPosition = this.GetComponent<EnemyVariableManager>().Target.transform.position;
         this.GetComponent<EnemyVariableManager>().aimIcon.transform.position = this.GetComponent<EnemyVariableManager>().aimIconPosition;
     }

@@ -98,14 +98,7 @@ public class AudioManager : MonoBehaviour {
         volume = Mathf.Pow(10.0f, dB / 20.0f);
 
         return volume;
-    }
-    
-    /*private float DecibelToLinear(float dB)
-    {
-        float linear = Mathf.Pow(10.0f, dB / 20.0f);
-
-        return linear;
-    }*/
+    }   
 
     //! Play sound from other script by using-> FindObjectofType("AudioManager").Play(soundName);
 }
