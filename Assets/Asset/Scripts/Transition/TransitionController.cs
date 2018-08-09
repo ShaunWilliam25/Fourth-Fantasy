@@ -32,11 +32,8 @@ public class TransitionController : MonoBehaviour {
         }
 
         if (isCanPress)
-        {
-            if (Input.anyKeyDown)
-            {
-                UnityEngine.SceneManagement.SceneManager.LoadScene(1);
-            }
+        {            
+            UnityEngine.SceneManagement.SceneManager.LoadScene(1);
         }
         
 	}
