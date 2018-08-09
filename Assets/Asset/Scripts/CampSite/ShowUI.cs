@@ -166,16 +166,7 @@ public class ShowUI : MonoBehaviour
             }
         }
 
-        //! Checking if it is tutorial
-        if(AudioManager.instance.isTutorial)
-        {
-            TutorialAppear.isTheEndOfTutorial = true;
-            UnityEngine.SceneManagement.SceneManager.LoadScene(1);            
-        }
-        else
-        {
-            UnityEngine.SceneManagement.SceneManager.LoadScene(6);
-        }        
+        UnityEngine.SceneManagement.SceneManager.LoadScene(6);
     }
 }
 

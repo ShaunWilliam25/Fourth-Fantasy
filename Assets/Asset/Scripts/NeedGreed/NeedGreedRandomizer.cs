@@ -219,18 +219,9 @@ public class NeedGreedRandomizer : MonoBehaviour
                     {
                         scenemanager.GetComponent<SceneManager>().playerList[i].gameObject.SetActive(true);
                     }
-                    
-                    //! Changing the tutorial
-                    if(AudioManager.instance.isTutorial)
-                    {
-                        tutorial.tutorialStage = TutorialAppear.TUTORIAL_STAGE.STAGE_08;
-                        tutorial.isLectureDone = false;
-                    }
-                    else
-                    {
-                        UnityEngine.SceneManagement.SceneManager.LoadScene(7);
-                    }
-                    
+
+                    UnityEngine.SceneManagement.SceneManager.LoadScene(7);
+
                 }                
                 /*if(miniBoss)
                 {
