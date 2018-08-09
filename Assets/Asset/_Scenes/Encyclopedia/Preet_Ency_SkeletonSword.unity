@@ -539,7 +539,7 @@ SpriteRenderer:
   m_Size: {x: 2.9701493, y: 8.880597}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!4 &483625103
 Transform:
@@ -803,7 +803,7 @@ MonoBehaviour:
 
     Skeleton (Sword)
 
-    HP : 400'
+    HP : 900'
 --- !u!222 &578356555
 CanvasRenderer:
   m_ObjectHideFlags: 0

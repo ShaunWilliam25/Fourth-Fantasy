@@ -114,6 +114,7 @@ public class EnemyChooseSkill : EnemyVariableManager {
         skillList = GetComponent<EnemyVariableManager>().skillList;
         if (GetComponent<EnemyStats>().silence || GetComponent<EnemyStats>().berserk)
         {
+            RunAnimation(skillList[0].GetComponent<SkillEffect>());
             skillList[0].GetComponent<SkillEffect>().Execute(this.GetComponent<EnemyVariableManager>().Target);
             return;
         }

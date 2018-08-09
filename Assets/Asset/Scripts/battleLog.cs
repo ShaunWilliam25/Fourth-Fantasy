@@ -19,10 +19,12 @@ public class battleLog : MonoBehaviour
 
     void OnGUI()
     {
-        if(tutorialAppear.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_01 && tutorialAppear.tutorialStage 
-            != TutorialAppear.TUTORIAL_STAGE.STAGE_02 && tutorialAppear.tutorialStage 
-            != TutorialAppear.TUTORIAL_STAGE.STAGE_04 && tutorialAppear.tutorialStage 
-            != TutorialAppear.TUTORIAL_STAGE.THE_END)
+        if (tutorialAppear.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_01 &&
+            tutorialAppear.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_02 &&
+            tutorialAppear.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_04 &&
+            tutorialAppear.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_07 &&
+            tutorialAppear.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_08 &&
+            tutorialAppear.tutorialStage != TutorialAppear.TUTORIAL_STAGE.THE_END)
         {
             if(ShowGui)
             {

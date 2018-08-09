@@ -14,6 +14,9 @@ public class AudioManager : MonoBehaviour {
     public int player1CharacterIndex;
     public int player2CharacterIndex;
     public bool isResetSkill = true;
+    public bool isTutorial = true;
+    public bool isNewGameBrightness;
+    public bool isNewGameVolume;
 
     public static AudioManager Instance
     {
@@ -33,6 +36,8 @@ public class AudioManager : MonoBehaviour {
         else
         {
             instance = this;
+            isNewGameBrightness = true;
+            isNewGameVolume = true;
             DontDestroyOnLoad(this.gameObject);
         }
 

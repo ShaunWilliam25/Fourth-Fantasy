@@ -68,7 +68,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: b795cead1c5dd1142be60a4a3d148457, type: 3}
   name: Magical Pendant
-  effect: Heals 2% of MAX HP every time character uses an action
+  effect: (For Old Guard Only)    Heals 2% of MAX HP every time character uses an
+    action
 --- !u!212 &212402077942169916
 SpriteRenderer:
   m_ObjectHideFlags: 1

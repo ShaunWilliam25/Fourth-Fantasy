@@ -55,8 +55,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: 7e56a93dccf65f149ad0e34c4b71bf4d, type: 3}
   name: Heart of The Demon Lord
-  effect: Increases Exiled Demon MAX HP by 250 /n Automatically revives when getting
-    killed
+  effect: (For Exiled Demon Only)     Increases Exiled Demon MAX HP by 250 /n Automatically
+    revives when getting killed
 --- !u!114 &114241228405789950
 MonoBehaviour:
   m_ObjectHideFlags: 1

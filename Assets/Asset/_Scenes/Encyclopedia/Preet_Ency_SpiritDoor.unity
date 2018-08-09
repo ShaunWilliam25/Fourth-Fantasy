@@ -291,7 +291,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "\tThe Spirit Door \n\tHP : 1000\n\n\tThe Spirit Door was simply an implement
+  m_Text: "\tThe Spirit Door \n\tHP : 2500\n\n\tThe Spirit Door was simply an implement
     the Knight used to slowly leech away the souls of everyone else in the palace.
     As it wrested more and more humanity and power from unknowing people, it grew
     into its own sentient mass of souls, a chaotic mess united only in their hunger
@@ -691,7 +691,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Devour \n(Deals 80 damage to single player and causes confuse & slow)"
+  m_Text: "Devour \n (Deals 200 damage to single player and causes confuse & slow)"
 --- !u!222 &438584449
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -998,8 +998,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Door To Hell \n(Heals self 200 HP, deals 40 damage to all enemies and causes
-    poison, burn, confuse to all enemies)"
+  m_Text: "Door To Hell \n(Heals self 200 HP, deals 100 damage to all enemies and
+    causes poison, burn, confuse to all enemies) "
 --- !u!222 &628996857
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1803,7 +1803,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Sweep \n(Deals 60 damage to all enemies and causes poison)"
+  m_Text: "Sweep \n(Deals 120 damage to all enemies and causes poison)"
 --- !u!222 &1145335493
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2173,7 +2173,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Normal Attack \n(Single target) (Deals 120 damage to a single enemy) \n"
+  m_Text: "Normal Attack \n(Single target) (Deals 150 damage to a single enemy)"
 --- !u!222 &1442475193
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2315,7 +2315,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Spirits of The Forgotten \n(Deals 80 damage to all enemies and causes curse)"
+  m_Text: "Spirits of The Forgotten \n(Deals 130 damage to all enemies and causes
+    curse)"
 --- !u!222 &1733923886
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -96,7 +96,10 @@ public class SceneManager : MonoBehaviour {
 
                 enemyList.Remove(enemyList[i]);
 
-                if (tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_06 && tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.THE_END && tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_07 && tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_08)
+                /*if (tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_06 && tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.THE_END && tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_07 && tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_08)
+                {
+                    ArtifactSpawner.GetComponent<ArtifactScript>().calArtifact();
+                }*/
                     ArtifactSpawner.GetComponent<ArtifactScript>().calArtifact();
 
             }
@@ -107,7 +110,7 @@ public class SceneManager : MonoBehaviour {
         //! When all enemy is dead,check for win
         if(enemyList.Count <=0)
         {
-            if (tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_06 && tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.THE_END && tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_07 && tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_08)
+            /*if (tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_06 && tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.THE_END && tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_07 && tutorial.tutorialStage != TutorialAppear.TUTORIAL_STAGE.STAGE_08)
             {
                 if (!isWin)
                 {
@@ -131,29 +134,41 @@ public class SceneManager : MonoBehaviour {
                     VictoryGO = Instantiate(victory);
                     isWin = true;
                 }
+            }*/
+            if (!isWin)
+            {
+                Debug.Log("Win");
+                for (int i = 0; i < playerList.Count; i++)
+                {
+                    playerList[i].GetComponent<actionTimeBar>().enabled = false;
+                    for (int j = 1; j < playerList[i].transform.childCount; j++)
+                    {
+                        playerList[i].transform.GetChild(j).gameObject.SetActive(false);
+                    }
+                }
+
+                //!Check if its the knight battle,to move to the win game scene
+                if (AudioManager.instance.waveIndex == 4)
+                {
+                    UnityEngine.SceneManagement.SceneManager.LoadScene(3);
+                }
+
+                GameObject.FindGameObjectWithTag("MainCamera").GetComponent<battleLog>().ShowGui = false;
+                VictoryGO = Instantiate(victory);
+                isWin = true;
             }
-            
+
         }
 
         if (isWin)
         {
             if (Input.anyKeyDown)
             {
-                //UnityEngine.SceneManagement.SceneManager.LoadScene(nextScene);
                 needGreedManager.GetComponent<NeedGreedRandomizer>().addArtifactToPlayer();
             }
         }
 
-        //! Test control to check the lose scene
-        
-        if (Input.GetKeyDown("b"))
-        {
-            //for (int k = 0; k < playerList.Count; k++)
-            //{
-                playerList[0].GetComponent<PlayerStats>().health = 0;
-
-            //}
-        }
+       
 
         if (playerList[0].GetComponent<PlayerVariableManager>().playerStats.knockedOut && playerList[1].GetComponent<PlayerVariableManager>().playerStats.knockedOut)
         {

@@ -31,7 +31,6 @@ public class BrightnessSetting : MonoBehaviour
 
         slider.onValueChanged.AddListener(delegate { sliderChanged(); });
         slider.value = PlayerPrefs.GetFloat("BrightnessCorrection");
-
     }
 
     void Update()

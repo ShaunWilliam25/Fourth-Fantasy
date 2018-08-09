@@ -17,6 +17,7 @@ public class ShieldOfTheFallenKing : ArtifactEffect {
         {
             carrier.GetComponent<PlayerStats>().baseHealth += 500;
             carrier.GetComponent<PlayerStats>().health = carrier.GetComponent<PlayerStats>().baseHealth;
+            damageCount = 0;
             isEffect = true;
         }
     }

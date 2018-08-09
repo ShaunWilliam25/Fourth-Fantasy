@@ -103,6 +103,15 @@ public class Player_Spawn : MonoBehaviour {
                 //! For each player
                 for (int i = 0; i < sceneManager.playerList.Count; i++)
                 {
+                    for(int x = 0;x<sceneManager.playerList[i].GetComponent<PlayerVariableManager>().artifactsList.Count;x++)
+                    {
+                        Destroy(sceneManager.playerList[i].GetComponent<PlayerVariableManager>().artifactsList[x]);
+                    }
+                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().artifactsList.Clear();
+                    for (int k = 0; k<sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillHolder.Count;k++)
+                    {
+                        Destroy(sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillHolder[k]);
+                    }
                     sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillHolder.Clear();
                     if (sceneManager.playerList[i].GetComponent<PlayerVariableManager>().skillHolder.Count < 5)
                     {
@@ -140,7 +149,8 @@ public class Player_Spawn : MonoBehaviour {
 
                     for (int k = 0; k < sceneManager.playerList[i].GetComponent<PlayerVariableManager>().artifactsList.Count; k++)
                     {
-                        if (sceneManager.playerList[i].GetComponent<PlayerVariableManager>().artifactsList[k].GetComponent<ArtifactEffect>() is SprintShoes || sceneManager.playerList[i].GetComponent<PlayerVariableManager>().artifactsList[k].GetComponent<ArtifactEffect>() is AlchemistSecretElixir)
+                        if (sceneManager.playerList[i].GetComponent<PlayerVariableManager>().artifactsList[k].GetComponent<ArtifactEffect>() is SprintShoes || sceneManager.playerList[i].GetComponent<PlayerVariableManager>().artifactsList[k].GetComponent<ArtifactEffect>() is AlchemistSecretElixir || sceneManager.playerList[i].GetComponent<PlayerVariableManager>().artifactsList[k].GetComponent<ArtifactEffect>() is AncientBookOfIntelligence
+                                || sceneManager.playerList[i].GetComponent<PlayerVariableManager>().artifactsList[k].GetComponent<ArtifactEffect>() is HeartOfTheDemonLord || sceneManager.playerList[i].GetComponent<PlayerVariableManager>().artifactsList[k].GetComponent<ArtifactEffect>() is ChronosLostMemento || sceneManager.playerList[i].GetComponent<PlayerVariableManager>().artifactsList[k].GetComponent<ArtifactEffect>() is ShieldOfTheFallenKing)
                         {
                             sceneManager.playerList[i].GetComponent<PlayerVariableManager>().artifactsList[k].GetComponent<ArtifactEffect>().isEffect = false;
                         }

@@ -454,7 +454,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Lance Throw \n(Deals 120 damage to a single enemy)"
+  m_Text: "Flame Shower \n(Deals 50 damage to all enemies, causes burn)"
 --- !u!222 &438584449
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -532,7 +532,7 @@ MonoBehaviour:
 
     Skeleton (Archer)
 
-    HP : 300'
+    HP : 800'
 --- !u!222 &440340185
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1442,7 +1442,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Charge attack \n(Deals 150 damage to a single enemy, causes slow)\n"
+  m_Text: "Take Aim \n(Cast bless on self)"
 --- !u!222 &1145335493
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1880,7 +1880,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Normal attack \n(Deals 80 damage to a single enemy)"
+  m_Text: "Normal attack \n (Deals 60 damage to a single enemy) "
 --- !u!222 &1442475193
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -1,30 +1,47 @@
 fileFormatVersion: 2
-guid: fdef86ca4c7815f49b742baeedc12941
+guid: 6450bbb984943bc409a3e57e8a88faed
 TextureImporter:
   fileIDToRecycleName:
-    21300000: attack_0
-    21300002: attack_1
-    21300004: attack_2
-    21300006: attack_3
-    21300008: attack_4
-    21300010: attack_5
-    21300012: attack_6
-    21300014: attack_7
-    21300016: attack_8
-    21300018: attack_9
-    21300020: attack_10
-    21300022: attack_11
-    21300024: attack_12
-    21300026: attack_13
-    21300028: attack_14
-    21300030: attack_15
-    21300032: attack_16
-    21300034: attack_17
-    21300036: attack_18
-    21300038: attack_19
-    21300040: attack_20
-    21300042: attack_21
-    21300044: attack_22
+    21300000: greed boss idle_0
+    21300002: greed boss idle_1
+    21300004: greed boss idle_2
+    21300006: greed boss idle_3
+    21300008: greed boss idle_4
+    21300010: greed boss idle_5
+    21300012: greed boss idle_6
+    21300014: greed boss idle_7
+    21300016: greed boss idle_8
+    21300018: greed boss idle_9
+    21300020: greed boss idle_10
+    21300022: greed boss idle_11
+    21300024: greed boss idle_12
+    21300026: greed boss idle_13
+    21300028: greed boss idle_14
+    21300030: greed boss idle_15
+    21300032: greed boss idle_16
+    21300034: greed boss idle_17
+    21300036: greed boss idle_18
+    21300038: greed boss idle_19
+    21300040: greed_death_0
+    21300042: greed_death_1
+    21300044: greed_death_2
+    21300046: greed_death_3
+    21300048: greed_death_4
+    21300050: greed_death_5
+    21300052: greed_death_6
+    21300054: greed_death_7
+    21300056: greed_death_8
+    21300058: greed_death_9
+    21300060: greed_death_10
+    21300062: greed_death_11
+    21300064: greed_death_12
+    21300066: greed_death_13
+    21300068: greed_death_14
+    21300070: greed_death_15
+    21300072: greed_death_16
+    21300074: greed_death_17
+    21300076: greed_death_18
+    21300078: greed_death_19
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -66,7 +83,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 105
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -105,461 +122,401 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: attack_0
+      name: greed_death_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 612
-        height: 586
+        width: 383
+        height: 671
       alignment: 9
-      pivot: {x: 0.6005901, y: 0.02380113}
+      pivot: {x: 0.7925041, y: 0.09655432}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 28f37c246c7cb5e419122d8f2cf1a37b
+      spriteID: 61ede9529c1f59e47812f56feaeb2275
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack_1
+      name: greed_death_1
       rect:
         serializedVersion: 2
-        x: 612
+        x: 383
         y: 0
-        width: 612
-        height: 586
+        width: 383
+        height: 671
       alignment: 9
-      pivot: {x: 0.6002372, y: 0.02380113}
+      pivot: {x: 0.7925041, y: 0.09655432}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e2ce1da1cc4ffcb42a9a9f449db3786e
+      spriteID: 6ec27c264fac7c844b32f47024896433
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack_2
+      name: greed_death_2
       rect:
         serializedVersion: 2
-        x: 1224
+        x: 766
         y: 0
-        width: 612
-        height: 586
+        width: 383
+        height: 671
       alignment: 9
-      pivot: {x: 0.6004136, y: 0.02380113}
+      pivot: {x: 0.7925041, y: 0.09655432}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dbe0b7db69825744b890756100340e7b
+      spriteID: 118aa60e948280e4bb000222e414aa25
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack_3
+      name: greed_death_3
       rect:
         serializedVersion: 2
-        x: 1836
+        x: 1149
         y: 0
-        width: 612
-        height: 586
+        width: 383
+        height: 671
       alignment: 9
-      pivot: {x: 0.6005476, y: 0.02406985}
+      pivot: {x: 0.7925041, y: 0.09655432}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 16e277ede841bdd49b1f526066925be5
+      spriteID: 4fe8f61916f7c1946b1df5d80cedaa31
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack_4
+      name: greed_death_4
       rect:
         serializedVersion: 2
-        x: 2448
+        x: 1532
         y: 0
-        width: 612
-        height: 586
+        width: 383
+        height: 671
       alignment: 9
-      pivot: {x: 0.6002381, y: 0.0236614}
+      pivot: {x: 0.7925041, y: 0.09655432}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 858ef4adf845a574a8ddf487be7d729e
+      spriteID: 6d9479751a6554c439076eb3e83c0661
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack_5
+      name: greed_death_5
       rect:
         serializedVersion: 2
-        x: 3060
+        x: 1915
         y: 0
-        width: 612
-        height: 586
+        width: 383
+        height: 671
       alignment: 9
-      pivot: {x: 0.59992814, y: 0.01773192}
+      pivot: {x: 0.7925041, y: 0.09655432}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96356eda3c004b64090f8c4f215ec21e
+      spriteID: 5d825c334bdcd1e47b11cd7f5a5bac94
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack_6
+      name: greed_death_6
       rect:
         serializedVersion: 2
-        x: 3672
+        x: 2298
         y: 0
-        width: 612
-        height: 586
+        width: 383
+        height: 671
       alignment: 9
-      pivot: {x: 0.6002378, y: 0.014989781}
+      pivot: {x: 0.7925041, y: 0.09655432}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 802e12e21a2deb4438eb40bc5a397b41
+      spriteID: ca1b3fc272a7cc24bba2103f6efc8b24
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack_7
+      name: greed_death_7
       rect:
         serializedVersion: 2
-        x: 4284
+        x: 2681
         y: 0
-        width: 612
-        height: 586
+        width: 383
+        height: 671
       alignment: 9
-      pivot: {x: 0.6002381, y: 0.01441401}
+      pivot: {x: 0.7925041, y: 0.09655432}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a770d8dd25335804fb291f0254c20bab
+      spriteID: 1d6c81b639ece1f418a35bbadc40789f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack_8
+      name: greed_death_8
       rect:
         serializedVersion: 2
-        x: 4896
+        x: 3064
         y: 0
-        width: 612
-        height: 586
+        width: 383
+        height: 671
       alignment: 9
-      pivot: {x: 0.60142446, y: 0.01089381}
+      pivot: {x: 0.7925041, y: 0.09655432}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5530c85ba85e837439562a28643ed3a8
+      spriteID: 81fcda25848796e498ac8bb9ba8671c4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack_9
+      name: greed_death_9
       rect:
         serializedVersion: 2
-        x: 5508
+        x: 3447
         y: 0
-        width: 612
-        height: 586
+        width: 383
+        height: 671
       alignment: 9
-      pivot: {x: 0.5978645, y: 0.009329215}
+      pivot: {x: 0.7925041, y: 0.09655432}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8e10a9983c8ea9a4880948d250c34148
+      spriteID: c6d0a979c01fd2f41b837cf0089b93c2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack_10
+      name: greed_death_10
       rect:
         serializedVersion: 2
-        x: 6120
+        x: 3830
         y: 0
-        width: 612
-        height: 586
+        width: 383
+        height: 671
       alignment: 9
-      pivot: {x: 0.60290766, y: 0.005939396}
+      pivot: {x: 0.7925041, y: 0.09655432}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 24f232879e2e0bd42aa0182f21605625
+      spriteID: 26489d27e1256e04fbb38e3ade2ebed2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack_11
+      name: greed_death_11
       rect:
         serializedVersion: 2
-        x: 6732
+        x: 4213
         y: 0
-        width: 612
-        height: 586
+        width: 383
+        height: 671
       alignment: 9
-      pivot: {x: 0.5857021, y: 0.005809018}
+      pivot: {x: 0.7925041, y: 0.09655432}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6738ed9ef8ceea849a23728d55c860f9
+      spriteID: 84a6ba3c06bb2fa44a07d6a7f436fb51
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack_12
+      name: greed_death_12
       rect:
         serializedVersion: 2
-        x: 7344
+        x: 4596
         y: 0
-        width: 612
-        height: 586
+        width: 383
+        height: 671
       alignment: 9
-      pivot: {x: 0.5993477, y: 0.002452621}
+      pivot: {x: 0.7925041, y: 0.09655432}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 531d9fb3f209e1f4a9aac91f7402e8fe
+      spriteID: 0354dc4f62b1970418f72982bbbbcc27
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack_13
+      name: greed_death_13
       rect:
         serializedVersion: 2
-        x: 7956
+        x: 4979
         y: 0
-        width: 612
-        height: 586
+        width: 383
+        height: 671
       alignment: 9
-      pivot: {x: 0.60424167, y: 0.002424705}
+      pivot: {x: 0.7925041, y: 0.09655432}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a482ee297dfd7dc40938879c631fd6a7
+      spriteID: 5cc1f1eb14be7b741849b664dec95536
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack_14
+      name: greed_death_14
       rect:
         serializedVersion: 2
-        x: 8568
+        x: 5362
         y: 0
-        width: 612
-        height: 586
+        width: 383
+        height: 671
       alignment: 9
-      pivot: {x: 0.60532194, y: 0.003044311}
+      pivot: {x: 0.7925041, y: 0.09655432}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: cad27768290ee3d4596e18b90fb18e05
+      spriteID: 1d789662c2578fa4597773ec67d56e82
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack_15
+      name: greed_death_15
       rect:
         serializedVersion: 2
-        x: 9180
+        x: 5745
         y: 0
-        width: 612
-        height: 586
+        width: 383
+        height: 671
       alignment: 9
-      pivot: {x: 0.6059203, y: 0.002734508}
+      pivot: {x: 0.7925041, y: 0.09655432}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d8fd114f4029d14db6d38be6a56338c
+      spriteID: a73dad7112f798844874f7fd37884248
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack_16
+      name: greed_death_16
       rect:
         serializedVersion: 2
-        x: 9792
+        x: 6128
         y: 0
-        width: 612
-        height: 586
+        width: 383
+        height: 671
       alignment: 9
-      pivot: {x: 0.6084623, y: 0.003199213}
+      pivot: {x: 0.7925041, y: 0.09655432}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8afa05c68f6fc524a9d3478b3b2bf949
+      spriteID: 1e24039fff6098f439007d69fc3de136
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack_17
+      name: greed_death_17
       rect:
         serializedVersion: 2
-        x: 10404
+        x: 6511
         y: 0
-        width: 612
-        height: 586
+        width: 383
+        height: 671
       alignment: 9
-      pivot: {x: 0.6081703, y: 0.01775997}
+      pivot: {x: 0.7925041, y: 0.09655432}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2b6b0ec1fcab75441ae176364f0bc544
+      spriteID: cbbf9d245292fb74993ba794c7d429c3
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack_18
+      name: greed_death_18
       rect:
         serializedVersion: 2
-        x: 11016
+        x: 6894
         y: 0
-        width: 612
-        height: 586
+        width: 383
+        height: 671
       alignment: 9
-      pivot: {x: 0.6087814, y: 0.02364624}
+      pivot: {x: 0.7925041, y: 0.09655432}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d47953483082cbe498cf60c77244d5f8
+      spriteID: 1aa4dc9be4238da48afbbcd82c37e1fc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: attack_19
+      name: greed_death_19
       rect:
         serializedVersion: 2
-        x: 11628
+        x: 7277
         y: 0
-        width: 612
-        height: 586
+        width: 383
+        height: 671
       alignment: 9
-      pivot: {x: 0.6070724, y: 0.02349134}
+      pivot: {x: 0.7925041, y: 0.09655432}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7927b5a3bea1f3b49b2d87cd5769a028
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack_20
-      rect:
-        serializedVersion: 2
-        x: 12240
-        y: 0
-        width: 612
-        height: 586
-      alignment: 9
-      pivot: {x: 0.57570434, y: 0.02349134}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 20aee97da4df832439795795942bb2a4
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack_21
-      rect:
-        serializedVersion: 2
-        x: 12852
-        y: 0
-        width: 612
-        height: 586
-      alignment: 9
-      pivot: {x: 0.6061948, y: 0.02364624}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 71c796cdd614a174f8c608f630fd71be
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: attack_22
-      rect:
-        serializedVersion: 2
-        x: 13464
-        y: 0
-        width: 612
-        height: 586
-      alignment: 9
-      pivot: {x: 0.59984076, y: 0.02380114}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1d5ded3593d45124784f83bd78a8259e
+      spriteID: 42e923c16df071445812341c31003da0
       vertices: []
       indices: 
       edges: []
@@ -567,7 +524,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 87f2ecb4e4b75cf47b0b14ee30654cde
+    spriteID: a932fa934078d9e419dbf85601e6bd49
     vertices: []
     indices: 
     edges: []

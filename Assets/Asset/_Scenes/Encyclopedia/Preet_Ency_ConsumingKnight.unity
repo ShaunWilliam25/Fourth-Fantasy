@@ -581,7 +581,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Cursed Slash \n(Single Target) (Deals 300 Damage)"
+  m_Text: "Cursed Slash \n(Single Target) (Deals 250 damage to single enemy)"
 --- !u!222 &438584449
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1064,9 +1064,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Last Stand (Self)
-
-    Clears all bad status, Status Resistance all, Negates ALL damage'
+  m_Text: Revenge Of The Fallen Knight (Heals 40% of total MAY HP, Casts Haste, Regen
+    & Immunity on self, then applies berserk.)
 --- !u!222 &628996857
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1754,7 +1753,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Whirlwind Slash (all enemies) (Deals 100 Damage)
+  m_Text: Whirlwind Slash (Deals 150 damage to all enemies)
 --- !u!222 &1145335493
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2240,7 +2239,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Normal Attack\n(Deals 150 damage to single enemy)\r\n"
+  m_Text: "Normal Attack\n(Deals 200 damage to single enemy)\r\n"
 --- !u!222 &1442475193
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2489,8 +2488,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Revenge Of The Fallen Knight (All enemies) reduces all enemies HP to 1,
-    Heals Self
+  m_Text: Revenge Of The Fallen Knight Last Stand (Self) (Heals 2500 damage to self)
 --- !u!222 &1733923886
 CanvasRenderer:
   m_ObjectHideFlags: 0

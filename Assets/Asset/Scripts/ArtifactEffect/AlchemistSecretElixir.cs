@@ -14,7 +14,7 @@ public class AlchemistSecretElixir : ArtifactEffect {
     {
         if (!isEffect)
         {
-            int rand = Random.Range(0, goodStatuses.Count + 1);
+            int rand = Random.Range(0, goodStatuses.Count);
             carrier.GetComponent<PlayerVariableManager>().statusList.Add(Instantiate(goodStatuses[rand]));
             isEffect = true;
         }
