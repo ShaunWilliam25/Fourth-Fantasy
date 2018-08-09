@@ -34,6 +34,7 @@ public class PlayerDeadAndRevive : MonoBehaviour {
             playerVariable.GetComponent<PlayerStatusUpdate>().enabled = false;
             GetComponent<PlayerSkillExecution>().CancelInvoke();
             GetComponent<PlayerTakeDamage>().CancelInvoke();
+            GetComponent<PlayerVariableManager>().anim.GetComponent<Animator>().Play(GetComponent<PlayerVariableManager>().deathAnimation);
         }
         if(playerStats.knockedOut == true && (playerStats.reviveAction <=0 || playerStats.autoRevive))
         {
@@ -50,10 +51,6 @@ public class PlayerDeadAndRevive : MonoBehaviour {
             GetComponent<PlayerVariableManager>().anim.GetComponent<Animator>().Play(GetComponent<PlayerVariableManager>().reviveAnimation);
             playerVariable.GetComponent<PlayerStatusUpdate>().enabled = false;
             Invoke("ResetAnimation", reviveAnimationTimer);
-        }
-        if(playerStats.knockedOut)
-        {
-            GetComponent<PlayerVariableManager>().anim.GetComponent<Animator>().Play(GetComponent<PlayerVariableManager>().deathAnimation);
         }
 	}
 
