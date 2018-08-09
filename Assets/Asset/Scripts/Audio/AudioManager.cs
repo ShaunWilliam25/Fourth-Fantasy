@@ -15,6 +15,8 @@ public class AudioManager : MonoBehaviour {
     public int player2CharacterIndex;
     public bool isResetSkill = true;
     public bool isTutorial = true;
+    public bool isNeedGreedTutorialShown = false;
+    public bool isCampsiteTutorialShown = false;
     public bool isNewGameBrightness;
     public bool isNewGameVolume;
     public float brightness;
@@ -98,14 +100,7 @@ public class AudioManager : MonoBehaviour {
         volume = Mathf.Pow(10.0f, dB / 20.0f);
 
         return volume;
-    }
-    
-    /*private float DecibelToLinear(float dB)
-    {
-        float linear = Mathf.Pow(10.0f, dB / 20.0f);
-
-        return linear;
-    }*/
+    }   
 
     //! Play sound from other script by using-> FindObjectofType("AudioManager").Play(soundName);
 }

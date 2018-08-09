@@ -23,7 +23,13 @@ public class NeedGreedRandomizer : MonoBehaviour
     public GameObject ArtifactSpawner;
     public NeedGreedSelection needGreedSelection;
 
-    [SerializeField] TutorialAppear tutorial;
+
+    [SerializeField] Image needGreedTutorial;
+    [SerializeField] float cannotPressTimer = 0f;
+    [SerializeField] float cannotPressDuration;
+    [SerializeField] bool isCanPress = false;
+    [SerializeField] bool isShowingTutorial = false;
+
 
     public void returnBoolFalse()
     {
@@ -155,6 +161,21 @@ public class NeedGreedRandomizer : MonoBehaviour
             nameText.text = ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList[0].GetComponent<ArtifactInformation>().name;
             descText.text = ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList[0].GetComponent<ArtifactInformation>().effect;
         }
+
+        if(isShowingTutorial)
+        {
+            //! Cannot press timer controller
+            if (!AudioManager.instance.isNeedGreedTutorialShown)
+            {
+                //! Cannot press timer
+                cannotPressTimer += Time.deltaTime;
+
+                if (cannotPressTimer >= cannotPressDuration)
+                {
+                    isCanPress = true;
+                }
+            }
+        }
     }
 
     public void addArtifactToPlayer()
@@ -162,6 +183,24 @@ public class NeedGreedRandomizer : MonoBehaviour
         Debug.Log("addtoarti");
         if (ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList.Count > 0)
         {
+            //! Showing the need greed tutorial
+            if (!AudioManager.instance.isNeedGreedTutorialShown)
+            {
+                needGreedTutorial.gameObject.SetActive(true);
+                isShowingTutorial = true;
+                if(isCanPress)
+                {
+                    if (Input.anyKeyDown)
+                    {
+                        Debug.Log("BYE");
+                        AudioManager.instance.isNeedGreedTutorialShown = true;
+                        needGreedTutorial.gameObject.SetActive(false);
+                        isShowingTutorial = false;
+                        isCanPress = false;
+                    }
+                }                
+            }
+
             canvas.SetActive(true);
             needGreedSelection.enabled = true;
             playerList[0].SetActive(false);
@@ -172,12 +211,6 @@ public class NeedGreedRandomizer : MonoBehaviour
             ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList[0].SetActive(true);
 
             descriptionGO.SetActive(true);
-
-            /*for(int i = 0; i < scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Count; i++)
-            {
-                scenemanager.GetComponent<ArtifactScript>().ownedArtifactList[i].SetActive(true);
-                Debug.Log("seting is true and i = " + i);
-            }*/
 
             if (artifactAdded)
             {
@@ -198,11 +231,6 @@ public class NeedGreedRandomizer : MonoBehaviour
 
                     descriptionGO.SetActive(true);
 
-                    //if (scenemanager.GetComponent<ArtifactScript>().ownedArtifactList.Count > 0)
-                    //{
-
-                    //}
-
                 }
             }
         }
@@ -219,28 +247,9 @@ public class NeedGreedRandomizer : MonoBehaviour
                     {
                         scenemanager.GetComponent<SceneManager>().playerList[i].gameObject.SetActive(true);
                     }
-                    
-                    //! Changing the tutorial
-                    if(AudioManager.instance.isTutorial)
-                    {
-                        tutorial.tutorialStage = TutorialAppear.TUTORIAL_STAGE.STAGE_08;
-                        tutorial.isLectureDone = false;
-                    }
-                    else
-                    {
-                        UnityEngine.SceneManagement.SceneManager.LoadScene(7);
-                    }
-                    
+
+                    UnityEngine.SceneManagement.SceneManager.LoadScene(7);
                 }                
-                /*if(miniBoss)
-                {
-                    UnityEngine.SceneManagement.SceneManager.LoadScene(campsiteInt);
-                    miniBoss = false;
-                }
-                else
-                {
-                    UnityEngine.SceneManagement.SceneManager.LoadScene(nextSceneInt);
-                }*/
             }
         }
         /*/

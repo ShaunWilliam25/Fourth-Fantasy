@@ -17,7 +17,7 @@ public class Credits : MonoBehaviour {
 	void Update ()
     {
         if(Input.anyKeyDown)
-        {
+        {            
             UnityEngine.SceneManagement.SceneManager.LoadScene(0);
         }
 
