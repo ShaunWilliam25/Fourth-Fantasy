@@ -20,23 +20,17 @@ public class BrightnessSetting : MonoBehaviour
 
     void Start()
     {
-        if(AudioManager.instance.isNewGameBrightness)
-        {
-            tempmodel = myProfile.colorGrading.settings;
-            gamemodel = otherProfile.colorGrading.settings;
+        tempmodel = myProfile.colorGrading.settings;
+        gamemodel = otherProfile.colorGrading.settings;
 
-            tempmodel.basic.contrast = 1;
-            gamemodel.basic.contrast = 1;
+        tempmodel.basic.contrast = 1;
+        gamemodel.basic.contrast = 1;
 
-            myProfile.colorGrading.settings = tempmodel;
-            otherProfile.colorGrading.settings = gamemodel;
+        myProfile.colorGrading.settings = tempmodel;
+        otherProfile.colorGrading.settings = gamemodel;
 
-            slider.onValueChanged.AddListener(delegate { sliderChanged(); });
-            slider.value = PlayerPrefs.GetFloat("BrightnessCorrection");
-
-            //! Set the isNewGame bool to prevent reset when return to main menu
-            AudioManager.instance.isNewGameBrightness = false;
-        }
+        slider.onValueChanged.AddListener(delegate { sliderChanged(); });
+        slider.value = PlayerPrefs.GetFloat("BrightnessCorrection");
     }
 
     void Update()
