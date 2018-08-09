@@ -44,8 +44,6 @@ public class PlayerVariableManager : MonoBehaviour {
     //! Player Skill Execution
     [Header("Player Skill Execution")]
     public actionTimeBar actionTimerBarScript;
-    public GameObject testSkill;
-    public GameObject testEnemy;
     public Color oriColor;
     public Animator anim;
     public battleLog battleLogScript;
@@ -53,21 +51,10 @@ public class PlayerVariableManager : MonoBehaviour {
 
     //! Player Skill Choose Target
     [Header("Player Skill Choose Target")]
-    public List<Transform> playerTargetCursorPoints;
-    public List<Transform> enemyTargetCursorPoints;
     public Enemy_Spawn enemySpawnScript;
-    public Player_Spawn playerSpawnScript;
-    public SceneManager sceneManagerScript;
     public BattleStateManager battleStateManagerScript;
-    public GameObject targetCursor;
-    public int cursorIndex;
-    public float chooseTargetHoldTimer;
-    public float chooseTargetTimeNeeded;
     public GameObject targetedEnemy;
-    public GameObject targetCursorBar;
-    public float chooseTargetHoldTimerInPercentage;
     public bool isTargetLockedIn;
-    public bool isEffectTargetLockedIn = false;
 
     //!Player Animation Controller
     [Header("Player Animation Controller")]
@@ -125,9 +112,7 @@ private void Awake()
             allySpawnPoint = GameObject.FindGameObjectWithTag("Player1").transform;
         }               
     }
-    private void Start()
-    {
-    }
+
     private void Update()
     {
         for (int i = 0; i < artifactsList.Count; i++)

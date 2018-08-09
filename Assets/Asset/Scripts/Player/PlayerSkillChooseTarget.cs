@@ -4,18 +4,6 @@ using UnityEngine;
 
 public class PlayerSkillChooseTarget : PlayerVariableManager
 {
-    private void Awake()
-    {
-
-    }
-
-    // Use this for initialization
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
     void Update()
     {
         /*SkillDetail sDetail = this.GetComponent<Character_Skill_List>().skillHolder[2].GetComponent<SkillDetail>();
