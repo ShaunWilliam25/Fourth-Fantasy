@@ -16,15 +16,6 @@ public class Player_Spawn : MonoBehaviour {
     private void Awake()
     {
         sceneManager = this.gameObject.GetComponent<SceneManager>();
-
-        
-
-
-
-    }
-
-    void Start()
-    {
     }
 
     private void Update()
