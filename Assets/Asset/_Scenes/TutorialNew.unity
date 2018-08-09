@@ -2002,7 +2002,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &527439447
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3842,7 +3842,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 302.88, y: 7.100006}
+  m_AnchoredPosition: {x: 226.88, y: 47.100006}
   m_SizeDelta: {x: 298.9, y: 64.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1167306806
@@ -6609,7 +6609,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 300, y: -59}
+  m_AnchoredPosition: {x: 224, y: -19}
   m_SizeDelta: {x: 63.7, y: 66.2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1538463877
@@ -7056,7 +7056,11 @@ MonoBehaviour:
   descText: {fileID: 1850735260}
   ArtifactSpawner: {fileID: 0}
   needGreedSelection: {fileID: 0}
-  tutorial: {fileID: 519420033}
+  needGreedTutorial: {fileID: 0}
+  cannotPressTimer: 0
+  cannotPressDuration: 0
+  isCanPress: 0
+  isShowingTutorial: 0
 --- !u!4 &1643960544
 Transform:
   m_ObjectHideFlags: 0
