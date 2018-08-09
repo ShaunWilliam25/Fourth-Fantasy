@@ -12,7 +12,11 @@ public class ShowUI : MonoBehaviour
     public CampsiteUIComponent player1;
     public CampsiteUIComponent player2;
 
-    [SerializeField] TutorialAppear tutorial;
+    [SerializeField] Image campsiteTutorial;
+    [SerializeField] float cannotPressTimer = 0f;
+    [SerializeField] float cannotPressDuration;
+    [SerializeField] bool isCanPress = false;
+    [SerializeField] bool isShowingTutorial = false;
 
     void Start()
     {
