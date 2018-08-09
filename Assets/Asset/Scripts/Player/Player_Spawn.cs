@@ -163,6 +163,10 @@ public class Player_Spawn : MonoBehaviour {
                         {
                             sceneManager.playerList[i].transform.GetChild(1).GetChild(2 + j).GetComponent<SkillDetail>().skillExecutionHolder[k].GetComponent<SkillEffect>().playerList = sceneManager.playerList;
                             sceneManager.playerList[i].transform.GetChild(1).GetChild(2 + j).GetComponent<SkillDetail>().skillExecutionHolder[k].GetComponent<SkillEffect>().enemyList = sceneManager.enemyList;
+                            if(sceneManager.playerList[i].transform.GetChild(1).GetChild(2 + j).GetComponent<SkillDetail>().skillExecutionHolder[k].GetComponent<SkillEffect>() is HealUpgrade4)
+                            {
+                                sceneManager.playerList[i].transform.GetChild(1).GetChild(2 + j).GetComponent<SkillDetail>().skillExecutionHolder[k].GetComponent<HealUpgrade4>().effect = false;
+                            }
                         }
                     }
                 }

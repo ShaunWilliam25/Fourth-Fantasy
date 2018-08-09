@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class HealUpgrade4 : SkillEffect
 {
-    bool effect;
+    public bool effect;
     private void Awake()
     {
         effectType = SKILL_EFFECT_TYPE.HEAL;
