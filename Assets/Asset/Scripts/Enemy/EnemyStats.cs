@@ -16,6 +16,8 @@ public class EnemyStats : GeneralStats {
         }
         if(health<=0)
         {
+            GetComponent<EnemyChooseSkill>().CancelInvoke();
+            GetComponent<EnemyTakeDamage>().CancelInvoke();
             this.GetComponent<EnemyVariableManager>().anim.Play(this.GetComponent<EnemyVariableManager>().deathAnimation);
         }
     }

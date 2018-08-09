@@ -31,6 +31,8 @@ public class PlayerDeadAndRevive : MonoBehaviour {
             playerVariable.GetComponent<PlayerSkillChooseTarget>().enabled = false;
             playerVariable.GetComponent<PlayerSkillExecution>().enabled = false;
             playerVariable.GetComponent<PlayerTakeDamage>().enabled = false;
+            GetComponent<PlayerSkillExecution>().CancelInvoke();
+            GetComponent<PlayerTakeDamage>().CancelInvoke();
         }
         if(playerStats.knockedOut == true && (playerStats.reviveAction <=0 || playerStats.autoRevive))
         {
