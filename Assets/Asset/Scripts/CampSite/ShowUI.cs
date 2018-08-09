@@ -28,8 +28,38 @@ public class ShowUI : MonoBehaviour
 
     void Update()
     {
-        //! Campsite Tutorial
+        if (isShowingTutorial)
+        {
+            //! Cannot press timer controller
+            if (!AudioManager.instance.isCampsiteTutorialShown)
+            {
+                //! Cannot press timer
+                cannotPressTimer += Time.deltaTime;
 
+                if (cannotPressTimer >= cannotPressDuration)
+                {
+                    isCanPress = true;
+                }
+            }
+        }
+
+        //! Campsite Tutorial
+        if (!AudioManager.instance.isCampsiteTutorialShown)
+        {
+            campsiteTutorial.gameObject.SetActive(true);
+            isShowingTutorial = true;
+
+            if(isCanPress)
+            {
+                if(Input.anyKeyDown)
+                {
+                    AudioManager.instance.isCampsiteTutorialShown = true;
+                    campsiteTutorial.gameObject.SetActive(false);
+                    isShowingTutorial = false;
+                    isCanPress = false;
+                }                
+            }
+        }
 
         if (css.player1.upgradeLeft <= 0)   player1.upgradeText.color = Color.grey;
         else player1.upgradeText.color = Color.white;
