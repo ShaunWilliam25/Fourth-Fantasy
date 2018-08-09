@@ -17,6 +17,7 @@ public class AudioManager : MonoBehaviour {
     public bool isTutorial = true;
     public bool isNewGameBrightness;
     public bool isNewGameVolume;
+    public float brightness;
 
     public static AudioManager Instance
     {

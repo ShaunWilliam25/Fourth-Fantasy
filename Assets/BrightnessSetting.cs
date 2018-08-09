@@ -23,20 +23,22 @@ public class BrightnessSetting : MonoBehaviour
         tempmodel = myProfile.colorGrading.settings;
         gamemodel = otherProfile.colorGrading.settings;
 
-        myProfile.colorGrading.settings = tempmodel;
-        otherProfile.colorGrading.settings = gamemodel;
-
         if (AudioManager.instance.isNewGameBrightness)
         {
-            BrightnessCorrection = 1.25f;
+            /*BrightnessCorrection = 1.25f;
             tempmodel.basic.contrast = BrightnessCorrection;
             gamemodel.basic.contrast = BrightnessCorrection;
+            */
+            AudioManager.instance.brightness = 1f;
+            tempmodel.basic.contrast = AudioManager.instance.brightness;
+            gamemodel.basic.contrast = AudioManager.instance.brightness;
 
             AudioManager.instance.isNewGameBrightness = false;
         }
 
         slider.onValueChanged.AddListener(delegate { sliderChanged(); });
-        slider.value = PlayerPrefs.GetFloat("BrightnessCorrection");
+        //slider.value = PlayerPrefs.GetFloat("BrightnessCorrection");
+        slider.value = AudioManager.instance.brightness;
 
 
     }
@@ -46,10 +48,15 @@ public class BrightnessSetting : MonoBehaviour
         Scene currentScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene();
         string SceneName = currentScene.name;
 
-        tempmodel.basic.contrast = BrightnessCorrection;
-        gamemodel.basic.contrast = BrightnessCorrection;
+        //tempmodel.basic.contrast = BrightnessCorrection;
+        //gamemodel.basic.contrast = BrightnessCorrection;
+        AudioManager.instance.brightness = slider.value;
 
-        PlayerPrefs.SetFloat("BrightnessCorrection", slider.value);
+        tempmodel.basic.contrast = AudioManager.instance.brightness;
+        gamemodel.basic.contrast = AudioManager.instance.brightness;
+
+
+        //PlayerPrefs.SetFloat("BrightnessCorrection", slider.value);
     }
 
     public void sliderChanged()
@@ -62,7 +69,6 @@ public class BrightnessSetting : MonoBehaviour
         myProfile.colorGrading.settings = tempmodel;
         otherProfile.colorGrading.settings = gamemodel;
     }
-
 }
 
 
