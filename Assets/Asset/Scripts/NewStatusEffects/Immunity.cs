@@ -49,7 +49,7 @@ public class Immunity : StatusDetail
                 {
                     if (user.GetComponent<EnemyVariableManager>().statusList[i].GetComponent<StatusDetail>().type == "Bad")
                     {
-                        user.GetComponent<PlayerVariableManager>().statusList[i].GetComponent<StatusDetail>().secondDuration = 0;
+                        user.GetComponent<EnemyVariableManager>().statusList[i].GetComponent<StatusDetail>().secondDuration = 0;
                     }
                 }
                 user.GetComponent<EnemyStats>().immune = true;
