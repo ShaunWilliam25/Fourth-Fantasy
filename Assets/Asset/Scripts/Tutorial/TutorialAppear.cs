@@ -335,69 +335,6 @@ public class TutorialAppear : MonoBehaviour {
             }
         }
 
-        if(tutorialStage == TUTORIAL_STAGE.STAGE_07)
-        {
-            //! Control for the isCanPress bool based on the cannotPressTimer
-            cannotPressTimer += Time.deltaTime;
-            if(cannotPressTimer >= cannotPressTime)
-            {
-                isCanPress = true;
-            }
-
-            if(!isLectureDone)
-            {
-                //! Activate the campsite picture
-                needGreedTutorial.gameObject.SetActive(true);
-            }
-
-
-
-            //! Cannot press while the isCanPress bool is false
-            if(isCanPress)
-            {
-                if (Input.anyKeyDown)
-                {
-                    needGreedTutorial.gameObject.SetActive(false);
-                    cannotPressTimer = 0f;
-                    isCanPress = false;
-                    isLectureDone = true;                    
-                    //tutorialStage = TUTORIAL_STAGE.STAGE_08;
-                }
-            }            
-        }
-        if (tutorialStage == TUTORIAL_STAGE.STAGE_08)
-        {
-            //! Control of the isCanPress bool based on cannotPressTimer
-            cannotPressTimer += Time.deltaTime;
-            if(cannotPressTimer >= cannotPressTime)
-            {
-                isCanPress = true;
-            }
-
-            //! If statement to prevent the canvas from keeping on appearing
-            if (!isLectureDone)
-            {
-                //! Activate the campsite picture
-                campsiteTutorial.gameObject.SetActive(true);
-            }
-
-
-            //! Cannot press while the isCanPress bool is false
-            if(isCanPress)
-            {
-                if (Input.anyKeyDown)
-                {
-                    campsiteTutorial.gameObject.SetActive(false);
-                    isCanPress = false;
-                    cannotPressTimer = 0f;
-                    isLectureDone = true;
-                    //UnityEngine.SceneManagement.SceneManager.LoadScene(7);
-                    //tutorialStage = TUTORIAL_STAGE.THE_END;
-                }
-            }
-            
-        }
-
         if (tutorialStage == TUTORIAL_STAGE.THE_END)
         {
             //! Control of the isCanPress bool based on cannotPressTimer;

@@ -28,24 +28,17 @@ public class ShowUI : MonoBehaviour
 
     void Update()
     {
-        if (isShowingTutorial)
-        {
-            //! Cannot press timer controller
-            if (!AudioManager.instance.isCampsiteTutorialShown)
-            {
-                //! Cannot press timer
-                cannotPressTimer += Time.deltaTime;
-
-                if (cannotPressTimer >= cannotPressDuration)
-                {
-                    isCanPress = true;
-                }
-            }
-        }
-
         //! Campsite Tutorial
         if (!AudioManager.instance.isCampsiteTutorialShown)
         {
+            //! Cannot press timer
+            cannotPressTimer += Time.deltaTime;
+
+            if (cannotPressTimer >= cannotPressDuration)
+            {
+                isCanPress = true;
+            }
+
             campsiteTutorial.gameObject.SetActive(true);
             isShowingTutorial = true;
 
