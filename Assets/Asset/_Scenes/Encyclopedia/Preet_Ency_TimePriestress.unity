@@ -1049,8 +1049,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Chronos\u2019s Descendant (all allies + all enemies) (Deals 20 damage to
-    all enemies, buffs allies with blessed & regen, inflicts curse to all enemies)\r"
+  m_Text: "Chronos\u2019s Descendant\n (all allies) \n(buffs allies with blessed and
+    regen)"
 --- !u!222 &628996857
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1459,7 +1459,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Time Priestess \n(Buff x DoT)\r\nHP : 400\n\n\tA young girl, taken from
+  m_Text: "Time Priestess \n(Buff x DoT)\r\nHP : 550\n\n\tA young girl, taken from
     her home in her early life and used as nothing more than a vessel for a higher
     power, encased in sacred stone until the day the world dies.\r\n\n\tNow released
     in the most dire of times, she serves her singular purpose, yet the conditioning

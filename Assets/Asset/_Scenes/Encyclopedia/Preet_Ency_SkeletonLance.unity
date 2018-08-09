@@ -297,7 +297,7 @@ SpriteRenderer:
   m_Size: {x: 0.326, y: 0.592}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!1 &247879720
 GameObject:
@@ -606,7 +606,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Flame Shower \n(Deals 50 damage to all enemies, causes burn)\n"
+  m_Text: "Lance Throw \n(Deals 120 damage to a single enemy)"
 --- !u!222 &438584449
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -684,7 +684,7 @@ MonoBehaviour:
 
     Skeleton (Lance)
 
-    HP : 500'
+    HP : 1000'
 --- !u!222 &440340185
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1393,7 +1393,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Take Aim \n(Cast bless on self)"
+  m_Text: "Charge attack \n(Deals 150 damage to a single enemy, causes slow)"
 --- !u!222 &1145335493
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1831,7 +1831,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Normal attack \n(Deals 60 damage to a single enemy)"
+  m_Text: "Normal attack \n (Deals 80 damage to a single enemy)"
 --- !u!222 &1442475193
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -1179,8 +1179,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Spartan\u2019s Rush \n(Deals 60 damage to front enemy, causes slow & poison
-    to enemy, gains haste for self)"
+  m_Text: "Spartan\u2019s Rush \n(Deals 60 damage to front enemy, gains haste)\r"
 --- !u!222 &628996857
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2846,8 +2845,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Army of One  (Deals 130 dmg to front enemy and gains immunity, berserk &
-    bless for all allies)
+  m_Text: "Army of One  \n(gains immunity, berserk and bless for all allies)\r"
 --- !u!222 &1733923886
 CanvasRenderer:
   m_ObjectHideFlags: 0
