@@ -1312,8 +1312,6 @@ GameObject:
   - component: {fileID: 519420033}
   - component: {fileID: 519420034}
   - component: {fileID: 519420030}
-  - component: {fileID: 519420035}
-  - component: {fileID: 519420036}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1439,37 +1437,11 @@ MonoBehaviour:
   masterSlider: {fileID: 2118793061}
   musicSlider: {fileID: 0}
   effectSlider: {fileID: 180298225}
+  brightnessSlider: {fileID: 1007720969}
   outMasterVolume: 0
   outMusicVolume: 0
   outEffectVolume: 0
   sceneManager: {fileID: 0}
---- !u!114 &519420035
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ff26db721962cdf4a8edcdfa9a767d2a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  profile: {fileID: 11400000, guid: c0528b64359d96b46866178c384453f0, type: 2}
---- !u!114 &519420036
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 519420028}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24a232f770481c04d9730812d7a524e8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  BrightnessCorrection: 10
-  slider: {fileID: 1007720969}
-  myProfile: {fileID: 11400000, guid: c0528b64359d96b46866178c384453f0, type: 2}
-  otherProfile: {fileID: 11400000, guid: cdf14ac29ba71af4f9e13a91c9caee22, type: 2}
 --- !u!1001 &536243212
 Prefab:
   m_ObjectHideFlags: 0
@@ -1634,6 +1606,7 @@ MonoBehaviour:
   masterSlider: {fileID: 0}
   musicSlider: {fileID: 0}
   effectSlider: {fileID: 0}
+  brightnessSlider: {fileID: 0}
   outMasterVolume: 0
   outMusicVolume: 0
   outEffectVolume: 0
@@ -2198,9 +2171,9 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1912623538}
   m_FillRect: {fileID: 1449893589}
   m_HandleRect: {fileID: 1912623537}
-  m_Direction: 1
-  m_MinValue: 0.5
-  m_MaxValue: 2
+  m_Direction: 0
+  m_MinValue: -0.5
+  m_MaxValue: 0
   m_WholeNumbers: 0
   m_Value: 0.5
   m_OnValueChanged:
@@ -2980,6 +2953,7 @@ MonoBehaviour:
   masterSlider: {fileID: 0}
   musicSlider: {fileID: 0}
   effectSlider: {fileID: 0}
+  brightnessSlider: {fileID: 0}
   outMasterVolume: 0
   outMusicVolume: 0
   outEffectVolume: 0
@@ -3598,8 +3572,8 @@ RectTransform:
   m_Father: {fileID: 1549233549}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 10, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -3922,7 +3896,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.25}
   m_AnchorMax: {x: 1, y: 0.75}
-  m_AnchoredPosition: {x: 5, y: 0}
+  m_AnchoredPosition: {x: -5, y: 0}
   m_SizeDelta: {x: -20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1559628298 stripped
@@ -3987,6 +3961,7 @@ MonoBehaviour:
   masterSlider: {fileID: 0}
   musicSlider: {fileID: 0}
   effectSlider: {fileID: 0}
+  brightnessSlider: {fileID: 0}
   outMasterVolume: 0
   outMusicVolume: 0
   outEffectVolume: 0
@@ -5320,8 +5295,8 @@ RectTransform:
   m_Father: {fileID: 1054199801}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 20, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -5470,6 +5445,7 @@ MonoBehaviour:
   masterSlider: {fileID: 0}
   musicSlider: {fileID: 0}
   effectSlider: {fileID: 0}
+  brightnessSlider: {fileID: 0}
   outMasterVolume: 0
   outMusicVolume: 0
   outEffectVolume: 0

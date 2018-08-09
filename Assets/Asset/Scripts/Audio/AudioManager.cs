@@ -17,9 +17,7 @@ public class AudioManager : MonoBehaviour {
     public bool isTutorial = true;
     public bool isNeedGreedTutorialShown = false;
     public bool isCampsiteTutorialShown = false;
-    public bool isNewGameBrightness;
     public bool isNewGameVolume;
-    public float brightness;
 
     public static AudioManager Instance
     {
@@ -39,7 +37,6 @@ public class AudioManager : MonoBehaviour {
         else
         {
             instance = this;
-            isNewGameBrightness = true;
             isNewGameVolume = true;
             DontDestroyOnLoad(this.gameObject);
         }

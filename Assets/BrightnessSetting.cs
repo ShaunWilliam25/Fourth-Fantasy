@@ -23,22 +23,22 @@ public class BrightnessSetting : MonoBehaviour
         tempmodel = myProfile.colorGrading.settings;
         gamemodel = otherProfile.colorGrading.settings;
 
-        if (AudioManager.instance.isNewGameBrightness)
+        if (NewBrightness.instance.isNewGameBrightness)
         {
             /*BrightnessCorrection = 1.25f;
             tempmodel.basic.contrast = BrightnessCorrection;
             gamemodel.basic.contrast = BrightnessCorrection;
             */
-            AudioManager.instance.brightness = 1f;
-            tempmodel.basic.contrast = AudioManager.instance.brightness;
-            gamemodel.basic.contrast = AudioManager.instance.brightness;
+            NewBrightness.Instance.brightnessValue = 0.5f;
+            tempmodel.basic.contrast = NewBrightness.Instance.brightnessValue;
+            gamemodel.basic.contrast = NewBrightness.Instance.brightnessValue;
 
-            AudioManager.instance.isNewGameBrightness = false;
+            NewBrightness.instance.isNewGameBrightness = false;
         }
 
         slider.onValueChanged.AddListener(delegate { sliderChanged(); });
         //slider.value = PlayerPrefs.GetFloat("BrightnessCorrection");
-        slider.value = AudioManager.instance.brightness;
+        slider.value = NewBrightness.Instance.brightnessValue;
 
 
     }
@@ -50,10 +50,10 @@ public class BrightnessSetting : MonoBehaviour
 
         //tempmodel.basic.contrast = BrightnessCorrection;
         //gamemodel.basic.contrast = BrightnessCorrection;
-        AudioManager.instance.brightness = slider.value;
+        NewBrightness.Instance.brightnessValue = slider.value;
 
-        tempmodel.basic.contrast = AudioManager.instance.brightness;
-        gamemodel.basic.contrast = AudioManager.instance.brightness;
+        tempmodel.basic.contrast = NewBrightness.Instance.brightnessValue;
+        gamemodel.basic.contrast = NewBrightness.Instance.brightnessValue;
 
 
         //PlayerPrefs.SetFloat("BrightnessCorrection", slider.value);
