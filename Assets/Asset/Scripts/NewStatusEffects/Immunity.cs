@@ -7,6 +7,7 @@ public class Immunity : StatusDetail
 
     private void Awake()
     {
+        effect = false;
         isActive = true;
         secondDuration = 5;
         type = "Good";

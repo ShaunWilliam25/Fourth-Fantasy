@@ -8,6 +8,7 @@ public class Burn : StatusDetail
  
     private void Awake()
     {
+        effect = false;
         isActive = true;
         secondDuration = 10;
         type = "Bad";

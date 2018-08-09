@@ -25,9 +25,14 @@ public class EnemyStatusUpdate : EnemyVariableManager
             }
             for (int i = statusList.Count - 1; i >= 0; i--)
             {
+                
                 this.statusList[i].GetComponent<StatusDetail>().user = gameObject;
                 this.statusList[i].GetComponent<StatusDetail>().userType = StatusDetail.UserType.ENEMY;
                 this.statusList[i].GetComponent<StatusDetail>().DoEffect();
+                if (statusList[i].GetComponent<StatusDetail>() is Haste || statusList[i].GetComponent<StatusDetail>() is Slow)
+                {
+                    NeutralizeHasteAndSlow();
+                }
                 if (!this.statusList[i].GetComponent<StatusDetail>().isActive)
                 {
                     Debug.Log("Destroy" + statusList[i]);
@@ -39,25 +44,28 @@ public class EnemyStatusUpdate : EnemyVariableManager
             }
         }
     }
-    
-   /* void NeutralizeHasteAndSlow()
+
+    void NeutralizeHasteAndSlow()
     {
-        for (int i = this.statusList.Count - 1; i >= 0; i--)
+        for (int i = statusList.Count - 1; i >= 0; i--)
         {
-            for (int j = this.statusList.Count - 2; j >= 0; j--)
+            for (int j = i - 1; j >= 0; j--)
             {
-                if (this.statusList[i].GetComponent<StatusDetail>() is Haste && this.statusList[j].GetComponent<StatusDetail>() is Slow)
+                if (statusList[i].GetComponent<StatusDetail>() is Haste && statusList[j].GetComponent<StatusDetail>() is Slow)
                 {
-                    this.statusList[i].GetComponent<StatusDetail>().user = gameObject;
-                    this.statusList[i].GetComponent<StatusDetail>().userType = StatusDetail.UserType.ENEMY;
-                    this.statusList[i].GetComponent<StatusDetail>().DoEffect();
-                    this.statusList[i].GetComponent<StatusDetail>().secondDuration = 0;
-                    this.statusList[j].GetComponent<StatusDetail>().user = gameObject;
-                    this.statusList[j].GetComponent<StatusDetail>().userType = StatusDetail.UserType.ENEMY;
-                    this.statusList[j].GetComponent<StatusDetail>().DoEffect();
-                    this.statusList[j].GetComponent<StatusDetail>().secondDuration = 0;
+                    statusList[i].GetComponent<StatusDetail>().secondDuration = 0;
+                    statusList[i].GetComponent<StatusDetail>().DoEffect();
+                    statusList[j].GetComponent<StatusDetail>().secondDuration = 0;
+                    statusList[j].GetComponent<StatusDetail>().DoEffect();
+                }
+                if (statusList[j].GetComponent<StatusDetail>() is Haste && statusList[i].GetComponent<StatusDetail>() is Slow)
+                {
+                    statusList[i].GetComponent<StatusDetail>().secondDuration = 0;
+                    statusList[i].GetComponent<StatusDetail>().DoEffect();
+                    statusList[j].GetComponent<StatusDetail>().secondDuration = 0;
+                    statusList[j].GetComponent<StatusDetail>().DoEffect();
                 }
             }
         }
-    }*/
+    }
 }

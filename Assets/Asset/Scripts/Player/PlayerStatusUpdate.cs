@@ -24,13 +24,14 @@ public class PlayerStatusUpdate : PlayerVariableManager {
             }
             for (int i = statusList.Count - 1; i >= 0; i--)
             {
-                /*if(statusList[i].GetComponent<StatusDetail>() is Haste || statusList[i].GetComponent<StatusDetail>() is Slow)
-                {
-                    NeutralizeHasteAndSlow();
-                }*/
+                
                 statusList[i].GetComponent<StatusDetail>().user = gameObject;
                 statusList[i].GetComponent<StatusDetail>().userType = StatusDetail.UserType.PLAYER;
                 statusList[i].GetComponent<StatusDetail>().DoEffect();
+                if (statusList[i].GetComponent<StatusDetail>() is Haste || statusList[i].GetComponent<StatusDetail>() is Slow)
+                {
+                    NeutralizeHasteAndSlow();
+                }
                 if (!statusList[i].GetComponent<StatusDetail>().isActive)
                 {
                     statusList[i].GetComponent<StatusDetail>().RemoveStatus();
@@ -45,18 +46,21 @@ public class PlayerStatusUpdate : PlayerVariableManager {
     {
         for(int i = statusList.Count - 1; i >= 0; i--)
         {
-            for(int j=statusList.Count-2;j>=0;j--)
+            for(int j=i-1;j>=0;j--)
             {
                 if(statusList[i].GetComponent<StatusDetail>() is Haste && statusList[j].GetComponent<StatusDetail>() is Slow)
                 {
-                    statusList[i].GetComponent<StatusDetail>().user = gameObject;
-                    statusList[i].GetComponent<StatusDetail>().userType = StatusDetail.UserType.PLAYER;
-                    statusList[i].GetComponent<StatusDetail>().DoEffect();
                     statusList[i].GetComponent<StatusDetail>().secondDuration = 0;
-                    statusList[j].GetComponent<StatusDetail>().user = gameObject;
-                    statusList[j].GetComponent<StatusDetail>().userType = StatusDetail.UserType.PLAYER;
-                    statusList[j].GetComponent<StatusDetail>().DoEffect();
+                    statusList[i].GetComponent<StatusDetail>().DoEffect();
                     statusList[j].GetComponent<StatusDetail>().secondDuration = 0;
+                    statusList[j].GetComponent<StatusDetail>().DoEffect();
+                }
+                if (statusList[j].GetComponent<StatusDetail>() is Haste && statusList[i].GetComponent<StatusDetail>() is Slow)
+                {
+                    statusList[i].GetComponent<StatusDetail>().secondDuration = 0;
+                    statusList[i].GetComponent<StatusDetail>().DoEffect();
+                    statusList[j].GetComponent<StatusDetail>().secondDuration = 0;
+                    statusList[j].GetComponent<StatusDetail>().DoEffect();
                 }
             }
         }
