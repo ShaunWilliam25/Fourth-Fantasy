@@ -236,9 +236,6 @@ public class LobbyMenu : MonoBehaviour {
 
                 //! Display skill name
                 characterCanvasTransform.GetChild(6 + i).GetChild(1).GetComponent<Text>().text = listOfCharacters[characterIndex].skillNames[i];
-
-                //! Display skill description
-                characterCanvasTransform.GetChild(6 + i).GetChild(2).GetComponent<Text>().text = listOfCharacters[characterIndex].skillDescriptions[i];
             }
 
             //! Selection of characters(yes / no buttons)
