@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class BrightnessSetting : MonoBehaviour
 
 {
-    public float BrightnessCorrection = 1f;
+    public float BrightnessCorrection;
     public Slider slider;
     public static BrightnessSetting instance;
     public ColorGradingComponent myColor;
@@ -28,8 +28,9 @@ public class BrightnessSetting : MonoBehaviour
 
         if (AudioManager.instance.isNewGameBrightness)
         {
-            tempmodel.basic.contrast = 0;
-            gamemodel.basic.contrast = 0;
+            BrightnessCorrection = 1.25f;
+            tempmodel.basic.contrast = BrightnessCorrection;
+            gamemodel.basic.contrast = BrightnessCorrection;
 
             AudioManager.instance.isNewGameBrightness = false;
         }

@@ -9144,7 +9144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 24a232f770481c04d9730812d7a524e8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BrightnessCorrection: 10
+  BrightnessCorrection: 1.25
   slider: {fileID: 355808877}
   myProfile: {fileID: 11400000, guid: c0528b64359d96b46866178c384453f0, type: 2}
   otherProfile: {fileID: 11400000, guid: cdf14ac29ba71af4f9e13a91c9caee22, type: 2}
