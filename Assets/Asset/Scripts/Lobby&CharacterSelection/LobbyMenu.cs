@@ -175,6 +175,10 @@ public class LobbyMenu : MonoBehaviour {
                         statusText.text = "You must first selec a character to play as";
                     }
                 }
+                else if(choice == 3)
+                {
+                    holdTimer = 0;
+                }
                 holdTimer = 0;
             }
         }
