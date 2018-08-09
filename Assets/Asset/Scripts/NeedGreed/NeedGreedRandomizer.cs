@@ -70,6 +70,7 @@ public class NeedGreedRandomizer : MonoBehaviour
             if (this.GetComponent<needGreedShowUI>().greed1 && this.GetComponent<needGreedShowUI>().greed2)
             {
                 Debug.Log("greed");
+                randNum = Random.Range(1, 101);
                 if (randNum <= 50)
                 {
                     owner = playerList[0];
@@ -99,6 +100,7 @@ public class NeedGreedRandomizer : MonoBehaviour
             if (this.GetComponent<needGreedShowUI>().need1 && this.GetComponent<needGreedShowUI>().need2)
             {
                 Debug.Log("need");
+                randNum = Random.Range(1, 101);
                 if (randNum <= 50)
                 {
                     owner = playerList[0];
