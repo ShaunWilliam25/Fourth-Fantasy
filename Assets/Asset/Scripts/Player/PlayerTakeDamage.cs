@@ -17,7 +17,7 @@ public class PlayerTakeDamage : MonoBehaviour {
         artifacts = GetComponent<PlayerVariableManager>().artifactsList;
         for (int i=0;i<artifacts.Count;i++)
         {
-            if(artifacts[i].GetComponent<ArtifactEffect>() is ShieldOfTheFallenKing)
+            if(artifacts[i].GetComponent<ArtifactEffect>() is ShieldOfTheFallenKing && GetComponent<PlayerStats>().name == "OldGuard")
             {
                 if(artifacts[i].GetComponent<ShieldOfTheFallenKing>().damageCount>=10)
                 {

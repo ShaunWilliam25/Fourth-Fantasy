@@ -7,7 +7,7 @@ public class PlayerStats : GeneralStats {
     [HideInInspector] public int aggro;
     [HideInInspector] public bool knockedOut;
     [HideInInspector] public int reviveAction;
-    [HideInInspector] public bool autoRevive;
+    public bool autoRevive;
     [HideInInspector] public bool taunt;
     
 	// Update is called once per frame
@@ -23,7 +23,6 @@ public class PlayerStats : GeneralStats {
     {
         knockedOut = false;
         reviveAction = 0;
-        autoRevive = false;
         taunt = false;
         silence = false;
         berserk = false;
