@@ -191,7 +191,6 @@ public class NeedGreedRandomizer : MonoBehaviour
                 {
                     if (Input.anyKeyDown)
                     {
-                        Debug.Log("BYE");
                         AudioManager.instance.isNeedGreedTutorialShown = true;
                         needGreedTutorial.gameObject.SetActive(false);
                         isShowingTutorial = false;
