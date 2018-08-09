@@ -17,8 +17,7 @@ public class Credits : MonoBehaviour {
 	void Update ()
     {
         if(Input.anyKeyDown)
-        {
-            artifactSpawnerSingleton.instance.GetComponent<ArtifactScript>().createdArtifactList.Clear();
+        {            
             UnityEngine.SceneManagement.SceneManager.LoadScene(0);
         }
 

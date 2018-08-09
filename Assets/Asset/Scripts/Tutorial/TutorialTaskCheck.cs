@@ -56,11 +56,10 @@ public class TutorialTaskCheck : MonoBehaviour {
                     }
                     tutorial.taskCanvas.enabled = false;
                     tutorial.isLectureDone = false;
-                    tutorial.tutorialStage = TutorialAppear.TUTORIAL_STAGE.STAGE_07;                    
+                    tutorial.tutorialStage = TutorialAppear.TUTORIAL_STAGE.THE_END;                    
                 }
             }            
         }
-
     }
 
 }

@@ -52,15 +52,7 @@ public class TutorialAppear : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        if(!isTheEndOfTutorial)
-        {
-            tutorialStage = TUTORIAL_STAGE.STAGE_01;
-        }
-        else
-        {
-            tutorialStage = TUTORIAL_STAGE.THE_END;
-        }
-        
+        tutorialStage = TUTORIAL_STAGE.STAGE_01;
     }
 
     private void OnEnable()
@@ -399,7 +391,7 @@ public class TutorialAppear : MonoBehaviour {
                     isCanPress = false;
                     cannotPressTimer = 0f;
                     isLectureDone = true;
-                    UnityEngine.SceneManagement.SceneManager.LoadScene(7);
+                    //UnityEngine.SceneManagement.SceneManager.LoadScene(7);
                     //tutorialStage = TUTORIAL_STAGE.THE_END;
                 }
             }
