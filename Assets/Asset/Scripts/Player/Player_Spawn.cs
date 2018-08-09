@@ -102,7 +102,7 @@ public class Player_Spawn : MonoBehaviour {
             {
                 if(sceneManager.playerList[i].transform.GetChild(0).GetComponent<SpriteRenderer>().color != Color.white)
                 {
-                    (sceneManager.playerList[i].transform.GetChild(0).GetComponent<SpriteRenderer>().color = Color.white;
+                    sceneManager.playerList[i].transform.GetChild(0).GetComponent<SpriteRenderer>().color = Color.white;
                 }
             }
 
