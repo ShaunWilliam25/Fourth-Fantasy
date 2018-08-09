@@ -69,10 +69,25 @@ public class PlayerScrollSkill : PlayerVariableManager {
             this.GetComponent<PlayerVariableManager>().skillHolder[0] = this.GetComponent<PlayerVariableManager>().tempSkill;
             isScroll ++;
         }*/
+        //! Silence check
+        if (GetComponent<PlayerStats>().silence || GetComponent<PlayerStats>().berserk)
+        {
+            //if (this.GetComponent<PlayerVariableManager>().skillHolder[skillSelected].GetComponent<SkillDetail>().skillName == "Normal Attack")
+            if (skillSelected == 2)
+            {
+                return;
+            }
+            else
+            {
+                skillSelected = 2;
+                boxPos.position = new Vector3(startPosition + (boxOffset * skillSelected), -characterOffset, 0);
+                return;
+            }
+        }
 
         if (Input.GetButtonUp(this.GetComponent<PlayerVariableManager>().playerButton))
         {
-            //! Silence check
+            /*//! Silence check
             if (GetComponent<PlayerStats>().silence || GetComponent<PlayerStats>().berserk)
             {
                 //if (this.GetComponent<PlayerVariableManager>().skillHolder[skillSelected].GetComponent<SkillDetail>().skillName == "Normal Attack")
@@ -86,7 +101,7 @@ public class PlayerScrollSkill : PlayerVariableManager {
                     boxPos.position = new Vector3(startPosition + (boxOffset * skillSelected), -characterOffset, 0);
                     return;
                 }
-            }
+            }*/
             
             //! Move the box & and also the int for which skill its at
             skillSelected++;
