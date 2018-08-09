@@ -12,6 +12,8 @@ public class ShowUI : MonoBehaviour
     public CampsiteUIComponent player1;
     public CampsiteUIComponent player2;
 
+    [SerializeField] TutorialAppear tutorial;
+
     void Start()
     {
         css = GetComponent<CampsiteSelection>();
@@ -163,7 +165,17 @@ public class ShowUI : MonoBehaviour
                 csm.playerList[i].transform.GetChild(j).gameObject.SetActive(true);
             }
         }
-        UnityEngine.SceneManagement.SceneManager.LoadScene(6);
+
+        //! Checking if it is tutorial
+        if(AudioManager.instance.isTutorial)
+        {
+            TutorialAppear.isTheEndOfTutorial = true;
+            UnityEngine.SceneManagement.SceneManager.LoadScene(1);            
+        }
+        else
+        {
+            UnityEngine.SceneManagement.SceneManager.LoadScene(6);
+        }        
     }
 }
 
