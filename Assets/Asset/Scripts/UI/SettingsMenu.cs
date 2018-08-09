@@ -60,25 +60,32 @@ public class SettingsMenu : MonoBehaviour
         module1.enabled = true;
         module2.enabled = true;
 
-        if(AudioManager.instance.isNewGameVolume)
-        {
-            fullscreen.isOn = Screen.fullScreen;
-            audioMixer.SetFloat("MasterVolume", -5f);
-            audioMixer.SetFloat("MusicVolume", -5f);
-            audioMixer.SetFloat("EffectVolume", -5f);
-            audioMixer.GetFloat("MasterVolume", out outMasterVolume);
-            masterSlider.value = AudioManager.Instance.dBToVolume(outMasterVolume);
-            audioMixer.GetFloat("MusicVolume", out outMusicVolume);
-            musicSlider.value = AudioManager.Instance.dBToVolume(outMusicVolume);
-            audioMixer.GetFloat("EffectVolume", out outEffectVolume);
-            effectSlider.value = AudioManager.Instance.dBToVolume(outEffectVolume);
-
-            AudioManager.instance.isNewGameVolume = false;
-        }        
+      
         //GetComponent<ParticleSystem>().Play();
         pS1.Play();
         pS2.Play();
 
+    }
+
+    private void Start()
+    {
+        if (AudioManager.instance.isNewGameVolume)
+        {
+            fullscreen.isOn = Screen.fullScreen;
+            audioMixer.SetFloat("MasterVolume", -5f);
+            audioMixer.GetFloat("MasterVolume", out outMasterVolume);
+            masterSlider.value = AudioManager.Instance.dBToVolume(outMasterVolume);
+
+            audioMixer.SetFloat("MusicVolume", -5f);
+            audioMixer.GetFloat("MusicVolume", out outMusicVolume);
+            musicSlider.value = AudioManager.Instance.dBToVolume(outMusicVolume);
+
+            audioMixer.SetFloat("EffectVolume", -5f);
+            audioMixer.GetFloat("EffectVolume", out outEffectVolume);
+            effectSlider.value = AudioManager.Instance.dBToVolume(outEffectVolume);
+
+            AudioManager.instance.isNewGameVolume = false;
+        }
     }
 
     private void Update()
@@ -87,6 +94,12 @@ public class SettingsMenu : MonoBehaviour
         {
             eventSystem.SetSelectedGameObject(backToMainMenu.gameObject);
         }
+        audioMixer.GetFloat("MasterVolume", out outMasterVolume);
+        masterSlider.value = AudioManager.Instance.dBToVolume(outMasterVolume);
+        audioMixer.GetFloat("MusicVolume", out outMusicVolume);
+        musicSlider.value = AudioManager.Instance.dBToVolume(outMusicVolume);
+        audioMixer.GetFloat("EffectVolume", out outEffectVolume);
+        effectSlider.value = AudioManager.Instance.dBToVolume(outEffectVolume); audioMixer.GetFloat("MasterVolume", out outMasterVolume);
     }
 
 }
