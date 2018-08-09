@@ -178,7 +178,7 @@ public class LobbyMenu : MonoBehaviour {
                 else if(choice == 3)
                 {
                     holdTimer = 0;
-                    
+                    UnityEngine.SceneManagement.SceneManager.LoadScene(0);
                 }
                 holdTimer = 0;
             }

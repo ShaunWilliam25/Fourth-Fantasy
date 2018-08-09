@@ -2468,6 +2468,8 @@ MonoBehaviour:
   - {fileID: 546694033}
   - {fileID: 883051512}
   - {fileID: 56944374}
+  - {fileID: 2039316624}
+  - {fileID: 1441927448}
   holdTimer: 0
   requiredTimer: 2
   timerInPercentage: 0
@@ -2486,8 +2488,6 @@ MonoBehaviour:
   - {fileID: 611402745}
   - {fileID: 1251576833}
   - {fileID: 503096456}
-  - {fileID: 2039316624}
-  - {fileID: 1441927448}
   isReady: 0
 --- !u!4 &535674046
 Transform:
@@ -2536,6 +2536,8 @@ MonoBehaviour:
   - {fileID: 1594271151}
   - {fileID: 2009416601}
   - {fileID: 669723258}
+  - {fileID: 909003756}
+  - {fileID: 1013710903}
   holdTimer: 0
   requiredTimer: 2
   timerInPercentage: 0
@@ -2554,8 +2556,6 @@ MonoBehaviour:
   - {fileID: 380640732}
   - {fileID: 1854909978}
   - {fileID: 1336409748}
-  - {fileID: 909003756}
-  - {fileID: 1013710903}
   isReady: 0
 --- !u!4 &537125945
 Transform:
