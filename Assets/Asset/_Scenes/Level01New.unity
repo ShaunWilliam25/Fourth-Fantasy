@@ -1415,6 +1415,7 @@ MonoBehaviour:
   tint: {fileID: 0}
   sceneManager: {fileID: 1020202954}
   playerAtbList: []
+  isLectureDone: 0
   isEnemyAttacked: 0
   isPlayerATBListFilled: 0
   campsiteTutorial: {fileID: 0}
@@ -1566,12 +1567,7 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 114109720146578784, guid: e7149cd6b8ca3fc43a88fdc0e53c2f83,
-        type: 2}
-      propertyPath: NeedGreedManager
-      value: 
-      objectReference: {fileID: 1653121042}
-    - target: {fileID: 114257134073123436, guid: e7149cd6b8ca3fc43a88fdc0e53c2f83,
+    - target: {fileID: 114078524686222438, guid: e7149cd6b8ca3fc43a88fdc0e53c2f83,
         type: 2}
       propertyPath: NeedGreedManager
       value: 
@@ -1581,11 +1577,20 @@ Prefab:
       propertyPath: NeedGreedManager
       value: 
       objectReference: {fileID: 1653121042}
-    - target: {fileID: 114078524686222438, guid: e7149cd6b8ca3fc43a88fdc0e53c2f83,
+    - target: {fileID: 114257134073123436, guid: e7149cd6b8ca3fc43a88fdc0e53c2f83,
         type: 2}
       propertyPath: NeedGreedManager
       value: 
       objectReference: {fileID: 1653121042}
+    - target: {fileID: 114109720146578784, guid: e7149cd6b8ca3fc43a88fdc0e53c2f83,
+        type: 2}
+      propertyPath: NeedGreedManager
+      value: 
+      objectReference: {fileID: 1653121042}
+    - target: {fileID: 1999151497630950, guid: e7149cd6b8ca3fc43a88fdc0e53c2f83, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e7149cd6b8ca3fc43a88fdc0e53c2f83, type: 2}
   m_IsPrefabParent: 0
@@ -4245,6 +4250,7 @@ MonoBehaviour:
   descText: {fileID: 999911413}
   ArtifactSpawner: {fileID: 0}
   needGreedSelection: {fileID: 1653121044}
+  tutorial: {fileID: 0}
 --- !u!4 &1653121046
 Transform:
   m_ObjectHideFlags: 0

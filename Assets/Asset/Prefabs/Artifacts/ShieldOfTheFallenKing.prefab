@@ -55,7 +55,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sprite: {fileID: 21300000, guid: ce6b99ac0ece53b418584e92c2904e0c, type: 3}
   name: Shield of The Fallen King
-  effect: Negate Damage every 10th hit /n Raises Old Guard MAX HP by 500
+  effect: (For Old Guard Only)  Negate Damage every 10th hit /n Raises Old Guard MAX
+    HP by 500
 --- !u!114 &114764849796110360
 MonoBehaviour:
   m_ObjectHideFlags: 1
