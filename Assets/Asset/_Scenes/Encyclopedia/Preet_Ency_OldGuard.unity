@@ -722,7 +722,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "War Cry \n(Deals 50 damage to all enemies, causes slow to enemies)"
+  m_Text: 'War Cry
+
+    Deals small amount of damage to all enemies and causes slow'
 --- !u!222 &438584449
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1179,7 +1181,8 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Spartan\u2019s Rush \n(Deals 60 damage to front enemy, gains haste)\r"
+  m_Text: "Spartan\u2019s Rush \nDeals small amount of damage to front enemy and gains
+    haste."
 --- !u!222 &628996857
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1858,7 +1861,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Aegis Shield \n(Taunts and casts regen & haste on all allies)"
+  m_Text: "Aegis Shield \nTaunts enemy and cast haste & regen on all allies"
 --- !u!222 &1145335493
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2404,9 +2407,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Normal Attack
-
-    (Deals 90 damage to front enemy)'
+  m_Text: "Attack \nDeals moderate amount of damage to front enemy"
 --- !u!222 &1442475193
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2845,7 +2846,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Army of One  \n(gains immunity, berserk and bless for all allies)\r"
+  m_Text: "Army of one\nGains immunity, berserk & bless for all allies\r"
 --- !u!222 &1733923886
 CanvasRenderer:
   m_ObjectHideFlags: 0

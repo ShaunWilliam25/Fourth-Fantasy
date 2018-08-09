@@ -674,7 +674,11 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Meteor (all enemies) \n(Deals 50 damage to all enemies and causes burn)\r\n"
+  m_Text: 'Meteor
+
+    Deals small amount of damage to all enemies and causes burn
+
+'
 --- !u!222 &438584449
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -782,7 +786,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 427, y: 150.6}
+  m_AnchoredPosition: {x: 427, y: 132}
   m_SizeDelta: {x: 327.7, y: 76.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &563177664
@@ -1049,8 +1053,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Chronos\u2019s Descendant\n (all allies) \n(buffs allies with blessed and
-    regen)"
+  m_Text: "Chronos\u2019s Descendant\nAll allies gains bless & regen"
 --- !u!222 &628996857
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1706,7 +1709,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Acceleration (all allies) \n(Cast Haste on Team)\r"
+  m_Text: 'Acceleration
+
+    Casts Haste on Team'
 --- !u!222 &1145335493
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1821,8 +1826,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 427, y: -196.2}
-  m_SizeDelta: {x: 327.7, y: 126.2}
+  m_AnchoredPosition: {x: 427, y: -220.1}
+  m_SizeDelta: {x: 327.7, y: 78.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1303842365
 MonoBehaviour:
@@ -1932,8 +1937,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 427, y: -65.7}
-  m_SizeDelta: {x: 327.7, y: 76.6}
+  m_AnchoredPosition: {x: 427, y: -101}
+  m_SizeDelta: {x: 327.7, y: 87.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1388773084
 MonoBehaviour:
@@ -2144,7 +2149,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Normal Attack (single enemy) \n(Deals 80 damage to back enemy)\r\n"
+  m_Text: "Attack \nDeals moderate amount of damage to back enemy"
 --- !u!222 &1442475193
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2382,8 +2387,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Pollens of disease (all enemies) \n(causes Poison, burn and confuse all
-    enemies)\r"
+  m_Text: "Pollens of Disease \nInflicts poison, burn & confuse to all enemies"
 --- !u!222 &1733923886
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2599,7 +2603,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 427, y: 42.5}
+  m_AnchoredPosition: {x: 427, y: 16}
   m_SizeDelta: {x: 327.7, y: 76.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1872185305
