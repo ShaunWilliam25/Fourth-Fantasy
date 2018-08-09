@@ -16,7 +16,6 @@ public class ShowUI : MonoBehaviour
     [SerializeField] float cannotPressTimer = 0f;
     [SerializeField] float cannotPressDuration;
     [SerializeField] bool isCanPress = false;
-    [SerializeField] bool isShowingTutorial = false;
 
     void Start()
     {
@@ -39,15 +38,18 @@ public class ShowUI : MonoBehaviour
                 isCanPress = true;
             }
 
-            campsiteTutorial.gameObject.SetActive(true);
+            if(campsiteTutorial.gameObject.activeInHierarchy == false)
+            {
+                campsiteTutorial.gameObject.SetActive(true);
+            }
 
-            if(isCanPress)
+            if (isCanPress)
             {
                 if(Input.anyKeyDown)
                 {
-                    AudioManager.instance.isCampsiteTutorialShown = true;
                     campsiteTutorial.gameObject.SetActive(false);
                     isCanPress = false;
+                    AudioManager.instance.isCampsiteTutorialShown = true;                    
                 }                
             }
         }
