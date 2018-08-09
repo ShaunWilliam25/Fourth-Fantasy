@@ -23,20 +23,28 @@ public class BrightnessSetting : MonoBehaviour
         tempmodel = myProfile.colorGrading.settings;
         gamemodel = otherProfile.colorGrading.settings;
 
-        tempmodel.basic.contrast = 1;
-        gamemodel.basic.contrast = 1;
-
         myProfile.colorGrading.settings = tempmodel;
         otherProfile.colorGrading.settings = gamemodel;
 
         slider.onValueChanged.AddListener(delegate { sliderChanged(); });
         slider.value = PlayerPrefs.GetFloat("BrightnessCorrection");
+
+        if(AudioManager.instance.isNewGameBrightness)
+        {
+            tempmodel.basic.contrast = 1;
+            gamemodel.basic.contrast = 1;
+
+            AudioManager.instance.isNewGameBrightness = false;
+        }
     }
 
     void Update()
     {
         Scene currentScene = UnityEngine.SceneManagement.SceneManager.GetActiveScene();
         string SceneName = currentScene.name;
+
+        tempmodel.basic.contrast = BrightnessCorrection;
+        gamemodel.basic.contrast = BrightnessCorrection;
 
         PlayerPrefs.SetFloat("BrightnessCorrection", slider.value);
     }

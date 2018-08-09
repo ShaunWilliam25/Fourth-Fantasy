@@ -52,7 +52,12 @@ public class LobbyMenu : MonoBehaviour {
                     {
                         selection[2].gameObject.SetActive(false);
                         selection[3].gameObject.SetActive(false);
-                    }                
+                    }
+                    if (selection[4].gameObject.activeInHierarchy == true)
+                    {
+                        selection[4].gameObject.SetActive(false);
+                        selection[5].gameObject.SetActive(false);
+                    }
                     break;
 
                 case 2:
@@ -61,10 +66,33 @@ public class LobbyMenu : MonoBehaviour {
                         selection[2].gameObject.SetActive(true);
                         selection[3].gameObject.SetActive(true);
                     }
+                    if (selection[4].gameObject.activeInHierarchy != false)
+                    {
+                        selection[4].gameObject.SetActive(false);
+                        selection[5].gameObject.SetActive(false);
+                    }
                     if (selection[0].gameObject.activeInHierarchy != false)
                     {
                         selection[0].gameObject.SetActive(false);
                         selection[1].gameObject.SetActive(false);
+                    }
+                    break;
+
+                case 3:
+                    if (selection[4].gameObject.activeInHierarchy != true)
+                    {
+                        selection[4].gameObject.SetActive(true);
+                        selection[5].gameObject.SetActive(true);
+                    }
+                    if (selection[0].gameObject.activeInHierarchy != false)
+                    {
+                        selection[0].gameObject.SetActive(false);
+                        selection[1].gameObject.SetActive(false);
+                    }
+                    if (selection[2].gameObject.activeInHierarchy == true)
+                    {
+                        selection[2].gameObject.SetActive(false);
+                        selection[3].gameObject.SetActive(false);
                     }
                     break;
             }            
@@ -73,7 +101,7 @@ public class LobbyMenu : MonoBehaviour {
             if (Input.GetButtonUp(playerButton))
             {
                 choice++;
-                if (choice > 2)
+                if (choice > 3)
                 {
                     choice = 1;
                 }
@@ -86,14 +114,22 @@ public class LobbyMenu : MonoBehaviour {
             switch (choice)
             {
                 case 1:
-                    //! Set the other as 0             
+                    //! Set the other as 0  
+                    selection[5].fillAmount = 0;
                     selection[3].fillAmount = 0;
                     selection[1].fillAmount = timerInPercentage;
                     break;
 
                 case 2:
                     selection[1].fillAmount = 0;
+                    selection[5].fillAmount = 0;
                     selection[3].fillAmount = timerInPercentage;
+                    break;
+
+                case 3:
+                    selection[1].fillAmount = 0;
+                    selection[3].fillAmount = 0;
+                    selection[5].fillAmount = timerInPercentage;
                     break;
             }           
 
@@ -138,6 +174,10 @@ public class LobbyMenu : MonoBehaviour {
                         statusText.color = Color.red;
                         statusText.text = "You must first selec a character to play as";
                     }
+                }
+                else if(choice == 3)
+                {
+                    holdTimer = 0;
                 }
                 holdTimer = 0;
             }
