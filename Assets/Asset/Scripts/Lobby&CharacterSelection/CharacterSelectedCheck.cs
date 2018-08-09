@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class CharacterSelectedCheck : MonoBehaviour {
     [SerializeField] List<LobbyMenu> playerLobbyMenu;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -20,7 +21,7 @@ public class CharacterSelectedCheck : MonoBehaviour {
             AudioManager.instance.player2CharacterIndex = playerLobbyMenu[1].characterIndex;
 
             //! Move to tutorial scene
-            UnityEngine.SceneManagement.SceneManager.LoadScene(1);
+            UnityEngine.SceneManagement.SceneManager.LoadScene(20);
         }
 	}
 }

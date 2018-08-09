@@ -71,4 +71,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Asset/_Scenes/Lobby&CharacterSelection.unity
     guid: f87017fa31a014f4292526978af11730
+  - enabled: 1
+    path: Assets/Asset/_Scenes/TransitionScene.unity
+    guid: 0cc672bdcbdbdcd419a646ed016798c9
   m_configObjects: {}
