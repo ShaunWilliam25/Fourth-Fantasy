@@ -76,6 +76,7 @@ public class PauseScript : MonoBehaviour
             sceneManager.playerList[i].GetComponent<actionTimeBar>().startSelection = 0;
         }
         Time.timeScale = 1;
+        AudioManager.instance.isTutorial = false;
         UnityEngine.SceneManagement.SceneManager.LoadScene(6);
     }
     public void ClickSound()

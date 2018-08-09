@@ -13,8 +13,8 @@ public class CampsiteStatus : MonoBehaviour
     void Start()
     {
         csm = this.GetComponent<CampsiteManager>();
-        player1.health.text = "Health : " + csm.playerList[0].GetComponent<PlayerStats>().baseHealth.ToString();
-        player2.health.text = "Health : " + csm.playerList[1].GetComponent<PlayerStats>().baseHealth.ToString();
+        player1.health.text = "Health : " + (csm.playerList[0].GetComponent<PlayerStats>().baseHealth + ExtraHealth(1)).ToString();
+        player2.health.text = "Health : " + (csm.playerList[1].GetComponent<PlayerStats>().baseHealth + ExtraHealth(2)).ToString();
         for (int i=0;i<csm.playerList[0].GetComponent<PlayerVariableManager>().artifactsList.Count;i++)
         {
             player1.artifact[i].artifactName.text = csm.playerList[0].GetComponent<PlayerVariableManager>().artifactsList[i].GetComponent<ArtifactInformation>().name;
@@ -51,6 +51,58 @@ public class CampsiteStatus : MonoBehaviour
                 player2.skill[i].AddOnEffect[j].text = csm.playerList[1].GetComponent<PlayerVariableManager>().skillHolder[i].GetComponent<SkillDetail>().upgradedEffect[j];
             }
         }
+    }
+
+    private int ExtraHealth(int player)
+    {
+        int extra = 0;
+        switch(player)
+        {
+            case 1:
+                for (int i = 0; i < csm.playerList[0].GetComponent<PlayerVariableManager>().artifactsList.Count; i++)
+                {
+                    if (csm.playerList[0].GetComponent<PlayerVariableManager>().artifactsList[i].GetComponent<ArtifactEffect>() is AncientBookOfIntelligence && !csm.playerList[0].GetComponent<PlayerVariableManager>().artifactsList[i].GetComponent<ArtifactEffect>().isEffect)
+                    {
+                        extra += 100;
+                    }
+                    if (csm.playerList[0].GetComponent<PlayerVariableManager>().artifactsList[i].GetComponent<ArtifactEffect>() is HeartOfTheDemonLord && !csm.playerList[0].GetComponent<PlayerVariableManager>().artifactsList[i].GetComponent<ArtifactEffect>().isEffect && csm.playerList[0].GetComponent<PlayerStats>().name == "ExiledDemon")
+                    {
+                        extra += 250;
+                    }
+                    if (csm.playerList[0].GetComponent<PlayerVariableManager>().artifactsList[i].GetComponent<ArtifactEffect>() is ChronosLostMemento && !csm.playerList[0].GetComponent<PlayerVariableManager>().artifactsList[i].GetComponent<ArtifactEffect>().isEffect && csm.playerList[0].GetComponent<PlayerStats>().name == "TimePriestress")
+                    {
+                        extra += 300;
+                    }
+                    if (csm.playerList[0].GetComponent<PlayerVariableManager>().artifactsList[i].GetComponent<ArtifactEffect>() is ShieldOfTheFallenKing && !csm.playerList[0].GetComponent<PlayerVariableManager>().artifactsList[i].GetComponent<ArtifactEffect>().isEffect && csm.playerList[0].GetComponent<PlayerStats>().name == "OldGuard")
+                    {
+                        extra += 500;
+                    }
+                }
+                break;
+
+            case 2:
+                for (int i = 0; i < csm.playerList[1].GetComponent<PlayerVariableManager>().artifactsList.Count; i++)
+                {
+                    if (csm.playerList[1].GetComponent<PlayerVariableManager>().artifactsList[i].GetComponent<ArtifactEffect>() is AncientBookOfIntelligence && !csm.playerList[1].GetComponent<PlayerVariableManager>().artifactsList[i].GetComponent<ArtifactEffect>().isEffect)
+                    {
+                        extra += 100;
+                    }
+                    if (csm.playerList[1].GetComponent<PlayerVariableManager>().artifactsList[i].GetComponent<ArtifactEffect>() is HeartOfTheDemonLord && !csm.playerList[1].GetComponent<PlayerVariableManager>().artifactsList[i].GetComponent<ArtifactEffect>().isEffect && csm.playerList[1].GetComponent<PlayerStats>().name == "ExiledDemon")
+                    {
+                        extra += 250;
+                    }
+                    if (csm.playerList[1].GetComponent<PlayerVariableManager>().artifactsList[i].GetComponent<ArtifactEffect>() is ChronosLostMemento && !csm.playerList[1].GetComponent<PlayerVariableManager>().artifactsList[i].GetComponent<ArtifactEffect>().isEffect && csm.playerList[1].GetComponent<PlayerStats>().name == "TimePriestress")
+                    {
+                        extra += 300;
+                    }
+                    if (csm.playerList[1].GetComponent<PlayerVariableManager>().artifactsList[i].GetComponent<ArtifactEffect>() is ShieldOfTheFallenKing && !csm.playerList[1].GetComponent<PlayerVariableManager>().artifactsList[i].GetComponent<ArtifactEffect>().isEffect && csm.playerList[1].GetComponent<PlayerStats>().name == "OldGuard")
+                    {
+                        extra += 500;
+                    }
+                }
+                break;
+        }
+        return extra;
     }
 }
 
