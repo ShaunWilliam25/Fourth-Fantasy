@@ -15,6 +15,8 @@ public class AudioManager : MonoBehaviour {
     public int player2CharacterIndex;
     public bool isResetSkill = true;
     public bool isTutorial = true;
+    public bool isNeedGreedTutorialShown = false;
+    public bool isCampsiteTutorialShown = false;
     public bool isNewGameBrightness;
     public bool isNewGameVolume;
     public float brightness;
