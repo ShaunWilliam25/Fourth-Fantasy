@@ -69,9 +69,10 @@ public class SettingsMenu : MonoBehaviour
 
     private void Start()
     {
+        fullscreen.isOn = Screen.fullScreen;
+        Debug.Log(Screen.fullScreen);
         if (AudioManager.instance.isNewGameVolume)
         {
-            fullscreen.isOn = Screen.fullScreen;
             audioMixer.SetFloat("MasterVolume", -5f);
             audioMixer.GetFloat("MasterVolume", out outMasterVolume);
             masterSlider.value = AudioManager.Instance.dBToVolume(outMasterVolume);
