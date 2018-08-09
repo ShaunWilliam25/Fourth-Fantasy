@@ -31,6 +31,7 @@ public class PlayerDeadAndRevive : MonoBehaviour {
             playerVariable.GetComponent<PlayerSkillChooseTarget>().enabled = false;
             playerVariable.GetComponent<PlayerSkillExecution>().enabled = false;
             playerVariable.GetComponent<PlayerTakeDamage>().enabled = false;
+            playerVariable.GetComponent<PlayerStatusUpdate>().enabled = false;
             GetComponent<PlayerSkillExecution>().CancelInvoke();
             GetComponent<PlayerTakeDamage>().CancelInvoke();
         }
@@ -40,11 +41,14 @@ public class PlayerDeadAndRevive : MonoBehaviour {
             playerStats.reviveAction = 0;
             playerStats.autoRevive = false;
             playerStats.health = playerStats.baseHealth;
+            playerVariable.statusList.Clear();
+            GetComponent<PlayerStatusList>().statusIcon.Clear();
             playerVariable.GetComponent<actionTimeBar>().startSelection = 0;
             playerVariable.GetComponent<PlayerScrollSkill>().enabled = true;
             playerVariable.GetComponent<PlayerSkillChooseTarget>().enabled = true;
             playerVariable.GetComponent<PlayerSkillExecution>().enabled = true;
             GetComponent<PlayerVariableManager>().anim.GetComponent<Animator>().Play(GetComponent<PlayerVariableManager>().reviveAnimation);
+            playerVariable.GetComponent<PlayerStatusUpdate>().enabled = false;
             Invoke("ResetAnimation", reviveAnimationTimer);
         }
         if(playerStats.knockedOut)

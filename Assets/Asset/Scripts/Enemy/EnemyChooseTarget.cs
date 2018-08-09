@@ -92,12 +92,12 @@ public class EnemyChooseTarget : EnemyVariableManager {
         else
         {
             this.GetComponent<EnemyVariableManager>().Target = this.GetComponent<EnemyVariableManager>().loAggroTarget;
-            if (this.GetComponent<EnemyVariableManager>().Target.GetComponent<PlayerVariableManager>().playerStats.health <= 0)
+            if (this.GetComponent<EnemyVariableManager>().Target.GetComponent<PlayerStats>().knockedOut)
             {
                 this.GetComponent<EnemyVariableManager>().Target = this.GetComponent<EnemyVariableManager>().hiAggroTarget;
             }
         }
-        if(this.GetComponent<EnemyVariableManager>().Target.GetComponent<PlayerVariableManager>().playerStats.health <= 0)
+        if(this.GetComponent<EnemyVariableManager>().Target.GetComponent<PlayerStats>().knockedOut)
         {
             this.GetComponent<EnemyVariableManager>().Target = this.GetComponent<EnemyVariableManager>().loAggroTarget;
         }
