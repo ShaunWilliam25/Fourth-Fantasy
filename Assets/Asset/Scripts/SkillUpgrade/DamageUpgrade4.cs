@@ -14,8 +14,8 @@ public class DamageUpgrade4 : SkillEffect
 
     public override void Execute(GameObject targetedEnemy)
     {
-        damage = (int)(damage * DamageMultiplier());
-        targetedEnemy.GetComponent<EnemyTakeDamage>().EnemyDamage(damage);
+        int totalDamage = (int)(damage * DamageMultiplier());
+        targetedEnemy.GetComponent<EnemyTakeDamage>().EnemyDamage(totalDamage);
         targetedEnemy.GetComponent<EnemyVariableManager>().statusList.Add(Instantiate(status[0]));
     }
 }

@@ -26,10 +26,10 @@ public class DamageUpgrade3 : SkillEffect
 
     public override void Execute(GameObject targetedEnemy)
     {
-        damage = (int)(damage * DamageMultiplier());
+        int totalDamage = (int)(damage * DamageMultiplier());
         for (int i = 0; i < enemyList.Count; i++)
         {
-            enemyList[i].GetComponent<EnemyTakeDamage>().EnemyDamage(damage);
+            enemyList[i].GetComponent<EnemyTakeDamage>().EnemyDamage(totalDamage);
             enemyList[i].GetComponent<EnemyVariableManager>().statusList.Add(Instantiate(status[0]));
         }
     }
