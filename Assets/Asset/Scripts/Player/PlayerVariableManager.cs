@@ -17,7 +17,6 @@ public class PlayerVariableManager : MonoBehaviour {
     [Header("Player Scroll Skill")]
     public string playerButton;
     public GameObject tempSkill;
-    public Character_Skill_List skillListScript;
     public float offset;
 
     //! Character Skill List
@@ -102,7 +101,6 @@ private void Awake()
         {
             playerButton = "P2_Button";
         }
-        skillListScript = this.GetComponent<Character_Skill_List>();
 
         offset = 1.23f;
         /*timeNeeded = 0.5f;

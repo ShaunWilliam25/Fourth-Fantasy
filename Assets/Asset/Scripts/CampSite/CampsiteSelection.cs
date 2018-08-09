@@ -19,6 +19,7 @@ public class CampsiteSelection : MonoBehaviour
     public GameObject upgradeObject2;
     public ButtonStatus buttonStatus;
     private int maxUpgrade = 3;
+    private int currentWave;
 
     void Start()
     {
@@ -28,10 +29,7 @@ public class CampsiteSelection : MonoBehaviour
         csm = GetComponent<CampsiteManager>();
         player1.upgradeLeft = 1;
         player2.upgradeLeft = 1;
-        /*for(int i = 0; i<csm.playerList.Count; i++)
-        {
-            //if (csm.playerList[i].GetComponent<PlayerVariableManager>().artifactsList.Exists(x => x.)
-        }*/
+        currentWave = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().waveIndex;
     }
 
     void Update()
@@ -395,7 +393,14 @@ public class CampsiteSelection : MonoBehaviour
                             showUI.player1.popUpText.text = "1. Deals 150 damage to single enemy (30%)\r\n2. Deals 100 damage to all enemies(30 %)\r\n3. Deals 90 damage to all enemies and causes poison(20 %)\r\n4. Deals 130 damage to single enemy and causes slow(20 %)";                            
                             break;
                         case 1:
-                            showUI.player1.popUpText.text = "1. Heals 100 HP to self (50%)\r\n2. Heals 50 HP to all allies (40%)\r\n3.Heals 50 HP for each bad status effect on character (10%)";
+                            if(currentWave < 3)
+                            {
+                                showUI.player1.popUpText.text = "1. Heals 100 HP to self (50%)\r\n2. Heals 50 HP to all allies (40%)\r\n3.Heals 50 HP for each bad status effect on character (10%)";
+                            }
+                            else if(currentWave >= 3)
+                            {
+                                showUI.player1.popUpText.text = "1. Heals 100 HP to self (50%)\r\n2. Heals 50 HP to all allies (25%)\r\n3. Heals 50 HP for each bad status effect on character (5%)\r\n4. Extra Life(20%)";
+                            }
                             break;
                         case 2:
                             showUI.player1.popUpText.text = "1. Dispels one bad status effect on self (35%)\r\n2. Dispels one good status effect on enemy(35%)\r\n3. 20 % chance adding bless to self(20%)\r\n4. Inflicts curse to enemy(10%)";
@@ -534,7 +539,14 @@ public class CampsiteSelection : MonoBehaviour
                             showUI.player2.popUpText.text = "1. Deals 150 damage to single enemy (30%)\r\n2. Deals 100 damage to all enemies(30 %)\r\n3. Deals 90 damage to all enemies and causes poison(20 %)\r\n4. Deals 130 damage to single enemy and causes slow(20 %)";
                             break;
                         case 1:
-                            showUI.player2.popUpText.text = "1. Heals 100 HP to self (50%)\r\n2. Heals 50 HP to all allies (40%)\r\n3.Heals 50 HP for each bad status effect on character (10%)";
+                            if (currentWave < 3)
+                            {
+                                showUI.player2.popUpText.text = "1. Heals 100 HP to self (50%)\r\n2. Heals 50 HP to all allies (40%)\r\n3.Heals 50 HP for each bad status effect on character (10%)";
+                            }
+                            else if (currentWave >= 3)
+                            {
+                                showUI.player2.popUpText.text = "1. Heals 100 HP to self (50%)\r\n2. Heals 50 HP to all allies (25%)\r\n3. Heals 50 HP for each bad status effect on character (5%)\r\n4. Extra Life(20%)";
+                            }
                             break;
                         case 2:
                             showUI.player2.popUpText.text = "1. Dispels one bad status effect on self (35%)\r\n2. Dispels one good status effect on enemy(35%)\r\n3. 20 % chance adding bless to self(20%)\r\n4. Inflicts curse to enemy(10%)";

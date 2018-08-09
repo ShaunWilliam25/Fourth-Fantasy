@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class SkillUpgrade : MonoBehaviour
 {
-    private int progressIndex = 1;
+    private int wave;
     public GameObject heal1;
     public GameObject heal2;
     public GameObject heal3;
@@ -20,10 +20,10 @@ public class SkillUpgrade : MonoBehaviour
 
     public GameObject randomHeal()
     {
+        wave = GameObject.FindGameObjectWithTag("AudioManager").GetComponent<AudioManager>().waveIndex;
         int rand = Random.Range(1, 101);
-        //Debug.Log(rand);
         GameObject upgrade = null;
-        if(progressIndex == 1)
+        if(wave < 3)
         {
             if (rand > 0 && rand <= 50)
             {
@@ -38,7 +38,7 @@ public class SkillUpgrade : MonoBehaviour
                 upgrade = heal3;
             }
         }
-        if (progressIndex == 2)
+        if (wave >= 3)
         {
             if (rand > 0 && rand <= 50)
             {

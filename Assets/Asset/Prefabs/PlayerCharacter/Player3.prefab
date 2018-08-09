@@ -82,7 +82,6 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4379549781811738}
-  - component: {fileID: 114482350763557488}
   - component: {fileID: 114302520856173212}
   - component: {fileID: 114818383421838550}
   - component: {fileID: 114697763861589676}
@@ -234,17 +233,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01af62beeeda80949824fff2de892593, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetCursorPoints: []
+  statusList: []
+  playerStats: {fileID: 0}
+  playerButton: 
+  tempSkill: {fileID: 0}
+  offset: 0
+  skillList: []
+  skillHolder: []
+  actionTimerBarScript: {fileID: 0}
+  testSkill: {fileID: 0}
+  testEnemy: {fileID: 0}
+  oriColor: {r: 0, g: 0, b: 0, a: 0}
+  anim: {fileID: 0}
+  battleLogScript: {fileID: 0}
+  allySpawnPoint: {fileID: 0}
+  playerTargetCursorPoints: []
+  enemyTargetCursorPoints: []
   enemySpawnScript: {fileID: 0}
+  playerSpawnScript: {fileID: 0}
   sceneManagerScript: {fileID: 0}
   battleStateManagerScript: {fileID: 0}
   targetCursor: {fileID: 1764970445635982}
-  offset: 0
-  playerButton: 
   cursorIndex: 0
-  holdTimer: 0
-  timeNeeded: 1
+  chooseTargetHoldTimer: 0
+  chooseTargetTimeNeeded: 0
   targetedEnemy: {fileID: 0}
+  targetCursorBar: {fileID: 0}
+  chooseTargetHoldTimerInPercentage: 0
+  isTargetLockedIn: 0
+  isEffectTargetLockedIn: 0
+  idleAnimation: 
+  attackAnimation: 
+  injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
+  reviveAnimation: 
+  gameState: 0
+  artifactsList: []
 --- !u!114 &114252994927887546
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -256,7 +281,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7b79dc312dfcd9f418be5a9ac01c1698, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  statusList: []
+  playerStats: {fileID: 0}
+  playerButton: 
+  tempSkill: {fileID: 0}
+  offset: 0
+  skillList: []
+  skillHolder: []
+  actionTimerBarScript: {fileID: 0}
+  testSkill: {fileID: 0}
+  testEnemy: {fileID: 0}
+  oriColor: {r: 0, g: 0, b: 0, a: 0}
+  anim: {fileID: 0}
+  battleLogScript: {fileID: 0}
+  allySpawnPoint: {fileID: 0}
+  playerTargetCursorPoints: []
+  enemyTargetCursorPoints: []
+  enemySpawnScript: {fileID: 0}
+  playerSpawnScript: {fileID: 0}
+  sceneManagerScript: {fileID: 0}
+  battleStateManagerScript: {fileID: 0}
+  targetCursor: {fileID: 0}
+  cursorIndex: 0
+  chooseTargetHoldTimer: 0
+  chooseTargetTimeNeeded: 0
+  targetedEnemy: {fileID: 0}
+  targetCursorBar: {fileID: 0}
+  chooseTargetHoldTimerInPercentage: 0
+  isTargetLockedIn: 0
+  isEffectTargetLockedIn: 0
+  idleAnimation: 
+  attackAnimation: 
+  injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
+  reviveAnimation: 
   gameState: 0
+  artifactsList: []
 --- !u!114 &114302520856173212
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -268,50 +329,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2544d6ab25bd05e43915825738dd742f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  strength: 0
-  baseStrength: 0
-  magic: 0
-  baseMagic: 0
-  spirit: 0
-  baseSpirit: 0
-  defense: 0
-  baseDefense: 0
-  criticalChance: 0
-  baseCriticalChance: 0
-  criticalDamage: 0
-  baseCriticalDamage: 0
-  accuracy: 0
-  baseAccuracy: 0
-  statusResistance: []
-  baseStatusResistance: []
   health: 0
   baseHealth: 0
-  speed: 0
-  baseSpeed: 0
-  evasion: 0
-  baseEvasion: 0
-  timeNeeded: 0
-  actionTimer: 0
+  immune: 0
+  silence: 0
+  berserk: 0
   name: 
   aggro: 0
---- !u!114 &114482350763557488
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1597681468926576}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78415e12853004a49a9f6fee412fe2c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  skillList:
-  - {fileID: 1532596685821658, guid: 0e5db31875af60140ad9871c6b1f4500, type: 2}
-  - {fileID: 1314252507990150, guid: a424fd577a25d374f877b3ba0a62572f, type: 2}
-  - {fileID: 1867597038940726, guid: ae1f6cb908d96df42a9ad789066242a5, type: 2}
-  - {fileID: 1136784145477246, guid: 98ab0bceb1b4da548a94e1d7148e66c4, type: 2}
-  - {fileID: 1257337590300978, guid: eaef0fde0d6f1fd43840b609fa338767, type: 2}
-  skillHolder: []
+  knockedOut: 0
+  reviveAction: 0
+  autoRevive: 0
+  taunt: 0
 --- !u!114 &114697763861589676
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -323,12 +351,43 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0ee18a2518bf6c4583511c32fcc3cf3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  battleStateManager: {fileID: 0}
-  lockInSkill: {fileID: 0}
-  skillList: []
+  statusList: []
+  playerStats: {fileID: 0}
   playerButton: 
-  holdTimer: 0
-  timeNeeded: 0
+  tempSkill: {fileID: 0}
+  offset: 0
+  skillList: []
+  skillHolder: []
+  actionTimerBarScript: {fileID: 0}
+  testSkill: {fileID: 0}
+  testEnemy: {fileID: 0}
+  oriColor: {r: 0, g: 0, b: 0, a: 0}
+  anim: {fileID: 0}
+  battleLogScript: {fileID: 0}
+  allySpawnPoint: {fileID: 0}
+  playerTargetCursorPoints: []
+  enemyTargetCursorPoints: []
+  enemySpawnScript: {fileID: 0}
+  playerSpawnScript: {fileID: 0}
+  sceneManagerScript: {fileID: 0}
+  battleStateManagerScript: {fileID: 0}
+  targetCursor: {fileID: 0}
+  cursorIndex: 0
+  chooseTargetHoldTimer: 0
+  chooseTargetTimeNeeded: 0
+  targetedEnemy: {fileID: 0}
+  targetCursorBar: {fileID: 0}
+  chooseTargetHoldTimerInPercentage: 0
+  isTargetLockedIn: 0
+  isEffectTargetLockedIn: 0
+  idleAnimation: 
+  attackAnimation: 
+  injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
+  reviveAnimation: 
+  gameState: 0
+  artifactsList: []
 --- !u!114 &114818383421838550
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -340,10 +399,50 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22e09e130d64c704a9fe236ea18eecf5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  statusList: []
+  playerStats: {fileID: 0}
   playerButton: 
-  skillList: {fileID: 0}
+  tempSkill: {fileID: 0}
   offset: 0
-  battleStateManager: {fileID: 0}
+  skillList:
+  - {fileID: 0}
+  skillHolder: []
+  actionTimerBarScript: {fileID: 0}
+  testSkill: {fileID: 0}
+  testEnemy: {fileID: 0}
+  oriColor: {r: 0, g: 0, b: 0, a: 0}
+  anim: {fileID: 0}
+  battleLogScript: {fileID: 0}
+  allySpawnPoint: {fileID: 0}
+  playerTargetCursorPoints: []
+  enemyTargetCursorPoints: []
+  enemySpawnScript: {fileID: 0}
+  playerSpawnScript: {fileID: 0}
+  sceneManagerScript: {fileID: 0}
+  battleStateManagerScript: {fileID: 0}
+  targetCursor: {fileID: 0}
+  cursorIndex: 0
+  chooseTargetHoldTimer: 0
+  chooseTargetTimeNeeded: 0
+  targetedEnemy: {fileID: 0}
+  targetCursorBar: {fileID: 0}
+  chooseTargetHoldTimerInPercentage: 0
+  isTargetLockedIn: 0
+  isEffectTargetLockedIn: 0
+  idleAnimation: 
+  attackAnimation: 
+  injuredAnimation: 
+  spellAnimation: 
+  deathAnimation: 
+  reviveAnimation: 
+  gameState: 0
+  artifactsList: []
+  isScroll: 0
+  skillBox: {fileID: 0}
+  skillSelected: 0
+  boxOffset: 0
+  startPosition: 0
+  characterOffset: 0
 --- !u!212 &212272966066266694
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -432,7 +531,7 @@ SpriteRenderer:
   m_Size: {x: 1.83, y: 2.22}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
 --- !u!212 &212756548094821168
 SpriteRenderer:

@@ -135,7 +135,7 @@ public class ShowUI : MonoBehaviour
         }
         else if (player2.state == CAMPSITE_STATE.SKILL_UPGRADE)
         {
-            player1.instruction.text = "Press L to Scroll, Hold to Confirm";
+            player2.instruction.text = "Press L to Scroll, Hold to Confirm";
             player2.select.SetActive(false);
             player2.checkPg1.SetActive(false);
             player2.checkPg2.SetActive(false);

@@ -138,7 +138,6 @@ GameObject:
   - component: {fileID: 4672296825237456}
   - component: {fileID: 114402533304485642}
   - component: {fileID: 114978728759129096}
-  - component: {fileID: 114708175796117256}
   - component: {fileID: 114354841431699314}
   - component: {fileID: 114770210834766906}
   - component: {fileID: 114326804650495922}
@@ -590,7 +589,6 @@ MonoBehaviour:
   playerStats: {fileID: 0}
   playerButton: 
   tempSkill: {fileID: 0}
-  skillListScript: {fileID: 0}
   offset: 0
   skillList: []
   skillHolder: []
@@ -659,7 +657,6 @@ MonoBehaviour:
   playerStats: {fileID: 114354841431699314}
   playerButton: P2_Button
   tempSkill: {fileID: 0}
-  skillListScript: {fileID: 114708175796117256}
   offset: 1.23
   skillList: []
   skillHolder: []
@@ -713,7 +710,6 @@ MonoBehaviour:
   playerStats: {fileID: 114354841431699314}
   playerButton: P2_Button
   tempSkill: {fileID: 0}
-  skillListScript: {fileID: 114708175796117256}
   offset: 1.23
   skillList: []
   skillHolder: []
@@ -979,7 +975,6 @@ MonoBehaviour:
   playerStats: {fileID: 114354841431699314}
   playerButton: P2_Button
   tempSkill: {fileID: 0}
-  skillListScript: {fileID: 114708175796117256}
   offset: 1.23
   skillList: []
   skillHolder: []
@@ -1170,60 +1165,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &114708175796117256
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1141401327878772}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 78415e12853004a49a9f6fee412fe2c3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  statusList: []
-  playerStats: {fileID: 114354841431699314}
-  playerButton: P2_Button
-  tempSkill: {fileID: 0}
-  skillListScript: {fileID: 114708175796117256}
-  offset: 1.23
-  skillList:
-  - {fileID: 1532596685821658, guid: 0e5db31875af60140ad9871c6b1f4500, type: 2}
-  - {fileID: 1314252507990150, guid: a424fd577a25d374f877b3ba0a62572f, type: 2}
-  - {fileID: 1867597038940726, guid: ae1f6cb908d96df42a9ad789066242a5, type: 2}
-  - {fileID: 1136784145477246, guid: 98ab0bceb1b4da548a94e1d7148e66c4, type: 2}
-  - {fileID: 1257337590300978, guid: eaef0fde0d6f1fd43840b609fa338767, type: 2}
-  skillHolder: []
-  actionTimerBarScript: {fileID: 114678327390306948}
-  testSkill: {fileID: 0}
-  testEnemy: {fileID: 0}
-  oriColor: {r: 0, g: 0, b: 0, a: 0}
-  anim: {fileID: 0}
-  battleLogScript: {fileID: 0}
-  allySpawnPoint: {fileID: 0}
-  playerTargetCursorPoints: []
-  enemyTargetCursorPoints: []
-  enemySpawnScript: {fileID: 0}
-  playerSpawnScript: {fileID: 0}
-  sceneManagerScript: {fileID: 0}
-  battleStateManagerScript: {fileID: 114326804650495922}
-  targetCursor: {fileID: 0}
-  cursorIndex: 0
-  chooseTargetHoldTimer: 0
-  chooseTargetTimeNeeded: 0
-  targetedEnemy: {fileID: 0}
-  targetCursorBar: {fileID: 0}
-  chooseTargetHoldTimerInPercentage: 0
-  isTargetLockedIn: 0
-  isEffectTargetLockedIn: 0
-  idleAnimation: 
-  attackAnimation: 
-  injuredAnimation: 
-  spellAnimation: 
-  deathAnimation: 
-  reviveAnimation: 
-  gameState: 0
-  artifactsList: []
 --- !u!114 &114717022300325972
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1260,7 +1201,6 @@ MonoBehaviour:
   playerStats: {fileID: 0}
   playerButton: 
   tempSkill: {fileID: 0}
-  skillListScript: {fileID: 0}
   offset: 2
   skillList: []
   skillHolder: []
@@ -1309,7 +1249,6 @@ MonoBehaviour:
   playerStats: {fileID: 0}
   playerButton: 
   tempSkill: {fileID: 0}
-  skillListScript: {fileID: 0}
   offset: 0
   skillList:
   - {fileID: 0}
@@ -1517,7 +1456,6 @@ MonoBehaviour:
   playerStats: {fileID: 114354841431699314}
   playerButton: P2_Button
   tempSkill: {fileID: 0}
-  skillListScript: {fileID: 114708175796117256}
   offset: 1.23
   skillList:
   - {fileID: 1257337590300978, guid: eaef0fde0d6f1fd43840b609fa338767, type: 2}
