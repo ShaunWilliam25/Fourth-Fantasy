@@ -10,16 +10,10 @@ public class BattleStateManager : PlayerVariableManager {
         CHOOSING_TARGET,
         EXECUTE_SKILL,
         PAUSED
-    }    
+    }
 
-    // Use this for initialization
 	void Start ()
     {
         gameState = GAMESTATE.CHOOSING_SKILL;	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
 	}
 }

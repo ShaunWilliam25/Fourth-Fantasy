@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PlayerSkillExecution : PlayerVariableManager
 {
@@ -13,19 +12,11 @@ public class PlayerSkillExecution : PlayerVariableManager
 
     private void Awake()
     {
-
         actionTimerBarScript = this.GetComponent<actionTimeBar>();
         scrollSkill = this.GetComponent<PlayerScrollSkill>();
         //statusUpdateScript = GetComponent<PlayerStatusUpdate>();
     }
 
-    // Use this for initialization
-    void Start()
-    {
-
-    }
-
-    // Update is called once per frame
     void Update()
     {
         if (this.GetComponent<PlayerVariableManager>().battleStateManagerScript.gameState == BattleStateManager.GAMESTATE.EXECUTE_SKILL)

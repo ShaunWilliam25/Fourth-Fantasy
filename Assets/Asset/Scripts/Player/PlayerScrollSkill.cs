@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class PlayerScrollSkill : PlayerVariableManager {
 
-    public int   isScroll = 0;
+    public int isScroll = 0;
 
     [SerializeField] private GameObject skillBox;
     private Transform boxPos;
@@ -14,12 +14,6 @@ public class PlayerScrollSkill : PlayerVariableManager {
     public float startPosition;
     [SerializeField] private float characterOffset;
 
-    private void Awake()
-    {
-
-    }
-
-    // Use this for initialization
     void Start()
     {
         boxPos = skillBox.transform;
@@ -27,7 +21,6 @@ public class PlayerScrollSkill : PlayerVariableManager {
         isScroll = 0;
     }
 
-    // Update is called once per frame
     void Update()
     {
         if(this.GetComponent<PlayerVariableManager>().battleStateManagerScript.gameState == BattleStateManager.GAMESTATE.CHOOSING_SKILL)

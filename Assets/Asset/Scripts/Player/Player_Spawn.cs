@@ -22,7 +22,6 @@ public class Player_Spawn : MonoBehaviour {
     {
         if(!isCharacterStatsModified)
         {
-
             //! Setting the values for players
             characterIndex[0] = AudioManager.instance.player1CharacterIndex;
             characterIndex[1] = AudioManager.instance.player2CharacterIndex;
@@ -132,8 +131,6 @@ public class Player_Spawn : MonoBehaviour {
                 for (int i = 0; i < sceneManager.playerList.Count; i++)
                 {
                     sceneManager.playerList[i].GetComponent<PlayerVariableManager>().enemySpawnScript = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<Enemy_Spawn>();
-                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().playerSpawnScript = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<Player_Spawn>();
-                    sceneManager.playerList[i].GetComponent<PlayerVariableManager>().sceneManagerScript = GameObject.FindGameObjectWithTag("SceneManager").GetComponent<SceneManager>();
                     sceneManager.playerList[i].GetComponent<PlayerVariableManager>().battleLogScript = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<battleLog>();
                     sceneManager.playerList[i].GetComponent<PlayerVariableManager>().gameState = BattleStateManager.GAMESTATE.CHOOSING_SKILL;
                     sceneManager.playerList[i].GetComponent<PlayerVariableManager>().isTargetLockedIn = false;
