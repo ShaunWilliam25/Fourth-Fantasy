@@ -49,7 +49,7 @@ public class PlayerDeadAndRevive : MonoBehaviour {
             playerVariable.GetComponent<PlayerSkillChooseTarget>().enabled = true;
             playerVariable.GetComponent<PlayerSkillExecution>().enabled = true;
             GetComponent<PlayerVariableManager>().anim.GetComponent<Animator>().Play(GetComponent<PlayerVariableManager>().reviveAnimation);
-            playerVariable.GetComponent<PlayerStatusUpdate>().enabled = false;
+            playerVariable.GetComponent<PlayerStatusUpdate>().enabled = true;
             Invoke("ResetAnimation", reviveAnimationTimer);
         }
 	}

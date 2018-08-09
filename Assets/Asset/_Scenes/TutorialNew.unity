@@ -2688,7 +2688,7 @@ Prefab:
     - target: {fileID: 114283907612401484, guid: 85f31d3e51685954eb188ab6ccbc77c7,
         type: 2}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224204891800692122, guid: 85f31d3e51685954eb188ab6ccbc77c7,
         type: 2}
@@ -2946,7 +2946,7 @@ Prefab:
     - target: {fileID: 114283907612401484, guid: 85f31d3e51685954eb188ab6ccbc77c7,
         type: 2}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: setMasterVolume
+      value: Brightness
       objectReference: {fileID: 0}
     - target: {fileID: 114283907612401484, guid: 85f31d3e51685954eb188ab6ccbc77c7,
         type: 2}
@@ -3008,6 +3008,16 @@ Prefab:
       propertyPath: m_AnchoredPosition.x
       value: -5
       objectReference: {fileID: 0}
+    - target: {fileID: 114283907612401484, guid: 85f31d3e51685954eb188ab6ccbc77c7,
+        type: 2}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114283907612401484, guid: 85f31d3e51685954eb188ab6ccbc77c7,
+        type: 2}
+      propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 519420034}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 85f31d3e51685954eb188ab6ccbc77c7, type: 2}
   m_IsPrefabParent: 0
