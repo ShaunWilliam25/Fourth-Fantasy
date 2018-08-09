@@ -40,7 +40,6 @@ public class ShowUI : MonoBehaviour
             }
 
             campsiteTutorial.gameObject.SetActive(true);
-            isShowingTutorial = true;
 
             if(isCanPress)
             {
@@ -48,7 +47,6 @@ public class ShowUI : MonoBehaviour
                 {
                     AudioManager.instance.isCampsiteTutorialShown = true;
                     campsiteTutorial.gameObject.SetActive(false);
-                    isShowingTutorial = false;
                     isCanPress = false;
                 }                
             }
