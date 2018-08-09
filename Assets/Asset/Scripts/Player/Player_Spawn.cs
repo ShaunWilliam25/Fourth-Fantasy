@@ -142,7 +142,7 @@ public class Player_Spawn : MonoBehaviour {
                     sceneManager.playerList[i].GetComponent<actionTimeBar>().timeRequired = 3f;
                     sceneManager.playerList[i].GetComponent<PlayerVariableManager>().anim.GetComponent<Animator>().Play(sceneManager.playerList[i].GetComponent<PlayerVariableManager>().idleAnimation);
 
-                    sceneManager.playerList[i].GetComponent<PlayerStats>().health = characterList[i].maxHealth;
+                    sceneManager.playerList[i].GetComponent<PlayerStats>().health = sceneManager.playerList[i].GetComponent<PlayerStats>().baseHealth;
                     sceneManager.playerList[i].GetComponent<PlayerStats>().Reset();
 
                     // Detect Start of Battle to give effect

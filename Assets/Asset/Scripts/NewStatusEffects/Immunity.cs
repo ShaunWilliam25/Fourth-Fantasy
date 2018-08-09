@@ -38,8 +38,7 @@ public class Immunity : StatusDetail
                 {
                     if (user.GetComponent<PlayerVariableManager>().statusList[i].GetComponent<StatusDetail>().type == "Bad")
                     {
-                        user.GetComponent<PlayerVariableManager>().statusList[i].GetComponent<StatusDetail>().RemoveStatus();
-                        user.GetComponent<PlayerVariableManager>().statusList.Remove(GetComponent<PlayerVariableManager>().statusList[i]);
+                        user.GetComponent<PlayerVariableManager>().statusList[i].GetComponent<StatusDetail>().secondDuration = 0;
                     }
                 }
                 user.GetComponent<PlayerStats>().immune = true;
@@ -50,8 +49,7 @@ public class Immunity : StatusDetail
                 {
                     if (user.GetComponent<EnemyVariableManager>().statusList[i].GetComponent<StatusDetail>().type == "Bad")
                     {
-                        user.GetComponent<EnemyVariableManager>().statusList[i].GetComponent<StatusDetail>().RemoveStatus();
-                        user.GetComponent<EnemyVariableManager>().statusList.Remove(GetComponent<EnemyVariableManager>().statusList[i]);
+                        user.GetComponent<PlayerVariableManager>().statusList[i].GetComponent<StatusDetail>().secondDuration = 0;
                     }
                 }
                 user.GetComponent<EnemyStats>().immune = true;
