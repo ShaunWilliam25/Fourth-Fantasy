@@ -8,6 +8,4 @@ public class BurningMark : ArtifactEffect {
     {
         this.gameObject.SetActive(false);
     }
-
-
 }

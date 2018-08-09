@@ -36,7 +36,5 @@ public class ChronosLostMemento : ArtifactEffect
                 hpHeal = false;
             }
         }
-
-        
     }
 }
