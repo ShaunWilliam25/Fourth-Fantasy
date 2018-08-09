@@ -28,6 +28,9 @@ public class ShowUI : MonoBehaviour
 
     void Update()
     {
+        //! Campsite Tutorial
+
+
         if (css.player1.upgradeLeft <= 0)   player1.upgradeText.color = Color.grey;
         else player1.upgradeText.color = Color.white;
         if (css.player2.upgradeLeft <= 0) player2.upgradeText.color = Color.grey;

@@ -180,7 +180,6 @@ public class NeedGreedRandomizer : MonoBehaviour
 
     public void addArtifactToPlayer()
     {
-        Debug.Log("addtoarti");
         if (ArtifactSpawner.GetComponent<ArtifactScript>().createdArtifactList.Count > 0)
         {
             //! Showing the need greed tutorial
