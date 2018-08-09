@@ -54,6 +54,8 @@ public class TutorialTaskCheck : MonoBehaviour {
                     {
                         toggleList[i].isOn = false;
                     }
+                    tutorial.taskCanvas.enabled = false;
+                    tutorial.isLectureDone = false;
                     tutorial.tutorialStage = TutorialAppear.TUTORIAL_STAGE.STAGE_07;                    
                 }
             }            

@@ -14,6 +14,7 @@ public class AudioManager : MonoBehaviour {
     public int player1CharacterIndex;
     public int player2CharacterIndex;
     public bool isResetSkill = true;
+    public bool isTutorial = true;
 
     public static AudioManager Instance
     {

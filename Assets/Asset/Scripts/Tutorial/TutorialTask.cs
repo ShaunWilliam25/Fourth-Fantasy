@@ -21,7 +21,7 @@ public class TutorialTask : MonoBehaviour {
     public List<EnemyActionTimeBar> enemyAtbList;
     public List<GameObject> enemyAimIcon;
 
-    public float spiritDoorDead = 0f;    
+    public float wolfDead = 0f;    
 
     private void Awake()
     {
@@ -123,15 +123,16 @@ public class TutorialTask : MonoBehaviour {
 
         if(tutorialScript.tutorialStage == TutorialAppear.TUTORIAL_STAGE.STAGE_06)
         {
-            text.text = "Kill the wolf" + spiritDoorDead + "/1";
+            text.text = "Kill the wolf";
 
             if(sceneManager.enemyList.Count <= 0)
             {
-                if(spiritDoorDead<= 0)
+                /*if(wolfDead <= 0)
                 {
-                    spiritDoorDead++;
+                    wolfDead++;
                     taskCheck.isOn = true;
-                }                
+                }*/
+                taskCheck.isOn = true;
             }
         }
     }

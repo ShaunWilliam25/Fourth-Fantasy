@@ -17,7 +17,7 @@ public class TutorialAppear : MonoBehaviour {
     public GameObject tint;
     [SerializeField] SceneManager sceneManager;
     [SerializeField] List<actionTimeBar> playerAtbList;
-    bool isLectureDone = false;
+    public bool isLectureDone = false;
     bool isOrderLayerAdjusted = false;
     bool isLecture6ShowedBefore = false;
     public bool isEnemyAttacked = false;
@@ -27,6 +27,7 @@ public class TutorialAppear : MonoBehaviour {
     [SerializeField] bool isCanPress = false;
     [SerializeField] float cannotPressTimer = 0f;
     [SerializeField] float cannotPressTime;
+    static public bool isTheEndOfTutorial = false;
 
     public enum TUTORIAL_STAGE
     {
@@ -51,8 +52,15 @@ public class TutorialAppear : MonoBehaviour {
     // Use this for initialization
     void Start ()
     {
-        //eventSystem.SetSelectedGameObject(exit);
-        tutorialStage = TUTORIAL_STAGE.STAGE_01;
+        if(!isTheEndOfTutorial)
+        {
+            tutorialStage = TUTORIAL_STAGE.STAGE_01;
+        }
+        else
+        {
+            tutorialStage = TUTORIAL_STAGE.THE_END;
+        }
+        
     }
 
     private void OnEnable()
@@ -343,11 +351,13 @@ public class TutorialAppear : MonoBehaviour {
             {
                 isCanPress = true;
             }
-            
-            
-            //! Activate the campsite picture
-            needGreedTutorial.gameObject.SetActive(true);
-            Debug.Log("STAGE 7");
+
+            if(!isLectureDone)
+            {
+                //! Activate the campsite picture
+                needGreedTutorial.gameObject.SetActive(true);
+            }
+
 
 
             //! Cannot press while the isCanPress bool is false
@@ -358,7 +368,8 @@ public class TutorialAppear : MonoBehaviour {
                     needGreedTutorial.gameObject.SetActive(false);
                     cannotPressTimer = 0f;
                     isCanPress = false;
-                    tutorialStage = TUTORIAL_STAGE.STAGE_08;
+                    isLectureDone = true;                    
+                    //tutorialStage = TUTORIAL_STAGE.STAGE_08;
                 }
             }            
         }
@@ -370,10 +381,14 @@ public class TutorialAppear : MonoBehaviour {
             {
                 isCanPress = true;
             }
-            
-            //! Activate the campsite picture
-            campsiteTutorial.gameObject.SetActive(true);
-            Debug.Log("STAGE 8");
+
+            //! If statement to prevent the canvas from keeping on appearing
+            if (!isLectureDone)
+            {
+                //! Activate the campsite picture
+                campsiteTutorial.gameObject.SetActive(true);
+            }
+
 
             //! Cannot press while the isCanPress bool is false
             if(isCanPress)
@@ -383,7 +398,9 @@ public class TutorialAppear : MonoBehaviour {
                     campsiteTutorial.gameObject.SetActive(false);
                     isCanPress = false;
                     cannotPressTimer = 0f;
-                    tutorialStage = TUTORIAL_STAGE.THE_END;
+                    isLectureDone = true;
+                    UnityEngine.SceneManagement.SceneManager.LoadScene(7);
+                    //tutorialStage = TUTORIAL_STAGE.THE_END;
                 }
             }
             
@@ -423,6 +440,9 @@ public class TutorialAppear : MonoBehaviour {
                     }
                     isCanPress = false;
                     cannotPressTimer = 0f;
+                    //! Turn off the isTutorial bool to prevent weird happenings
+                    AudioManager.instance.isTutorial = false;
+                    isTheEndOfTutorial = false;
                     UnityEngine.SceneManagement.SceneManager.LoadScene(6);
                 }
             }

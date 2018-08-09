@@ -2812,9 +2812,9 @@ MonoBehaviour:
   playerAtbList:
   - {fileID: 0}
   - {fileID: 0}
-  isLecture6ShowedBefore: 0
+  isLectureDone: 0
   isEnemyAttacked: 0
-  isATBListFilled: 0
+  isPlayerATBListFilled: 0
   campsiteTutorial: {fileID: 1978719395}
   needGreedTutorial: {fileID: 1284362380}
   isCanPress: 0
@@ -3169,7 +3169,7 @@ MonoBehaviour:
     items: {fileID: 1398447172020162, guid: edbc084db3a00684fa0415c09ce5ea21, type: 2}
   - name: 
     items: {fileID: 1585925923376360, guid: 8b3dbcf073face24bb875d02982ac435, type: 2}
-  normalRarity: 20
+  normalRarity: 100
   rareRarity: 10
   veryRareRarity: 5
   createdArtifact: {fileID: 0}
@@ -8574,6 +8574,11 @@ Prefab:
       propertyPath: m_StaticEditorFlags
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114264542039290752, guid: 1a040380d3044354295293594341ee34,
+        type: 2}
+      propertyPath: tutorial
+      value: 
+      objectReference: {fileID: 519420033}
     m_RemovedComponents:
     - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 1a040380d3044354295293594341ee34, type: 2}
@@ -8932,7 +8937,7 @@ MonoBehaviour:
   playerAtbList: []
   enemyAtbList: []
   enemyAimIcon: []
-  spiritDoorDead: 0
+  wolfDead: 0
 --- !u!1 &1526513079
 GameObject:
   m_ObjectHideFlags: 0
@@ -9613,7 +9618,7 @@ MonoBehaviour:
   playerAtbList: []
   enemyAtbList: []
   enemyAimIcon: []
-  spiritDoorDead: 0
+  wolfDead: 0
 --- !u!114 &1608525667 stripped
 MonoBehaviour:
   m_PrefabParentObject: {fileID: 114546752154158070, guid: 85f31d3e51685954eb188ab6ccbc77c7,
@@ -9784,6 +9789,7 @@ MonoBehaviour:
   descText: {fileID: 398101131}
   ArtifactSpawner: {fileID: 0}
   needGreedSelection: {fileID: 0}
+  tutorial: {fileID: 519420033}
 --- !u!4 &1643960544
 Transform:
   m_ObjectHideFlags: 0
