@@ -8094,7 +8094,7 @@ MonoBehaviour:
     state: 0
   campsiteTutorial: {fileID: 878773486}
   cannotPressTimer: 0
-  cannotPressDuration: 0
+  cannotPressDuration: 1
   isCanPress: 0
 --- !u!114 &650328670
 MonoBehaviour:

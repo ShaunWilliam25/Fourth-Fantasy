@@ -213,7 +213,7 @@ MonoBehaviour:
   - {fileID: 21300000, guid: e44f1e33250950b429039ef11eca92f6, type: 3}
   - {fileID: 21300000, guid: d31bc8d86ecbbc7408ff3a253a5004dd, type: 3}
   cannotPressTimer: 0
-  cannotPressDuration: 2
+  cannotPressDuration: 1
   isCanPress: 0
 --- !u!1001 &310788767
 Prefab:

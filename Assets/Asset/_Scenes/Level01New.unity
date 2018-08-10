@@ -2686,6 +2686,11 @@ Prefab:
       propertyPath: needGreedTutorial
       value: 
       objectReference: {fileID: 1737452553}
+    - target: {fileID: 114264542039290752, guid: 1a040380d3044354295293594341ee34,
+        type: 2}
+      propertyPath: cannotPressDuration
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 0}
   m_ParentPrefab: {fileID: 100100000, guid: 1a040380d3044354295293594341ee34, type: 2}
@@ -4239,7 +4244,7 @@ MonoBehaviour:
   needGreedSelection: {fileID: 1653121044}
   needGreedTutorial: {fileID: 1737452553}
   cannotPressTimer: 0
-  cannotPressDuration: 0
+  cannotPressDuration: 1
   isCanPress: 0
   isShowingTutorial: 0
 --- !u!4 &1653121046
