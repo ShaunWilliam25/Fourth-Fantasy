@@ -9,8 +9,7 @@ public class LoseSceneController : MonoBehaviour {
     public GameObject lastselect;
     private void Start()
     {
-        Cursor.visible = false;
-        Cursor.lockState = CursorLockMode.Locked;
+        
     }
 
     private void Update()
